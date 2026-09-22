@@ -27900,8 +27900,8 @@
                 "npc_ids": [
                     13618
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -27910,8 +27910,8 @@
                 "npc_ids": [
                     13619
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -27922,8 +27922,8 @@
                     10433,
                     10434
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -27932,8 +27932,8 @@
                 "npc_ids": [
                     7663
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -27942,8 +27942,8 @@
                 "npc_ids": [
                     13620
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -27952,8 +27952,8 @@
                 "npc_ids": [
                     13621
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -27963,8 +27963,8 @@
                     403,
                     3307
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -27973,8 +27973,8 @@
                 "npc_ids": [
                     404
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -27983,8 +27983,8 @@
                 "npc_ids": [
                     8623
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -27996,8 +27996,8 @@
                     7109,
                     7110
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -28007,8 +28007,8 @@
                     6798,
                     6799
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -28017,8 +28017,8 @@
                 "npc_ids": [
                     13622
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             },
             {
@@ -28027,8 +28027,8 @@
                 "npc_ids": [
                     13623
                 ],
-                "option": "Trade",
-                "option_slot": 4,
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             }
         ],

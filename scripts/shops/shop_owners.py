@@ -269,8 +269,13 @@ def load_npc_options() -> Dict[str, Dict[str, str]]:
     }
 
 
-def shop_option_for(npc_id: int, npc_options: Dict[str, Dict[str, str]]) -> Dict:
+def shop_option_for(
+    npc_id: int, npc_options: Dict[str, Dict[str, str]], shop_name: str = None
+) -> Dict:
     """Find the click option that opens this NPC's shop.
+
+    An NPC can run more than one shop (a Slayer master has Trade and Rewards),
+    so when the shop name names one of the candidate options that one wins.
 
     A null option means one of two different things, so the result says which:
 
@@ -287,18 +292,25 @@ def shop_option_for(npc_id: int, npc_options: Dict[str, Dict[str, str]]) -> Dict
 
     :param npc_id: The NPC ID to look up.
     :param npc_options: Mapping from :func:`load_npc_options`.
+    :param shop_name: The shop page title, to pick between several options.
     :return: Dictionary with the option text, its 1-based slot, and the source.
     """
     options = npc_options.get(str(npc_id))
     if not options:
         return {"option": None, "option_slot": None, "option_source": "unknown"}
-    for slot in sorted(options, key=int):
-        if is_shop_option(options[slot]):
-            return {
-                "option": options[slot],
-                "option_slot": int(slot),
-                "option_source": "click",
-            }
+    candidates = [
+        (int(slot), options[slot])
+        for slot in sorted(options, key=int)
+        if is_shop_option(options[slot])
+    ]
+    if candidates:
+        if shop_name:
+            needle = shop_name.casefold()
+            for slot, text in candidates:
+                if text.strip().casefold() in needle:
+                    return {"option": text, "option_slot": slot, "option_source": "click"}
+        slot, text = candidates[0]
+        return {"option": text, "option_slot": slot, "option_source": "click"}
     return {"option": None, "option_slot": None, "option_source": "dialogue"}
 
 

@@ -493,7 +493,7 @@ def item_id_lookup(name: str):
     return None
 
 
-def _owner_shop_option(owner: dict, npc_options: dict) -> dict:
+def _owner_shop_option(owner: dict, npc_options: dict, shop_name: str = None) -> dict:
     """Name the click option that opens this owner's shop.
 
     An owner can have several NPC IDs (one per location), so the first ID with
@@ -502,10 +502,12 @@ def _owner_shop_option(owner: dict, npc_options: dict) -> dict:
 
     :param owner: A shop owner entry, with its resolved npc_ids.
     :param npc_options: NPC click options, from shop_owners.load_npc_options.
+    :param shop_name: The shop page title, to pick between several options.
     :return: Dictionary with the option text and its 1-based menu slot.
     """
     resolved = [
-        shop_owners.shop_option_for(npc_id, npc_options) for npc_id in owner["npc_ids"]
+        shop_owners.shop_option_for(npc_id, npc_options, shop_name)
+        for npc_id in owner["npc_ids"]
     ]
     for option in resolved:
         if option["option"]:
@@ -552,7 +554,7 @@ def process() -> None:
         # Substores share their parent shop's page, and so its owner
         parent_shop_name = shop_name.split(" (")[0]
         owners = [
-            {**owner, **_owner_shop_option(owner, npc_options)}
+            {**owner, **_owner_shop_option(owner, npc_options, shop_name)}
             for owner in owners_by_shop.get(shop_name)
             or owners_by_shop.get(parent_shop_name)
             or []
@@ -599,7 +601,7 @@ def process() -> None:
                 entry["shops"].append(
                     {
                         "shop_name": shop_name,
-                        **shop_owners.shop_option_for(npc_id, npc_options),
+                        **shop_owners.shop_option_for(npc_id, npc_options, shop_name),
                     }
                 )
 

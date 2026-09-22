@@ -70,6 +70,17 @@ def test_parse_shop_owners_dedupes_shared_owners():
         {"name": "Aya", "wiki_page": "Aya"},
     ]
 
+def test_shop_option_prefers_the_option_named_by_the_shop():
+    npcs = {"7663": {"4": "Trade", "5": "Rewards"}}
+    assert shop_owners.shop_option_for(7663, npcs, "Slayer Rewards")["option"] == "Rewards"
+    assert (
+        shop_owners.shop_option_for(7663, npcs, "Slayer Equipment (shop)")["option"]
+        == "Trade"
+    )
+    # Without a shop name it keeps the first shop-opening option.
+    assert shop_owners.shop_option_for(7663, npcs)["option"] == "Trade"
+
+
 def test_shops_items_by_shop_schema_validation():
     """Validate shops-items-by-shop.json against schema."""
     # Read in the shops-items-by-shop schema file
