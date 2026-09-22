@@ -56,3 +56,6 @@ python -m scripts.shops.update
 
 echo -e "  > drops..."
 python -m scripts.drops.update
+
+echo -e "  > slayer..."
+python -m scripts.slayer.update
