@@ -19,7 +19,12 @@
                 "text": "If the player doesn't have an assignment yet:",
                 "steps": [
                   {
-                    "npc": "Excellent, you're doing great. Your new task is to kill [amount] [task monster]."
+                    "id": "2nOFBd",
+                    "type": "action",
+                    "action": "slayer_assignment",
+                    "target": "Duradel",
+                    "text": "Excellent, you're doing great. Your new task is to kill [amount] [task monster].",
+                    "action_source": "text"
                   },
                   {
                     "type": "choice",
@@ -33,7 +38,10 @@
                           {
                             "type": "action",
                             "text": "Duradel provides the corresponding Slayer task tip.",
-                            "id": "NRUkDP"
+                            "id": "NRUkDP",
+                            "action": "slayer_task_tip",
+                            "target": "Duradel",
+                            "action_source": "text"
                           },
                           {
                             "player": "Great, thanks!"

@@ -58,7 +58,12 @@
                 "text": "If the player doesn't have an assignment yet:",
                 "steps": [
                   {
-                    "npc": "Excellent, you're doing great. Your new task is to kill [amount] [task monster]."
+                    "id": "CLbrfV",
+                    "type": "action",
+                    "action": "slayer_assignment",
+                    "target": "Mazchna",
+                    "text": "Excellent, you're doing great. Your new task is to kill [amount] [task monster].",
+                    "action_source": "text"
                   },
                   {
                     "type": "choice",
@@ -72,7 +77,10 @@
                           {
                             "type": "action",
                             "text": "Mazchna provides the corresponding Slayer task tip.",
-                            "id": "NtE957"
+                            "id": "NtE957",
+                            "action": "slayer_task_tip",
+                            "target": "Mazchna",
+                            "action_source": "text"
                           },
                           {
                             "player": "Great, thanks!"

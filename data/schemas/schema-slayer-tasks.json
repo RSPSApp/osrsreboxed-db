@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Slayer tasks keyed by Slayer-master NPC ID",
+  "type": "object",
+  "propertyNames": {"pattern": "^[0-9]+$"},
+  "additionalProperties": {"$ref": "#/$defs/master"},
+  "$defs": {
+    "range": {
+      "type": "array",
+      "items": {"type": "integer", "minimum": 0},
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "task": {
+      "type": "object",
+      "required": ["slug", "name", "quantity", "extended_quantity", "slayer_level", "combat_level", "weight", "npc_names"],
+      "properties": {
+        "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "name": {"type": "string", "minLength": 1},
+        "quantity": {"$ref": "#/$defs/range"},
+        "extended_quantity": {"anyOf": [{"$ref": "#/$defs/range"}, {"type": "null"}]},
+        "slayer_level": {"type": "integer", "minimum": 0},
+        "combat_level": {"type": "integer", "minimum": 0},
+        "weight": {"type": "integer", "minimum": 1},
+        "npc_names": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+        "locations": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1}
+      },
+      "additionalProperties": false
+    },
+    "master": {
+      "type": "object",
+      "required": ["name", "dialogue", "tasks"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "dialogue": {"type": "string", "minLength": 1},
+        "tasks": {"type": "array", "items": {"$ref": "#/$defs/task"}, "minItems": 1}
+      },
+      "additionalProperties": false
+    }
+  }
+}

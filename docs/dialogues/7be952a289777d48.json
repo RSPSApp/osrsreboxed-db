@@ -172,7 +172,12 @@
                 "text": "If the player doesn't have an assignment yet:",
                 "steps": [
                   {
-                    "npc": "Excellent, you're doing great. Your new task is to kill [amount] [task monster]."
+                    "id": "jQB8kU",
+                    "type": "action",
+                    "action": "slayer_assignment",
+                    "target": "Turael",
+                    "text": "Excellent, you're doing great. Your new task is to kill [amount] [task monster].",
+                    "action_source": "text"
                   },
                   {
                     "type": "end"

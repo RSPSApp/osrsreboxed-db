@@ -19,7 +19,12 @@
                 "text": "If the player doesn't have an assignment yet:",
                 "steps": [
                   {
-                    "npc": "Excellent, you're doing great. Your new task is to kill [amount] [task monster]."
+                    "id": "J0w107",
+                    "type": "action",
+                    "action": "slayer_assignment",
+                    "target": "Vannaka",
+                    "text": "Excellent, you're doing great. Your new task is to kill [amount] [task monster].",
+                    "action_source": "text"
                   },
                   {
                     "type": "choice",
@@ -33,7 +38,10 @@
                           {
                             "type": "action",
                             "text": "Vannaka provides the corresponding Slayer task tip.",
-                            "id": "4sa_uS"
+                            "id": "4sa_uS",
+                            "action": "slayer_task_tip",
+                            "target": "Vannaka",
+                            "action_source": "text"
                           },
                           {
                             "player": "Great, thanks!"
