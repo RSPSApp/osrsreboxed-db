@@ -4538,6 +4538,11 @@
                 "restock_time": null
             },
             {
+                "id": 26705,
+                "stock": "infinite",
+                "restock_time": null
+            },
+            {
                 "id": 3105,
                 "stock": "infinite",
                 "restock_time": null
@@ -6748,7 +6753,38 @@
             "change_per": 0,
             "currency": "coins"
         },
-        "owners": [],
+        "owners": [
+            {
+                "name": "Sawmill operator",
+                "wiki_page": "Sawmill operator",
+                "npc_ids": [
+                    3101
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Sawmill Operator",
+                "wiki_page": "Sawmill Operator (Prifddinas)",
+                "npc_ids": [
+                    9140
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Sawmill Operator",
+                "wiki_page": "Sawmill Operator (Auburnvale)",
+                "npc_ids": [
+                    14659
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            }
+        ],
         "items": [
             {
                 "id": 8794,
@@ -19523,7 +19559,28 @@
         "shop_info": {
             "currency": "coins"
         },
-        "owners": [],
+        "owners": [
+            {
+                "name": "Perdu",
+                "wiki_page": "Perdu",
+                "npc_ids": [
+                    7456
+                ],
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            },
+            {
+                "name": "Chris",
+                "wiki_page": "Chris",
+                "npc_ids": [
+                    11674
+                ],
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ],
         "items": [
             {
                 "id": 4252,
@@ -19807,6 +19864,11 @@
             },
             {
                 "id": 27279,
+                "stock": "infinite",
+                "restock_time": null
+            },
+            {
+                "id": 30955,
                 "stock": "infinite",
                 "restock_time": null
             }
@@ -23295,7 +23357,30 @@
             "change_per": 10,
             "currency": "coins"
         },
-        "owners": [],
+        "owners": [
+            {
+                "name": "Tramp",
+                "wiki_page": "Tramp (pillory)",
+                "npc_ids": [
+                    381,
+                    382,
+                    383
+                ],
+                "option": null,
+                "option_slot": null,
+                "option_source": "unknown"
+            },
+            {
+                "name": "Fadli",
+                "wiki_page": "Fadli",
+                "npc_ids": [
+                    3340
+                ],
+                "option": "Collect",
+                "option_slot": 4,
+                "option_source": "click"
+            }
+        ],
         "items": [
             {
                 "id": 2518,
@@ -26572,7 +26657,38 @@
             "change_per": 0,
             "currency": "coins"
         },
-        "owners": [],
+        "owners": [
+            {
+                "name": "Sawmill operator",
+                "wiki_page": "Sawmill operator",
+                "npc_ids": [
+                    3101
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Sawmill Operator (Prifddinas)",
+                "wiki_page": "Sawmill Operator (Prifddinas)",
+                "npc_ids": [
+                    9140
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Sawmill Operator (Auburnvale)",
+                "wiki_page": "Sawmill Operator (Auburnvale)",
+                "npc_ids": [
+                    14659
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            }
+        ],
         "items": [
             {
                 "id": 8794,
@@ -26783,7 +26899,28 @@
             "change_per": 10,
             "currency": "coins"
         },
-        "owners": [],
+        "owners": [
+            {
+                "name": "Shantay",
+                "wiki_page": "Shantay",
+                "npc_ids": [
+                    4642
+                ],
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            },
+            {
+                "name": "Shantay Guard",
+                "wiki_page": "Shantay Guard (Ruins of Unkah)",
+                "npc_ids": [
+                    10634
+                ],
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ],
         "items": [
             {
                 "id": 1823,
@@ -27479,7 +27616,145 @@
             "change_per": 1,
             "currency": "coins"
         },
-        "owners": [],
+        "owners": [
+            {
+                "name": "Turael",
+                "wiki_page": "Turael",
+                "npc_ids": [
+                    13618
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Aya",
+                "wiki_page": "Aya",
+                "npc_ids": [
+                    13619
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Spria",
+                "wiki_page": "Spria",
+                "npc_ids": [
+                    10432,
+                    10433,
+                    10434
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Krystilia",
+                "wiki_page": "Krystilia",
+                "npc_ids": [
+                    7663
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Mazchna",
+                "wiki_page": "Mazchna",
+                "npc_ids": [
+                    13620
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Achtryn",
+                "wiki_page": "Achtryn",
+                "npc_ids": [
+                    13621
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Vannaka",
+                "wiki_page": "Vannaka",
+                "npc_ids": [
+                    403,
+                    3307
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Chaeldar",
+                "wiki_page": "Chaeldar",
+                "npc_ids": [
+                    404
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Konar quo Maten",
+                "wiki_page": "Konar quo Maten",
+                "npc_ids": [
+                    8623
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Nieve",
+                "wiki_page": "Nieve",
+                "npc_ids": [
+                    6797,
+                    7108,
+                    7109,
+                    7110
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Steve",
+                "wiki_page": "Steve",
+                "npc_ids": [
+                    6798,
+                    6799
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Duradel",
+                "wiki_page": "Duradel",
+                "npc_ids": [
+                    13622
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Kuradal",
+                "wiki_page": "Kuradal",
+                "npc_ids": [
+                    13623
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            }
+        ],
         "items": [
             {
                 "id": 4155,
@@ -27618,7 +27893,145 @@
             "change_per": 0,
             "currency": "Points"
         },
-        "owners": [],
+        "owners": [
+            {
+                "name": "Turael",
+                "wiki_page": "Turael",
+                "npc_ids": [
+                    13618
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Aya",
+                "wiki_page": "Aya",
+                "npc_ids": [
+                    13619
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Spria",
+                "wiki_page": "Spria",
+                "npc_ids": [
+                    10432,
+                    10433,
+                    10434
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Krystilia",
+                "wiki_page": "Krystilia",
+                "npc_ids": [
+                    7663
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Mazchna",
+                "wiki_page": "Mazchna",
+                "npc_ids": [
+                    13620
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Achtryn",
+                "wiki_page": "Achtryn",
+                "npc_ids": [
+                    13621
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Vannaka",
+                "wiki_page": "Vannaka",
+                "npc_ids": [
+                    403,
+                    3307
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Chaeldar",
+                "wiki_page": "Chaeldar",
+                "npc_ids": [
+                    404
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Konar quo Maten",
+                "wiki_page": "Konar quo Maten",
+                "npc_ids": [
+                    8623
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Nieve",
+                "wiki_page": "Nieve",
+                "npc_ids": [
+                    6797,
+                    7108,
+                    7109,
+                    7110
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Steve",
+                "wiki_page": "Steve",
+                "npc_ids": [
+                    6798,
+                    6799
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Duradel",
+                "wiki_page": "Duradel",
+                "npc_ids": [
+                    13622
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "name": "Kuradal",
+                "wiki_page": "Kuradal",
+                "npc_ids": [
+                    13623
+                ],
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            }
+        ],
         "items": [
             {
                 "id": 11866,
@@ -29828,7 +30241,38 @@
             "change_per": 10,
             "currency": "coins"
         },
-        "owners": [],
+        "owners": [
+            {
+                "name": "Tostig",
+                "wiki_page": "Tostig",
+                "npc_ids": [
+                    4102
+                ],
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            },
+            {
+                "name": "Sam",
+                "wiki_page": "Sam (barmaid)",
+                "npc_ids": [
+                    5613
+                ],
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            },
+            {
+                "name": "Rachael",
+                "wiki_page": "Rachael",
+                "npc_ids": [
+                    5614
+                ],
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ],
         "items": [
             {
                 "id": 1905,
@@ -30000,7 +30444,74 @@
             "change_per": 20,
             "currency": "coins"
         },
-        "owners": [],
+        "owners": [
+            {
+                "name": "Trader Stan",
+                "wiki_page": "Trader Stan",
+                "npc_ids": [
+                    9299,
+                    9300,
+                    9301,
+                    9302,
+                    9303,
+                    9304,
+                    9305,
+                    9307,
+                    9308,
+                    9309,
+                    9310,
+                    9311,
+                    12630,
+                    12631,
+                    12779,
+                    12780,
+                    12781,
+                    12782,
+                    15505,
+                    15512,
+                    15519,
+                    15526,
+                    15533,
+                    15540
+                ],
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            },
+            {
+                "name": "Trader Crewmember",
+                "wiki_page": "Trader Crewmember",
+                "npc_ids": [
+                    9360,
+                    9361,
+                    9362,
+                    9363,
+                    9364,
+                    9365,
+                    9366,
+                    9367,
+                    9368,
+                    9369,
+                    9370,
+                    9371,
+                    12640,
+                    12641,
+                    12799,
+                    12800,
+                    12801,
+                    12802,
+                    15510,
+                    15517,
+                    15524,
+                    15531,
+                    15538,
+                    15545
+                ],
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ],
         "items": [
             {
                 "id": 1931,
@@ -36507,7 +37018,7 @@
         "items": [
             {
                 "id": 33537,
-                "stock": 20,
+                "stock": 50,
                 "restock_time": 10
             }
         ]

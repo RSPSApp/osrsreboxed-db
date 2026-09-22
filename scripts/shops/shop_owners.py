@@ -53,8 +53,9 @@ SHOPS_TEXT_FP = Path(config.DATA_SHOPS_PATH / "shops-wiki-page-text.json")
 OWNERS_TEXT_FP = Path(config.DATA_SHOPS_PATH / "shop-owners-wiki-page-text.json")
 OWNERS_FP = Path(config.DATA_SHOPS_PATH / "shop-owners.json")
 
-# The owner field of an {{Infobox Shop}} template.
-OWNER_FIELD = re.compile(r"\|\s*owner\s*=\s*(.+)", re.I)
+# The owner field of an {{Infobox Shop}} template. Versioned infoboxes use
+# owner1, owner2, ... (one per shop version), so read every field, not just `owner`.
+OWNER_FIELD = re.compile(r"\|\s*owner\d*\s*=\s*(.+)", re.I)
 # Wiki links, keeping the page title and the display text separately.
 WIKI_LINK = re.compile(r"\[\[([^|\]]+)(?:\|([^\]]+))?\]\]")
 # Infoboxes that carry NPC IDs, in the order they are tried.
@@ -83,27 +84,32 @@ SHOP_OPTION_PREFIXES = ("trade-", "trade ")
 def parse_shop_owners(wikitext: str) -> List[Dict]:
     """Read the shopkeepers named by a shop page's infobox.
 
+    Versioned infoboxes name one owner per version (``owner1``, ``owner2``, …),
+    so every field is read and duplicates are dropped.
+
     :param wikitext: The wikitext content of the shop page.
     :return: List of owners, each with a wiki page and display name.
     """
-    match = OWNER_FIELD.search(wikitext)
-    if not match:
-        return []
-
-    value = match.group(1).strip()
-    owners = [
-        {"name": (display or page).strip(), "wiki_page": page.strip()}
-        for page, display in WIKI_LINK.findall(value)
-        if page.strip()
-    ]
-    if owners:
-        return owners
-
-    # A handful of shops name an owner without linking to a page.
-    plain = re.sub(r"\[\[|\]\]|'{2,}", "", value).strip()
-    if plain and not plain.startswith("{{") and plain.lower() not in NO_OWNER_VALUES:
-        return [{"name": plain, "wiki_page": None}]
-    return []
+    owners: List[Dict] = []
+    seen = set()
+    for match in OWNER_FIELD.finditer(wikitext):
+        value = match.group(1).strip()
+        named = [
+            {"name": (display or page).strip(), "wiki_page": page.strip()}
+            for page, display in WIKI_LINK.findall(value)
+            if page.strip()
+        ]
+        if not named:
+            # A handful of shops name an owner without linking to a page.
+            plain = re.sub(r"\[\[|\]\]|'{2,}", "", value).strip()
+            if plain and not plain.startswith("{{") and plain.lower() not in NO_OWNER_VALUES:
+                named = [{"name": plain, "wiki_page": None}]
+        for owner in named:
+            key = (owner["wiki_page"], owner["name"])
+            if key not in seen:
+                seen.add(key)
+                owners.append(owner)
+    return owners
 
 
 def _owners_by_shop() -> Dict[str, List[Dict]]:

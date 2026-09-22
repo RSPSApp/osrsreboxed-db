@@ -660,6 +660,29 @@
             ]
         }
     ],
+    "Construction supplies": [
+        {
+            "name": "Sawmill operator",
+            "wiki_page": "Sawmill operator",
+            "npc_ids": [
+                3101
+            ]
+        },
+        {
+            "name": "Sawmill Operator",
+            "wiki_page": "Sawmill Operator (Prifddinas)",
+            "npc_ids": [
+                9140
+            ]
+        },
+        {
+            "name": "Sawmill Operator",
+            "wiki_page": "Sawmill Operator (Auburnvale)",
+            "npc_ids": [
+                14659
+            ]
+        }
+    ],
     "Contraband yak produce.": [
         {
             "name": "Vanligga Gastfrihet",
@@ -2099,6 +2122,22 @@
             ]
         }
     ],
+    "Lost Property shop": [
+        {
+            "name": "Perdu",
+            "wiki_page": "Perdu",
+            "npc_ids": [
+                7456
+            ]
+        },
+        {
+            "name": "Chris",
+            "wiki_page": "Chris",
+            "npc_ids": [
+                11674
+            ]
+        }
+    ],
     "Louie's Armoured Legs Bazaar.": [
         {
             "name": "Louie Legs",
@@ -2581,6 +2620,24 @@
             ]
         }
     ],
+    "Pelters' Veg Stall": [
+        {
+            "name": "Tramp",
+            "wiki_page": "Tramp (pillory)",
+            "npc_ids": [
+                381,
+                382,
+                383
+            ]
+        },
+        {
+            "name": "Fadli",
+            "wiki_page": "Fadli",
+            "npc_ids": [
+                3340
+            ]
+        }
+    ],
     "Perry's Chop-chop Shop": [
         {
             "name": "Perry",
@@ -3052,6 +3109,29 @@
             ]
         }
     ],
+    "Sawmill": [
+        {
+            "name": "Sawmill operator",
+            "wiki_page": "Sawmill operator",
+            "npc_ids": [
+                3101
+            ]
+        },
+        {
+            "name": "Sawmill Operator (Prifddinas)",
+            "wiki_page": "Sawmill Operator (Prifddinas)",
+            "npc_ids": [
+                9140
+            ]
+        },
+        {
+            "name": "Sawmill Operator (Auburnvale)",
+            "wiki_page": "Sawmill Operator (Auburnvale)",
+            "npc_ids": [
+                14659
+            ]
+        }
+    ],
     "Scavvo's Rune Store.": [
         {
             "name": "Scavvo",
@@ -3076,6 +3156,22 @@
             "wiki_page": "Seddu",
             "npc_ids": [
                 4754
+            ]
+        }
+    ],
+    "Shantay Pass Shop": [
+        {
+            "name": "Shantay",
+            "wiki_page": "Shantay",
+            "npc_ids": [
+                4642
+            ]
+        },
+        {
+            "name": "Shantay Guard",
+            "wiki_page": "Shantay Guard (Ruins of Unkah)",
+            "npc_ids": [
+                10634
             ]
         }
     ],
@@ -3160,6 +3256,206 @@
             "wiki_page": "Skulgrimen",
             "npc_ids": [
                 3935
+            ]
+        }
+    ],
+    "Slayer Equipment (shop)": [
+        {
+            "name": "Turael",
+            "wiki_page": "Turael",
+            "npc_ids": [
+                13618
+            ]
+        },
+        {
+            "name": "Aya",
+            "wiki_page": "Aya",
+            "npc_ids": [
+                13619
+            ]
+        },
+        {
+            "name": "Spria",
+            "wiki_page": "Spria",
+            "npc_ids": [
+                10432,
+                10433,
+                10434
+            ]
+        },
+        {
+            "name": "Krystilia",
+            "wiki_page": "Krystilia",
+            "npc_ids": [
+                7663
+            ]
+        },
+        {
+            "name": "Mazchna",
+            "wiki_page": "Mazchna",
+            "npc_ids": [
+                13620
+            ]
+        },
+        {
+            "name": "Achtryn",
+            "wiki_page": "Achtryn",
+            "npc_ids": [
+                13621
+            ]
+        },
+        {
+            "name": "Vannaka",
+            "wiki_page": "Vannaka",
+            "npc_ids": [
+                403,
+                3307
+            ]
+        },
+        {
+            "name": "Chaeldar",
+            "wiki_page": "Chaeldar",
+            "npc_ids": [
+                404
+            ]
+        },
+        {
+            "name": "Konar quo Maten",
+            "wiki_page": "Konar quo Maten",
+            "npc_ids": [
+                8623
+            ]
+        },
+        {
+            "name": "Nieve",
+            "wiki_page": "Nieve",
+            "npc_ids": [
+                6797,
+                7108,
+                7109,
+                7110
+            ]
+        },
+        {
+            "name": "Steve",
+            "wiki_page": "Steve",
+            "npc_ids": [
+                6798,
+                6799
+            ]
+        },
+        {
+            "name": "Duradel",
+            "wiki_page": "Duradel",
+            "npc_ids": [
+                13622
+            ]
+        },
+        {
+            "name": "Kuradal",
+            "wiki_page": "Kuradal",
+            "npc_ids": [
+                13623
+            ]
+        }
+    ],
+    "Slayer Rewards": [
+        {
+            "name": "Turael",
+            "wiki_page": "Turael",
+            "npc_ids": [
+                13618
+            ]
+        },
+        {
+            "name": "Aya",
+            "wiki_page": "Aya",
+            "npc_ids": [
+                13619
+            ]
+        },
+        {
+            "name": "Spria",
+            "wiki_page": "Spria",
+            "npc_ids": [
+                10432,
+                10433,
+                10434
+            ]
+        },
+        {
+            "name": "Krystilia",
+            "wiki_page": "Krystilia",
+            "npc_ids": [
+                7663
+            ]
+        },
+        {
+            "name": "Mazchna",
+            "wiki_page": "Mazchna",
+            "npc_ids": [
+                13620
+            ]
+        },
+        {
+            "name": "Achtryn",
+            "wiki_page": "Achtryn",
+            "npc_ids": [
+                13621
+            ]
+        },
+        {
+            "name": "Vannaka",
+            "wiki_page": "Vannaka",
+            "npc_ids": [
+                403,
+                3307
+            ]
+        },
+        {
+            "name": "Chaeldar",
+            "wiki_page": "Chaeldar",
+            "npc_ids": [
+                404
+            ]
+        },
+        {
+            "name": "Konar quo Maten",
+            "wiki_page": "Konar quo Maten",
+            "npc_ids": [
+                8623
+            ]
+        },
+        {
+            "name": "Nieve",
+            "wiki_page": "Nieve",
+            "npc_ids": [
+                6797,
+                7108,
+                7109,
+                7110
+            ]
+        },
+        {
+            "name": "Steve",
+            "wiki_page": "Steve",
+            "npc_ids": [
+                6798,
+                6799
+            ]
+        },
+        {
+            "name": "Duradel",
+            "wiki_page": "Duradel",
+            "npc_ids": [
+                13622
+            ]
+        },
+        {
+            "name": "Kuradal",
+            "wiki_page": "Kuradal",
+            "npc_ids": [
+                13623
             ]
         }
     ],
@@ -3429,6 +3725,29 @@
             ]
         }
     ],
+    "The Toad and Chicken": [
+        {
+            "name": "Tostig",
+            "wiki_page": "Tostig",
+            "npc_ids": [
+                4102
+            ]
+        },
+        {
+            "name": "Sam",
+            "wiki_page": "Sam (barmaid)",
+            "npc_ids": [
+                5613
+            ]
+        },
+        {
+            "name": "Rachael",
+            "wiki_page": "Rachael",
+            "npc_ids": [
+                5614
+            ]
+        }
+    ],
     "Toci's Gem Store": [
         {
             "name": "Toci",
@@ -3453,6 +3772,68 @@
             "wiki_page": "Toothy",
             "npc_ids": [
                 7071
+            ]
+        }
+    ],
+    "Trader Stan's Trading Post": [
+        {
+            "name": "Trader Stan",
+            "wiki_page": "Trader Stan",
+            "npc_ids": [
+                9299,
+                9300,
+                9301,
+                9302,
+                9303,
+                9304,
+                9305,
+                9307,
+                9308,
+                9309,
+                9310,
+                9311,
+                12630,
+                12631,
+                12779,
+                12780,
+                12781,
+                12782,
+                15505,
+                15512,
+                15519,
+                15526,
+                15533,
+                15540
+            ]
+        },
+        {
+            "name": "Trader Crewmember",
+            "wiki_page": "Trader Crewmember",
+            "npc_ids": [
+                9360,
+                9361,
+                9362,
+                9363,
+                9364,
+                9365,
+                9366,
+                9367,
+                9368,
+                9369,
+                9370,
+                9371,
+                12640,
+                12641,
+                12799,
+                12800,
+                12801,
+                12802,
+                15510,
+                15517,
+                15524,
+                15531,
+                15538,
+                15545
             ]
         }
     ],
