@@ -13,7 +13,7 @@ a pattern is too tight.
 Template-derived slugs (opens/opens2/receives/gives) are exact and are not
 listed here.
 
-827 inferred steps, 2959 left as prose.
+848 inferred steps, 2950 left as prose.
 
 
 INFERRED condition  (182 steps, 88 distinct)
@@ -820,6 +820,75 @@ INFERRED receive  (70 steps, 43 distinct)
   [  1] Koschei disappears into a mist and the player receives the Fremennik blade.
         npcs:   The Fremennik Trials
 
+INFERRED slayer_assignment  (12 steps, 12 distinct)
+------------------------------------------------------------------------
+  [  1] Excellent, you're doing great. Your new task is to kill [amount] [task monster].
+        target: Chaeldar
+        npcs:   Chaeldar
+  [  1] Excellent, you're doing great. Your new task is to kill [amount] [task monster].
+        target: Duradel
+        npcs:   Duradel
+  [  1] Your new task is to kill [number] [monster].
+        target: Krystilia
+        npcs:   Krystilia
+  [  1] Excellent, you're doing great. Your new task is to kill [amount] [task monster].
+        target: Mazchna
+        npcs:   Mazchna
+  [  1] Your new task is to kill [amount] [task monster].
+        target: Mortimer
+        npcs:   Mortimer
+  [  1] Your new task is to kill [amount] [task monster]. Completing this task will award [number] bonus Slayer Points.
+        target: Mortimer
+        npcs:   Mortimer
+  [  1] Your new task is to kill [amount] [task monster]. Creatures on this task will have an increased chance to award clue scrolls.
+        target: Mortimer
+        npcs:   Mortimer
+  [  1] Your new task is to kill [amount] [task monster]. Superior creatures on this task will have a higher chance of awarding their unique loot.
+        target: Mortimer
+        npcs:   Mortimer
+  [  1] Excellent, you're doing great. Your new task is to kill [amount] [task monster].
+        target: Nieve
+        npcs:   Nieve
+  [  1] Excellent, you're doing great. Your new task is to kill [amount] [task monster].
+        target: Spria
+        npcs:   Spria
+  [  1] Excellent, you're doing great. Your new task is to kill [amount] [task monster].
+        target: Turael
+        npcs:   Turael
+  [  1] Excellent, you're doing great. Your new task is to kill [amount] [task monster].
+        target: Vannaka
+        npcs:   Vannaka
+
+INFERRED slayer_task_tip  (9 steps, 9 distinct)
+------------------------------------------------------------------------
+  [  1] Chaeldar provides the corresponding Slayer task tip.
+        target: Chaeldar
+        npcs:   Chaeldar
+  [  1] Duradel provides the corresponding Slayer task tip.
+        target: Duradel
+        npcs:   Duradel
+  [  1] Konar provides the corresponding Slayer task tip.
+        target: Konar quo Maten
+        npcs:   Konar quo Maten
+  [  1] Konar provides the corresponding Slayer task tip
+        target: Konar quo Maten
+        npcs:   Konar quo Maten
+  [  1] Krystilia provides the corresponding Slayer task tip.
+        target: Krystilia
+        npcs:   Krystilia
+  [  1] Mazchna provides the corresponding Slayer task tip.
+        target: Mazchna
+        npcs:   Mazchna
+  [  1] Mortimer provides the corresponding Slayer task tip.
+        target: Mortimer
+        npcs:   Mortimer
+  [  1] Nieve provides the corresponding Slayer task tip.
+        target: Nieve
+        npcs:   Nieve
+  [  1] Vannaka provides the corresponding Slayer task tip.
+        target: Vannaka
+        npcs:   Vannaka
+
 INFERRED teleport  (233 steps, 158 distinct)
 ------------------------------------------------------------------------
   [ 15] The player is teleported to the central chamber.
@@ -1140,7 +1209,7 @@ INFERRED teleport  (233 steps, 158 distinct)
         npcs:   Witch's House
 
 
-UNMATCHED  (2959 steps, 2092 distinct) -- still prose, no action key
+UNMATCHED  (2950 steps, 2083 distinct) -- still prose, no action key
 ------------------------------------------------------------------------
   [149] Congratulations! Quest complete!
         npcs:   A Kingdom Divided, A Porcine of Interest, A Ruff Situation, +138 more
@@ -1846,8 +1915,6 @@ UNMATCHED  (2959 steps, 2092 distinct) -- still prose, no action key
         npcs:   Cave monk
   [  1] Player runs towards Cecilia
         npcs:   Cecilia
-  [  1] Chaeldar provides the corresponding Slayer task tip.
-        npcs:   Chaeldar
   [  1] (Player gives Charlie 1 coin.)
         npcs:   Charlie the Tramp
   [  1] Show standard dialogue
@@ -1920,8 +1987,6 @@ UNMATCHED  (2959 steps, 2092 distinct) -- still prose, no action key
         npcs:   Duke Horacio
   [  1] After starting the Rune Mysteries quest and having the Research package.
         npcs:   Duke Horacio
-  [  1] Duradel provides the corresponding Slayer task tip.
-        npcs:   Duradel
   [  1] Small cutscene ensues...
         npcs:   Easter Bunny
   [  1] The player bowls down 3 carrot pins.
@@ -2078,13 +2143,9 @@ UNMATCHED  (2959 steps, 2092 distinct) -- still prose, no action key
         npcs:   Kiss the frog
   [  1] Astra leaves the castle, and moves to the Altar of the Sun.
         npcs:   Knight of Varlamore (Kourend Castle)
-  [  1] Konar provides the corresponding Slayer task tip.
-        npcs:   Konar quo Maten
   [  1] If player has at least 30 Slayer points:
         npcs:   Konar quo Maten
   [  1] If player does not have at least 30 Slayer points:
-        npcs:   Konar quo Maten
-  [  1] Konar provides the corresponding Slayer task tip
         npcs:   Konar quo Maten
   [  1] Konar provides the correspoding area descriptor
         npcs:   Konar quo Maten
@@ -2092,8 +2153,6 @@ UNMATCHED  (2959 steps, 2092 distinct) -- still prose, no action key
         npcs:   Kragen
   [  1] Same as above for Pay (north) option.
         npcs:   Kragen
-  [  1] Krystilia provides the corresponding Slayer task tip.
-        npcs:   Krystilia
   [  1] Player pays 5 million coins and their respawn point is set to Edgeville.
         npcs:   Krystilia
   [  1] Player's respawn point is set to Lumbridge.
@@ -2154,8 +2213,6 @@ UNMATCHED  (2959 steps, 2092 distinct) -- still prose, no action key
         npcs:   Martin the Master Gardener
   [  1] Stuns the player, dealing 3 damage.
         npcs:   Master Farmer
-  [  1] Mazchna provides the corresponding Slayer task tip.
-        npcs:   Mazchna
   [  1] The player and Megan simultaneously dance and cheer, then end in a bow.
         npcs:   Megan
   [  1] Moon Clan General Store is opened.
@@ -2190,8 +2247,6 @@ UNMATCHED  (2959 steps, 2092 distinct) -- still prose, no action key
         npcs:   Monkey minder
   [  1] The afflicted turns into a Mort'ton local
         npcs:   Mort'ton local
-  [  1] Mortimer provides the corresponding Slayer task tip.
-        npcs:   Mortimer
   [  1] Mr. Mordaut asks one of the following questions:
         npcs:   Mr. Mordaut
   [  1] Mr. Mordaut repeats the same question.
@@ -2276,8 +2331,6 @@ UNMATCHED  (2959 steps, 2092 distinct) -- still prose, no action key
         npcs:   Natural historian
   [  1] The natural historian poses as a penguin...
         npcs:   Natural historian
-  [  1] Nieve provides the corresponding Slayer task tip.
-        npcs:   Nieve
   [  1] The player's run energy is restored to full.
         npcs:   Nomad
   [  1] The player is seen wearing the blue cape and blue icon.
@@ -2514,8 +2567,6 @@ UNMATCHED  (2959 steps, 2092 distinct) -- still prose, no action key
         npcs:   Vampyre Juvinate
   [  1] The player is lead out to the mine entrance, in the northwestern part of Meiyerditch
         npcs:   Vampyre Juvinate (Meiyerditch mine)
-  [  1] Vannaka provides the corresponding Slayer task tip.
-        npcs:   Vannaka
   [  1] Vasile fills your empty pot with ale yeast.
         npcs:   Vasile
   [  1] (Player gives copper's crimson collar to Veos)

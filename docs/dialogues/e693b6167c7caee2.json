@@ -83,7 +83,12 @@
                     "text": "If the task selected has a quantity modifier:",
                     "steps": [
                       {
-                        "npc": "Your new task is to kill [amount] [task monster]."
+                        "id": "mMigo6",
+                        "type": "action",
+                        "action": "slayer_assignment",
+                        "target": "Mortimer",
+                        "text": "Your new task is to kill [amount] [task monster].",
+                        "action_source": "text"
                       },
                       {
                         "type": "jump",
@@ -98,7 +103,12 @@
                     "text": "If the task selected has a Slayer Point modifier:",
                     "steps": [
                       {
-                        "npc": "Your new task is to kill [amount] [task monster]. Completing this task will award [number] bonus Slayer Points."
+                        "id": "QZN2GT",
+                        "type": "action",
+                        "action": "slayer_assignment",
+                        "target": "Mortimer",
+                        "text": "Your new task is to kill [amount] [task monster]. Completing this task will award [number] bonus Slayer Points.",
+                        "action_source": "text"
                       },
                       {
                         "type": "jump",
@@ -113,7 +123,12 @@
                     "text": "If the task selected has a clue scroll modifier:",
                     "steps": [
                       {
-                        "npc": "Your new task is to kill [amount] [task monster]. Creatures on this task will have an increased chance to award clue scrolls."
+                        "id": "W79L0f",
+                        "type": "action",
+                        "action": "slayer_assignment",
+                        "target": "Mortimer",
+                        "text": "Your new task is to kill [amount] [task monster]. Creatures on this task will have an increased chance to award clue scrolls.",
+                        "action_source": "text"
                       },
                       {
                         "type": "jump",
@@ -128,7 +143,12 @@
                     "text": "If the task selected has a superior unique chance modifier:",
                     "steps": [
                       {
-                        "npc": "Your new task is to kill [amount] [task monster]. Superior creatures on this task will have a higher chance of awarding their unique loot."
+                        "id": "e9dQ64",
+                        "type": "action",
+                        "action": "slayer_assignment",
+                        "target": "Mortimer",
+                        "text": "Your new task is to kill [amount] [task monster]. Superior creatures on this task will have a higher chance of awarding their unique loot.",
+                        "action_source": "text"
                       },
                       {
                         "type": "jump",
@@ -161,7 +181,10 @@
                           {
                             "type": "action",
                             "text": "Mortimer provides the corresponding Slayer task tip.",
-                            "id": "_jZ32P"
+                            "id": "_jZ32P",
+                            "action": "slayer_task_tip",
+                            "target": "Mortimer",
+                            "action_source": "text"
                           },
                           {
                             "player": "Great, thanks!"

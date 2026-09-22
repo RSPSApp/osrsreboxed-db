@@ -37,7 +37,12 @@
                         "text": "Yes, I understand I must kill it in the Wilderness.",
                         "steps": [
                           {
-                            "npc": "Your new task is to kill [number] [monster]."
+                            "id": "OdUCRh",
+                            "type": "action",
+                            "action": "slayer_assignment",
+                            "target": "Krystilia",
+                            "text": "Your new task is to kill [number] [monster].",
+                            "action_source": "text"
                           },
                           {
                             "type": "choice",
@@ -51,7 +56,10 @@
                                   {
                                     "type": "action",
                                     "text": "Krystilia provides the corresponding Slayer task tip.",
-                                    "id": "pD9G57"
+                                    "id": "pD9G57",
+                                    "action": "slayer_task_tip",
+                                    "target": "Krystilia",
+                                    "action_source": "text"
                                   },
                                   {
                                     "npc": "You've got to do the task in the Wilderness."

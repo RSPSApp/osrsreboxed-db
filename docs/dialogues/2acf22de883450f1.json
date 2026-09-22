@@ -19,7 +19,12 @@
                 "text": "If the player doesn't have an assignment yet:",
                 "steps": [
                   {
-                    "npc": "Excellent, you're doing great. Your new task is to kill [amount] [task monster]."
+                    "id": "lBaEQP",
+                    "type": "action",
+                    "action": "slayer_assignment",
+                    "target": "Chaeldar",
+                    "text": "Excellent, you're doing great. Your new task is to kill [amount] [task monster].",
+                    "action_source": "text"
                   },
                   {
                     "type": "choice",
@@ -33,7 +38,10 @@
                           {
                             "type": "action",
                             "text": "Chaeldar provides the corresponding Slayer task tip.",
-                            "id": "1FrJeq"
+                            "id": "1FrJeq",
+                            "action": "slayer_task_tip",
+                            "target": "Chaeldar",
+                            "action_source": "text"
                           },
                           {
                             "player": "Great, thanks!"

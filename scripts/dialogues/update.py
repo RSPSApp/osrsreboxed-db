@@ -500,6 +500,73 @@ def resolve_shops(npcs, index):
     return resolved
 
 
+# A master's assignment line is a fixed game message, not a wiki template, so it
+# survives as prose. Consumers cannot act on "[number] [monster]", so retag it as a
+# slug the Slayer plugin starts a task from.
+SLAYER_TASKS = "slayer-tasks.json"
+SLAYER_ASSIGNMENT = re.compile(
+    r"Your new task is to kill \[(?:amount|number)\] \[(?:task monster|monster)\]",
+    re.I,
+)
+# The tip itself is dynamic; the transcript only notes that the master gives one.
+SLAYER_TIP = re.compile(r"provides the corresponding Slayer task tip", re.I)
+
+
+def slayer_masters():
+    """Transcript names that assign tasks, taken from the Slayer tasks dump."""
+    path = config.DOCS_PATH / SLAYER_TASKS
+    if not path.exists():
+        print(f"{path} not built; no Slayer lines are slugged", flush=True)
+        return set()
+    return {
+        master["dialogue"]
+        for master in json.loads(path.read_text()).values()
+        if master.get("dialogue")
+    }
+
+
+def resolve_slayer(npcs, masters):
+    """Retag a Slayer master's assignment line and task tip so consumers can act.
+
+    The master name is written to ``target`` so a consumer joins on the Slayer
+    tasks dump instead of inferring the master from the runtime NPC.
+    """
+    resolved = 0
+
+    def walk(node, master):
+        nonlocal resolved
+        if isinstance(node, dict):
+            text = node.get("npc")
+            if isinstance(text, str) and SLAYER_ASSIGNMENT.search(text):
+                node.pop("npc")
+                node["type"] = "action"
+                node["action"] = "slayer_assignment"
+                node["target"] = master
+                node["text"] = text
+                node["action_source"] = "text"
+                resolved += 1
+            elif (
+                node.get("type") == "action"
+                and isinstance(node.get("text"), str)
+                and SLAYER_TIP.search(node["text"])
+            ):
+                node["action"] = "slayer_task_tip"
+                node["target"] = master
+                node["action_source"] = "text"
+                resolved += 1
+            for value in node.values():
+                walk(value, master)
+        elif isinstance(node, list):
+            for item in node:
+                walk(item, master)
+
+    for master in masters:
+        record = npcs.get(master)
+        if record:
+            walk(record, master)
+    return resolved
+
+
 def action_report(npcs):
     """Every prose-inferred action plus the prose left unslugged, for human review."""
     inferred, unmatched = (
@@ -617,6 +684,7 @@ def main():
     index = enrich_records(npcs, quests, read_cache(NPC_CACHE), clean)
     resolved = resolve_shops(npcs, shop_index())
     resolved += resolve_shops(quests, shop_index())
+    slayer = resolve_slayer(npcs, slayer_masters())
     report = config.DATA_PATH / "dialogues" / "inferred-actions.txt"
     report.write_text(action_report({**npcs, **quests}))
     authoring = {}
@@ -635,6 +703,7 @@ def main():
         f"{sum('steps' in n or n.get('default') is not None for n in npcs.values())} selected defaults to {args.out}"
     )
     print(f"Resolved {resolved} interfaces to a named shop")
+    print(f"Slugged {slayer} Slayer lines")
 
 
 if __name__ == "__main__":

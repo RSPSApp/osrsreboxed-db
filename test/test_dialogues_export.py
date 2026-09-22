@@ -200,6 +200,89 @@ def test_resolve_shops_is_a_no_op_without_an_index():
     assert node["action"] == "open_interface"
 
 
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Excellent, you're doing great. Your new task is to kill [amount] [task monster].",
+        "Your new task is to kill [number] [monster].",
+    ],
+)
+def test_resolve_slayer_retags_the_assignment_line(text):
+    node = dict(npc=text, id="x")
+    assert dialogues_update.resolve_slayer({"Krystilia": [node]}, {"Krystilia"}) == 1
+    assert node == dict(
+        type="action",
+        action="slayer_assignment",
+        target="Krystilia",
+        text=text,
+        action_source="text",
+        id="x",
+    )
+
+
+def test_resolve_slayer_leaves_ordinary_speech_alone():
+    node = dict(npc="Good luck! Don't forget to come back.")
+    assert dialogues_update.resolve_slayer({"Krystilia": [node]}, {"Krystilia"}) == 0
+    assert node == dict(npc="Good luck! Don't forget to come back.")
+
+
+def test_resolve_slayer_tags_the_task_tip():
+    node = dict(type="action", text="Krystilia provides the corresponding Slayer task tip.")
+    assert dialogues_update.resolve_slayer({"Krystilia": [node]}, {"Krystilia"}) == 1
+    assert node["action"] == "slayer_task_tip"
+    assert node["target"] == "Krystilia"
+    assert node["type"] == "action"
+
+
+def test_resolve_slayer_ignores_non_masters():
+    # Aya can reset a task but the slayer dump never assigns to her.
+    node = dict(npc="Your new task is to kill [amount] [task monster].")
+    assert dialogues_update.resolve_slayer({"Aya": [node]}, {"Krystilia"}) == 0
+    assert node == dict(npc="Your new task is to kill [amount] [task monster].")
+
+
+def test_slayer_assignments_are_slugged_in_the_export():
+    dialogues = json.loads((config.DOCS_PATH / "npc-dialogues.json").read_text())
+    found = 0
+
+    def walk(node):
+        nonlocal found
+        if isinstance(node, dict):
+            if node.get("action") == "slayer_assignment":
+                found += 1
+                assert "Your new task is to kill" in node["text"]
+                assert node["target"]
+            for value in node.values():
+                walk(value)
+        elif isinstance(node, list):
+            for item in node:
+                walk(item)
+
+    walk(dialogues)
+    # Krystilia, Duradel, Nieve and the rest all say the same line.
+    assert found >= 10
+
+
+def test_slayer_task_tips_are_slugged_in_the_export():
+    dialogues = json.loads((config.DOCS_PATH / "npc-dialogues.json").read_text())
+    found = 0
+
+    def walk(node):
+        nonlocal found
+        if isinstance(node, dict):
+            if node.get("action") == "slayer_task_tip":
+                found += 1
+                assert node["target"]
+            for value in node.values():
+                walk(value)
+        elif isinstance(node, list):
+            for item in node:
+                walk(item)
+
+    walk(dialogues)
+    assert found >= 8
+
+
 def test_shop_index_drops_names_two_shops_share():
     # Quest-state variants fold onto the base name and cannot be told apart.
     index = dialogues_update.shop_index()
