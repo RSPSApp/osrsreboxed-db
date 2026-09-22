@@ -88,6 +88,73 @@
             }
         ]
     },
+    "381": {
+        "name": "Tramp",
+        "shops": [
+            {
+                "shop_name": "Pelters' Veg Stall",
+                "option": null,
+                "option_slot": null,
+                "option_source": "unknown"
+            }
+        ]
+    },
+    "382": {
+        "name": "Tramp",
+        "shops": [
+            {
+                "shop_name": "Pelters' Veg Stall",
+                "option": null,
+                "option_slot": null,
+                "option_source": "unknown"
+            }
+        ]
+    },
+    "383": {
+        "name": "Tramp",
+        "shops": [
+            {
+                "shop_name": "Pelters' Veg Stall",
+                "option": null,
+                "option_slot": null,
+                "option_source": "unknown"
+            }
+        ]
+    },
+    "403": {
+        "name": "Vannaka",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
+    "404": {
+        "name": "Chaeldar",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
     "500": {
         "name": "Olivia",
         "shops": [
@@ -1730,6 +1797,23 @@
             }
         ]
     },
+    "3101": {
+        "name": "Sawmill operator",
+        "shops": [
+            {
+                "shop_name": "Construction supplies",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Sawmill",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            }
+        ]
+    },
     "3102": {
         "name": "Garden supplier",
         "shops": [
@@ -1923,6 +2007,23 @@
             }
         ]
     },
+    "3307": {
+        "name": "Vannaka",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            }
+        ]
+    },
     "3331": {
         "name": "Mubariz",
         "shops": [
@@ -1939,6 +2040,12 @@
         "shops": [
             {
                 "shop_name": "Shop of Distaste",
+                "option": "Collect",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Pelters' Veg Stall",
                 "option": "Collect",
                 "option_slot": 4,
                 "option_source": "click"
@@ -2266,6 +2373,17 @@
             }
         ]
     },
+    "4102": {
+        "name": "Tostig",
+        "shops": [
+            {
+                "shop_name": "The Toad and Chicken",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
     "4106": {
         "name": "Wistan",
         "shops": [
@@ -2491,6 +2609,17 @@
         "shops": [
             {
                 "shop_name": "Bedabin Village Bartering",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "4642": {
+        "name": "Shantay",
+        "shops": [
+            {
+                "shop_name": "Shantay Pass Shop",
                 "option": "Trade",
                 "option_slot": 3,
                 "option_source": "click"
@@ -2923,6 +3052,28 @@
             }
         ]
     },
+    "5613": {
+        "name": "Sam",
+        "shops": [
+            {
+                "shop_name": "The Toad and Chicken",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "5614": {
+        "name": "Rachael",
+        "shops": [
+            {
+                "shop_name": "The Toad and Chicken",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
     "5794": {
         "name": "Megan",
         "shops": [
@@ -3223,6 +3374,57 @@
             }
         ]
     },
+    "6797": {
+        "name": "Nieve",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
+    "6798": {
+        "name": "Steve",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
+    "6799": {
+        "name": "Steve",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            }
+        ]
+    },
     "6920": {
         "name": "Farmer Gricoller",
         "shops": [
@@ -3372,6 +3574,57 @@
             }
         ]
     },
+    "7108": {
+        "name": "Nieve",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            }
+        ]
+    },
+    "7109": {
+        "name": "Nieve",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            }
+        ]
+    },
+    "7110": {
+        "name": "Nieve",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            }
+        ]
+    },
     "7120": {
         "name": "Oobapohk",
         "shops": [
@@ -3471,6 +3724,17 @@
             }
         ]
     },
+    "7456": {
+        "name": "Perdu",
+        "shops": [
+            {
+                "shop_name": "Lost Property shop",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
     "7650": {
         "name": "Pirate Jackie the Fruit",
         "shops": [
@@ -3501,6 +3765,23 @@
                 "shop_name": "Brimhaven Agility Arena Ticket Exchange",
                 "option": "Trade",
                 "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "7663": {
+        "name": "Krystilia",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
                 "option_source": "click"
             }
         ]
@@ -3894,6 +4175,23 @@
             }
         ]
     },
+    "8623": {
+        "name": "Konar quo Maten",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
     "8680": {
         "name": "Davon",
         "shops": [
@@ -4121,6 +4419,23 @@
             }
         ]
     },
+    "9140": {
+        "name": "Sawmill Operator",
+        "shops": [
+            {
+                "shop_name": "Construction supplies",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Sawmill",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            }
+        ]
+    },
     "9153": {
         "name": "Iwan",
         "shops": [
@@ -4316,6 +4631,270 @@
                 "option": null,
                 "option_slot": null,
                 "option_source": "unknown"
+            }
+        ]
+    },
+    "9299": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9300": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9301": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9302": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9303": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9304": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9305": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9307": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9308": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9309": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9310": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9311": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9360": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9361": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9362": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9363": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9364": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9365": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9366": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9367": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9368": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9369": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9370": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "9371": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
             }
         ]
     },
@@ -4550,6 +5129,57 @@
             }
         ]
     },
+    "10432": {
+        "name": "Spria",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
+    "10433": {
+        "name": "Spria",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": null,
+                "option_slot": null,
+                "option_source": "unknown"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": null,
+                "option_slot": null,
+                "option_source": "unknown"
+            }
+        ]
+    },
+    "10434": {
+        "name": "Spria",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": null,
+                "option_slot": null,
+                "option_source": "dialogue"
+            }
+        ]
+    },
     "10477": {
         "name": "Thessalia",
         "shops": [
@@ -4655,6 +5285,17 @@
         "shops": [
             {
                 "shop_name": "Dusuri's Star Shop",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "10634": {
+        "name": "Shantay Guard",
+        "shops": [
+            {
+                "shop_name": "Shantay Pass Shop",
                 "option": "Trade",
                 "option_slot": 3,
                 "option_source": "click"
@@ -5004,6 +5645,17 @@
             }
         ]
     },
+    "11674": {
+        "name": "Chris",
+        "shops": [
+            {
+                "shop_name": "Lost Property shop",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
     "11852": {
         "name": "Eliza",
         "shops": [
@@ -5055,6 +5707,138 @@
             {
                 "shop_name": "Bounty Hunter Store",
                 "option": "Rewards",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12630": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12631": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12640": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12641": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12779": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12780": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12781": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12782": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12799": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12800": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12801": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "12802": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
                 "option_slot": 3,
                 "option_source": "click"
             }
@@ -5390,6 +6174,108 @@
             }
         ]
     },
+    "13618": {
+        "name": "Turael",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
+    "13619": {
+        "name": "Aya",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
+    "13620": {
+        "name": "Mazchna",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
+    "13621": {
+        "name": "Achtryn",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
+    "13622": {
+        "name": "Duradel",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
+    "13623": {
+        "name": "Kuradal",
+        "shops": [
+            {
+                "shop_name": "Slayer Equipment (shop)",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Slayer Rewards",
+                "option": "Rewards",
+                "option_slot": 5,
+                "option_source": "click"
+            }
+        ]
+    },
     "13655": {
         "name": "Zembo",
         "shops": [
@@ -5650,6 +6536,23 @@
                 "shop_name": "Sebamo's Sublime Staffs",
                 "option": "Trade",
                 "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "14659": {
+        "name": "Sawmill Operator",
+        "shops": [
+            {
+                "shop_name": "Construction supplies",
+                "option": "Trade",
+                "option_slot": 4,
+                "option_source": "click"
+            },
+            {
+                "shop_name": "Sawmill",
+                "option": "Trade",
+                "option_slot": 4,
                 "option_source": "click"
             }
         ]
@@ -6099,6 +7002,138 @@
         "shops": [
             {
                 "shop_name": "Durrik's Goods",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15505": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15510": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15512": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15517": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15519": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15524": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15526": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15531": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15533": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15538": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15540": {
+        "name": "Trader Stan",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
+                "option": "Trade",
+                "option_slot": 3,
+                "option_source": "click"
+            }
+        ]
+    },
+    "15545": {
+        "name": "Trader Crewmember",
+        "shops": [
+            {
+                "shop_name": "Trader Stan's Trading Post",
                 "option": "Trade",
                 "option_slot": 3,
                 "option_source": "click"

@@ -42,6 +42,45 @@ def test_shops_docs_json_exists_and_valid():
     assert isinstance(data_shop, dict)
 
 
+def test_parse_shop_owners_reads_versioned_fields():
+    """A versioned infobox names one owner per version; all of them are read."""
+    wikitext = "\n".join(
+        [
+            "{{Infobox Shop",
+            "|version1 = Turael/Aya",
+            "|version2 = Spria",
+            "|owner1 = [[Turael]]/[[Aya]]",
+            "|owner2 = [[Spria]]",
+            "|owner3 = [[Krystilia]]",
+            "}}",
+        ]
+    )
+    assert shop_owners.parse_shop_owners(wikitext) == [
+        {"name": "Turael", "wiki_page": "Turael"},
+        {"name": "Aya", "wiki_page": "Aya"},
+        {"name": "Spria", "wiki_page": "Spria"},
+        {"name": "Krystilia", "wiki_page": "Krystilia"},
+    ]
+
+
+def test_parse_shop_owners_dedupes_shared_owners():
+    wikitext = "{{Infobox Shop\n|owner1 = [[Turael]]\n|owner2 = [[Turael]]/[[Aya]]\n}}"
+    assert shop_owners.parse_shop_owners(wikitext) == [
+        {"name": "Turael", "wiki_page": "Turael"},
+        {"name": "Aya", "wiki_page": "Aya"},
+    ]
+
+def test_shop_option_prefers_the_option_named_by_the_shop():
+    npcs = {"7663": {"4": "Trade", "5": "Rewards"}}
+    assert shop_owners.shop_option_for(7663, npcs, "Slayer Rewards")["option"] == "Rewards"
+    assert (
+        shop_owners.shop_option_for(7663, npcs, "Slayer Equipment (shop)")["option"]
+        == "Trade"
+    )
+    # Without a shop name it keeps the first shop-opening option.
+    assert shop_owners.shop_option_for(7663, npcs)["option"] == "Trade"
+
+
 def test_shops_items_by_shop_schema_validation():
     """Validate shops-items-by-shop.json against schema."""
     # Read in the shops-items-by-shop schema file
