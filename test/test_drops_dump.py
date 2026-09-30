@@ -88,6 +88,18 @@ def test_npc_ids_come_from_the_infobox():
     assert tables[0].npc_ids == [123, 124]
 
 
+def test_multi_infobox_pages_merge_bare_and_versioned_ids():
+    """A page whose infoboxes mix id styles still yields every id."""
+    wikitext = (
+        "{{Infobox Monster|version1=1|id1=100|version2=2|id2=101}}\n"
+        "{{Infobox Monster|id=102}}\n"
+        "==Drops==\n"
+        "{{DropsLine|name=Bones|quantity=1|rarity=Always}}\n"
+    )
+    tables = drops_wikitext.parse_all_drop_tables(wikitext)
+    assert tables[0].npc_ids == [100, 101, 102]
+
+
 def test_table_identity():
     """Table naming follows the wiki page, not the npc."""
     table = _table()
