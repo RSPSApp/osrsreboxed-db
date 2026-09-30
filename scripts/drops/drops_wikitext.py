@@ -920,21 +920,23 @@ def _npc_infobox_source(wikitext: str) -> str:
 
 
 def parse_npc_ids(wikitext: str) -> List[int]:
-    """Read every npc id declared in a page's monster infobox."""
+    """Read every npc id declared in a page's monster infobox.
+
+    Multi Infobox pages mix styles: one infobox may number its ids (``id1``,
+    ``id2``) while another on the same page uses a bare ``id``, so both forms
+    are collected.
+    """
     infobox = _npc_infobox_source(wikitext)
     if not infobox.strip():
         return []
-    versioned = [
+    ids = [
         npc_id
         for match in VERSIONED_ID_FIELD.finditer(infobox)
         for npc_id in _parse_id_list(match.group(2))
     ]
-    if versioned:
-        return sorted(set(versioned))
-    bare = BARE_ID_FIELD.search(infobox)
-    if not bare:
-        return []
-    return sorted(set(_parse_id_list(bare.group(1))))
+    for match in BARE_ID_FIELD.finditer(infobox):
+        ids.extend(_parse_id_list(match.group(1)))
+    return sorted(set(ids))
 
 
 def has_non_numeric_npc_id(wikitext: str) -> bool:
