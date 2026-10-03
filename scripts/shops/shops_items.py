@@ -41,15 +41,143 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Load items for ID lookup
-ITEMS = [item for item in items_api.load() if not item.duplicate and not item.stacked]
-# Build lookup dicts for performance
-ITEMS_BY_WIKI_NAME = {item.wiki_name: item.id for item in ITEMS if item.wiki_name}
-ITEMS_BY_NAME = {item.name: item.id for item in ITEMS}
-ITEMS_BY_NAME_LOWER = {item.name.lower(): item.id for item in ITEMS}
-ITEMS_BY_WIKI_NAME_LOWER = {
-    item.wiki_name.lower(): item.id for item in ITEMS if item.wiki_name
-}
+# Shops stock one version of a wiki page, and a StoreLine only names the page.
+# Prefer the version a shop sells over event, minigame and other variants.
+SHOP_VERSIONS = (
+    "Normal",
+    "Regular",
+    "Inventory",
+    "Reward",
+    "Closed",
+    "Unlit",
+    "Empty",
+    "Uncharged",
+    "Unfocused",
+    "Apron off",
+)
+_VERSION_RANK = {version.lower(): rank for rank, version in enumerate(SHOP_VERSIONS)}
+
+
+def normalize_item_name(name: str) -> str:
+    """Lower-case, collapse whitespace, and match both qualifier styles.
+
+    The wiki writes variant qualifiers either as one comma list,
+    "Page (A, green)", or as nested groups, "Page (A) (Green)"; the item
+    database uses the nested form.
+    """
+    name = re.sub(r"\s+", " ", name.strip().lower())
+
+    def nested(match):
+        parts = [part.strip() for part in match.group(1).split(",")]
+        return "".join(f" ({part})" for part in parts if part)
+
+    return re.sub(r"\s+", " ", re.sub(r"\(([^()]*)\)", nested, name))
+
+
+def _page_and_version(wiki_name: str):
+    """Split "Page (Version)" into ("Page", "Version"); no version gives None."""
+    match = re.match(r"^(.*) \(([^()]*)\)$", wiki_name.strip())
+    if not match:
+        return wiki_name.strip(), None
+    return match.group(1), match.group(2)
+
+
+def _build_item_maps(items):
+    """Index items by name and by wiki page, choosing the stocked version.
+
+    Items whose wiki name is exactly a shop's key win outright. Where only a
+    versioned wiki name exists, the page index picks the version a shop sells
+    (see SHOP_VERSIONS), then the tradeable item, then the lowest ID. So
+    "Small fishing net" is the regular 303, not Evil Bob's 6209.
+
+    :param items: Item database entries.
+    :return: (wiki name, page, plain name) indexes, each normalized -> item ID.
+    """
+    ranked = sorted(
+        items,
+        key=lambda item: (
+            _VERSION_RANK.get(
+                (_page_and_version(item.wiki_name or "")[1] or "").lower(),
+                len(SHOP_VERSIONS),
+            ),
+            not item.tradeable_on_ge,
+            item.id,
+        ),
+    )
+    wiki_names = {}
+    pages = {}
+    names = {}
+    for item in ranked:
+        if item.name:
+            names.setdefault(normalize_item_name(item.name), item.id)
+        if not item.wiki_name:
+            continue
+        page, version = _page_and_version(item.wiki_name)
+        wiki_names.setdefault(normalize_item_name(item.wiki_name), item.id)
+        if version:
+            pages.setdefault(normalize_item_name(page), item.id)
+    return wiki_names, pages, names
+
+
+ITEMS = [
+    item
+    for item in items_api.load()
+    if not item.duplicate
+    and not item.noted
+    and not item.placeholder
+    and not item.stacked
+]
+ITEM_WIKI_NAMES, ITEM_PAGES, ITEM_NAMES = _build_item_maps(ITEMS)
+
+
+def item_id_lookup(name: str, bucketname: str = None):
+    """Resolve a store line to the item the shop stocks.
+
+    :param name: The StoreLine's name, as written on the wiki.
+    :param bucketname: The wiki's exact variant anchor when the row sells one
+        version of a shared page, e.g. "Bag full of gems#Stardust".
+    :return: The item ID, or None when nothing matches.
+    """
+    keys = [key.strip() for key in (bucketname, name) if key and key.strip()]
+    bases = {}
+    for key in keys:
+        base, _, anchor = key.partition("#")
+        bases[key] = base.strip()
+        forms = []
+        if anchor:
+            # Version anchors are stored with or without their own brackets.
+            anchor = anchor.strip()
+            forms.append(
+                f"{base.strip()} {anchor}"
+                if anchor.startswith("(")
+                else f"{base.strip()} ({anchor})"
+            )
+        forms.append(key)
+        for form in forms:
+            item_id = ITEM_WIKI_NAMES.get(normalize_item_name(form))
+            if item_id is not None:
+                return item_id
+    # An exact item name beats a page version: "Abyssal lantern" is the unlit
+    # 26822, not the "Abyssal lantern (normal logs)" 26824. The StoreLine's own
+    # name is checked before a bucketname's page, so "Bronze spear(kp)" is the
+    # karambwan-poisoned 3170, not the base page's 1237.
+    ordered = [name.strip()] + [key for key in keys if key != name.strip()]
+    for key in ordered:
+        item_id = ITEM_NAMES.get(normalize_item_name(bases[key]))
+        if item_id is not None:
+            return item_id
+    for key in ordered:
+        item_id = ITEM_PAGES.get(normalize_item_name(bases[key]))
+        if item_id is not None:
+            return item_id
+    # A store line can also name an item family, e.g. "Twisted Relic Hunter
+    # (T1)" is the "Twisted relic hunter (t1) armour set".
+    prefix = normalize_item_name((bucketname or name).partition("#")[0]) + " "
+    if prefix.strip():
+        for wiki_name, item_id in ITEM_WIKI_NAMES.items():
+            if wiki_name.startswith(prefix):
+                return item_id
+    return None
 
 
 def fetch() -> None:
@@ -329,7 +457,7 @@ def parse_shop_items(shop_name: str, wikitext: str) -> list:
     for template_name, params_str in templates:
         item_data = parse_storeline_params(params_str)
         if item_data and "name" in item_data and item_data["name"]:
-            item_id = item_id_lookup(item_data["name"])
+            item_id = item_id_lookup(item_data["name"], item_data.get("bucketname"))
             if item_id is not None:
                 stock = item_data.get("stock")
                 if stock is not None:
@@ -465,32 +593,6 @@ def parse_storeline_params(params_str: str) -> dict:
             params["name"] = match.group(1).strip()
 
     return params
-
-
-def item_id_lookup(name: str):
-    """Look up item ID by name using fast dicts."""
-    if not name:
-        return None
-    name = name.strip()
-    # Try exact wiki name match
-    if name in ITEMS_BY_WIKI_NAME:
-        return ITEMS_BY_WIKI_NAME[name]
-    # Try exact name match
-    if name in ITEMS_BY_NAME:
-        return ITEMS_BY_NAME[name]
-    # Try case-insensitive match
-    name_lower = name.lower()
-    if name_lower in ITEMS_BY_NAME_LOWER:
-        return ITEMS_BY_NAME_LOWER[name_lower]
-    if name_lower in ITEMS_BY_WIKI_NAME_LOWER:
-        return ITEMS_BY_WIKI_NAME_LOWER[name_lower]
-    for item_name_lower in ITEMS_BY_NAME_LOWER:
-        if item_name_lower.startswith(name_lower):
-            return ITEMS_BY_NAME_LOWER[item_name_lower]
-    for wiki_name_lower in ITEMS_BY_WIKI_NAME_LOWER:
-        if wiki_name_lower.startswith(name_lower):
-            return ITEMS_BY_WIKI_NAME_LOWER[wiki_name_lower]
-    return None
 
 
 def _owner_shop_option(owner: dict, npc_options: dict, shop_name: str = None) -> dict:

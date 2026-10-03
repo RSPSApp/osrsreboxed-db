@@ -70,9 +70,12 @@ def test_parse_shop_owners_dedupes_shared_owners():
         {"name": "Aya", "wiki_page": "Aya"},
     ]
 
+
 def test_shop_option_prefers_the_option_named_by_the_shop():
     npcs = {"7663": {"4": "Trade", "5": "Rewards"}}
-    assert shop_owners.shop_option_for(7663, npcs, "Slayer Rewards")["option"] == "Rewards"
+    assert (
+        shop_owners.shop_option_for(7663, npcs, "Slayer Rewards")["option"] == "Rewards"
+    )
     assert (
         shop_owners.shop_option_for(7663, npcs, "Slayer Equipment (shop)")["option"]
         == "Trade"
@@ -240,3 +243,46 @@ def test_no_shop_exports_a_currency_override():
         if "currency" in item
     ]
     assert not overrides, f"unexpected per-item currency: {overrides}"
+
+
+def test_shop_items_resolve_shared_names_to_the_stocked_version():
+    """Where items share a plain name, the one a shop stocks wins: the
+    tradeable or normal version, not an event or minigame variant."""
+    assert shops_items.item_id_lookup("Small fishing net") == 303
+    assert shops_items.item_id_lookup("Cake") == 1891
+    assert shops_items.item_id_lookup("Saradomin banner") == 11891
+    assert shops_items.item_id_lookup("Decorative boots (gold)") == 25171
+    assert shops_items.item_id_lookup("Ectophial") == 4252
+    # A name the database carries exactly beats the page's stock version.
+    assert shops_items.item_id_lookup("Abyssal lantern") == 26822
+    assert shops_items.item_id_lookup("Bronze spear(kp)") == 3170
+    # The wiki writes " (A, green)"; the database writes " (A) (Green)".
+    assert (
+        shops_items.item_id_lookup("Wyrmscraig villager robe top (A, green)") == 33884
+    )
+
+
+def test_shop_items_use_the_bucketname_anchor():
+    """A bucket name pins one version of a shared page, e.g. the stardust bag."""
+    assert (
+        shops_items.item_id_lookup("Bag full of gems", "Bag full of gems#Stardust")
+        == 25537
+    )
+    assert (
+        shops_items.item_id_lookup(
+            "Bag full of gems", "Bag full of gems#Golden nuggets"
+        )
+        == 19473
+    )
+    assert shops_items.item_id_lookup("Fungicide spray", "Fungicide spray#10") == 7421
+    # Without the anchor the plain name still resolves to a version.
+    assert shops_items.item_id_lookup("Bag full of gems") == 19473
+
+
+def test_parse_shop_items_reads_the_bucketname():
+    wikitext = """{{StoreTableHead|sellmultiplier=1000}}
+{{StoreLine|name=Bag full of gems|bucketname=Bag full of gems#Stardust|stock=100|restock=1}}
+{{StoreTableBottom}}
+"""
+    items = shops_items.parse_shop_items("Dusuri's Star Shop", wikitext)
+    assert [item["id"] for item in items] == [25537]
