@@ -43,7 +43,55 @@
                       },
                       {
                         "type": "choice",
-                        "options": []
+                        "options": [
+                          {
+                            "text": "Where can I find those?",
+                            "steps": [
+                              {
+                                "player": "Where can I find those?"
+                              },
+                              {
+                                "type": "line",
+                                "speaker": "Doric",
+                                "text": "You'll be able to find all those ores in the rocks just inside the Dwarven Mine. Head east from here and you'll find the entrance in the side of Ice Mountain."
+                              },
+                              {
+                                "type": "condition",
+                                "text": "If the player does not have 15 Mining:",
+                                "steps": [
+                                  {
+                                    "player": "But I'm not a good enough miner to get iron ore."
+                                  },
+                                  {
+                                    "type": "line",
+                                    "speaker": "Doric",
+                                    "text": "Oh well, you could practice mining until you can. Can't beat a bit of mining - it's a useful skill. Failing that, you might be able to find a more experienced adventurer to buy the iron ore off."
+                                  },
+                                  {
+                                    "type": "jump",
+                                    "reference": "continues",
+                                    "id": "Ebu5Nk"
+                                  }
+                                ],
+                                "id": "8Tgk_i"
+                              },
+                              {
+                                "type": "end"
+                              }
+                            ]
+                          },
+                          {
+                            "text": "Certainly, I'll be right back!",
+                            "steps": [
+                              {
+                                "player": "Certainly, I'll be right back!"
+                              },
+                              {
+                                "type": "end"
+                              }
+                            ]
+                          }
+                        ]
                       },
                       {
                         "type": "condition",

@@ -1598,6 +1598,110 @@
         "type": "choice",
         "options": [
           {
+            "text": "I'm after a statue that was thrown down here."
+          },
+          {
+            "text": "Maybe I can make a deal for it?",
+            "steps": [
+              {
+                "player": "Maybe I can make a deal for the statuette?"
+              },
+              {
+                "type": "line",
+                "speaker": "Genie",
+                "text": "Hmm a deal eh? I think we can come to some sort of arrangement. I'll give you the valuable statuette in return for, let me think ...."
+              },
+              {
+                "type": "line",
+                "speaker": "Genie",
+                "text": "How about I give you the statue in exchange for the sole of the mayor of Nardah?"
+              },
+              {
+                "type": "choice",
+                "options": [
+                  {
+                    "text": "Isn't that a little harsh?",
+                    "steps": [
+                      {
+                        "player": "Isn't that a little harsh?"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Genie",
+                        "text": "I wouldn't have said so. It seems a perfectly reasonable thing to request to me. I can think of many things a lot worse I could have asked for."
+                      },
+                      {
+                        "type": "jump",
+                        "reference": "previous",
+                        "id": "xAzmDP"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "How am I meant to remove someone's soul?",
+                    "steps": [
+                      {
+                        "player": "How am I meant to remove someone's soul?"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Genie",
+                        "text": "Oh that's easy. In my experience soles are very easy to remove with just a knife."
+                      },
+                      {
+                        "type": "jump",
+                        "reference": "previous",
+                        "id": "k0dQwx"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Ok I agree to the deal.",
+                    "steps": [
+                      {
+                        "player": "Ok I agree to the deal."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "No way am I agreeing to that.",
+                    "steps": [
+                      {
+                        "player": "No way am I agreeing to that."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Genie",
+                        "text": "Ah well it's your loss. No sole, then no statuette."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "I'm not sure they know you're down here.",
+            "steps": [
+              {
+                "player": "I'm not sure they know you're down here."
+              },
+              {
+                "type": "line",
+                "speaker": "Genie",
+                "text": "Silence cur! They fear and respect me and that's an end to it."
+              },
+              {
+                "player": "Maybe I can make a deal for the statuette?"
+              },
+              {
+                "type": "jump",
+                "reference": "above",
+                "id": "nczz6o"
+              }
+            ]
+          },
+          {
             "text": "You're a genie, grant me a wish.",
             "steps": [
               {

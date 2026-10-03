@@ -3874,6 +3874,11 @@
         "type": "choice",
         "options": [
           {
+            "text": "I seem to have lost the scroll you gave me; could I have another?",
+            "condition": "If player has lost the spell scroll:",
+            "id": "M3q2hb"
+          },
+          {
             "text": "What did I need for the spell to work?",
             "steps": [
               {
@@ -4215,6 +4220,113 @@
       {
         "type": "choice",
         "options": [
+          {
+            "text": "Tell me about the training ground.",
+            "steps": [
+              {
+                "player": "Tell me about the training ground."
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "Only melee combat is allowed within the training grounds. Merlin will prevent the use of Prayer, Ranged and Magic."
+              },
+              {
+                "player": "Why?"
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "These grounds are for only the best knights of the land. It is not just testing your combat ability, but your honour and your chivalry. You must face your enemy head on, honourably and bravely."
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "Be watchful of your stats, as the Knights can do damage to your combat stats as well as your hitpoints."
+              }
+            ]
+          },
+          {
+            "text": "Tell me about dying or leaving the grounds.",
+            "steps": [
+              {
+                "player": "Tell me about dying or leaving the grounds."
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "As these are only training grounds, we keep our knights safe. If you should die, you will be teleported back to here and all of your items will be safe."
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "However, leaving the training grounds, in anyway, will mean you will have to start from the beginning the next time you enter. These grounds do not favour cowards."
+              },
+              {
+                "player": "I have to start again? What do you mean?"
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "You fight each knight of the Round Table, starting with Sir Bedivere and finishing with Sir Lancelot. Leaving means you will have to begin fighting Sir Bedivere again and work your way back up."
+              },
+              {
+                "player": "What if I log out during the fights?"
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "If you log out during a fight, upon logging back in you will fight the knight you were fighting when you logged out."
+              }
+            ]
+          },
+          {
+            "text": "Tell me about the rewards.",
+            "steps": [
+              {
+                "player": "Tell me about the rewards."
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "King Arthur believes in rewarding his knights for their chivalry. Having proven yourself in combat against his knights, and in your services rendered to Camelot, you will be rewarded with two new prayers, and a new"
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "respawn at Camelot, as well as 20,000 XP in to each of your combat stats."
+              },
+              {
+                "player": "What do the new prayers do?"
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "Ah, patience is a virtue in knights, my lord. Fight in the training ground and earn your reward to find out!"
+              },
+              {
+                "player": "Then tell me about the respawn - how will it work?"
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "Ah, Merlin has offered, as a reward for your help, to let your respawn in the safety of Camelot, should you befall misfortune elsewhere in the world. Should you wish to change your respawn back to Lumbridge, simply"
+              },
+              {
+                "type": "line",
+                "speaker": "Squire",
+                "text": "speak to Merlin."
+              }
+            ]
+          },
+          {
+            "text": "No, thank you.",
+            "steps": [
+              {
+                "player": "No, thank you."
+              }
+            ]
+          },
           {
             "text": "No, thank you.",
             "steps": [

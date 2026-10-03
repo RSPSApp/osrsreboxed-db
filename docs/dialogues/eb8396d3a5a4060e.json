@@ -95,7 +95,47 @@
                   {
                     "type": "choice",
                     "prompt": "Which bone weapon do you want?",
-                    "options": []
+                    "options": [
+                      {
+                        "text": "Bone mace.",
+                        "steps": [
+                          {
+                            "npc": "Okay, I'll make you the Bone mace."
+                          },
+                          {
+                            "type": "message",
+                            "text": "Aldo handed the Bone mace to you.",
+                            "id": "DjNi9G"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Bone shortbow.",
+                        "steps": [
+                          {
+                            "npc": "Okay, I'll make you the Bone shortbow."
+                          },
+                          {
+                            "type": "message",
+                            "text": "Aldo handed the Bone shortbow to you.",
+                            "id": "-9Furo"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Bone staff.",
+                        "steps": [
+                          {
+                            "npc": "Okay, I'll make you the Bone staff."
+                          },
+                          {
+                            "type": "message",
+                            "text": "Aldo handed the Bone staff to you.",
+                            "id": "xYE4nK"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "id": "NW0qzi"

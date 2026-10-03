@@ -49,7 +49,36 @@
               {
                 "type": "choice",
                 "prompt": "Start the Sins of the Father quest?",
-                "options": []
+                "options": [
+                  {
+                    "text": "Yes.",
+                    "steps": [
+                      {
+                        "type": "jump",
+                        "reference": "continue",
+                        "id": "__4SEZ"
+                      }
+                    ],
+                    "hook": "quest:sins-of-the-father:start",
+                    "quest": "Sins of the Father"
+                  },
+                  {
+                    "text": "No.",
+                    "steps": [
+                      {
+                        "player": "Actually, I'm a bit busy right now. Maybe later."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Veliaf Hurtz",
+                        "text": "Very well, friend. Myreque prevail."
+                      },
+                      {
+                        "type": "end"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "id": "SGj1He"

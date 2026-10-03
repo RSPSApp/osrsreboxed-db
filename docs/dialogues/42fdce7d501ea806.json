@@ -31,7 +31,139 @@
               },
               {
                 "type": "random",
-                "options": []
+                "options": [
+                  {
+                    "text": "Dialogue 1",
+                    "steps": [
+                      {
+                        "npc": "Me, forget? Never! I still hear the ringing in my head when I go to sleep sometimes!"
+                      },
+                      {
+                        "player": "From the rolling pin and saucepan?"
+                      },
+                      {
+                        "npc": "Yes, it was surprisingly loud doing that."
+                      },
+                      {
+                        "player": "I don't know if it is that surprising. You were banging a metal saucepan on your head!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 2",
+                    "steps": [
+                      {
+                        "npc": "Hello dearie, of course I remember it!"
+                      },
+                      {
+                        "npc": "I dream about it sometimes, especially sneaking into the Blue Moon Inn kitchens for the rolling pin and saucepan!"
+                      },
+                      {
+                        "npc": "Although probably best I don't do that again, I still feel bad for the chef."
+                      },
+                      {
+                        "player": "Yes, probably best we don't!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 3",
+                    "steps": [
+                      {
+                        "npc": "I don't only remember it, I remember it fondly, I loved it!"
+                      },
+                      {
+                        "player": "It was a good adventure wasn't it!"
+                      },
+                      {
+                        "npc": "Yes, very. I'm so happy that you picked me to help you."
+                      },
+                      {
+                        "player": "I couldn't have picked anyone else, you were the perfect accomplice!"
+                      },
+                      {
+                        "npc": "Thank you, dearie!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 4",
+                    "steps": [
+                      {
+                        "npc": "Of course dearie! How could I ever forget it? I had such a great time."
+                      },
+                      {
+                        "npc": "Are you still adventuring?"
+                      },
+                      {
+                        "player": "I am doing my best to adventure. There are just so many things to do!"
+                      },
+                      {
+                        "npc": "Well keep it up, don't let an old lady like me distract you. I've had my fill of adventure now!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 5",
+                    "steps": [
+                      {
+                        "npc": "There is no way I could forget it. Thank you for letting me come on such an adventure!"
+                      },
+                      {
+                        "player": "It was my pleasure, maybe we could do it again some day!"
+                      },
+                      {
+                        "npc": "That would be lovely dearie, but maybe we go on one that doesn't involve climbing trees?"
+                      },
+                      {
+                        "npc": "I'm getting a bit old for that!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 6",
+                    "condition": "If the player is wearing the ugly halloween jumper:",
+                    "steps": [
+                      {
+                        "npc": "How could I not? It was amazing! I see you're still wearing that jumper I knitted you."
+                      },
+                      {
+                        "player": "It's lovely, very versatile. Even keeps me warm in the coldest of places!"
+                      },
+                      {
+                        "npc": "That is good to hear. Do you have a favourite way to wear it?"
+                      },
+                      {
+                        "type": "choice",
+                        "options": [
+                          {
+                            "text": "Orange.",
+                            "steps": [
+                              {
+                                "player": "I like the orange version the best!"
+                              },
+                              {
+                                "npc": "I like it too! It reminds me of pumpkins and spooky things, just like our adventure!"
+                              }
+                            ]
+                          },
+                          {
+                            "text": "Black.",
+                            "steps": [
+                              {
+                                "player": "I like the black version the best!"
+                              },
+                              {
+                                "npc": "I like it too! It's pretty scary looking, just like how we saw Death in our adventure!"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "_m7T1G"
+                  }
+                ]
               }
             ]
           }

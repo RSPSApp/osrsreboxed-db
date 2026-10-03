@@ -19,7 +19,98 @@
               },
               {
                 "type": "random",
-                "options": []
+                "options": [
+                  {
+                    "text": "Dialogue 1",
+                    "steps": [
+                      {
+                        "type": "message",
+                        "text": "Oldak lectures you on the construction of runes and you find yourself thinking about Runecrafting with greater clarity.",
+                        "id": "1YoCiF"
+                      },
+                      {
+                        "player": "Oh, I see!"
+                      },
+                      {
+                        "type": "jump",
+                        "reference": "other",
+                        "id": "JV2sRT"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 2",
+                    "steps": [
+                      {
+                        "type": "message",
+                        "text": "Oldak lectures you on the magical energies stored within runes and you find yourself thinking about Magic with greater clarity.",
+                        "id": "mfygUb"
+                      },
+                      {
+                        "player": "Oh, I see!"
+                      },
+                      {
+                        "type": "jump",
+                        "reference": "other",
+                        "id": "icl75G"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 3",
+                    "steps": [
+                      {
+                        "type": "message",
+                        "text": "Oldak lapses into technical jargon and you don't understand a word.",
+                        "id": "Aoyy8g"
+                      },
+                      {
+                        "player": "Oh... How interesting."
+                      },
+                      {
+                        "type": "jump",
+                        "reference": "other",
+                        "id": "xpcEIF"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 4",
+                    "steps": [
+                      {
+                        "type": "message",
+                        "text": "Oldak lectures you on the contruction of runes, but you find yourself greatly confused about Runecrafting.",
+                        "id": "o5zM8C"
+                      },
+                      {
+                        "player": "What?"
+                      },
+                      {
+                        "type": "jump",
+                        "reference": "other",
+                        "id": "M6StK0"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 5",
+                    "steps": [
+                      {
+                        "type": "message",
+                        "text": "Oldak lectures you on the magical energies stored within runes, but you find yourself greatly confused about Magic.",
+                        "id": "qWNK0w"
+                      },
+                      {
+                        "player": "What?"
+                      },
+                      {
+                        "type": "jump",
+                        "reference": "other",
+                        "id": "vr_NC5"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },

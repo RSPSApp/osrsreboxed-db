@@ -243,7 +243,40 @@
               {
                 "type": "choice",
                 "prompt": "How do you want to handle picking up ammo?",
-                "options": []
+                "options": [
+                  {
+                    "text": "Automatically equip it.",
+                    "steps": [
+                      {
+                        "npc": "There you go! Your ammo will now automatically be equipped when you pick it up."
+                      },
+                      {
+                        "npc": "Is there anything else you want to know?"
+                      },
+                      {
+                        "type": "jump",
+                        "reference": "initial",
+                        "id": "5ag9GO"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Place it in my inventory.",
+                    "steps": [
+                      {
+                        "npc": "There you go! Your ammo will now go to your inventory when you pick it up."
+                      },
+                      {
+                        "npc": "Is there anything else you want to know?"
+                      },
+                      {
+                        "type": "jump",
+                        "reference": "initial",
+                        "id": "uxt1Xw"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },

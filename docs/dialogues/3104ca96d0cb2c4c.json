@@ -72,7 +72,38 @@
               },
               {
                 "type": "choice",
-                "options": []
+                "options": [
+                  {
+                    "text": "Who are you?",
+                    "steps": [
+                      {
+                        "type": "jump",
+                        "reference": "above",
+                        "id": "54RXkG"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "So what are master clue scrolls anyway?",
+                    "steps": [
+                      {
+                        "type": "jump",
+                        "reference": "below",
+                        "id": "d1SemM"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Goodbye.",
+                    "steps": [
+                      {
+                        "type": "jump",
+                        "reference": "below",
+                        "id": "Dq60hG"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -96,7 +127,38 @@
               },
               {
                 "type": "choice",
-                "options": []
+                "options": [
+                  {
+                    "text": "Who are you?",
+                    "steps": [
+                      {
+                        "type": "jump",
+                        "reference": "above",
+                        "id": "o6_8cu"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "So what are master clue scrolls anyway?",
+                    "steps": [
+                      {
+                        "type": "jump",
+                        "reference": "below",
+                        "id": "u5ayX7"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Goodbye.",
+                    "steps": [
+                      {
+                        "type": "jump",
+                        "reference": "below",
+                        "id": "zF8iwH"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },

@@ -57,6 +57,28 @@
         "prompt": "Start the Rum Deal quest?",
         "options": [
           {
+            "text": "Yes.",
+            "hook": "quest:rum-deal:start",
+            "quest": "Rum Deal"
+          },
+          {
+            "text": "Of course, I fear no demon!"
+          },
+          {
+            "text": "Not a chance, this sounds too dangerous.",
+            "steps": [
+              {
+                "player": "Not a chance, this sounds too dangerous."
+              },
+              {
+                "npc": "Look, I think I'll wait here for someone a little more... you know..."
+              },
+              {
+                "npc": "...heroic."
+              }
+            ]
+          },
+          {
             "text": "No.",
             "steps": [
               {
@@ -88,7 +110,14 @@
       },
       {
         "type": "choice",
-        "options": []
+        "options": [
+          {
+            "text": "Because I came to offer to help."
+          },
+          {
+            "text": "No reason."
+          }
+        ]
       }
     ],
     "starting-rum-deal-talking-to-pirate-after-asking-him-for-a-reward": [

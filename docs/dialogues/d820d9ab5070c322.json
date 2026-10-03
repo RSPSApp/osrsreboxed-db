@@ -1397,7 +1397,193 @@
       },
       {
         "type": "choice",
-        "options": []
+        "options": [
+          {
+            "text": "What tunnel?",
+            "steps": [
+              {
+                "player": "What tunnel?"
+              },
+              {
+                "type": "line",
+                "speaker": "Anna Jones",
+                "text": "Why, the Chaos Tunnel of course! I imagine Surok will have told you of it."
+              },
+              {
+                "player": "Oh, I see. Well, what can you tell me about it?"
+              },
+              {
+                "type": "line",
+                "speaker": "Anna Jones",
+                "text": "Well, story and rumour has it that the Dagon'hai built a tunnel here under the statue of Saradomin that would allow them to visit the Chaos Altar without having to go through the Wilderness."
+              },
+              {
+                "player": "That's extremely handy!"
+              },
+              {
+                "type": "line",
+                "speaker": "Anna Jones",
+                "text": "Yes, it is. Or, at least, it would be. Unfortunately, I haven't been able to get in there so far."
+              },
+              {
+                "player": "Why not?"
+              },
+              {
+                "type": "line",
+                "speaker": "Anna Jones",
+                "text": "The tunnel entrance needs to be cleared before anyone can get in there. However, my Mining skill isn't high enough at all to do it myself. Perhaps you could have a go?"
+              },
+              {
+                "type": "jump",
+                "reference": "previous",
+                "id": "VjQ3Lz"
+              }
+            ]
+          },
+          {
+            "text": "Sorry, who are you?",
+            "steps": [
+              {
+                "player": "Sorry, who are you?"
+              },
+              {
+                "type": "line",
+                "speaker": "Anna Jones",
+                "text": "My name is Louisiana Jones, although most people call me Anna. I'm an archaeologist."
+              },
+              {
+                "player": "Pleased to meet you."
+              },
+              {
+                "type": "line",
+                "speaker": "Anna Jones",
+                "text": "Likewise!"
+              },
+              {
+                "type": "choice",
+                "options": [
+                  {
+                    "text": "What tunnel were you talking about?",
+                    "steps": [
+                      {
+                        "type": "jump",
+                        "reference": "above",
+                        "id": "e2R2MW"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Who does this statue represent?",
+                    "steps": [
+                      {
+                        "player": "Who does this statue represent?"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Anna Jones",
+                        "text": "That, my dear, is the statue of the great god Saradomin himself. Stand and admire in awe for you are in the presence of greatness!"
+                      },
+                      {
+                        "player": "Consider me awed!"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Anna Jones",
+                        "text": "Indeed!"
+                      },
+                      {
+                        "type": "jump",
+                        "reference": "previous",
+                        "id": "Om7pOx"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Why are you here?",
+                    "steps": [
+                      {
+                        "player": "What are you doing here?"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Anna Jones",
+                        "text": "Well story and rumour has it that the Dagon'hai built a tunnel under this statue of Saradomin that would allow them to visit the Chaos Altar without having to go through the Wilderness."
+                      },
+                      {
+                        "player": "That's extremely handy!"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Anna Jones",
+                        "text": "Yes, it is. Or, at least, it would be. I came to excavate the tunnel but, unfortunately, there so far."
+                      },
+                      {
+                        "player": "Why not?"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Anna Jones",
+                        "text": "The tunnel entrance needs to be cleared before anyone can get in there. However, my Mining skill just isn't what it used to be. Perhaps you could have a go?"
+                      },
+                      {
+                        "player": "Maybe. I might do."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Okay, I'd better go.",
+                    "steps": [
+                      {
+                        "player": "Okay, I'd better go."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Anna Jones",
+                        "text": "Okay, then!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Who does this statue represent?",
+            "steps": [
+              {
+                "player": "Who does this statue represent?"
+              },
+              {
+                "type": "jump",
+                "reference": "above",
+                "id": "BEHHo_"
+              }
+            ]
+          },
+          {
+            "text": "What are you doing here?",
+            "steps": [
+              {
+                "player": "What are you doing here?"
+              },
+              {
+                "type": "jump",
+                "reference": "above",
+                "id": "ECScMu"
+              }
+            ]
+          },
+          {
+            "text": "Okay, I'd better go.",
+            "steps": [
+              {
+                "type": "jump",
+                "reference": "above",
+                "id": "pfrlnK"
+              }
+            ]
+          }
+        ]
       }
     ],
     "statue-of-saradomin-talking-to-anna-jones-before-digging-the-statue-of-saradomin-excavating-the-statue-after-talking-to-anna-jones": [

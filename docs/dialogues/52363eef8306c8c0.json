@@ -118,7 +118,40 @@
                           {
                             "type": "choice",
                             "prompt": "Do you wish to make a dragon hasta?",
-                            "options": []
+                            "options": [
+                              {
+                                "text": "Yes",
+                                "steps": [
+                                  {
+                                    "type": "action",
+                                    "text": "The player watches Otto smith on an anvil.",
+                                    "id": "Tukh06"
+                                  },
+                                  {
+                                    "type": "message",
+                                    "text": "Otto has created a dragon hasta.",
+                                    "id": "oiSk0l"
+                                  },
+                                  {
+                                    "type": "end"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "No",
+                                "steps": [
+                                  {
+                                    "player": "Actually, forget it."
+                                  },
+                                  {
+                                    "npc": "As you wish."
+                                  },
+                                  {
+                                    "type": "end"
+                                  }
+                                ]
+                              }
+                            ]
                           }
                         ],
                         "id": "OZ0Um8"

@@ -615,7 +615,11 @@
           {
             "type": "choice",
             "prompt": "Pay 200 Coins to have your tree chopped down?",
-            "options": []
+            "options": [
+              {
+                "text": "Yes."
+              }
+            ]
           },
           {
             "type": "end",

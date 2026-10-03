@@ -359,7 +359,11 @@
         "steps": [
           {
             "type": "choice",
-            "options": []
+            "options": [
+              {
+                "text": "I'm afraid I've lost the batta tin you gave to me."
+              }
+            ]
           }
         ],
         "id": "stkTxI"

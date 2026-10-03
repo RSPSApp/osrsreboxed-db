@@ -51,11 +51,66 @@
               },
               {
                 "type": "random",
-                "options": []
+                "options": [
+                  {
+                    "text": "Dialogue 1",
+                    "steps": [
+                      {
+                        "npc": "Sobbing*"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 2",
+                    "steps": [
+                      {
+                        "npc": "My parents are gonna be so mad!"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "random",
-                "options": []
+                "options": [
+                  {
+                    "text": "Dialogue 1",
+                    "steps": [
+                      {
+                        "type": "line",
+                        "speaker": "Wealthy citizen",
+                        "text": "Oh gosh!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 2",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "EtldbB"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 3",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "Et9NWj"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 3",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "rJvdOT"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "npc": "Silly me! I had it in my pocket all along!"
@@ -70,11 +125,82 @@
               },
               {
                 "type": "random",
-                "options": []
+                "options": [
+                  {
+                    "text": "Dialogue 1",
+                    "steps": [
+                      {
+                        "npc": "I can't stop crying!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 2",
+                    "steps": [
+                      {
+                        "npc": "Wahhhh!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 3",
+                    "steps": [
+                      {
+                        "npc": "I've lost my parents!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 4",
+                    "steps": [
+                      {
+                        "npc": "Sobbing*"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "random",
-                "options": []
+                "options": [
+                  {
+                    "text": "Dialoge 1",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "Et9NWj"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialoge 2",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "-o7KZf"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialoge 3",
+                    "steps": [
+                      {
+                        "type": "line",
+                        "speaker": "Wealthy citizen",
+                        "text": "Oh gosh!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 4",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "EtldbB"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "npc": "Oh you really brightened my day!"
@@ -89,11 +215,73 @@
               },
               {
                 "type": "random",
-                "options": []
+                "options": [
+                  {
+                    "text": "Dialoge 1",
+                    "steps": [
+                      {
+                        "npc": "I can't find my friends"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialoge 2",
+                    "steps": [
+                      {
+                        "npc": "I'm all alone!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 3",
+                    "steps": [
+                      {
+                        "npc": "I've lost my parents!"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "random",
-                "options": []
+                "options": [
+                  {
+                    "text": "Dialoge 1",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "rJvdOT"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialoge 2",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "EtldbB"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialoge 3",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "Et9NWj"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialoge 4",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "-o7KZf"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "npc": "I think I see my friends!!"
@@ -139,7 +327,28 @@
               },
               {
                 "type": "random",
-                "options": []
+                "options": [
+                  {
+                    "text": "Dialoge 1",
+                    "steps": [
+                      {
+                        "type": "line",
+                        "speaker": "Wealthy citizen",
+                        "text": "Who taught you to move like that?"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialoge 2",
+                    "steps": [
+                      {
+                        "type": "line",
+                        "speaker": "Wealthy citizen",
+                        "text": "I wish I had moves like that!"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "npc": "I'm all danced out!"
@@ -154,11 +363,74 @@
               },
               {
                 "type": "random",
-                "options": []
+                "options": [
+                  {
+                    "text": "Dialogue 1",
+                    "steps": [
+                      {
+                        "npc": "Gah! It hurts!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 2",
+                    "steps": [
+                      {
+                        "npc": "It burns like an inferno!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 2",
+                    "steps": [
+                      {
+                        "npc": "I think I've broken something!"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "random",
-                "options": []
+                "options": [
+                  {
+                    "text": "Dialogue 1",
+                    "steps": [
+                      {
+                        "type": "line",
+                        "speaker": "Wealthy citizen",
+                        "text": "Oh gosh!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialoge 2",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "-o7KZf"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 3",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "rJvdOT"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dialogue 4",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "EtldbB"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "npc": "Woah! My leg has healed!"
@@ -171,6 +443,36 @@
         "type": "line",
         "speaker": "Wealthy citizen",
         "text": "That was strange."
+      }
+    ]
+  },
+  "branches": {
+    "EtldbB": [
+      {
+        "type": "line",
+        "speaker": "Wealthy citizen",
+        "text": "What can I do?"
+      }
+    ],
+    "Et9NWj": [
+      {
+        "type": "line",
+        "speaker": "Wealthy citizen",
+        "text": "That's awful!"
+      }
+    ],
+    "rJvdOT": [
+      {
+        "type": "line",
+        "speaker": "Wealthy citizen",
+        "text": "I'll keep you company for a moment."
+      }
+    ],
+    "-o7KZf": [
+      {
+        "type": "line",
+        "speaker": "Wealthy citizen",
+        "text": "I hope you're okay."
       }
     ]
   }

@@ -13,7 +13,7 @@ a pattern is too tight.
 Template-derived slugs (opens/opens2/receives/gives) are exact and are not
 listed here.
 
-848 inferred steps, 2950 left as prose.
+852 inferred steps, 2953 left as prose.
 
 
 INFERRED condition  (182 steps, 88 distinct)
@@ -651,7 +651,7 @@ INFERRED open_interface  (256 steps, 120 distinct)
         target: Diary of Randas
         npcs:   Underground Pass
 
-INFERRED open_shop  (25 steps, 22 distinct)
+INFERRED open_shop  (26 steps, 23 distinct)
 ------------------------------------------------------------------------
   [  2] Ramarno's Shard Exchange opens.
         target: Ramarno's Shard Exchange
@@ -662,6 +662,9 @@ INFERRED open_shop  (25 steps, 22 distinct)
   [  2] Myreque's Rest opens.
         target: Myreque's Rest
         npcs:   The Blood Moon Rises, Veliaf Hurtz
+  [  1] Opens Mage Arena Staffs.
+        target: Mage Arena Staffs.
+        npcs:   Chamber guardian
   [  1] Elder Blunn's Spear and Shield Stall opens.
         target: Elder Blunn's Spear and Shield Stall
         npcs:   Elder Blunn
@@ -889,7 +892,7 @@ INFERRED slayer_task_tip  (9 steps, 9 distinct)
         target: Vannaka
         npcs:   Vannaka
 
-INFERRED teleport  (233 steps, 158 distinct)
+INFERRED teleport  (236 steps, 160 distinct)
 ------------------------------------------------------------------------
   [ 15] The player is teleported to the central chamber.
         npcs:   Song of the Elves
@@ -949,6 +952,8 @@ INFERRED teleport  (233 steps, 158 distinct)
         npcs:   Quiz Master
   [  2] The player is transported to Karamja.
         npcs:   Seaman Lorris, Seaman Thresnor
+  [  2] The player is transported to the "Maximum security prison" in Port Sarim.
+        npcs:   Shantay
   [  2] The player is teleported outside the Sorceress's house
         npcs:   Sorceress
   [  2] The player is teleported to the Meiyerditch mine.
@@ -1153,6 +1158,8 @@ INFERRED teleport  (233 steps, 158 distinct)
         npcs:   Horror from the Deep
   [  1] The player is teleported to the Goblin Cave.
         npcs:   Land of the Goblins
+  [  1] The player is transported out of the jungle, next to the foresters south of Shilo Village.
+        npcs:   Legends' Quest
   [  1] (Fade to black and the player is taken to Pirates' Cove.)
         npcs:   Lunar Diplomacy
   [  1] The player is transported back to the Tree Gnome Stronghold, south of the gnome ball field.
@@ -1209,7 +1216,7 @@ INFERRED teleport  (233 steps, 158 distinct)
         npcs:   Witch's House
 
 
-UNMATCHED  (2950 steps, 2083 distinct) -- still prose, no action key
+UNMATCHED  (2953 steps, 2084 distinct) -- still prose, no action key
 ------------------------------------------------------------------------
   [149] Congratulations! Quest complete!
         npcs:   A Kingdom Divided, A Porcine of Interest, A Ruff Situation, +138 more
@@ -1251,12 +1258,12 @@ UNMATCHED  (2950 steps, 2083 distinct) -- still prose, no action key
         npcs:   Below Ice Mountain, Beneath Cursed Sands, Dragon Slayer I, +3 more
   [ 12] (Non-quest dialogue.)
         npcs:   Song of the Elves, Tale of the Righteous, The Ascent of Arceuus, +3 more
+  [  9] The player enters the drift net fishing instance.
+        npcs:   Ceto
   [  9] Elkoy guides you through the maze.
         npcs:   Elkoy, Tree Gnome Village
   [  9] The guardian attacks the player.
         npcs:   Guardian of Armadyl, Temple of Ikov
-  [  8] The player enters the drift net fishing instance.
-        npcs:   Ceto
   [  8] (The Oneiromancer says a random replacement line.)
         npcs:   Lunar Diplomacy
   [  7] End of cutscene
@@ -1309,6 +1316,8 @@ UNMATCHED  (2950 steps, 2083 distinct) -- still prose, no action key
         npcs:   Daero, Monkey Madness I
   [  4] The player travels to the Ruins of Unkah.
         npcs:   Ferryman Sathwood
+  [  4] The player watches Otto smith on an anvil.
+        npcs:   Otto Godblessed
   [  4] Sune walks to the palace marketplace on the eastern bank of the Kelda.
         npcs:   Sune
   [  4] Sune walks back to the pickaxe shop.
@@ -1349,8 +1358,6 @@ UNMATCHED  (2950 steps, 2083 distinct) -- still prose, no action key
         npcs:   Nomad
   [  3] (The ogre guard pushes you back down the hill, stunning you and dealing 3 damage)
         npcs:   Ogre guard, Watchtower
-  [  3] The player watches Otto smith on an anvil.
-        npcs:   Otto Godblessed
   [  3] The player's logs are deposited.
         npcs:   Woodcutting Leprechaun
   [  3] The player heals the wounded soldier.
@@ -3843,6 +3850,8 @@ UNMATCHED  (2950 steps, 2083 distinct) -- still prose, no action key
         npcs:   Land of the Goblins
   [  1] The player enters the portal, arriving back at Oldak's lab.
         npcs:   Land of the Goblins
+  [  1] Same as "I've been sent by the Legends' Guild." above
+        npcs:   Legends' Quest
   [  1] The player is attacked.
         npcs:   Legends' Quest
   [  1] The player is knocked outside the fire wall and dealt a small amount of damage.

@@ -4625,7 +4625,28 @@
           {
             "type": "choice",
             "prompt": "Place some kindling on the statue?",
-            "options": []
+            "options": [
+              {
+                "text": "Yes.",
+                "steps": [
+                  {
+                    "type": "jump",
+                    "reference": "below",
+                    "id": "-UZlI-"
+                  }
+                ]
+              },
+              {
+                "text": "No.",
+                "steps": [
+                  {
+                    "type": "jump",
+                    "reference": "below",
+                    "id": "K1A_kB"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "id": "WUkMyZ"

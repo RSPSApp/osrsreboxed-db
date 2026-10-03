@@ -410,6 +410,30 @@
         "type": "choice",
         "options": [
           {
+            "text": "Okay, here's 200 numulites.",
+            "condition": "If the player has 200 numulites:",
+            "steps": [
+              {
+                "player": "Okay, here's 200 numulites."
+              },
+              {
+                "type": "action",
+                "action": "give",
+                "text": "200 numulites to Ceto",
+                "id": "RAzLnD"
+              },
+              {
+                "type": "action",
+                "text": "The player enters the drift net fishing instance.",
+                "id": "Ggdjx_"
+              },
+              {
+                "type": "end"
+              }
+            ],
+            "id": "07HZnc"
+          },
+          {
             "text": "Maybe another time.",
             "steps": [
               {

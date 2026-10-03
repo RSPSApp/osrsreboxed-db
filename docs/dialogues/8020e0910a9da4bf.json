@@ -1520,6 +1520,324 @@
         "type": "choice",
         "options": [
           {
+            "text": "I was hoping to attract the attention of a Kharazi tribe member."
+          },
+          {
+            "text": "I've been sent by the Legends' Guild.",
+            "steps": [
+              {
+                "player": "I've been sent by the Legends' Guild. We want to develop friendly relations with your people."
+              },
+              {
+                "type": "message",
+                "text": "Gujuo smiles and shakes your hand warmly.",
+                "id": "B9zXRh"
+              },
+              {
+                "type": "line",
+                "speaker": "Gujuo",
+                "text": "Very good, Bwana... this is indeed a friendly gesture. However, you've come at a bad time."
+              },
+              {
+                "type": "line",
+                "speaker": "Gujuo",
+                "text": "My people are scattered and in hiding."
+              },
+              {
+                "type": "choice",
+                "options": [
+                  {
+                    "text": "Can you get everyone together?",
+                    "steps": [
+                      {
+                        "player": "Can you get your people together?"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Gujuo",
+                        "text": "We normally meet regularly around our tribe's totem pole. Unfortunately, ours has been polluted by an evil spirit, and now we are all afraid to approach it."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Gujuo",
+                        "text": "We send our shaman, Ungadulu, to confront the spirit... but he has not returned."
+                      },
+                      {
+                        "type": "choice",
+                        "options": [
+                          {
+                            "text": "Is there any way I could help?",
+                            "steps": [
+                              {
+                                "player": "Is there any way I could help?"
+                              },
+                              {
+                                "type": "line",
+                                "speaker": "Gujuo",
+                                "text": "We could work together to make a new totem pole - but I'm afraid it won't be easy. We carve them from the trunk of the sacred Yommi tree."
+                              },
+                              {
+                                "type": "choice",
+                                "options": [
+                                  {
+                                    "text": "How do we make the totem pole?",
+                                    "steps": [
+                                      {
+                                        "player": "How do we make a totem pole?"
+                                      },
+                                      {
+                                        "type": "line",
+                                        "speaker": "Gujuo",
+                                        "text": "First we need to plant a sacred Yommi tree. It is a magical tree of great power. Our shaman, Ungadulu, is the only one trusted with the seeds."
+                                      },
+                                      {
+                                        "type": "line",
+                                        "speaker": "Gujuo",
+                                        "text": "And as I said, he hasn't returned from his mission. He was supposed to be communing with the spirits in some caves in the northwestern part of the jungle."
+                                      },
+                                      {
+                                        "type": "choice",
+                                        "options": [
+                                          {
+                                            "text": "I'll go find Ungadulu.",
+                                            "steps": [
+                                              {
+                                                "player": "I'll go find Ungadulu."
+                                              },
+                                              {
+                                                "type": "line",
+                                                "speaker": "Gujuo",
+                                                "text": "You mean it? That would be wonderful, Bwana! He was last seen in the northwestern part of the Kharazi Jungle, near the great cliffs. Look there, and you will see three rocks that form a triangle."
+                                              },
+                                              {
+                                                "type": "line",
+                                                "speaker": "Gujuo",
+                                                "text": "They mark the secret entrance to the caves where Ungadulu communes with the spirits. If you rescue him, he will surely entrust you with the Yommi tree seeds, and we can restore our totem."
+                                              },
+                                              {
+                                                "type": "line",
+                                                "speaker": "Gujuo",
+                                                "text": "I have to collect herbs now, Bwana..."
+                                              },
+                                              {
+                                                "type": "message",
+                                                "text": "Gujuo disappears into the Kharazi Jungle as swiftly as he appeared...",
+                                                "id": "EErDw0"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "text": "Oh well, sorry to hear about that.",
+                                            "steps": [
+                                              {
+                                                "player": "Oh well, sorry to hear about that."
+                                              },
+                                              {
+                                                "type": "line",
+                                                "speaker": "Gujuo",
+                                                "text": "That's okay, Bwana. Ungadulu has probably been torn apart by wild beasts, or driven mad by spirits... there's no point searching for him now."
+                                              },
+                                              {
+                                                "type": "line",
+                                                "speaker": "Gujuo",
+                                                "text": "If my people survive this calamity, it will be a miracle..."
+                                              },
+                                              {
+                                                "type": "choice",
+                                                "options": [
+                                                  {
+                                                    "text": "I'll go find Ungadulu.",
+                                                    "steps": [
+                                                      {
+                                                        "type": "jump",
+                                                        "reference": "above",
+                                                        "id": "vVVrcm"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "text": "That's rough, buddy. Well, thanks for the help!",
+                                                    "steps": [
+                                                      {
+                                                        "player": "Okay, thanks for your help."
+                                                      },
+                                                      {
+                                                        "type": "line",
+                                                        "speaker": "Gujuo",
+                                                        "text": "You're more than welcome, Bwana."
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "text": "If I find Ungadulu, what's in it for me?",
+                                                    "steps": [
+                                                      {
+                                                        "player": "If I find Ungadulu, what's in it for me?"
+                                                      },
+                                                      {
+                                                        "type": "line",
+                                                        "speaker": "Gujuo",
+                                                        "text": "Well, the Kharazi would be forever in your debt. Return our shaman, and we will certainly be able to establish friendly relations with your Legends' Guild."
+                                                      },
+                                                      {
+                                                        "type": "choice",
+                                                        "options": [
+                                                          {
+                                                            "text": "I'll go find Ungadulu.",
+                                                            "steps": [
+                                                              {
+                                                                "type": "jump",
+                                                                "reference": "above",
+                                                                "id": "NVSSWy"
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "text": "I'm lost, can you show me the way out?",
+                                                            "steps": [
+                                                              {
+                                                                "type": "jump",
+                                                                "reference": "below",
+                                                                "id": "Z5NnRr"
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "text": "I'm lost, can you show me the way out?",
+                                    "steps": [
+                                      {
+                                        "type": "jump",
+                                        "reference": "below",
+                                        "id": "diCQ_3"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "I'm lost, can you show me the way out?",
+                            "steps": [
+                              {
+                                "type": "jump",
+                                "reference": "below",
+                                "id": "s8Eh_t"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "I'm lost, can you show me the way out?",
+                    "steps": [
+                      {
+                        "player": "I'm lost, can you show me the way out?"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Gujuo",
+                        "text": "I can take you to the edge of the Kharazi Jungle. Shall we go now?"
+                      },
+                      {
+                        "type": "choice",
+                        "options": [
+                          {
+                            "text": "Yes please...",
+                            "steps": [
+                              {
+                                "player": "Yes Please..."
+                              },
+                              {
+                                "type": "line",
+                                "speaker": "Gujuo",
+                                "text": "Follow me..."
+                              },
+                              {
+                                "type": "message",
+                                "text": "Gujuo takes you out of the jungle...",
+                                "id": "xvFNdr"
+                              },
+                              {
+                                "type": "action",
+                                "text": "The player is transported out of the jungle, next to the foresters south of Shilo Village.",
+                                "action": "teleport",
+                                "action_source": "text",
+                                "id": "Ss9xRo"
+                              }
+                            ]
+                          },
+                          {
+                            "text": "No thanks...",
+                            "steps": [
+                              {
+                                "player": "No thanks..."
+                              },
+                              {
+                                "type": "line",
+                                "speaker": "Gujuo",
+                                "text": "As you wish... Again, Bwana, What is it that brings you to the Kharazi Jungle?"
+                              },
+                              {
+                                "type": "choice",
+                                "options": [
+                                  {
+                                    "text": "I want to develop friendly relations with your people.",
+                                    "steps": [
+                                      {
+                                        "type": "action",
+                                        "text": "Same as \"I've been sent by the Legends' Guild.\" above",
+                                        "id": "QqXaWs"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "text": "I'm lost, can you show me the way out?",
+                                    "steps": [
+                                      {
+                                        "type": "jump",
+                                        "reference": "above",
+                                        "id": "v3YlLL"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Sorry, it was a mistake?",
+            "steps": [
+              {
+                "type": "jump",
+                "reference": "below",
+                "id": "6Q3WJk"
+              }
+            ]
+          },
+          {
             "text": "Sorry, it was a mistake?",
             "steps": [
               {
@@ -1539,7 +1857,7 @@
                       {
                         "type": "jump",
                         "reference": "above",
-                        "id": "4ahXab"
+                        "id": "C7vHsp"
                       }
                     ]
                   },
@@ -1549,7 +1867,7 @@
                       {
                         "type": "jump",
                         "reference": "above",
-                        "id": "7VAKTn"
+                        "id": "8svXrC"
                       }
                     ]
                   }

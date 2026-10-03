@@ -2891,7 +2891,96 @@
       },
       {
         "type": "choice",
-        "options": []
+        "options": [
+          {
+            "text": "What are Fresh Start Worlds?",
+            "steps": [
+              {
+                "player": "What are Fresh Start Worlds?"
+              },
+              {
+                "type": "line",
+                "speaker": "Iron Man tutor",
+                "text": "Fresh Start Worlds are worlds that have a fresh economy to build and fresh hiscores to chase."
+              },
+              {
+                "type": "line",
+                "speaker": "Iron Man tutor",
+                "text": "They're a way to experience Old School RuneScape as if it were new, today!"
+              },
+              {
+                "type": "line",
+                "speaker": "Iron Man tutor",
+                "text": "They will last for 6 months, after which your account will be transfered to the main game and you can carry on playing as normal there."
+              },
+              {
+                "type": "line",
+                "speaker": "Iron Man tutor",
+                "text": "There is a World First system, which are achievements only obtainable once on all worlds, so you can race against others for these!"
+              },
+              {
+                "type": "line",
+                "speaker": "Iron Man tutor",
+                "text": "If a global race is a bit too much, then there is also an Achievement Point system. You can compete against your friends to get the most points."
+              },
+              {
+                "type": "line",
+                "speaker": "Iron Man tutor",
+                "text": "Other than that, it's the same Old School experience you know and love, with all the same content as the main game."
+              },
+              {
+                "type": "line",
+                "speaker": "Iron Man tutor",
+                "text": "Do you still wish to proceed with selecting an Iron Man mode?"
+              },
+              {
+                "type": "choice",
+                "options": [
+                  {
+                    "text": "Yes, I'm not interested in Fresh Start Worlds.",
+                    "steps": [
+                      {
+                        "player": "Yes, I'm not interested in Fresh Start Worlds."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Iron Man tutor",
+                        "text": "That's okay. If you change your mind you can find out more about Fresh Start Worlds by speaking to the Magic Instructor, assuming you're not an ironman."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Iron Man tutor",
+                        "text": "You'll have to remove any ironman status first by speaking to me."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "No, Fresh Start Worlds sound like my sort of thing!",
+                    "steps": [
+                      {
+                        "player": "No, Fresh Start Worlds sound like my sort of thing!"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Iron Man tutor",
+                        "text": "Lovely! You can talk to the Magic Instructor to find out more about Fresh Start Worlds."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "That's fine, I'm not interested in those.",
+            "steps": [
+              {
+                "type": "missing",
+                "id": "J1imrI"
+              }
+            ]
+          }
+        ]
       }
     ],
     "magic-instructor-talking-to-the-magic-instructor": [

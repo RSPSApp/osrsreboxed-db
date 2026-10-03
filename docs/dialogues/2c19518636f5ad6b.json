@@ -1179,7 +1179,63 @@
           {
             "type": "choice",
             "prompt": "Which book would you like to read?",
-            "options": []
+            "options": [
+              {
+                "text": "1001 Ways To Eat Fried Gizzards"
+              },
+              {
+                "text": "Practical Gardening For The Headless"
+              },
+              {
+                "text": "Human Taxidermy for Nincompoops"
+              },
+              {
+                "text": "The Joy of Gravedigging",
+                "steps": [
+                  {
+                    "type": "message",
+                    "text": "As you pull the book a hidden latch springs into place, and the bookcase swings open, revealing a secret compartment.",
+                    "id": "CYeNU0"
+                  },
+                  {
+                    "type": "condition",
+                    "text": "If the player does not have the marble amulet:",
+                    "steps": [
+                      {
+                        "type": "action",
+                        "action": "receive",
+                        "text": "marble amulet",
+                        "id": "T6feip"
+                      },
+                      {
+                        "type": "message",
+                        "text": "You find a marble amulet in the secret compartment.",
+                        "id": "DaP57S"
+                      },
+                      {
+                        "type": "end"
+                      }
+                    ],
+                    "id": "e34ssw"
+                  },
+                  {
+                    "type": "condition",
+                    "text": "If marble or star amulet is in the player's inventory:",
+                    "steps": [
+                      {
+                        "type": "message",
+                        "text": "The secret compartment is empty.",
+                        "id": "49XKZQ"
+                      },
+                      {
+                        "type": "end"
+                      }
+                    ],
+                    "id": "YpI73k"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "id": "ruwDWa"
@@ -1191,7 +1247,54 @@
           {
             "type": "choice",
             "prompt": "Which book would you like to read?",
-            "options": []
+            "options": [
+              {
+                "text": "Chimney Sweeping on a Budget"
+              },
+              {
+                "text": "Handy Maggot Avoidance Techniques",
+                "steps": [
+                  {
+                    "type": "message",
+                    "text": "As you pull the book a hidden latch springs into place, and the bookcase swings open, revealing a secret compartment.",
+                    "id": "CM-EFx"
+                  },
+                  {
+                    "type": "condition",
+                    "text": "Without the obsidian amulet:",
+                    "steps": [
+                      {
+                        "type": "action",
+                        "action": "receive",
+                        "text": "obsidian amulet",
+                        "id": "3AyrSG"
+                      },
+                      {
+                        "type": "message",
+                        "text": "You find an obsidian amulet in the secret compartment.",
+                        "id": "jHo2MB"
+                      }
+                    ],
+                    "id": "GW76rD"
+                  },
+                  {
+                    "type": "condition",
+                    "text": "If obsidian or star amulet is in the backpack:",
+                    "steps": [
+                      {
+                        "type": "message",
+                        "text": "The secret compartment is empty.",
+                        "id": "4waEsa"
+                      }
+                    ],
+                    "id": "b2PJlI"
+                  }
+                ]
+              },
+              {
+                "text": "My Family and Other Zombies"
+              }
+            ]
           }
         ],
         "id": "umNfkS"

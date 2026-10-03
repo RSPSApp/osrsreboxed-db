@@ -453,7 +453,47 @@
                 "steps": [
                   {
                     "type": "choice",
-                    "options": []
+                    "options": [
+                      {
+                        "text": "Skillcape",
+                        "steps": [
+                          {
+                            "type": "jump",
+                            "reference": "above",
+                            "id": "PYzCL6"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Hood",
+                        "steps": [
+                          {
+                            "player": "May I have another hood for my cape, please?"
+                          },
+                          {
+                            "type": "condition",
+                            "text": "If the player has no inventory space:",
+                            "steps": [
+                              {
+                                "npc": "You don't appear to have enough space in your inventory, come back and see me when you do."
+                              },
+                              {
+                                "type": "end"
+                              }
+                            ],
+                            "id": "GbMdxh"
+                          },
+                          {
+                            "npc": "Most certainly, and free of charge!"
+                          },
+                          {
+                            "type": "message",
+                            "text": "The tutor hands you another hood for your skillcape.",
+                            "id": "H1Vo-1"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "id": "PBdcUm"

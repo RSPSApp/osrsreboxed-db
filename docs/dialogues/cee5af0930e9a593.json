@@ -5824,7 +5824,67 @@
       {
         "type": "choice",
         "prompt": "Rub out symbol?",
-        "options": []
+        "options": [
+          {
+            "text": "Rub away!",
+            "steps": [
+              {
+                "type": "condition",
+                "text": "First:",
+                "steps": [
+                  {
+                    "player": "One down, four more to go!"
+                  }
+                ],
+                "id": "bV84hf"
+              },
+              {
+                "type": "condition",
+                "text": "Second:",
+                "steps": [
+                  {
+                    "player": "Two down, three more to go!"
+                  }
+                ],
+                "id": "teW44a"
+              },
+              {
+                "type": "condition",
+                "text": "Third:",
+                "steps": [
+                  {
+                    "player": "Three down, only two more to go!"
+                  }
+                ],
+                "id": "yDfJDc"
+              },
+              {
+                "type": "condition",
+                "text": "Fourth:",
+                "steps": [
+                  {
+                    "player": "Four down, only one more to go!"
+                  }
+                ],
+                "id": "KyZD5w"
+              },
+              {
+                "type": "condition",
+                "text": "Fifth:",
+                "steps": [
+                  {
+                    "player": "That's it, I've removed all the symbols, and hopefully the jinx."
+                  }
+                ],
+                "id": "sJO6ZZ"
+              }
+            ]
+          },
+          {
+            "text": "I'm no cleaner!",
+            "steps": []
+          }
+        ]
       }
     ],
     "pirates-cove-talking-to-the-crew-after-removing-the-jinx-lecherous-lee": [

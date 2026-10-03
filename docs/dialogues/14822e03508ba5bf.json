@@ -31,7 +31,14 @@
       {
         "type": "choice",
         "prompt": "Are you ready to leave the Tombs of Amascut?",
-        "options": []
+        "options": [
+          {
+            "text": "Yes."
+          },
+          {
+            "text": "No."
+          }
+        ]
       }
     ],
     "talking-to-osmumten-afterwards": [

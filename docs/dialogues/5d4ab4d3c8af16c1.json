@@ -2045,6 +2045,9 @@
             "prompt": "Teleport to Draynor Village? You can only use this teleport once.",
             "options": [
               {
+                "text": "Yes"
+              },
+              {
                 "text": "No",
                 "steps": [
                   {

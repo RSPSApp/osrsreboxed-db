@@ -100,7 +100,27 @@
                       {
                         "type": "choice",
                         "prompt": "Are you sure? Some charging resources may not be retrievable.",
-                        "options": []
+                        "options": [
+                          {
+                            "text": "Yes, I'm ok with this.",
+                            "steps": [
+                              {
+                                "type": "message",
+                                "text": "What would you like the withdrawal threshold to be?",
+                                "id": "rwzbib"
+                              },
+                              {
+                                "type": "message",
+                                "text": "Your chargeable items will be charged with up to [value] charges on withdrawal. You can edit this value for individual items by toggling 'Bank item options' on in the bank settings menu, and right clicking the item.",
+                                "id": "o312B6"
+                              }
+                            ]
+                          },
+                          {
+                            "text": "No",
+                            "steps": []
+                          }
+                        ]
                       }
                     ]
                   },

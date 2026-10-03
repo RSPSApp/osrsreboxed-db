@@ -112,7 +112,49 @@
       },
       {
         "type": "choice",
-        "options": []
+        "options": [
+          {
+            "text": "What do you have to offer?",
+            "steps": [
+              {
+                "type": "action",
+                "text": "Opens Mage Arena Staffs.",
+                "action": "open_shop",
+                "action_source": "text",
+                "target": "Mage Arena Staffs.",
+                "id": "E_wrfU"
+              }
+            ]
+          },
+          {
+            "text": "No thanks.",
+            "steps": [
+              {
+                "player": "No thanks."
+              },
+              {
+                "npc": "Well let me know if you need one."
+              }
+            ]
+          },
+          {
+            "text": "Tell me what you know about the charge spell.",
+            "steps": [
+              {
+                "player": "Tell me what you know about the charge spell."
+              },
+              {
+                "npc": "We believe the spells are gifts from the gods. The charge spell draws even more power from the cosmos."
+              },
+              {
+                "npc": "While wearing a matching cape and staff it will add 50% more damage to that already caused by battle mage spells for several minutes."
+              },
+              {
+                "player": "Good stuff."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

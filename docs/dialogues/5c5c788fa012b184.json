@@ -511,7 +511,23 @@
               {
                 "type": "choice",
                 "prompt": "Do you really want to fire your servant?",
-                "options": []
+                "options": [
+                  {
+                    "text": "Yes",
+                    "steps": [
+                      {
+                        "player": "You're fired!"
+                      },
+                      {
+                        "npc": "If thou hast no further need of my service, I shall find some mortal more deserving!"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "No",
+                    "steps": []
+                  }
+                ]
               }
             ]
           },

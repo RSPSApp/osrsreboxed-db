@@ -16,7 +16,128 @@
       },
       {
         "type": "choice",
-        "options": []
+        "options": [
+          {
+            "text": "Who are you?",
+            "steps": [
+              {
+                "player": "Who are you?"
+              },
+              {
+                "npc": "Why, I'm Dondakan, of course!"
+              },
+              {
+                "type": "jump",
+                "reference": "initial",
+                "id": "e7H5r-"
+              }
+            ]
+          },
+          {
+            "text": "Why are you firing a cannon at a wall?",
+            "steps": [
+              {
+                "player": "Why are you firing a cannon at a wall?"
+              },
+              {
+                "npc": "I can't tell you!"
+              },
+              {
+                "player": "Why not?"
+              },
+              {
+                "type": "condition",
+                "text": "If the player has not completed Fishing Contest - this takes priority over not completing Dwarf Cannon:",
+                "steps": [
+                  {
+                    "npc": "You're a human! This is a dwarven thing!"
+                  },
+                  {
+                    "player": "Isn't there anything I can do that will make you tell me?"
+                  },
+                  {
+                    "npc": "Perhaps if you were to help some of my fellow dwarves..."
+                  },
+                  {
+                    "npc": "I hear there is a fishing competition that a few of my distant kinsmen are keen on winning, for instance."
+                  },
+                  {
+                    "player": "A fishing competition? What are dwarves doing in a fishing competition?"
+                  },
+                  {
+                    "npc": "They're not in it! They can't fish if their lives depended on it!"
+                  },
+                  {
+                    "npc": "That's where you come in! Run along now!"
+                  },
+                  {
+                    "type": "jump",
+                    "reference": "initial",
+                    "id": "zFRzFK"
+                  }
+                ],
+                "id": "mYUvIb"
+              },
+              {
+                "type": "condition",
+                "text": "If the player has completed Fishing Contest but not Dwarf Cannon:",
+                "steps": [
+                  {
+                    "npc": "Well... you are the Fishing Champion... but I still can't really speak about this."
+                  },
+                  {
+                    "npc": "The cannon is a top-secret dwarven project, you know."
+                  },
+                  {
+                    "player": "Doesn't look very secret to me, standing out there in the open."
+                  },
+                  {
+                    "npc": "Being cheeky eh?"
+                  },
+                  {
+                    "npc": "Maybe you should speak to Lawgof, the Commander of the Black Guard in Kandarin."
+                  },
+                  {
+                    "type": "jump",
+                    "reference": "initial",
+                    "id": "C52Ai5"
+                  }
+                ],
+                "id": "IHTpyo"
+              }
+            ]
+          },
+          {
+            "text": "Bit noisy here, isn't it?",
+            "steps": [
+              {
+                "player": "Bit noisy here, isn't it?"
+              },
+              {
+                "npc": "Cozy? No, not really, it's damp and cold!"
+              },
+              {
+                "player": "No! I said it's noisy!"
+              },
+              {
+                "npc": "Then stop shouting!"
+              },
+              {
+                "type": "jump",
+                "reference": "initial",
+                "id": "yajWiT"
+              }
+            ]
+          },
+          {
+            "text": "Goodbye!",
+            "steps": [
+              {
+                "player": "Goodbye!"
+              }
+            ]
+          }
+        ]
       }
     ],
     "after-completing-between-a-rock": [

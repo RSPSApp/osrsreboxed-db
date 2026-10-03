@@ -214,13 +214,17 @@ def parse_step(raw, issues, line):
 
 
 def group_options(nodes, random_options=False):
-    """Group sibling alternatives, keeping their nested bodies and order."""
+    """Group menu alternatives.
+
+    The wiki writes a menu's options either as following siblings (`{{tselect}}`
+    then `{{topt}}` at the same bullet depth) or nested as children (`{{tselect}}`
+    then deeper `{{topt}}` bullets). Both must become the menu's options; the
+    nested style used to emit an empty menu and drop every choice.
+    """
     result = []
     i = 0
     while i < len(nodes):
         node = nodes[i]
-        if "steps" in node and node["type"] != "option":
-            node["steps"] = group_options(node["steps"])
         if node["type"] in ("menu", "random_marker", "option"):
             kind = (
                 "random"
@@ -228,20 +232,33 @@ def group_options(nodes, random_options=False):
                 else "choice"
             )
             group = dict(type=kind, options=[])
-            if node["type"] != "option":
+            option_nodes = []
+            if node["type"] == "option":
+                option_nodes.append(node)
+                i += 1
+            else:
                 if node.get("text"):
                     group["prompt"] = node["text"]
+                # Deeper-bullet options parsed as children of the tselect.
+                option_nodes.extend(
+                    child
+                    for child in node.get("steps", [])
+                    if child["type"] == "option"
+                )
                 i += 1
             while i < len(nodes) and nodes[i]["type"] == "option":
-                option = nodes[i]
+                option_nodes.append(nodes[i])
+                i += 1
+            for option in option_nodes:
                 group["options"].append(
                     {k: v for k, v in option.items() if k != "type"}
                 )
                 option_body = group["options"][-1]
                 option_body["steps"] = group_options(option.get("steps", []))
-                i += 1
             result.append(group)
         else:
+            if "steps" in node:
+                node["steps"] = group_options(node["steps"])
             result.append(node)
             i += 1
     return result

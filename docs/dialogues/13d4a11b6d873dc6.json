@@ -110,7 +110,40 @@
             {
               "type": "choice",
               "prompt": "Customise Zalcano Loot",
-              "options": []
+              "options": [
+                {
+                  "text": "Resource focused",
+                  "steps": [
+                    {
+                      "npc": "We won't take any resources from your successes, the resources are all your own."
+                    },
+                    {
+                      "npc": "Is there anything else I can help you with?"
+                    },
+                    {
+                      "type": "jump",
+                      "reference": "initial",
+                      "id": "XAnDoo"
+                    }
+                  ]
+                },
+                {
+                  "text": "XP Focused.",
+                  "steps": [
+                    {
+                      "npc": "We will automatically collect the resources and bestow you with our elven mining knowledge."
+                    },
+                    {
+                      "npc": "Is there anything else I can help you with?"
+                    },
+                    {
+                      "type": "jump",
+                      "reference": "initial",
+                      "id": "OPalFu"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },

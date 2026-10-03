@@ -512,7 +512,67 @@
       {
         "type": "choice",
         "prompt": "What would you like to ask about?",
-        "options": []
+        "options": [
+          {
+            "text": "Could you help me with combining some items?",
+            "steps": [
+              {
+                "player": "Could you help me with combining some items?"
+              },
+              {
+                "npc": "Combining items? What items?"
+              },
+              {
+                "type": "choice",
+                "options": [
+                  {
+                    "text": "You show the icon to Peer the Seer."
+                  }
+                ]
+              },
+              {
+                "player": "I have this icon from a ring. I was hoping to make something new with it."
+              },
+              {
+                "npc": "Surely a smith would be better placed to help you with that?"
+              },
+              {
+                "player": "Well I thought maybe you'd be able to help, given these are magic rings. The good magic that is... not the... whatever magic it is you don't like."
+              },
+              {
+                "npc": "Hmm... So the things you're planning to make are totally above board?"
+              },
+              {
+                "player": "When you say above board, where would making new rings by combining the icons with ancient vestiges from a long forgotten empire sit?"
+              },
+              {
+                "npc": "What kind of empire?"
+              },
+              {
+                "player": "Er... Definitely not one known for using dark and forbidden magic."
+              },
+              {
+                "npc": "Ah, well as long as it's not one of those kind of empires, then I see no problems."
+              },
+              {
+                "player": "Great!"
+              },
+              {
+                "npc": "Now it's quite simple really..."
+              },
+              {
+                "type": "unavailable",
+                "id": "U25hrc"
+              },
+              {
+                "player": "Thanks!"
+              },
+              {
+                "npc": "Not a problem."
+              }
+            ]
+          }
+        ]
       }
     ],
     "standard-dialogue-when-using-the-right-click-deposit-items-option-before-completing-the-easy-fremennik-diary": [

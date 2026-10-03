@@ -155,7 +155,70 @@
               {
                 "type": "choice",
                 "prompt": "Start the Royal Trouble quest?",
-                "options": []
+                "options": [
+                  {
+                    "text": "Yes.",
+                    "steps": [
+                      {
+                        "player": "Very well, I'll sort it out."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Advisor Ghrim",
+                        "text": "Thank you, Your Royal Highness."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Advisor Ghrim",
+                        "text": "I suggest you talk to the prince and princess to find out more about the situation."
+                      },
+                      {
+                        "type": "condition",
+                        "text": "If the player is in a relationship with Princess Astrid:",
+                        "steps": [
+                          {
+                            "type": "line",
+                            "speaker": "Advisor Ghrim",
+                            "text": "Princess Astrid has been asking after you. She would very much like to see you once again."
+                          }
+                        ],
+                        "id": "R2NoGA"
+                      },
+                      {
+                        "type": "condition",
+                        "text": "If the player is in a relationship with Prince Brand:",
+                        "steps": [
+                          {
+                            "type": "line",
+                            "speaker": "Advisor Ghrim",
+                            "text": "Prince Brand has been asking after you. He would very much like to see you once again."
+                          }
+                        ],
+                        "id": "j4Z8Ra"
+                      }
+                    ],
+                    "hook": "quest:royal-trouble:start",
+                    "quest": "Royal Trouble"
+                  },
+                  {
+                    "text": "No.",
+                    "steps": [
+                      {
+                        "player": "No, I don't have the time at the moment."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Advisor Ghrim",
+                        "text": "You are the regent of this kingdom, Your Royal Highness. I would urge you to reconsider."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Advisor Ghrim",
+                        "text": "However, you are also a busy hero, and thus I understand your reluctance."
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }

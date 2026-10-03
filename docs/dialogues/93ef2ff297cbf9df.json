@@ -74,7 +74,41 @@
                               {
                                 "type": "choice",
                                 "prompt": "Start The Fremennik Trials quest?",
-                                "options": []
+                                "options": [
+                                  {
+                                    "text": "Yes.",
+                                    "steps": [
+                                      {
+                                        "player": "I think I would enjoy the challenge of becoming an honorary Fremennik. Where and how do I start?"
+                                      },
+                                      {
+                                        "npc": "As I say outerlander, you must find and speak to the twelve members of the council of elders, and see what tasks they might set you."
+                                      },
+                                      {
+                                        "npc": "If you can gain the support of seven of the twelve, then you will be accepted as one of us without question."
+                                      },
+                                      {
+                                        "type": "end"
+                                      }
+                                    ],
+                                    "hook": "quest:the-fremennik-trials:start",
+                                    "quest": "The Fremennik Trials"
+                                  },
+                                  {
+                                    "text": "No.",
+                                    "steps": [
+                                      {
+                                        "player": "No way do I want to become like YOU! Forget you, and forget your whole stupid town! You're a bunch of stupid primitives, from what I've seen!"
+                                      },
+                                      {
+                                        "npc": "I am sorry to say that I expected such a response from an outerlander. I thought perhaps you might have been different to all the others..."
+                                      },
+                                      {
+                                        "type": "end"
+                                      }
+                                    ]
+                                  }
+                                ]
                               }
                             ]
                           },
@@ -150,7 +184,16 @@
                       {
                         "type": "choice",
                         "prompt": "Start The Fremennik Trials quest?",
-                        "options": []
+                        "options": [
+                          {
+                            "text": "Yes.",
+                            "hook": "quest:the-fremennik-trials:start",
+                            "quest": "The Fremennik Trials"
+                          },
+                          {
+                            "text": "No."
+                          }
+                        ]
                       }
                     ]
                   },

@@ -475,6 +475,80 @@
         "type": "choice",
         "options": [
           {
+            "text": "You're a vampyre aren't you?",
+            "steps": [
+              {
+                "player": "You're a vampyre aren't you?"
+              },
+              {
+                "type": "line",
+                "speaker": "Sinister Stranger",
+                "text": "Just because I can't stand ze smell ov garlic und I don't like bright sunlight doesn't necessarily mean I'm ein vampyre!"
+              }
+            ]
+          },
+          {
+            "text": "Is it nice there?",
+            "steps": [
+              {
+                "player": "Is it nice there?"
+              },
+              {
+                "type": "line",
+                "speaker": "Sinister Stranger",
+                "text": "It is vonderful! Ze vomen are beautiful und ze nights are long!"
+              },
+              {
+                "type": "choice",
+                "options": [
+                  {
+                    "text": "You're a vampyre aren't you?",
+                    "steps": [
+                      {
+                        "type": "jump",
+                        "reference": "above",
+                        "id": "EB3K17"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "So you like fishing?",
+                    "steps": [
+                      {
+                        "type": "jump",
+                        "reference": "below",
+                        "id": "0teUsb"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Well, good luck with the fishing.",
+                    "steps": [
+                      {
+                        "player": "Well, good luck with the fishing."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Sinister Stranger",
+                        "text": "Luck haz notsing to do vith it it is all in ze technique."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "So you like fishing?",
+            "steps": [
+              {
+                "type": "jump",
+                "reference": "below",
+                "id": "uGxiSY"
+              }
+            ]
+          },
+          {
             "text": "So... you like fishing?",
             "steps": [
               {

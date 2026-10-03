@@ -9,6 +9,30 @@
         "type": "choice",
         "options": [
           {
+            "text": "Talk about Fossil Island.",
+            "condition": "After Bone Voyage:",
+            "id": "5xOdLs"
+          },
+          {
+            "text": "What can I do with fossils I find on Fossil Island?",
+            "steps": [
+              {
+                "player": "What can I do with fossils I find on Fossil Island?"
+              },
+              {
+                "npc": "I'm not entirely sure just yet."
+              }
+            ]
+          },
+          {
+            "text": "Nevermind.",
+            "steps": [
+              {
+                "player": "Nevermind."
+              }
+            ]
+          },
+          {
             "text": "I found a strange relic while salvaging...",
             "condition": "If the player has a salvaging relic on them:",
             "steps": [
