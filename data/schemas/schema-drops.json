@@ -134,6 +134,12 @@
           "required": false,
           "nullable": false
         },
+        "noted": {
+          "description": "If the drop is noted (the wiki quantity ends in \"(noted)\").",
+          "type": "boolean",
+          "required": false,
+          "nullable": false
+        },
         "clue_scroll_box": {
           "description": "If the drop arrives as a clue scroll box.",
           "type": "boolean",
