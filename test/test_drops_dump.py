@@ -260,3 +260,26 @@ def test_named_exceptions_and_level_ranges():
     zombies = drops_wikitext.parse_all_drop_tables(pages["Zombie (Tarn's Lair)"])
     assert zombies[0].npc_ids == list(range(6449, 6454))
     assert zombies[1].npc_ids == list(range(6454, 6460))
+
+
+def test_noted_drops_are_flagged():
+    """A wiki quantity ending in ``(noted)`` keeps its range and exports ``noted``."""
+    page = """
+{{Infobox Monster
+|id1 = 125
+}}
+
+==Drops==
+===Other===
+{{DropsLine|name=Coins|quantity=100-200 (noted)|rarity=1/2}}
+{{DropsLine|name=Bones|quantity=5|rarity=1/2}}
+"""
+    tables = drops_wikitext.parse_all_drop_tables(page)
+    table = drops_tables.build_table_json(
+        drops_tables.build_table_spec("Noted_monster", tables[0], ITEMS)
+    )
+    coins, bones = table["entries"]
+    assert coins["quantity"] == [100, 200]
+    assert coins["noted"] is True
+    assert "quantity_raw" not in coins
+    assert "noted" not in bones

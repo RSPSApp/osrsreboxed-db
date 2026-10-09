@@ -101,6 +101,7 @@ class ResolvedEntry:
     rarity_raw: str = ""
     assumed_rarity: bool = False
     is_nothing: bool = False
+    is_noted: bool = False
     clue_scroll_box: bool = False
     brimstone_combat_roll: bool = False
     brimstone_konar_bonus: bool = False
@@ -324,6 +325,7 @@ def _resolve_entry(drop: ParsedDrop, items: ItemIdLookup) -> Optional[ResolvedEn
         subsection=drop.subsection,
         rarity_raw=drop.rarity,
         assumed_rarity=drop.assumed_rarity,
+        is_noted=drop.is_noted,
         clue_scroll_box=drop.clue_scroll_box,
         notes=list(drop.notes),
     )
@@ -537,6 +539,7 @@ def _entry_json(
                 entry.rarity_raw if entry.rarity_raw and rarity is None else None
             ),
             "section": entry.subsection or None,
+            "noted": True if entry.is_noted else None,
             "clue_scroll_box": True if entry.clue_scroll_box else None,
             "assumed_rarity": True if entry.assumed_rarity else None,
             "notes": entry.notes or None,
