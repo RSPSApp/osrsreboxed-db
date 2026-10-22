@@ -20,7 +20,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Cook, cook, cook!"
+                "npc": "Cook, cook, cook!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -28,7 +29,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'm so hungry!"
+                "npc": "I'm so hungry!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -36,7 +38,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "This is gonna taste sooo good"
+                "npc": "This is gonna taste sooo good",
+                "presentation": "overhead"
               }
             ]
           }

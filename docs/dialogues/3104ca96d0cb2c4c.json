@@ -296,8 +296,9 @@
                     "condition": "If the player has two or more clues:",
                     "steps": [
                       {
-                        "type": "unavailable",
-                        "id": "UbIlL3"
+                        "type": "message",
+                        "text": "You hand over the clue scrolls to Watson.",
+                        "id": "5Z77rD"
                       },
                       {
                         "type": "condition",

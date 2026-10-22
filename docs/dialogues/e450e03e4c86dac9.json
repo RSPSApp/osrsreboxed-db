@@ -663,7 +663,8 @@
             "npc": "Now, let me take... a little... catnap..."
           },
           {
-            "npc": "ZZZzzz"
+            "npc": "ZZZzzz",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -717,7 +718,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Mew!"
+                    "npc": "Mew!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -725,7 +727,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Yowl!"
+                    "npc": "Yowl!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -733,7 +736,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "Meeeow!"
+                    "npc": "Meeeow!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -741,7 +745,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "Meeeeow!"
+                    "npc": "Meeeeow!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -755,7 +760,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Meeeeowby laaaater..."
+            "npc": "Meeeeowby laaaater...",
+            "presentation": "overhead"
           }
         ],
         "id": "s_GC1k"

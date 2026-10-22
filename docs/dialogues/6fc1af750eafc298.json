@@ -47,12 +47,14 @@
           "text": "I've come to kill you.",
           "steps": [
             {
-              "npc": "Aaaarrgh!"
+              "npc": "Aaaarrgh!",
+              "presentation": "overhead"
             },
             {
               "type": "line",
               "speaker": "Anja",
-              "text": "Eeeek!"
+              "text": "Eeeek!",
+              "presentation": "overhead"
             }
           ]
         }

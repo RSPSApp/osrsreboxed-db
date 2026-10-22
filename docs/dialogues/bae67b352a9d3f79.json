@@ -209,21 +209,23 @@
                     "type": "choice",
                     "options": [
                       {
-                        "text": "Great, I'll take the cash in used coins please."
+                        "text": "Great, I'll take the cash in used coins please.",
+                        "steps": [
+                          {
+                            "player": "Great, I'll take the cash in used coins please."
+                          },
+                          {
+                            "npc": "Er..."
+                          },
+                          {
+                            "npc": "Look, I think I'll wait here for someone a little more... you know..."
+                          },
+                          {
+                            "npc": "...heroic."
+                          }
+                        ]
                       }
                     ]
-                  },
-                  {
-                    "player": "Great, I'll take the cash in used coins please."
-                  },
-                  {
-                    "npc": "Er..."
-                  },
-                  {
-                    "npc": "Look, I think I'll wait here for someone a little more... you know..."
-                  },
-                  {
-                    "npc": "...heroic."
                   }
                 ]
               }
@@ -448,7 +450,8 @@
                     "id": "SsIc9Q"
                   },
                   {
-                    "player": "OW!"
+                    "player": "OW!",
+                    "presentation": "overhead"
                   },
                   {
                     "type": "action",

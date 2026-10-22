@@ -23,7 +23,8 @@
                 "id": "tFOQwl"
               },
               {
-                "player": "Yeeouch!"
+                "player": "Yeeouch!",
+                "presentation": "overhead"
               },
               {
                 "npc": "Stare into the flame and witness the purity and power of fire! As my attraction to flame grew, so did my skills at firelighting. I began to neglect my combat skills, my Mining skills and my questing. Who needs such"
@@ -287,7 +288,8 @@
         "id": "tFOQwl"
       },
       {
-        "player": "Yeeouch!"
+        "player": "Yeeouch!",
+        "presentation": "overhead"
       },
       {
         "npc": "Stare into the flame and witness the purity and power of fire! As my attraction to flame grew, so did my skills at firelighting. I began to neglect my combat skills, my Mining skills and my questing. Who needs such"

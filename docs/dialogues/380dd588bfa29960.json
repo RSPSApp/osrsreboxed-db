@@ -1787,7 +1787,8 @@
           {
             "type": "line",
             "speaker": "Bert",
-            "text": "My sand! My lovely sand!"
+            "text": "My sand! My lovely sand!",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -1986,10 +1987,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "q_UjQ0"
-      },
-      {
-        "type": "unavailable",
-        "id": "oHvQEM"
       }
     ]
   },

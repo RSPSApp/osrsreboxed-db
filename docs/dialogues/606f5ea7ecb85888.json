@@ -1816,7 +1816,8 @@
       {
         "type": "line",
         "speaker": "Goblin guard",
-        "text": "Oi, how dare you wake me up!"
+        "text": "Oi, how dare you wake me up!",
+        "presentation": "overhead"
       }
     ],
     "unlocking-the-kitchen-gate": [
@@ -1836,7 +1837,8 @@
         "id": "Vh_i6-"
       },
       {
-        "player": "Euuuw, that smells awful!"
+        "player": "Euuuw, that smells awful!",
+        "presentation": "overhead"
       }
     ],
     "inspecting-the-goblin-stove-talking-to-the-assistant-with-the-lens-mould": [
@@ -2402,12 +2404,14 @@
       {
         "type": "line",
         "speaker": "Observatory professor",
-        "text": "Hmmmm..."
+        "text": "Hmmmm...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Observatory professor",
-        "text": "Bit of a tap here..."
+        "text": "Bit of a tap here...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -2420,7 +2424,8 @@
       {
         "type": "line",
         "speaker": "Observatory professor",
-        "text": "In goes the lens."
+        "text": "In goes the lens.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -2430,12 +2435,14 @@
       {
         "type": "line",
         "speaker": "Observatory professor",
-        "text": "And one final adjustment."
+        "text": "And one final adjustment.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Observatory professor",
-        "text": "And all our work pays off."
+        "text": "And all our work pays off.",
+        "presentation": "overhead"
       }
     ],
     "entering-the-observatory-talking-to-the-professor": [
@@ -3526,9 +3533,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -3536,10 +3540,6 @@
             "text": "Talk about Treasure Trails."
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "lcKlr0"
       }
     ]
   },

@@ -205,7 +205,8 @@
         "text": "When there are enough players to start a game:",
         "steps": [
           {
-            "npc": "A casual game will start in the next [60 - 5x] seconds!"
+            "npc": "A casual game will start in the next [60 - 5x] seconds!",
+            "presentation": "overhead"
           }
         ],
         "id": "Q5TQ7X"
@@ -215,7 +216,8 @@
         "text": "Once the game is about to start:",
         "steps": [
           {
-            "npc": "A casual game is starting!"
+            "npc": "A casual game is starting!",
+            "presentation": "overhead"
           }
         ],
         "id": "hhB4eG"
@@ -227,7 +229,8 @@
         "text": "If only one more player is needed to start a game:",
         "steps": [
           {
-            "npc": "Come on, we need another competitive participant!"
+            "npc": "Come on, we need another competitive participant!",
+            "presentation": "overhead"
           }
         ],
         "id": "kTgElj"
@@ -237,7 +240,8 @@
         "text": "If two or more players are needed to start a game:",
         "steps": [
           {
-            "npc": "Come on, we need [2-24] more competitive participants!"
+            "npc": "Come on, we need [2-24] more competitive participants!",
+            "presentation": "overhead"
           }
         ],
         "id": "oa_tJr"
@@ -249,7 +253,8 @@
         "text": "If only one more player is needed to start a game:",
         "steps": [
           {
-            "npc": "Come on, we need another High Stakes participant!"
+            "npc": "Come on, we need another High Stakes participant!",
+            "presentation": "overhead"
           }
         ],
         "id": "9bCpzV"
@@ -259,7 +264,8 @@
         "text": "If two or more players are needed to start a game:",
         "steps": [
           {
-            "npc": "Come on, we need [2-24] more High Stakes participants!"
+            "npc": "Come on, we need [2-24] more High Stakes participants!",
+            "presentation": "overhead"
           }
         ],
         "id": "kqGZVG"

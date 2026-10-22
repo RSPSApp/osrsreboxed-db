@@ -6,13 +6,15 @@
         "npc": "! ! ! Attention ! ! !"
       },
       {
-        "npc": "! ! ! Attention ! ! !"
+        "npc": "! ! ! Attention ! ! !",
+        "presentation": "overhead"
       },
       {
         "npc": "Legends' Guild Member Approaching!"
       },
       {
-        "npc": "Legends' Guild Member Approaching!"
+        "npc": "Legends' Guild Member Approaching!",
+        "presentation": "overhead"
       },
       {
         "npc": "[Welcome Sir/Welcome Madam/Welcome]! I hope you enjoy your time in the Legends' Guild."
@@ -20,12 +22,14 @@
     ],
     "when-going-through-the-legends-guild-s-gates-during-the-quest": [
       {
-        "npc": "I hope the quest is going well [sir/madam]"
+        "npc": "I hope the quest is going well [sir/madam]",
+        "presentation": "overhead"
       }
     ],
     "when-going-through-the-legends-guild-s-gates-after-the-quest": [
       {
-        "npc": "Legends Guild Member Approaching!"
+        "npc": "Legends Guild Member Approaching!",
+        "presentation": "overhead"
       }
     ]
   }

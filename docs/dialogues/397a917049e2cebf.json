@@ -1334,8 +1334,9 @@
                 "text": "Well, we'll just wait till time is up."
               },
               {
-                "type": "unavailable",
-                "id": "cb4N0H"
+                "type": "message",
+                "text": "You wait",
+                "id": "3xCeSp"
               },
               {
                 "type": "message",
@@ -1453,13 +1454,6 @@
       },
       {
         "player": "Excellent. That will come in most handy."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "8UzcAu"
       }
     ]
   },

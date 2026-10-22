@@ -364,7 +364,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Take him out you wuss"
+                "npc": "Take him out you wuss",
+                "presentation": "overhead"
               }
             ]
           },
@@ -372,7 +373,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "One-Two, One-Two!"
+                "npc": "One-Two, One-Two!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -380,7 +382,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Hey human, get moving!"
+                "npc": "Hey human, get moving!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -388,7 +391,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Run faster! Don't be so lazy!"
+                "npc": "Run faster! Don't be so lazy!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -396,7 +400,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Pass to your left! Pass now!"
+                "npc": "Pass to your left! Pass now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -404,7 +409,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "There are others to pass to you know"
+                "npc": "There are others to pass to you know",
+                "presentation": "overhead"
               }
             ]
           }

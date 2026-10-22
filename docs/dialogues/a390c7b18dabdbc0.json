@@ -7,16 +7,20 @@
         "text": "One of the following will be said while hitting him:",
         "steps": [
           {
-            "npc": "Ye'll pay!"
+            "npc": "Ye'll pay!",
+            "presentation": "overhead"
           },
           {
-            "npc": "Curse you!"
+            "npc": "Curse you!",
+            "presentation": "overhead"
           },
           {
-            "npc": "Curse 'em all!"
+            "npc": "Curse 'em all!",
+            "presentation": "overhead"
           },
           {
-            "npc": "Arrr, land-lubber!"
+            "npc": "Arrr, land-lubber!",
+            "presentation": "overhead"
           }
         ],
         "id": "PN0m8C"

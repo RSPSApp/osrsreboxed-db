@@ -47,6 +47,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I've been robbed!"
               },
               {
@@ -56,6 +57,7 @@
                     "text": "Dialogue 1",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "Sobbing*"
                       }
                     ]
@@ -64,6 +66,7 @@
                     "text": "Dialogue 2",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "My parents are gonna be so mad!"
                       }
                     ]
@@ -77,9 +80,8 @@
                     "text": "Dialogue 1",
                     "steps": [
                       {
-                        "type": "line",
-                        "speaker": "Wealthy citizen",
-                        "text": "Oh gosh!"
+                        "type": "call",
+                        "branch": "Zuay6g"
                       }
                     ]
                   },
@@ -88,7 +90,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "EtldbB"
+                        "branch": "U1KOIe"
                       }
                     ]
                   },
@@ -97,7 +99,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "Et9NWj"
+                        "branch": "n54wKD"
                       }
                     ]
                   },
@@ -106,13 +108,14 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "rJvdOT"
+                        "branch": "LqAQF8"
                       }
                     ]
                   }
                 ]
               },
               {
+                "presentation": "overhead",
                 "npc": "Silly me! I had it in my pocket all along!"
               }
             ]
@@ -121,6 +124,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Sobbing*"
               },
               {
@@ -130,6 +134,7 @@
                     "text": "Dialogue 1",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "I can't stop crying!"
                       }
                     ]
@@ -138,6 +143,7 @@
                     "text": "Dialogue 2",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "Wahhhh!"
                       }
                     ]
@@ -146,6 +152,7 @@
                     "text": "Dialogue 3",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "I've lost my parents!"
                       }
                     ]
@@ -154,6 +161,7 @@
                     "text": "Dialogue 4",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "Sobbing*"
                       }
                     ]
@@ -168,7 +176,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "Et9NWj"
+                        "branch": "n54wKD"
                       }
                     ]
                   },
@@ -177,7 +185,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "-o7KZf"
+                        "branch": "eoD56a"
                       }
                     ]
                   },
@@ -185,9 +193,8 @@
                     "text": "Dialoge 3",
                     "steps": [
                       {
-                        "type": "line",
-                        "speaker": "Wealthy citizen",
-                        "text": "Oh gosh!"
+                        "type": "call",
+                        "branch": "Zuay6g"
                       }
                     ]
                   },
@@ -196,13 +203,14 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "EtldbB"
+                        "branch": "U1KOIe"
                       }
                     ]
                   }
                 ]
               },
               {
+                "presentation": "overhead",
                 "npc": "Oh you really brightened my day!"
               }
             ]
@@ -211,6 +219,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Im so lost! Someone help!"
               },
               {
@@ -220,6 +229,7 @@
                     "text": "Dialoge 1",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "I can't find my friends"
                       }
                     ]
@@ -228,6 +238,7 @@
                     "text": "Dialoge 2",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "I'm all alone!"
                       }
                     ]
@@ -236,6 +247,7 @@
                     "text": "Dialogue 3",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "I've lost my parents!"
                       }
                     ]
@@ -250,7 +262,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "rJvdOT"
+                        "branch": "LqAQF8"
                       }
                     ]
                   },
@@ -259,7 +271,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "EtldbB"
+                        "branch": "U1KOIe"
                       }
                     ]
                   },
@@ -268,7 +280,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "Et9NWj"
+                        "branch": "n54wKD"
                       }
                     ]
                   },
@@ -277,13 +289,14 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "-o7KZf"
+                        "branch": "eoD56a"
                       }
                     ]
                   }
                 ]
               },
               {
+                "presentation": "overhead",
                 "npc": "I think I see my friends!!"
               }
             ]
@@ -292,6 +305,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "steps": [
                   {
                     "type": "choice",
@@ -300,6 +314,7 @@
                         "text": "Dialogue 2",
                         "steps": [
                           {
+                            "presentation": "overhead",
                             "npc": "No one can dance like me!"
                           }
                         ]
@@ -308,6 +323,7 @@
                         "text": "Dialogue 2",
                         "steps": [
                           {
+                            "presentation": "overhead",
                             "npc": "I could do this all day!"
                           }
                         ]
@@ -316,6 +332,7 @@
                         "text": "Dialogue 3",
                         "steps": [
                           {
+                            "presentation": "overhead",
                             "npc": "Any tips?"
                           }
                         ]
@@ -334,7 +351,8 @@
                       {
                         "type": "line",
                         "speaker": "Wealthy citizen",
-                        "text": "Who taught you to move like that?"
+                        "text": "Who taught you to move like that?",
+                        "presentation": "overhead"
                       }
                     ]
                   },
@@ -344,13 +362,15 @@
                       {
                         "type": "line",
                         "speaker": "Wealthy citizen",
-                        "text": "I wish I had moves like that!"
+                        "text": "I wish I had moves like that!",
+                        "presentation": "overhead"
                       }
                     ]
                   }
                 ]
               },
               {
+                "presentation": "overhead",
                 "npc": "I'm all danced out!"
               }
             ]
@@ -359,6 +379,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "My leg! Someone please!"
               },
               {
@@ -368,6 +389,7 @@
                     "text": "Dialogue 1",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "Gah! It hurts!"
                       }
                     ]
@@ -376,6 +398,7 @@
                     "text": "Dialogue 2",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "It burns like an inferno!"
                       }
                     ]
@@ -384,6 +407,7 @@
                     "text": "Dialogue 2",
                     "steps": [
                       {
+                        "presentation": "overhead",
                         "npc": "I think I've broken something!"
                       }
                     ]
@@ -397,9 +421,8 @@
                     "text": "Dialogue 1",
                     "steps": [
                       {
-                        "type": "line",
-                        "speaker": "Wealthy citizen",
-                        "text": "Oh gosh!"
+                        "type": "call",
+                        "branch": "Zuay6g"
                       }
                     ]
                   },
@@ -408,7 +431,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "-o7KZf"
+                        "branch": "eoD56a"
                       }
                     ]
                   },
@@ -417,7 +440,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "rJvdOT"
+                        "branch": "LqAQF8"
                       }
                     ]
                   },
@@ -426,13 +449,14 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "EtldbB"
+                        "branch": "U1KOIe"
                       }
                     ]
                   }
                 ]
               },
               {
+                "presentation": "overhead",
                 "npc": "Woah! My leg has healed!"
               }
             ]
@@ -442,37 +466,50 @@
       {
         "type": "line",
         "speaker": "Wealthy citizen",
-        "text": "That was strange."
+        "text": "That was strange.",
+        "presentation": "overhead"
       }
     ]
   },
   "branches": {
-    "EtldbB": [
+    "Zuay6g": [
       {
         "type": "line",
         "speaker": "Wealthy citizen",
-        "text": "What can I do?"
+        "text": "Oh gosh!",
+        "presentation": "overhead"
       }
     ],
-    "Et9NWj": [
+    "U1KOIe": [
       {
         "type": "line",
         "speaker": "Wealthy citizen",
-        "text": "That's awful!"
+        "text": "What can I do?",
+        "presentation": "overhead"
       }
     ],
-    "rJvdOT": [
+    "n54wKD": [
       {
         "type": "line",
         "speaker": "Wealthy citizen",
-        "text": "I'll keep you company for a moment."
+        "text": "That's awful!",
+        "presentation": "overhead"
       }
     ],
-    "-o7KZf": [
+    "LqAQF8": [
       {
         "type": "line",
         "speaker": "Wealthy citizen",
-        "text": "I hope you're okay."
+        "text": "I'll keep you company for a moment.",
+        "presentation": "overhead"
+      }
+    ],
+    "eoD56a": [
+      {
+        "type": "line",
+        "speaker": "Wealthy citizen",
+        "text": "I hope you're okay.",
+        "presentation": "overhead"
       }
     ]
   }

@@ -259,8 +259,9 @@
     ],
     "investigating-the-gpdt-depot-investigating-the-handelmorts-crate": [
       {
-        "type": "unavailable",
-        "id": "Cl23YQ"
+        "type": "message",
+        "text": "There is a label on this crate. It says: Lord Handelmort, Handelmort Mansion, Ardougne You carefully peel it off and take it.",
+        "id": "76sLwc"
       },
       {
         "type": "action",
@@ -434,7 +435,8 @@
                               {
                                 "type": "line",
                                 "speaker": "Wizard Cromperty",
-                                "text": "Dipsolum sententa sententi!"
+                                "text": "Dipsolum sententa sententi!",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "action",
@@ -486,6 +488,7 @@
                 "player": "Can you teleport me to the Rune Essence?"
               },
               {
+                "presentation": "overhead",
                 "type": "line",
                 "speaker": "Wizard Cromperty",
                 "text": "Senventior disthine molenko!"
@@ -693,10 +696,6 @@
           }
         ],
         "id": "p6b1zG"
-      },
-      {
-        "type": "unavailable",
-        "id": "BZ2yKY"
       }
     ]
   },
@@ -939,7 +938,8 @@
                       {
                         "type": "line",
                         "speaker": "Wizard Cromperty",
-                        "text": "Dipsolum sententa sententi!"
+                        "text": "Dipsolum sententa sententi!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1015,7 +1015,8 @@
               {
                 "type": "line",
                 "speaker": "Wizard Cromperty",
-                "text": "Dipsolum sententa sententi!"
+                "text": "Dipsolum sententa sententi!",
+                "presentation": "overhead"
               },
               {
                 "type": "action",

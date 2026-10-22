@@ -3,7 +3,8 @@
   "variants": {
     "standard-dialogue": [
       {
-        "npc": "HONK*"
+        "npc": "HONK*",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -55,7 +56,8 @@
     ],
     "standard-dialogue-during-the-2022-christmas-event": [
       {
-        "npc": "HONK*"
+        "npc": "HONK*",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -107,7 +109,8 @@
     ],
     "standard-dialogue-during-the-2023-christmas-event": [
       {
-        "npc": "HONK*"
+        "npc": "HONK*",
+        "presentation": "overhead"
       },
       {
         "type": "random",

@@ -3,6 +3,7 @@
   "variants": {
     "getting-kicked-off-entrana": [
       {
+        "presentation": "overhead",
         "npc": "Hey, get that stuff off our island!"
       },
       {
@@ -11,9 +12,11 @@
         "id": "is4OMS"
       },
       {
-        "player": "Urrrrrgh!"
+        "player": "Urrrrrgh!",
+        "presentation": "overhead"
       },
       {
+        "presentation": "overhead",
         "npc": "Honestly, people these days."
       }
     ]

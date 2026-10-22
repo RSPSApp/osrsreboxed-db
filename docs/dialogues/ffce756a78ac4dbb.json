@@ -7,6 +7,7 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
+            "presentation": "overhead",
             "npc": "Fishies be mine, leave dem fishies!"
           }
         ],

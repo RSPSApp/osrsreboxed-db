@@ -655,7 +655,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "We got us a jammed wheel!"
+                "npc": "We got us a jammed wheel!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -663,7 +664,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Ye'd better fix that wheel!"
+                "npc": "Ye'd better fix that wheel!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -671,7 +673,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Git yer hammer an' fix that wheel!"
+                "npc": "Git yer hammer an' fix that wheel!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -686,7 +689,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "That water ain't flowing!"
+                "npc": "That water ain't flowing!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -694,7 +698,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Both them wheels be jammed!"
+                "npc": "Both them wheels be jammed!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -702,7 +707,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Git yer hammer an' fix them wheels!"
+                "npc": "Git yer hammer an' fix them wheels!",
+                "presentation": "overhead"
               }
             ]
           }

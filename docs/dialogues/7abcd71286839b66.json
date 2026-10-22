@@ -992,7 +992,8 @@
               {
                 "type": "line",
                 "speaker": "Black Eye Bethel",
-                "text": "Dodge this!"
+                "text": "Dodge this!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1002,7 +1003,8 @@
               {
                 "type": "line",
                 "speaker": "Black Eye Bethel",
-                "text": "It's slashin' time!"
+                "text": "It's slashin' time!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1012,7 +1014,8 @@
               {
                 "type": "line",
                 "speaker": "Black Eye Bethel",
-                "text": "You're done!"
+                "text": "You're done!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -1023,14 +1026,16 @@
       {
         "type": "line",
         "speaker": "Black Eye Bethel",
-        "text": "Argh! You got me!"
+        "text": "Argh! You got me!",
+        "presentation": "overhead"
       }
     ],
     "the-pirates-of-last-light-the-battle-against-black-eye-bethel-switching-to-a-rune-scimitar": [
       {
         "type": "line",
         "speaker": "Black Eye Bethel",
-        "text": "Let's see if you can handle this!"
+        "text": "Let's see if you can handle this!",
+        "presentation": "overhead"
       }
     ],
     "the-pirates-of-last-light-the-battle-against-black-eye-bethel-switching-to-a-dragon-scimitar": [
@@ -1041,7 +1046,8 @@
           {
             "type": "line",
             "speaker": "Black Eye Bethel",
-            "text": "I stole this one from a monkey!"
+            "text": "I stole this one from a monkey!",
+            "presentation": "overhead"
           }
         ],
         "id": "OkLA-m"
@@ -1053,7 +1059,8 @@
           {
             "type": "line",
             "speaker": "Black Eye Bethel",
-            "text": "Nice scimitar! I've got one too!"
+            "text": "Nice scimitar! I've got one too!",
+            "presentation": "overhead"
           }
         ],
         "id": "cfTVSP"
@@ -1069,7 +1076,8 @@
               {
                 "type": "line",
                 "speaker": "Black Eye Bethel",
-                "text": "No god can save you from me!"
+                "text": "No god can save you from me!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1079,7 +1087,8 @@
               {
                 "type": "line",
                 "speaker": "Black Eye Bethel",
-                "text": "Fight me properly, coward!"
+                "text": "Fight me properly, coward!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1089,7 +1098,8 @@
               {
                 "type": "line",
                 "speaker": "Black Eye Bethel",
-                "text": "Even praying won't help you now!"
+                "text": "Even praying won't help you now!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -1767,16 +1777,9 @@
         "id": "HJgzIM"
       },
       {
-        "type": "end"
-      },
-      {
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "vNjARR"
-      },
-      {
-        "type": "unavailable",
-        "id": "-MsU5m"
       }
     ]
   },

@@ -780,7 +780,8 @@
       {
         "type": "line",
         "speaker": "Head Menaphite Guard",
-        "text": "Your false gods will not protect you!"
+        "text": "Your false gods will not protect you!",
+        "presentation": "overhead"
       }
     ],
     "starting-off-guard-cutscene-running-away-from-the-head-menaphite-guard-fight": [
@@ -3355,8 +3356,9 @@
         "player": "Here you go."
       },
       {
-        "type": "unavailable",
-        "id": "POwEyB"
+        "type": "message",
+        "text": "You give the Lily of the Elid to Zahur.",
+        "id": "WBMQxe"
       },
       {
         "type": "line",
@@ -3878,8 +3880,9 @@
         "id": "INWKVN"
       },
       {
-        "type": "unavailable",
-        "id": "93LAJP"
+        "type": "message",
+        "text": "You give the crate to the High Priest.",
+        "id": "e-KOmi"
       },
       {
         "type": "line",
@@ -4802,10 +4805,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "am2Oh5"
-      },
-      {
-        "type": "unavailable",
-        "id": "-FpJdi"
       }
     ]
   },

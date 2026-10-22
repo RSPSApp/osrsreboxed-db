@@ -1298,12 +1298,13 @@
         "id": "iskMgS"
       },
       {
-        "type": "unavailable",
+        "type": "condition",
+        "text": "If the player drinks the \"grog\" whilst on a boat:",
         "steps": [
           {
             "type": "message",
             "text": "This drink has been sealed in a crate for an unknown amount of time. It could do anything to you, good or bad. Are you sure you want to drink it?",
-            "id": "9QnjB6"
+            "id": "R6ZRrX"
           },
           {
             "type": "choice",
@@ -1315,30 +1316,28 @@
                   {
                     "type": "message",
                     "text": "You drink a bottle of fish bladder stout.",
-                    "id": "PkEAX6"
+                    "id": "jR3WLF"
                   },
                   {
                     "type": "message",
                     "text": "The stout is delightful...",
-                    "id": "KCQMep"
+                    "id": "FYIidn"
                   },
                   {
                     "type": "message",
                     "text": "...but as you drink it, something appears to defend it!",
-                    "id": "bivi2Q"
+                    "id": "0OeEX0"
                   },
                   {
                     "type": "line",
                     "speaker": "Drink troll",
-                    "text": "Drinkies be mine! Leave dem drinkies!"
+                    "text": "Drinkies be mine! Leave dem drinkies!",
+                    "presentation": "overhead"
                   },
                   {
                     "type": "message",
                     "text": "Charting complete: Find a sealed crate near the Pandemonium and sample the contents.",
-                    "id": "98CGQt"
-                  },
-                  {
-                    "type": "end"
+                    "id": "IygfmJ"
                   }
                 ]
               },
@@ -1348,22 +1347,18 @@
                   {
                     "type": "jump",
                     "reference": "above",
-                    "id": "fyArvK"
+                    "id": "9rYX_u"
                   }
                 ]
               },
               {
                 "text": "No.",
-                "steps": [
-                  {
-                    "type": "end"
-                  }
-                ]
+                "steps": []
               }
             ]
           }
         ],
-        "id": "ZfklYe"
+        "id": "_-rpuj"
       }
     ],
     "the-grog-talking-to-steve-beanie-after-drinking-the-grog": [
@@ -1564,13 +1559,6 @@
         "type": "line",
         "speaker": "'Squawking' Steve Beanie",
         "text": "Well, I think it's about time you sort yourself out with an upgrade! You should check in with Jim. I'm sure he'll have something fitting. Now, avast!"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "mDyloU"
       }
     ]
   },

@@ -32,15 +32,18 @@
     ],
     "when-stealing-from-the-spice-stall": [
       {
-        "npc": "Hey! Get your hands off there!"
+        "npc": "Hey! Get your hands off there!",
+        "presentation": "overhead"
       }
     ],
     "talking-or-trading-after-stealing-spice": [
       {
-        "npc": "You're the one who stole something from me!"
+        "npc": "You're the one who stole something from me!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards guards!"
+        "npc": "Guards guards!",
+        "presentation": "overhead"
       }
     ]
   }

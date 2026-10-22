@@ -283,7 +283,8 @@
                 "player": "Yes, I'd love a cuppa."
               },
               {
-                "player": "Aaah, nothing like a nice cuppa tea!"
+                "player": "Aaah, nothing like a nice cuppa tea!",
+                "presentation": "overhead"
               }
             ]
           },

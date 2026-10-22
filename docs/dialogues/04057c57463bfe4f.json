@@ -3,12 +3,14 @@
   "variants": {
     "overhead-dialogue": [
       {
-        "npc": "Moo"
+        "npc": "Moo",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-upon-seeing-someone-teleport-to-the-lumbridge-cow-field-with-the-cowbell-amulet": [
       {
-        "npc": "M-Moo?"
+        "npc": "M-Moo?",
+        "presentation": "overhead"
       }
     ]
   }

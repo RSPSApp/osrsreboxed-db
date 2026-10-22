@@ -2495,7 +2495,8 @@
               {
                 "type": "line",
                 "speaker": "Monk of Zamorak",
-                "text": "Ha! Mash those guards!"
+                "text": "Ha! Mash those guards!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2505,7 +2506,8 @@
               {
                 "type": "line",
                 "speaker": "Monk of Zamorak",
-                "text": "Hey, zombies! I'm on your side!"
+                "text": "Hey, zombies! I'm on your side!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2515,7 +2517,8 @@
               {
                 "type": "line",
                 "speaker": "Monk of Zamorak",
-                "text": "Let me out! I'll help with your invasion!"
+                "text": "Let me out! I'll help with your invasion!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2525,7 +2528,8 @@
               {
                 "type": "line",
                 "speaker": "Monk of Zamorak",
-                "text": "Let me out! I'm a bad guy too!"
+                "text": "Let me out! I'm a bad guy too!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2535,7 +2539,8 @@
               {
                 "type": "line",
                 "speaker": "Monk of Zamorak",
-                "text": "Oi, zombies! Care to let me out?"
+                "text": "Oi, zombies! Care to let me out?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2545,7 +2550,8 @@
               {
                 "type": "line",
                 "speaker": "Monk of Zamorak",
-                "text": "So, are any of you zombies gonna break me out?"
+                "text": "So, are any of you zombies gonna break me out?",
+                "presentation": "overhead"
               }
             ]
           }
@@ -4209,13 +4215,6 @@
         "type": "line",
         "speaker": "Elias White",
         "text": "Until next time."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "FWKN8S"
       }
     ]
   },

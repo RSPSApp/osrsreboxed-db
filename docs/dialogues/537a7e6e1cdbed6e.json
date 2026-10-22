@@ -81,11 +81,9 @@
                                     "player": "It's a deal - here's 5,000 trading sticks."
                                   },
                                   {
-                                    "type": "unavailable",
-                                    "id": "QoqARJ"
-                                  },
-                                  {
-                                    "type": "end"
+                                    "type": "message",
+                                    "text": "You pay 5,000 trading sticks. Banisoch adds a climbing rope to the hole for you.",
+                                    "id": "RC6Onk"
                                   }
                                 ]
                               },
@@ -94,9 +92,6 @@
                                 "steps": [
                                   {
                                     "player": "Um, no thanks."
-                                  },
-                                  {
-                                    "type": "end"
                                   }
                                 ]
                               }
@@ -108,12 +103,14 @@
                     ]
                   },
                   {
-                    "text": "Never mind."
+                    "text": "Never mind.",
+                    "steps": [
+                      {
+                        "player": "Never mind."
+                      }
+                    ]
                   }
                 ]
-              },
-              {
-                "player": "Never mind."
               }
             ]
           },

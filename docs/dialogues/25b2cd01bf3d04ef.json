@@ -542,17 +542,20 @@
                       {
                         "type": "line",
                         "speaker": "Mosol Rei",
-                        "text": "Arrggghhh, here are some now!"
+                        "text": "Arrggghhh, here are some now!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "Undead one",
-                        "text": "Rahhhhh! OOoohhhhhh!"
+                        "text": "Rahhhhh! OOoohhhhhh!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "Undead one",
-                        "text": "Prepare to go to the other side!"
+                        "text": "Prepare to go to the other side!",
+                        "presentation": "overhead"
                       }
                     ]
                   },
@@ -1788,7 +1791,8 @@
                 "id": "NopUB9"
               },
               {
-                "player": "It looks very dangerous, and dark... Scary!"
+                "player": "It looks very dangerous, and dark... Scary!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -1907,7 +1911,8 @@
                 "id": "Y498IQ"
               },
               {
-                "player": "It looks very dangerous, and dark... Scary!"
+                "player": "It looks very dangerous, and dark... Scary!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -2098,7 +2103,8 @@
                 "id": "pu9um4"
               },
               {
-                "player": "Gulp! **"
+                "player": "Gulp! **",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2178,7 +2184,8 @@
                 "id": "WSn1Q2"
               },
               {
-                "player": "Oops! Not enough wood left to do anything else with the table!"
+                "player": "Oops! Not enough wood left to do anything else with the table!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2206,10 +2213,12 @@
                 "id": "1hPSVf"
               },
               {
-                "player": "Weeeeeeee!"
+                "player": "Weeeeeeee!",
+                "presentation": "overhead"
               },
               {
-                "player": "Weeeeeeee!"
+                "player": "Weeeeeeee!",
+                "presentation": "overhead"
               },
               {
                 "type": "message",
@@ -2217,7 +2226,8 @@
                 "id": "avxI_K"
               },
               {
-                "player": "Uh oh! *"
+                "player": "Uh oh! *",
+                "presentation": "overhead"
               },
               {
                 "type": "message",
@@ -2240,7 +2250,8 @@
                 "id": "gg5-kv"
               },
               {
-                "player": "Oops! Not enough wood left to do anything else with the table!"
+                "player": "Oops! Not enough wood left to do anything else with the table!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -2346,7 +2357,8 @@
                     "id": "-1gZyU"
                   },
                   {
-                    "player": "Arrgghhhh!"
+                    "player": "Arrgghhhh!",
+                    "presentation": "overhead"
                   },
                   {
                     "type": "message",
@@ -3369,7 +3381,8 @@
             "id": "JU9tjy"
           },
           {
-            "player": "Arrggghhhhhh!"
+            "player": "Arrggghhhhhh!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -4114,17 +4127,20 @@
           {
             "type": "line",
             "speaker": "Rashiliyia",
-            "text": "Let me squeeze the life from your mortal frame."
+            "text": "Let me squeeze the life from your mortal frame.",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Rashiliyia",
-            "text": "Which non-kin dares enter my tomb?"
+            "text": "Which non-kin dares enter my tomb?",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Rashiliyia",
-            "text": "My minions will finish thee!"
+            "text": "My minions will finish thee!",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -4132,7 +4148,8 @@
             "id": "GFDIbl"
           },
           {
-            "player": "Gaaaa.... *"
+            "player": "Gaaaa.... *",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -4299,7 +4316,8 @@
       {
         "type": "line",
         "speaker": "Nazastarool",
-        "text": "I am Nazastarool! Prepare to die!"
+        "text": "I am Nazastarool! Prepare to die!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -4319,12 +4337,14 @@
       {
         "type": "line",
         "speaker": "Nazastarool",
-        "text": "Quake in fear, for I am reborn!"
+        "text": "Quake in fear, for I am reborn!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Nazastarool",
-        "text": "Your death will be swift."
+        "text": "Your death will be swift.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -4344,12 +4364,14 @@
       {
         "type": "line",
         "speaker": "Nazastarool",
-        "text": "Nazastarool returns with vengeance!"
+        "text": "Nazastarool returns with vengeance!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Nazastarool",
-        "text": "Soon you will serve Rashiliyia."
+        "text": "Soon you will serve Rashiliyia.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -4415,13 +4437,16 @@
         "id": "VKFDeo"
       },
       {
-        "player": "Oh no, I'm going to be stuck in here forever!"
+        "player": "Oh no, I'm going to be stuck in here forever!",
+        "presentation": "overhead"
       },
       {
-        "player": "How will I ever get out!"
+        "player": "How will I ever get out!",
+        "presentation": "overhead"
       },
       {
-        "player": "I'm too young to die!"
+        "player": "I'm too young to die!",
+        "presentation": "overhead"
       }
     ],
     "visiting-the-tomb-of-rashiliyia-search-tomb-exit": [
@@ -4769,9 +4794,6 @@
         "text": "My hatred and bitterness corrupted me. I tried to destroy all life... now I am released. And am grateful to contemplate eternal rest..."
       },
       {
-        "type": "end"
-      },
-      {
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "l7zrz_"
@@ -4836,13 +4858,6 @@
         "type": "message",
         "text": "Rashiliyia's remains have been put to rest.",
         "id": "_xiIOK"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "rDJXJ8"
       }
     ]
   },
@@ -5432,17 +5447,20 @@
       {
         "type": "line",
         "speaker": "Mosol Rei",
-        "text": "Arrggghhh, here are some now!"
+        "text": "Arrggghhh, here are some now!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Undead one",
-        "text": "Rahhhhh! OOoohhhhhh!"
+        "text": "Rahhhhh! OOoohhhhhh!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Undead one",
-        "text": "Prepare to go to the other side!"
+        "text": "Prepare to go to the other side!",
+        "presentation": "overhead"
       },
       {
         "type": "end"

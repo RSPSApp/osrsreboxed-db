@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Can't stop. Too busy."
+                "npc": "Can't stop. Too busy.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Wonder when I'll get paid."
+                "npc": "Wonder when I'll get paid.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Is it lunch break yet?"
+                "npc": "Is it lunch break yet?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Hey I'm working here. I'm working here."
+                "npc": "Hey I'm working here. I'm working here.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "This work isn't going to do itself."
+                "npc": "This work isn't going to do itself.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Ouch! That was my finger!"
+                "npc": "Ouch! That was my finger!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -58,7 +64,8 @@
     ],
     "rarely-when-workman-are-picking-up-planks-from-ed": [
       {
-        "npc": "I'll be charging overtime, then!"
+        "npc": "I'll be charging overtime, then!",
+        "presentation": "overhead"
       }
     ]
   }

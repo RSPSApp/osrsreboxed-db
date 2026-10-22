@@ -167,7 +167,8 @@
               {
                 "type": "line",
                 "speaker": "Black Knight",
-                "text": "Die, intruder!"
+                "text": "Die, intruder!",
+                "presentation": "overhead"
               }
             ]
           }

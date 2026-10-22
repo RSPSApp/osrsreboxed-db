@@ -11,6 +11,7 @@
     ],
     "overhead-dialogue-when-failing-to-steal-from-a-nearby-stall": [
       {
+        "presentation": "overhead",
         "npc": "Hey! Get your hands off there!"
       }
     ]

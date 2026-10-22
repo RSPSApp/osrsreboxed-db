@@ -257,51 +257,53 @@
                 ]
               },
               {
-                "text": "Here you go, thanks."
-              }
-            ]
-          },
-          {
-            "player": "Here you go, thanks."
-          },
-          {
-            "npc": "Thanks [sir/ma'am], I didn't think you would hold up your side of the deal. There's not much honour amongst thieves, you know."
-          },
-          {
-            "npc": "Well do you need any other information then?",
-            "steps": [
-              {
-                "type": "choice",
-                "options": [
+                "text": "Here you go, thanks.",
+                "steps": [
                   {
-                    "text": "Yes tell me about...",
-                    "steps": [
-                      {
-                        "type": "jump",
-                        "id": "fhHgHr",
-                        "steps": [
-                          {
-                            "type": "call",
-                            "branch": "jump-52eee965ed6009f9"
-                          }
-                        ]
-                      }
-                    ]
+                    "player": "Here you go, thanks."
                   },
                   {
-                    "text": "No thanks.",
+                    "npc": "Thanks [sir/ma'am], I didn't think you would hold up your side of the deal. There's not much honour amongst thieves, you know."
+                  },
+                  {
+                    "npc": "Well do you need any other information then?",
                     "steps": [
                       {
-                        "player": "No thanks."
-                      },
-                      {
-                        "npc": "Come back if you need any info about anything in the town."
-                      },
-                      {
-                        "player": "I will do thanks."
-                      },
-                      {
-                        "type": "end"
+                        "type": "choice",
+                        "options": [
+                          {
+                            "text": "Yes tell me about...",
+                            "steps": [
+                              {
+                                "type": "jump",
+                                "id": "Hbqerm",
+                                "steps": [
+                                  {
+                                    "type": "call",
+                                    "branch": "jump-52eee965ed6009f9"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "No thanks.",
+                            "steps": [
+                              {
+                                "player": "No thanks."
+                              },
+                              {
+                                "npc": "Come back if you need any info about anything in the town."
+                              },
+                              {
+                                "player": "I will do thanks."
+                              },
+                              {
+                                "type": "end"
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   }
@@ -385,20 +387,24 @@
         "text": "If there is a villager nearby:",
         "steps": [
           {
-            "npc": "Hey you, camel features! Come here."
+            "npc": "Hey you, camel features! Come here.",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Villager",
-            "text": "I know your game guttersnipe."
+            "text": "I know your game guttersnipe.",
+            "presentation": "overhead"
           },
           {
-            "npc": "???"
+            "npc": "???",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Villager",
-            "text": "You won't fool anyone with that trick again."
+            "text": "You won't fool anyone with that trick again.",
+            "presentation": "overhead"
           },
           {
             "player": "I think I need to try a different tactic. Sorry, kid!"

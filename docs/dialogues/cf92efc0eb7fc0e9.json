@@ -28,7 +28,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Come try my lovely pizza or maybe some fish!"
+                "npc": "Come try my lovely pizza or maybe some fish!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -36,7 +37,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Stew to fill the belly, on sale here!"
+                "npc": "Stew to fill the belly, on sale here!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -44,7 +46,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Potatoes are filling and healthy too!"
+                "npc": "Potatoes are filling and healthy too!",
+                "presentation": "overhead"
               }
             ]
           }

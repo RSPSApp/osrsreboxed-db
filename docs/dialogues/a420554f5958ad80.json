@@ -148,12 +148,14 @@
           "text": "I've come to kill you.",
           "steps": [
             {
-              "npc": "Eeeek!"
+              "npc": "Eeeek!",
+              "presentation": "overhead"
             },
             {
               "type": "line",
               "speaker": "Hengel",
-              "text": "Aaaarrgh!"
+              "text": "Aaaarrgh!",
+              "presentation": "overhead"
             }
           ]
         }

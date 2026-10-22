@@ -88,7 +88,8 @@
                 "player": "Yes, I'd love a cuppa."
               },
               {
-                "player": "Aaah, nothing like a nice cupppa tea!"
+                "player": "Aaah, nothing like a nice cupppa tea!",
+                "presentation": "overhead"
               }
             ]
           },

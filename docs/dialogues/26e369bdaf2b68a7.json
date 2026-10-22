@@ -7,7 +7,8 @@
           "text": "Dialogue 1",
           "steps": [
             {
-              "npc": "Squawk! Who's a pretty bird?"
+              "npc": "Squawk! Who's a pretty bird?",
+              "presentation": "overhead"
             }
           ]
         },
@@ -15,7 +16,8 @@
           "text": "Dialogue 2",
           "steps": [
             {
-              "npc": "Squawk! Leave me alone, bird! I'm trying to have a drink!"
+              "npc": "Squawk! Leave me alone, bird! I'm trying to have a drink!",
+              "presentation": "overhead"
             }
           ]
         },
@@ -23,7 +25,8 @@
           "text": "Dialogue 3",
           "steps": [
             {
-              "npc": "Squawk! She's pecking my peg leg!"
+              "npc": "Squawk! She's pecking my peg leg!",
+              "presentation": "overhead"
             }
           ]
         },
@@ -31,7 +34,8 @@
           "text": "Dialogue 4",
           "steps": [
             {
-              "npc": "Squawk! Ow! That was my finger! Stupid bird!"
+              "npc": "Squawk! Ow! That was my finger! Stupid bird!",
+              "presentation": "overhead"
             }
           ]
         },
@@ -39,7 +43,8 @@
           "text": "Dialogue 5",
           "steps": [
             {
-              "npc": "Squawk! Steve! That bird is trying to drink the grog again!"
+              "npc": "Squawk! Steve! That bird is trying to drink the grog again!",
+              "presentation": "overhead"
             }
           ]
         },
@@ -47,7 +52,8 @@
           "text": "Dialogue 6",
           "steps": [
             {
-              "npc": "Squawk! Please stop! I'm sorry I called you a pigeon!"
+              "npc": "Squawk! Please stop! I'm sorry I called you a pigeon!",
+              "presentation": "overhead"
             }
           ]
         }

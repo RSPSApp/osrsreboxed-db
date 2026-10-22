@@ -3,7 +3,8 @@
   "variants": {
     "stat-reducing-attack": [
       {
-        "npc": "I infect your body with rot..."
+        "npc": "I infect your body with rot...",
+        "presentation": "overhead"
       }
     ]
   }

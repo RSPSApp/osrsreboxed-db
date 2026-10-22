@@ -48,7 +48,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Selling Magic Beans!"
+                "npc": "Selling Magic Beans!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -56,7 +57,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "You there, you look like you could use some beans!"
+                "npc": "You there, you look like you could use some beans!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -64,7 +66,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "All beans must go!"
+                "npc": "All beans must go!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -72,7 +75,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Buy 1 bean get a bean free!"
+                "npc": "Buy 1 bean get a bean free!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -80,7 +84,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Selling bags of Magic Beans!"
+                "npc": "Selling bags of Magic Beans!",
+                "presentation": "overhead"
               }
             ]
           }

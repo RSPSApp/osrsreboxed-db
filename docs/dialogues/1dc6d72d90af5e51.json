@@ -3,33 +3,43 @@
   "variants": {
     "overhead-dialogue": [
       {
+        "presentation": "overhead",
         "npc": "Which way should I go?"
       },
       {
+        "presentation": "overhead",
         "npc": "These dungeons are such a maze."
       },
       {
+        "presentation": "overhead",
         "npc": "I've been wandering around down here for hours."
       },
       {
+        "presentation": "overhead",
         "npc": "How can I get back to the village?"
       },
       {
+        "presentation": "overhead",
         "npc": "I hate being so lost!"
       },
       {
+        "presentation": "overhead",
         "npc": "Where am I? I'm so lost."
       },
       {
+        "presentation": "overhead",
         "npc": "I know the exit is around here, somewhere."
       },
       {
+        "presentation": "overhead",
         "npc": "Where's the exit?!?"
       },
       {
+        "presentation": "overhead",
         "npc": "This is the fifth time this week! I'm lost!"
       },
       {
+        "presentation": "overhead",
         "npc": "How could I be so disoriented?"
       },
       {

@@ -213,15 +213,18 @@
     ],
     "overhead-dialogue-catching-the-player-trying-to-steal-from-his-gem-stall": [
       {
-        "npc": "Hands off those gems!"
+        "npc": "Hands off those gems!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-interacting-with-him-after-stealing-from-his-gem-stall-recently": [
       {
-        "npc": "You're the thief! Stop!"
+        "npc": "You're the thief! Stop!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards, get this filthy human!"
+        "npc": "Guards, get this filthy human!",
+        "presentation": "overhead"
       }
     ]
   }

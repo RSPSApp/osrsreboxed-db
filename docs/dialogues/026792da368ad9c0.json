@@ -3,12 +3,14 @@
   "variants": {
     "overhead-dialogue-failed-pickpocket-attempt": [
       {
-        "npc": "What do you think you're doing?"
+        "npc": "What do you think you're doing?",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-catching-the-player-attempting-to-steal-from-a-stall-in-the-kourend-castle-courtyard": [
       {
-        "npc": "Hey! Get your hands off there!"
+        "npc": "Hey! Get your hands off there!",
+        "presentation": "overhead"
       }
     ]
   }

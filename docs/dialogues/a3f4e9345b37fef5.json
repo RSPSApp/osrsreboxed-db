@@ -222,7 +222,8 @@
     ],
     "ardougne-monastery-before-monk-s-friend": [
       {
-        "npc": "Peace brother"
+        "npc": "Peace brother",
+        "presentation": "overhead"
       }
     ],
     "ardougne-monastery-after-monk-s-friend": [

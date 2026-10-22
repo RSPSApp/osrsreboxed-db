@@ -77,7 +77,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Crispy!"
+                "npc": "Crispy!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -85,7 +86,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Creeeespy frogs' legs!"
+                "npc": "Creeeespy frogs' legs!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -93,7 +95,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Get your crispy frogs' legs!"
+                "npc": "Get your crispy frogs' legs!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -101,7 +104,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Frogs' legs!"
+                "npc": "Frogs' legs!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -109,7 +113,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Crispy frogs' legs!"
+                "npc": "Crispy frogs' legs!",
+                "presentation": "overhead"
               }
             ]
           }

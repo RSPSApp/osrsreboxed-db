@@ -37,8 +37,9 @@
               "text": "If the player has 2 coins:",
               "steps": [
                 {
-                  "type": "unavailable",
-                  "id": "nxjLlg"
+                  "type": "message",
+                  "text": "You buy a pint of Dragon Bitter.",
+                  "id": "NX45Qu"
                 },
                 {
                   "type": "end"
@@ -72,8 +73,9 @@
               "text": "If the player has 10 coins:",
               "steps": [
                 {
-                  "type": "unavailable",
-                  "id": "F4Iy__"
+                  "type": "message",
+                  "text": "You buy a pint of Greenman's Ale.",
+                  "id": "x6UKzD"
                 },
                 {
                   "type": "end"
@@ -107,8 +109,9 @@
               "text": "If the player has 2 coins:",
               "steps": [
                 {
-                  "type": "unavailable",
-                  "id": "_R9Lb5"
+                  "type": "message",
+                  "text": "You buy a pint of cheap beer.",
+                  "id": "tAC5-D"
                 },
                 {
                   "npc": "Have a super day!"

@@ -2412,12 +2412,14 @@
               {
                 "type": "line",
                 "speaker": "Ogre shaman",
-                "text": "You shut your mouth! Don't tell them anything!"
+                "text": "You shut your mouth! Don't tell them anything!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Scared skavid",
-                "text": "Tanath cur, tanath cur!"
+                "text": "Tanath cur, tanath cur!",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -2919,12 +2921,14 @@
       {
         "type": "line",
         "speaker": "Ogre shaman",
-        "text": "Hur, hut, hur. Stoopid dragon!"
+        "text": "Hur, hut, hur. Stoopid dragon!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Ogre shaman",
-        "text": "Take dis!"
+        "text": "Take dis!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2934,7 +2938,8 @@
       {
         "type": "line",
         "speaker": "Ogre shaman",
-        "text": "Hur, hur, hur, hur!"
+        "text": "Hur, hur, hur, hur!",
+        "presentation": "overhead"
       }
     ],
     "entering-the-enclave-inside-the-enclave-talking-to-an-ogre-chieftain": [
@@ -3392,20 +3397,22 @@
         "type": "choice",
         "options": [
           {
-            "text": "Do you have any more quests for me?"
-          }
-        ]
-      },
-      {
-        "player": "Do you have any more quests for me?",
-        "steps": [
-          {
-            "type": "line",
-            "speaker": "Watchtower wizard",
-            "text": "More quests? No, indeed, adventurer. You have done us a great service, already."
-          },
-          {
-            "type": "end"
+            "text": "Do you have any more quests for me?",
+            "steps": [
+              {
+                "player": "Do you have any more quests for me?",
+                "steps": [
+                  {
+                    "type": "line",
+                    "speaker": "Watchtower wizard",
+                    "text": "More quests? No, indeed, adventurer. You have done us a great service, already."
+                  },
+                  {
+                    "type": "end"
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3496,10 +3503,6 @@
         "type": "message",
         "text": "The scroll crumbles to dust.",
         "id": "VSYvDt"
-      },
-      {
-        "type": "unavailable",
-        "id": "ThywOK"
       }
     ]
   },

@@ -17,6 +17,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Urgh!"
               }
             ]
@@ -25,6 +26,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Grunt!"
               }
             ]
@@ -33,6 +35,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Snort!"
               }
             ]

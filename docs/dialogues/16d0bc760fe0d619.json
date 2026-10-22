@@ -113,8 +113,9 @@
                             "id": "90AKbB"
                           },
                           {
-                            "type": "unavailable",
-                            "id": "CqeGNV"
+                            "type": "message",
+                            "text": "You hand over 100 gold and Rohak bakes you a rock cake.",
+                            "id": "WKEEcw"
                           }
                         ]
                       },

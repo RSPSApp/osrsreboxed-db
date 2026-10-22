@@ -3,7 +3,8 @@
   "variants": {
     "upon-failed-pickpocketing-attempt": [
       {
-        "npc": "Cor blimey mate, what are ye doing in me pockets?"
+        "npc": "Cor blimey mate, what are ye doing in me pockets?",
+        "presentation": "overhead"
       },
       {
         "type": "action",

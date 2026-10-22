@@ -1966,13 +1966,6 @@
         "type": "action",
         "text": "(The player is awarded 10,000 coins.)",
         "id": "RMIMnr"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "vU0QkY"
       }
     ]
   },

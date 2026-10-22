@@ -7,7 +7,8 @@
           "text": "Dialogue 1",
           "steps": [
             {
-              "npc": "We seed the hidden truths of this world! Ranul rewards all of us who are willing to find them!"
+              "npc": "We seed the hidden truths of this world! Ranul rewards all of us who are willing to find them!",
+              "presentation": "overhead"
             }
           ]
         },
@@ -15,7 +16,8 @@
           "text": "Dialogue 2",
           "steps": [
             {
-              "npc": "Ralos and Ranul are the twin guardians of our fate! Trust in them, for they will lead us to our destinies!"
+              "npc": "Ralos and Ranul are the twin guardians of our fate! Trust in them, for they will lead us to our destinies!",
+              "presentation": "overhead"
             }
           ]
         },
@@ -23,7 +25,8 @@
           "text": "Dialogue 3",
           "steps": [
             {
-              "npc": "Do not fear the dark of night! Embrace it, for it is a gift from Ranul!"
+              "npc": "Do not fear the dark of night! Embrace it, for it is a gift from Ranul!",
+              "presentation": "overhead"
             }
           ]
         },
@@ -31,7 +34,8 @@
           "text": "Dialogue 4",
           "steps": [
             {
-              "npc": "In times of sorrow, we look to Ralos and Ranul. They guide us through day and night."
+              "npc": "In times of sorrow, we look to Ralos and Ranul. They guide us through day and night.",
+              "presentation": "overhead"
             }
           ]
         },
@@ -39,7 +43,8 @@
           "text": "Dialogue 5",
           "steps": [
             {
-              "npc": "Be bold in the day, but reflect in the night! Let the teachings of both Ralos and Ranul guide you equally!"
+              "npc": "Be bold in the day, but reflect in the night! Let the teachings of both Ralos and Ranul guide you equally!",
+              "presentation": "overhead"
             }
           ]
         },
@@ -47,7 +52,8 @@
           "text": "Dialogue 6",
           "steps": [
             {
-              "npc": "Ralos teaches us to be brave! To be bold! Let his warmth in, and it will burn away all doubts!"
+              "npc": "Ralos teaches us to be brave! To be bold! Let his warmth in, and it will burn away all doubts!",
+              "presentation": "overhead"
             }
           ]
         },
@@ -55,7 +61,8 @@
           "text": "Dialogue 7",
           "steps": [
             {
-              "npc": "Ralos shines upon us who are brave! If we show the courage to act, he will reward us!"
+              "npc": "Ralos shines upon us who are brave! If we show the courage to act, he will reward us!",
+              "presentation": "overhead"
             }
           ]
         }

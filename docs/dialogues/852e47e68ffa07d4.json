@@ -670,7 +670,8 @@
         "id": "FokcJz"
       },
       {
-        "player": "Ow - HOT!"
+        "player": "Ow - HOT!",
+        "presentation": "overhead"
       }
     ],
     "starting-off-attempting-to-scoop-from-the-pot-again": [
@@ -805,17 +806,20 @@
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "Hurry up, <player name>!"
+        "text": "Hurry up, <player name>!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "Dis is Troll Generals' cave."
+        "text": "Dis is Troll Generals' cave.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "Climb up 'ere."
+        "text": "Climb up 'ere.",
+        "presentation": "overhead"
       }
     ],
     "starting-off-interrupting-the-dialogue-after-giving-my-arm-the-goutweedy-lump": [
@@ -1536,7 +1540,8 @@
       {
         "type": "line",
         "speaker": "Captain Barnaby",
-        "text": "Aaaaargh!"
+        "text": "Aaaaargh!",
+        "presentation": "overhead"
       }
     ],
     "karamja-talking-to-my-arm-outside-tai-bwo-wannai": [
@@ -1738,7 +1743,8 @@
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "My Arm bored..."
+                        "text": "My Arm bored...",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1753,7 +1759,8 @@
                       {
                         "type": "line",
                         "speaker": "Murcaily",
-                        "text": "What is this noise?"
+                        "text": "What is this noise?",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1763,7 +1770,8 @@
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "Where's da goutweed?"
+                        "text": "Where's da goutweed?",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1773,7 +1781,8 @@
                       {
                         "type": "line",
                         "speaker": "Qutiedoll",
-                        "text": "Agh - a troll!"
+                        "text": "Agh - a troll!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1783,12 +1792,14 @@
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "Want goutweed!"
+                        "text": "Want goutweed!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "Qutiedoll",
-                        "text": "Eek!"
+                        "text": "Eek!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1798,22 +1809,26 @@
                       {
                         "type": "line",
                         "speaker": "Murcaily",
-                        "text": "Hey!"
+                        "text": "Hey!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "Murcaily",
-                        "text": "What are you doing?"
+                        "text": "What are you doing?",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "My Arm want goutweed!"
+                        "text": "My Arm want goutweed!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "Murcaily",
-                        "text": "Be careful!"
+                        "text": "Be careful!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1823,7 +1838,8 @@
                       {
                         "type": "line",
                         "speaker": "Murcaily",
-                        "text": "A broodoo man!"
+                        "text": "A broodoo man!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1833,7 +1849,8 @@
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "Has you got goutweed?"
+                        "text": "Has you got goutweed?",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1843,12 +1860,14 @@
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "Ow!"
+                        "text": "Ow!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "Grrr!"
+                        "text": "Grrr!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1858,7 +1877,8 @@
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "Still want goutweed!"
+                        "text": "Still want goutweed!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1868,17 +1888,20 @@
                       {
                         "type": "line",
                         "speaker": "Murcaily",
-                        "text": "Jagdakobo - here is the monster!"
+                        "text": "Jagdakobo - here is the monster!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "Jagdakobo",
-                        "text": "Prepare to die!"
+                        "text": "Prepare to die!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "Where you keep goutweed?"
+                        "text": "Where you keep goutweed?",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1888,7 +1911,8 @@
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "Ow!"
+                        "text": "Ow!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1898,7 +1922,8 @@
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "You got issues!"
+                        "text": "You got issues!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1908,7 +1933,8 @@
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "Humans all mental."
+                        "text": "Humans all mental.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1918,22 +1944,26 @@
                       {
                         "type": "line",
                         "speaker": "Murcaily",
-                        "text": "Make it go away!"
+                        "text": "Make it go away!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "Murcaily",
-                        "text": "I'll give you anything!"
+                        "text": "I'll give you anything!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "My Arm",
-                        "text": "My Arm want goutweed!"
+                        "text": "My Arm want goutweed!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "line",
                         "speaker": "Murcaily",
-                        "text": "Okay, here you go."
+                        "text": "Okay, here you go.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -2439,17 +2469,20 @@
       {
         "type": "line",
         "speaker": "Drunken dwarf",
-        "text": "'Ello, matey!"
+        "text": "'Ello, matey!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "You a dwarf."
+        "text": "You a dwarf.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "You not my matey!"
+        "text": "You not my matey!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2459,12 +2492,14 @@
       {
         "type": "line",
         "speaker": "Drunken dwarf",
-        "text": "Aaaargh - matey!"
+        "text": "Aaaargh - matey!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Unnamed troll child",
-        "text": "Ooh. Food for me?"
+        "text": "Ooh. Food for me?",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2487,12 +2522,14 @@
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "Akka akka!"
+        "text": "Akka akka!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "Save da goutweed!"
+        "text": "Save da goutweed!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2502,7 +2539,8 @@
       {
         "type": "line",
         "speaker": "Tool leprechaun",
-        "text": "Heheh - ickle birdie!"
+        "text": "Heheh - ickle birdie!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2512,7 +2550,8 @@
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "Akka!"
+        "text": "Akka!",
+        "presentation": "overhead"
       },
       {
         "player": "You're worried about that?"
@@ -2582,7 +2621,8 @@
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "W00t - farming level!"
+        "text": "W00t - farming level!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -2783,7 +2823,8 @@
         "id": "SjSq1u"
       },
       {
-        "player": "Aha!"
+        "player": "Aha!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -2794,13 +2835,6 @@
         "type": "message",
         "text": "Congratulations, you've completed a quest: My Arm's Big Adventure",
         "id": "Q3LdZt"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "2F4as_"
       }
     ]
   },
@@ -3103,17 +3137,20 @@
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "Hurry up, <player name>!"
+        "text": "Hurry up, <player name>!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "Dis is Troll Generals' cave."
+        "text": "Dis is Troll Generals' cave.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "My Arm",
-        "text": "Climb up 'ere."
+        "text": "Climb up 'ere.",
+        "presentation": "overhead"
       }
     ],
     "jump-3d770e00325e4180": [
@@ -3187,7 +3224,8 @@
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "My Arm bored..."
+            "text": "My Arm bored...",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3202,7 +3240,8 @@
           {
             "type": "line",
             "speaker": "Murcaily",
-            "text": "What is this noise?"
+            "text": "What is this noise?",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3212,7 +3251,8 @@
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "Where's da goutweed?"
+            "text": "Where's da goutweed?",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3222,7 +3262,8 @@
           {
             "type": "line",
             "speaker": "Qutiedoll",
-            "text": "Agh - a troll!"
+            "text": "Agh - a troll!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3232,12 +3273,14 @@
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "Want goutweed!"
+            "text": "Want goutweed!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Qutiedoll",
-            "text": "Eek!"
+            "text": "Eek!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3247,22 +3290,26 @@
           {
             "type": "line",
             "speaker": "Murcaily",
-            "text": "Hey!"
+            "text": "Hey!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Murcaily",
-            "text": "What are you doing?"
+            "text": "What are you doing?",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "My Arm want goutweed!"
+            "text": "My Arm want goutweed!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Murcaily",
-            "text": "Be careful!"
+            "text": "Be careful!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3272,7 +3319,8 @@
           {
             "type": "line",
             "speaker": "Murcaily",
-            "text": "A broodoo man!"
+            "text": "A broodoo man!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3282,7 +3330,8 @@
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "Has you got goutweed?"
+            "text": "Has you got goutweed?",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3292,12 +3341,14 @@
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "Ow!"
+            "text": "Ow!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "Grrr!"
+            "text": "Grrr!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3307,7 +3358,8 @@
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "Still want goutweed!"
+            "text": "Still want goutweed!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3317,17 +3369,20 @@
           {
             "type": "line",
             "speaker": "Murcaily",
-            "text": "Jagdakobo - here is the monster!"
+            "text": "Jagdakobo - here is the monster!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Jagdakobo",
-            "text": "Prepare to die!"
+            "text": "Prepare to die!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "Where you keep goutweed?"
+            "text": "Where you keep goutweed?",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3337,7 +3392,8 @@
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "Ow!"
+            "text": "Ow!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3347,7 +3403,8 @@
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "You got issues!"
+            "text": "You got issues!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3357,7 +3414,8 @@
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "Humans all mental."
+            "text": "Humans all mental.",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -3367,22 +3425,26 @@
           {
             "type": "line",
             "speaker": "Murcaily",
-            "text": "Make it go away!"
+            "text": "Make it go away!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Murcaily",
-            "text": "I'll give you anything!"
+            "text": "I'll give you anything!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "My Arm",
-            "text": "My Arm want goutweed!"
+            "text": "My Arm want goutweed!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Murcaily",
-            "text": "Okay, here you go."
+            "text": "Okay, here you go.",
+            "presentation": "overhead"
           },
           {
             "type": "action",

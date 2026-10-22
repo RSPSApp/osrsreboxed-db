@@ -668,7 +668,8 @@
       {
         "type": "line",
         "speaker": "Ulfric",
-        "text": "Slay... Outlander... Intruder!"
+        "text": "Slay... Outlander... Intruder!",
+        "presentation": "overhead"
       }
     ],
     "entering-the-brine-rat-cavern-opening-the-chest-inside-the-shipwreck-after-ulfric-has-been-defeated": [
@@ -686,10 +687,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "QKeIBs"
-      },
-      {
-        "type": "unavailable",
-        "id": "uo04Qr"
       }
     ]
   },

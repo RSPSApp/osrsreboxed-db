@@ -596,44 +596,54 @@
     ],
     "starting-out-escaping-the-vampyres": [
       {
-        "player": "Ivan! We need to get out of here!"
+        "player": "Ivan! We need to get out of here!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Ivan Strom",
-        "text": "Not like this... Not here! Not again!"
+        "text": "Not like this... Not here! Not again!",
+        "presentation": "overhead"
       },
       {
-        "player": "Ivan!"
+        "player": "Ivan!",
+        "presentation": "overhead"
       },
       {
-        "player": "Damn it!"
+        "player": "Damn it!",
+        "presentation": "overhead"
       },
       {
-        "player": "Ivan! We can't stay here!"
-      },
-      {
-        "type": "line",
-        "speaker": "Ivan Strom",
-        "text": "Okay... I can do this..."
-      },
-      {
-        "type": "line",
-        "speaker": "Ivan Strom",
-        "text": "I'll try and teleport us out of here! Keep them off me!"
-      },
-      {
-        "player": "What's happening, Ivan?!"
+        "player": "Ivan! We can't stay here!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Ivan Strom",
-        "text": "I'm working on it, but I need more time!"
+        "text": "Okay... I can do this...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Ivan Strom",
-        "text": "Just a little longer! I'm almost there!"
+        "text": "I'll try and teleport us out of here! Keep them off me!",
+        "presentation": "overhead"
+      },
+      {
+        "player": "What's happening, Ivan?!",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Ivan Strom",
+        "text": "I'm working on it, but I need more time!",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Ivan Strom",
+        "text": "Just a little longer! I'm almost there!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -645,7 +655,8 @@
       {
         "type": "line",
         "speaker": "Ivan Strom",
-        "text": "I'm not looking so good here! I could use some food if you have any!"
+        "text": "I'm not looking so good here! I could use some food if you have any!",
+        "presentation": "overhead"
       }
     ],
     "starting-out-escaping-the-vampyres-trying-to-feed-ivan-without-any-food": [
@@ -1324,7 +1335,8 @@
       {
         "type": "line",
         "speaker": "Veliaf Hurtz",
-        "text": "Die vampyre scum!"
+        "text": "Die vampyre scum!",
+        "presentation": "overhead"
       }
     ],
     "the-truth-hurtz-talking-to-veliaf-inside-crombwick-manor": [
@@ -1709,7 +1721,8 @@
       {
         "type": "line",
         "speaker": "Ivan Strom",
-        "text": "Nice job, [player name]. Let's check upstairs."
+        "text": "Nice job, [player name]. Let's check upstairs.",
+        "presentation": "overhead"
       }
     ],
     "the-truth-hurtz-talking-to-ivan-upstairs": [
@@ -3184,10 +3197,12 @@
       {
         "type": "line",
         "speaker": "Ivan Strom",
-        "text": "No! Stay back!"
+        "text": "No! Stay back!",
+        "presentation": "overhead"
       },
       {
-        "player": "Ivan!"
+        "player": "Ivan!",
+        "presentation": "overhead"
       }
     ],
     "escape-from-castle-drakan-talking-to-ivan-after-defeating-the-venator": [
@@ -4348,19 +4363,22 @@
       {
         "type": "line",
         "speaker": "Vanescula Drakan",
-        "text": "I can't do this alone! put up a fight!"
+        "text": "I can't do this alone! put up a fight!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Vanescula Drakan",
-        "text": "Keep dodging! I have an angle..."
+        "text": "Keep dodging! I have an angle...",
+        "presentation": "overhead"
       }
     ],
     "blood-hunt-fighting-drakan-getting-hit-by-the-spear-attack-too-many-times": [
       {
         "type": "line",
         "speaker": "Vanescula Drakan",
-        "text": "You're supposed to avoid the spear!"
+        "text": "You're supposed to avoid the spear!",
+        "presentation": "overhead"
       }
     ],
     "blood-hunt-after-dealing-enough-damage-to-lowerniel": [
@@ -6563,14 +6581,16 @@
       {
         "type": "line",
         "speaker": "Efaritay Hallow",
-        "text": "Hallowed judgement!"
+        "text": "Hallowed judgement!",
+        "presentation": "overhead"
       }
     ],
     "drakan-s-siege-fighting-lowerniel-if-lowerniel-is-too-close-to-efaritay": [
       {
         "type": "line",
         "speaker": "Efaritay Hallow",
-        "text": "Create some distance for me, [player name]!"
+        "text": "Create some distance for me, [player name]!",
+        "presentation": "overhead"
       }
     ],
     "drakan-s-siege-fighting-lowerniel-upon-lowerniel-reaching-58-hp": [
@@ -7508,32 +7528,38 @@
       {
         "type": "line",
         "speaker": "Wyrd",
-        "text": "Ragh!"
+        "text": "Ragh!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Wyrd",
-        "text": "Grah!"
+        "text": "Grah!",
+        "presentation": "overhead"
       }
     ],
     "fighting-wyrds-upon-reaching-80-hp": [
       {
         "type": "line",
         "speaker": "Wyrd",
-        "text": "[player name]... Leave!"
+        "text": "[player name]... Leave!",
+        "presentation": "overhead"
       },
       {
-        "player": "No! Safalaan, stay with me!"
+        "player": "No! Safalaan, stay with me!",
+        "presentation": "overhead"
       }
     ],
     "fighting-wyrds-upon-reaching-50-hp": [
       {
         "type": "line",
         "speaker": "Wyrd",
-        "text": "Your blood... I... Hunger!"
+        "text": "Your blood... I... Hunger!",
+        "presentation": "overhead"
       },
       {
-        "player": "You can beat this Safalaan!"
+        "player": "You can beat this Safalaan!",
+        "presentation": "overhead"
       }
     ],
     "fighting-wyrds-upon-reaching-10-hp": [
@@ -7967,12 +7993,14 @@
       {
         "type": "line",
         "speaker": "Sugadinti Vitur",
-        "text": "Rally, my children!"
+        "text": "Rally, my children!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Efaritay Hallow",
-        "text": "Hallowed judgement!"
+        "text": "Hallowed judgement!",
+        "presentation": "overhead"
       }
     ],
     "night-of-the-blood-moon-upon-lowerniel-reaching-30-hp": [
@@ -9453,9 +9481,6 @@
                 "type": "line",
                 "speaker": "Ivan Strom",
                 "text": "Until next time, [player name]."
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -9499,9 +9524,6 @@
                     "type": "message",
                     "text": "Ivan gives you [number] medallions.",
                     "id": "y79xjU"
-                  },
-                  {
-                    "type": "end"
                   }
                 ],
                 "id": "w_NFFw"
@@ -9518,17 +9540,10 @@
                 "type": "line",
                 "speaker": "Ivan",
                 "text": "See you later, [player name]."
-              },
-              {
-                "type": "end"
               }
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "DKSjaR"
       }
     ]
   },

@@ -29,7 +29,8 @@
     ],
     "overhead-dialogue": [
       {
-        "npc": "HIC*"
+        "npc": "HIC*",
+        "presentation": "overhead"
       }
     ]
   }

@@ -99,7 +99,8 @@
             "text": "Dialogue 11",
             "steps": [
               {
-                "npc": "Burp"
+                "npc": "Burp",
+                "presentation": "overhead"
               }
             ]
           }

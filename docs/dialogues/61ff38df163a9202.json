@@ -1016,7 +1016,8 @@
       {
         "type": "line",
         "speaker": "Awowogei",
-        "text": "Ikik..."
+        "text": "Ikik...",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1051,7 +1052,8 @@
       {
         "type": "line",
         "speaker": "Mysterious Old Man",
-        "text": "Greetings, Horacio!"
+        "text": "Greetings, Horacio!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -1061,7 +1063,8 @@
       {
         "type": "line",
         "speaker": "Mysterious Old Man",
-        "text": "Here you go Horacio, it's all yours!"
+        "text": "Here you go Horacio, it's all yours!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1096,7 +1099,8 @@
       {
         "type": "line",
         "speaker": "Evil Bob",
-        "text": "Meoooooow!"
+        "text": "Meoooooow!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -1140,7 +1144,8 @@
       {
         "type": "line",
         "speaker": "General Bentnoze",
-        "text": "Let go!"
+        "text": "Let go!",
+        "presentation": "overhead"
       },
       {
         "player": "No, I'm not!"
@@ -1158,7 +1163,8 @@
       {
         "type": "line",
         "speaker": "Awowogei",
-        "text": "Ek uhuh!"
+        "text": "Ek uhuh!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -1178,7 +1184,8 @@
       {
         "type": "line",
         "speaker": "Culinaromancer",
-        "text": "MUAHAHAHA!"
+        "text": "MUAHAHAHA!",
+        "presentation": "overhead"
       },
       {
         "type": "action",

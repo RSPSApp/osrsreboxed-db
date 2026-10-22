@@ -224,7 +224,7 @@
                                 "id": "fvJSMV"
                               },
                               {
-                                "npc": "Do you want me to point you in the right direction? {{Anchor|below}}",
+                                "npc": "Do you want me to point you in the right direction?",
                                 "steps": [
                                   {
                                     "type": "choice",
@@ -246,7 +246,7 @@
                                                     "type": "end"
                                                   }
                                                 ],
-                                                "id": "YIhinb"
+                                                "id": "1ur2_C"
                                               },
                                               {
                                                 "type": "condition",
@@ -259,7 +259,7 @@
                                                     "type": "end"
                                                   }
                                                 ],
-                                                "id": "zwv4LC"
+                                                "id": "Jm1nfB"
                                               },
                                               {
                                                 "type": "condition",
@@ -269,7 +269,7 @@
                                                     "npc": "Her house is south east of here."
                                                   }
                                                 ],
-                                                "id": "khr6FH"
+                                                "id": "-nTThl"
                                               }
                                             ]
                                           }
@@ -329,7 +329,8 @@
     ],
     "overhead-dialogue-when-a-wealthy-citizen-is-about-to-re-enter-their-house": [
       {
-        "npc": "whistle*"
+        "npc": "whistle*",
+        "presentation": "overhead"
       }
     ],
     "giving-oli-a-bowl-of-stew": [

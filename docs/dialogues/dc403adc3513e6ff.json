@@ -616,27 +616,32 @@
       {
         "type": "line",
         "speaker": "Tower Mage",
-        "text": "Clear off!"
+        "text": "Clear off!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Tower Mage",
-        "text": "Get out of it!"
+        "text": "Get out of it!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Tower Mage",
-        "text": "Somebody deal with this!"
+        "text": "Somebody deal with this!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Tower Mage",
-        "text": "Someone sort out these souls!"
+        "text": "Someone sort out these souls!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Tower Mage",
-        "text": "We need to deal with these souls!"
+        "text": "We need to deal with these souls!",
+        "presentation": "overhead"
       }
     ],
     "a-death-entering-the-tower-of-magic-post-ghost-bust": [
@@ -1265,10 +1270,6 @@
         "type": "action",
         "text": "(Non-quest dialogue.)",
         "id": "3FLk-6"
-      },
-      {
-        "type": "unavailable",
-        "id": "GewklE"
       }
     ]
   },

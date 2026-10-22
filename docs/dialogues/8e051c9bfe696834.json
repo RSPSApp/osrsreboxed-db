@@ -3,7 +3,8 @@
   "variants": {
     "upon-death": [
       {
-        "npc": "Squeak!"
+        "npc": "Squeak!",
+        "presentation": "overhead"
       }
     ]
   }

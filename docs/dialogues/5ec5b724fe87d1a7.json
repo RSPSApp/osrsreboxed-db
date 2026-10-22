@@ -126,7 +126,8 @@
       {
         "type": "line",
         "speaker": "Culinaromancer",
-        "text": "Say hello to my little friend!"
+        "text": "Say hello to my little friend!",
+        "presentation": "overhead"
       },
       {
         "type": "condition",
@@ -148,7 +149,8 @@
       {
         "type": "line",
         "speaker": "Culinaromancer",
-        "text": "I will not be thwarted by you!"
+        "text": "I will not be thwarted by you!",
+        "presentation": "overhead"
       },
       {
         "type": "condition",
@@ -170,7 +172,8 @@
       {
         "type": "line",
         "speaker": "Culinaromancer",
-        "text": "I have waited a long time for my revenge!"
+        "text": "I have waited a long time for my revenge!",
+        "presentation": "overhead"
       },
       {
         "type": "condition",
@@ -192,7 +195,8 @@
       {
         "type": "line",
         "speaker": "Culinaromancer",
-        "text": "Let's see how you deal with this!"
+        "text": "Let's see how you deal with this!",
+        "presentation": "overhead"
       },
       {
         "type": "condition",
@@ -214,7 +218,8 @@
       {
         "type": "line",
         "speaker": "Culinaromancer",
-        "text": "You've been lucky so far, but no more!"
+        "text": "You've been lucky so far, but no more!",
+        "presentation": "overhead"
       },
       {
         "type": "condition",

@@ -1268,7 +1268,8 @@
                       {
                         "type": "line",
                         "speaker": "Mercenary Captain",
-                        "text": "Destroy this low life desert rat guards!"
+                        "text": "Destroy this low life desert rat guards!",
+                        "presentation": "overhead"
                       }
                     ]
                   },
@@ -1278,7 +1279,8 @@
                       {
                         "type": "line",
                         "speaker": "Mercenary Captain",
-                        "text": "Guards! Attack that Desert Jackal!"
+                        "text": "Guards! Attack that Desert Jackal!",
+                        "presentation": "overhead"
                       }
                     ]
                   },
@@ -1288,7 +1290,8 @@
                       {
                         "type": "line",
                         "speaker": "Mercenary Captain",
-                        "text": "Kill that intruder guards!"
+                        "text": "Kill that intruder guards!",
+                        "presentation": "overhead"
                       }
                     ]
                   },
@@ -1298,7 +1301,8 @@
                       {
                         "type": "line",
                         "speaker": "Mercenary Captain",
-                        "text": "Men! Kill this filthy vermin."
+                        "text": "Men! Kill this filthy vermin.",
+                        "presentation": "overhead"
                       }
                     ]
                   },
@@ -1308,7 +1312,8 @@
                       {
                         "type": "line",
                         "speaker": "Mercenary Captain",
-                        "text": "Kill this madman guards!"
+                        "text": "Kill this madman guards!",
+                        "presentation": "overhead"
                       }
                     ]
                   }
@@ -1808,7 +1813,8 @@
             "id": "xBQGwN"
           },
           {
-            "player": "Ow!"
+            "player": "Ow!",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -1863,22 +1869,26 @@
           {
             "type": "line",
             "speaker": "Guard",
-            "text": "Okay, that does it!"
+            "text": "Okay, that does it!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Guard",
-            "text": "You're in serious trouble now!"
+            "text": "You're in serious trouble now!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Guard",
-            "text": "Okay men, we need to teach this person a lesson"
+            "text": "Okay men, we need to teach this person a lesson",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Guard",
-            "text": "about desert survival."
+            "text": "about desert survival.",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -2432,17 +2442,20 @@
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Hey - you with the weapon!"
+        "text": "Hey - you with the weapon!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "You're not allowed in here!"
+        "text": "You're not allowed in here!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Quick, men, get [him/her/them]!!"
+        "text": "Quick, men, get [him/her/them]!!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2525,7 +2538,8 @@
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Into the cell you go! I hope this teaches you a lesson."
+        "text": "Into the cell you go! I hope this teaches you a lesson.",
+        "presentation": "overhead"
       }
     ],
     "inside-the-camp-trying-to-open-the-prison-door": [
@@ -3418,7 +3432,8 @@
               {
                 "type": "line",
                 "speaker": "Rowdy slave",
-                "text": "Hey, you're in for a good beating!"
+                "text": "Hey, you're in for a good beating!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3428,7 +3443,8 @@
               {
                 "type": "line",
                 "speaker": "Rowdy slave",
-                "text": "I'm gonna teach you some respect!"
+                "text": "I'm gonna teach you some respect!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3438,7 +3454,8 @@
               {
                 "type": "line",
                 "speaker": "Rowdy slave",
-                "text": "Oi! Are you looking at me!"
+                "text": "Oi! Are you looking at me!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3448,7 +3465,8 @@
               {
                 "type": "line",
                 "speaker": "Rowdy slave",
-                "text": "Oi! I'm gonna give you some trouble!"
+                "text": "Oi! I'm gonna give you some trouble!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3458,7 +3476,8 @@
               {
                 "type": "line",
                 "speaker": "Rowdy slave",
-                "text": "You wanna piece of me?"
+                "text": "You wanna piece of me?",
+                "presentation": "overhead"
               }
             ]
           }
@@ -3518,8 +3537,9 @@
                         "player": "Huh, fat chance of a rest for me."
                       },
                       {
-                        "type": "unavailable",
-                        "id": "zHxSA3"
+                        "type": "message",
+                        "text": "The guard cuffs you around head.",
+                        "id": "YCysz3"
                       },
                       {
                         "type": "line",
@@ -4757,8 +4777,9 @@
         "text": "If the player does not have the wrought iron key:",
         "steps": [
           {
-            "type": "unavailable",
-            "id": "mfrDCP"
+            "type": "message",
+            "text": "You find the key to the main gate.",
+            "id": "0ziSF3"
           }
         ],
         "id": "1CqJbd"
@@ -5466,8 +5487,9 @@
     ],
     "the-deeper-mine-walk-through-mine-cave": [
       {
-        "type": "unavailable",
-        "id": "MC1TWB"
+        "type": "message",
+        "text": "The guards search you thoroughly as you go through the gates.",
+        "id": "cgk7QL"
       },
       {
         "type": "message",
@@ -5545,8 +5567,9 @@
             "text": "Yeah, cool!",
             "steps": [
               {
-                "type": "unavailable",
-                "id": "-q7SyN"
+                "type": "message",
+                "text": "You take the barrel, it's not that heavy, just awkward.",
+                "id": "9zesxn"
               }
             ]
           },
@@ -5730,7 +5753,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "Oh, want a fight do you!"
+                "text": "Oh, want a fight do you!",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -6660,7 +6684,8 @@
         "text": "-- You manage to squeeze Ana into the barrel, -- -- despite her many complaints. -- I djont fit in dis bawwel... Wet me out!!"
       },
       {
-        "player": "Shush... It's for your own good!"
+        "player": "Shush... It's for your own good!",
+        "presentation": "overhead"
       }
     ],
     "the-deeper-mine-dropping-ana-in-a-barrel": [
@@ -6717,7 +6742,8 @@
         "text": "-- You manage to squeeze Ana into the barrel, -- -- despite her many complaints. -- I djont fit in dis bawwel... Wet me out!!"
       },
       {
-        "player": "Shush... It's for your own good!"
+        "player": "Shush... It's for your own good!",
+        "presentation": "overhead"
       }
     ],
     "the-deeper-mine-look-at-ana-in-a-barrel": [
@@ -6960,7 +6986,8 @@
       {
         "type": "line",
         "speaker": "Ana",
-        "text": "How dare you say that I'm as heavy as lead?"
+        "text": "How dare you say that I'm as heavy as lead?",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -7234,7 +7261,8 @@
               {
                 "type": "line",
                 "speaker": "Mine cart driver",
-                "text": "Tut !"
+                "text": "Tut !",
+                "presentation": "overhead"
               },
               {
                 "type": "message",
@@ -7258,7 +7286,8 @@
                       {
                         "type": "line",
                         "speaker": "Mine cart driver",
-                        "text": "He, he, he, ha!"
+                        "text": "He, he, he, ha!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "choice",
@@ -7519,8 +7548,9 @@
                                                                         "text": "Yeah, you too!"
                                                                       },
                                                                       {
-                                                                        "type": "unavailable",
-                                                                        "id": "K6w3N2"
+                                                                        "type": "message",
+                                                                        "text": "The cart sets off at a hectic pace. The guards at the gate get suspiscious and search the cart. They find Ana in the Barrel and take her back into the mine.",
+                                                                        "id": "qnCHSn"
                                                                       },
                                                                       {
                                                                         "type": "action",
@@ -8044,7 +8074,8 @@
       {
         "type": "line",
         "speaker": "Irena",
-        "text": "Hi Ana!"
+        "text": "Hi Ana!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -8315,13 +8346,6 @@
         "type": "line",
         "speaker": "Irena",
         "text": "Thanks so much for returning my daughter to me. I expect that she will go on another trip soon though. She is the adventurous type... a bit like yourself really! Okay, see you around then!"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "ly4m-e"
       }
     ]
   },

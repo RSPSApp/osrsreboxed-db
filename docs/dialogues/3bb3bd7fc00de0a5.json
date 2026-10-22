@@ -56,7 +56,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "[player name], you're under arrest!"
+                    "npc": "[player name], you're under arrest!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -64,7 +65,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "I've come to arrest you, [player name]!"
+                    "npc": "I've come to arrest you, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -72,7 +74,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "Come and be locked up, [player name]!"
+                    "npc": "Come and be locked up, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -80,7 +83,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "Report to me for punishment, [player name]!"
+                    "npc": "Report to me for punishment, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -94,7 +98,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "KRuhBe"

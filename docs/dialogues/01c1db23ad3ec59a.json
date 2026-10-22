@@ -583,7 +583,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Da mihi potentiam!"
+                "npc": "Da mihi potentiam!",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -596,7 +597,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Veni, cohortes malefici!"
+                "npc": "Veni, cohortes malefici!",
+                "presentation": "overhead"
               },
               {
                 "type": "condition",
@@ -609,7 +611,8 @@
                         "text": "Dialogue 1",
                         "steps": [
                           {
-                            "npc": "Curses - more fungi!"
+                            "npc": "Curses - more fungi!",
+                            "presentation": "overhead"
                           }
                         ]
                       },
@@ -617,7 +620,8 @@
                         "text": "Dialogue 1",
                         "steps": [
                           {
-                            "npc": "Blast - fungi again!"
+                            "npc": "Blast - fungi again!",
+                            "presentation": "overhead"
                           }
                         ]
                       }
@@ -633,7 +637,8 @@
                   {
                     "type": "line",
                     "speaker": "Zombie",
-                    "text": "DUUUHHH"
+                    "text": "DUUUHHH",
+                    "presentation": "overhead"
                   }
                 ],
                 "id": "ouV1FS"
@@ -645,7 +650,8 @@
                   {
                     "type": "line",
                     "speaker": "Ghost",
-                    "text": "OooOOOooooOOOOooo"
+                    "text": "OooOOOooooOOOOooo",
+                    "presentation": "overhead"
                   }
                 ],
                 "id": "szknyr"
@@ -657,7 +663,8 @@
                   {
                     "type": "line",
                     "speaker": "Skeleton mage",
-                    "text": "Krrrrsssss"
+                    "text": "Krrrrsssss",
+                    "presentation": "overhead"
                   }
                 ],
                 "id": "svk3IK"
@@ -669,7 +676,8 @@
                   {
                     "type": "line",
                     "speaker": "Skeleton",
-                    "text": "Krrrrsssss"
+                    "text": "Krrrrsssss",
+                    "presentation": "overhead"
                   }
                 ],
                 "id": "_dBKfI"

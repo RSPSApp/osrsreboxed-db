@@ -3,10 +3,12 @@
   "variants": {
     "overhead-dialogue-when-shooing-a-stray-dog-away": [
       {
-        "player": "Thbbbbt!"
+        "player": "Thbbbbt!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Whine!"
+        "npc": "Whine!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -16,10 +18,12 @@
     ],
     "overhead-dialogue-when-petting-a-stray-dog": [
       {
-        "player": "Who's a good doggy!"
+        "player": "Who's a good doggy!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Woof!"
+        "npc": "Woof!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -29,7 +33,8 @@
     ],
     "overhead-dialogue-when-feeding-a-stray-dog-bones": [
       {
-        "npc": "Woof woof!"
+        "npc": "Woof woof!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -44,7 +49,8 @@
     ],
     "overhead-dialogue-when-feeding-a-stray-dog-raw-or-cooked-meat": [
       {
-        "npc": "Woof woof!"
+        "npc": "Woof woof!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -59,7 +65,8 @@
     ],
     "overhead-dialogue-when-feeding-a-stray-dog-raw-or-cooked-mystery-meat": [
       {
-        "npc": "Woof woof!"
+        "npc": "Woof woof!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -74,7 +81,8 @@
     ],
     "overhead-dialogue-when-feeding-a-stray-dog-marinated-j-bones-or-shaikahan-bones": [
       {
-        "npc": "Grrrr!"
+        "npc": "Grrrr!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -84,7 +92,8 @@
     ],
     "overhead-dialogue-when-feeding-a-stray-dog-any-other-item": [
       {
-        "npc": "Grrrr!"
+        "npc": "Grrrr!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -94,7 +103,8 @@
     ],
     "overhead-dialogue-when-interacting-with-a-stray-dog-while-wearing-cat-ears": [
       {
-        "npc": "Bark!"
+        "npc": "Bark!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -109,15 +119,18 @@
     ],
     "overhead-dialogue-when-a-stray-dog-picks-a-fight-with-a-nearby-cat": [
       {
-        "npc": "Grrr!"
+        "npc": "Grrr!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Cat",
-        "text": "Sss!"
+        "text": "Sss!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Woof"
+        "npc": "Woof",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -127,23 +140,28 @@
     ],
     "overhead-dialogue-when-a-stray-dog-picks-a-fight-with-a-nearby-hellcat": [
       {
-        "npc": "Grrr!"
+        "npc": "Grrr!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Hellcat",
-        "text": "Sss!"
+        "text": "Sss!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Woof"
+        "npc": "Woof",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Hellcat",
-        "text": "SSSS!"
+        "text": "SSSS!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Whine!"
+        "npc": "Whine!",
+        "presentation": "overhead"
       },
       {
         "type": "action",

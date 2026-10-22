@@ -3,12 +3,14 @@
   "variants": {
     "talk-at-option": [
       {
-        "player": "Alas!"
+        "player": "Alas!",
+        "presentation": "overhead"
       }
     ],
     "display-option": [
       {
-        "player": "Mwuhahahaha!"
+        "player": "Mwuhahahaha!",
+        "presentation": "overhead"
       }
     ],
     "question-option": [

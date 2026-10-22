@@ -275,7 +275,8 @@
     ],
     "room-of-rage-after-filling-the-rage-level": [
       {
-        "player": "Arrrgghhh!"
+        "player": "Arrrgghhh!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -293,37 +294,44 @@
       {
         "type": "line",
         "speaker": "Launa",
-        "text": "Where are you going?"
+        "text": "Where are you going?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Tolna",
-        "text": "I can't live with your rules any more, Mother."
+        "text": "I can't live with your rules any more, Mother.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Tolna",
-        "text": "I'm tired of working hard for very little money. There's great wealth that's mine for the taking!"
+        "text": "I'm tired of working hard for very little money. There's great wealth that's mine for the taking!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Launa",
-        "text": "But why? We're surviving perfectly fine on what we're earning."
+        "text": "But why? We're surviving perfectly fine on what we're earning.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Tolna",
-        "text": "I'm tired of your pathetic outlook. Good bye."
+        "text": "I'm tired of your pathetic outlook. Good bye.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Launa",
-        "text": "Tolna?"
+        "text": "Tolna?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Launa",
-        "text": "TOLNA !!!"
+        "text": "TOLNA !!!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -400,7 +408,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "player": "Hello?"
+                "player": "Hello?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -408,7 +417,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "player": "What's going on?"
+                "player": "What's going on?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -416,7 +426,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "player": "What on Gielinor?"
+                "type": "call",
+                "branch": "wznNo-"
               }
             ]
           },
@@ -424,7 +435,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "player": "Ahhhh"
+                "player": "Ahhhh",
+                "presentation": "overhead"
               }
             ]
           },
@@ -432,7 +444,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "player": "Help me!"
+                "player": "Help me!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -440,7 +453,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "player": "Oh no!"
+                "player": "Oh no!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -448,7 +462,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "player": "Who's there?"
+                "player": "Who's there?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -456,7 +471,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "player": "What on Gielinor?"
+                "type": "call",
+                "branch": "wznNo-"
               }
             ]
           },
@@ -464,7 +480,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "player": "Is anybody there?"
+                "player": "Is anybody there?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -472,7 +489,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "player": "I can't see!"
+                "player": "I can't see!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -480,7 +498,8 @@
             "text": "Dialogue 11",
             "steps": [
               {
-                "player": "What on Gielinor?"
+                "type": "call",
+                "branch": "wznNo-"
               }
             ]
           },
@@ -488,7 +507,8 @@
             "text": "Dialogue 12",
             "steps": [
               {
-                "player": "Who's that?"
+                "player": "Who's that?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -496,7 +516,8 @@
             "text": "Dialogue 13",
             "steps": [
               {
-                "player": "What on Gielinor?"
+                "type": "call",
+                "branch": "wznNo-"
               }
             ]
           }
@@ -505,22 +526,26 @@
     ],
     "room-of-fear-after-killing-the-first-reaper": [
       {
-        "player": "I don't like looking in these holes but I must!"
+        "player": "I don't like looking in these holes but I must!",
+        "presentation": "overhead"
       }
     ],
     "room-of-fear-after-killing-the-second-reaper": [
       {
-        "player": "I don't feel quite so afraid now."
+        "player": "I don't feel quite so afraid now.",
+        "presentation": "overhead"
       }
     ],
     "room-of-fear-after-killing-the-third-reaper": [
       {
-        "player": "These holes aren't that spooky."
+        "player": "These holes aren't that spooky.",
+        "presentation": "overhead"
       }
     ],
     "room-of-fear-after-killing-the-forth-reaper": [
       {
-        "player": "This isn't so scary after all!"
+        "player": "This isn't so scary after all!",
+        "presentation": "overhead"
       }
     ],
     "room-of-fear-after-killing-the-last-reaper": [
@@ -642,12 +667,14 @@
       {
         "type": "line",
         "speaker": "Tolna",
-        "text": "Leave me... But I don't want to... How can you say that..."
+        "text": "Leave me... But I don't want to... How can you say that...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Tolna",
-        "text": "I've done nothing wrong... Arrrghhh..."
+        "text": "I've done nothing wrong... Arrrghhh...",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -713,22 +740,26 @@
     ],
     "room-of-hopelessness-after-killing-the-first-hopeless-creature": [
       {
-        "player": "Is there any end to killing these monsters?"
+        "player": "Is there any end to killing these monsters?",
+        "presentation": "overhead"
       }
     ],
     "room-of-hopelessness-after-killing-the-second-hopeless-creature": [
       {
-        "player": "This is hard work!"
+        "player": "This is hard work!",
+        "presentation": "overhead"
       }
     ],
     "room-of-hopelessness-after-killing-the-third-hopeless-creature": [
       {
-        "player": "I've almost killed them all now!"
+        "player": "I've almost killed them all now!",
+        "presentation": "overhead"
       }
     ],
     "room-of-hopelessness-after-killing-the-fourth-hopeless-creature": [
       {
-        "player": "Maybe if I kill one more?"
+        "player": "Maybe if I kill one more?",
+        "presentation": "overhead"
       }
     ],
     "room-of-hopelessness-after-killing-the-last-hopeless-creature": [
@@ -769,12 +800,14 @@
       {
         "type": "line",
         "speaker": "Brana",
-        "text": "Son! Is that you?"
+        "text": "Son! Is that you?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Brana",
-        "text": "Please speak to me! Tolna?"
+        "text": "Please speak to me! Tolna?",
+        "presentation": "overhead"
       },
       {
         "type": "unavailable",
@@ -783,12 +816,14 @@
       {
         "type": "line",
         "speaker": "Brana",
-        "text": "What do you mean?"
+        "text": "What do you mean?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Brana",
-        "text": "You'll always be my son!"
+        "text": "You'll always be my son!",
+        "presentation": "overhead"
       },
       {
         "type": "unavailable",
@@ -797,12 +832,14 @@
       {
         "type": "line",
         "speaker": "Brana",
-        "text": "There must be a way."
+        "text": "There must be a way.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Brana",
-        "text": "Don't give up so easily!"
+        "text": "Don't give up so easily!",
+        "presentation": "overhead"
       },
       {
         "type": "unavailable",
@@ -811,12 +848,14 @@
       {
         "type": "line",
         "speaker": "Brana",
-        "text": "Sorry, but your mother and I..."
+        "text": "Sorry, but your mother and I...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Brana",
-        "text": "tried so hard to find you!"
+        "text": "tried so hard to find you!",
+        "presentation": "overhead"
       },
       {
         "type": "unavailable",
@@ -1063,10 +1102,14 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "xHblVY"
-      },
+      }
+    ]
+  },
+  "branches": {
+    "wznNo-": [
       {
-        "type": "unavailable",
-        "id": "J0Ps7t"
+        "player": "What on Gielinor?",
+        "presentation": "overhead"
       }
     ]
   }

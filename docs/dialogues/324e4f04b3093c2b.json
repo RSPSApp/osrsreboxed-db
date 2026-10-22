@@ -5495,7 +5495,8 @@
       {
         "type": "line",
         "speaker": "Black Knight",
-        "text": "Solus commands you die now!"
+        "text": "Solus commands you die now!",
+        "presentation": "overhead"
       }
     ],
     "scanning-the-sixth-location-after-the-black-knight-is-defeated": [
@@ -5616,7 +5617,8 @@
       {
         "type": "line",
         "speaker": "Solus",
-        "text": "YOU DIE NOW!"
+        "text": "YOU DIE NOW!",
+        "presentation": "overhead"
       }
     ],
     "rune-essence-mine-ending-the-hunt-after-defeating-solus": [
@@ -5863,16 +5865,9 @@
           },
           {
             "player": "Okay Amik, thanks for explaining!"
-          },
-          {
-            "type": "end"
           }
         ],
         "id": "OUdNKz"
-      },
-      {
-        "type": "unavailable",
-        "id": "iF7MUz"
       }
     ]
   },

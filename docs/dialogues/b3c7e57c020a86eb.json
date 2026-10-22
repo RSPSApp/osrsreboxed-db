@@ -9,6 +9,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "How dare you invade my lair! DIE INTRUDER!"
               }
             ]

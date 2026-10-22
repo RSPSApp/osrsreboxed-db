@@ -4,8 +4,8 @@
     "sources": [
       "https://github.com/RSPSApp/tsps/commit/63c7cd9b9753b4e434fc159a2955348a5058d3ab"
     ],
-    "base_sha256": "9f41f2a9a85fba7082cef1cbc3fb696ce013bf808b2441eb4f18700bf631d6c6",
-    "audited_sha256": "c61eddfedba53f750057ee41db71d914c2eab0642575f051cf85117f609b6c65",
+    "base_sha256": "0f832609309dbdef5df78f94c2f3d4652dfa712fb0831c360659ff2f51263425",
+    "audited_sha256": "804c84876999b2db593933bcbb1beb6056c25f5cc5c2a460c4bae4aa511a2899",
     "changes": [
       {
         "path": [
@@ -132,8 +132,8 @@
     "sources": [
       "https://github.com/RSPSApp/tsps/commit/381e23467ebacd57e3892be82cb43d51ada94b50"
     ],
-    "base_sha256": "dd05c5e89defc81bbec30e14b659c71376d2070dd9475406ba18bb90fb1d078b",
-    "audited_sha256": "e63e320202312d4aa6b84260875ea7ce4e36cc88586f7450ef2ba5244d8bb609",
+    "base_sha256": "d6e2c45a01efb63208a32433bc91f6f41808a152357f42a1e77947a845bfff9c",
+    "audited_sha256": "a1f8678a9c3877ed4cb2690e5d13fa41054d4bda51efede4a11d862acca422fa",
     "changes": [
       {
         "path": [
@@ -204,8 +204,8 @@
     "sources": [
       "https://github.com/RSPSApp/tsps/commit/d874f789779c1c863ede166b105f4e2f059e149b"
     ],
-    "base_sha256": "a9e8f44132778e804dd3849bf323f6bb63af53e63863410cc12309b8c0162535",
-    "audited_sha256": "5edcc35985df3481b08c8f0a8b03daca58500b95da143069d1515190b8b23608",
+    "base_sha256": "b599372ce834e5429743df2e3b08a82c9be1029dc742fff6bc72df3566665dfc",
+    "audited_sha256": "3b74ab8c8d35a8a1a38bb258d8b199cc5e84fe239fecc1847b45282d0feed942",
     "changes": [
       {
         "path": [
@@ -226,8 +226,8 @@
     "sources": [
       "https://github.com/RSPSApp/tsps/commit/062768d56aac9c98e726f582bf8e90411644b1d3"
     ],
-    "base_sha256": "139c20b222b28bf818214f86fba678ff97652d8474b5b032c032761b06968db3",
-    "audited_sha256": "25b9706d5075429ab3e0d8595a415a8bfc72f255bfc85ef3277f172f3a386eea",
+    "base_sha256": "33d60bf078c286369f74a15535378a2a69015708d7dfbe0846a0453273b3446d",
+    "audited_sha256": "ee4bfafd2f2d4c0abe527e77267242bd7fdc77a8fb9b2501b362d3ab50c77c1a",
     "changes": [
       {
         "path": [
@@ -457,8 +457,8 @@
     "sources": [
       "https://github.com/RSPSApp/tsps/commit/efbeda3d8b722a971e222ca5fc5c7116e9f996ba"
     ],
-    "base_sha256": "5b508927767f114410640320cbd8328ab3e2f7d2e377cd4368a09a80ea18dc37",
-    "audited_sha256": "734297e9eaed61bd01cdc99ee11847f9f4b2f47220fd75d27bdeafeb45956752",
+    "base_sha256": "3dc126f1345548274ad238ab658b0091291a3d941b9f5fb54858599b0d11bc7d",
+    "audited_sha256": "7311dea1c8ed7b00eeda06bbf940243a209e5dd5f67b995558f656d09247ea69",
     "changes": [
       {
         "path": [
@@ -644,8 +644,8 @@
     "sources": [
       "https://github.com/RSPSApp/tsps/commit/63c7cd9b9753b4e434fc159a2955348a5058d3ab"
     ],
-    "base_sha256": "a1d65a7d2e41156f614ab89e8cf25025f223245982131c51a5fa32da137d7210",
-    "audited_sha256": "784794f637763b5b0cf3d3f48729ba40949b9a9e5131aeff5ae6c6d0dc4c0deb",
+    "base_sha256": "8a29c2018a82ad4f42f73b608586c9332ae1c418fc64218e733d1e83860b12b0",
+    "audited_sha256": "f7da43f21c8745fe985dc26c110a72aa104d7c79bebeaa4560e231df870b5f40",
     "changes": [
       {
         "path": [
@@ -658,7 +658,7 @@
           0,
           "steps"
         ],
-        "expected": "ecf12c9ca9eaa9ec247f25371f0ab8ccbf898a26cd35d1083567fedf6d0fd639",
+        "expected": "5c2597b4ad0c15e07e199c1f5d3794206aef2741c238c7f5fed28a42ee87dd52",
         "value": [
           {
             "player": "I need to talk to you about shearing these sheep!"
@@ -968,8 +968,8 @@
     "sources": [
       "https://github.com/RSPSApp/tsps/commit/63c7cd9b9753b4e434fc159a2955348a5058d3ab"
     ],
-    "base_sha256": "0bd86fdd69a404fdfe735654f42747f542b37e8f5372f05e83d6b350f315d886",
-    "audited_sha256": "938ed268225f4877fc559951758fca122d7a85e4aa8894155212630a0f4e3a97",
+    "base_sha256": "3d15559eede473953c7aaa62b3ba51f64f3d8c8218ac5e94e01dd6ddeeaba533",
+    "audited_sha256": "feba0a012ea88d3fa9b8f65f6de39e993528644752181c5e0bd52a464902fe47",
     "changes": [
       {
         "path": [
@@ -1046,8 +1046,8 @@
     "sources": [
       "https://github.com/RSPSApp/tsps/commit/062768d56aac9c98e726f582bf8e90411644b1d3"
     ],
-    "base_sha256": "6823211367854b39f7e2fd884052a8db903368e7ee5c4676b6fbf304957c037c",
-    "audited_sha256": "ebe68f0238c4961d2f9a44c8dd62e17407a0b3c4757e24189888e232cf08d22a",
+    "base_sha256": "30cf7f3270dd567983021c8ab678a3bfc657653774eef8725636f6a26df210c1",
+    "audited_sha256": "48346145704f89a4a4102cee5574bfefa81f31484aee3699e845d24294a487a5",
     "changes": [
       {
         "path": [
@@ -1108,8 +1108,8 @@
     "sources": [
       "https://github.com/RSPSApp/tsps/commit/381e23467ebacd57e3892be82cb43d51ada94b50"
     ],
-    "base_sha256": "681547b47775c90446bcd882d131162c4d7f863bed40978205846917f8465bd9",
-    "audited_sha256": "213e53664c79ff0565e973e2fad777183876255054abdc5998f5cdcd139d8662",
+    "base_sha256": "5a7e7963faf4d0ce5aaed6690e965a5ad2396a74b9eee7fbeb6efc9c086a43cf",
+    "audited_sha256": "75e7048c5b4d4dede20961076ffccf731a6e2461297765a075af40a9026f8665",
     "changes": [
       {
         "path": [
@@ -1150,8 +1150,8 @@
       "https://github.com/RSPSApp/tsps/commit/0d1b129a03da3d8aa03996d652fc40cc5a9c9854",
       "https://github.com/RSPSApp/tsps/commit/6cd09f5bce806b2e0bfd49955a22637e2d81c641"
     ],
-    "base_sha256": "20f44e3ddd982c068ff20dbd78e42e0a786c8a97eb78b699d0dacb3d8125acca",
-    "audited_sha256": "e72f3e0852919aa199b8a420fed0e0ce4f5d90e4f1d552a7b63c9a7ec980487b",
+    "base_sha256": "890d4f0a5bc3329ee5988ba4936f2c2964cdac7d7c0b6dceb10702745865cfdf",
+    "audited_sha256": "1ccf4f710db217d69de6d3258310ce471e92b2fbe5ce4d5fcd515b7292c518d8",
     "changes": [
       {
         "path": [
@@ -2379,8 +2379,8 @@
     "sources": [
       "https://github.com/RSPSApp/tsps/commit/062768d56aac9c98e726f582bf8e90411644b1d3"
     ],
-    "base_sha256": "7a56c7442c22ee9606d13a90ab29677cde21062eb641c998993805301813768f",
-    "audited_sha256": "bfec14e761a900563bd85ba463f84f65ab3a072d6e6476291a4898d7deb74edb",
+    "base_sha256": "af660b6474336365f78ee6f7f71be576bd668eee44e7d991466b519dc5e2bfaa",
+    "audited_sha256": "8eed3eaaa1e6c298178c13efd67627faee95344f6bad1cc9e82ae7f2a55f790c",
     "changes": [
       {
         "path": [

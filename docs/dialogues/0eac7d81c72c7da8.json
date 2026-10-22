@@ -3,7 +3,8 @@
   "variants": {
     "petting": [
       {
-        "player": "Aren't you beautiful?"
+        "player": "Aren't you beautiful?",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -12,7 +13,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "purrrrr*"
+                "npc": "purrrrr*",
+                "presentation": "overhead"
               },
               {
                 "type": "unavailable",
@@ -24,7 +26,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "purrrrr*"
+                "npc": "purrrrr*",
+                "presentation": "overhead"
               },
               {
                 "type": "message",
@@ -38,7 +41,8 @@
                     "text": "Pet the belly.",
                     "steps": [
                       {
-                        "player": "Ow!"
+                        "player": "Ow!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "unavailable",

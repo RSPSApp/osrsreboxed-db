@@ -64,34 +64,44 @@
     ],
     "overhead-dialogue": [
       {
-        "npc": "The essence piles here contain lots of rift guardian parts."
+        "npc": "The essence piles here contain lots of rift guardian parts.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Remember to combine guardian fragments with pure essence!"
+        "npc": "Remember to combine guardian fragments with pure essence!",
+        "presentation": "overhead"
       },
       {
-        "npc": "The cells here can be used to power up barriers and rift guardians!"
+        "npc": "The cells here can be used to power up barriers and rift guardians!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Take uncharged cells with you to charge them at altars!"
+        "npc": "Take uncharged cells with you to charge them at altars!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Don't forget that different cells produce different rift guardians!"
+        "npc": "Don't forget that different cells produce different rift guardians!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Imbued essence can only be made at altars. Keep an eye out for the right altars to open!"
+        "npc": "Imbued essence can only be made at altars. Keep an eye out for the right altars to open!",
+        "presentation": "overhead"
       },
       {
-        "npc": "I've opened a portal to the huge guardian fragment mine to the south east!"
+        "npc": "I've opened a portal to the huge guardian fragment mine to the south east!",
+        "presentation": "overhead"
       },
       {
-        "npc": "I've opened a portal to the huge guardian fragment mine to the south!"
+        "npc": "I've opened a portal to the huge guardian fragment mine to the south!",
+        "presentation": "overhead"
       },
       {
-        "npc": "I've opened a portal to the huge guardian fragment mine to the east!"
+        "npc": "I've opened a portal to the huge guardian fragment mine to the east!",
+        "presentation": "overhead"
       },
       {
-        "npc": "I've opened a portal to the huge guardian fragment mine to the south west!"
+        "npc": "I've opened a portal to the huge guardian fragment mine to the south west!",
+        "presentation": "overhead"
       }
     ]
   }

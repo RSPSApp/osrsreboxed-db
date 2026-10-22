@@ -22,6 +22,7 @@
                 "text": "If the player has the zombie head:",
                 "steps": [
                   {
+                    "presentation": "overhead",
                     "npc": "Aaaaaagh!"
                   },
                   {
@@ -43,6 +44,7 @@
                     "player": "Raaaaaaar!"
                   },
                   {
+                    "presentation": "overhead",
                     "npc": "That wasn't scary at all!"
                   },
                   {
@@ -179,6 +181,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Yay! You're so awesome [player name]!"
               },
               {
@@ -190,6 +193,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "[player name] is the best!"
               },
               {
@@ -201,6 +205,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Thank you [player name], you are soooo cool!"
               },
               {
@@ -212,6 +217,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "[player name] is so great, they should make [him/her/them] [king/queen/ruler] of Gielinor!"
               },
               {
@@ -223,6 +229,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "[player name] is the bestest adventurer EVER!"
               },
               {
@@ -234,6 +241,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I think [player name] should be the [king/queen/ruler] of Halloween!"
               },
               {
@@ -245,6 +253,7 @@
             "text": "Dialogue 7",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "[player name] is my favourite hero!"
               },
               {
@@ -269,6 +278,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "[player name] is sooooo mean!"
               },
               {
@@ -280,6 +290,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "[player name] won't give me sweets!"
               },
               {
@@ -291,6 +302,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Awwwww, please gimme some sweets [player name]!"
               },
               {
@@ -302,6 +314,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "All I wanted was sweets, but [player name] won't give me any!"
               },
               {
@@ -313,6 +326,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Sob...worst Halloween EVER!"
               },
               {
@@ -324,6 +338,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I'll cry and cry if you won't give me sweets!"
               },
               {
@@ -335,6 +350,7 @@
             "text": "Dialogue 7",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I hope you get eaten by the KBD, [player name]!"
               },
               {
@@ -353,6 +369,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Hey!"
               }
             ]
@@ -361,6 +378,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Trick or Treat!"
               }
             ]
@@ -369,6 +387,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Hey, stop!"
               }
             ]
@@ -377,6 +396,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Sweeeeeets!"
               }
             ]
@@ -385,6 +405,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Happy Halloween!"
               }
             ]
@@ -393,6 +414,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Treats! Treats!"
               }
             ]
@@ -401,6 +423,7 @@
             "text": "Dialogue 7",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Boo!"
               }
             ]

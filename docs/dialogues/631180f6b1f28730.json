@@ -3,7 +3,8 @@
   "variants": {
     "while-attacking-the-player": [
       {
-        "npc": "Urg!"
+        "npc": "Urg!",
+        "presentation": "overhead"
       }
     ]
   }

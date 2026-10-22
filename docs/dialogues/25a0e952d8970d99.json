@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Split their skulls!"
+                "npc": "Split their skulls!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Crush them underfoot!"
+                "npc": "Crush them underfoot!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "For the glory of the Big High War God!"
+                "npc": "For the glory of the Big High War God!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Brargh!"
+                "npc": "Brargh!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "All glory to Bandos!"
+                "npc": "All glory to Bandos!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "CHAAARGE!"
+                "npc": "CHAAARGE!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -57,7 +63,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "We feast on the bones of our enemies tonight!"
+                "npc": "We feast on the bones of our enemies tonight!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -65,7 +72,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "Death to our enemies!"
+                "npc": "Death to our enemies!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -73,7 +81,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "Break their bones!"
+                "npc": "Break their bones!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -81,7 +90,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "GRRRAAAAAR!"
+                "npc": "GRRRAAAAAR!",
+                "presentation": "overhead"
               }
             ]
           }

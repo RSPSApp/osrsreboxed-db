@@ -373,7 +373,8 @@
                   {
                     "type": "line",
                     "speaker": "Grip",
-                    "text": "Stay out of my drinks cabinet!"
+                    "text": "Stay out of my drinks cabinet!",
+                    "presentation": "overhead"
                   },
                   {
                     "type": "action",

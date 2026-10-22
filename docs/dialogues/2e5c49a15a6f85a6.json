@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue-when-the-player-crosses-the-clothes-line-obstacle-of-the-varrock-agility-course": [
       {
-        "npc": "Squawk!"
+        "npc": "Squawk!",
+        "presentation": "overhead"
       }
     ]
   }

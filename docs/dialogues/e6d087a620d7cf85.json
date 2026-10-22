@@ -74,7 +74,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Fight for the greater good today!"
+                "npc": "Fight for the greater good today!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -82,7 +83,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Fight for Saradomin today!"
+                "npc": "Fight for Saradomin today!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -90,7 +92,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "The light of Saradomin is fading, he needs your help!"
+                "npc": "The light of Saradomin is fading, he needs your help!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -98,7 +101,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Zamorak is a false god who is a stain on this world, Saradomin will guide you forward."
+                "npc": "Zamorak is a false god who is a stain on this world, Saradomin will guide you forward.",
+                "presentation": "overhead"
               }
             ]
           }

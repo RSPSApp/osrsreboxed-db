@@ -391,7 +391,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "I've got it!"
+                "npc": "I've got it!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -399,7 +400,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'm going to be rich!"
+                "npc": "I'm going to be rich!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -407,7 +409,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Hmm.... What could this mean?"
+                "npc": "Hmm.... What could this mean?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -415,7 +418,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Why is this so hard..."
+                "npc": "Why is this so hard...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -423,7 +427,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Why did I not think of that before."
+                "npc": "Why did I not think of that before.",
+                "presentation": "overhead"
               }
             ]
           }

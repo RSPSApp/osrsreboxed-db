@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue-in-combat": [
       {
-        "npc": "Stand and deliver!"
+        "npc": "Stand and deliver!",
+        "presentation": "overhead"
       }
     ]
   }

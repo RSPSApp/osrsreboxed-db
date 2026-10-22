@@ -3,6 +3,7 @@
   "variants": {
     "overhead-dialogue-catching-players-attempting-to-steal-from-stalls-in-draynor-village": [
       {
+        "presentation": "overhead",
         "npc": "Hey! Get your hands off there!"
       }
     ]

@@ -95,7 +95,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "I know you're down there!"
+                "npc": "I know you're down there!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -103,7 +104,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Dig dig dig!"
+                "npc": "Dig dig dig!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -111,7 +113,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Grubblies!"
+                "npc": "Grubblies!",
+                "presentation": "overhead"
               }
             ]
           }

@@ -29,7 +29,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Doh ray meeee laa doh faaa!"
+                "npc": "Doh ray meeee laa doh faaa!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -37,7 +38,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "La la la! Do di dum dii!"
+                "npc": "La la la! Do di dum dii!",
+                "presentation": "overhead"
               }
             ]
           }

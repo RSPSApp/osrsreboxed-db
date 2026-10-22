@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue-upon-spawn": [
       {
-        "npc": "For Saradomin!"
+        "npc": "For Saradomin!",
+        "presentation": "overhead"
       }
     ]
   }

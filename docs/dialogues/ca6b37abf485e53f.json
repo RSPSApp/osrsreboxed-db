@@ -100,13 +100,15 @@
         "type": "choice",
         "options": [
           {
-            "text": "I'd best be off."
+            "text": "I'd best be off.",
+            "steps": [
+              {
+                "player": "I'd best be off.",
+                "steps": []
+              }
+            ]
           }
         ]
-      },
-      {
-        "player": "I'd best be off.",
-        "steps": []
       }
     ],
     "if-the-player-has-lost-the-gadderhammer": [

@@ -3,12 +3,14 @@
   "variants": {
     "overhead-dialogue-catching-the-player-attempting-to-steal-from-a-fruit-stall": [
       {
-        "npc": "Woof! Woof! Woof!"
+        "npc": "Woof! Woof! Woof!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-catching-the-player-attempting-to-steal-from-any-other-stall": [
       {
-        "npc": "Woof Woof Bark!"
+        "npc": "Woof Woof Bark!",
+        "presentation": "overhead"
       }
     ]
   }

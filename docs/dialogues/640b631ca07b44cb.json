@@ -3,11 +3,13 @@
   "variants": {
     "overhead-dialogue-before-attempting-to-run-past-the-flame-statues": [
       {
+        "presentation": "overhead",
         "npc": "How am I supposed to get past this?"
       }
     ],
     "overhead-dialogue-when-getting-hit-by-the-flames": [
       {
+        "presentation": "overhead",
         "npc": "Gah!"
       }
     ],
@@ -19,6 +21,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Hopefully I'll make it out of Darkmeyer one day."
               }
             ]
@@ -27,6 +30,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Phew, I made it! Time for a break."
               }
             ]
@@ -35,6 +39,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Thank Saradomin that mysterious stranger gave me this ring or I'd be toast!"
               }
             ]
@@ -43,6 +48,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "That trap was harder than I thought! Perhaps I'm not cut out for this."
               }
             ]

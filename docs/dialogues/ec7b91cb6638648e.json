@@ -170,16 +170,20 @@
         "options": []
       },
       {
-        "npc": "Sometimes I even impress myself."
+        "npc": "Sometimes I even impress myself.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Let me know when we reach the Sharhai."
+        "npc": "Let me know when we reach the Sharhai.",
+        "presentation": "overhead"
       },
       {
-        "npc": "You don't want me doing anything so I don't show up the rest of the crew, right?"
+        "npc": "You don't want me doing anything so I don't show up the rest of the crew, right?",
+        "presentation": "overhead"
       },
       {
-        "npc": "I was born for this."
+        "npc": "I was born for this.",
+        "presentation": "overhead"
       }
     ]
   }

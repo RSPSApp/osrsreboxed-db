@@ -476,7 +476,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Your strike lacks bite."
+                "npc": "Your strike lacks bite.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -484,7 +485,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "A change of pace."
+                "npc": "A change of pace.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -499,7 +501,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Colabi, infernus"
+                "npc": "Colabi, infernus",
+                "presentation": "overhead"
               }
             ]
           },
@@ -507,7 +510,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Ven, estella infernus"
+                "npc": "Ven, estella infernus",
+                "presentation": "overhead"
               }
             ]
           },
@@ -515,7 +519,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Colabesur infernus"
+                "npc": "Colabesur infernus",
+                "presentation": "overhead"
               }
             ]
           }
@@ -530,7 +535,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Ven, umbra eclipta"
+                "npc": "Ven, umbra eclipta",
+                "presentation": "overhead"
               }
             ]
           },
@@ -538,7 +544,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Umbra, proriumpse"
+                "npc": "Umbra, proriumpse",
+                "presentation": "overhead"
               }
             ]
           },
@@ -546,7 +553,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Umbra apprerendehe"
+                "npc": "Umbra apprerendehe",
+                "presentation": "overhead"
               }
             ]
           }
@@ -561,7 +569,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Begone"
+                "npc": "Begone",
+                "presentation": "overhead"
               }
             ]
           },
@@ -569,7 +578,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "You bore me."
+                "npc": "You bore me.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -577,7 +587,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Enough."
+                "npc": "Enough.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -592,7 +603,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Lacking."
+                "npc": "Lacking.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -600,7 +612,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Pathetic."
+                "npc": "Pathetic.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -608,7 +621,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "The price is paid."
+                "npc": "The price is paid.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -616,7 +630,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Another day, perhaps."
+                "npc": "Another day, perhaps.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -624,7 +639,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Another day, another soul."
+                "npc": "Another day, another soul.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -632,7 +648,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Your soul was always mine."
+                "npc": "Your soul was always mine.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -647,7 +664,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Fair is fair."
+                "npc": "Fair is fair.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -655,7 +673,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Your reward, as agreed."
+                "npc": "Your reward, as agreed.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -663,7 +682,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "A satisfying warmup. Collect your loot and let us continue."
+                "npc": "A satisfying warmup. Collect your loot and let us continue.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -671,7 +691,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "A passing performance."
+                "npc": "A passing performance.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -686,7 +707,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "A close fight. Your nerve was well held."
+                "npc": "A close fight. Your nerve was well held.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -694,7 +716,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "A good risk, adequately rewarded."
+                "npc": "A good risk, adequately rewarded.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -702,7 +725,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Excellent performance. Again?"
+                "npc": "Excellent performance. Again?",
+                "presentation": "overhead"
               }
             ]
           }
@@ -717,7 +741,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Effective, if a bit cowardly."
+                "npc": "Effective, if a bit cowardly.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -725,7 +750,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Risk averse, are we?"
+                "npc": "Risk averse, are we?",
+                "presentation": "overhead"
               }
             ]
           }
@@ -734,7 +760,8 @@
     ],
     "standard-dialogue-during-battle-attempting-to-pick-up-another-player-s-dropped-item-during-a-solo-only-contract": [
       {
-        "npc": "Missed the fine print, did we? Our contract forbids you from picking up stashed items."
+        "npc": "Missed the fine print, did we? Our contract forbids you from picking up stashed items.",
+        "presentation": "overhead"
       }
     ],
     "standard-dialogue-after-battle-victorious": [
@@ -1168,7 +1195,8 @@
                         "id": "orrDRL"
                       },
                       {
-                        "npc": "Good luck."
+                        "npc": "Good luck.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1518,7 +1546,8 @@
                 "id": "bFrPZR"
               },
               {
-                "npc": "Good luck."
+                "npc": "Good luck.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",

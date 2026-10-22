@@ -36,7 +36,8 @@
         "text": "If the player recently stole from Osian and tries to talk to him:",
         "steps": [
           {
-            "npc": "You stole from me. Talk to me when you've considered your actions!"
+            "npc": "You stole from me. Talk to me when you've considered your actions!",
+            "presentation": "overhead"
           }
         ],
         "id": "0XO-fQ"
@@ -46,10 +47,12 @@
         "text": "If the player recently stole from Osian and tries to right click trade with him:",
         "steps": [
           {
-            "npc": "You're the one who stole something from me!"
+            "npc": "You're the one who stole something from me!",
+            "presentation": "overhead"
           },
           {
-            "npc": "Guards guards!"
+            "npc": "Guards guards!",
+            "presentation": "overhead"
           }
         ],
         "id": "ci6pMr"

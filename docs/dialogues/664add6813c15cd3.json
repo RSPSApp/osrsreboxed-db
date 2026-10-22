@@ -1237,7 +1237,8 @@
       {
         "type": "line",
         "speaker": "Elder Korel",
-        "text": "Excellent work! The beast is well and truly dead!"
+        "text": "Excellent work! The beast is well and truly dead!",
+        "presentation": "overhead"
       }
     ],
     "part-3-talking-to-elder-hubber": [
@@ -1383,13 +1384,6 @@
         "type": "line",
         "speaker": "Elder Raley",
         "text": "No, no, no! Thank you, [player name]! We will talk again soon."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "fKG-yx"
       }
     ]
   },

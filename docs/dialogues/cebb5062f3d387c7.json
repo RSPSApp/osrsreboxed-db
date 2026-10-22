@@ -3,11 +3,13 @@
   "variants": {
     "overhead-dialogue-before-attempting-to-run-past-a-sword-trap": [
       {
+        "presentation": "overhead",
         "npc": "How am I supposed to get past this?"
       }
     ],
     "overhead-dialogue-when-getting-hit-by-a-sword": [
       {
+        "presentation": "overhead",
         "npc": "Gah!"
       }
     ],
@@ -19,6 +21,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "If I'd been any slower, I would've lost my head!"
               }
             ]
@@ -27,6 +30,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Buying that ring was definitely a wise investment."
               }
             ]
@@ -35,6 +39,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Well, the door to the next floor has already closed. Might as well take a break."
               }
             ]
@@ -43,6 +48,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "96... 97... 98... 99 Hallowed marks! Almost enough for that grapple!"
               }
             ]
@@ -51,6 +57,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I can't wait until I have enough Hallowed marks to obtain a dark graceful outfit."
               }
             ]
@@ -59,6 +66,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I prefer this floor. Those owls on the next one creep me out!"
               }
             ]

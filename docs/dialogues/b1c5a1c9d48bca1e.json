@@ -447,7 +447,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "The wreck should be south of here."
+                "text": "The wreck should be south of here.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -457,7 +458,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "The wreck should be south west of here."
+                "text": "The wreck should be south west of here.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -467,7 +469,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "The wreck should be south east of here."
+                "text": "The wreck should be south east of here.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -477,7 +480,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "The wreck should be north of here."
+                "text": "The wreck should be north of here.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -487,7 +491,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "The wreck should be north west of here."
+                "text": "The wreck should be north west of here.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -497,7 +502,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "The wreck should be north east of here."
+                "text": "The wreck should be north east of here.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -507,7 +513,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "You need to head south of here."
+                "text": "You need to head south of here.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -517,7 +524,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "You need to head south."
+                "text": "You need to head south.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -527,7 +535,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "You need to head north."
+                "text": "You need to head north.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -537,7 +546,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "You need to head west."
+                "text": "You need to head west.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -547,7 +557,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "You need to head east."
+                "text": "You need to head east.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -557,7 +568,8 @@
               {
                 "type": "line",
                 "speaker": "Anne",
-                "text": "We need to be going south."
+                "text": "We need to be going south.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -567,7 +579,8 @@
               {
                 "type": "line",
                 "speaker": "Anne",
-                "text": "We need to be going north."
+                "text": "We need to be going north.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -577,7 +590,8 @@
               {
                 "type": "line",
                 "speaker": "Anne",
-                "text": "We need to be going east."
+                "text": "We need to be going east.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -587,7 +601,8 @@
               {
                 "type": "line",
                 "speaker": "Anne",
-                "text": "We need to be going west."
+                "text": "We need to be going west.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -597,7 +612,8 @@
               {
                 "type": "line",
                 "speaker": "Anne",
-                "text": "You need to head south west."
+                "text": "You need to head south west.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -607,7 +623,8 @@
               {
                 "type": "line",
                 "speaker": "Anne",
-                "text": "You need to head south east."
+                "text": "You need to head south east.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -617,7 +634,8 @@
               {
                 "type": "line",
                 "speaker": "Anne",
-                "text": "You need to head north west."
+                "text": "You need to head north west.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -627,7 +645,8 @@
               {
                 "type": "line",
                 "speaker": "Anne",
-                "text": "You need to head north east."
+                "text": "You need to head north east.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -644,7 +663,8 @@
               {
                 "type": "line",
                 "speaker": "Anne",
-                "text": "You need to trim the sails, [player name]! We need to catch that wind!"
+                "text": "You need to trim the sails, [player name]! We need to catch that wind!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -654,7 +674,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "You need to trim the sails, [player name]! We need to catch that wind!"
+                "text": "You need to trim the sails, [player name]! We need to catch that wind!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -677,14 +698,16 @@
       {
         "type": "line",
         "speaker": "Anne",
-        "text": "[player name]! The sails need trimming! Don't miss out on that wind!"
+        "text": "[player name]! The sails need trimming! Don't miss out on that wind!",
+        "presentation": "overhead"
       }
     ],
     "sailing-the-boat-if-the-wind-is-picking-up": [
       {
         "type": "line",
         "speaker": "Will",
-        "text": "The wind's picked up, [player name]! You'll need to trim the sails!"
+        "text": "The wind's picked up, [player name]! You'll need to trim the sails!",
+        "presentation": "overhead"
       }
     ],
     "sailing-the-boat-if-the-player-deploys-the-salvaging-hook-but-not-at-the-salvaging-location": [
@@ -708,7 +731,8 @@
               {
                 "type": "line",
                 "speaker": "Will",
-                "text": "Very good!"
+                "text": "Very good!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -718,7 +742,8 @@
               {
                 "type": "line",
                 "speaker": "Anne",
-                "text": "Good work!"
+                "text": "Good work!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -728,7 +753,8 @@
               {
                 "type": "line",
                 "speaker": "Anne",
-                "text": "Nicely done!"
+                "text": "Nicely done!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -2449,13 +2475,6 @@
         "type": "message",
         "text": "Sailing quests are currently unavailable on this world.",
         "id": "QG2TcP"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "MpmcxM"
       }
     ]
   },

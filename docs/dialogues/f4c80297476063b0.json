@@ -282,8 +282,9 @@
                                 "text": "If the player does not have the necessary materials:",
                                 "steps": [
                                   {
-                                    "type": "unavailable",
-                                    "id": "B7l8kJ"
+                                    "type": "message",
+                                    "text": "You need 1 kebbit spike and 20 coins to make 12 kebbit bolts.",
+                                    "id": "dE6iVz"
                                   }
                                 ],
                                 "id": "mJ9qsA"
@@ -319,8 +320,9 @@
                                 "text": "If the player does not have the necessary materials:",
                                 "steps": [
                                   {
-                                    "type": "unavailable",
-                                    "id": "3nZ8_O"
+                                    "type": "message",
+                                    "text": "You need 1 long kebbit spike and 40 coins to make 12 long kebbit bolts.",
+                                    "id": "or3kMj"
                                   }
                                 ],
                                 "id": "n0Nc3u"
@@ -576,8 +578,9 @@
                         "text": "If the player does not have the necessary materials:",
                         "steps": [
                           {
-                            "type": "unavailable",
-                            "id": "B7l8kJ"
+                            "type": "message",
+                            "text": "You need 1 kebbit spike and 20 coins to make 12 kebbit bolts.",
+                            "id": "dE6iVz"
                           },
                           {
                             "type": "end"
@@ -616,8 +619,9 @@
                         "text": "If the player does not have the necessary materials:",
                         "steps": [
                           {
-                            "type": "unavailable",
-                            "id": "3nZ8_O"
+                            "type": "message",
+                            "text": "You need 1 long kebbit spike and 40 coins to make 12 long kebbit bolts.",
+                            "id": "or3kMj"
                           },
                           {
                             "type": "end"

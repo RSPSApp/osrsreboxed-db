@@ -3,7 +3,8 @@
   "variants": {
     "telegrabbing-wine-of-zamorak-in-front-of-them": [
       {
-        "npc": "Leave Zamorak's wine alone!"
+        "npc": "Leave Zamorak's wine alone!",
+        "presentation": "overhead"
       }
     ],
     "attempting-to-go-to-climb-the-ladder-in-the-asgarnia-chaos-temple": [

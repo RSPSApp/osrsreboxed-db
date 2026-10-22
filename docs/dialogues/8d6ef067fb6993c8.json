@@ -1076,7 +1076,8 @@
       {
         "type": "line",
         "speaker": "Zuma",
-        "text": "It's right here! It clearly says..."
+        "text": "It's right here! It clearly says...",
+        "presentation": "overhead"
       },
       {
         "player": "I see. I guess it was a natural next step then?"
@@ -1084,7 +1085,8 @@
       {
         "type": "line",
         "speaker": "Attala",
-        "text": "I don't care what your book says! Your book won't keep us safe from..."
+        "text": "I don't care what your book says! Your book won't keep us safe from...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -1094,7 +1096,8 @@
       {
         "type": "line",
         "speaker": "Attala",
-        "text": "The last time you humans did something like this..."
+        "text": "The last time you humans did something like this...",
+        "presentation": "overhead"
       },
       {
         "player": "You should visit the museum in Varrock some time. There's a lot to see!"
@@ -1102,7 +1105,8 @@
       {
         "type": "line",
         "speaker": "Zuma",
-        "text": "Always 'you humans'. You do realise I am not my great-grandfather..."
+        "text": "Always 'you humans'. You do realise I am not my great-grandfather...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -1112,7 +1116,8 @@
       {
         "type": "line",
         "speaker": "Attala",
-        "text": "Keep this up and I'll have you kicked out of the..."
+        "text": "Keep this up and I'll have you kicked out of the...",
+        "presentation": "overhead"
       },
       {
         "player": "Understandable. Right, I should get back to those camps."
@@ -1120,7 +1125,8 @@
       {
         "type": "line",
         "speaker": "Zuma",
-        "text": "The secrets of this dungeon belong to the Varlamorian people! You can't..."
+        "text": "The secrets of this dungeon belong to the Varlamorian people! You can't...",
+        "presentation": "overhead"
       }
     ],
     "remnants-of-the-old-ones-talking-to-jessamine-talking-to-either-attala-or-zuma-again": [
@@ -1566,7 +1572,8 @@
               {
                 "type": "line",
                 "speaker": "Zuma",
-                "text": "You cannot deny us the Blood Moon's bounty!"
+                "text": "You cannot deny us the Blood Moon's bounty!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
@@ -1576,7 +1583,8 @@
               {
                 "type": "line",
                 "speaker": "Attala",
-                "text": "Cam Torum has no interest in bathing in blood!"
+                "text": "Cam Torum has no interest in bathing in blood!",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -4276,13 +4284,6 @@
         "type": "line",
         "speaker": "Zuma",
         "text": "Indeed. And on that note, I have some research to do! Until next time."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "5xJ1jb"
       }
     ]
   },
@@ -4345,7 +4346,8 @@
       {
         "type": "line",
         "speaker": "Zuma",
-        "text": "It's right here! It clearly says..."
+        "text": "It's right here! It clearly says...",
+        "presentation": "overhead"
       },
       {
         "player": "I see. I guess it was a natural next step then?"
@@ -4353,7 +4355,8 @@
       {
         "type": "line",
         "speaker": "Attala",
-        "text": "I don't care what your book says! Your book won't keep us safe from..."
+        "text": "I don't care what your book says! Your book won't keep us safe from...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -4363,7 +4366,8 @@
       {
         "type": "line",
         "speaker": "Attala",
-        "text": "The last time you humans did something like this..."
+        "text": "The last time you humans did something like this...",
+        "presentation": "overhead"
       },
       {
         "player": "You should visit the museum in Varrock some time. There's a lot to see!"
@@ -4371,7 +4375,8 @@
       {
         "type": "line",
         "speaker": "Zuma",
-        "text": "Always 'you humans'. You do realise I am not my great-grandfather..."
+        "text": "Always 'you humans'. You do realise I am not my great-grandfather...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -4381,7 +4386,8 @@
       {
         "type": "line",
         "speaker": "Attala",
-        "text": "Keep this up and I'll have you kicked out of the..."
+        "text": "Keep this up and I'll have you kicked out of the...",
+        "presentation": "overhead"
       },
       {
         "player": "Understandable. Right, I should get back to those camps."
@@ -4389,7 +4395,8 @@
       {
         "type": "line",
         "speaker": "Zuma",
-        "text": "The secrets of this dungeon belong to the Varlamorian people! You can't..."
+        "text": "The secrets of this dungeon belong to the Varlamorian people! You can't...",
+        "presentation": "overhead"
       },
       {
         "type": "end"

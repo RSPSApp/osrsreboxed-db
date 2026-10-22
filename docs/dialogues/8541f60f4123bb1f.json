@@ -22,7 +22,8 @@
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Sorry - workman's gate only."
+        "text": "Sorry - workman's gate only.",
+        "presentation": "overhead"
       },
       {
         "npc": "Hello there! Sorry, I can't stop to talk. I'm guarding this workman's gate. I'm afraid you can't come through here - you'll need to find another way around."
@@ -37,7 +38,8 @@
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Sorry - workman's gate only."
+        "text": "Sorry - workman's gate only.",
+        "presentation": "overhead"
       }
     ],
     "dig-site-gate-with-153-kudos": [

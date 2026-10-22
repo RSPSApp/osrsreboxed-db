@@ -59,6 +59,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 import json
+import re
 from pathlib import Path
 from typing import Union, List, Dict
 
@@ -286,7 +287,7 @@ class WikitextTemplateParser:
         value = None
         try:
             value = self.template.get(versioned_identifier).value
-            value = value.strip()
+            value = re.sub(r"<!--.*?-->", "", str(value), flags=re.S).strip()
             return value
         except ValueError:
             pass
@@ -379,6 +380,7 @@ class WikitextTemplateParser:
         :return: Either an integer or None
         """
         try:
+            value = re.sub(r"<!--.*?-->", "", str(value), flags=re.S).strip()
             return int(value)
         except ValueError:
             return None

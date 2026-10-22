@@ -26,15 +26,13 @@
         "player": "You winning?"
       },
       {
-        "type": "unavailable",
-        "id": "6vhamm"
+        "npc": "It's a draw at the moment. First it was best of three, then it was best of five."
       },
       {
         "player": "And now?"
       },
       {
-        "type": "unavailable",
-        "id": "tUDmb0"
+        "npc": "Best of a hundred and one."
       }
     ]
   }

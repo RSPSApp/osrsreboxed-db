@@ -2871,7 +2871,8 @@
                       {
                         "type": "line",
                         "speaker": "Dwarf gang member",
-                        "text": "Ha ha ha ha! Good one boss, I can't believe [he/she/they] fell for that, boss!"
+                        "text": "Ha ha ha ha! Good one boss, I can't believe [he/she/they] fell for that, boss!",
+                        "presentation": "overhead"
                       }
                     ]
                   }
@@ -3168,17 +3169,19 @@
             "text": "Chat about Gliders"
           },
           {
-            "text": "Sanfew asked me to come and talk to you."
+            "text": "Sanfew asked me to come and talk to you.",
+            "steps": [
+              {
+                "player": "Sanfew asked me to come and talk to you."
+              },
+              {
+                "type": "line",
+                "speaker": "Captain Bleemadge",
+                "text": "Brrr, blimey it's cold up here! Wish I had something nice to drink to chase away these chills!"
+              }
+            ]
           }
         ]
-      },
-      {
-        "player": "Sanfew asked me to come and talk to you."
-      },
-      {
-        "type": "line",
-        "speaker": "Captain Bleemadge",
-        "text": "Brrr, blimey it's cold up here! Wish I had something nice to drink to chase away these chills!"
       }
     ],
     "the-various-favours-are-asked-giving-bleemadge-the-tea-and-talking-about-sanfew-s-favour": [
@@ -6392,7 +6395,8 @@
         "id": "uqtVzz"
       },
       {
-        "player": "Um nahi listic durooo-rah!"
+        "player": "Um nahi listic durooo-rah!",
+        "presentation": "overhead"
       },
       {
         "player": "Whoooah! That was a bit of a misfire."
@@ -6403,7 +6407,8 @@
     ],
     "heading-back-to-complete-the-favours-petra-freeing-petra": [
       {
-        "player": "Um nahi listic durooo-rah!"
+        "player": "Um nahi listic durooo-rah!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -6867,26 +6872,23 @@
             "text": "Do you have any quests?"
           },
           {
-            "text": "Ok, show me where this weather vane is...I want to look at it."
-          }
-        ]
-      },
-      {
-        "player": "Ok, show me where this weather vane is...I want to look at it."
-      },
-      {
-        "type": "jump",
-        "id": "HeUHAx",
-        "steps": [
-          {
-            "type": "call",
-            "branch": "jump-35d28c428363fe66"
-          }
-        ]
-      },
-      {
-        "type": "choice",
-        "options": [
+            "text": "Ok, show me where this weather vane is...I want to look at it.",
+            "steps": [
+              {
+                "player": "Ok, show me where this weather vane is...I want to look at it."
+              },
+              {
+                "type": "jump",
+                "id": "R7btcd",
+                "steps": [
+                  {
+                    "type": "call",
+                    "branch": "jump-35d28c428363fe66"
+                  }
+                ]
+              }
+            ]
+          },
           {
             "text": "Ok, thanks."
           }
@@ -9412,10 +9414,6 @@
             "text": "Hmm, sorry, not interested."
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "KXoGxT"
       }
     ]
   },

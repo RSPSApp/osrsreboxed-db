@@ -922,13 +922,6 @@
         "type": "line",
         "speaker": "Kolodion",
         "text": "You may currently have a Saradomin cape, a Guthix cape and a Zamorak cape imbued, just hand over the cape when you're ready."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "kMmyeA"
       }
     ]
   },

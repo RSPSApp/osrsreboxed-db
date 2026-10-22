@@ -571,10 +571,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "0QWHJ-"
-      },
-      {
-        "type": "unavailable",
-        "id": "P-cBRK"
       }
     ]
   },

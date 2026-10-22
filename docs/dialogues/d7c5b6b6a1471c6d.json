@@ -11,7 +11,8 @@
               {
                 "type": "line",
                 "speaker": "Guardian thrall",
-                "text": "I was taking a break!"
+                "text": "I was taking a break!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -21,7 +22,8 @@
               {
                 "type": "line",
                 "speaker": "Guardian thrall",
-                "text": "What would you do without me?"
+                "text": "What would you do without me?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -31,7 +33,8 @@
               {
                 "type": "line",
                 "speaker": "Guardian thrall",
-                "text": "What do I pray next?"
+                "text": "What do I pray next?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +44,8 @@
               {
                 "type": "line",
                 "speaker": "Guardian thrall",
-                "text": "Honey, I'm home!"
+                "text": "Honey, I'm home!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -51,7 +55,8 @@
               {
                 "type": "line",
                 "speaker": "Guardian thrall",
-                "text": "I hope you get a drop soon."
+                "text": "I hope you get a drop soon.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -61,7 +66,8 @@
               {
                 "type": "line",
                 "speaker": "Guardian thrall",
-                "text": "I'll never leave your side!"
+                "text": "I'll never leave your side!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -71,7 +77,8 @@
               {
                 "type": "line",
                 "speaker": "Guardian thrall",
-                "text": "I've got your back!"
+                "text": "I've got your back!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -81,7 +88,8 @@
               {
                 "type": "line",
                 "speaker": "Guardian thrall",
-                "text": "Eat up!"
+                "text": "Eat up!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -100,7 +108,8 @@
       {
         "type": "line",
         "speaker": "Guardian thrall",
-        "text": "I serve a new master now."
+        "text": "I serve a new master now.",
+        "presentation": "overhead"
       },
       {
         "type": "choice",
@@ -113,7 +122,8 @@
       {
         "type": "line",
         "speaker": "Guardian thrall",
-        "text": "I serve a new master..."
+        "text": "I serve a new master...",
+        "presentation": "overhead"
       }
     ]
   }

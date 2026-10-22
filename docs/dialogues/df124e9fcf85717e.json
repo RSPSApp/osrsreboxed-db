@@ -2795,7 +2795,8 @@
       {
         "type": "line",
         "speaker": "R4ng3rNo0b889",
-        "text": "Lolz die noob!"
+        "text": "Lolz die noob!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2931,10 +2932,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "-5euge"
-      },
-      {
-        "type": "unavailable",
-        "id": "gUCS2j"
       }
     ]
   },

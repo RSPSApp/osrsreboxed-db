@@ -13,7 +13,7 @@ a pattern is too tight.
 Template-derived slugs (opens/opens2/receives/gives) are exact and are not
 listed here.
 
-1127 inferred steps, 3329 left as prose.
+1127 inferred steps, 3335 left as prose.
 
 
 INFERRED condition  (229 steps, 88 distinct)
@@ -1217,10 +1217,10 @@ INFERRED teleport  (307 steps, 160 distinct)
         npcs:   Witch's House
 
 
-UNMATCHED  (3329 steps, 2067 distinct) -- still prose, no action key
+UNMATCHED  (3335 steps, 2068 distinct) -- still prose, no action key
 ------------------------------------------------------------------------
-  [156] Congratulations! Quest complete!
-        npcs:   A Kingdom Divided, A Porcine of Interest, A Ruff Situation, +138 more
+  [157] Congratulations! Quest complete!
+        npcs:   A Kingdom Divided, A Porcine of Interest, A Ruff Situation, +139 more
   [ 43] The cutscene ends.
         npcs:   A Kingdom Divided, A Night at the Theatre, A Taste of Hope, +17 more
   [ 35] Slayer Masters will now take the player's combat level into account.
@@ -1369,6 +1369,10 @@ UNMATCHED  (3329 steps, 2067 distinct) -- still prose, no action key
         npcs:   Professor Oddenstein
   [  4] Player is prompted to select how many to purchase.
         npcs:   Rick (Wizards' Tower)
+  [  4] If the warnings are not combined:
+        npcs:   His Faithful Servants, Strange Old Man
+  [  4] If the warnings are combined:
+        npcs:   His Faithful Servants, Strange Old Man
   [  4] The Overseer teleports away.
         npcs:   The Overseer
   [  4] The Vyrewatch bites the player, draining their blood and damaging them.
@@ -1717,10 +1721,6 @@ UNMATCHED  (3329 steps, 2067 distinct) -- still prose, no action key
         npcs:   Spidey dog
   [  2] The spooky dog backs away from the player.
         npcs:   Spooky dog
-  [  2] If the warnings are not combined:
-        npcs:   Strange Old Man
-  [  2] If the warnings are combined:
-        npcs:   Strange Old Man
   [  2] The stray dog backs away from the player.
         npcs:   Stray dog
   [  2] The scene cuts to each part of the laboratory as they are discussed
@@ -1837,8 +1837,6 @@ UNMATCHED  (3329 steps, 2067 distinct) -- still prose, no action key
         npcs:   Demon Slayer
   [  2] The player is prompted to input a term.
         npcs:   Desert Treasure II - The Fallen Empire
-  [  2] The player chooses from the map interface.
-        npcs:   Dragon Slayer I
   [  2] Meanwhile, a cutscene plays in the Lithkren Vault, with the camera slowly approaching the pool where Galvek once rested. The camera pans toward the strange tube to the east. A mysterious gas envelopes the dragonkin within, awakening it and breaking out. At the same time, the strange tube to the west also breaks, revealing two more dragonkin as they all convene by the pool.
         npcs:   Dragon Slayer II, While Guthix Sleeps
   [  2] Dialogue varies depending on what items you put in the chest and what items he wants
@@ -2006,6 +2004,8 @@ UNMATCHED  (3329 steps, 2067 distinct) -- still prose, no action key
   [  2] Duradel provides the corresponding Slayer task tip.
         npcs:   While Guthix Sleeps
   [  2] Continues above from "There's some undead ogre activity..."
+        npcs:   Zogre Flesh Eaters
+  [  2] (Continues with "Ok, similar spells...")
         npcs:   Zogre Flesh Eaters
   [  1] 'The Guns' continues counting for several hours.
         npcs:   'The Guns'
@@ -3063,6 +3063,8 @@ UNMATCHED  (3329 steps, 2067 distinct) -- still prose, no action key
         npcs:   Below Ice Mountain
   [  1] You rummage through Willow's bag...
         npcs:   Below Ice Mountain
+  [  1] You find a pile of coins!
+        npcs:   Below Ice Mountain
   [  1] A sound of doors opening occurs.
         npcs:   Below Ice Mountain
   [  1] Ramarno departs for his workshop.
@@ -3435,6 +3437,8 @@ UNMATCHED  (3329 steps, 2067 distinct) -- still prose, no action key
         npcs:   Devious Minds
   [  1] The screen fades to black as the cutscene ends.
         npcs:   Devious Minds
+  [  1] The player chooses from the map interface.
+        npcs:   Dragon Slayer I
   [  1] The cutscene begins; the camera pans towards the Lady Lumbridge.
         npcs:   Dragon Slayer I
   [  1] Elvarg flies over the ship.
@@ -5348,8 +5352,6 @@ UNMATCHED  (3329 steps, 2067 distinct) -- still prose, no action key
   [  1] The Ogre guard crushes the barricade.
         npcs:   Zogre Flesh Eaters
   [  1] The Zombie attacks.
-        npcs:   Zogre Flesh Eaters
-  [  1] (Continues with "Ok, similar spells...")
         npcs:   Zogre Flesh Eaters
   [  1] Slash Bash spawns and attacks.
         npcs:   Zogre Flesh Eaters

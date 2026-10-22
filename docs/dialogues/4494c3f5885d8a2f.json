@@ -29,7 +29,8 @@
                 "player": "Can you teleport me to the Rune Essence Mine?"
               },
               {
-                "npc": "Senventior disthine molenko!"
+                "npc": "Senventior disthine molenko!",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -416,7 +417,8 @@
         "player": "Can you teleport me to the Rune Essence Mine?"
       },
       {
-        "npc": "Senventior disthine molenko!"
+        "npc": "Senventior disthine molenko!",
+        "presentation": "overhead"
       },
       {
         "type": "action",

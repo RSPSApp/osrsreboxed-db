@@ -139,7 +139,8 @@
     ],
     "when-searching-through-his-drinks-cabinet": [
       {
-        "npc": "Stay out of my drinks cabinet!"
+        "npc": "Stay out of my drinks cabinet!",
+        "presentation": "overhead"
       }
     ]
   },

@@ -35,12 +35,14 @@
     ],
     "overhead-dialogue-when-receiving-overstocked-ore": [
       {
-        "npc": "Thanks, I'll send them to storage."
+        "npc": "Thanks, I'll send them to storage.",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-receiving-understocked-ore": [
       {
-        "npc": "Thanks."
+        "npc": "Thanks.",
+        "presentation": "overhead"
       }
     ]
   }

@@ -66,8 +66,9 @@
                                     "text": "If the player has 18 coins:",
                                     "steps": [
                                       {
-                                        "type": "unavailable",
-                                        "id": "NadQdn"
+                                        "type": "message",
+                                        "text": "Baraek sells you a fur.",
+                                        "id": "CYQA8Q"
                                       },
                                       {
                                         "type": "end"
@@ -101,8 +102,9 @@
                         "text": "If the player has 20 coins:",
                         "steps": [
                           {
-                            "type": "unavailable",
-                            "id": "3_d3a5"
+                            "type": "message",
+                            "text": "Baraek sells you a fur.",
+                            "id": "pIACpD"
                           }
                         ],
                         "id": "L9V3lA"

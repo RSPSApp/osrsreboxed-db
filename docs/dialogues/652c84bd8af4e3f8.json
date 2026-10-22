@@ -19,6 +19,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "He could hardly climb a ladder without tripping."
               }
             ]
@@ -27,6 +28,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Such a long beard it reached the floor!"
               }
             ]
@@ -35,6 +37,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "The beard wasn't so clean after meals."
               }
             ]
@@ -43,6 +46,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "His beard used to get into everyone's dinner."
               }
             ]
@@ -51,6 +55,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "It was like a jungle on his chin!"
               }
             ]
@@ -59,6 +64,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "In the summer he didn't need clothes."
               }
             ]
@@ -67,6 +73,7 @@
             "text": "Dialogue 7",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I mean, he needed to clean it more."
               }
             ]
@@ -75,6 +82,7 @@
             "text": "Dialogue 8",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "He had the bushiest beard ever!"
               }
             ]
@@ -83,6 +91,7 @@
             "text": "Dialogue 9",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "He was the hairiest dwarf in town."
               }
             ]
@@ -91,6 +100,7 @@
             "text": "Dialogue 10",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "His wife could use it for a blanket."
               }
             ]
@@ -106,6 +116,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Pearls of wisdom!"
               }
             ]
@@ -114,6 +125,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ah, tell it!"
               }
             ]
@@ -122,6 +134,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Best times ever!"
               }
             ]
@@ -130,6 +143,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Right you are."
               }
             ]
@@ -138,6 +152,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Great days!"
               }
             ]
@@ -146,6 +161,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I'm going to be sick!"
               }
             ]
@@ -154,6 +170,7 @@
             "text": "Dialogue 7",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "You're right."
               }
             ]
@@ -162,6 +179,7 @@
             "text": "Dialogue 8",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "You're so right."
               }
             ]
@@ -170,6 +188,7 @@
             "text": "Dialogue 9",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Those were the days!"
               }
             ]
@@ -178,6 +197,7 @@
             "text": "Dialogue 10",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Not like nowadays."
               }
             ]

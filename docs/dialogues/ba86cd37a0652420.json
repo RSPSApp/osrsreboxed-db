@@ -8,7 +8,8 @@
     ],
     "overhead-dialogue": [
       {
-        "npc": "Where are you going? Can we come too?"
+        "npc": "Where are you going? Can we come too?",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -17,7 +18,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Why do you resort to violence so often?"
+                "npc": "Why do you resort to violence so often?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "If you should think of cutting a tree, don't do it!"
+                "npc": "If you should think of cutting a tree, don't do it!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "We do hope we are not too annoying!"
+                "npc": "We do hope we are not too annoying!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Look at that outfit! Can't you afford a decent one?"
+                "npc": "Look at that outfit! Can't you afford a decent one?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Are you going to craft cosmic runes? Can we come too?"
+                "npc": "Are you going to craft cosmic runes? Can we come too?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -57,7 +63,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Just go about your business and ignore us!"
+                "npc": "Just go about your business and ignore us!",
+                "presentation": "overhead"
               }
             ]
           }

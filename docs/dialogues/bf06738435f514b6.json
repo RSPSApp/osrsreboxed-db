@@ -149,7 +149,8 @@
       {
         "type": "line",
         "speaker": "Florin",
-        "text": "Get out of it! You're not having our food or our blood!"
+        "text": "Get out of it! You're not having our food or our blood!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2798,7 +2799,8 @@
           {
             "type": "line",
             "speaker": "Veliaf Hurtz",
-            "text": "Fear not my friend! I will come to your aid!"
+            "text": "Fear not my friend! I will come to your aid!",
+            "presentation": "overhead"
           }
         ],
         "id": "3SyWCq"
@@ -4473,10 +4475,6 @@
           }
         ],
         "id": "io8V2U"
-      },
-      {
-        "type": "unavailable",
-        "id": "JDyyMt"
       }
     ]
   },

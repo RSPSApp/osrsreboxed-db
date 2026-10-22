@@ -3,17 +3,20 @@
   "variants": {
     "overhead-dialogue-at-random-intervals": [
       {
-        "npc": "Quack!"
+        "npc": "Quack!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-female-ducks-when-followed-by-a-duckling-or-ducklings": [
       {
-        "npc": "Quack?"
+        "npc": "Quack?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[Duckling/Ducklings]",
-        "text": "Eep!"
+        "text": "Eep!",
+        "presentation": "overhead"
       }
     ]
   }

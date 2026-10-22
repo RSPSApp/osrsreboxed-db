@@ -3,6 +3,7 @@
   "variants": {
     "overhead-dialogue-failed-pickpocket-attempt": [
       {
+        "presentation": "overhead",
         "npc": "What do you think you're doing?"
       }
     ]

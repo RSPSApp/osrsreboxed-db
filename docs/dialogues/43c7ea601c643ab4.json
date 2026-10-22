@@ -1269,7 +1269,8 @@
       {
         "type": "line",
         "speaker": "Gardener",
-        "text": "First moles, now this! Take this, vandal!"
+        "text": "First moles, now this! Take this, vandal!",
+        "presentation": "overhead"
       }
     ],
     "finishing-up-digging-in-falador-park-while-being-attacked-by-the-gardener": [
@@ -1316,13 +1317,6 @@
         "type": "message",
         "text": "You open the casket, and find One-Eyed Hector's treasure.",
         "id": "wXVn2d"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "EOUN2C"
       }
     ]
   },

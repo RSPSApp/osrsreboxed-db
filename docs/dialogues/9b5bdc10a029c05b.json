@@ -1103,13 +1103,16 @@
         "text": "When waiting for the trawler to depart:",
         "steps": [
           {
-            "npc": "The ship is back in port!"
+            "npc": "The ship is back in port!",
+            "presentation": "overhead"
           },
           {
-            "npc": "The ship will leave in 1 minute!"
+            "npc": "The ship will leave in 1 minute!",
+            "presentation": "overhead"
           },
           {
-            "npc": "The ship will leave in [50/40/30/20/10] seconds!"
+            "npc": "The ship will leave in [50/40/30/20/10] seconds!",
+            "presentation": "overhead"
           }
         ],
         "id": "ejnzv6"
@@ -1119,13 +1122,16 @@
         "text": "When the trawler is out at sea:",
         "steps": [
           {
-            "npc": "The ship has just left port!"
+            "npc": "The ship has just left port!",
+            "presentation": "overhead"
           },
           {
-            "npc": "The ship will be back in [5/4/3/2/1] minute[s]!"
+            "npc": "The ship will be back in [5/4/3/2/1] minute[s]!",
+            "presentation": "overhead"
           },
           {
-            "npc": "The ship will be back in under 1 minute!"
+            "npc": "The ship will be back in under 1 minute!",
+            "presentation": "overhead"
           }
         ],
         "id": "0nbfTA"
@@ -1135,7 +1141,8 @@
         "text": "When crossing the gangplank back on the docks as the only person waiting on board:",
         "steps": [
           {
-            "npc": "Looks like the ship's not going after all!"
+            "npc": "Looks like the ship's not going after all!",
+            "presentation": "overhead"
           }
         ],
         "id": "lxvoHV"
@@ -1145,7 +1152,8 @@
         "text": "When the trawler is wrecked at sea:",
         "steps": [
           {
-            "npc": "The ship has sunk! I'll get another one."
+            "npc": "The ship has sunk! I'll get another one.",
+            "presentation": "overhead"
           }
         ],
         "id": "UHNqwO"
@@ -1157,10 +1165,12 @@
         "text": "While waiting for the trawler to depart:",
         "steps": [
           {
-            "npc": "The ship will leave in 1 minute!"
+            "npc": "The ship will leave in 1 minute!",
+            "presentation": "overhead"
           },
           {
-            "npc": "The ship will leave in [50/40/30/20/10] seconds!"
+            "npc": "The ship will leave in [50/40/30/20/10] seconds!",
+            "presentation": "overhead"
           }
         ],
         "id": "XrEMFb"
@@ -1172,7 +1182,8 @@
         "text": "When first arriving at open sea:",
         "steps": [
           {
-            "npc": "Let's get this net full with fishies!"
+            "npc": "Let's get this net full with fishies!",
+            "presentation": "overhead"
           }
         ],
         "id": "fMVkNA"
@@ -1182,7 +1193,8 @@
         "text": "When the net has been torn:",
         "steps": [
           {
-            "npc": "Arrh! Check that net!"
+            "npc": "Arrh! Check that net!",
+            "presentation": "overhead"
           }
         ],
         "id": "fdKGkq"
@@ -1192,7 +1204,8 @@
         "text": "When under assault of the Kraken:",
         "steps": [
           {
-            "npc": "Doom! The Kraken is attacking!"
+            "npc": "Doom! The Kraken is attacking!",
+            "presentation": "overhead"
           }
         ],
         "id": "W7ayA8"
@@ -1202,7 +1215,8 @@
         "text": "When the Kraken has been fought back:",
         "steps": [
           {
-            "npc": "Hurrah! The Kraken is no more!"
+            "npc": "Hurrah! The Kraken is no more!",
+            "presentation": "overhead"
           }
         ],
         "id": "u3hEEt"
@@ -1212,7 +1226,8 @@
         "text": "When the lower deck is about to become water-filled:",
         "steps": [
           {
-            "npc": "You'll need to start bailing soon!"
+            "npc": "You'll need to start bailing soon!",
+            "presentation": "overhead"
           }
         ],
         "id": "JRYeMo"
@@ -1228,7 +1243,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Blistering barnacles!"
+                    "npc": "Blistering barnacles!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -1236,7 +1252,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "The water is coming in matey!"
+                    "npc": "The water is coming in matey!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -1256,7 +1273,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "We'll all end up in a watery grave!"
+                    "npc": "We'll all end up in a watery grave!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -1264,7 +1282,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Land lubbers!"
+                    "npc": "Land lubbers!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -1272,7 +1291,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "It's a fierce sea today traveller."
+                    "npc": "It's a fierce sea today traveller.",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -1280,7 +1300,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "My mother could bail better than that!"
+                    "npc": "My mother could bail better than that!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -1300,7 +1321,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Noooooo!"
+                    "npc": "Noooooo!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -1308,7 +1330,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "We're going under!"
+                    "npc": "We're going under!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -1316,7 +1339,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "We're all doomed!"
+                    "npc": "We're all doomed!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -1324,7 +1348,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "Mummy!"
+                    "npc": "Mummy!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -1342,10 +1367,12 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "You'll need all your strength!"
+                "npc": "You'll need all your strength!",
+                "presentation": "overhead"
               },
               {
-                "npc": "To make it back to shore."
+                "npc": "To make it back to shore.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1353,7 +1380,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "No fishies for you today!"
+                "npc": "No fishies for you today!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1361,7 +1389,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Arrrgh! We've sunk!"
+                "npc": "Arrrgh! We've sunk!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1369,7 +1398,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Keep your head above water shipmate."
+                "npc": "Keep your head above water shipmate.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1377,7 +1407,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "You'll be joining Davey Jones!"
+                "npc": "You'll be joining Davey Jones!",
+                "presentation": "overhead"
               }
             ]
           }

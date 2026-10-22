@@ -3,112 +3,136 @@
   "variants": {
     "overhead-dialogue-spawning-in": [
       {
-        "npc": "AT LAST!"
+        "npc": "AT LAST!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Fumus!"
+        "npc": "Fumus!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Umbra!"
+        "npc": "Umbra!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Cruor!"
+        "npc": "Cruor!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Glacies!"
+        "npc": "Glacies!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-smoke-phase-calling-for-the-power-of-smoke": [
       {
-        "npc": "Fill my soul with smoke!"
+        "npc": "Fill my soul with smoke!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-smoke-phase-choke-attack": [
       {
-        "npc": "Let the virus flow through you!"
+        "npc": "Let the virus flow through you!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-smoke-phase-smoke-dash-attack": [
       {
-        "npc": "There is..."
+        "npc": "There is...",
+        "presentation": "overhead"
       },
       {
-        "npc": "NO ESCAPE!"
+        "npc": "NO ESCAPE!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-smoke-phase-calling-out-to-fumus-for-aid": [
       {
-        "npc": "Fumus, don't fail me!"
+        "npc": "Fumus, don't fail me!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-shadow-phase-calling-for-the-power-of-shadow": [
       {
-        "npc": "Darken my shadow!"
+        "npc": "Darken my shadow!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-shadow-phase-shadow-smash-attack": [
       {
-        "npc": "Fear the shadow!"
+        "npc": "Fear the shadow!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-shadow-phase-embrace-darkness-attack": [
       {
-        "npc": "Embrace darkness!"
+        "npc": "Embrace darkness!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-shadow-phase-calling-out-to-umbra-for-aid": [
       {
-        "npc": "Umbra, don't fail me!"
+        "npc": "Umbra, don't fail me!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-blood-phase-calling-for-the-power-of-blood": [
       {
-        "npc": "Flood my lungs with blood!"
+        "npc": "Flood my lungs with blood!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-blood-phase-blood-siphon-attack": [
       {
-        "npc": "A siphon will solve this!"
+        "npc": "A siphon will solve this!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-blood-phase-blood-sacrifice-attack": [
       {
-        "npc": "I demand a blood sacrifice!"
+        "npc": "I demand a blood sacrifice!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-blood-phase-calling-out-to-cruor-for-aid": [
       {
-        "npc": "Cruor, don't fail me!"
+        "npc": "Cruor, don't fail me!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-ice-phase-calling-for-the-power-of-ice": [
       {
-        "npc": "Infuse me with the power of ice!"
+        "npc": "Infuse me with the power of ice!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-ice-phase-containment-attack": [
       {
-        "npc": "Contain this!"
+        "npc": "Contain this!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-ice-phase-ice-prison-attack": [
       {
-        "npc": "Die now, in a prison of ice!"
+        "npc": "Die now, in a prison of ice!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-ice-phase-calling-out-to-glacies-for-aid": [
       {
-        "npc": "Glacies, don't fail me!"
+        "npc": "Glacies, don't fail me!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-zaros-phase-calling-for-the-power-of-zaros": [
       {
-        "npc": "NOW, THE POWER OF ZAROS!"
+        "npc": "NOW, THE POWER OF ZAROS!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-zaros-phase-upon-dying": [
       {
-        "npc": "Taste my wrath!"
+        "npc": "Taste my wrath!",
+        "presentation": "overhead"
       }
     ]
   }

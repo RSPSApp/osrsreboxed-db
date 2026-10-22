@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Die!"
+                "npc": "Die!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "For Zaros!"
+                "npc": "For Zaros!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Perish in agony!"
+                "npc": "Perish in agony!",
+                "presentation": "overhead"
               }
             ]
           }

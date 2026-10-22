@@ -80,28 +80,36 @@
     ],
     "overhead-dialogue": [
       {
-        "npc": "Down with Necrovarus!!"
+        "npc": "Down with Necrovarus!!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Rise up my fellow ghosts, and we shall be victorious!!"
+        "npc": "Rise up my fellow ghosts, and we shall be victorious!!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Power to the Ghosts!!"
+        "npc": "Power to the Ghosts!!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Rise together, Ghosts without a cause!!"
+        "npc": "Rise together, Ghosts without a cause!!",
+        "presentation": "overhead"
       },
       {
-        "npc": "United we conquer - divided we fall!!"
+        "npc": "United we conquer - divided we fall!!",
+        "presentation": "overhead"
       },
       {
-        "npc": "We shall overcome!!"
+        "npc": "We shall overcome!!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Let Necrovarus know we want out!!"
+        "npc": "Let Necrovarus know we want out!!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Don't stay silent - victory in numbers!!"
+        "npc": "Don't stay silent - victory in numbers!!",
+        "presentation": "overhead"
       }
     ]
   }

@@ -540,7 +540,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Ahahahaha, [player name]!"
+            "npc": "Ahahahaha, [player name]!",
+            "presentation": "overhead"
           }
         ],
         "id": "cNrECu"
@@ -556,7 +557,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Please let me check you, [player name]!"
+                    "npc": "Please let me check you, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -564,7 +566,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "I have come to check you, [player name]..."
+                    "npc": "I have come to check you, [player name]...",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -581,7 +584,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Ahahahaha, ONE more person ignored me..."
+            "npc": "Ahahahaha, ONE more person ignored me...",
+            "presentation": "overhead"
           }
         ],
         "id": "Q1FeGq"

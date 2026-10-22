@@ -127,9 +127,6 @@
                                     "steps": [
                                       {
                                         "player": "I'll get going."
-                                      },
-                                      {
-                                        "type": "end"
                                       }
                                     ]
                                   }
@@ -149,9 +146,6 @@
                                 "type": "line",
                                 "speaker": "King Roald",
                                 "text": "Yes, I dare say it does. I wouldn't even have mentioned it had you not seemed to be looking for something to do anyway."
-                              },
-                              {
-                                "type": "end"
                               }
                             ]
                           }
@@ -164,17 +158,19 @@
             ]
           },
           {
-            "text": "Not really."
-          }
-        ]
-      },
-      {
-        "player": "Not really.",
-        "steps": [
-          {
-            "type": "line",
-            "speaker": "King Roald",
-            "text": "You will have to excuse me then. I am very busy as I have a kingdom to run!"
+            "text": "Not really.",
+            "steps": [
+              {
+                "player": "Not really.",
+                "steps": [
+                  {
+                    "type": "line",
+                    "speaker": "King Roald",
+                    "text": "You will have to excuse me then. I am very busy as I have a kingdom to run!"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1841,9 +1837,6 @@
               },
               {
                 "player": "Right..."
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -1857,17 +1850,10 @@
                 "type": "line",
                 "speaker": "King Roald",
                 "text": "You will have to excuse me then. I am very busy as I have a kingdom to run!"
-              },
-              {
-                "type": "end"
               }
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "VLQURQ"
       }
     ]
   },

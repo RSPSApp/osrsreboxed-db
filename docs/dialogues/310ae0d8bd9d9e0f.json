@@ -25,7 +25,8 @@
             "id": "XYHVxW"
           },
           {
-            "player": "Glub."
+            "player": "Glub.",
+            "presentation": "overhead"
           }
         ],
         "id": "uXZh2j"
@@ -39,7 +40,8 @@
             "id": "Dxruqn"
           },
           {
-            "player": "Glub, blub glup!"
+            "player": "Glub, blub glup!",
+            "presentation": "overhead"
           }
         ],
         "id": "6EKRnO"
@@ -53,7 +55,8 @@
             "id": "ILqWJ9"
           },
           {
-            "player": "Gulp."
+            "player": "Gulp.",
+            "presentation": "overhead"
           }
         ],
         "id": "4-yNIf"
@@ -67,7 +70,8 @@
             "id": "aH5FkC"
           },
           {
-            "player": "Blub."
+            "player": "Blub.",
+            "presentation": "overhead"
           }
         ],
         "id": "HGebhC"

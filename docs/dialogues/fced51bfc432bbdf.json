@@ -483,7 +483,8 @@
           {
             "type": "line",
             "speaker": "Frog",
-            "text": "Greetings from the [prince/princess], [player name]!"
+            "text": "Greetings from the [prince/princess], [player name]!",
+            "presentation": "overhead"
           }
         ],
         "id": "G80YQ6"
@@ -501,7 +502,8 @@
                   {
                     "type": "line",
                     "speaker": "Frog",
-                    "text": "Talk to the frog [prince/princess], [player name]!"
+                    "text": "Talk to the frog [prince/princess], [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -511,7 +513,8 @@
                   {
                     "type": "line",
                     "speaker": "Frog",
-                    "text": "The frog [prince/princess] needs your help, [player name]!"
+                    "text": "The frog [prince/princess] needs your help, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -521,7 +524,8 @@
                   {
                     "type": "line",
                     "speaker": "Frog",
-                    "text": "Please respond to the frog [prince/princess], [player name]!"
+                    "text": "Please respond to the frog [prince/princess], [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -537,7 +541,8 @@
           {
             "type": "line",
             "speaker": "Frog",
-            "text": "Maybe later."
+            "text": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "13xSbr"

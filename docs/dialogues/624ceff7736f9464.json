@@ -822,7 +822,8 @@
     ],
     "getting-the-ogre-bellows": [
       {
-        "player": "Humph!"
+        "player": "Humph!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -830,7 +831,8 @@
         "id": "W-Dtzp"
       },
       {
-        "player": "I guess this is what an ogre would call a locked chest."
+        "player": "I guess this is what an ogre would call a locked chest.",
+        "presentation": "overhead"
       }
     ],
     "getting-the-ogre-bellows-searching-the-unlocked-chest": [
@@ -861,7 +863,8 @@
         "id": "H86kLi"
       },
       {
-        "player": "Come here toady!"
+        "player": "Come here toady!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -1026,31 +1029,36 @@
       {
         "type": "line",
         "speaker": "Chompy bird",
-        "text": "Sqwirk!"
+        "text": "Sqwirk!",
+        "presentation": "overhead"
       }
     ],
     "successfully-attracting-a-chompy-when-backing-away-from-the-player": [
       {
         "type": "line",
         "speaker": "Chompy bird",
-        "text": "Screech!"
+        "text": "Screech!",
+        "presentation": "overhead"
       }
     ],
     "successfully-attracting-a-chompy-when-eating-a-bloated-toad": [
       {
         "type": "line",
         "speaker": "Chompy bird",
-        "text": "Sqwark!"
+        "text": "Sqwark!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Bloated toad",
-        "text": "!!Croak!!"
+        "text": "!!Croak!!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Chompy bird",
-        "text": "Gobble!"
+        "text": "Gobble!",
+        "presentation": "overhead"
       }
     ],
     "successfully-attracting-a-chompy-after-the-chompy-eats-the-toad": [
@@ -1558,10 +1566,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "cmDp4e"
-      },
-      {
-        "type": "unavailable",
-        "id": "Di5Utg"
       }
     ]
   },

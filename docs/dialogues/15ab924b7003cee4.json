@@ -472,7 +472,8 @@
         "text": "If the player is not wearing Gnome goggles:",
         "steps": [
           {
-            "player": "Argh! My eyes!"
+            "player": "Argh! My eyes!",
+            "presentation": "overhead"
           }
         ],
         "id": "gVaQ9T"
@@ -482,7 +483,8 @@
         "text": "If the player is wearing Gnome goggles:",
         "steps": [
           {
-            "player": "Argh! My eyes! The goggles do nothing!"
+            "player": "Argh! My eyes! The goggles do nothing!",
+            "presentation": "overhead"
           }
         ],
         "id": "nanlAJ"
@@ -500,12 +502,14 @@
       {
         "type": "line",
         "speaker": "Pig Thing",
-        "text": "Sniff* *Sniff*"
+        "text": "Sniff* *Sniff*",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Pig Thing",
-        "text": "Snort*"
+        "text": "Snort*",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1069,7 +1073,8 @@
     ],
     "the-sourhog-killing-the-sourhog-with-a-katana": [
       {
-        "player": "Nothing personal, pig."
+        "player": "Nothing personal, pig.",
+        "presentation": "overhead"
       }
     ],
     "the-sourhog-taking-the-sourhog-s-foot": [
@@ -1415,10 +1420,6 @@
           }
         ],
         "id": "B49An4"
-      },
-      {
-        "type": "unavailable",
-        "id": "05VrVW"
       }
     ]
   },

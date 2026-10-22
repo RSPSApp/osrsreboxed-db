@@ -1115,7 +1115,8 @@
       {
         "type": "line",
         "speaker": "Mischievous ghost",
-        "text": "Ooooo Wooooo Woo"
+        "text": "Ooooo Wooooo Woo",
+        "presentation": "overhead"
       }
     ],
     "inside-the-mine-mischievous-ghost-appearing-losing-the-race-to-the-ghost": [
@@ -1246,10 +1247,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "mFurEC"
-      },
-      {
-        "type": "unavailable",
-        "id": "Wa-pGF"
       }
     ]
   },

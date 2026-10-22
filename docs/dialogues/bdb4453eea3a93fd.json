@@ -813,7 +813,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Hello, [player name]. I need a herb."
+            "npc": "Hello, [player name]. I need a herb.",
+            "presentation": "overhead"
           }
         ],
         "id": "A1FyZA"
@@ -829,7 +830,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Hey, [player name]!"
+                    "npc": "Hey, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -837,7 +839,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Excuse me, [player name]?"
+                    "npc": "Excuse me, [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -845,7 +848,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "Can you hear me, [player name]?"
+                    "npc": "Can you hear me, [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -853,7 +857,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "I just need a herb, [player name]!"
+                    "npc": "I just need a herb, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -861,7 +866,8 @@
                 "text": "Dialogue 5",
                 "steps": [
                   {
-                    "npc": "I'll give you a free potion, [player name]!"
+                    "npc": "I'll give you a free potion, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -875,7 +881,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "GwXcMI"

@@ -1700,10 +1700,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "MtgzHp"
-      },
-      {
-        "type": "unavailable",
-        "id": "BlxTcg"
       }
     ]
   },

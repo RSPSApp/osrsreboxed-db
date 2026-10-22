@@ -207,19 +207,24 @@
     ],
     "overhead-dialogue": [
       {
-        "npc": "We need to assemble rift guardian before those creatures arrive!"
+        "npc": "We need to assemble rift guardian before those creatures arrive!",
+        "presentation": "overhead"
       },
       {
-        "npc": "We need shield barriers up before anything comes through that rift!"
+        "npc": "We need shield barriers up before anything comes through that rift!",
+        "presentation": "overhead"
       },
       {
-        "npc": "We need to protect the Great Guardian!"
+        "npc": "We need to protect the Great Guardian!",
+        "presentation": "overhead"
       },
       {
-        "npc": "We need to power up the Great Guardian!"
+        "npc": "We need to power up the Great Guardian!",
+        "presentation": "overhead"
       },
       {
-        "npc": "We need more rift guardians!"
+        "npc": "We need more rift guardians!",
+        "presentation": "overhead"
       }
     ]
   },

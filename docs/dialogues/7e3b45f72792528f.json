@@ -3,7 +3,8 @@
   "variants": {
     "upon-spawning-in": [
       {
-        "npc": "Why would you do that?"
+        "npc": "Why would you do that?",
+        "presentation": "overhead"
       }
     ]
   }

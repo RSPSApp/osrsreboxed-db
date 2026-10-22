@@ -9,6 +9,7 @@
     ],
     "overhead-dialogue-objection": [
       {
+        "presentation": "overhead",
         "npc": "Objection!"
       },
       {
@@ -18,7 +19,8 @@
           {
             "type": "line",
             "speaker": "Octagon Referee",
-            "text": "Objection sustained!"
+            "text": "Objection sustained!",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -33,7 +35,8 @@
           {
             "type": "line",
             "speaker": "Octagon Referee",
-            "text": "Objection overruled!"
+            "text": "Objection overruled!",
+            "presentation": "overhead"
           }
         ],
         "id": "ZF6jFe"

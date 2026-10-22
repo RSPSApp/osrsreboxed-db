@@ -2622,7 +2622,8 @@
               {
                 "type": "line",
                 "speaker": "Burntof",
-                "text": "Yaaa*hic*aawn"
+                "text": "Yaaa*hic*aawn",
+                "presentation": "overhead"
               },
               {
                 "player": "You don't find it exciting? As an archaeologist, I thought you would be thrilled at this discovery?"
@@ -2635,7 +2636,8 @@
               {
                 "type": "line",
                 "speaker": "Burntof",
-                "text": "Hmm..."
+                "text": "Hmm...",
+                "presentation": "overhead"
               },
               {
                 "player": "It's not about the money though, right? We've potentially discovered the long lost ruins of an ancient civilisation!"
@@ -2656,7 +2658,8 @@
               {
                 "type": "line",
                 "speaker": "Burntof",
-                "text": "Theshe markings look familiar..."
+                "text": "Theshe markings look familiar...",
+                "presentation": "overhead"
               },
               {
                 "player": "So this entire time, you've just been using me to help break into these ruins in hopes of finding someone else's treasures."
@@ -2682,7 +2685,8 @@
               {
                 "type": "line",
                 "speaker": "Burntof",
-                "text": "I've sheen thish before..."
+                "text": "I've sheen thish before...",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
@@ -2828,8 +2832,9 @@
         "id": "zy3NHn"
       },
       {
-        "type": "unavailable",
-        "id": "bEqDuA"
+        "type": "action",
+        "text": "You find a pile of coins!",
+        "id": "KNloP7"
       },
       {
         "player": "Those will do nicely!"
@@ -3070,13 +3075,6 @@
       },
       {
         "player": "Oh what a shame! Poor Marley's going to starve as he doesn't have anyone to make his sandwiches... So sad."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "ry5OXx"
       }
     ]
   },

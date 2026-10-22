@@ -28,7 +28,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Good day to you, [milord/milady/my liege] [player name]."
+            "npc": "Good day to you, [milord/milady/my liege] [player name].",
+            "presentation": "overhead"
           }
         ],
         "id": "vnTLDv"
@@ -44,7 +45,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "I seek a moment of your time, [sirrah/ma'am/my liege]!"
+                    "npc": "I seek a moment of your time, [sirrah/ma'am/my liege]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -52,7 +54,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "[Milord/Milady/My liege] [player name], please speak to me!"
+                    "npc": "[Milord/Milady/My liege] [player name], please speak to me!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -67,7 +70,8 @@
         "id": "xLzQL1"
       },
       {
-        "npc": "Maybe later."
+        "npc": "Maybe later.",
+        "presentation": "overhead"
       }
     ]
   }

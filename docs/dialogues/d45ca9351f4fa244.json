@@ -40,7 +40,8 @@
               {
                 "type": "line",
                 "speaker": "King Narnode Shareen",
-                "text": "Down here."
+                "text": "Down here.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -182,7 +183,8 @@
               {
                 "type": "line",
                 "speaker": "King Narnode Shareen",
-                "text": "Up here."
+                "text": "Up here.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -215,7 +217,8 @@
               {
                 "type": "line",
                 "speaker": "King Narnode Shareen",
-                "text": "Up here."
+                "text": "Up here.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -1348,7 +1351,8 @@
       {
         "type": "line",
         "speaker": "Jogre",
-        "text": "Ug!"
+        "text": "Ug!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2816,13 +2820,16 @@
         "id": "oJCSD0"
       },
       {
-        "player": "Hello?"
+        "player": "Hello?",
+        "presentation": "overhead"
       },
       {
-        "player": "Anybody?"
+        "player": "Anybody?",
+        "presentation": "overhead"
       },
       {
-        "player": "Glough?"
+        "player": "Glough?",
+        "presentation": "overhead"
       },
       {
         "player": "Glough?"
@@ -2897,7 +2904,8 @@
       {
         "type": "line",
         "speaker": "Glough",
-        "text": "Mummy!"
+        "text": "Mummy!",
+        "presentation": "overhead"
       }
     ],
     "saving-the-tree-the-end-of-the-tunnel": [

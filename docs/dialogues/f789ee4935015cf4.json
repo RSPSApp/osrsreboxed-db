@@ -3316,7 +3316,8 @@
     ],
     "making-a-discovery-creating-the-explosive-using-a-tinderbox-on-the-bricks-before-pouring-the-mixture-on-them": [
       {
-        "player": "Now, what am I trying to achieve here?"
+        "player": "Now, what am I trying to achieve here?",
+        "presentation": "overhead"
       }
     ],
     "making-a-discovery-creating-the-explosive-using-a-rock-pick-on-the-bricks": [
@@ -3461,10 +3462,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "NwSdYK"
-      },
-      {
-        "type": "unavailable",
-        "id": "KraaSM"
       }
     ]
   },

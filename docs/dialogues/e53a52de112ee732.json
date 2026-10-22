@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Bring some of the heavy squad to carry the crates."
+                "npc": "Bring some of the heavy squad to carry the crates.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Get this right and I'll see you're well paid."
+                "npc": "Get this right and I'll see you're well paid.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Handle the explosives carefully."
+                "npc": "Handle the explosives carefully.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "If the shopkeeper won't cooperate, kill his wife."
+                "npc": "If the shopkeeper won't cooperate, kill his wife.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "If the soldiers try to interfere, kill them."
+                "npc": "If the soldiers try to interfere, kill them.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Make sure the captain knows not to talk."
+                "npc": "Make sure the captain knows not to talk.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -57,7 +63,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Our ship is due with the evening tide."
+                "npc": "Our ship is due with the evening tide.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -65,7 +72,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "Pay attention or I'll rip your throat out."
+                "npc": "Pay attention or I'll rip your throat out.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -73,7 +81,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "The boxes marked with a cross are ours."
+                "npc": "The boxes marked with a cross are ours.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -81,7 +90,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "Weigh the gold carefully in case he double-crosses us."
+                "npc": "Weigh the gold carefully in case he double-crosses us.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -99,12 +109,14 @@
     ],
     "overhead-dialogue-when-departing-from-a-gang-meeting": [
       {
-        "npc": "We're done here."
+        "npc": "We're done here.",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-attacked": [
       {
-        "npc": "Die, Shayzien scum!"
+        "npc": "Die, Shayzien scum!",
+        "presentation": "overhead"
       }
     ]
   }

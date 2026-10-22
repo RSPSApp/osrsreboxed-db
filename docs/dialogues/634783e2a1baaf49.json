@@ -1283,13 +1283,16 @@
         "player": "Yes, well, it certainly seems like you have a captive audience!"
       },
       {
-        "player": "Yes, well, it certainly seems"
+        "player": "Yes, well, it certainly seems",
+        "presentation": "overhead"
       },
       {
-        "player": "like you have a captive"
+        "player": "like you have a captive",
+        "presentation": "overhead"
       },
       {
-        "player": "audience!"
+        "player": "audience!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -1839,7 +1842,8 @@
                 "id": "omBZmz"
               },
               {
-                "player": "Urk!"
+                "player": "Urk!",
+                "presentation": "overhead"
               },
               {
                 "type": "message",
@@ -2391,10 +2395,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "PO2Wli"
-      },
-      {
-        "type": "unavailable",
-        "id": "yShqMu"
       }
     ]
   },

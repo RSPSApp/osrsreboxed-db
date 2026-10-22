@@ -1,5 +1,8 @@
+import json
+
 import pytest
 
+import config
 from scripts.dialogues import update
 from scripts.dialogues.hooks import enrich_records, walk
 from scripts.dialogues.bindings import apply_bindings
@@ -49,6 +52,105 @@ def test_nested_menu_does_not_swallow_outer_options_or_drop_same_depth_speech():
     inner = menu["options"][0]["steps"][0]
     assert [option["text"] for option in inner["options"]] == ["Inner", "Another inner"]
     assert inner["options"][0]["steps"] == [{"npc": "Inner reply."}]
+
+
+def test_same_depth_option_bodies_stay_with_their_choice_until_the_next_option():
+    value = record(
+        "X",
+        """==Standard dialogue==
+* {{tselect|Select an option}}
+* {{topt|Wrong}}
+* {{tact|A random incorrect dialogue from below is shown.}}
+* {{tact|end}}
+* {{topt|Right}}
+* '''Player:''' Right.
+* '''X:''' Continue the conversation.
+* {{tselect}}
+* {{topt|Continue}}
+** '''X:''' Nested answer.
+""",
+    )
+    menu = value["variants"]["standard-dialogue"][0]
+    assert [option["text"] for option in menu["options"]] == ["Wrong", "Right"]
+    assert [step["type"] for step in menu["options"][0]["steps"]] == ["action", "end"]
+    right_steps = menu["options"][1]["steps"]
+    assert right_steps[0] == {"player": "Right."}
+    assert right_steps[1] == {"npc": "Continue the conversation."}
+    assert value["variants"]["standard-dialogue"][1]["type"] == "choice"
+    assert value["variants"]["standard-dialogue"][1]["options"][0]["steps"][0] == {"npc": "Nested answer."}
+
+
+def test_matching_player_echo_does_not_swallow_the_next_parent_option():
+    value = record(
+        "X",
+        """==Standard dialogue==
+* {{tselect|Select an option}}
+* {{topt|Yes}}
+* '''Player:''' Yes.
+* '''X:''' The answer is yes.
+* {{topt|No}}
+* '''Player:''' No.
+* '''X:''' The answer is no.
+* {{tact|end}}
+""",
+    )
+    menu = value["variants"]["standard-dialogue"][0]
+    assert [option["text"] for option in menu["options"]] == ["Yes", "No"]
+    assert menu["options"][0]["steps"] == [{"player": "Yes."}, {"npc": "The answer is yes."}]
+    assert menu["options"][1]["steps"] == [{"player": "No."}, {"npc": "The answer is no."}, {"type": "end"}]
+
+
+def test_unrelated_outer_menu_after_completed_menu_stays_a_sibling():
+    value = record(
+        "X",
+        """==Standard dialogue==
+* {{tselect|First question}}
+* {{topt|Yes}}
+** '''Player:''' Yes.
+** '''X:''' First answer.
+* {{topt|No}}
+** '''Player:''' No.
+** '''X:''' Second answer.
+* {{tselect|A separate question}}
+* {{topt|Continue}}
+** '''X:''' New conversation.
+""",
+    )
+    steps = value["variants"]["standard-dialogue"]
+    assert steps[0]["type"] == "choice"
+    assert [option["text"] for option in steps[0]["options"]] == ["Yes", "No"]
+    assert steps[1]["type"] == "choice"
+    assert steps[1]["prompt"] == "A separate question"
+
+
+def test_making_history_dron_quiz_options_are_grouped_from_canonical_wiki_source():
+    pages = json.loads((config.DATA_PATH / "dialogues" / "quest-pages.json").read_text())
+    raw = pages["Transcript:Making History"]["wikitext"]
+    parsed = update.parse_npc("Making History", raw)
+    steps = parsed["variants"]["talking-to-dron-talking-to-dron-again"]["steps"]
+
+    def find_prompt(nodes):
+        for node in nodes:
+            if node.get("type") == "line" and node.get("text") == "When are kittens best devoured?":
+                return nodes, node
+            found = find_prompt(node.get("steps", []))
+            if found:
+                return found
+            for option in node.get("options", []):
+                found = find_prompt(option.get("steps", []))
+                if found:
+                    return found
+        return None
+
+    siblings, _ = find_prompt(steps)
+    menu_index = next(i for i, node in enumerate(siblings) if node.get("type") == "choice" and node.get("options", [{}])[0].get("text") == "Tea")
+    menu = siblings[menu_index]
+    assert [option["text"] for option in menu["options"]] == ["Tea", "Lunch"]
+    assert [step["type"] for step in menu["options"][0]["steps"]] == ["action", "end"]
+    lunch_steps = menu["options"][1]["steps"]
+    assert lunch_steps[0] == {"type": "line", "speaker": "Player", "text": "Lunch."}
+    assert lunch_steps[1]["text"] == "What do I usually eat for tea?"
+    assert siblings[menu_index + 1]["type"] == "choice"
 
 
 def test_poem_warning_and_editorial_notes_preserve_game_text():

@@ -3624,7 +3624,8 @@
           {
             "type": "line",
             "speaker": "Boneguard",
-            "text": "Someone so easy to hit isn't worth my time!"
+            "text": "Someone so easy to hit isn't worth my time!",
+            "presentation": "overhead"
           }
         ],
         "id": "GtbjJ2"
@@ -4455,9 +4456,6 @@
                         "steps": [
                           {
                             "player": "Okay, here's one million coins."
-                          },
-                          {
-                            "type": "end"
                           }
                         ]
                       },
@@ -4471,9 +4469,6 @@
                             "type": "line",
                             "speaker": "Lazim",
                             "text": "Your loss."
-                          },
-                          {
-                            "type": "end"
                           }
                         ]
                       }
@@ -4486,9 +4481,6 @@
                 "steps": [
                   {
                     "player": "Maybe another time."
-                  },
-                  {
-                    "type": "end"
                   }
                 ]
               }
@@ -4496,10 +4488,6 @@
           }
         ],
         "id": "DSFW44"
-      },
-      {
-        "type": "unavailable",
-        "id": "tK8mW6"
       }
     ]
   },

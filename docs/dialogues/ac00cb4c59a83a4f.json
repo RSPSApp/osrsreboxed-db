@@ -1293,7 +1293,8 @@
               {
                 "type": "line",
                 "speaker": "Killer",
-                "text": "ouch*"
+                "text": "ouch*",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1303,7 +1304,8 @@
               {
                 "type": "line",
                 "speaker": "Killer",
-                "text": "Ouch!"
+                "text": "Ouch!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -1727,13 +1729,6 @@
       },
       {
         "player": "You too, Mandy."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "QmGBZH"
       }
     ]
   },

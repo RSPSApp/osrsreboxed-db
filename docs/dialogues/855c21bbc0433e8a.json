@@ -5474,7 +5474,8 @@
       {
         "type": "line",
         "speaker": "Dallas Jones",
-        "text": "Aaargh!"
+        "text": "Aaargh!",
+        "presentation": "overhead"
       },
       {
         "player": "Dallas!"
@@ -5482,7 +5483,8 @@
       {
         "type": "line",
         "speaker": "Bob",
-        "text": "Meow!"
+        "text": "Meow!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -6759,32 +6761,38 @@
       {
         "type": "line",
         "speaker": "Jardric",
-        "text": "A true warrior."
+        "text": "A true warrior.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Oneiromancer",
-        "text": "Excellent work!"
+        "text": "Excellent work!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Sir Tiffy Cashien",
-        "text": "Good show old bean!"
+        "text": "Good show old bean!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Wise Old Man",
-        "text": "Splendid!"
+        "text": "Splendid!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Brundt the Chieftain",
-        "text": "Great work, [Fremennik name]."
+        "text": "Great work, [Fremennik name].",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Achietties",
-        "text": "You did it!"
+        "text": "You did it!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -6925,10 +6933,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "b5j1wa"
-      },
-      {
-        "type": "unavailable",
-        "id": "3HE9rr"
       }
     ]
   },

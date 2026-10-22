@@ -106,7 +106,8 @@
               {
                 "type": "line",
                 "speaker": "Minion",
-                "text": "Don't you dare die on me!"
+                "text": "Don't you dare die on me!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -116,7 +117,8 @@
               {
                 "type": "line",
                 "speaker": "Minion",
-                "text": "Got any beads?"
+                "text": "Got any beads?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -126,7 +128,8 @@
               {
                 "type": "line",
                 "speaker": "Minion",
-                "text": "Our enemies shall burn!"
+                "text": "Our enemies shall burn!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -136,7 +139,8 @@
               {
                 "type": "line",
                 "speaker": "Minion",
-                "text": "We will conquer all!"
+                "text": "We will conquer all!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -146,7 +150,8 @@
               {
                 "type": "line",
                 "speaker": "Minion",
-                "text": "You can do better than that!"
+                "text": "You can do better than that!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -156,7 +161,8 @@
               {
                 "type": "line",
                 "speaker": "Minion",
-                "text": "You're quite devilish!"
+                "text": "You're quite devilish!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -166,7 +172,8 @@
               {
                 "type": "line",
                 "speaker": "Minion",
-                "text": "You're so... Evil!"
+                "text": "You're so... Evil!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -176,7 +183,8 @@
               {
                 "type": "line",
                 "speaker": "Minion",
-                "text": "You're so tall."
+                "text": "You're so tall.",
+                "presentation": "overhead"
               }
             ]
           }

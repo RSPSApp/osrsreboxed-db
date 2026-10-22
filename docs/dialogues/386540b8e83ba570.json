@@ -312,7 +312,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "C for miles. C for fish."
+                "npc": "C for miles. C for fish.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -320,7 +321,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'm a bit taters in this wind."
+                "npc": "I'm a bit taters in this wind.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -328,7 +330,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Wish I had a boat."
+                "npc": "Wish I had a boat.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -336,7 +339,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Been on me pins all day i 'ave."
+                "npc": "Been on me pins all day i 'ave.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -345,17 +349,20 @@
     ],
     "at-sea-randomly-while-at-the-helm": [
       {
-        "npc": "I've half-inched the 'elm and me mince pies are on the sails."
+        "npc": "I've half-inched the 'elm and me mince pies are on the sails.",
+        "presentation": "overhead"
       }
     ],
     "at-sea-spotting-an-ocean-encounter": [
       {
-        "npc": "There's somethin' in the drink to the [compass direction]!"
+        "npc": "There's somethin' in the drink to the [compass direction]!",
+        "presentation": "overhead"
       }
     ],
     "at-sea-trimming-the-sails": [
       {
-        "npc": "Trimmed those sails good and proper, Captain!"
+        "npc": "Trimmed those sails good and proper, Captain!",
+        "presentation": "overhead"
       }
     ],
     "at-sea-idle-at-cannon": [
@@ -365,7 +372,8 @@
         "id": "FBqbvh"
       },
       {
-        "npc": "I can't find any ammo in the cargo hold."
+        "npc": "I can't find any ammo in the cargo hold.",
+        "presentation": "overhead"
       },
       {
         "type": "condition",
@@ -378,7 +386,8 @@
     ],
     "at-sea-while-at-the-salvaging-hook": [
       {
-        "npc": "'avin a butchers at the hook."
+        "npc": "'avin a butchers at the hook.",
+        "presentation": "overhead"
       }
     ],
     "at-sea-recovering-salvaging": [
@@ -387,7 +396,8 @@
         "text": "With space in the cargo hold:",
         "steps": [
           {
-            "npc": "Managed to hook some salvage! I'll put it in the cargo hold."
+            "npc": "Managed to hook some salvage! I'll put it in the cargo hold.",
+            "presentation": "overhead"
           }
         ],
         "id": "_rMZIV"
@@ -397,7 +407,8 @@
         "text": "If the cargo hold is full:",
         "steps": [
           {
-            "npc": "The cargo hold is full. I can't salvage anything."
+            "npc": "The cargo hold is full. I can't salvage anything.",
+            "presentation": "overhead"
           }
         ],
         "id": "vEf_uW"
@@ -407,7 +418,8 @@
         "text": "Without the Sailing level for the ship:",
         "steps": [
           {
-            "npc": "Afraid that ship is a bit too complicated for me to salvage."
+            "npc": "Afraid that ship is a bit too complicated for me to salvage.",
+            "presentation": "overhead"
           }
         ],
         "id": "Hd2_Fl"
@@ -417,7 +429,8 @@
         "text": "Without the Sailing level for the salvaging hook:",
         "steps": [
           {
-            "npc": "This salvaging hook is a bit too complicated for me."
+            "npc": "This salvaging hook is a bit too complicated for me.",
+            "presentation": "overhead"
           }
         ],
         "id": "XHz4g6"
@@ -427,7 +440,8 @@
         "text": "In hazardous waters:",
         "steps": [
           {
-            "npc": "It's not safe to salvage shipwrecks that are in hazardous waters."
+            "npc": "It's not safe to salvage shipwrecks that are in hazardous waters.",
+            "presentation": "overhead"
           }
         ],
         "id": "vjoj_0"
@@ -441,7 +455,8 @@
     ],
     "at-sea-catching-a-wind-mote": [
       {
-        "npc": "I've caught a wind mote!"
+        "npc": "I've caught a wind mote!",
+        "presentation": "overhead"
       }
     ],
     "at-sea-operating-the-wind-catcher": [
@@ -450,7 +465,8 @@
         "text": "Enabling the wind catcher:",
         "steps": [
           {
-            "npc": "Enabling the wind catcher!"
+            "npc": "Enabling the wind catcher!",
+            "presentation": "overhead"
           }
         ],
         "id": "Th_lMZ"
@@ -460,7 +476,8 @@
         "text": "Disabling the wind catcher:",
         "steps": [
           {
-            "npc": "Disabling the wind catcher!"
+            "npc": "Disabling the wind catcher!",
+            "presentation": "overhead"
           }
         ],
         "id": "-LcoaR"
@@ -472,7 +489,8 @@
         "text": "Enabling the gale catcher:",
         "steps": [
           {
-            "npc": "Enabling the gale catcher!"
+            "npc": "Enabling the gale catcher!",
+            "presentation": "overhead"
           }
         ],
         "id": "zC1QKN"
@@ -482,7 +500,8 @@
         "text": "Disabling the gale catcher:",
         "steps": [
           {
-            "npc": "Disabling the gale catcher!"
+            "npc": "Disabling the gale catcher!",
+            "presentation": "overhead"
           }
         ],
         "id": "W_tmcZ"
@@ -494,7 +513,8 @@
         "text": "If there are repair kits in the cargo hold:",
         "steps": [
           {
-            "npc": "Aye, that's better."
+            "npc": "Aye, that's better.",
+            "presentation": "overhead"
           }
         ],
         "id": "ZgHy_9"
@@ -504,7 +524,8 @@
         "text": "If there are no repair kits in the cargo hold:",
         "steps": [
           {
-            "npc": "I can't find any repair kits in the cargo hold."
+            "npc": "I can't find any repair kits in the cargo hold.",
+            "presentation": "overhead"
           }
         ],
         "id": "KbeeM5"

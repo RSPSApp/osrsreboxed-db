@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Power for the people!"
+                "npc": "Power for the people!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "The Council must answer us!"
+                "npc": "The Council must answer us!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "The Council is corrupt!"
+                "npc": "The Council is corrupt!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Down with the Council!"
+                "npc": "Down with the Council!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Democracy is a lie!"
+                "npc": "Democracy is a lie!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "We want answers!"
+                "npc": "We want answers!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -57,7 +63,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "We won't be denied!"
+                "npc": "We won't be denied!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -65,7 +72,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "We want a King!"
+                "npc": "We want a King!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -73,7 +81,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "It's time for a King!"
+                "npc": "It's time for a King!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -81,7 +90,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "A King for Kourend!"
+                "npc": "A King for Kourend!",
+                "presentation": "overhead"
               }
             ]
           }

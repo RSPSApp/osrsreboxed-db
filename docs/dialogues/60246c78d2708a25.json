@@ -160,8 +160,9 @@
         "text": "If the player has neither helmet nor armour:",
         "steps": [
           {
-            "type": "unavailable",
-            "id": "uRLt-o"
+            "type": "message",
+            "text": "You search the chest, and find the helmet and armour of a Khazard guard.",
+            "id": "9GQIV4"
           },
           {
             "type": "end"
@@ -917,7 +918,8 @@
       {
         "type": "line",
         "speaker": "Sammy Servil",
-        "text": "I'll run ahead."
+        "text": "I'll run ahead.",
+        "presentation": "overhead"
       },
       {
         "player": "Sammy, where's your father?"
@@ -1451,7 +1453,8 @@
       {
         "type": "line",
         "speaker": "Khazard Guard",
-        "text": "Right you, move it."
+        "text": "Right you, move it.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1672,7 +1675,8 @@
       {
         "type": "line",
         "speaker": "General Khazard",
-        "text": "You shall die for your insolence."
+        "text": "You shall die for your insolence.",
+        "presentation": "overhead"
       }
     ],
     "the-battles-entering-the-door-to-the-building-after-khazard-attacks": [
@@ -1687,7 +1691,8 @@
       {
         "type": "line",
         "speaker": "Khazard Guard",
-        "text": "You'll pay for that mistake!"
+        "text": "You'll pay for that mistake!",
+        "presentation": "overhead"
       }
     ],
     "the-battles-opening-the-door-to-the-arena-after-khazard-attacks": [
@@ -1699,7 +1704,8 @@
       {
         "type": "line",
         "speaker": "Khazard Guard",
-        "text": "Die traitor!"
+        "text": "Die traitor!",
+        "presentation": "overhead"
       }
     ],
     "the-battles-talking-to-sammy-in-the-cell-after-khazard-attacks": [

@@ -16,12 +16,14 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "I want to see you sweat soldier!"
+                "npc": "I want to see you sweat soldier!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Soldier",
-                "text": "Yes sir!"
+                "text": "Yes sir!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -29,12 +31,14 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Put your back into it soldier!"
+                "npc": "Put your back into it soldier!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Soldier",
-                "text": "Yes sir!"
+                "text": "Yes sir!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -42,12 +46,14 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "That dummy is the enemy. Kill it!"
+                "npc": "That dummy is the enemy. Kill it!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Soldier",
-                "text": "Yes sir!"
+                "text": "Yes sir!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -55,12 +61,14 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Keep it up soldier!"
+                "npc": "Keep it up soldier!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Soldier",
-                "text": "Yes sir!"
+                "text": "Yes sir!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -68,12 +76,14 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Good work soldier!"
+                "npc": "Good work soldier!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Soldier",
-                "text": "Yes sir!"
+                "text": "Yes sir!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -81,12 +91,14 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "You're not out for a sunday stroll soldier!"
+                "npc": "You're not out for a sunday stroll soldier!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Soldier",
-                "text": "Yes sir!"
+                "text": "Yes sir!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -94,12 +106,14 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Work it!"
+                "npc": "Work it!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Soldier",
-                "text": "Yes sir!"
+                "text": "Yes sir!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -107,12 +121,14 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "My daughter can hit harder than that!"
+                "npc": "My daughter can hit harder than that!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Soldier",
-                "text": "Yes sir!"
+                "text": "Yes sir!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -120,12 +136,14 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "Push it!"
+                "npc": "Push it!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Soldier",
-                "text": "Yes sir!"
+                "text": "Yes sir!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -133,12 +151,14 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "Well done soldier!"
+                "npc": "Well done soldier!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Soldier",
-                "text": "Yes sir!"
+                "text": "Yes sir!",
+                "presentation": "overhead"
               }
             ]
           }

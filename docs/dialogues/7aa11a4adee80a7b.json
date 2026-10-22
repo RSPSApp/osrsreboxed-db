@@ -3,12 +3,14 @@
   "variants": {
     "when-firing-his-special-attack": [
       {
-        "npc": "Learn to Read!"
+        "npc": "Learn to Read!",
+        "presentation": "overhead"
       }
     ],
     "when-dying": [
       {
-        "npc": "Oh!"
+        "npc": "Oh!",
+        "presentation": "overhead"
       }
     ],
     "randomly-said-when-in-combat": [
@@ -19,7 +21,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "The plants! They're alive!"
+                "npc": "The plants! They're alive!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -27,7 +30,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "The doors won't stay closed forever!"
+                "npc": "The doors won't stay closed forever!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -35,7 +39,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "They came from the ground! They came from the ground!!!"
+                "npc": "They came from the ground! They came from the ground!!!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -43,7 +48,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Round and round and round and round!"
+                "npc": "Round and round and round and round!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -51,7 +57,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Time is running out! She will rise again!!!"
+                "npc": "Time is running out! She will rise again!!!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -59,7 +66,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "They're cheering! Why are they cheering?"
+                "npc": "They're cheering! Why are they cheering?",
+                "presentation": "overhead"
               }
             ]
           }

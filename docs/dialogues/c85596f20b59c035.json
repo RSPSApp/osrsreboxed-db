@@ -889,8 +889,9 @@
         "player": "So what should we do about it do you think?"
       },
       {
-        "type": "unavailable",
-        "id": "J-eUMZ"
+        "type": "message",
+        "text": "You see a fairy approaching ...",
+        "id": "YO3q33"
       },
       {
         "type": "line",
@@ -968,8 +969,9 @@
         "text": "With a full inventory:",
         "steps": [
           {
-            "type": "unavailable",
-            "id": "dv5aMl"
+            "type": "message",
+            "text": "You don't have space to carry the secateurs",
+            "id": "i3cuXT"
           },
           {
             "type": "end"
@@ -1014,7 +1016,8 @@
           {
             "type": "line",
             "speaker": "Fairy Godfather",
-            "text": "Rocco, teach-a thees thief a lesson!"
+            "text": "Rocco, teach-a thees thief a lesson!",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -1420,10 +1423,6 @@
           }
         ],
         "id": "e2I60y"
-      },
-      {
-        "type": "unavailable",
-        "id": "9SX0L1"
       }
     ]
   },

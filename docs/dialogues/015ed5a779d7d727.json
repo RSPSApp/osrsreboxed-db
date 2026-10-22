@@ -153,15 +153,18 @@
     ],
     "overhead-dialogue-catching-the-player-trying-to-steal-from-their-stalls": [
       {
-        "npc": "No no no! TzHaar-Hur-Rin not approve. Hands off."
+        "npc": "No no no! TzHaar-Hur-Rin not approve. Hands off.",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-interacting-with-them-after-stealing-from-their-stalls-recently": [
       {
-        "npc": "You are bad JalYt. You stole from this store."
+        "npc": "You are bad JalYt. You stole from this store.",
+        "presentation": "overhead"
       },
       {
-        "npc": "TzHaar-Ket!"
+        "npc": "TzHaar-Ket!",
+        "presentation": "overhead"
       }
     ]
   }

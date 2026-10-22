@@ -163,7 +163,10 @@ preserved, rather than renaming the selected one to `standard`.
 This extends the earlier NPC-only format. Consumers must use each record's
 `default` value rather than hardcode `standard`, and support explicit speakers
 (`type: "line"`, `speaker`, `text`) in multi-NPC quest conversations. Scoped NPC
-self-speech is still `{"npc":"..."}`, player speech `{"player":"..."}`.
+self-speech is still `{"npc":"..."}`, player speech `{"player":"..."}`. Explicit
+`{{overhead|...}}` speech keeps its normal shape and may add
+`"presentation": "overhead"`; that is the only presentation value and it does not
+change the speaker, text or control flow.
 Choices/random alternatives have nested `options` and `steps`. Message, missing,
 unavailable, condition and reference nodes must not silently disappear.
 

@@ -129,7 +129,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Grind it!"
+                "npc": "Grind it!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -137,7 +138,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Crush it!"
+                "npc": "Crush it!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -145,7 +147,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "The grind is real!"
+                "npc": "The grind is real!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -153,7 +156,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Griiiiiiind!"
+                "npc": "Griiiiiiind!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -161,7 +165,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Gotta crush 'em all!"
+                "npc": "Gotta crush 'em all!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -169,7 +174,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Crush crush crush!"
+                "npc": "Crush crush crush!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -177,7 +183,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Round and round and round we go!"
+                "npc": "Round and round and round we go!",
+                "presentation": "overhead"
               }
             ]
           }

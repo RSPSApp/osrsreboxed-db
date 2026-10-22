@@ -117,7 +117,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Fight for Zamorak today!"
+                "npc": "Fight for Zamorak today!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -125,7 +126,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Join the fight now."
+                "npc": "Join the fight now.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -133,7 +135,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Saradomin is weak, use your strength where it's respected!"
+                "npc": "Saradomin is weak, use your strength where it's respected!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -141,7 +144,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Your Lord Zamorak needs your help!"
+                "npc": "Your Lord Zamorak needs your help!",
+                "presentation": "overhead"
               }
             ]
           }

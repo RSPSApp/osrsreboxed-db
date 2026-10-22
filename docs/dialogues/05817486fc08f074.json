@@ -78,7 +78,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "No need to shout!"
+                "npc": "No need to shout!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -86,7 +87,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Calm down dear."
+                "npc": "Calm down dear.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -94,7 +96,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "I don't see why."
+                "npc": "I don't see why.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -102,7 +105,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Yes you did!"
+                "npc": "Yes you did!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -110,7 +114,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "I did not!"
+                "npc": "I did not!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -118,7 +123,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "What did you do that for?"
+                "npc": "What did you do that for?",
+                "presentation": "overhead"
               }
             ]
           }

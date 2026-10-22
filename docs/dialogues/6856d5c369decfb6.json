@@ -3992,7 +3992,8 @@
       {
         "type": "line",
         "speaker": "Black Knight",
-        "text": "Die intruder!"
+        "text": "Die intruder!",
+        "presentation": "overhead"
       }
     ],
     "infiltrating-the-black-knights-fortress-again-attempting-to-push-the-wall-on-the-ground-floor-without-wearing-black-armour-and-the-nearby-black-knight-is-dead": [
@@ -4471,13 +4472,6 @@
         "type": "action",
         "text": "Merlin disappears.",
         "id": "m-G6rt"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "-tbsfY"
       }
     ]
   },

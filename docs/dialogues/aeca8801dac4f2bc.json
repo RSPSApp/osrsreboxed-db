@@ -9,6 +9,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I like meat!"
               }
             ]
@@ -17,6 +18,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Get on with it!"
               }
             ]
@@ -25,6 +27,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "C'mon, we're hungry!"
               }
             ]
@@ -33,6 +36,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Make more pie!"
               }
             ]
@@ -41,6 +45,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "More pineapple pizza!"
               }
             ]
@@ -49,6 +54,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Bring us stew!"
               }
             ]

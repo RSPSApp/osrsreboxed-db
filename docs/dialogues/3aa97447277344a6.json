@@ -5187,9 +5187,6 @@
                     "steps": [
                       {
                         "player": "I'd better get going. Thanks again."
-                      },
-                      {
-                        "type": "end"
                       }
                     ]
                   }
@@ -5272,17 +5269,10 @@
             "steps": [
               {
                 "player": "Thanks. If I have any questions, I'll be sure to ask."
-              },
-              {
-                "type": "end"
               }
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "FdCw-Z"
       }
     ]
   },

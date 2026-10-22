@@ -24,7 +24,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Glider for [player name]!"
+                "npc": "Glider for [player name]!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -32,7 +33,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Hello, [player name]! Let's go!"
+                "npc": "Hello, [player name]! Let's go!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -47,7 +49,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Glider here for [player name]."
+                "npc": "Glider here for [player name].",
+                "presentation": "overhead"
               }
             ]
           },
@@ -55,7 +58,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Come on, [player name]!"
+                "npc": "Come on, [player name]!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -63,7 +67,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Don't keep me waiting, [player name]!"
+                "npc": "Don't keep me waiting, [player name]!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -71,7 +76,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Where's [player name]?"
+                "npc": "Where's [player name]?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -79,7 +85,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "[player name]? Where are you?"
+                "npc": "[player name]? Where are you?",
+                "presentation": "overhead"
               }
             ]
           }
@@ -88,7 +95,8 @@
     ],
     "overhead-dialogue-when-leaving-without-the-player": [
       {
-        "npc": "Oh, I give up."
+        "npc": "Oh, I give up.",
+        "presentation": "overhead"
       }
     ]
   }

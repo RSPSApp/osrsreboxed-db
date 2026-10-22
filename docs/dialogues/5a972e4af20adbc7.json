@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Vegetate!"
+                "npc": "Vegetate!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Die deliciously!"
+                "npc": "Die deliciously!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Rest in cabbage!"
+                "npc": "Rest in cabbage!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Grow up or leave."
+                "npc": "Grow up or leave.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -48,7 +52,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Healing through deliciousness, must be a re-leaf [player name]."
+                "npc": "Healing through deliciousness, must be a re-leaf [player name].",
+                "presentation": "overhead"
               }
             ]
           },
@@ -56,7 +61,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Ah, you romaine calm enough for a nutritious meal [player name]. Wise."
+                "npc": "Ah, you romaine calm enough for a nutritious meal [player name]. Wise.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -64,7 +70,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Leaf now and I'll spare you [player name]!"
+                "npc": "Leaf now and I'll spare you [player name]!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -72,7 +79,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Yes! Pray that nutrition can save you [player name]!"
+                "npc": "Yes! Pray that nutrition can save you [player name]!",
+                "presentation": "overhead"
               }
             ]
           }

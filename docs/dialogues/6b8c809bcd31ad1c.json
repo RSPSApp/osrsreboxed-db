@@ -386,8 +386,9 @@
                         "text": "If the player doesn't have enough coins:",
                         "steps": [
                           {
-                            "type": "unavailable",
-                            "id": "C7H4i5"
+                            "type": "jump",
+                            "reference": "other",
+                            "id": "HE1dO7"
                           }
                         ],
                         "id": "4saXPj"

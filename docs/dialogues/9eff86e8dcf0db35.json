@@ -3,72 +3,94 @@
   "variants": {
     "overhead-dialogue-when-fighting-me": [
       {
-        "npc": "Are you me? Am I you?"
+        "npc": "Are you me? Am I you?",
+        "presentation": "overhead"
       },
       {
-        "player": "Leave me alone... Me..."
+        "player": "Leave me alone... Me...",
+        "presentation": "overhead"
       },
       {
-        "npc": "You've got an outrageous accent, you silly thing!"
+        "npc": "You've got an outrageous accent, you silly thing!",
+        "presentation": "overhead"
       },
       {
-        "player": "How dare you! You know you're so ugly!"
+        "player": "How dare you! You know you're so ugly!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Call that an attack? Try this on for size!"
+        "npc": "Call that an attack? Try this on for size!",
+        "presentation": "overhead"
       },
       {
-        "player": "Stop hitting yourself, stop hitting yourself!"
+        "player": "Stop hitting yourself, stop hitting yourself!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Oooo. Get you! Strong words from such a weed!"
+        "npc": "Oooo. Get you! Strong words from such a weed!",
+        "presentation": "overhead"
       },
       {
-        "player": "If I'm a weed what does that make you?"
+        "player": "If I'm a weed what does that make you?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Stop hitting yourself, stop hitting yourself!"
+        "npc": "Stop hitting yourself, stop hitting yourself!",
+        "presentation": "overhead"
       },
       {
-        "player": "Hey! That's my line!"
+        "player": "Hey! That's my line!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Do I look bothered?"
+        "npc": "Do I look bothered?",
+        "presentation": "overhead"
       }
     ],
     "historical-dialogue": [
       {
-        "npc": "Are you me? Am I you?"
+        "npc": "Are you me? Am I you?",
+        "presentation": "overhead"
       },
       {
-        "player": "Leave me alone... Me..."
+        "player": "Leave me alone... Me...",
+        "presentation": "overhead"
       },
       {
-        "npc": "You do know those clothes make you look fat!"
+        "npc": "You do know those clothes make you look fat!",
+        "presentation": "overhead"
       },
       {
-        "player": "How dare you! You know you're so ugly!"
+        "player": "How dare you! You know you're so ugly!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Call that an attack? Try this on for size!"
+        "npc": "Call that an attack? Try this on for size!",
+        "presentation": "overhead"
       },
       {
-        "player": "Stop hitting yourself, stop hitting yourself!"
+        "player": "Stop hitting yourself, stop hitting yourself!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Oooo. Get you! Strong words from such a weed!"
+        "npc": "Oooo. Get you! Strong words from such a weed!",
+        "presentation": "overhead"
       },
       {
-        "player": "If I'm a weed what does that make you?"
+        "player": "If I'm a weed what does that make you?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Stop hitting yourself, stop hitting yourself!"
+        "npc": "Stop hitting yourself, stop hitting yourself!",
+        "presentation": "overhead"
       },
       {
-        "player": "Hey! That's my line!"
+        "player": "Hey! That's my line!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Do I look bothered?"
+        "npc": "Do I look bothered?",
+        "presentation": "overhead"
       }
     ]
   }

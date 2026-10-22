@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Got it, boss."
+                "npc": "Got it, boss.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Okay, boss."
+                "npc": "Okay, boss.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Sure thing, boss."
+                "npc": "Sure thing, boss.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "We're on it, boss."
+                "npc": "We're on it, boss.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Yes, boss."
+                "npc": "Yes, boss.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "You're the boss."
+                "npc": "You're the boss.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -58,7 +64,8 @@
     ],
     "overhead-dialogue-when-departing-from-a-gang-meeting": [
       {
-        "npc": "To crime!"
+        "npc": "To crime!",
+        "presentation": "overhead"
       }
     ]
   }

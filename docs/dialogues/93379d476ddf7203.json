@@ -888,91 +888,81 @@
                         "steps": [
                           {
                             "player": "7."
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Sphinx",
-                    "text": "Are you sure?",
-                    "steps": [
-                      {
-                        "type": "message",
-                        "text": "Your cat shakes it head frantically and starts to scratch your leg.",
-                        "id": "lA_uWD"
-                      },
-                      {
-                        "type": "choice",
-                        "options": [
-                          {
-                            "text": "Totally positive.",
-                            "steps": [
-                              {
-                                "player": "Totally positive."
-                              },
-                              {
-                                "type": "message",
-                                "text": "Your cat abandons you for the Sphinx.",
-                                "id": "T0MfmH"
-                              },
-                              {
-                                "type": "action",
-                                "text": "The player's cat runs away.",
-                                "id": "qojI7N"
-                              },
-                              {
-                                "type": "line",
-                                "speaker": "Sphinx",
-                                "text": "I think your master has proven that [he/she] is too foolish to look after you. Come with me."
-                              },
-                              {
-                                "player": "Oh, come on! You can't take my cat. I've spent so long training and looking after it!"
-                              },
-                              {
-                                "type": "line",
-                                "speaker": "Sphinx",
-                                "text": "Well, you should have thought of that before you risked it for some advice from a crazy old Sphinx."
-                              },
-                              {
-                                "player": "Could you at least help me now?"
-                              },
-                              {
-                                "type": "line",
-                                "speaker": "Sphinx",
-                                "text": "What was it you needed help with? Oh yes, I remember now. You're a grave robber."
-                              },
-                              {
-                                "type": "jump",
-                                "reference": "continue",
-                                "id": "75POMU"
-                              }
-                            ]
                           },
                           {
-                            "text": "I don't know. I don't want to risk my cat.",
-                            "steps": [
+                            "type": "line",
+                            "speaker": "Sphinx",
+                            "text": "Are you sure?"
+                          },
+                          {
+                            "type": "message",
+                            "text": "Your cat shakes it head frantically and starts to scratch your leg.",
+                            "id": "Re7D9V"
+                          },
+                          {
+                            "type": "choice",
+                            "options": [
                               {
-                                "player": "I don't know. I don't want to risk my cat."
+                                "text": "Totally positive.",
+                                "steps": [
+                                  {
+                                    "player": "Totally positive."
+                                  },
+                                  {
+                                    "type": "message",
+                                    "text": "Your cat abandons you for the Sphinx.",
+                                    "id": "Y0am3X"
+                                  },
+                                  {
+                                    "type": "action",
+                                    "text": "The player's cat runs away.",
+                                    "id": "M40-5y"
+                                  },
+                                  {
+                                    "type": "line",
+                                    "speaker": "Sphinx",
+                                    "text": "I think your master has proven that [he/she] is too foolish to look after you. Come with me."
+                                  },
+                                  {
+                                    "player": "Oh, come on! You can't take my cat. I've spent so long training and looking after it!"
+                                  },
+                                  {
+                                    "type": "line",
+                                    "speaker": "Sphinx",
+                                    "text": "Well, you should have thought of that before you risked it for some advice from a crazy old Sphinx."
+                                  },
+                                  {
+                                    "player": "Could you at least help me now?"
+                                  },
+                                  {
+                                    "type": "line",
+                                    "speaker": "Sphinx",
+                                    "text": "What was it you needed help with? Oh yes, I remember now. You're a grave robber."
+                                  },
+                                  {
+                                    "type": "jump",
+                                    "reference": "continue",
+                                    "id": "ss6-xz"
+                                  }
+                                ]
                               },
                               {
-                                "type": "line",
-                                "speaker": "Sphinx",
-                                "text": "How disappointing. Still, nothing ventured, nothing gained. Goodbye."
-                              },
-                              {
-                                "type": "end"
+                                "text": "I don't know. I don't want to risk my cat.",
+                                "steps": [
+                                  {
+                                    "player": "I don't know. I don't want to risk my cat."
+                                  },
+                                  {
+                                    "type": "line",
+                                    "speaker": "Sphinx",
+                                    "text": "How disappointing. Still, nothing ventured, nothing gained. Goodbye."
+                                  }
+                                ]
                               }
                             ]
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "choice",
-                    "options": [
+                      },
                       {
                         "text": "9.",
                         "steps": [
@@ -1009,7 +999,7 @@
                                   {
                                     "type": "jump",
                                     "reference": "continue",
-                                    "id": "0Dwskc"
+                                    "id": "2a_Yk4"
                                   }
                                 ]
                               },
@@ -1018,11 +1008,11 @@
                                 "steps": [
                                   {
                                     "type": "jump",
-                                    "id": "OuZ4Fl",
+                                    "id": "-P1OZm",
                                     "steps": [
                                       {
                                         "type": "call",
-                                        "branch": "jump-8bc3a772235a43f2"
+                                        "branch": "jump-e20ab4f7cec751eb"
                                       }
                                     ]
                                   }
@@ -1038,7 +1028,7 @@
                           {
                             "type": "action",
                             "text": "Same as answering 7 (incorrect answer)",
-                            "id": "bnsTsz"
+                            "id": "P6olZb"
                           }
                         ]
                       },
@@ -1048,7 +1038,7 @@
                           {
                             "type": "action",
                             "text": "Same as answering 7 (incorrect answer)",
-                            "id": "rmgkdX"
+                            "id": "CeMZe1"
                           }
                         ]
                       },
@@ -1558,16 +1548,18 @@
           },
           {
             "type": "end"
-          },
-          {
-            "type": "condition",
-            "text": "If the player has the token:",
-            "id": "eXmHe5"
-          },
+          }
+        ],
+        "id": "i6RE2X"
+      },
+      {
+        "type": "condition",
+        "text": "If the player has the token:",
+        "steps": [
           {
             "type": "message",
             "text": "You hand the token to the High Priest.",
-            "id": "6qP-S3"
+            "id": "Z1e3FH"
           },
           {
             "type": "line",
@@ -1652,7 +1644,7 @@
                   {
                     "type": "jump",
                     "reference": "below",
-                    "id": "orvGCv"
+                    "id": "ck8Kn1"
                   }
                 ]
               },
@@ -1662,7 +1654,7 @@
                   {
                     "type": "jump",
                     "reference": "below",
-                    "id": "U0jrXS"
+                    "id": "IPmt9L"
                   }
                 ]
               },
@@ -1672,7 +1664,7 @@
                   {
                     "type": "jump",
                     "reference": "below",
-                    "id": "-ioY7f"
+                    "id": "oEt-cY"
                   }
                 ]
               },
@@ -1682,7 +1674,7 @@
                   {
                     "type": "jump",
                     "reference": "below",
-                    "id": "5jPdCK"
+                    "id": "5eEOVa"
                   }
                 ]
               },
@@ -1697,7 +1689,7 @@
             ]
           }
         ],
-        "id": "i6RE2X"
+        "id": "Obm1lw"
       }
     ],
     "putting-things-right-talking-to-the-high-priest-after-being-told-to-return-the-jar": [
@@ -2253,7 +2245,8 @@
       {
         "type": "line",
         "speaker": "Apparition",
-        "text": "You will not defile this place!"
+        "text": "You will not defile this place!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2433,12 +2426,14 @@
             ]
           },
           {
-            "text": "I'd better get going."
+            "text": "I'd better get going.",
+            "steps": [
+              {
+                "player": "I'd better get going."
+              }
+            ]
           }
         ]
-      },
-      {
-        "player": "I'd better get going."
       }
     ],
     "ceremony-preparations-talking-to-the-high-priest-after-being-asked-to-help-with-the-ceremony": [
@@ -3520,18 +3515,11 @@
     "finishing-up-trying-to-enter-the-pyramid-after-the-quest": [
       {
         "player": "I think it would be best if I stayed out of this tomb after what happened last time."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "UWoqBY"
       }
     ]
   },
   "branches": {
-    "jump-8bc3a772235a43f2": [
+    "jump-e20ab4f7cec751eb": [
       {
         "player": "I don't know. I don't want to risk my cat."
       },

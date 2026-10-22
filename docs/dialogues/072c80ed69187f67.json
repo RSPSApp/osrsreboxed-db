@@ -75,7 +75,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Lamps!"
+                "npc": "Lamps!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -83,7 +84,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Lanterns!"
+                "npc": "Lanterns!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -91,7 +93,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Tinderboxes!"
+                "npc": "Tinderboxes!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -99,7 +102,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Torches!"
+                "npc": "Torches!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -107,7 +111,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Lamp oil!"
+                "npc": "Lamp oil!",
+                "presentation": "overhead"
               }
             ]
           }

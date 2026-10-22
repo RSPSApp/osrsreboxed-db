@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue-when-their-tortoise-is-killed": [
       {
-        "npc": "Nooooo! Dobbie's dead!"
+        "npc": "Nooooo! Dobbie's dead!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-fighting-the-player": [
@@ -14,7 +15,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Tortoise Murderer!"
+                "npc": "Tortoise Murderer!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -22,7 +24,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "You Beast!"
+                "npc": "You Beast!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -30,7 +33,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "This is for Dobbie!"
+                "npc": "This is for Dobbie!",
+                "presentation": "overhead"
               }
             ]
           }

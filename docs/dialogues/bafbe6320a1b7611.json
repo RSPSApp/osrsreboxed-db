@@ -9,6 +9,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Looking for [ore name]!"
               }
             ]
@@ -17,6 +18,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "We're dumping our [ore name]!"
               }
             ]
@@ -25,6 +27,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Trading mining rights!"
               }
             ]
@@ -33,6 +36,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Special price on tin!"
               }
             ]
@@ -41,6 +45,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Tin in demand!"
               }
             ]
@@ -49,6 +54,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "New territory wanted!"
               }
             ]

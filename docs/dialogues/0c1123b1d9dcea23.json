@@ -154,7 +154,8 @@
     ],
     "overhead-dialogue-failed-pickpocket-attempt": [
       {
-        "npc": "Cor blimey mate, what are ye doing in me pockets?"
+        "npc": "Cor blimey mate, what are ye doing in me pockets?",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -164,10 +165,12 @@
     ],
     "overhead-dialogue-talking-to-him-after-successfully-pickpocketing-him-recently": [
       {
-        "npc": "You're the thief who stole from me!"
+        "npc": "You're the thief who stole from me!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards, guards!"
+        "npc": "Guards, guards!",
+        "presentation": "overhead"
       }
     ]
   }

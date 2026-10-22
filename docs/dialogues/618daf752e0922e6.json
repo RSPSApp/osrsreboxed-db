@@ -58,7 +58,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Spicy kebabs!"
+                "npc": "Spicy kebabs!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -66,7 +67,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Bat kebabs!"
+                "npc": "Bat kebabs!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -74,7 +76,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Spicy bat kebabs!"
+                "npc": "Spicy bat kebabs!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -82,7 +85,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Bat shish kebabs!"
+                "npc": "Bat shish kebabs!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -90,7 +94,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Kebabs!"
+                "npc": "Kebabs!",
+                "presentation": "overhead"
               }
             ]
           }

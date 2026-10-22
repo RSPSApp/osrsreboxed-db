@@ -5,56 +5,70 @@
       {
         "type": "line",
         "speaker": "Dung",
-        "text": "Dung cook human."
+        "text": "Dung cook human.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Ash eat human."
-      },
-      {
-        "type": "line",
-        "speaker": "Dung",
-        "text": "Dung will fry human."
-      },
-      {
-        "npc": "Dung is wrong!"
-      },
-      {
-        "npc": "My brother in stronghold best cook."
-      },
-      {
-        "npc": "Ash will boil human 'till it tender."
-      },
-      {
-        "npc": "Much more tasty."
+        "npc": "Ash eat human.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Dung",
-        "text": "Ash will not cook human!"
+        "text": "Dung will fry human.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Ash will boil!"
+        "npc": "Dung is wrong!",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "My brother in stronghold best cook.",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "Ash will boil human 'till it tender.",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "Much more tasty.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Dung",
-        "text": "Dung will boil Ash's head!"
+        "text": "Ash will not cook human!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Boil better!"
-      },
-      {
-        "type": "line",
-        "speaker": "Dung",
-        "text": "Fry better!"
-      },
-      {
-        "npc": "Boil!"
+        "npc": "Ash will boil!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Dung",
-        "text": "Fry!"
+        "text": "Dung will boil Ash's head!",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "Boil better!",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Dung",
+        "text": "Fry better!",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "Boil!",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Dung",
+        "text": "Fry!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -62,36 +76,44 @@
         "id": "lRdotZ"
       },
       {
-        "npc": "Ow!"
+        "npc": "Ow!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Dung",
-        "text": "Ugh!"
+        "text": "Ugh!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Dung not hit Ash!"
-      },
-      {
-        "type": "line",
-        "speaker": "Dung",
-        "text": "Ow!"
-      },
-      {
-        "npc": "Ow!"
+        "npc": "Dung not hit Ash!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Dung",
-        "text": "Ugh!"
+        "text": "Ow!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Ouch!"
+        "npc": "Ow!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Dung",
-        "text": "Dung hate Ash!"
+        "text": "Ugh!",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "Ouch!",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Dung",
+        "text": "Dung hate Ash!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -99,7 +121,8 @@
         "id": "_l7pAU"
       },
       {
-        "npc": "Ash hate Dung!"
+        "npc": "Ash hate Dung!",
+        "presentation": "overhead"
       },
       {
         "type": "action",

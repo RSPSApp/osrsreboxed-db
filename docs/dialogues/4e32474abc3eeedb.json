@@ -19,7 +19,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Zzzzz..."
+                "npc": "Zzzzz...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -27,7 +28,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Huh, what? Where?"
+                "npc": "Huh, what? Where?",
+                "presentation": "overhead"
               }
             ]
           }

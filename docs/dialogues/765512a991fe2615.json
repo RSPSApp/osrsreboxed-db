@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "You cannot kill the undead, mortal!"
+                "npc": "You cannot kill the undead, mortal!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Your soul will be forfeit for this, mortal!"
+                "npc": "Your soul will be forfeit for this, mortal!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "I will return, mortal!"
+                "npc": "I will return, mortal!",
+                "presentation": "overhead"
               }
             ]
           }

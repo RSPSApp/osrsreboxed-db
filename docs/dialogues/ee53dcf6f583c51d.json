@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue": [
       {
-        "npc": "I'm coming for you!"
+        "npc": "I'm coming for you!",
+        "presentation": "overhead"
       }
     ]
   }

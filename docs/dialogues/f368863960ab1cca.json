@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Keep thine hands to thineself."
+                "npc": "Keep thine hands to thineself.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "We deal harshly with thieves around here!"
+                "npc": "We deal harshly with thieves around here!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "What do you think you're doing?"
+                "npc": "What do you think you're doing?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Stop! Thief!"
+                "npc": "Stop! Thief!",
+                "presentation": "overhead"
               }
             ]
           }

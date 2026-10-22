@@ -23,7 +23,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Put some wing into it."
+                "npc": "Put some wing into it.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -31,7 +32,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "We will fly quietly into the night...and destroy them all!"
+                "npc": "We will fly quietly into the night...and destroy them all!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -39,7 +41,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Keep those beaks high, men!"
+                "npc": "Keep those beaks high, men!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -47,7 +50,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "No slacking! Slackers will be punished."
+                "npc": "No slacking! Slackers will be punished.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -55,7 +59,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Think of the motherland!"
+                "npc": "Think of the motherland!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -63,7 +68,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "This isn't ballet soldier!"
+                "npc": "This isn't ballet soldier!",
+                "presentation": "overhead"
               }
             ]
           }

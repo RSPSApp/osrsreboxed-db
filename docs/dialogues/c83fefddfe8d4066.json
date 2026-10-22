@@ -71,18 +71,20 @@
                             ]
                           },
                           {
-                            "text": "No thanks, I'm good."
-                          }
-                        ]
-                      },
-                      {
-                        "player": "No thanks, I'm good.",
-                        "steps": [
-                          {
-                            "npc": "Come back soon, I could do with a few more customers."
-                          },
-                          {
-                            "type": "end"
+                            "text": "No thanks, I'm good.",
+                            "steps": [
+                              {
+                                "player": "No thanks, I'm good.",
+                                "steps": [
+                                  {
+                                    "npc": "Come back soon, I could do with a few more customers."
+                                  },
+                                  {
+                                    "type": "end"
+                                  }
+                                ]
+                              }
+                            ]
                           }
                         ]
                       }
@@ -119,8 +121,13 @@
                         "steps": [
                           {
                             "type": "jump",
-                            "reference": "above",
-                            "id": "wMd7vD"
+                            "id": "wMd7vD",
+                            "steps": [
+                              {
+                                "type": "call",
+                                "branch": "jump-8c7d776dd8cd979d"
+                              }
+                            ]
                           }
                         ]
                       }
@@ -174,8 +181,13 @@
                         "steps": [
                           {
                             "type": "jump",
-                            "reference": "above",
-                            "id": "3Izr38"
+                            "id": "3Izr38",
+                            "steps": [
+                              {
+                                "type": "call",
+                                "branch": "jump-8c7d776dd8cd979d"
+                              }
+                            ]
                           }
                         ]
                       }
@@ -212,8 +224,13 @@
                         "steps": [
                           {
                             "type": "jump",
-                            "reference": "above",
-                            "id": "kmHYVQ"
+                            "id": "kmHYVQ",
+                            "steps": [
+                              {
+                                "type": "call",
+                                "branch": "jump-8c7d776dd8cd979d"
+                              }
+                            ]
                           }
                         ]
                       }
@@ -297,8 +314,13 @@
                     "steps": [
                       {
                         "type": "jump",
-                        "reference": "above",
-                        "id": "UYlV25"
+                        "id": "UYlV25",
+                        "steps": [
+                          {
+                            "type": "call",
+                            "branch": "jump-8c7d776dd8cd979d"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -412,8 +434,13 @@
                     "steps": [
                       {
                         "type": "jump",
-                        "reference": "above",
-                        "id": "Ohftfi"
+                        "id": "Ohftfi",
+                        "steps": [
+                          {
+                            "type": "call",
+                            "branch": "jump-8c7d776dd8cd979d"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -490,6 +517,19 @@
     ]
   },
   "branches": {
+    "jump-8c7d776dd8cd979d": [
+      {
+        "player": "No thanks, I'm good.",
+        "steps": [
+          {
+            "npc": "Come back soon, I could do with a few more customers."
+          },
+          {
+            "type": "end"
+          }
+        ]
+      }
+    ],
     "jump-9308a91846e2c1ad": [
       {
         "player": "Could I have one of those crazy hot kebabs of yours?"
@@ -531,8 +571,13 @@
                 "steps": [
                   {
                     "type": "jump",
-                    "reference": "above",
-                    "id": "3Izr38"
+                    "id": "3Izr38",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "jump-8c7d776dd8cd979d"
+                      }
+                    ]
                   }
                 ]
               }
@@ -569,8 +614,13 @@
                 "steps": [
                   {
                     "type": "jump",
-                    "reference": "above",
-                    "id": "kmHYVQ"
+                    "id": "kmHYVQ",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "jump-8c7d776dd8cd979d"
+                      }
+                    ]
                   }
                 ]
               }
@@ -651,8 +701,13 @@
             "steps": [
               {
                 "type": "jump",
-                "reference": "above",
-                "id": "UYlV25"
+                "id": "UYlV25",
+                "steps": [
+                  {
+                    "type": "call",
+                    "branch": "jump-8c7d776dd8cd979d"
+                  }
+                ]
               }
             ]
           }

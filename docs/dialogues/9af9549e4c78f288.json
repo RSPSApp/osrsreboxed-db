@@ -204,7 +204,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "player": "Oooch!"
+                    "player": "Oooch!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -212,7 +213,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "player": "Ow!"
+                    "player": "Ow!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -220,7 +222,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "player": "Urrrgh!"
+                    "player": "Urrrgh!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -228,7 +231,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "player": "Gah!"
+                    "player": "Gah!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -861,8 +865,9 @@
             "text": "Here, take these..."
           },
           {
-            "type": "unavailable",
-            "id": "3AS-b4"
+            "type": "message",
+            "text": "The Cannon Engineer gives you some more notes.",
+            "id": "vxwzuL"
           },
           {
             "type": "end"
@@ -883,8 +888,9 @@
             "text": "Deary me, you are trouble. Here, take this one."
           },
           {
-            "type": "unavailable",
-            "id": "gMQBT7"
+            "type": "message",
+            "text": "The Cannon Engineer gives you another mould.",
+            "id": "3LMqqz"
           },
           {
             "type": "end"
@@ -972,10 +978,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "c8LrCL"
-      },
-      {
-        "type": "unavailable",
-        "id": "4KLP9H"
       }
     ]
   }

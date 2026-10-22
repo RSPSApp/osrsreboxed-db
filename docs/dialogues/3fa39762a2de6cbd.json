@@ -352,13 +352,14 @@
         "id": "HzX_0E"
       },
       {
-        "type": "unavailable",
-        "id": "iIBXLe"
+        "type": "message",
+        "text": "You find Varmen's expedition notes.",
+        "id": "p9VM-p"
       },
       {
         "type": "message",
         "text": "You find Varmen's expedition notes.",
-        "id": "p9VM-p"
+        "id": "Ubp4JN"
       }
     ],
     "talking-to-elissa-in-the-digsite-talking-to-elissa-after-reading-varmen-s-notes": [
@@ -649,8 +650,9 @@
         "id": "Ji7EyT"
       },
       {
-        "type": "unavailable",
-        "id": "RzrUov"
+        "type": "message",
+        "text": "You steal a tiny key.",
+        "id": "I175CV"
       }
     ],
     "visiting-the-varrock-museum-opening-the-display-case": [
@@ -685,8 +687,9 @@
         "id": "mZfxeU"
       },
       {
-        "type": "unavailable",
-        "id": "bUPXcp"
+        "type": "message",
+        "text": "You open the cabinet and retrieve the statuette.",
+        "id": "sGqpft"
       }
     ],
     "visiting-the-varrock-museum-talking-to-curator-haig-after-losing-the-statuette": [
@@ -1032,8 +1035,9 @@
         "text": "If the player succeeds:",
         "steps": [
           {
-            "type": "unavailable",
-            "id": "6o7Rao"
+            "type": "message",
+            "text": "You grab a tail-feather.",
+            "id": "vw2noR"
           },
           {
             "type": "end"
@@ -1053,7 +1057,8 @@
           {
             "type": "line",
             "speaker": "Desert Phoenix",
-            "text": "Squawk!"
+            "text": "Squawk!",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -1158,13 +1163,6 @@
         "type": "line",
         "speaker": "Clay golem",
         "text": "I was never programmed to appreciate the city. My only purpose was the destruction of the demon, and that is achieved!"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "ZGGIwk"
       }
     ]
   },

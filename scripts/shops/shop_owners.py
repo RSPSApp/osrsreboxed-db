@@ -58,7 +58,7 @@ OWNERS_FP = Path(config.DATA_SHOPS_PATH / "shop-owners.json")
 OWNER_FIELD = re.compile(r"\|\s*owner\d*\s*=\s*(.+)", re.I)
 # Wiki links, keeping the page title and the display text separately.
 WIKI_LINK = re.compile(r"\[\[([^|\]]+)(?:\|([^\]]+))?\]\]")
-# Infoboxes that carry NPC IDs, in the order they are tried.
+# Infoboxes that carry NPC identities.
 NPC_INFOBOXES = ["infobox npc", "infobox monster"]
 # Values meaning "this shop has no shopkeeper" (chest and interface shops).
 NO_OWNER_VALUES = {"none", "no", "n/a", "na", "-", "unknown"}
@@ -174,25 +174,30 @@ def fetch() -> None:
 
 
 def npc_ids_from_wikitext(wikitext: str) -> List[int]:
-    """Read the NPC IDs out of an owner page's infobox.
+    """Read every recognized NPC/Monster identity from a page.
+
+    A page can contain several infobox types and repeated instances, including
+    nested Switch variants. Each occurrence contributes its non-versioned and
+    versioned ``id`` fields; unrelated infobox types are ignored.
 
     :param wikitext: The wikitext content of the NPC page.
-    :return: Sorted list of NPC IDs, empty when the page has no NPC infobox.
+    :return: Sorted list of NPC IDs, empty when the page has no recognized infobox.
     """
+    npc_ids = set()
     for infobox in NPC_INFOBOXES:
-        parser = WikitextTemplateParser(wikitext)
-        if not parser.extract_infobox(infobox):
-            continue
-        parser.determine_infobox_versions()
-        npc_ids = set()
-        for npc_id in parser.extract_infobox_ids():
-            try:
-                npc_ids.add(int(str(npc_id).strip()))
-            except (TypeError, ValueError):
-                continue
-        if npc_ids:
-            return sorted(npc_ids)
-    return []
+        version = 1
+        while True:
+            parser = WikitextTemplateParser(wikitext)
+            if not parser.extract_infobox(infobox, version):
+                break
+            parser.determine_infobox_versions()
+            for npc_id in parser.extract_infobox_ids():
+                try:
+                    npc_ids.add(int(str(npc_id).strip()))
+                except (TypeError, ValueError):
+                    continue
+            version += 1
+    return sorted(npc_ids)
 
 
 def process() -> None:

@@ -3,22 +3,26 @@
   "variants": {
     "overhead-dialogue-when-carrying-a-smoke-diamond": [
       {
-        "npc": "Hand over the Diamond of Smoke, or suffer!"
+        "npc": "Hand over the Diamond of Smoke, or suffer!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-carrying-a-blood-diamond": [
       {
-        "npc": "You are not worthy of holding that Diamond of Blood!"
+        "npc": "You are not worthy of holding that Diamond of Blood!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-carrying-an-ice-diamond": [
       {
-        "npc": "That Ice Diamond is mine, thief!"
+        "npc": "That Ice Diamond is mine, thief!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-carrying-a-shadow-diamond": [
       {
-        "npc": "The Diamond of Shadow is not yours to take!"
+        "npc": "The Diamond of Shadow is not yours to take!",
+        "presentation": "overhead"
       }
     ]
   }

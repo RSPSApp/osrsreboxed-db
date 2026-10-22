@@ -90,7 +90,8 @@
         "player": "I think you've been hypnotised. I wonder what happens if I click my fingers?"
       },
       {
-        "player": "click*"
+        "player": "click*",
+        "presentation": "overhead"
       },
       {
         "npc": "Cluck* *cluck* *bwaarrk*"

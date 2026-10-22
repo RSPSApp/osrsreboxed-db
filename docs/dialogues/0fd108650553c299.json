@@ -3,10 +3,12 @@
   "variants": {
     "overhead-dialogue-when-shooing-a-spidey-dog-away": [
       {
-        "player": "Boo!"
+        "player": "Boo!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Whine!"
+        "npc": "Whine!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -16,10 +18,12 @@
     ],
     "overhead-dialogue-when-petting-a-spidey-dog": [
       {
-        "player": "Who's a spooky doggy!"
+        "player": "Who's a spooky doggy!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Woof!"
+        "npc": "Woof!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -29,7 +33,8 @@
     ],
     "overhead-dialogue-when-feeding-a-spidey-dog-bones": [
       {
-        "npc": "Woof woof!"
+        "npc": "Woof woof!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -46,7 +51,8 @@
       {
         "type": "line",
         "speaker": "Stray dog",
-        "text": "Woof woof!"
+        "text": "Woof woof!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -67,7 +73,8 @@
     ],
     "overhead-dialogue-when-feeding-a-spidey-dog-any-other-item": [
       {
-        "npc": "Grrrr!"
+        "npc": "Grrrr!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -77,7 +84,8 @@
     ],
     "overhead-dialogue-when-interacting-with-a-spidey-dog-while-wearing-cat-ears": [
       {
-        "npc": "Bark!"
+        "npc": "Bark!",
+        "presentation": "overhead"
       },
       {
         "type": "message",

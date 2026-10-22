@@ -118,15 +118,17 @@
                         ]
                       },
                       {
-                        "text": "Actually, forget it."
+                        "text": "Actually, forget it.",
+                        "steps": [
+                          {
+                            "player": "Actually, forget it."
+                          },
+                          {
+                            "type": "end"
+                          }
+                        ]
                       }
                     ]
-                  },
-                  {
-                    "player": "Actually, forget it."
-                  },
-                  {
-                    "type": "end"
                   }
                 ],
                 "id": "d5SovR"
@@ -233,15 +235,17 @@
                         ]
                       },
                       {
-                        "text": "Not right now."
+                        "text": "Not right now.",
+                        "steps": [
+                          {
+                            "player": "Not right now."
+                          },
+                          {
+                            "type": "end"
+                          }
+                        ]
                       }
                     ]
-                  },
-                  {
-                    "player": "Not right now."
-                  },
-                  {
-                    "type": "end"
                   }
                 ],
                 "id": "nfKkXL"

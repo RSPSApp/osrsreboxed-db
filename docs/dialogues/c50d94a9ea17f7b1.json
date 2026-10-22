@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Come here little fox!"
+                "npc": "Come here little fox!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'll just pop this here..."
+                "npc": "I'll just pop this here...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "This'll get that mangy fox!"
+                "npc": "This'll get that mangy fox!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -40,7 +43,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Hey, you're not a fox!"
+                "npc": "Hey, you're not a fox!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -48,7 +52,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Hey, don't touch that!"
+                "npc": "Hey, don't touch that!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -56,7 +61,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Oi, leave those traps alone!"
+                "npc": "Oi, leave those traps alone!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -71,7 +77,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "You win this time!"
+                "npc": "You win this time!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -79,7 +86,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Let's get out of here!"
+                "npc": "Let's get out of here!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -87,7 +95,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "We'll get you next time, fox!"
+                "npc": "We'll get you next time, fox!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -102,7 +111,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "We've got you now, fox!"
+                "npc": "We've got you now, fox!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -110,7 +120,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Maybe I'll make a nice new hat!"
+                "npc": "Maybe I'll make a nice new hat!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -118,7 +129,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Its pelt will fetch a nice price!"
+                "npc": "Its pelt will fetch a nice price!",
+                "presentation": "overhead"
               }
             ]
           }

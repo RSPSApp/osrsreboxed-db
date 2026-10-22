@@ -468,10 +468,6 @@
         "type": "action",
         "text": "Quest complete!",
         "id": "M4gVPX"
-      },
-      {
-        "type": "unavailable",
-        "id": "JbK3wS"
       }
     ]
   },

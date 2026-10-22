@@ -107,7 +107,8 @@
       {
         "type": "line",
         "speaker": "Celegrom",
-        "text": "What do you think you're doing?"
+        "text": "What do you think you're doing?",
+        "presentation": "overhead"
       }
     ]
   }

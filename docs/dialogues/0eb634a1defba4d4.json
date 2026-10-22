@@ -128,7 +128,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Read all about it!"
+                "npc": "Read all about it!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -136,7 +137,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Extra! Extra! Read all about it!"
+                "npc": "Extra! Extra! Read all about it!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -144,7 +146,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Buy your Varrock Herald now!"
+                "npc": "Buy your Varrock Herald now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -152,7 +155,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Varrock Herald, now only 50 coins!"
+                "npc": "Varrock Herald, now only 50 coins!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -160,7 +164,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Get you Varrock Herald here!"
+                "npc": "Get you Varrock Herald here!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -168,7 +173,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Varrock Herald, on sale here!"
+                "npc": "Varrock Herald, on sale here!",
+                "presentation": "overhead"
               }
             ]
           }

@@ -912,18 +912,19 @@
     ],
     "fox-tracking-picking-the-leafy-bush": [
       {
-        "type": "unavailable",
+        "type": "condition",
+        "text": "If the player does not have a smooth leaf:",
         "steps": [
           {
             "type": "message",
             "text": "You pull a smooth leaf off the bush.",
-            "id": "HPT___"
+            "id": "5L9c9-"
           },
           {
             "type": "end"
           }
         ],
-        "id": "yAyMme"
+        "id": "c-avW4"
       },
       {
         "type": "condition",
@@ -938,18 +939,19 @@
     ],
     "fox-tracking-picking-the-rough-looking-bush": [
       {
-        "type": "unavailable",
+        "type": "condition",
+        "text": "If the player does not have a sticky leaf:",
         "steps": [
           {
             "type": "message",
             "text": "You pull a sticky leaf off the bush.",
-            "id": "IdwuJi"
+            "id": "chG3sJ"
           },
           {
             "type": "end"
           }
         ],
-        "id": "bI9dWo"
+        "id": "khCtCH"
       },
       {
         "type": "condition",
@@ -1730,13 +1732,6 @@
         "type": "line",
         "speaker": "Guildmaster Apatura",
         "text": "Actually... I think I'll just read the report."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "f9Vgf2"
       }
     ]
   },

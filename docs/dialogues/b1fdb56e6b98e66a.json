@@ -3,22 +3,26 @@
   "variants": {
     "upon-eating-the-correct-food": [
       {
-        "npc": "Chomp, chomp."
+        "npc": "Chomp, chomp.",
+        "presentation": "overhead"
       }
     ],
     "upon-eating-an-incorrect-food": [
       {
-        "npc": "Blughhhh."
+        "npc": "Blughhhh.",
+        "presentation": "overhead"
       }
     ],
     "upon-getting-killed-by-the-trap": [
       {
-        "npc": "Urghhh!"
+        "npc": "Urghhh!",
+        "presentation": "overhead"
       }
     ],
     "upon-reaching-the-southern-cave": [
       {
-        "npc": "Raaa!"
+        "npc": "Raaa!",
+        "presentation": "overhead"
       }
     ]
   }

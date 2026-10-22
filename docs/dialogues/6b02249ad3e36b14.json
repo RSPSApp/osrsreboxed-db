@@ -78,7 +78,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Get more fish!"
+                "npc": "Get more fish!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -86,7 +87,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Good, very good!"
+                "npc": "Good, very good!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -101,7 +103,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Now cook it!"
+                "npc": "Now cook it!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -109,7 +112,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Try not to burn this one."
+                "npc": "Try not to burn this one.",
+                "presentation": "overhead"
               }
             ]
           }

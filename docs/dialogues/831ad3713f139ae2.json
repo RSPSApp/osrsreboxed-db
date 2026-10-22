@@ -454,7 +454,8 @@
           {
             "type": "line",
             "speaker": "Guard",
-            "text": "Hey! What are you doing?"
+            "text": "Hey! What are you doing?",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -1096,10 +1097,6 @@
             "branch": "jump-45646d6bd7c3f59b"
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "Uph5kG"
       }
     ]
   },

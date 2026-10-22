@@ -29,7 +29,8 @@
                 "player": "Could you teleport me to the Abyss?"
               },
               {
-                "npc": "Veniens! Sallakar! Rinnesset!"
+                "npc": "Veniens! Sallakar! Rinnesset!",
+                "presentation": "overhead"
               },
               {
                 "type": "action",

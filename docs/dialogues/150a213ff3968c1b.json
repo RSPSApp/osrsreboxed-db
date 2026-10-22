@@ -9,7 +9,8 @@
     {
       "type": "line",
       "speaker": "Batt Mellamy",
-      "text": "Squeak!"
+      "text": "Squeak!",
+      "presentation": "overhead"
     },
     {
       "npc": "Yes traveller, this is not out of the ordinary for us. The bats respond well to the powers of the dark altar after being drawn here by the river of blood."

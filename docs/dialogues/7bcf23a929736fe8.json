@@ -13,21 +13,25 @@
     ],
     "overhead-dialogue-if-the-player-is-wearing-a-saradomin-item": [
       {
+        "presentation": "overhead",
         "npc": "Time to die, Saradominist filth!"
       }
     ],
     "overhead-dialogue-if-the-player-is-wearing-a-zamorakian-item": [
       {
+        "presentation": "overhead",
         "npc": "Prepare to suffer, Zamorakian scum!"
       }
     ],
     "overhead-dialogue-if-the-player-attacks-another-bandit": [
       {
+        "presentation": "overhead",
         "npc": "You chose the wrong place to start trouble!"
       }
     ],
     "overhead-dialogue-if-the-player-fails-to-pick-a-bandit-s-pocket": [
       {
+        "presentation": "overhead",
         "npc": "You dare steal from me?"
       }
     ]

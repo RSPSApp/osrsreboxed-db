@@ -35,15 +35,18 @@
       {
         "type": "line",
         "speaker": "Chompy bird",
-        "text": "Sqwark!"
+        "text": "Sqwark!",
+        "presentation": "overhead"
       },
       {
-        "npc": "!!Croak!!"
+        "npc": "!!Croak!!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Chompy bird",
-        "text": "Gobble!"
+        "text": "Gobble!",
+        "presentation": "overhead"
       }
     ]
   }

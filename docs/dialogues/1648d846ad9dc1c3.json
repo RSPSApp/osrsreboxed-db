@@ -278,7 +278,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Oh dearie me..."
+                "npc": "Oh dearie me...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -286,7 +287,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Ooo-er..."
+                "npc": "Ooo-er...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -294,7 +296,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Relapse over here!"
+                "npc": "Relapse over here!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -302,7 +305,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Medic!"
+                "npc": "Medic!",
+                "presentation": "overhead"
               }
             ]
           }

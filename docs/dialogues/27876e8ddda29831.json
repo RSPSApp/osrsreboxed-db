@@ -208,233 +208,288 @@
     ],
     "overhead-dialogue-upon-spawning-in-at-a-new-location": [
       {
-        "npc": "Anyone got post?"
+        "npc": "Anyone got post?",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-varrock-library": [
       {
-        "npc": "Reldo, have you found that book I was looking for yet?"
+        "npc": "Reldo, have you found that book I was looking for yet?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Reldo",
-        "text": "No, not yet... but I know I have seen it somewhere..."
+        "text": "No, not yet... but I know I have seen it somewhere...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Reldo",
-        "text": "... come back later."
+        "text": "... come back later.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Sure, no problems. See you later."
+        "npc": "Sure, no problems. See you later.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Reldo",
-        "text": "Bye! Say hi to the other Petes for me."
+        "text": "Bye! Say hi to the other Petes for me.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Will do. Farewell!"
+        "npc": "Will do. Farewell!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-wilderness-bandit-camp": [
       {
-        "npc": "Psssst! How is the plan going?"
+        "npc": "Psssst! How is the plan going?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Noterazzo",
-        "text": "Perfectly. Everyone is prepared."
+        "text": "Perfectly. Everyone is prepared.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Great. Now don't forget - nobody does anything until I give the word! OK?"
+        "npc": "Great. Now don't forget - nobody does anything until I give the word! OK?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Noterazzo",
-        "text": "Sure no problem. We'll be waiting."
+        "text": "Sure no problem. We'll be waiting.",
+        "presentation": "overhead"
       },
       {
-        "npc": "'Till next time. Farewell."
+        "npc": "'Till next time. Farewell.",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-laughing-miner-pub": [
       {
-        "npc": "4 Pints of your finest please."
+        "npc": "4 Pints of your finest please.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Barmaid",
-        "text": "4 Pints coming right up. Are you expecting guests?"
+        "text": "4 Pints coming right up. Are you expecting guests?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Just a few old friends."
+        "npc": "Just a few old friends.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Barmaid",
-        "text": "You want me to put it on your tab?"
+        "text": "You want me to put it on your tab?",
+        "presentation": "overhead"
       },
       {
-        "npc": "That would be great, thanks. Oh cripes! I've left a fire burning! I'll be back in a mo."
+        "npc": "That would be great, thanks. Oh cripes! I've left a fire burning! I'll be back in a mo.",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-castle-wars-lobby": [
       {
-        "npc": "Fight! Fight!.. Fight!!"
+        "npc": "Fight! Fight!.. Fight!!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Lanthus",
-        "text": "Easy Pete, calm down. Don't lose your head!"
+        "text": "Easy Pete, calm down. Don't lose your head!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Cheeky!! If you're not careful I'll get you cursed too!"
-      },
-      {
-        "type": "line",
-        "speaker": "Lanthus",
-        "text": "You wouldn't catch me double-crossing a witch!"
-      },
-      {
-        "npc": "But which witch is which! Anyway, I'm late for an appointment with the oracle."
+        "npc": "Cheeky!! If you're not careful I'll get you cursed too!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Lanthus",
-        "text": "Take care and say hi to the kids for me."
+        "text": "You wouldn't catch me double-crossing a witch!",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "But which witch is which! Anyway, I'm late for an appointment with the oracle.",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Lanthus",
+        "text": "Take care and say hi to the kids for me.",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-falador-party-room": [
       {
-        "npc": "Hey, bro! How's the party business?"
+        "npc": "Hey, bro! How's the party business?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Party Pete",
-        "text": "Great, thanks!"
+        "text": "Great, thanks!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Party Pete",
-        "text": "Celebrating weddings and drop partys..."
+        "text": "Celebrating weddings and drop partys...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Party Pete",
-        "text": "...and getting paid for it!"
+        "text": "...and getting paid for it!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Nice. Well, I'm here to talk to some White Knights."
+        "npc": "Nice. Well, I'm here to talk to some White Knights.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Party Pete",
-        "text": "Want to take some cake with you?"
+        "text": "Want to take some cake with you?",
+        "presentation": "overhead"
       },
       {
-        "npc": "No thanks, I'm still dieting!"
+        "npc": "No thanks, I'm still dieting!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Just seafood for me."
+        "npc": "Just seafood for me.",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-ardougne-zoo": [
       {
-        "npc": "Hi Pete!"
+        "npc": "Hi Pete!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Mum wants to know if you're coming round for tea."
+        "npc": "Mum wants to know if you're coming round for tea.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Parroty Pete",
-        "text": "No, I've got another late night here."
+        "text": "No, I've got another late night here.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Parroty  Pete",
-        "text": "Ol' bluebeak's got the flu again!"
+        "text": "Ol' bluebeak's got the flu again!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Oh dear. Nothing too serious I hope."
+        "npc": "Oh dear. Nothing too serious I hope.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Parroty  Pete",
-        "text": "Well, as long as he hasn't caught anything from that evil chicken."
+        "text": "Well, as long as he hasn't caught anything from that evil chicken.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Got a taste for parrots now too has he?"
+        "npc": "Got a taste for parrots now too has he?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Sigh.* Will nothing sacred be safe?"
+        "npc": "Sigh.* Will nothing sacred be safe?",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-north-of-port-phasmatys": [
       {
-        "npc": "Hey Pete. Any news from the fleet?"
+        "npc": "Hey Pete. Any news from the fleet?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Pirate Pete",
-        "text": "No yo ho bruv."
+        "text": "No yo ho bruv.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Pirate Pete",
-        "text": "'Tis all quiet on the eastern front."
+        "text": "'Tis all quiet on the eastern front.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Good good."
+        "npc": "Good good.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Well, you know what to do if something goes wrong."
+        "npc": "Well, you know what to do if something goes wrong.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Pirate Pete",
-        "text": "Aye, that I do bruv."
+        "text": "Aye, that I do bruv.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Pirate Pete",
-        "text": "Holler like a bosun without a bottle."
+        "text": "Holler like a bosun without a bottle.",
+        "presentation": "overhead"
       },
       {
-        "npc": "That's it brother, and we'll come a running!"
+        "npc": "That's it brother, and we'll come a running!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-ice-mountain": [
       {
-        "npc": "Well, I'm back. And he said no. Again."
+        "npc": "Well, I'm back. And he said no. Again.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Oracle",
-        "text": "Lemons? Both of them?"
+        "text": "Lemons? Both of them?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Lemons? What are you talking about?"
+        "npc": "Lemons? What are you talking about?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Oracle",
-        "text": "Fragile! Do not bend!"
+        "text": "Fragile! Do not bend!",
+        "presentation": "overhead"
       },
       {
-        "npc": "I swear you get stranger every time."
+        "npc": "I swear you get stranger every time.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Ok, I'll ask again."
+        "npc": "Ok, I'll ask again.",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-upon-changing-locations": [
       {
-        "npc": "I'd better head off."
+        "npc": "I'd better head off.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Now, how's this thing work again...?"
+        "npc": "Now, how's this thing work again...?",
+        "presentation": "overhead"
       }
     ],
     "evil-twin-random-event-standard-dialogue": [
@@ -486,7 +541,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Message for you, [player name]!"
+            "npc": "Message for you, [player name]!",
+            "presentation": "overhead"
           }
         ],
         "id": "GJ_gGK"
@@ -502,7 +558,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Hello, [player name]?"
+                    "npc": "Hello, [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -510,7 +567,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Urgent message for you, [player name]?"
+                    "npc": "Urgent message for you, [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -518,7 +576,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "Someone needs your help, [player name]!"
+                    "npc": "Someone needs your help, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -526,7 +585,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "Will you accept the message, [player name]?"
+                    "npc": "Will you accept the message, [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -540,7 +600,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "5jnwcn"

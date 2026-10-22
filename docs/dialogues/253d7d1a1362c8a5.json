@@ -3,6 +3,7 @@
   "variants": {
     "upon-being-pet": [
       {
+        "presentation": "overhead",
         "npc": "Woof!"
       }
     ]

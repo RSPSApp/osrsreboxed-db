@@ -253,7 +253,8 @@
         "id": "45Y67V"
       },
       {
-        "player": "Gulp!"
+        "player": "Gulp!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -261,7 +262,8 @@
         "id": "ZjI0eg"
       },
       {
-        "player": "Aargh!"
+        "player": "Aargh!",
+        "presentation": "overhead"
       }
     ],
     "the-underground-pass-climbing-over-rockslides": [
@@ -773,7 +775,8 @@
         "id": "USOX1b"
       },
       {
-        "player": "Ouch!"
+        "player": "Ouch!",
+        "presentation": "overhead"
       }
     ],
     "the-underground-pass-pulling-the-lever-next-to-the-portcullis": [
@@ -836,7 +839,8 @@
                     "id": "bw6gsT"
                   },
                   {
-                    "player": "Ouch!"
+                    "player": "Ouch!",
+                    "presentation": "overhead"
                   }
                 ],
                 "id": "omLnjU"
@@ -1871,7 +1875,8 @@
                 "id": "AohvL6"
               },
               {
-                "player": "Aaarrgghh!"
+                "player": "Aaarrgghh!",
+                "presentation": "overhead"
               },
               {
                 "type": "message",
@@ -2006,7 +2011,8 @@
                 "id": "52VkCl"
               },
               {
-                "player": "Aaarrgghh!"
+                "player": "Aaarrgghh!",
+                "presentation": "overhead"
               },
               {
                 "type": "message",
@@ -2161,7 +2167,8 @@
       {
         "type": "line",
         "speaker": "Kamen",
-        "text": "Hic!"
+        "text": "Hic!",
+        "presentation": "overhead"
       }
     ],
     "the-underground-pass-talking-to-klank": [
@@ -2379,7 +2386,8 @@
       {
         "type": "line",
         "speaker": "Kardia",
-        "text": "Blast them dwarves! We need to deal with them!"
+        "text": "Blast them dwarves! We need to deal with them!",
+        "presentation": "overhead"
       }
     ],
     "the-underground-pass-brew-barrel": [
@@ -2420,7 +2428,8 @@
       {
         "type": "line",
         "speaker": "Kardia",
-        "text": "Here kitty, kitty!"
+        "text": "Here kitty, kitty!",
+        "presentation": "overhead"
       },
       {
         "player": "That witch probably won't take kindly to me going in there. Maybe I can distract her..."
@@ -2434,7 +2443,8 @@
           {
             "type": "line",
             "speaker": "Witch's cat",
-            "text": "Miaoww"
+            "text": "Miaoww",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -3088,12 +3098,14 @@
             "id": "Mq5qeG"
           },
           {
-            "player": "Aaarrgghh!"
+            "player": "Aaarrgghh!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Half-soulless",
-            "text": "Kuluf Ali Monopiate!"
+            "text": "Kuluf Ali Monopiate!",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -3113,7 +3125,8 @@
           {
             "type": "line",
             "speaker": "Half-soulless",
-            "text": "Kuluf Ali Monopiate!"
+            "text": "Kuluf Ali Monopiate!",
+            "presentation": "overhead"
           }
         ],
         "id": "tneVcz"
@@ -3297,7 +3310,8 @@
           {
             "type": "line",
             "speaker": "Iban",
-            "text": "You dare to defy me?"
+            "text": "You dare to defy me?",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -3554,7 +3568,8 @@
               {
                 "type": "line",
                 "speaker": "Iban",
-                "text": "I am the great Iban, I cannot die!"
+                "text": "I am the great Iban, I cannot die!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3564,7 +3579,8 @@
               {
                 "type": "line",
                 "speaker": "Iban",
-                "text": "You will die, frail mortal!"
+                "text": "You will die, frail mortal!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3574,7 +3590,8 @@
               {
                 "type": "line",
                 "speaker": "Iban",
-                "text": "Fool!"
+                "text": "Fool!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3584,7 +3601,8 @@
               {
                 "type": "line",
                 "speaker": "Iban",
-                "text": "I'll swallow your soul!"
+                "text": "I'll swallow your soul!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3594,7 +3612,8 @@
               {
                 "type": "line",
                 "speaker": "Iban",
-                "text": "You belong in the slave pits!"
+                "text": "You belong in the slave pits!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3604,7 +3623,8 @@
               {
                 "type": "line",
                 "speaker": "Iban",
-                "text": "Begone from my temple!"
+                "text": "Begone from my temple!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -4094,11 +4114,8 @@
       {
         "type": "line",
         "speaker": "Sir Carl/Harry/Jerro",
-        "text": "You again... die Zamorakian scum!"
-      },
-      {
-        "type": "unavailable",
-        "id": "vemwFx"
+        "text": "You again... die Zamorakian scum!",
+        "presentation": "overhead"
       }
     ]
   },

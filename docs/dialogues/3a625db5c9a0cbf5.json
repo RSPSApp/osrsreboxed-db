@@ -907,7 +907,8 @@
                             "player": "I'd love a cup of tea."
                           },
                           {
-                            "player": "Aaah, nothing like a nice cuppa tea!"
+                            "player": "Aaah, nothing like a nice cuppa tea!",
+                            "presentation": "overhead"
                           },
                           {
                             "type": "end"
@@ -1193,6 +1194,7 @@
                     "player": "Can you teleport me to the Rune Essence Mine?"
                   },
                   {
+                    "presentation": "overhead",
                     "type": "line",
                     "speaker": "Archmage Sedridor",
                     "text": "Senventior disthine molenko!"
@@ -1383,16 +1385,9 @@
             "type": "line",
             "speaker": "Archmage Sedridor",
             "text": "Right... You're rather careless aren't you. I suggest you go and speak to Aubury once more. With luck he will have made copies."
-          },
-          {
-            "type": "end"
           }
         ],
         "id": "pQBs4b"
-      },
-      {
-        "type": "unavailable",
-        "id": "naQryi"
       }
     ]
   },
@@ -1833,6 +1828,7 @@
         "player": "Can you teleport me to the Rune Essence Mine?"
       },
       {
+        "presentation": "overhead",
         "type": "line",
         "speaker": "Archmage Sedridor",
         "text": "Senventior disthine molenko!"

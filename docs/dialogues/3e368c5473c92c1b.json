@@ -60,27 +60,32 @@
     ],
     "overhead-dialogue-when-crossing-the-log-balance": [
       {
-        "npc": "Okay get over that log, quick quick!"
+        "npc": "Okay get over that log, quick quick!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-climbing-over-the-obstacle-net": [
       {
-        "npc": "Move it, move it, move it!"
+        "npc": "Move it, move it, move it!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-climbing-up-the-tree-branch": [
       {
-        "npc": "That's it - straight up"
+        "npc": "That's it - straight up",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-balancing-over-the-rope": [
       {
-        "npc": "Come on scaredy cat, get across that rope!"
+        "npc": "Come on scaredy cat, get across that rope!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-climbing-over-the-net": [
       {
-        "npc": "My Granny can move faster than you."
+        "npc": "My Granny can move faster than you.",
+        "presentation": "overhead"
       }
     ],
     "treasure-trails-hard": [

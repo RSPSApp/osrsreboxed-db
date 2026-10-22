@@ -387,44 +387,41 @@
                     ]
                   },
                   {
-                    "text": "From YOUR point of view I've saved you, but from MINE I haven't."
-                  }
-                ]
-              },
-              {
-                "player": "From YOUR point of view I've saved you, but from MINE I haven't.",
-                "steps": [
-                  {
-                    "type": "line",
-                    "speaker": "Evil Dave",
-                    "text": "Well that's all right, as long as I'm saved from my point of view!"
+                    "text": "From YOUR point of view I've saved you, but from MINE I haven't.",
+                    "steps": [
+                      {
+                        "player": "From YOUR point of view I've saved you, but from MINE I haven't.",
+                        "steps": [
+                          {
+                            "type": "line",
+                            "speaker": "Evil Dave",
+                            "text": "Well that's all right, as long as I'm saved from my point of view!"
+                          },
+                          {
+                            "player": "But I have to save you, otherwise you won't be saved!"
+                          },
+                          {
+                            "type": "line",
+                            "speaker": "Evil Dave",
+                            "text": "But I'm here so you must already have saved me!"
+                          },
+                          {
+                            "player": "That's what I meant, from your point of view I've saved you but from mine I haven't!"
+                          },
+                          {
+                            "type": "line",
+                            "speaker": "Evil Dave",
+                            "text": "What?"
+                          },
+                          {
+                            "type": "jump",
+                            "reference": "other",
+                            "id": "pmd66J"
+                          }
+                        ]
+                      }
+                    ]
                   },
-                  {
-                    "player": "But I have to save you, otherwise you won't be saved!"
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Evil Dave",
-                    "text": "But I'm here so you must already have saved me!"
-                  },
-                  {
-                    "player": "That's what I meant, from your point of view I've saved you but from mine I haven't!"
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Evil Dave",
-                    "text": "What?"
-                  },
-                  {
-                    "type": "jump",
-                    "reference": "other",
-                    "id": "zobJUV"
-                  }
-                ]
-              },
-              {
-                "type": "choice",
-                "options": [
                   {
                     "text": "I've got to take the food back in time to give it to you.",
                     "steps": [
@@ -477,7 +474,7 @@
                               {
                                 "type": "jump",
                                 "reference": "other",
-                                "id": "gmG4Wf"
+                                "id": "PLsvvs"
                               }
                             ]
                           },
@@ -503,7 +500,7 @@
                               {
                                 "type": "jump",
                                 "reference": "other",
-                                "id": "MjLFwC"
+                                "id": "fAPbc_"
                               }
                             ]
                           },
@@ -521,7 +518,7 @@
                               {
                                 "type": "jump",
                                 "reference": "other",
-                                "id": "SqnsY4"
+                                "id": "ADAQtw"
                               }
                             ]
                           }
@@ -712,8 +709,13 @@
                     "steps": [
                       {
                         "type": "jump",
-                        "reference": "above",
-                        "id": "Sevn24"
+                        "id": "Sevn24",
+                        "steps": [
+                          {
+                            "type": "call",
+                            "branch": "jump-a652f7fc9c0f305c"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -726,7 +728,7 @@
                         "steps": [
                           {
                             "type": "call",
-                            "branch": "jump-4783c65fbb65d9b6"
+                            "branch": "jump-d35de82bab97111c"
                           }
                         ]
                       }
@@ -1208,7 +1210,40 @@
         "id": "FwEJOn"
       }
     ],
-    "jump-4783c65fbb65d9b6": [
+    "jump-a652f7fc9c0f305c": [
+      {
+        "player": "From YOUR point of view I've saved you, but from MINE I haven't.",
+        "steps": [
+          {
+            "type": "line",
+            "speaker": "Evil Dave",
+            "text": "Well that's all right, as long as I'm saved from my point of view!"
+          },
+          {
+            "player": "But I have to save you, otherwise you won't be saved!"
+          },
+          {
+            "type": "line",
+            "speaker": "Evil Dave",
+            "text": "But I'm here so you must already have saved me!"
+          },
+          {
+            "player": "That's what I meant, from your point of view I've saved you but from mine I haven't!"
+          },
+          {
+            "type": "line",
+            "speaker": "Evil Dave",
+            "text": "What?"
+          },
+          {
+            "type": "jump",
+            "reference": "other",
+            "id": "pmd66J"
+          }
+        ]
+      }
+    ],
+    "jump-d35de82bab97111c": [
       {
         "player": "I've to take the food back in time to give it to you."
       },
@@ -1258,7 +1293,7 @@
               {
                 "type": "jump",
                 "reference": "other",
-                "id": "gmG4Wf"
+                "id": "PLsvvs"
               }
             ]
           },
@@ -1284,7 +1319,7 @@
               {
                 "type": "jump",
                 "reference": "other",
-                "id": "MjLFwC"
+                "id": "fAPbc_"
               }
             ]
           },
@@ -1302,7 +1337,7 @@
               {
                 "type": "jump",
                 "reference": "other",
-                "id": "SqnsY4"
+                "id": "ADAQtw"
               }
             ]
           }

@@ -683,12 +683,14 @@
                     ]
                   },
                   {
-                    "text": "Nothing, thanks."
+                    "text": "Nothing, thanks.",
+                    "steps": [
+                      {
+                        "player": "Nothing, thanks."
+                      }
+                    ]
                   }
                 ]
-              },
-              {
-                "player": "Nothing, thanks."
               }
             ]
           },
@@ -1078,18 +1080,22 @@
     ],
     "finding-the-flowers-sledding": [
       {
-        "player": "Here we go!"
+        "player": "Here we go!",
+        "presentation": "overhead"
       },
       {
-        "player": "That was quite a ride!"
+        "player": "That was quite a ride!",
+        "presentation": "overhead"
       }
     ],
     "finding-the-flowers-sledding-crashing": [
       {
-        "player": "Here we go!"
+        "player": "Here we go!",
+        "presentation": "overhead"
       },
       {
-        "player": "O-oh, this doesn't look good!"
+        "player": "O-oh, this doesn't look good!",
+        "presentation": "overhead"
       },
       {
         "player": "And I thought snow was soft..."
@@ -1241,7 +1247,8 @@
       {
         "type": "line",
         "speaker": "Arrg",
-        "text": "Arrg!"
+        "text": "Arrg!",
+        "presentation": "overhead"
       }
     ],
     "returning-to-ug-talking-to-arrg-after-defeating-him": [
@@ -1285,10 +1292,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "ri6lci"
-      },
-      {
-        "type": "unavailable",
-        "id": "j6XRmY"
       }
     ]
   },

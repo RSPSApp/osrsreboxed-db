@@ -109,6 +109,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Oook! Oook!"
               },
               {
@@ -122,6 +123,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ook! Oook! Ook!"
               },
               {
@@ -135,6 +137,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Oook! Oook! Oook!"
               },
               {
@@ -148,6 +151,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Oook! Ook!"
               },
               {
@@ -161,6 +165,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ook! Ook!"
               },
               {
@@ -174,6 +179,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ook! Ah Ah Ah!"
               },
               {
@@ -187,6 +193,7 @@
             "text": "Dialogue 7",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ook!"
               },
               {
@@ -200,6 +207,7 @@
             "text": "Dialogue 8",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I won't say!"
               },
               {
@@ -213,6 +221,7 @@
             "text": "Dialogue 9",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ah Ah Ah! Ook! Ook!"
               },
               {
@@ -226,6 +235,7 @@
             "text": "Dialogue 10",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Oook! Ook! Ook!"
               },
               {
@@ -239,6 +249,7 @@
             "text": "Dialogue 11",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ook! Oook! Oook!"
               },
               {
@@ -252,6 +263,7 @@
             "text": "Dialogue 12",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Joooogre bones! Ook!"
               },
               {
@@ -265,6 +277,7 @@
             "text": "Dialogue 13",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "You can't catch me!"
               },
               {
@@ -278,6 +291,7 @@
             "text": "Dialogue 14",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ook! Ah Ah Ah! Ook!"
               },
               {
@@ -291,6 +305,7 @@
             "text": "Dialogue 15",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ah Ah Ah! Ah Ah Ah!"
               },
               {
@@ -304,6 +319,7 @@
             "text": "Dialogue 16",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ook! Ook! Ah Ah AH!"
               },
               {
@@ -317,6 +333,7 @@
             "text": "Dialogue 17",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Oook! Ook! Oook!"
               },
               {
@@ -330,6 +347,7 @@
             "text": "Dialogue 18",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Can't hit! Can't hit!"
               },
               {
@@ -343,6 +361,7 @@
             "text": "Dialogue 19",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ook! Oook!"
               },
               {
@@ -356,6 +375,7 @@
             "text": "Dialogue 20",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ah Ah Ah! Ook!"
               },
               {
@@ -369,6 +389,7 @@
             "text": "Dialogue 21",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ook! Ook! Oook!"
               },
               {

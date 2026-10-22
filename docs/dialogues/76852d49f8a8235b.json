@@ -83,13 +83,14 @@
         ]
       },
       {
-        "type": "unavailable",
+        "type": "message",
+        "text": "The bank exchanges your coins for platinum tokens.",
         "steps": [
           {
             "type": "end"
           }
         ],
-        "id": "a4Zcn4"
+        "id": "DJUrnS"
       },
       {
         "type": "choice",
@@ -112,13 +113,14 @@
         ]
       },
       {
-        "type": "unavailable",
+        "type": "message",
+        "text": "The bank exchanges your platinum tokens for coins.",
         "steps": [
           {
             "type": "end"
           }
         ],
-        "id": "HwXpop"
+        "id": "BoyPwJ"
       },
       {
         "type": "choice",

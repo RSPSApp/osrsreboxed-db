@@ -14,7 +14,8 @@
     ],
     "overhead-dialogue-during-pirate-s-treasure-when-digging-up-the-casket-in-the-falador-park": [
       {
-        "npc": "First moles, now this! Take this, vandal!"
+        "npc": "First moles, now this! Take this, vandal!",
+        "presentation": "overhead"
       }
     ]
   }

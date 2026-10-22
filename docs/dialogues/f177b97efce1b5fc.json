@@ -149,15 +149,18 @@
     ],
     "overhead-dialogue-when-the-player-is-caught-attempting-to-steal-from-the-silk-stall": [
       {
-        "npc": "Hey! Get your hands off there!"
+        "npc": "Hey! Get your hands off there!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-the-player-has-recently-stolen-silk": [
       {
-        "npc": "You're the one who stole something from me!"
+        "npc": "You're the one who stole something from me!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards guards!"
+        "npc": "Guards guards!",
+        "presentation": "overhead"
       }
     ]
   }

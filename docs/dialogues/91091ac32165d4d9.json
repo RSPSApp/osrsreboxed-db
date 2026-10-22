@@ -9,6 +9,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Shipment of [ore name] just unloaded!"
               }
             ]
@@ -17,6 +18,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Tin in demand!"
               }
             ]
@@ -25,6 +27,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Special price on [ore name]!"
               }
             ]
@@ -33,6 +36,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "We need more mithril!"
               }
             ]
@@ -41,6 +45,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Buying any rune!"
               }
             ]
@@ -49,6 +54,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Selling 100 crates of rune ore!"
               }
             ]
@@ -57,6 +63,7 @@
             "text": "Dialogue 7",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Trading iron for gold!"
               }
             ]
@@ -65,6 +72,7 @@
             "text": "Dialogue 8",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "New territory wanted!"
               }
             ]

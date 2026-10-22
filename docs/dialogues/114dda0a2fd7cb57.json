@@ -204,7 +204,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "OlUlrD"
+                "branch": "i5XLtZ"
               }
             ]
           }
@@ -253,7 +253,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "OlUlrD"
+                        "branch": "i5XLtZ"
                       }
                     ]
                   }
@@ -309,7 +309,7 @@
     ]
   },
   "branches": {
-    "OlUlrD": [
+    "i5XLtZ": [
       {
         "player": "I'm too busy to help your King."
       },
@@ -320,7 +320,8 @@
         "player": "I may be back later."
       },
       {
-        "npc": "Bye!"
+        "npc": "Bye!",
+        "presentation": "overhead"
       }
     ]
   }

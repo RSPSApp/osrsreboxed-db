@@ -622,24 +622,17 @@
       },
       {
         "type": "choice",
-        "options": []
-      },
-      {
-        "type": "unavailable",
-        "steps": [
-          {
-            "type": "unavailable",
-            "id": "peB-On"
-          },
-          {
-            "type": "end"
-          }
-        ],
-        "id": "f4KLWv"
-      },
-      {
-        "type": "choice",
         "options": [
+          {
+            "text": "Convert [number] tickets to vouchers",
+            "steps": [
+              {
+                "type": "message",
+                "text": "Pirate Jackie the Fruit converts [number] Agility Arena Tickets into Agility Arena Vouchers",
+                "id": "DTDJGP"
+              }
+            ]
+          },
           {
             "text": "Don't convert.",
             "steps": []

@@ -20,7 +20,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "You have truly gifted paws!"
+                "npc": "You have truly gifted paws!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -28,7 +29,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I've never seen anything like it!"
+                "npc": "I've never seen anything like it!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -36,7 +38,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "You need a few more skullball lessons."
+                "npc": "You need a few more skullball lessons.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -44,7 +47,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Keep it up!"
+                "npc": "Keep it up!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -52,7 +56,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Don't give up the day job!"
+                "npc": "Don't give up the day job!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -60,7 +65,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Look at [her/him] go!"
+                "npc": "Look at [her/him] go!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -68,7 +74,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Pathetic!"
+                "npc": "Pathetic!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -76,7 +83,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "What - a - goal !!!"
+                "npc": "What - a - goal !!!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -84,7 +92,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "That was just plain lucky."
+                "npc": "That was just plain lucky.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -93,17 +102,20 @@
     ],
     "overhead-dialogue-when-scoring-the-last-goal": [
       {
-        "npc": "[He shoots/She shoots/They shoot] - [He scores/She scores/They score]!!!!!"
+        "npc": "[He shoots/She shoots/They shoot] - [He scores/She scores/They score]!!!!!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-shooting-the-skullball-through-one-of-the-intermediary-goals-without-a-ring-of-charos-equipped": [
       {
-        "npc": "Humans play skullball worse than puppies!"
+        "npc": "Humans play skullball worse than puppies!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-scoring-the-last-goal-without-a-ring-of-charos-equipped": [
       {
-        "npc": "The human's scored!"
+        "npc": "The human's scored!",
+        "presentation": "overhead"
       }
     ]
   }

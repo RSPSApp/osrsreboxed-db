@@ -937,14 +937,16 @@
       {
         "type": "line",
         "speaker": "Khazard commander",
-        "text": "Don't even think of taking the orb!"
+        "text": "Don't even think of taking the orb!",
+        "presentation": "overhead"
       }
     ],
     "into-the-stronghold-upon-opening-the-chest-containing-the-orb-of-protection": [
       {
         "type": "line",
         "speaker": "Khazard commander",
-        "text": "Oi! You! Get out of there."
+        "text": "Oi! You! Get out of there.",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -1686,7 +1688,8 @@
       {
         "type": "line",
         "speaker": "Khazard warlord",
-        "text": "Bah, enough of you!"
+        "text": "Bah, enough of you!",
+        "presentation": "overhead"
       }
     ],
     "the-khazard-warlord-when-defeated": [
@@ -1938,22 +1941,26 @@
       {
         "type": "line",
         "speaker": "[Northern Local Gnomes]",
-        "text": "Su tana."
+        "text": "Su tana.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[Southern Local Gnomes]",
-        "text": "En tania."
+        "text": "En tania.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[Northern Local Gnomes]",
-        "text": "Su tana."
+        "text": "Su tana.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[Southern Local Gnomes]",
-        "text": "En tania."
+        "text": "En tania.",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -1990,10 +1997,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "51Oq7J"
-      },
-      {
-        "type": "unavailable",
-        "id": "LNfnsC"
       }
     ]
   },

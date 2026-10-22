@@ -6,36 +6,31 @@
         "player": "You seem to like playing with danger, there."
       },
       {
-        "type": "unavailable",
-        "id": "d0uVK1"
+        "npc": "They don't call me 'No-fingers' for nothing!"
       },
       {
         "player": "Well, correct me if I'm wrong, but you seem to have all your fingers."
       },
       {
-        "type": "unavailable",
-        "id": "mP0IjB"
+        "npc": "It may seem that way mate, but I think you'll find I don't have any."
       },
       {
         "player": "What?"
       },
       {
-        "type": "unavailable",
-        "id": "0geXwj"
+        "npc": "These not be fingers. These 'ere be wooden fingers."
       },
       {
         "player": "Wooden fingers?"
       },
       {
-        "type": "unavailable",
-        "id": "Bbdakj"
+        "npc": "Yep."
       },
       {
         "player": "That's not possible, how could you move them?"
       },
       {
-        "type": "unavailable",
-        "id": "kBUDlu"
+        "npc": "Magic wood."
       },
       {
         "player": "Yes, well I think I'd better be going now."
@@ -46,8 +41,7 @@
         "player": "Hi."
       },
       {
-        "type": "unavailable",
-        "id": "nh-wdl"
+        "npc": "Don't suppose you've seen any boots around here? Size nine, steel toed, brown leather..."
       },
       {
         "player": "Nope, not at all. I'd best be going. Have a nice day. Bye!"

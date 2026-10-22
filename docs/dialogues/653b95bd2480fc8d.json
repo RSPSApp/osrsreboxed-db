@@ -104,9 +104,6 @@
                     },
                     {
                       "npc": "Your additional bank slots have been added."
-                    },
-                    {
-                      "type": "end"
                     }
                   ]
                 },
@@ -115,9 +112,6 @@
                   "steps": [
                     {
                       "player": "Actually, I've changed my mind."
-                    },
-                    {
-                      "type": "end"
                     }
                   ]
                 }
@@ -126,21 +120,23 @@
           ]
         },
         {
-          "text": "What is this place?"
+          "text": "What is this place?",
+          "steps": [
+            {
+              "player": "What is this place?"
+            },
+            {
+              "npc": "This is a branch of the Bank of Gielinor. We have branches in many towns."
+            },
+            {
+              "player": "And what do you do?"
+            },
+            {
+              "npc": "We will look after your items and money for you. Leave your valuables with us if you want to keep them safe."
+            }
+          ]
         }
       ]
-    },
-    {
-      "player": "What is this place?"
-    },
-    {
-      "npc": "This is a branch of the Bank of Gielinor. We have branches in many towns."
-    },
-    {
-      "player": "And what do you do?"
-    },
-    {
-      "npc": "We will look after your items and money for you. Leave your valuables with us if you want to keep them safe."
     }
   ]
 }

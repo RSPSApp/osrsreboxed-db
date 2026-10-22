@@ -3,7 +3,8 @@
   "variants": {
     "without-catspeak-amulet": [
       {
-        "npc": "Miaoww"
+        "npc": "Miaoww",
+        "presentation": "overhead"
       }
     ],
     "with-catspeak-amulet-prior-to-a-tail-of-two-cats": [

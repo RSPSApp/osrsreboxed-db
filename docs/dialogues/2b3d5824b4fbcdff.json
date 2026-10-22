@@ -13,22 +13,26 @@
     ],
     "overhead-dialogue-when-the-entling-wants-pruning-on-top": [
       {
-        "npc": "Short on top!"
+        "npc": "Short on top!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-the-entling-wants-pruning-on-the-back": [
       {
-        "npc": "Breezy on the back!"
+        "npc": "Breezy on the back!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-the-entling-wants-pruning-on-the-back-or-side": [
       {
-        "npc": "Short on back and sides!"
+        "npc": "Short on back and sides!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-the-entling-wants-pruning-on-the-top-and-sides": [
       {
-        "npc": "A leafy mullet!"
+        "npc": "A leafy mullet!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-upon-being-fully-pruned": [
@@ -39,6 +43,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": ""
               }
             ]
@@ -47,6 +52,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": ""
               }
             ]
@@ -55,6 +61,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": ""
               }
             ]
@@ -64,12 +71,14 @@
     ],
     "overhead-dialogue-attempting-to-prune-a-fully-pruned-entling": [
       {
-        "npc": "Hey, my cut is perfect, leave it alone!"
+        "npc": "Hey, my cut is perfect, leave it alone!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-the-friendly-ent-event-is-almost-over": [
       {
-        "npc": "Almost time to go!"
+        "npc": "Almost time to go!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-after-the-countdown-ends": [

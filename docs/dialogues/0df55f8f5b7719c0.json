@@ -3,7 +3,8 @@
   "variants": {
     "when-animated": [
       {
-        "npc": "I'm ALIVE!"
+        "npc": "I'm ALIVE!",
+        "presentation": "overhead"
       }
     ]
   }

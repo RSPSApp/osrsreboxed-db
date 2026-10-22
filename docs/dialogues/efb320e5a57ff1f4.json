@@ -26,7 +26,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Was that a spark?"
+                "npc": "Was that a spark?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -34,7 +35,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Come on! Please light!"
+                "npc": "Come on! Please light!",
+                "presentation": "overhead"
               }
             ]
           }

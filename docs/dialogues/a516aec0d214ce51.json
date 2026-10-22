@@ -680,7 +680,8 @@
                             "text": "Through its power, we have great knowledge on life and death. This knowledge could be yours as well."
                           },
                           {
-                            "player": "ARGH!"
+                            "player": "ARGH!",
+                            "presentation": "overhead"
                           },
                           {
                             "type": "message",
@@ -1979,7 +1980,8 @@
     ],
     "activating-the-orb-using-the-activate-option-on-the-mysterious-orb-by-the-dark-altar": [
       {
-        "player": "Argh!"
+        "player": "Argh!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -2170,9 +2172,6 @@
                     "steps": [
                       {
                         "player": "Goodbye."
-                      },
-                      {
-                        "type": "end"
                       }
                     ]
                   }
@@ -2254,10 +2253,6 @@
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "rd2IZ9"
       }
     ]
   },

@@ -3,12 +3,14 @@
   "variants": {
     "overhead-dialogue-upon-entering-the-boss-arena": [
       {
-        "npc": "Euat! You are not welcome here!"
+        "npc": "Euat! You are not welcome here!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-upon-reaching-500-health": [
       {
-        "npc": "Rani grows within me!"
+        "npc": "Rani grows within me!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -18,7 +20,8 @@
     ],
     "overhead-dialogue-upon-reaching-250-health": [
       {
-        "npc": "Let the darkness consume you!"
+        "npc": "Let the darkness consume you!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -34,7 +37,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Euat! This is not yet over!"
+                "npc": "Euat! This is not yet over!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -42,7 +46,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Euat! We are not done yet!"
+                "npc": "Euat! We are not done yet!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -50,7 +55,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Euat! I am not so easily destroyed!"
+                "npc": "Euat! I am not so easily destroyed!",
+                "presentation": "overhead"
               }
             ]
           }

@@ -182,7 +182,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "These sails are blocking my view."
+                "npc": "These sails are blocking my view.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -190,7 +191,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I can't focus on being the lookout with all this work to do."
+                "npc": "I can't focus on being the lookout with all this work to do.",
+                "presentation": "overhead"
               }
             ]
           }

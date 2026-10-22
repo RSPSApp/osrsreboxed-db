@@ -50,7 +50,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "That's the last straw!"
+                "npc": "That's the last straw!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -58,7 +59,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Do your chores!"
+                "npc": "Do your chores!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -66,7 +68,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Useless... completely useless."
+                "npc": "Useless... completely useless.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -74,7 +77,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Don't talk to me like that!"
+                "npc": "Don't talk to me like that!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -82,7 +86,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "You're no good!"
+                "npc": "You're no good!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -90,7 +95,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "I'm warning you, Hegir!"
+                "npc": "I'm warning you, Hegir!",
+                "presentation": "overhead"
               }
             ]
           }

@@ -15,7 +15,8 @@
       {
         "type": "line",
         "speaker": "Tati",
-        "text": "I want some bread!"
+        "text": "I want some bread!",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -24,7 +25,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Yes dad."
+                "npc": "Yes dad.",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -42,7 +44,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'll be right back."
+                "npc": "I'll be right back.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -58,7 +61,8 @@
                       {
                         "type": "line",
                         "speaker": "Randivor",
-                        "text": "What's your father want now?"
+                        "text": "What's your father want now?",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "jump",
@@ -78,10 +82,12 @@
                       {
                         "type": "line",
                         "speaker": "Randivor",
-                        "text": "What'll it be, son?"
+                        "text": "What'll it be, son?",
+                        "presentation": "overhead"
                       },
                       {
-                        "npc": "A loaf of bread please."
+                        "npc": "A loaf of bread please.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "random",
@@ -90,7 +96,8 @@
                             "text": "Dialogue 1",
                             "steps": [
                               {
-                                "npc": "Thanks."
+                                "npc": "Thanks.",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "jump",
@@ -108,7 +115,8 @@
                             "text": "Dialogue 2",
                             "steps": [
                               {
-                                "npc": "Cheers."
+                                "npc": "Cheers.",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "action",
@@ -122,7 +130,8 @@
                                   {
                                     "type": "line",
                                     "speaker": "Tati",
-                                    "text": "I need more bread!"
+                                    "text": "I need more bread!",
+                                    "presentation": "overhead"
                                   },
                                   {
                                     "type": "jump",
@@ -149,7 +158,8 @@
       {
         "type": "line",
         "speaker": "Tati",
-        "text": "I need some silver ore!"
+        "text": "I need some silver ore!",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -158,7 +168,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Yes dad."
+                "npc": "Yes dad.",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -176,7 +187,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'll be right back."
+                "npc": "I'll be right back.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -192,7 +204,8 @@
                       {
                         "type": "line",
                         "speaker": "Gulldamar",
-                        "text": "What's your father want now?"
+                        "text": "What's your father want now?",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "jump",
@@ -212,10 +225,12 @@
                       {
                         "type": "line",
                         "speaker": "Gulldamar",
-                        "text": "What'll it be, son?"
+                        "text": "What'll it be, son?",
+                        "presentation": "overhead"
                       },
                       {
-                        "npc": "A piece of silver please."
+                        "npc": "A piece of silver please.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "random",
@@ -224,7 +239,8 @@
                             "text": "Dialogue 1",
                             "steps": [
                               {
-                                "npc": "Thanks."
+                                "npc": "Thanks.",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "jump",
@@ -242,7 +258,8 @@
                             "text": "Dialogue 2",
                             "steps": [
                               {
-                                "npc": "Cheers."
+                                "npc": "Cheers.",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "action",
@@ -256,7 +273,8 @@
                                   {
                                     "type": "line",
                                     "speaker": "Tati",
-                                    "text": "Only one piece of silver? I need more!"
+                                    "text": "Only one piece of silver? I need more!",
+                                    "presentation": "overhead"
                                   },
                                   {
                                     "type": "jump",
@@ -283,7 +301,8 @@
       {
         "type": "line",
         "speaker": "Tati",
-        "text": "I need some new clothes!"
+        "text": "I need some new clothes!",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -292,7 +311,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Yes dad."
+                "npc": "Yes dad.",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -310,7 +330,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'll be right back."
+                "npc": "I'll be right back.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -326,7 +347,8 @@
                       {
                         "type": "line",
                         "speaker": "Vermundi",
-                        "text": "What's your father want now?"
+                        "text": "What's your father want now?",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "jump",
@@ -346,10 +368,12 @@
                       {
                         "type": "line",
                         "speaker": "Vermundi",
-                        "text": "What'll it be, son?"
+                        "text": "What'll it be, son?",
+                        "presentation": "overhead"
                       },
                       {
-                        "npc": "Some silk please."
+                        "npc": "Some silk please.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "random",
@@ -358,7 +382,8 @@
                             "text": "Dialogue 1",
                             "steps": [
                               {
-                                "npc": "Thanks."
+                                "npc": "Thanks.",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "jump",
@@ -376,7 +401,8 @@
                             "text": "Dialogue 2",
                             "steps": [
                               {
-                                "npc": "Cheers."
+                                "npc": "Cheers.",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "action",
@@ -390,7 +416,8 @@
                                   {
                                     "type": "line",
                                     "speaker": "Tati",
-                                    "text": "These clothes are awful, get me some others!"
+                                    "text": "These clothes are awful, get me some others!",
+                                    "presentation": "overhead"
                                   },
                                   {
                                     "type": "jump",
@@ -417,7 +444,8 @@
       {
         "type": "line",
         "speaker": "Tati",
-        "text": "My chisel's gone blunt, buy me one!"
+        "text": "My chisel's gone blunt, buy me one!",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -426,7 +454,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Yes dad."
+                "npc": "Yes dad.",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -444,7 +473,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'll be right back."
+                "npc": "I'll be right back.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -460,7 +490,8 @@
                       {
                         "type": "line",
                         "speaker": "Nolar",
-                        "text": "What's your father want now?"
+                        "text": "What's your father want now?",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "jump",
@@ -480,10 +511,12 @@
                       {
                         "type": "line",
                         "speaker": "Nolar",
-                        "text": "What'll it be, son?"
+                        "text": "What'll it be, son?",
+                        "presentation": "overhead"
                       },
                       {
-                        "npc": "A chisel please."
+                        "npc": "A chisel please.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "random",
@@ -492,7 +525,8 @@
                             "text": "Dialogue 1",
                             "steps": [
                               {
-                                "npc": "Thanks."
+                                "npc": "Thanks.",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "jump",
@@ -510,7 +544,8 @@
                             "text": "Dialogue 2",
                             "steps": [
                               {
-                                "npc": "Cheers."
+                                "npc": "Cheers.",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "action",
@@ -524,7 +559,8 @@
                                   {
                                     "type": "line",
                                     "speaker": "Tati",
-                                    "text": "This chisel's rubbish, get me another!"
+                                    "text": "This chisel's rubbish, get me another!",
+                                    "presentation": "overhead"
                                   },
                                   {
                                     "type": "jump",
@@ -551,7 +587,8 @@
   "branches": {
     "jump-0ac3c5ce553aeff9": [
       {
-        "npc": "I'll be right back."
+        "npc": "I'll be right back.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -567,7 +604,8 @@
               {
                 "type": "line",
                 "speaker": "Randivor",
-                "text": "What's your father want now?"
+                "text": "What's your father want now?",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -587,10 +625,12 @@
               {
                 "type": "line",
                 "speaker": "Randivor",
-                "text": "What'll it be, son?"
+                "text": "What'll it be, son?",
+                "presentation": "overhead"
               },
               {
-                "npc": "A loaf of bread please."
+                "npc": "A loaf of bread please.",
+                "presentation": "overhead"
               },
               {
                 "type": "random",
@@ -599,7 +639,8 @@
                     "text": "Dialogue 1",
                     "steps": [
                       {
-                        "npc": "Thanks."
+                        "npc": "Thanks.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "jump",
@@ -617,7 +658,8 @@
                     "text": "Dialogue 2",
                     "steps": [
                       {
-                        "npc": "Cheers."
+                        "npc": "Cheers.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -631,7 +673,8 @@
                           {
                             "type": "line",
                             "speaker": "Tati",
-                            "text": "I need more bread!"
+                            "text": "I need more bread!",
+                            "presentation": "overhead"
                           },
                           {
                             "type": "jump",
@@ -654,10 +697,12 @@
       {
         "type": "line",
         "speaker": "Randivor",
-        "text": "What'll it be, son?"
+        "text": "What'll it be, son?",
+        "presentation": "overhead"
       },
       {
-        "npc": "A loaf of bread please."
+        "npc": "A loaf of bread please.",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -666,7 +711,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Thanks."
+                "npc": "Thanks.",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -684,7 +730,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Cheers."
+                "npc": "Cheers.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -698,7 +745,8 @@
                   {
                     "type": "line",
                     "speaker": "Tati",
-                    "text": "I need more bread!"
+                    "text": "I need more bread!",
+                    "presentation": "overhead"
                   },
                   {
                     "type": "jump",
@@ -715,7 +763,8 @@
     ],
     "jump-9e385e3746237400": [
       {
-        "npc": "Cheers."
+        "npc": "Cheers.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -729,7 +778,8 @@
           {
             "type": "line",
             "speaker": "Tati",
-            "text": "I need more bread!"
+            "text": "I need more bread!",
+            "presentation": "overhead"
           },
           {
             "type": "jump",
@@ -742,7 +792,8 @@
     ],
     "jump-4b6f9f2299cfd58f": [
       {
-        "npc": "I'll be right back."
+        "npc": "I'll be right back.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -758,7 +809,8 @@
               {
                 "type": "line",
                 "speaker": "Gulldamar",
-                "text": "What's your father want now?"
+                "text": "What's your father want now?",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -778,10 +830,12 @@
               {
                 "type": "line",
                 "speaker": "Gulldamar",
-                "text": "What'll it be, son?"
+                "text": "What'll it be, son?",
+                "presentation": "overhead"
               },
               {
-                "npc": "A piece of silver please."
+                "npc": "A piece of silver please.",
+                "presentation": "overhead"
               },
               {
                 "type": "random",
@@ -790,7 +844,8 @@
                     "text": "Dialogue 1",
                     "steps": [
                       {
-                        "npc": "Thanks."
+                        "npc": "Thanks.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "jump",
@@ -808,7 +863,8 @@
                     "text": "Dialogue 2",
                     "steps": [
                       {
-                        "npc": "Cheers."
+                        "npc": "Cheers.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -822,7 +878,8 @@
                           {
                             "type": "line",
                             "speaker": "Tati",
-                            "text": "Only one piece of silver? I need more!"
+                            "text": "Only one piece of silver? I need more!",
+                            "presentation": "overhead"
                           },
                           {
                             "type": "jump",
@@ -845,10 +902,12 @@
       {
         "type": "line",
         "speaker": "Gulldamar",
-        "text": "What'll it be, son?"
+        "text": "What'll it be, son?",
+        "presentation": "overhead"
       },
       {
-        "npc": "A piece of silver please."
+        "npc": "A piece of silver please.",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -857,7 +916,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Thanks."
+                "npc": "Thanks.",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -875,7 +935,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Cheers."
+                "npc": "Cheers.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -889,7 +950,8 @@
                   {
                     "type": "line",
                     "speaker": "Tati",
-                    "text": "Only one piece of silver? I need more!"
+                    "text": "Only one piece of silver? I need more!",
+                    "presentation": "overhead"
                   },
                   {
                     "type": "jump",
@@ -906,7 +968,8 @@
     ],
     "jump-0047d261058daa61": [
       {
-        "npc": "Cheers."
+        "npc": "Cheers.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -920,7 +983,8 @@
           {
             "type": "line",
             "speaker": "Tati",
-            "text": "Only one piece of silver? I need more!"
+            "text": "Only one piece of silver? I need more!",
+            "presentation": "overhead"
           },
           {
             "type": "jump",
@@ -933,7 +997,8 @@
     ],
     "jump-e09f61eb86b18cc8": [
       {
-        "npc": "I'll be right back."
+        "npc": "I'll be right back.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -949,7 +1014,8 @@
               {
                 "type": "line",
                 "speaker": "Vermundi",
-                "text": "What's your father want now?"
+                "text": "What's your father want now?",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -969,10 +1035,12 @@
               {
                 "type": "line",
                 "speaker": "Vermundi",
-                "text": "What'll it be, son?"
+                "text": "What'll it be, son?",
+                "presentation": "overhead"
               },
               {
-                "npc": "Some silk please."
+                "npc": "Some silk please.",
+                "presentation": "overhead"
               },
               {
                 "type": "random",
@@ -981,7 +1049,8 @@
                     "text": "Dialogue 1",
                     "steps": [
                       {
-                        "npc": "Thanks."
+                        "npc": "Thanks.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "jump",
@@ -999,7 +1068,8 @@
                     "text": "Dialogue 2",
                     "steps": [
                       {
-                        "npc": "Cheers."
+                        "npc": "Cheers.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1013,7 +1083,8 @@
                           {
                             "type": "line",
                             "speaker": "Tati",
-                            "text": "These clothes are awful, get me some others!"
+                            "text": "These clothes are awful, get me some others!",
+                            "presentation": "overhead"
                           },
                           {
                             "type": "jump",
@@ -1036,10 +1107,12 @@
       {
         "type": "line",
         "speaker": "Vermundi",
-        "text": "What'll it be, son?"
+        "text": "What'll it be, son?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Some silk please."
+        "npc": "Some silk please.",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -1048,7 +1121,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Thanks."
+                "npc": "Thanks.",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -1066,7 +1140,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Cheers."
+                "npc": "Cheers.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -1080,7 +1155,8 @@
                   {
                     "type": "line",
                     "speaker": "Tati",
-                    "text": "These clothes are awful, get me some others!"
+                    "text": "These clothes are awful, get me some others!",
+                    "presentation": "overhead"
                   },
                   {
                     "type": "jump",
@@ -1097,7 +1173,8 @@
     ],
     "jump-e31f01e8efbd9603": [
       {
-        "npc": "Cheers."
+        "npc": "Cheers.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1111,7 +1188,8 @@
           {
             "type": "line",
             "speaker": "Tati",
-            "text": "These clothes are awful, get me some others!"
+            "text": "These clothes are awful, get me some others!",
+            "presentation": "overhead"
           },
           {
             "type": "jump",
@@ -1124,7 +1202,8 @@
     ],
     "jump-4bcb09f3bd654e65": [
       {
-        "npc": "I'll be right back."
+        "npc": "I'll be right back.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1140,7 +1219,8 @@
               {
                 "type": "line",
                 "speaker": "Nolar",
-                "text": "What's your father want now?"
+                "text": "What's your father want now?",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -1160,10 +1240,12 @@
               {
                 "type": "line",
                 "speaker": "Nolar",
-                "text": "What'll it be, son?"
+                "text": "What'll it be, son?",
+                "presentation": "overhead"
               },
               {
-                "npc": "A chisel please."
+                "npc": "A chisel please.",
+                "presentation": "overhead"
               },
               {
                 "type": "random",
@@ -1172,7 +1254,8 @@
                     "text": "Dialogue 1",
                     "steps": [
                       {
-                        "npc": "Thanks."
+                        "npc": "Thanks.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "jump",
@@ -1190,7 +1273,8 @@
                     "text": "Dialogue 2",
                     "steps": [
                       {
-                        "npc": "Cheers."
+                        "npc": "Cheers.",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1204,7 +1288,8 @@
                           {
                             "type": "line",
                             "speaker": "Tati",
-                            "text": "This chisel's rubbish, get me another!"
+                            "text": "This chisel's rubbish, get me another!",
+                            "presentation": "overhead"
                           },
                           {
                             "type": "jump",
@@ -1225,7 +1310,8 @@
     ],
     "jump-52d265d380670531": [
       {
-        "npc": "Thanks."
+        "npc": "Thanks.",
+        "presentation": "overhead"
       },
       {
         "type": "jump",
@@ -1240,7 +1326,8 @@
     ],
     "jump-a4677027446a5f1d": [
       {
-        "npc": "Cheers."
+        "npc": "Cheers.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1254,7 +1341,8 @@
           {
             "type": "line",
             "speaker": "Tati",
-            "text": "This chisel's rubbish, get me another!"
+            "text": "This chisel's rubbish, get me another!",
+            "presentation": "overhead"
           },
           {
             "type": "jump",

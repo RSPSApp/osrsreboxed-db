@@ -298,7 +298,8 @@
       {
         "type": "line",
         "speaker": "Thaerisk",
-        "text": "Assassins!"
+        "text": "Assassins!",
+        "presentation": "overhead"
       }
     ],
     "the-crux-eqal-assassin-special-attack": [
@@ -3957,7 +3958,8 @@
       {
         "type": "line",
         "speaker": "Mercenary mage",
-        "text": "Kill the Armadyl-worshipping scum!"
+        "text": "Kill the Armadyl-worshipping scum!",
+        "presentation": "overhead"
       }
     ],
     "forming-a-fellowship-talking-to-idria": [
@@ -11578,7 +11580,8 @@
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "Powered staves are no match for my magic!"
+            "text": "Powered staves are no match for my magic!",
+            "presentation": "overhead"
           }
         ],
         "id": "6xOCya"
@@ -11590,22 +11593,26 @@
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "I am unstoppable!"
+            "text": "I am unstoppable!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "My mind is pure arcanery!"
+            "text": "My mind is pure arcanery!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "My magic transcends everything you know!"
+            "text": "My magic transcends everything you know!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "You face the greatest wizard ever to live!"
+            "text": "You face the greatest wizard ever to live!",
+            "presentation": "overhead"
           }
         ],
         "id": "PAhdCr"
@@ -11617,7 +11624,8 @@
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "Witness true sorcery!"
+            "text": "Witness true sorcery!",
+            "presentation": "overhead"
           }
         ],
         "id": "YZ9-ev"
@@ -11629,7 +11637,8 @@
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "Magicus ignitus!"
+            "text": "Magicus ignitus!",
+            "presentation": "overhead"
           }
         ],
         "id": "1_4BER"
@@ -11641,7 +11650,8 @@
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "Barrerus arcanicus!"
+            "text": "Barrerus arcanicus!",
+            "presentation": "overhead"
           }
         ],
         "id": "3Ai4KB"
@@ -11653,7 +11663,8 @@
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "Fighting you is beneath me!"
+            "text": "Fighting you is beneath me!",
+            "presentation": "overhead"
           },
           {
             "type": "condition",
@@ -11662,17 +11673,20 @@
               {
                 "type": "line",
                 "speaker": "Strong Warrior",
-                "text": "My strength is yours, master!"
+                "text": "My strength is yours, master!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Strong Warrior",
-                "text": "Now!"
+                "text": "Now!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Strong Warrior",
-                "text": "Ha! None can break free from my strength!"
+                "text": "Ha! None can break free from my strength!",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -11689,17 +11703,20 @@
               {
                 "type": "line",
                 "speaker": "Agile Warrior",
-                "text": "My nimbleness is yours, master!"
+                "text": "My nimbleness is yours, master!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Agile Warrior",
-                "text": "Now!"
+                "text": "Now!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Agile Warrior",
-                "text": "Too slow!"
+                "text": "Too slow!",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -11712,7 +11729,8 @@
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "Magicus tremurus!"
+            "text": "Magicus tremurus!",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -11727,7 +11745,8 @@
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "Ugh!"
+            "text": "Ugh!",
+            "presentation": "overhead"
           }
         ],
         "id": "EL-KWa"
@@ -14489,7 +14508,8 @@
       {
         "type": "line",
         "speaker": "Idria",
-        "text": "We're with you, [player name]!"
+        "text": "We're with you, [player name]!",
+        "presentation": "overhead"
       }
     ],
     "into-the-chasm-talking-to-akrisae-before-killing-the-tormented-demons": [
@@ -14510,7 +14530,8 @@
       {
         "type": "line",
         "speaker": "Idria",
-        "text": "That was astounding, [player name]! Good work!"
+        "text": "That was astounding, [player name]! Good work!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -16616,10 +16637,6 @@
         "type": "message",
         "text": "You take a moment of silence in honour of your fallen friend, Cyrisus.",
         "id": "jTyP5i"
-      },
-      {
-        "type": "unavailable",
-        "id": "ZeKlul"
       }
     ]
   },

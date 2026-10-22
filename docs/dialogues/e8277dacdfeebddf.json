@@ -859,7 +859,8 @@
               {
                 "type": "line",
                 "speaker": "Melzar the Mad",
-                "text": "By the power of custard!"
+                "text": "By the power of custard!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -869,7 +870,8 @@
               {
                 "type": "line",
                 "speaker": "Melzar the Mad",
-                "text": "Feel the wrath of my feet!"
+                "text": "Feel the wrath of my feet!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -879,7 +881,8 @@
               {
                 "type": "line",
                 "speaker": "Melzar the Mad",
-                "text": "Let me drink my tea in peace."
+                "text": "Let me drink my tea in peace.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -889,7 +892,8 @@
               {
                 "type": "line",
                 "speaker": "Melzar the Mad",
-                "text": "Leave me alone, I need to feed my pet rock."
+                "text": "Leave me alone, I need to feed my pet rock.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -1250,7 +1254,8 @@
       {
         "type": "line",
         "speaker": "Wormbrain",
-        "text": "Ow!"
+        "text": "Ow!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -2357,82 +2362,7 @@
         "type": "choice",
         "options": [
           {
-            "text": "Yes, who are you?",
-            "steps": [
-              {
-                "player": "Yes, who are you?"
-              },
-              {
-                "type": "line",
-                "speaker": "Trader Stan",
-                "text": "Why, I'm Trader Stan, owner and operator of the largest fleet of trading ships and chartered vessels to ever sail the seas!"
-              },
-              {
-                "type": "line",
-                "speaker": "Trader Stan",
-                "text": "If you want to get to a port in a hurry, then you can charter one of my ships to take you there, if the price is right..."
-              },
-              {
-                "player": "So, where exactly can I go with your ships?"
-              },
-              {
-                "type": "line",
-                "speaker": "Trader Stan",
-                "text": "We run ships all over the place. Port Sarim, Catherby, Brimhaven, Musa Point and Port Khazard are just a few of our many destinations!"
-              },
-              {
-                "player": "If you visit a lot of ports, I take it you have some exotic stuff to trade?"
-              },
-              {
-                "type": "line",
-                "speaker": "Trader Stan",
-                "text": "We certainly do! My crew and I have access to items bought and sold from around the world. Would you like to take a look? Or would you like to charter a ship?"
-              },
-              {
-                "type": "choice",
-                "options": [
-                  {
-                    "text": "Yes, let's see what you're trading.",
-                    "steps": [
-                      {
-                        "player": "Yes, let's see what you're trading."
-                      },
-                      {
-                        "type": "action",
-                        "action": "open_shop",
-                        "target": "Trader Stan's Trading Post",
-                        "id": "6CvgvV"
-                      }
-                    ]
-                  },
-                  {
-                    "text": "Yes, I would like to charter a ship.",
-                    "steps": [
-                      {
-                        "type": "jump",
-                        "id": "abTMT2",
-                        "steps": [
-                          {
-                            "type": "call",
-                            "branch": "jump-c84ee89ebbf19cf4"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "text": "No thanks.",
-                    "steps": [
-                      {
-                        "type": "jump",
-                        "reference": "below",
-                        "id": "PWQwgC"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "text": "Yes, who are you?"
           },
           {
             "text": "Yes, I would like to charter a ship.",
@@ -3548,10 +3478,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "0KEI_n"
-      },
-      {
-        "type": "unavailable",
-        "id": "nyktLE"
       }
     ]
   },
@@ -3796,29 +3722,6 @@
     "jump-1eb535746eb22aef": [
       {
         "player": "Okay, I'll get going!"
-      },
-      {
-        "type": "end"
-      }
-    ],
-    "jump-c84ee89ebbf19cf4": [
-      {
-        "player": "Yes, I would like to charter a ship."
-      },
-      {
-        "type": "line",
-        "speaker": "Trader Stan",
-        "text": "[Certainly sir/Certainly madam/Certainly]. Where would you like to go?"
-      },
-      {
-        "type": "action",
-        "text": "The player chooses from the map interface.",
-        "id": "NAxaHN"
-      },
-      {
-        "type": "line",
-        "speaker": "Trader Stan",
-        "text": "Crandor? Are you crazy? No charter ship would take you to that island. You'd need to use your own ship, but even then, you'd need a miracle to find a safe route there!"
       },
       {
         "type": "end"

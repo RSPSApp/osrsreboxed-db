@@ -2412,12 +2412,14 @@
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Goblin!"
+        "text": "Goblin!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Kill it!"
+        "text": "Kill it!",
+        "presentation": "overhead"
       }
     ],
     "the-distraction-sergeants-when-in-combat-with-the-guards": [
@@ -2430,7 +2432,8 @@
               {
                 "type": "line",
                 "speaker": "Sergeant Mossfists/Slimetoes",
-                "text": "Quick! Me keep human busy!"
+                "text": "Quick! Me keep human busy!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2440,7 +2443,8 @@
               {
                 "type": "line",
                 "speaker": "Sergeant Mossfists/Slimetoes",
-                "text": "Ha ha ha!"
+                "text": "Ha ha ha!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2450,7 +2454,8 @@
               {
                 "type": "line",
                 "speaker": "Sergeant Mossfists/Slimetoes",
-                "text": "Take that!"
+                "text": "Take that!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -2461,7 +2466,8 @@
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "You there!"
+        "text": "You there!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -2473,7 +2479,8 @@
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Intruder!"
+        "text": "Intruder!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -2544,28 +2551,32 @@
       {
         "type": "line",
         "speaker": "Sigmund",
-        "text": "Saradomin protect me from melee!"
+        "text": "Saradomin protect me from melee!",
+        "presentation": "overhead"
       }
     ],
     "climbing-down-to-the-railway-if-sigmund-is-attacked-with-ranged": [
       {
         "type": "line",
         "speaker": "Sigmund",
-        "text": "Saradomin protect me from missiles!"
+        "text": "Saradomin protect me from missiles!",
+        "presentation": "overhead"
       }
     ],
     "climbing-down-to-the-railway-if-sigmund-is-attacked-with-magic": [
       {
         "type": "line",
         "speaker": "Sigmund",
-        "text": "Saradomin protect me from magic"
+        "text": "Saradomin protect me from magic",
+        "presentation": "overhead"
       }
     ],
     "climbing-down-to-the-railway-attempting-to-untie-zanik-during-the-fight": [
       {
         "type": "line",
         "speaker": "Sigmund",
-        "text": "Got you!"
+        "text": "Got you!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -2646,10 +2657,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "jiiizC"
-      },
-      {
-        "type": "unavailable",
-        "id": "ovRwNO"
       }
     ]
   },

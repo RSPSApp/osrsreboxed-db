@@ -35,7 +35,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Remember - a slow wolf is a hungry wolf!!"
+                "npc": "Remember - a slow wolf is a hungry wolf!!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -43,7 +44,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Get on with it - you need your whiskers perking!!!!"
+                "npc": "Get on with it - you need your whiskers perking!!!!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -51,7 +53,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Claws first - think later."
+                "npc": "Claws first - think later.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -59,7 +62,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Imagine the smell of blood in your nostrils!!!"
+                "npc": "Imagine the smell of blood in your nostrils!!!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -67,7 +71,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "I never really wanted to be an agility trainer..."
+                "npc": "I never really wanted to be an agility trainer...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -75,7 +80,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "It'll be worth it when you hunt!!"
+                "npc": "It'll be worth it when you hunt!!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -83,7 +89,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Let's see those powerful backlegs at work!!"
+                "npc": "Let's see those powerful backlegs at work!!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -91,7 +98,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "Let the bloodlust take you!!"
+                "npc": "Let the bloodlust take you!!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -99,7 +107,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "You're the slowest wolf I've ever had the misfortune to witness!!"
+                "npc": "You're the slowest wolf I've ever had the misfortune to witness!!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -107,7 +116,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "When you're done there's a human with your name on it!!"
+                "npc": "When you're done there's a human with your name on it!!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -116,7 +126,8 @@
     ],
     "overhead-dialogue-with-ring-of-charos-when-climbing-up-the-skull-slope-without-picking-up-the-stick": [
       {
-        "npc": "You idiot - you've forgotten the stick!!!!"
+        "npc": "You idiot - you've forgotten the stick!!!!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-with-ring-of-charos-zip-line": [
@@ -127,10 +138,12 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Give my regards to the ground..."
+                "npc": "Give my regards to the ground...",
+                "presentation": "overhead"
               },
               {
-                "player": "WAAAAAARRRGGGHHHH!!!!!!"
+                "player": "WAAAAAARRRGGGHHHH!!!!!!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -138,7 +151,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Don't let the spikes or the blood put you off..."
+                "npc": "Don't let the spikes or the blood put you off...",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -156,7 +170,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Now for a true test of teeth..."
+                "npc": "Now for a true test of teeth...",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -175,38 +190,46 @@
     ],
     "overhead-dialogue-without-ring-of-charos-regular-obstacle": [
       {
-        "npc": "You shouldn't even be here, human!"
+        "npc": "You shouldn't even be here, human!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-without-ring-of-charos-zip-line": [
       {
-        "npc": "Let's see how strong human teeth are..."
+        "npc": "Let's see how strong human teeth are...",
+        "presentation": "overhead"
       },
       {
-        "player": "WAAAAAARRRGGGHHHH!!!!!!"
+        "player": "WAAAAAARRRGGGHHHH!!!!!!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-end": [
       {
-        "npc": "Remember - no stick, no agility bonus!"
+        "npc": "Remember - no stick, no agility bonus!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Bring me the stick when you've finished the course!"
+        "npc": "Bring me the stick when you've finished the course!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Don't forget to give me the stick when you're done!"
+        "npc": "Don't forget to give me the stick when you're done!",
+        "presentation": "overhead"
       }
     ]
   },
   "branches": {
     "jump-cfc17aecde011e4d": [
       {
-        "npc": "Get on with it - you need your whiskers perking!!!!"
+        "npc": "Get on with it - you need your whiskers perking!!!!",
+        "presentation": "overhead"
       }
     ],
     "jump-5b75d9118948fe90": [
       {
-        "npc": "Claws first - think later."
+        "npc": "Claws first - think later.",
+        "presentation": "overhead"
       }
     ]
   }

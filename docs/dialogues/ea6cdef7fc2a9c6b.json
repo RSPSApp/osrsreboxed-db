@@ -250,7 +250,8 @@
                         {
                           "type": "line",
                           "speaker": "Port Wizard Perrie/Peter/Petra",
-                          "text": "Another recovery? This won't take long..."
+                          "text": "Another recovery? This won't take long...",
+                          "presentation": "overhead"
                         }
                       ]
                     },
@@ -260,7 +261,8 @@
                         {
                           "type": "line",
                           "speaker": "Port Wizard Perrie/Peter/Petra",
-                          "text": "Need a recovery? One moment please..."
+                          "text": "Need a recovery? One moment please...",
+                          "presentation": "overhead"
                         }
                       ]
                     },
@@ -270,7 +272,8 @@
                         {
                           "type": "line",
                           "speaker": "Port Wizard Perrie/Peter/Petra",
-                          "text": "Recovery is it? Right, give me a moment..."
+                          "text": "Recovery is it? Right, give me a moment...",
+                          "presentation": "overhead"
                         }
                       ]
                     }

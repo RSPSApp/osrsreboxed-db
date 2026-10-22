@@ -82,6 +82,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "For Karlo!"
               }
             ]
@@ -90,6 +91,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Into the tunnels, quick!"
               }
             ]
@@ -98,6 +100,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Let's go!"
               }
             ]
@@ -106,6 +109,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Quickly, while it's recovering!"
               }
             ]
@@ -114,6 +118,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "What's it left this time?"
               }
             ]
@@ -129,6 +134,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "It's coming back!"
               }
             ]
@@ -137,6 +143,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Prepare yourselves!"
               }
             ]
@@ -145,6 +152,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Retreat!"
               }
             ]
@@ -153,6 +161,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Run!"
               }
             ]

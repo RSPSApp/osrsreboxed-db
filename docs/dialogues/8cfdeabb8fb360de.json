@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "By the power of custard!"
+                "npc": "By the power of custard!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Feel the wrath of my feet!"
+                "npc": "Feel the wrath of my feet!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Let me drink my tea in peace."
+                "npc": "Let me drink my tea in peace.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Leave me alone, I need to feed my pet rock."
+                "npc": "Leave me alone, I need to feed my pet rock.",
+                "presentation": "overhead"
               }
             ]
           }

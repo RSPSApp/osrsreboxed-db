@@ -154,7 +154,8 @@
         "text": "Upon spawning in:",
         "steps": [
           {
-            "npc": "It be yer lucky day, Foresters!"
+            "npc": "It be yer lucky day, Foresters!",
+            "presentation": "overhead"
           }
         ],
         "id": "nH94jN"
@@ -164,7 +165,8 @@
         "text": "Before the last end of rainbow spawns:",
         "steps": [
           {
-            "npc": "I'll have to go shortly..."
+            "npc": "I'll have to go shortly...",
+            "presentation": "overhead"
           }
         ],
         "id": "ctxzBa"
@@ -174,7 +176,8 @@
         "text": "Upon leaving:",
         "steps": [
           {
-            "npc": "Well, I must be getting on now."
+            "npc": "Well, I must be getting on now.",
+            "presentation": "overhead"
           }
         ],
         "id": "YHKV66"

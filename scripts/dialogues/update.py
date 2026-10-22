@@ -5,6 +5,7 @@ Run with --offline to rebuild from data/dialogues/wiki-pages.json without fetchi
 
 import argparse
 import collections
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -16,10 +17,13 @@ from scripts.dialogues.fetch import (
     CACHE,
     QUEST_CACHE,
     NPC_CACHE,
+    TEMPLATE_CACHE,
     fetch,
-    read_cache,
+    load_navigation_templates,
     participant_pages,
+    read_cache,
     save,
+    trailing_template_name,
 )
 from scripts.dialogues.hooks import enrich_records, walk as dialogue_nodes
 from scripts.dialogues.compact import compact_record, write_split
@@ -124,11 +128,35 @@ def infer_action(text):
     return {}
 
 
+def speaker_label(raw):
+    label = clean(raw).strip()
+    if label.endswith(":"):
+        return label[:-1].strip()
+    if len(label) >= 3 and label[-1] in "'\"" and label[-2] == ":":
+        return (label[:-2] + label[-1]).strip()
+    return None
+
+
 def parse_step(raw, issues, line):
-    speech = re.fullmatch(r"'''(.+?):'''\s*(.*)", raw)
-    if speech:
+    code = mw.parse(str(raw))
+    anchors = []
+    for template in code.filter_templates(recursive=False):
+        if str(template.name).strip().casefold() != "anchor":
+            continue
+        if template.has(1):
+            anchor = clean(template.get(1).value).strip()
+            if anchor:
+                anchors.append(anchor)
+        code.replace(template, "")
+    if anchors:
+        node = parse_step(str(code).strip(), issues, line)
+        node["_anchors"] = anchors
+        return node
+    speech = re.fullmatch(r"'''(.*?)'''\s*(.*)", raw, re.S)
+    speaker = speaker_label(speech[1]) if speech else None
+    if speaker is not None:
         text = clean(speech[2])
-        node = dict(type="line", speaker=clean(speech[1]), text=text)
+        node = dict(type="line", speaker=speaker, text=text)
         if "{{overhead" in raw.lower():
             node["display"] = "overhead"
         if "{{" in text:
@@ -147,8 +175,10 @@ def parse_step(raw, issues, line):
                 node = parse_step(option, issues, line)
                 node["condition"] = f"If the player has completed {after[1]}:"
                 return node
-    if len(templates) == 1 and str(templates[0]) == raw:
-        t = templates[0]
+    cleaned = clean(raw)
+    cleaned_templates = mw.parse(cleaned).filter_templates(recursive=False)
+    if len(cleaned_templates) == 1 and str(cleaned_templates[0]) == cleaned:
+        t = cleaned_templates[0]
         name = str(t.name).strip().lower()
         # Resolve links before clean() discards their page/section identity.
         if name in ("tact", "qact"):
@@ -214,6 +244,14 @@ def parse_step(raw, issues, line):
             if text == "members":
                 return dict(type="end", reason="members")
             if re.fullmatch(r"above|below|previous\d*|initial|other|continues?", text):
+                anchor = args.get("2", "").strip()
+                if anchor and text in ("above", "below"):
+                    return dict(
+                        type="jump",
+                        target=None,
+                        reference=text,
+                        _anchor=anchor,
+                    )
                 issues.append(
                     dict(line=line, reason="Unresolved dialogue reference", raw=raw)
                 )
@@ -274,9 +312,60 @@ def group_options(nodes, random_options=False):
                         option_nodes[-1].setdefault("steps", []).append(child)
                 i += 1
             if not option_nodes or node["type"] == "option":
-                while i < len(nodes) and nodes[i]["type"] == "option":
-                    option_nodes.append(nodes[i])
-                    i += 1
+                while i < len(nodes):
+                    sibling = nodes[i]
+                    if sibling["type"] == "option":
+                        option_nodes.append(sibling)
+                        i += 1
+                        continue
+                    if not option_nodes:
+                        break
+                    next_option = next(
+                        (
+                            index
+                            for index in range(i + 1, len(nodes))
+                            if nodes[index]["type"] == "option"
+                            or nodes[index]["type"] in ("menu", "random_marker")
+                        ),
+                        len(nodes),
+                    )
+                    between = nodes[i:next_option]
+                    if (
+                        next_option < len(nodes)
+                        and nodes[next_option]["type"] == "option"
+                        and between
+                        and all(step["type"] in ("action", "end") for step in between)
+                    ):
+                        # Some source pages put an option's action/end body at
+                        # the same bullet depth, before the next alternative.
+                        option_nodes[-1].setdefault("steps", []).extend(between)
+                        i = next_option
+                        continue
+                    option_text = str(option_nodes[-1].get("text", "")).rstrip(".!?")
+                    if (
+                        sibling.get("type") == "line"
+                        and sibling.get("speaker", "").casefold() == "player"
+                        and sibling.get("text", "").rstrip(".!?").casefold() == option_text.casefold()
+                    ):
+                        # A same-depth player echo is the option's response;
+                        # keep the continuation only until the next alternative.
+                        # Do not absorb another parent-level choice into this branch.
+                        next_control = next(
+                            (
+                                index
+                                for index in range(i + 1, len(nodes))
+                                if nodes[index]["type"]
+                                in ("option", "menu", "random_marker", "condition")
+                            ),
+                            len(nodes),
+                        )
+                        option_nodes[-1].setdefault("steps", []).extend(
+                            nodes[i:next_control]
+                        )
+                        i = next_control
+                        if i < len(nodes) and nodes[i]["type"] == "option":
+                            continue
+                    break
             for option in option_nodes:
                 group["options"].append(
                     {k: v for k, v in option.items() if k != "type"}
@@ -356,7 +445,72 @@ def select_default(variants):
     )
 
 
-def parse_npc(name, raw):
+COMPLETION_ACTION = "Congratulations! Quest complete!"
+
+
+def normalize_terminal_completion(steps):
+    for node in steps:
+        if node.get("steps"):
+            normalize_terminal_completion(node["steps"])
+        for option in node.get("options", []):
+            normalize_terminal_completion([option])
+    if (
+        len(steps) >= 2
+        and steps[-2] == {"type": "end"}
+        and steps[-1].get("type") == "action"
+        and steps[-1].get("text") == COMPLETION_ACTION
+    ):
+        steps[-2], steps[-1] = steps[-1], steps[-2]
+    return steps
+
+
+def apply_structure_annotations(name, raw, structure=None, revision=None):
+    """Apply reviewed bullet-depth fixes to cached wiki text.
+
+    Each fix names an exact source line and its hash, so a refreshed revision
+    stops the dump for review instead of silently moving content. Only the
+    bullet prefix changes; dialogue, templates, order and line endings stay in
+    the source.
+    """
+    if not structure:
+        return raw
+    if revision is not None and structure.get("revision") != revision:
+        raise ValueError(f"Stale dialogue structure annotation: {name}")
+    lines = raw.splitlines(keepends=True)
+    for fix in structure.get("lines", []):
+        number = fix["line"]
+        if not isinstance(number, int) or not 0 < number <= len(lines):
+            raise ValueError(
+                f"Stale dialogue structure annotation: {name} line {number}"
+            )
+        line = lines[number - 1]
+        body, ending = line, ""
+        for terminator in ("\r\n", "\r", "\n"):
+            if line.endswith(terminator):
+                body, ending = line[: -len(terminator)], terminator
+                break
+        if hashlib.sha256(body.encode()).hexdigest() != fix["sha256"]:
+            raise ValueError(
+                f"Stale dialogue structure annotation: {name} line {number}"
+            )
+        bullet = re.match(r"\*+", body)
+        if not bullet:
+            raise ValueError(
+                f"Unbulleted dialogue structure annotation: {name} line {number}"
+            )
+        depth = fix["depth"]
+        if not isinstance(depth, int) or isinstance(depth, bool) or depth < 1:
+            raise ValueError(
+                f"Invalid dialogue structure annotation depth: {name} line {number}"
+            )
+        lines[number - 1] = "*" * depth + body[bullet.end() :] + ending
+    return "".join(lines)
+
+
+def parse_npc(name, raw, nav_templates=None):
+    if nav_templates is None:
+        nav_templates = load_navigation_templates()
+    nav_template_names = {template.casefold() for template in nav_templates}
     variants, issues, headings = {}, [], []
     participants = participant_pages(raw)
     stack = []
@@ -365,7 +519,12 @@ def parse_npc(name, raw):
         r"<!--.*?-->", lambda match: "\n" * match[0].count("\n"), raw, flags=re.S
     )
     poem = None
-    for number, original in enumerate(raw.splitlines(), 1):
+    source_lines = raw.splitlines()
+    last_content_line = max(
+        (number for number, text in enumerate(source_lines, 1) if text.strip()),
+        default=0,
+    )
+    for number, original in enumerate(source_lines, 1):
         node_override = None
         line = original.strip()
         if not line:
@@ -424,6 +583,13 @@ def parse_npc(name, raw):
             continue
         bullet = re.fullmatch(r"(\*+)\s*(.*)", line)
         depth, body = (len(bullet[1]), bullet[2]) if bullet else (1, line)
+        footer = trailing_template_name(original, name)
+        if (
+            number == last_content_line
+            and footer
+            and footer.casefold() in nav_template_names
+        ):
+            continue
         node = node_override or parse_step(body, issues, number)
         while stack and stack[-1][0] >= depth:
             stack.pop()
@@ -439,6 +605,7 @@ def parse_npc(name, raw):
             "Standard dialogue"
         ]
         variant["steps"] = group_options(variant["steps"], random_options=is_oracle)
+        normalize_terminal_completion(variant["steps"])
         if is_oracle:
             variant["notes"] = [
                 "Curated: numbered alternatives are random dialogue, not player choices; probabilities unknown."
@@ -476,9 +643,13 @@ def gameplay_step(node, name):
                 "prompt",
                 "_shared",
                 "_identity",
+                "_anchors",
+                "_anchor",
             )
             and value is not None
         }
+    if node.get("display") == "overhead":
+        result["presentation"] = "overhead"
     if node.get("steps"):
         result["steps"] = [gameplay_step(child, name) for child in node["steps"]]
     if "options" in node:
@@ -758,13 +929,19 @@ def main():
         parser.error("--refresh cannot be combined with --offline")
     if args.offline:
         missing = [
-            str(path) for path in (CACHE, QUEST_CACHE, NPC_CACHE) if not path.exists()
+            str(path)
+            for path in (CACHE, QUEST_CACHE, NPC_CACHE, TEMPLATE_CACHE)
+            if not path.exists()
         ]
         if missing:
             parser.error(
                 "Missing source caches; run online first: " + ", ".join(missing)
             )
     pages = read_cache(CACHE) if args.offline else fetch(refresh=args.refresh)
+    nav_templates = load_navigation_templates()
+    bindings = json.loads(
+        (config.DATA_PATH / "dialogues" / "runtime-bindings.json").read_text()
+    )
     npcs, quests, issues = {}, {}, {}
     for sources, output in ((pages, npcs), (read_cache(QUEST_CACHE), quests)):
         for title, page in sorted(sources.items()):
@@ -772,16 +949,17 @@ def main():
                 issues[title] = [{"reason": "Missing referenced page"}]
                 continue
             name = title.removeprefix("Transcript:")
-            parsed = parse_npc(name, page["wikitext"])
+            structure = bindings.get(name, {}).get("structure")
+            raw = apply_structure_annotations(
+                name, page["wikitext"], structure, page["revision"]
+            )
+            parsed = parse_npc(name, raw, nav_templates)
             output[name] = gameplay_npc(name, parsed)
             output[name]["source"] = {"page": title, "revision": page["revision"]}
             if parsed["review_issues"]:
                 issues[title] = parsed["review_issues"]
     if npcs.keys() & quests.keys():
         raise ValueError("NPC and quest transcript names overlap")
-    bindings = json.loads(
-        (config.DATA_PATH / "dialogues" / "runtime-bindings.json").read_text()
-    )
     index = enrich_records(npcs, quests, read_cache(NPC_CACHE), clean, bindings)
     resolved = resolve_shops(npcs, shop_index())
     # Shared quest replies retain their NPC source IDs, including inferred shops.

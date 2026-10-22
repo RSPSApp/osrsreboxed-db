@@ -24,6 +24,7 @@
             "text": "Dialogue 1:",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "[player name]?"
               }
             ]
@@ -32,6 +33,7 @@
             "text": "Dialogue 2:",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Are you there [player name]?"
               }
             ]
@@ -40,6 +42,7 @@
             "text": "Dialogue 3:",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "[player name]? I have a message for you."
               }
             ]
@@ -48,6 +51,7 @@
             "text": "Dialogue 4:",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "[player name]? You've been sent a message."
               }
             ]
@@ -59,6 +63,7 @@
         "text": "If the player ignores them for too long:",
         "steps": [
           {
+            "presentation": "overhead",
             "npc": "Maybe another time."
           }
         ],

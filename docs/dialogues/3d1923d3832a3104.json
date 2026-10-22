@@ -5,17 +5,21 @@
       {
         "type": "line",
         "speaker": "Dig Site workman",
-        "text": "Got another load for ya!"
+        "text": "Got another load for ya!",
+        "presentation": "overhead"
       },
       {
+        "presentation": "overhead",
         "npc": "Great, just what my arms need!"
       }
     ],
     "overhead-dialogue-taking-a-break-while-travelling-to-varrock-just-before-reaching-the-gate": [
       {
+        "presentation": "overhead",
         "npc": "Ohhh, time for a break."
       },
       {
+        "presentation": "overhead",
         "npc": "Time I got moving..."
       }
     ],
@@ -23,22 +27,27 @@
       {
         "type": "line",
         "speaker": "Museum Guard",
-        "text": "Keep 'em coming!"
+        "text": "Keep 'em coming!",
+        "presentation": "overhead"
       },
       {
+        "presentation": "overhead",
         "npc": "Bleah"
       }
     ],
     "overhead-dialogue-upon-reaching-varrock-museum-while-unloading-the-wheelbarrow-near-the-dig-site-specimen-rocks": [
       {
+        "presentation": "overhead",
         "npc": "Another lot for ya!"
       },
       {
         "type": "line",
         "speaker": "[Sinco Doar/Tinse Torpe]",
-        "text": "Alright, thanks!"
+        "text": "Alright, thanks!",
+        "presentation": "overhead"
       },
       {
+        "presentation": "overhead",
         "npc": "Off we go again!"
       }
     ],
@@ -53,14 +62,17 @@
         "text": "If the chosen guard is not under attack from a player:",
         "steps": [
           {
+            "presentation": "overhead",
             "npc": "How's it going, officers?"
           },
           {
             "type": "line",
             "speaker": "Guard",
-            "text": "Another boring day."
+            "text": "Another boring day.",
+            "presentation": "overhead"
           },
           {
+            "presentation": "overhead",
             "npc": "Nothing new there."
           }
         ],
@@ -71,14 +83,17 @@
         "text": "If the chosen guard is under attack from a player:",
         "steps": [
           {
+            "presentation": "overhead",
             "npc": "How's it going, officers?"
           },
           {
             "type": "line",
             "speaker": "Guard",
-            "text": "I'm being slaughtered!"
+            "text": "I'm being slaughtered!",
+            "presentation": "overhead"
           },
           {
+            "presentation": "overhead",
             "npc": "Nothing new there."
           }
         ],
@@ -89,9 +104,11 @@
         "text": "If all of the guards are currently dead:",
         "steps": [
           {
+            "presentation": "overhead",
             "npc": "How's it going, officers?"
           },
           {
+            "presentation": "overhead",
             "npc": "Oh, they're all dead."
           }
         ],
@@ -102,14 +119,17 @@
       {
         "type": "line",
         "speaker": "Museum Guard",
-        "text": "Don't dawdle there!"
+        "text": "Don't dawdle there!",
+        "presentation": "overhead"
       },
       {
+        "presentation": "overhead",
         "npc": "Yeah, yeah, I'm movin' guv."
       }
     ],
     "overhead-dialogue-taking-a-break-while-travelling-to-the-digsite": [
       {
+        "presentation": "overhead",
         "npc": "Hmm, time for a break."
       }
     ]

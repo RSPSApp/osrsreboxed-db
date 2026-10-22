@@ -111,60 +111,54 @@
                 "type": "choice",
                 "options": [
                   {
-                    "text": "Well, what is it, I may be able to help?"
-                  }
-                ]
-              },
-              {
-                "player": "Well, what is it, I may be able to help?"
-              },
-              {
-                "npc": "There's a man called Filliman who lives in Mort Myre. He comes by the temple from time to time but I haven't seen him recently. I was wondering if you could check in on him?"
-              },
-              {
-                "npc": "I must warn you, it could be dangerous. Mort Myre is filled with ghasts!",
-                "steps": [
-                  {
-                    "type": "choice",
-                    "prompt": "Start Nature Spirit quest?",
-                    "options": [
+                    "text": "Well, what is it, I may be able to help?",
+                    "steps": [
                       {
-                        "text": "Yes.",
-                        "steps": [
-                          {
-                            "type": "reference",
-                            "target": "Transcript:Nature Spirit",
-                            "section": "",
-                            "text": "Continues in Transcript:Nature Spirit",
-                            "id": "4RlfMg",
-                            "resolved": false,
-                            "page_available": true
-                          }
-                        ],
-                        "hook": "quest:nature-spirit:start",
-                        "quest": "Nature Spirit"
+                        "player": "Well, what is it, I may be able to help?"
                       },
                       {
-                        "text": "No.",
+                        "npc": "There's a man called Filliman who lives in Mort Myre. He comes by the temple from time to time but I haven't seen him recently. I was wondering if you could check in on him?"
+                      },
+                      {
+                        "npc": "I must warn you, it could be dangerous. Mort Myre is filled with ghasts!",
                         "steps": [
                           {
-                            "player": "Sorry, I don't think I can help."
-                          },
-                          {
-                            "npc": "That's fine, I'm sure someone else will be along shortly who can. Now, if you will excuse me, I do have some things to be getting on with."
-                          },
-                          {
-                            "type": "end"
+                            "type": "choice",
+                            "prompt": "Start Nature Spirit quest?",
+                            "options": [
+                              {
+                                "text": "Yes.",
+                                "steps": [
+                                  {
+                                    "type": "reference",
+                                    "target": "Transcript:Nature Spirit",
+                                    "section": "",
+                                    "text": "Continues in Transcript:Nature Spirit",
+                                    "id": "Cc2fFg",
+                                    "resolved": false,
+                                    "page_available": true
+                                  }
+                                ],
+                                "hook": "quest:nature-spirit:start",
+                                "quest": "Nature Spirit"
+                              },
+                              {
+                                "text": "No.",
+                                "steps": [
+                                  {
+                                    "player": "Sorry, I don't think I can help."
+                                  },
+                                  {
+                                    "npc": "That's fine, I'm sure someone else will be along shortly who can. Now, if you will excuse me, I do have some things to be getting on with."
+                                  }
+                                ]
+                              }
+                            ]
                           }
                         ]
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "type": "choice",
-                "options": [
+                  },
                   {
                     "text": "Sorry, not interested.",
                     "steps": [

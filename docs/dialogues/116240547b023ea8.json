@@ -31,30 +31,36 @@
     ],
     "overhead-dialogue-when-chompy-flaps-da-toady": [
       {
-        "npc": "Sqwirk!"
+        "npc": "Sqwirk!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-backin-up-from-da-uman": [
       {
-        "npc": "Screech!"
+        "npc": "Screech!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-chompy-eats-da-fatsy-toady": [
       {
-        "npc": "Sqwark!"
+        "npc": "Sqwark!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Bloated toad",
-        "text": "!!Croak!!"
+        "text": "!!Croak!!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Gobble!"
+        "npc": "Gobble!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-chompy-flaps-the-leave": [
       {
-        "npc": "Rawk!"
+        "npc": "Rawk!",
+        "presentation": "overhead"
       }
     ]
   }

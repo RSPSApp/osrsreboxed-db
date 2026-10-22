@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue-once-full": [
       {
-        "npc": "Yawwwwwn!"
+        "npc": "Yawwwwwn!",
+        "presentation": "overhead"
       }
     ]
   }

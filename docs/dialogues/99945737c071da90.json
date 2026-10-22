@@ -3,19 +3,22 @@
   "variants": {
     "overhead-dialogue-when-a-bottle-of-rum-is-finished": [
       {
-        "npc": "Awk! Awk! Rum's done! Rum's done!"
+        "npc": "Awk! Awk! Rum's done! Rum's done!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-at-random": [
       {
-        "npc": "Awk! More ingredients! More ingredients!"
+        "npc": "Awk! More ingredients! More ingredients!",
+        "presentation": "overhead"
       },
       {
         "type": "condition",
         "text": "If the boilers need to be lit and fueled:",
         "steps": [
           {
-            "npc": "Awk! Feed the fires! Feed the fires!"
+            "npc": "Awk! Feed the fires! Feed the fires!",
+            "presentation": "overhead"
           }
         ],
         "id": "viyiBf"
@@ -25,7 +28,8 @@
         "text": "Rarely:",
         "steps": [
           {
-            "npc": "Awk! Gimme a cracker!"
+            "npc": "Awk! Gimme a cracker!",
+            "presentation": "overhead"
           }
         ],
         "id": "uEotwB"
@@ -33,17 +37,20 @@
     ],
     "overhead-dialogue-when-talked-to": [
       {
-        "player": "Polly, what should we do?"
+        "player": "Polly, what should we do?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Awk! More ingredients! More ingredients!"
+        "npc": "Awk! More ingredients! More ingredients!",
+        "presentation": "overhead"
       },
       {
         "type": "condition",
         "text": "If the boilers need to be lit and fueled:",
         "steps": [
           {
-            "npc": "Awk! Feed the fires! Feed the fires!"
+            "npc": "Awk! Feed the fires! Feed the fires!",
+            "presentation": "overhead"
           }
         ],
         "id": "nCkMV9"

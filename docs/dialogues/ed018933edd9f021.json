@@ -14,15 +14,18 @@
     ],
     "overhead-dialogue-if-glenda-notices-the-player-stealing-from-her-stall": [
       {
-        "npc": "Hey! Get your hands off there!"
+        "npc": "Hey! Get your hands off there!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-if-the-player-recently-stole-from-glenda-and-tries-to-talk-to-her": [
       {
-        "npc": "You're the one who stole something from me!"
+        "npc": "You're the one who stole something from me!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards guards!"
+        "npc": "Guards guards!",
+        "presentation": "overhead"
       }
     ]
   }

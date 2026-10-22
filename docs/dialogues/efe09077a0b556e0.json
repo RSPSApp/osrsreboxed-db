@@ -101,10 +101,8 @@
                         "text": "No thank you.",
                         "steps": [
                           {
-                            "player": "No thank you."
-                          },
-                          {
-                            "type": "end"
+                            "type": "call",
+                            "branch": "yR0MTa"
                           }
                         ]
                       }
@@ -271,10 +269,8 @@
                         "text": "No thank you.",
                         "steps": [
                           {
-                            "player": "No thank you."
-                          },
-                          {
-                            "type": "end"
+                            "type": "call",
+                            "branch": "yR0MTa"
                           }
                         ]
                       }
@@ -555,10 +551,8 @@
                                 "text": "No thank you.",
                                 "steps": [
                                   {
-                                    "player": "No thank you."
-                                  },
-                                  {
-                                    "type": "end"
+                                    "type": "call",
+                                    "branch": "yR0MTa"
                                   }
                                 ]
                               }
@@ -598,19 +592,18 @@
                         "steps": [
                           {
                             "player": "No thank you."
-                          },
-                          {
-                            "type": "end"
                           }
                         ]
                       },
                       {
-                        "text": "Actually, I'm fine."
+                        "text": "Actually, I'm fine.",
+                        "steps": [
+                          {
+                            "player": "Actually, I'm fine."
+                          }
+                        ]
                       }
                     ]
-                  },
-                  {
-                    "player": "Actually, I'm fine."
                   }
                 ],
                 "id": "7tAAAb"
@@ -674,10 +667,8 @@
                                             "text": "No thank you.",
                                             "steps": [
                                               {
-                                                "player": "No thank you."
-                                              },
-                                              {
-                                                "type": "end"
+                                                "type": "call",
+                                                "branch": "yR0MTa"
                                               }
                                             ]
                                           },
@@ -775,10 +766,8 @@
                                             "text": "No thank you.",
                                             "steps": [
                                               {
-                                                "player": "No thank you."
-                                              },
-                                              {
-                                                "type": "end"
+                                                "type": "call",
+                                                "branch": "yR0MTa"
                                               }
                                             ]
                                           }
@@ -811,10 +800,8 @@
                                             "text": "No thank you.",
                                             "steps": [
                                               {
-                                                "player": "No thank you."
-                                              },
-                                              {
-                                                "type": "end"
+                                                "type": "call",
+                                                "branch": "yR0MTa"
                                               }
                                             ]
                                           },
@@ -897,10 +884,8 @@
                                     "text": "No thank you.",
                                     "steps": [
                                       {
-                                        "player": "No thank you."
-                                      },
-                                      {
-                                        "type": "end"
+                                        "type": "call",
+                                        "branch": "yR0MTa"
                                       }
                                     ]
                                   }
@@ -1002,15 +987,15 @@
                                             ]
                                           },
                                           {
-                                            "text": "No thank you."
+                                            "text": "No thank you.",
+                                            "steps": [
+                                              {
+                                                "type": "call",
+                                                "branch": "yR0MTa"
+                                              }
+                                            ]
                                           }
                                         ]
-                                      },
-                                      {
-                                        "player": "No thank you."
-                                      },
-                                      {
-                                        "type": "end"
                                       }
                                     ]
                                   },
@@ -1091,15 +1076,15 @@
                                             ]
                                           },
                                           {
-                                            "text": "No thank you."
+                                            "text": "No thank you.",
+                                            "steps": [
+                                              {
+                                                "type": "call",
+                                                "branch": "yR0MTa"
+                                              }
+                                            ]
                                           }
                                         ]
-                                      },
-                                      {
-                                        "player": "No thank you."
-                                      },
-                                      {
-                                        "type": "end"
                                       }
                                     ]
                                   },
@@ -1153,15 +1138,15 @@
                                             ]
                                           },
                                           {
-                                            "text": "No thank you."
+                                            "text": "No thank you.",
+                                            "steps": [
+                                              {
+                                                "type": "call",
+                                                "branch": "yR0MTa"
+                                              }
+                                            ]
                                           }
                                         ]
-                                      },
-                                      {
-                                        "player": "No thank you."
-                                      },
-                                      {
-                                        "type": "end"
                                       }
                                     ]
                                   }
@@ -1260,10 +1245,8 @@
                                     "text": "No thank you.",
                                     "steps": [
                                       {
-                                        "player": "No thank you."
-                                      },
-                                      {
-                                        "type": "end"
+                                        "type": "call",
+                                        "branch": "yR0MTa"
                                       }
                                     ]
                                   },
@@ -1372,7 +1355,7 @@
                         "steps": [
                           {
                             "type": "call",
-                            "branch": "jump-ffd40f580111fe44"
+                            "branch": "jump-5a549a4d34372bf2"
                           }
                         ]
                       }
@@ -2279,7 +2262,7 @@
                 "steps": [
                   {
                     "type": "call",
-                    "branch": "jump-ffd40f580111fe44"
+                    "branch": "jump-5a549a4d34372bf2"
                   }
                 ]
               },
@@ -2540,7 +2523,7 @@
         ]
       }
     ],
-    "jump-ffd40f580111fe44": [
+    "jump-5a549a4d34372bf2": [
       {
         "type": "condition",
         "text": "If the player has above X Fishing:",
@@ -2612,15 +2595,17 @@
             ]
           },
           {
-            "text": "No thank you."
+            "text": "No thank you.",
+            "steps": [
+              {
+                "player": "No thank you."
+              },
+              {
+                "type": "end"
+              }
+            ]
           }
         ]
-      },
-      {
-        "player": "No thank you."
-      },
-      {
-        "type": "end"
       }
     ],
     "jump-c139ce50fedf90e9": [
@@ -3006,15 +2991,17 @@
                                     ]
                                   },
                                   {
-                                    "text": "No thank you."
+                                    "text": "No thank you.",
+                                    "steps": [
+                                      {
+                                        "player": "No thank you."
+                                      },
+                                      {
+                                        "type": "end"
+                                      }
+                                    ]
                                   }
                                 ]
-                              },
-                              {
-                                "player": "No thank you."
-                              },
-                              {
-                                "type": "end"
                               }
                             ]
                           },
@@ -3095,15 +3082,17 @@
                                     ]
                                   },
                                   {
-                                    "text": "No thank you."
+                                    "text": "No thank you.",
+                                    "steps": [
+                                      {
+                                        "player": "No thank you."
+                                      },
+                                      {
+                                        "type": "end"
+                                      }
+                                    ]
                                   }
                                 ]
-                              },
-                              {
-                                "player": "No thank you."
-                              },
-                              {
-                                "type": "end"
                               }
                             ]
                           },
@@ -3157,15 +3146,17 @@
                                     ]
                                   },
                                   {
-                                    "text": "No thank you."
+                                    "text": "No thank you.",
+                                    "steps": [
+                                      {
+                                        "player": "No thank you."
+                                      },
+                                      {
+                                        "type": "end"
+                                      }
+                                    ]
                                   }
                                 ]
-                              },
-                              {
-                                "player": "No thank you."
-                              },
-                              {
-                                "type": "end"
                               }
                             ]
                           }
@@ -3692,6 +3683,14 @@
     "jump-ddc087d0dfd62184": [
       {
         "npc": "Oh, I see. I guess I can't really force you to hand it over. The offer still stands if you ever change your mind."
+      },
+      {
+        "type": "end"
+      }
+    ],
+    "yR0MTa": [
+      {
+        "player": "No thank you."
       },
       {
         "type": "end"

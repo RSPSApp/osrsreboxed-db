@@ -3728,10 +3728,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "BitWHU"
-      },
-      {
-        "type": "unavailable",
-        "id": "vWArVU"
       }
     ]
   },

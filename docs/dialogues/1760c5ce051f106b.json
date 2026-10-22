@@ -2893,7 +2893,8 @@
         "id": "cZ9sOi"
       },
       {
-        "player": "Nnnngh!"
+        "player": "Nnnngh!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -3050,7 +3051,8 @@
       {
         "type": "line",
         "speaker": "Rupert the Beard",
-        "text": "FREEDOM!"
+        "text": "FREEDOM!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -3441,7 +3443,8 @@
         "id": "fj2F-L"
       },
       {
-        "player": "Woah!"
+        "player": "Woah!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -3590,7 +3593,8 @@
           {
             "type": "line",
             "speaker": "Glod",
-            "text": "Gods, give Glod strength!"
+            "text": "Gods, give Glod strength!",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -3610,7 +3614,8 @@
           {
             "type": "line",
             "speaker": "Glod",
-            "text": "Flee, pesky mortal!"
+            "text": "Flee, pesky mortal!",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -3623,7 +3628,8 @@
           {
             "type": "line",
             "speaker": "Glod",
-            "text": "You puny human. Come to Glod!"
+            "text": "You puny human. Come to Glod!",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -3636,7 +3642,8 @@
           {
             "type": "line",
             "speaker": "Glod",
-            "text": "GLOD SMASH!"
+            "text": "GLOD SMASH!",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -3656,7 +3663,8 @@
           {
             "type": "line",
             "speaker": "Glod",
-            "text": "Glod not die so easily!"
+            "text": "Glod not die so easily!",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -3757,7 +3765,8 @@
         "id": "EOlHeG"
       },
       {
-        "player": "Cool!"
+        "player": "Cool!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -3782,7 +3791,8 @@
         "id": "jLeXz1"
       },
       {
-        "player": "Timber!"
+        "player": "Timber!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -3790,7 +3800,8 @@
         "id": "Dtsssn"
       },
       {
-        "player": "Yes!"
+        "player": "Yes!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -3880,9 +3891,6 @@
         "id": "6Cn2LG"
       },
       {
-        "type": "end"
-      },
-      {
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "kDhVWf"
@@ -3901,13 +3909,6 @@
         "type": "line",
         "speaker": "Sylas",
         "text": "Great work, [player name]. Now, I have something for you, but you're going to need a space in your inventory. Speak to me again when you have made some room."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "b4q8E4"
       }
     ]
   },

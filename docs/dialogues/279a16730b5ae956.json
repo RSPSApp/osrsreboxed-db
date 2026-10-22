@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "[player name]! Hand over the medallion!"
+                "npc": "[player name]! Hand over the medallion!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "[player name]! You have something that I want!"
+                "npc": "[player name]! You have something that I want!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "[player name]! I want that medallion!"
+                "npc": "[player name]! I want that medallion!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -38,7 +41,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Sandwiches, [player name]!"
+            "npc": "Sandwiches, [player name]!",
+            "presentation": "overhead"
           }
         ],
         "id": "k7Eytk"
@@ -48,7 +52,8 @@
         "text": "Upon talking to the \"sandwich lady\":",
         "steps": [
           {
-            "npc": "Not who you expected, [player name]? Give me the medallion!"
+            "npc": "Not who you expected, [player name]? Give me the medallion!",
+            "presentation": "overhead"
           }
         ],
         "id": "xCd9P8"
@@ -58,7 +63,8 @@
         "text": "Upon attempting to dismiss the \"sandwich lady\":",
         "steps": [
           {
-            "npc": "You can't dismiss me, [player name]! Give me the medallion!"
+            "npc": "You can't dismiss me, [player name]! Give me the medallion!",
+            "presentation": "overhead"
           }
         ],
         "id": "xyqVfk"
@@ -68,7 +74,8 @@
         "text": "If the player does not interact with the \"sandwich lady\" for long enough:",
         "steps": [
           {
-            "npc": "Enough of this, [player name]! Give me the medallion!"
+            "npc": "Enough of this, [player name]! Give me the medallion!",
+            "presentation": "overhead"
           }
         ],
         "id": "pU09ET"
@@ -82,7 +89,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Welcome home, [player name]. Now, give me the medallion!"
+                "npc": "Welcome home, [player name]. Now, give me the medallion!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -90,7 +98,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Nice house, [player name]. Now, give me the medallion!"
+                "npc": "Nice house, [player name]. Now, give me the medallion!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -108,7 +117,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Welcome back, [player name]. Now, give me the medallion!"
+                "npc": "Welcome back, [player name]. Now, give me the medallion!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -116,7 +126,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'm still here, [player name]! Now give me the medallion!"
+                "npc": "I'm still here, [player name]! Now give me the medallion!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -131,7 +142,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Going somewhere, [player name]? We have unfinished business!"
+                "npc": "Going somewhere, [player name]? We have unfinished business!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -139,7 +151,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "In a rush, [player name]? We have unfinished business!"
+                "npc": "In a rush, [player name]? We have unfinished business!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -161,7 +174,8 @@
             "text": "If the Mysterious Figure has above 120 hitpoints:",
             "steps": [
               {
-                "npc": "Come on! Show me a challenge!"
+                "npc": "Come on! Show me a challenge!",
+                "presentation": "overhead"
               }
             ],
             "id": "w1ALqG"
@@ -171,7 +185,8 @@
             "text": "If the Mysterious Figure has 120 or fewer hitpoints:",
             "steps": [
               {
-                "npc": "That's more like it!"
+                "npc": "That's more like it!",
+                "presentation": "overhead"
               }
             ],
             "id": "ALDOui"
@@ -188,7 +203,8 @@
             "text": "If the Mysterious Figure has above 120 hitpoints:",
             "steps": [
               {
-                "npc": "You can do better than that!"
+                "npc": "You can do better than that!",
+                "presentation": "overhead"
               }
             ],
             "id": "U_9Nqu"
@@ -198,7 +214,8 @@
             "text": "If the Mysterious Figure has 120 or fewer hitpoints:",
             "steps": [
               {
-                "npc": "Now we're getting somewhere!"
+                "npc": "Now we're getting somewhere!",
+                "presentation": "overhead"
               }
             ],
             "id": "BtwtQo"
@@ -215,7 +232,8 @@
             "text": "If the Mysterious Figure has above 120 hitpoints:",
             "steps": [
               {
-                "npc": "Is that all you have to give?!"
+                "npc": "Is that all you have to give?!",
+                "presentation": "overhead"
               }
             ],
             "id": "CT8Tnn"
@@ -225,7 +243,8 @@
             "text": "If the Mysterious Figure has 120 or fewer hitpoints:",
             "steps": [
               {
-                "npc": "Better! Much better!"
+                "npc": "Better! Much better!",
+                "presentation": "overhead"
               }
             ],
             "id": "LF6cTy"
@@ -242,7 +261,8 @@
             "text": "If the Mysterious Figure has above 120 hitpoints:",
             "steps": [
               {
-                "npc": "I don't know how you lasted this long!"
+                "npc": "I don't know how you lasted this long!",
+                "presentation": "overhead"
               }
             ],
             "id": "eQ2ZNI"
@@ -252,7 +272,8 @@
             "text": "If the Mysterious Figure has 120 or fewer hitpoints:",
             "steps": [
               {
-                "npc": "Yes! Show me what you've got!"
+                "npc": "Yes! Show me what you've got!",
+                "presentation": "overhead"
               }
             ],
             "id": "1__bof"
@@ -269,7 +290,8 @@
             "text": "If the Mysterious Figure has above 120 hitpoints:",
             "steps": [
               {
-                "npc": "Some fighter you are!"
+                "npc": "Some fighter you are!",
+                "presentation": "overhead"
               }
             ],
             "id": "Rac0Qj"
@@ -279,7 +301,8 @@
             "text": "If the Mysterious Figure has 120 or fewer hitpoints:",
             "steps": [
               {
-                "npc": "Finally, a proper challenger!"
+                "npc": "Finally, a proper challenger!",
+                "presentation": "overhead"
               }
             ],
             "id": "ZvZukK"
@@ -296,7 +319,8 @@
             "text": "If the Mysterious Figure has above 120 hitpoints:",
             "steps": [
               {
-                "npc": "Really? Is that it?"
+                "npc": "Really? Is that it?",
+                "presentation": "overhead"
               }
             ],
             "id": "NwN5iy"
@@ -306,7 +330,8 @@
             "text": "If the Mysterious Figure has 120 or fewer hitpoints:",
             "steps": [
               {
-                "npc": "Good! Now keep it up!"
+                "npc": "Good! Now keep it up!",
+                "presentation": "overhead"
               }
             ],
             "id": "vCfP11"
@@ -317,7 +342,8 @@
     ],
     "overhead-dialogue-when-fighting-in-the-mysterious-figure-s-hideout-upon-dying": [
       {
-        "npc": "A worthy foe..."
+        "npc": "A worthy foe...",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-upon-killing-the-player": [
@@ -328,7 +354,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Pathetic!"
+                "npc": "Pathetic!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -336,7 +363,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Mediocre!"
+                "npc": "Mediocre!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -344,7 +372,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Disappointing!"
+                "npc": "Disappointing!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -352,7 +381,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Pitiful!"
+                "npc": "Pitiful!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -360,7 +390,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Sit down!"
+                "npc": "Sit down!",
+                "presentation": "overhead"
               }
             ]
           }

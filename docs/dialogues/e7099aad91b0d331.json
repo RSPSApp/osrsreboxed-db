@@ -122,6 +122,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "What do you think you're doing?"
               },
               {
@@ -135,6 +136,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Help! A thief!"
               },
               {

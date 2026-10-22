@@ -2051,9 +2051,6 @@
         "id": "MQMrBm"
       },
       {
-        "type": "end"
-      },
-      {
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "e0pTWp"

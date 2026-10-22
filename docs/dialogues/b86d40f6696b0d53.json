@@ -238,7 +238,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Hey [player name]! It's your lucky day!"
+            "npc": "Hey [player name]! It's your lucky day!",
+            "presentation": "overhead"
           }
         ],
         "id": "aTOVvy"
@@ -254,7 +255,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Wakey-wakey, [player name]!"
+                    "npc": "Wakey-wakey, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -262,7 +264,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "You're in for a treat, [player name]!"
+                    "npc": "You're in for a treat, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -270,7 +273,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "Come along with me, [player name]!"
+                    "npc": "Come along with me, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -278,7 +282,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "Hey [player name]! It's your lucky day!"
+                    "npc": "Hey [player name]! It's your lucky day!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -292,7 +297,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "0jUTvC"

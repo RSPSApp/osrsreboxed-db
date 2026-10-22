@@ -583,7 +583,11 @@
     },
     "participants": [],
     "npc_ids": [
-      13822
+      13820,
+      13821,
+      13822,
+      13823,
+      13824
     ],
     "sections": {
       "standard-dialogue-before-starting-death-on-the-isle": [
@@ -1109,6 +1113,7 @@
     },
     "participants": [],
     "npc_ids": [
+      1672,
       12316,
       12322
     ],
@@ -2482,6 +2487,7 @@
     },
     "participants": [],
     "npc_ids": [
+      7797,
       8690,
       8691
     ],
@@ -2839,6 +2845,8 @@
     },
     "participants": [],
     "npc_ids": [
+      967,
+      969,
       4220
     ],
     "sections": {
@@ -3390,6 +3398,7 @@
     "participants": [],
     "npc_ids": [
       15586,
+      15587,
       15588,
       15590,
       15591,
@@ -3740,10 +3749,12 @@
     "participants": [],
     "npc_ids": [
       3432,
+      8865,
       8866,
       8867,
       8868,
-      9014
+      9014,
+      9248
     ],
     "sections": {
       "talking-to-arianwyn-before-starting-mourning-s-end-part-i": [
@@ -7057,7 +7068,11 @@
       1409,
       1410,
       1411,
-      1412
+      1412,
+      6046,
+      6047,
+      6048,
+      6049
     ],
     "sections": {
       "standard-dialogue": [
@@ -8021,6 +8036,7 @@
     },
     "participants": [],
     "npc_ids": [
+      12596,
       14148
     ],
     "sections": {
@@ -11561,7 +11577,8 @@
     },
     "participants": [],
     "npc_ids": [
-      12085
+      12085,
+      12086
     ],
     "sections": {
       "after-hazeel-cult-sided-with-carnillean": [
@@ -12363,6 +12380,7 @@
     },
     "participants": [],
     "npc_ids": [
+      1475,
       1476
     ],
     "sections": {
@@ -14677,6 +14695,10 @@
     },
     "participants": [],
     "npc_ids": [
+      9561,
+      9562,
+      9563,
+      9564,
       9774
     ],
     "sections": {
@@ -15590,6 +15612,7 @@
     },
     "participants": [],
     "npc_ids": [
+      1673,
       12317,
       12323
     ],
@@ -16108,6 +16131,7 @@
     "participants": [],
     "npc_ids": [
       8438,
+      8439,
       8440
     ],
     "sections": {
@@ -16634,6 +16658,7 @@
     },
     "participants": [],
     "npc_ids": [
+      15175,
       15176
     ],
     "sections": {
@@ -17108,6 +17133,7 @@
     },
     "participants": [],
     "npc_ids": [
+      5258,
       7176
     ],
     "sections": {
@@ -17493,6 +17519,7 @@
     },
     "participants": [],
     "npc_ids": [
+      2433,
       7725,
       7726
     ],
@@ -18528,6 +18555,7 @@
     },
     "participants": [],
     "npc_ids": [
+      14147,
       14149
     ],
     "sections": {
@@ -19439,6 +19467,12 @@
     },
     "participants": [],
     "npc_ids": [
+      13732,
+      13733,
+      13734,
+      13735,
+      13736,
+      13737,
       13763,
       13765,
       14470,
@@ -19472,6 +19506,14 @@
       13721,
       13729,
       13730,
+      13744,
+      13745,
+      13746,
+      13747,
+      13748,
+      13749,
+      13750,
+      13751,
       13767,
       13768,
       13769
@@ -19504,6 +19546,12 @@
     },
     "participants": [],
     "npc_ids": [
+      13738,
+      13739,
+      13740,
+      13741,
+      13742,
+      13743,
       13764,
       14471
     ],
@@ -22562,7 +22610,11 @@
     },
     "participants": [],
     "npc_ids": [
-      4773
+      4772,
+      4773,
+      4774,
+      4775,
+      4776
     ],
     "sections": {
       "standard-dialogue": [
@@ -23043,7 +23095,8 @@
       312,
       5429,
       5430,
-      5431
+      5431,
+      5432
     ],
     "sections": {
       "standard-dialogue-frog-pointy-hat": [
@@ -24166,6 +24219,7 @@
     },
     "participants": [],
     "npc_ids": [
+      14779,
       14780
     ],
     "sections": {
@@ -25339,6 +25393,9 @@
       1425,
       2061,
       7100,
+      7101,
+      7102,
+      7103,
       7115
     ],
     "sections": {
@@ -25374,7 +25431,9 @@
     },
     "participants": [],
     "npc_ids": [
+      5968,
       5969,
+      5970,
       6094,
       6095,
       6096
@@ -26865,9 +26924,31 @@
     "participants": [],
     "npc_ids": [
       3254,
+      3269,
+      3270,
+      3271,
+      3273,
+      3274,
+      5418,
+      11911,
+      11912,
+      11913,
+      11914,
+      11915,
+      11916,
+      11917,
       11922,
       11923,
-      11924
+      11924,
+      11937,
+      11938,
+      11939,
+      11942,
+      11943,
+      11944,
+      11945,
+      11946,
+      11947
     ],
     "sections": {
       "overhead-dialogue-for-falador-guards-when-the-party-room-chest-contains-more-than-50-000-or-76-000-coins-in-grand-exchange-value-on-a-f2p-or-members-world-respectively": [
@@ -28308,6 +28389,7 @@
     },
     "participants": [],
     "npc_ids": [
+      1674,
       12318,
       12324
     ],
@@ -31815,7 +31897,8 @@
     "participants": [],
     "npc_ids": [
       7961,
-      7963
+      7963,
+      7964
     ],
     "sections": {
       "before-the-corsair-curse": [
@@ -33394,6 +33477,7 @@
     },
     "participants": [],
     "npc_ids": [
+      4863,
       4864
     ],
     "sections": {
@@ -34176,6 +34260,7 @@
     },
     "participants": [],
     "npc_ids": [
+      1675,
       12319,
       12325
     ],
@@ -34990,6 +35075,7 @@
     ],
     "npc_ids": [
       1399,
+      4163,
       5215,
       8042,
       11019,
@@ -35793,6 +35879,7 @@
     "participants": [],
     "npc_ids": [
       9559,
+      9560,
       9773
     ],
     "sections": {
@@ -38502,7 +38589,11 @@
     },
     "participants": [],
     "npc_ids": [
-      3444
+      3443,
+      3444,
+      13525,
+      13526,
+      13527
     ],
     "sections": {
       "standard-dialogue-after-the-completion-of-temple-of-ikov-if-sided-against-lucien": [
@@ -39200,7 +39291,8 @@
     },
     "participants": [],
     "npc_ids": [
-      15741
+      15741,
+      15742
     ],
     "sections": {
       "looting-the-corpse-take-eggs": [
@@ -43470,7 +43562,9 @@
     "participants": [],
     "npc_ids": [
       12297,
-      12298
+      12298,
+      12300,
+      12301
     ],
     "sections": {
       "overhead-dialogue-when-carrying-any-medallion": [
@@ -43514,6 +43608,7 @@
     },
     "participants": [],
     "npc_ids": [
+      2830,
       6742,
       6750,
       6751,
@@ -46391,7 +46486,9 @@
       "revision": 15098541
     },
     "participants": [],
-    "npc_ids": [],
+    "npc_ids": [
+      4286
+    ],
     "sections": {
       "standard-dialogue": [
         "Standard dialogue"
@@ -48722,6 +48819,12 @@
     "npc_ids": [
       12650,
       12651,
+      13691,
+      13693,
+      13784,
+      13785,
+      13786,
+      14276,
       14285,
       14286
     ],
@@ -53481,6 +53584,7 @@
     },
     "participants": [],
     "npc_ids": [
+      8709,
       8710
     ],
     "sections": {
@@ -54335,7 +54439,9 @@
     },
     "participants": [],
     "npc_ids": [
-      1430
+      1430,
+      5457,
+      5729
     ],
     "sections": {
       "gate-guard-during-the-grand-tree": [
@@ -55011,7 +55117,21 @@
     },
     "participants": [],
     "npc_ids": [
-      5322
+      990,
+      991,
+      992,
+      993,
+      994,
+      4328,
+      5139,
+      5142,
+      5143,
+      5144,
+      5145,
+      5146,
+      5322,
+      5323,
+      5329
     ],
     "sections": {
       "before-rune-mysteries": [
@@ -55443,7 +55563,9 @@
     },
     "participants": [],
     "npc_ids": [
-      3522
+      3522,
+      4345,
+      4361
     ],
     "sections": {
       "standard-dialogue": [
@@ -55465,7 +55587,9 @@
     "participants": [],
     "npc_ids": [
       3520,
-      4351
+      4348,
+      4351,
+      4356
     ],
     "sections": {
       "standard-dialogue-before-completing-merlin-s-crystal": [
@@ -55486,7 +55610,9 @@
     "participants": [],
     "npc_ids": [
       3521,
-      4352
+      4349,
+      4352,
+      4355
     ],
     "sections": {
       "standard-dialogue-before-completing-merlin-s-crystal": [
@@ -55522,7 +55648,9 @@
     },
     "participants": [],
     "npc_ids": [
-      3519
+      3519,
+      4344,
+      4354
     ],
     "sections": {
       "standard-dialogue-before-completing-merlin-s-crystal": [
@@ -55546,7 +55674,9 @@
     },
     "participants": [],
     "npc_ids": [
-      3525
+      3525,
+      4342,
+      4357
     ],
     "sections": {
       "standard-dialogue-before-completing-merlin-s-crystal": [
@@ -55570,7 +55700,9 @@
     },
     "participants": [],
     "npc_ids": [
-      3526
+      3526,
+      4343,
+      4358
     ],
     "sections": {
       "standard-dialogue-before-completing-merlin-s-crystal": [
@@ -55619,7 +55751,9 @@
     "participants": [],
     "npc_ids": [
       3524,
-      4350
+      4347,
+      4350,
+      4360
     ],
     "sections": {
       "standard-dialogue-before-completing-merlin-s-crystal": [
@@ -55775,7 +55909,9 @@
     },
     "participants": [],
     "npc_ids": [
-      3523
+      3523,
+      4346,
+      4359
     ],
     "sections": {
       "standard-dialogue-before-completing-merlin-s-crystal": [
@@ -56721,6 +56857,7 @@
     },
     "participants": [],
     "npc_ids": [
+      12821,
       12827
     ],
     "sections": {
@@ -56816,7 +56953,8 @@
     "participants": [],
     "npc_ids": [
       4086,
-      4087
+      4087,
+      4088
     ],
     "sections": {
       "standard-dialogue-attackable": [
@@ -58581,7 +58719,8 @@
     "participants": [],
     "npc_ids": [
       4159,
-      4160
+      4160,
+      13482
     ],
     "sections": {
       "standard-dialogue": [
@@ -60110,7 +60249,8 @@
     },
     "participants": [],
     "npc_ids": [
-      2114
+      2114,
+      2115
     ],
     "sections": {
       "standard-dialogue": [
@@ -60958,7 +61098,12 @@
     },
     "participants": [],
     "npc_ids": [
-      1059
+      1057,
+      1058,
+      1059,
+      1075,
+      1076,
+      1077
     ],
     "sections": {
       "after-a-soul-s-bane": [
@@ -61147,6 +61292,7 @@
     },
     "participants": [],
     "npc_ids": [
+      1676,
       12320,
       12326
     ],
@@ -61634,6 +61780,54 @@
     },
     "participants": [],
     "npc_ids": [
+      9312,
+      9313,
+      9314,
+      9315,
+      9316,
+      9317,
+      9318,
+      9319,
+      9320,
+      9321,
+      9322,
+      9323,
+      9324,
+      9325,
+      9326,
+      9327,
+      9328,
+      9329,
+      9330,
+      9331,
+      9332,
+      9333,
+      9334,
+      9335,
+      9336,
+      9337,
+      9338,
+      9339,
+      9340,
+      9341,
+      9342,
+      9343,
+      9344,
+      9345,
+      9346,
+      9347,
+      9348,
+      9349,
+      9350,
+      9351,
+      9352,
+      9353,
+      9354,
+      9355,
+      9356,
+      9357,
+      9358,
+      9359,
       9360,
       9361,
       9362,
@@ -61646,18 +61840,90 @@
       9369,
       9370,
       9371,
+      9372,
+      9373,
+      9374,
+      9375,
+      9376,
+      9377,
+      9378,
+      9379,
+      9380,
+      9381,
+      9382,
+      9383,
+      12632,
+      12633,
+      12634,
+      12635,
+      12636,
+      12637,
+      12638,
+      12639,
       12640,
       12641,
+      12642,
+      12643,
+      12783,
+      12784,
+      12785,
+      12786,
+      12787,
+      12788,
+      12789,
+      12790,
+      12791,
+      12792,
+      12793,
+      12794,
+      12795,
+      12796,
+      12797,
+      12798,
       12799,
       12800,
       12801,
       12802,
+      12803,
+      12804,
+      12805,
+      12806,
+      15506,
+      15507,
+      15508,
+      15509,
       15510,
+      15511,
+      15513,
+      15514,
+      15515,
+      15516,
       15517,
+      15518,
+      15520,
+      15521,
+      15522,
+      15523,
       15524,
+      15525,
+      15527,
+      15528,
+      15529,
+      15530,
       15531,
+      15532,
+      15534,
+      15535,
+      15536,
+      15537,
       15538,
-      15545
+      15539,
+      15541,
+      15542,
+      15543,
+      15544,
+      15545,
+      15546
     ],
     "sections": {
       "standard-dialogue": [
@@ -62951,6 +63217,7 @@
     },
     "participants": [],
     "npc_ids": [
+      2992,
       4421
     ],
     "sections": {
@@ -63945,6 +64212,7 @@
     },
     "participants": [],
     "npc_ids": [
+      1677,
       12321,
       12327
     ],
@@ -64043,6 +64311,27 @@
     "participants": [],
     "npc_ids": [
       8250,
+      8369,
+      8370,
+      8371,
+      8372,
+      8373,
+      8374,
+      8375,
+      10830,
+      10831,
+      10832,
+      10833,
+      10834,
+      10835,
+      10836,
+      10847,
+      10848,
+      10849,
+      10850,
+      10851,
+      10852,
+      10853,
       11178
     ],
     "sections": {
@@ -66779,7 +67068,8 @@
     "participants": [],
     "npc_ids": [
       124,
-      14157
+      14157,
+      14176
     ],
     "sections": {
       "standard-dialogue-first-time": [
@@ -68037,8 +68327,10 @@
     "npc_ids": [
       533,
       535,
+      537,
       538,
-      637
+      637,
+      1024
     ],
     "sections": {
       "overhead-dialogue-when-re-targeting-a-player-after-having-lost-aggression": [
@@ -83853,6 +84145,40 @@
       "handing-in-the-items-speaking-to-achietties": [
         "Handing in the items",
         "Speaking to Achietties"
+      ]
+    }
+  },
+  "Transcript:His Faithful Servants": {
+    "source": {
+      "page": "Transcript:His Faithful Servants",
+      "revision": 15007890
+    },
+    "participants": [
+      "Strange Old Man"
+    ],
+    "sections": {
+      "starting-out-talking-to-the-strange-old-man": [
+        "Starting out",
+        "Talking to the Strange Old Man"
+      ],
+      "starting-out-talking-to-him-again-without-the-icon": [
+        "Starting out",
+        "Talking to him again without the icon"
+      ],
+      "giving-the-strange-icon": [
+        "Giving the strange icon"
+      ],
+      "giving-the-strange-icon-if-the-player-gives-the-strange-old-man-the-icon": [
+        "Giving the strange icon",
+        "If the player gives the strange old man the icon"
+      ],
+      "giving-the-strange-icon-if-the-strange-old-man-destroyed-the-icon": [
+        "Giving the strange icon",
+        "If the strange old man destroyed the icon"
+      ],
+      "giving-the-strange-icon-if-the-player-claims-the-lamp-or-map-later": [
+        "Giving the strange icon",
+        "If the player claims the lamp or map later"
       ]
     }
   },

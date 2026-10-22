@@ -109,7 +109,8 @@
       {
         "type": "line",
         "speaker": "Egg",
-        "text": "..."
+        "text": "...",
+        "presentation": "overhead"
       }
     ]
   }

@@ -510,7 +510,8 @@
       {
         "type": "line",
         "speaker": "Tyras Guard",
-        "text": "I see you making friends with that elf, traitor!"
+        "text": "I see you making friends with that elf, traitor!",
+        "presentation": "overhead"
       }
     ],
     "tracking-tyras-camp-talking-to-general-hining": [
@@ -1262,16 +1263,9 @@
             "type": "line",
             "speaker": "King Lathas",
             "text": "Anyway, I'll send word when I next require your services. Oh, and I guess you'll be wanting your reward."
-          },
-          {
-            "type": "end"
           }
         ],
         "id": "7iVduK"
-      },
-      {
-        "type": "unavailable",
-        "id": "0h167k"
       }
     ]
   },

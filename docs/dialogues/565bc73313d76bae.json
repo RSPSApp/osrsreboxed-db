@@ -165,7 +165,8 @@
         "npc": "One day ......"
       },
       {
-        "npc": "One day ......"
+        "npc": "One day ......",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -176,7 +177,8 @@
         "npc": "And that is how she drowned the rats."
       },
       {
-        "npc": "..and that is how she drowned the rats."
+        "npc": "..and that is how she drowned the rats.",
+        "presentation": "overhead"
       },
       {
         "type": "message",

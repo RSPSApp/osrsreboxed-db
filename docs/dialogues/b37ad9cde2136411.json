@@ -309,12 +309,14 @@
                                 "type": "choice",
                                 "options": [
                                   {
-                                    "text": "Here's 200 Coins - chop my tree down please."
+                                    "text": "Here's 200 Coins - chop my tree down please.",
+                                    "steps": [
+                                      {
+                                        "player": "Here's 200 Coins - chop my tree down please."
+                                      }
+                                    ]
                                   }
                                 ]
-                              },
-                              {
-                                "player": "Here's 200 Coins - chop my tree down please."
                               }
                             ],
                             "id": "9e-xuS"
@@ -326,12 +328,14 @@
                                 "type": "choice",
                                 "options": [
                                   {
-                                    "text": "I don't want to pay that much, sorry."
+                                    "text": "I don't want to pay that much, sorry.",
+                                    "steps": [
+                                      {
+                                        "player": "I don't want to pay that much, sorry."
+                                      }
+                                    ]
                                   }
                                 ]
-                              },
-                              {
-                                "player": "I don't want to pay that much, sorry."
                               }
                             ]
                           },
@@ -371,12 +375,14 @@
                         "type": "choice",
                         "options": [
                           {
-                            "text": "Here's 200 Coins - chop my tree down please."
+                            "text": "Here's 200 Coins - chop my tree down please.",
+                            "steps": [
+                              {
+                                "player": "Here's 200 Coins - chop my tree down please."
+                              }
+                            ]
                           }
                         ]
-                      },
-                      {
-                        "player": "Here's 200 Coins - chop my tree down please."
                       }
                     ],
                     "id": "3u0bkl"
@@ -388,12 +394,14 @@
                         "type": "choice",
                         "options": [
                           {
-                            "text": "I don't want to pay that much, sorry."
+                            "text": "I don't want to pay that much, sorry.",
+                            "steps": [
+                              {
+                                "player": "I don't want to pay that much, sorry."
+                              }
+                            ]
                           }
                         ]
-                      },
-                      {
-                        "player": "I don't want to pay that much, sorry."
                       }
                     ]
                   }

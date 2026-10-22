@@ -3,11 +3,13 @@
   "variants": {
     "overhead-dialogue-before-attempting-to-run-past-the-bolt-traps": [
       {
+        "presentation": "overhead",
         "npc": "How am I supposed to get past this?"
       }
     ],
     "overhead-dialogue-when-getting-hit-by-a-bolt": [
       {
+        "presentation": "overhead",
         "npc": "Gah!"
       }
     ],
@@ -19,6 +21,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Did that owl statue just move?"
               }
             ]
@@ -27,6 +30,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I can't wait until I get full graceful, then I can head back to the rooftop courses."
               }
             ]
@@ -35,6 +39,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I wonder if the oc_name_lower is worth it?"
               }
             ]
@@ -43,6 +48,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I wish I could trade Hallowed marks in for amylase crystals."
               }
             ]
@@ -51,6 +57,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Two pieces dyed, four more to go!"
               }
             ]
@@ -59,6 +66,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Well, this is definitely more difficult than training on rooftop courses."
               }
             ]

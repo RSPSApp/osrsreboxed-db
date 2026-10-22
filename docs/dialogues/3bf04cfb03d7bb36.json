@@ -37,6 +37,7 @@
     ],
     "overhead-dialogue-when-the-pheasant-control-event-is-almost-over": [
       {
+        "presentation": "overhead",
         "npc": "These pheasants will be finding new nesting grounds soon."
       }
     ]

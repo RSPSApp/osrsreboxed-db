@@ -192,7 +192,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Make those dummies suffer!"
+                "npc": "Make those dummies suffer!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -200,7 +201,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Imagine it's your aunt!"
+                "npc": "Imagine it's your aunt!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -208,7 +210,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "You won't last 2 minutes in the real world!"
+                "npc": "You won't last 2 minutes in the real world!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -216,7 +219,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Show some backbone!"
+                "npc": "Show some backbone!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -224,7 +228,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Let's get some proper bloodlust here!"
+                "npc": "Let's get some proper bloodlust here!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -232,7 +237,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Bah, why do I bother with you lot?"
+                "npc": "Bah, why do I bother with you lot?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -240,7 +246,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Just hit the thing already!"
+                "npc": "Just hit the thing already!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -248,7 +255,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "Hit the dummy! Hit the dummy!"
+                "npc": "Hit the dummy! Hit the dummy!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -256,7 +264,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "Useless! Utterly useless!"
+                "npc": "Useless! Utterly useless!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -264,7 +273,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "Hit the dummy before I come over there and hit you!"
+                "npc": "Hit the dummy before I come over there and hit you!",
+                "presentation": "overhead"
               }
             ]
           }

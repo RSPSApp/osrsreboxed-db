@@ -248,7 +248,8 @@
       {
         "type": "line",
         "speaker": "Mourner",
-        "text": "This will cut down you to size!"
+        "text": "This will cut down you to size!",
+        "presentation": "overhead"
       }
     ],
     "the-mourner-s-disguise-asking-arianwyn-for-help-with-the-bloody-top-and-ripped-trousers": [
@@ -2488,9 +2489,6 @@
                 "type": "line",
                 "speaker": "Arianwyn",
                 "text": "Thank you friend. Don't forget your disguise."
-              },
-              {
-                "type": "end"
               }
             ],
             "hook": "quest:mourning-s-end-part-ii:start",
@@ -2506,10 +2504,6 @@
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "UCYUYh"
       }
     ]
   },

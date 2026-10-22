@@ -162,7 +162,8 @@
                                 "id": "XU0tPW"
                               },
                               {
-                                "player": "Ow!"
+                                "player": "Ow!",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "action",
@@ -2097,7 +2098,8 @@
       {
         "type": "line",
         "speaker": "50% Luke",
-        "text": "Where?"
+        "text": "Where?",
+        "presentation": "overhead"
       }
     ],
     "stagnant-water-using-a-bucket-on-stagnant-lake": [
@@ -2785,7 +2787,8 @@
     ],
     "evil-spirit-using-a-non-holy-wrench-on-brewing-control": [
       {
-        "player": "Come out and face me!"
+        "player": "Come out and face me!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -2917,7 +2920,8 @@
         "id": "JGzwnf"
       },
       {
-        "player": "Groovy."
+        "player": "Groovy.",
+        "presentation": "overhead"
       },
       {
         "player": "Thanks!"
@@ -3037,7 +3041,8 @@
         "id": "QL8POP"
       },
       {
-        "player": "The power of Guthix compels you!"
+        "player": "The power of Guthix compels you!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -3463,13 +3468,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "8lDSvO"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "VdguAW"
       }
     ]
   },
@@ -3492,7 +3490,8 @@
         "id": "XU0tPW"
       },
       {
-        "player": "Ow!"
+        "player": "Ow!",
+        "presentation": "overhead"
       },
       {
         "type": "action",

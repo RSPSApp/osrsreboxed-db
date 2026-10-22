@@ -1154,7 +1154,8 @@
       {
         "type": "line",
         "speaker": "Cuthbert, Lord of Dread",
-        "text": "You! Prepare to face the Lord of Dread!"
+        "text": "You! Prepare to face the Lord of Dread!",
+        "presentation": "overhead"
       }
     ],
     "peace-talks-opening-the-chest-after-planting-the-evidence": [
@@ -1175,7 +1176,8 @@
       {
         "type": "line",
         "speaker": "Cuthbert",
-        "text": "I have come for you, [player name]."
+        "text": "I have come for you, [player name].",
+        "presentation": "overhead"
       }
     ],
     "peace-talks-talking-to-gary-or-sue-before-defeating-cuthbert": [
@@ -1390,13 +1392,6 @@
         "type": "line",
         "speaker": "Jane",
         "text": "It sure is. Now that we have peace, life is at an all time high!"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "bAKjmT"
       }
     ]
   }

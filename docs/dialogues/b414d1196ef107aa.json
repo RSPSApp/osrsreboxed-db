@@ -366,23 +366,27 @@
         "player": "Say, that's a nice helmet."
       },
       {
-        "type": "unavailable",
-        "id": "mZhTt4"
+        "type": "line",
+        "speaker": "'Black-eye'",
+        "text": "Why, thanks."
       },
       {
         "player": "I was just wondering if you might be able to help me out with one?"
       },
       {
-        "type": "unavailable",
-        "id": "Xu5q2J"
+        "type": "line",
+        "speaker": "'Black-eye'",
+        "text": "Always glad to help a budding builder."
       },
       {
-        "type": "unavailable",
-        "id": "27dGLe"
+        "type": "line",
+        "speaker": "'Black-eye'",
+        "text": "But first, prove your Construction knowledge by answering some questions."
       },
       {
-        "type": "unavailable",
-        "id": "1Incqf"
+        "type": "line",
+        "speaker": "'Black-eye'",
+        "text": "How many nails does it take to make a rocking chair?"
       },
       {
         "type": "choice",
@@ -394,8 +398,9 @@
                 "player": "One?"
               },
               {
-                "type": "unavailable",
-                "id": "ufmW7m"
+                "type": "line",
+                "speaker": "'Black-eye'",
+                "text": "One? How do you suppose to use a single nail?"
               }
             ]
           },
@@ -406,8 +411,9 @@
                 "player": "Five?"
               },
               {
-                "type": "unavailable",
-                "id": "QeGni4"
+                "type": "line",
+                "speaker": "'Black-eye'",
+                "text": "Nope. Keep guessing!"
               }
             ]
           },
@@ -418,8 +424,9 @@
                 "player": "Three?"
               },
               {
-                "type": "unavailable",
-                "id": "LZ3lbQ"
+                "type": "line",
+                "speaker": "'Black-eye'",
+                "text": "Bingo! Okay, now what takes 3 planks, 3 cloths and 3 nails to make, and helps remove light from a room?"
               },
               {
                 "type": "choice",
@@ -431,8 +438,9 @@
                         "player": "Torn curtains?"
                       },
                       {
-                        "type": "unavailable",
-                        "id": "V4MzSE"
+                        "type": "line",
+                        "speaker": "'Black-eye'",
+                        "text": "Nice one. Last question: I like fish and I want to put some in my garden, but I need a special water feature. What materials would I require?"
                       },
                       {
                         "type": "choice",
@@ -444,8 +452,9 @@
                                 "player": "8 clay pieces and 3 limestone bricks?"
                               },
                               {
-                                "type": "unavailable",
-                                "id": "b3zvP7"
+                                "type": "line",
+                                "speaker": "'Black-eye'",
+                                "text": "Oh, and you were so close!"
                               }
                             ]
                           },
@@ -456,8 +465,9 @@
                                 "player": "10 clay pieces?"
                               },
                               {
-                                "type": "unavailable",
-                                "id": "Jn8zSr"
+                                "type": "line",
+                                "speaker": "'Black-eye'",
+                                "text": "That's it! You seem to know your stuff. I got a spare helmet from a builder that died on... I mean, err, had to leave the job for greener pastures."
                               },
                               {
                                 "player": "Greener pastures?"
@@ -477,22 +487,25 @@
                                 "player": "Wait a minute! Is there blood on this helmet?"
                               },
                               {
-                                "type": "unavailable",
-                                "id": "dGXNXd"
+                                "type": "line",
+                                "speaker": "'Black-eye'",
+                                "text": "Erm, no, that's just, erm, paint. Yes, paint! That's what it is!"
                               },
                               {
                                 "player": "Oh, okay. Thanks. Bye."
                               },
                               {
-                                "type": "unavailable",
-                                "id": "fJ7hO9"
+                                "type": "line",
+                                "speaker": "'Black-eye'",
+                                "text": "Ha, gullible fool."
                               },
                               {
                                 "player": "What?"
                               },
                               {
-                                "type": "unavailable",
-                                "id": "bsqlo9"
+                                "type": "line",
+                                "speaker": "'Black-eye'",
+                                "text": "Nothing."
                               }
                             ]
                           },
@@ -503,8 +516,9 @@
                                 "player": "10 limestone bricks?"
                               },
                               {
-                                "type": "unavailable",
-                                "id": "jJgIKr"
+                                "type": "line",
+                                "speaker": "'Black-eye'",
+                                "text": "Guess again, mate."
                               }
                             ]
                           }
@@ -519,8 +533,9 @@
                         "player": "A brown rug?"
                       },
                       {
-                        "type": "unavailable",
-                        "id": "F-Nsez"
+                        "type": "line",
+                        "speaker": "'Black-eye'",
+                        "text": "Of course, because that's what everyone needs - a rug up at their window."
                       }
                     ]
                   },
@@ -531,8 +546,9 @@
                         "player": "Opulent curtains?"
                       },
                       {
-                        "type": "unavailable",
-                        "id": "GgTzOJ"
+                        "type": "line",
+                        "speaker": "'Black-eye'",
+                        "text": "Those curtains are not going to be in any way opulent, matey."
                       }
                     ]
                   }
@@ -561,22 +577,25 @@
         "player": "Anything you might be able to help me out with?"
       },
       {
-        "type": "unavailable",
-        "id": "wT2tpz"
+        "type": "line",
+        "speaker": "'The Guns'",
+        "text": "Well... Urmph! Ye can 'ave me shirt..."
       },
       {
         "player": "Hmmm. Has it been cleaned? I don't want some sweaty hand-me-down."
       },
       {
-        "type": "unavailable",
-        "id": "NDu9mZ"
+        "type": "line",
+        "speaker": "'The Guns'",
+        "text": "What? Huhmf! It ain't ever been...uurrgg...worn."
       },
       {
         "player": "Well, that sounds good. Can I have it then?"
       },
       {
-        "type": "unavailable",
-        "id": "F3Ys0Y"
+        "type": "line",
+        "speaker": "'The Guns'",
+        "text": "Can't...hurrr...see why not. This is firsty work doh. Could do wiv a beer."
       },
       {
         "type": "condition",
@@ -586,8 +605,9 @@
             "player": "Sure. What's your 'usual'?"
           },
           {
-            "type": "unavailable",
-            "id": "PGboGG"
+            "type": "line",
+            "speaker": "'The Guns'",
+            "text": "I'm a simple...umph...man. I like the bar in Yanille and their cheap beer..."
           },
           {
             "player": "Simple, cheap beer. No problem."
@@ -606,8 +626,9 @@
             "player": "Well, today's your lucky day!"
           },
           {
-            "type": "unavailable",
-            "id": "mro8QH"
+            "type": "line",
+            "speaker": "'The Guns'",
+            "text": "Ahhh! Smashin...urrghh...deal!"
           },
           {
             "type": "action",
@@ -633,8 +654,9 @@
             "player": "Fancy another?"
           },
           {
-            "type": "unavailable",
-            "id": "neGKcc"
+            "type": "line",
+            "speaker": "'The Guns'",
+            "text": "Nah, thanks. You've got your shirt and I've got my energy back."
           },
           {
             "type": "end"
@@ -650,8 +672,9 @@
             "player": "Hi! How's this for some booze?"
           },
           {
-            "type": "unavailable",
-            "id": "2slrPm"
+            "type": "line",
+            "speaker": "'The Guns'",
+            "text": "That's no good. I need some simple beer."
           },
           {
             "type": "end"
@@ -667,8 +690,9 @@
             "player": "Fancy another?"
           },
           {
-            "type": "unavailable",
-            "id": "W-SCp1"
+            "type": "line",
+            "speaker": "'The Guns'",
+            "text": "Nah, thanks, I'm not drinking that."
           },
           {
             "type": "end"
@@ -684,8 +708,9 @@
             "player": "Beer?"
           },
           {
-            "type": "unavailable",
-            "id": "jwvWlK"
+            "type": "line",
+            "speaker": "'The Guns'",
+            "text": "How do you expect me to drink that?"
           },
           {
             "player": "Oh, sorry."
@@ -702,19 +727,22 @@
         "player": "What do you do when you're not lifting logs above your head?"
       },
       {
-        "type": "unavailable",
-        "id": "RyDAuP"
+        "type": "line",
+        "speaker": "'The Guns'",
+        "text": "In my free time?"
       },
       {
         "player": "Yes."
       },
       {
-        "type": "unavailable",
-        "id": "-xsr3f"
+        "type": "line",
+        "speaker": "'The Guns'",
+        "text": "All sorts. I like...hummff...a good kebab and a cold beer down...urrghh...the pub. And for those quiet evenings...hurrr..."
       },
       {
-        "type": "unavailable",
-        "id": "g3Z7D7"
+        "type": "line",
+        "speaker": "'The Guns'",
+        "text": "A bit of needlepoint is always welcome."
       },
       {
         "player": "I can honestly say you're a very original guy."
@@ -725,40 +753,46 @@
         "player": "Why, hello there!"
       },
       {
-        "type": "unavailable",
-        "id": "dQt4fV"
+        "type": "line",
+        "speaker": "'Gummy'",
+        "text": "What do you want?"
       },
       {
         "player": "Clothing."
       },
       {
-        "type": "unavailable",
-        "id": "d94rBZ"
+        "type": "line",
+        "speaker": "'Gummy'",
+        "text": "Nope. Need mine."
       },
       {
         "player": "Ah, come on. You know you want to give me free stuff."
       },
       {
-        "type": "unavailable",
-        "id": "k9loFD"
+        "type": "line",
+        "speaker": "'Gummy'",
+        "text": "Stop bothering me, can't you see I'm busy!"
       },
       {
         "player": "Yes, VERY busy I'm sure."
       },
       {
-        "type": "unavailable",
-        "id": "6EhOaG"
+        "type": "line",
+        "speaker": "'Gummy'",
+        "text": "Okay, okay."
       },
       {
-        "type": "unavailable",
-        "id": "70QSMr"
+        "type": "line",
+        "speaker": "'Gummy'",
+        "text": "The other day I was drying my clothes on a line down by the shore. A storm hit and some of my clothing went missing."
       },
       {
         "player": "Likely story. Sure you weren't skinny dipping?"
       },
       {
-        "type": "unavailable",
-        "id": "UDR2kA"
+        "type": "line",
+        "speaker": "'Gummy'",
+        "text": "Just go look and leave me be! Search around the tower and you may find them."
       }
     ],
     "accessing-the-tower-obtaining-builder-s-trousers-searching-near-the-tower": [
@@ -811,22 +845,25 @@
         "player": "Hello. I was just wondering... I don't suppose you have any spare clothing you could lend me?"
       },
       {
-        "type": "unavailable",
-        "id": "h5aJ8E"
+        "type": "line",
+        "speaker": "'No fingers'",
+        "text": "I do have many boots."
       },
       {
         "player": "Ah, thanks."
       },
       {
-        "type": "unavailable",
-        "id": "z1Rhwh"
+        "type": "line",
+        "speaker": "'No fingers'",
+        "text": "But there's no way I'm giving any to you."
       },
       {
         "player": "Oh, but why? I could pay you!"
       },
       {
-        "type": "unavailable",
-        "id": "9ldqe5"
+        "type": "line",
+        "speaker": "'No fingers'",
+        "text": "Nope. Only real builders can wear builders' boots, and you're not even close."
       }
     ],
     "accessing-the-tower-obtaining-builder-s-boots-talking-to-no-fingers-again": [
@@ -1820,7 +1857,8 @@
       {
         "type": "line",
         "speaker": "Homunculus",
-        "text": "Nwwooo! Whyyy? Where meee? Glarrraaa."
+        "text": "Nwwooo! Whyyy? Where meee? Glarrraaa.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -2799,10 +2837,6 @@
         "type": "action",
         "text": "Congratulations! Quest Complete!",
         "id": "mwkqoc"
-      },
-      {
-        "type": "unavailable",
-        "id": "cL-nGr"
       }
     ]
   }

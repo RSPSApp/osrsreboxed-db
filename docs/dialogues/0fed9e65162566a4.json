@@ -24,6 +24,7 @@
         "npc": "Ho Ho HoIf you lose your yo-yo, don't forget you can get a replacement from Diango in Draynor!"
       },
       {
+        "presentation": "overhead",
         "npc": "Merry Xmas!"
       }
     ],
@@ -63,6 +64,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Merry Xmas!"
               },
               {
@@ -76,6 +78,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Come talk to Santa!"
               },
               {
@@ -89,6 +92,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I love Xmas"
               },
               {
@@ -102,6 +106,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ho Ho Ho"
               },
               {

@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Get off me, ya little pest!"
+                "npc": "Get off me, ya little pest!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Argh, get the gnome!"
+                "npc": "Argh, get the gnome!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "You'll regret that!"
+                "npc": "You'll regret that!",
+                "presentation": "overhead"
               }
             ]
           }

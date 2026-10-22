@@ -3,18 +3,22 @@
   "variants": {
     "during-tree-gnome-village-upon-climbing-over-the-broken-wall-for-the-first-time": [
       {
-        "npc": "What? How did you manage to get in here."
+        "npc": "What? How did you manage to get in here.",
+        "presentation": "overhead"
       },
       {
-        "player": "I've come for the orb."
+        "player": "I've come for the orb.",
+        "presentation": "overhead"
       },
       {
-        "npc": "I'll never let you take it."
+        "npc": "I'll never let you take it.",
+        "presentation": "overhead"
       }
     ],
     "during-tree-gnome-village-upon-taking-the-orb-of-protection-from-the-chest": [
       {
-        "npc": "Oi! You! Get out of there."
+        "npc": "Oi! You! Get out of there.",
+        "presentation": "overhead"
       }
     ]
   }

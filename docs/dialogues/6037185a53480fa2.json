@@ -3,7 +3,8 @@
   "variants": {
     "aggressive-goblin-cave-goblin": [
       {
-        "npc": "Halt intruder!"
+        "npc": "Halt intruder!",
+        "presentation": "overhead"
       }
     ]
   }

@@ -3,7 +3,8 @@
   "variants": {
     "upon-appearing": [
       {
-        "npc": "Hissss!"
+        "npc": "Hissss!",
+        "presentation": "overhead"
       }
     ]
   }

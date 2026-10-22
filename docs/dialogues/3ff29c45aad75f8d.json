@@ -11,7 +11,8 @@
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "Is this place haunted?"
+                "text": "Is this place haunted?",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -21,6 +22,7 @@
                 "id": "4nYEUo"
               },
               {
+                "presentation": "overhead",
                 "npc": "I don't think so. Would it matter if it was?"
               },
               {
@@ -31,9 +33,11 @@
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "Maybe, it depends how haunted. I'm not a big fan of ghosts."
+                "text": "Maybe, it depends how haunted. I'm not a big fan of ghosts.",
+                "presentation": "overhead"
               },
               {
+                "presentation": "overhead",
                 "npc": "Well, let's hope it's not haunted!"
               }
             ]
@@ -42,6 +46,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Have you thought about painting the building?"
               },
               {
@@ -54,12 +59,14 @@
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "I'm thinking a nice bold red, like the dragon armour."
+                "text": "I'm thinking a nice bold red, like the dragon armour.",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "Or maybe a green, in memory of Elvarg, a very mean dragon."
+                "text": "Or maybe a green, in memory of Elvarg, a very mean dragon.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -69,6 +76,7 @@
                 "id": "CKqpVC"
               },
               {
+                "presentation": "overhead",
                 "npc": "I think green would look great, it would match the surroundings, too!"
               }
             ]
@@ -77,6 +85,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Could I get one of those rune platebodies?"
               },
               {
@@ -87,17 +96,20 @@
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "Well, normally you'd have to slay a dragon for me..."
+                "text": "Well, normally you'd have to slay a dragon for me...",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "...but maybe I can make an exception once I've moved in here."
+                "text": "...but maybe I can make an exception once I've moved in here.",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "As a little thank you for the help!"
+                "text": "As a little thank you for the help!",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -107,6 +119,7 @@
                 "id": "vP8WpB"
               },
               {
+                "presentation": "overhead",
                 "npc": "That would be great! Let's get this deal done quickly."
               }
             ]
@@ -124,12 +137,15 @@
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "I can't wait to complete the purchase!"
+                "text": "I can't wait to complete the purchase!",
+                "presentation": "overhead"
               },
               {
+                "presentation": "overhead",
                 "npc": "It's almost done Oziach, not much longer."
               },
               {
+                "presentation": "overhead",
                 "npc": "Do you have any plans for it?"
               },
               {
@@ -142,12 +158,14 @@
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "I have a few. I might convert the top floor into a bar!"
+                "text": "I have a few. I might convert the top floor into a bar!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "It'll be for all dragon slayers I know, there's a lot of us!"
+                "text": "It'll be for all dragon slayers I know, there's a lot of us!",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -157,6 +175,7 @@
                 "id": "uy4s8w"
               },
               {
+                "presentation": "overhead",
                 "npc": "Interesting use of such a beautiful property!"
               }
             ]
@@ -165,6 +184,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "OoooOooOoOoOoooooooo!"
               },
               {
@@ -175,20 +195,24 @@
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "Ah!! Why did you do that?"
+                "text": "Ah!! Why did you do that?",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "That scared me!"
+                "text": "That scared me!",
+                "presentation": "overhead"
               },
               {
+                "presentation": "overhead",
                 "npc": "I'm sorry! I was just pretending to be a ghost."
               },
               {
                 "type": "line",
                 "speaker": "Oziach",
-                "text": "Don't do that! I don't like ghosts."
+                "text": "Don't do that! I don't like ghosts.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -210,14 +234,17 @@
         "id": "TjKwFs"
       },
       {
+        "presentation": "overhead",
         "npc": "I'm going to head back to the office."
       },
       {
         "type": "line",
         "speaker": "Oziach",
-        "text": "Alright, I'll see you later. Can't wait to move in!"
+        "text": "Alright, I'll see you later. Can't wait to move in!",
+        "presentation": "overhead"
       },
       {
+        "presentation": "overhead",
         "npc": "I know, it's a lovely place! See you!"
       },
       {
@@ -228,7 +255,8 @@
       {
         "type": "line",
         "speaker": "Oziach",
-        "text": "Ahhh... soon to be mine."
+        "text": "Ahhh... soon to be mine.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -245,44 +273,55 @@
       {
         "type": "line",
         "speaker": "Oziach",
-        "text": "So many ghosts... I need some help!"
+        "text": "So many ghosts... I need some help!",
+        "presentation": "overhead"
       },
       {
+        "presentation": "overhead",
         "npc": "Oziach! Are you okay? I heard shouting!"
       },
       {
         "type": "line",
         "speaker": "Oziach",
-        "text": "Hello! It's not going well. There are a lot of ghosts here!"
+        "text": "Hello! It's not going well. There are a lot of ghosts here!",
+        "presentation": "overhead"
       },
       {
+        "presentation": "overhead",
         "npc": "That's not good at all!"
       },
       {
+        "presentation": "overhead",
         "npc": "Do you still want to go ahead with the purchase?"
       },
       {
         "type": "line",
         "speaker": "Oziach",
-        "text": "Of course! TWO ghosts is scary, but not that scary!"
+        "text": "Of course! TWO ghosts is scary, but not that scary!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Oziach",
-        "text": "I'll hire myself one of those slayers we see everywhere."
+        "text": "I'll hire myself one of those slayers we see everywhere.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Oziach",
-        "text": "They will help with the ghost problem!"
+        "text": "They will help with the ghost problem!",
+        "presentation": "overhead"
       },
       {
+        "presentation": "overhead",
         "npc": "Phew, that is lovely news! I thought it was all over, then."
       },
       {
+        "presentation": "overhead",
         "npc": "I'll head back to the office, meet me there shortly."
       },
       {
+        "presentation": "overhead",
         "npc": "I'll be doing the final paperwork."
       },
       {

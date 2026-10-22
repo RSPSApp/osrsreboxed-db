@@ -840,7 +840,8 @@
       {
         "type": "line",
         "speaker": "Carl",
-        "text": "Hey! I see you there!"
+        "text": "Hey! I see you there!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -9849,27 +9850,32 @@
       {
         "type": "line",
         "speaker": "Vanstrom Klause",
-        "text": "Blood will be my strength!"
+        "text": "Blood will be my strength!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Vanstrom Klause",
-        "text": "My pets will feast on your corpse!"
+        "text": "My pets will feast on your corpse!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Vanstrom Klause",
-        "text": "Stare into darkness!"
+        "text": "Stare into darkness!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Vanstrom Klause",
-        "text": "Ha! Did you think you could beat me that easily?"
+        "text": "Ha! Did you think you could beat me that easily?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Vanstrom Klause",
-        "text": "See if you can survive this!"
+        "text": "See if you can survive this!",
+        "presentation": "overhead"
       }
     ],
     "a-bloody-show-vanstrom-during-the-fight-talking-to-veliaf-after-leaving-the-fight": [
@@ -10255,10 +10261,6 @@
         "type": "action",
         "text": "See post quest dialogue",
         "id": "UPl9kU"
-      },
-      {
-        "type": "unavailable",
-        "id": "y4agh9"
       }
     ]
   },

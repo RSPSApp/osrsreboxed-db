@@ -31,10 +31,12 @@
     ],
     "overhead-dialogue-battling-another-pet-in-the-arena-in-the-menagerie": [
       {
-        "npc": "squeal*"
+        "npc": "squeal*",
+        "presentation": "overhead"
       },
       {
-        "npc": "snuffle*"
+        "npc": "snuffle*",
+        "presentation": "overhead"
       }
     ]
   }

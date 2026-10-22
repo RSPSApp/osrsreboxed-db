@@ -6496,7 +6496,8 @@
         "player": "I think you've been hypnotised. I wonder what happens if I click my fingers?"
       },
       {
-        "player": "click*"
+        "player": "click*",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -9304,7 +9305,8 @@
         "id": "coPu8b"
       },
       {
-        "player": "Huh? Where am I?"
+        "player": "Huh? Where am I?",
+        "presentation": "overhead"
       }
     ],
     "visiting-the-dream-world-trying-to-unequip-lunar-items-while-in-the-dream-world": [
@@ -9778,7 +9780,8 @@
       {
         "type": "line",
         "speaker": "Ethereal Perceptive",
-        "text": "Dat's two more logs from dem troys."
+        "text": "Dat's two more logs from dem troys.",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -9800,7 +9803,8 @@
       {
         "type": "line",
         "speaker": "Ethereal Perceptive",
-        "text": "Oi! Get off moi troys!"
+        "text": "Oi! Get off moi troys!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10033,17 +10037,20 @@
       {
         "type": "line",
         "speaker": "Ethereal Expert",
-        "text": "On your marks!"
+        "text": "On your marks!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Ethereal Expert",
-        "text": "Get set!"
+        "text": "Get set!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Ethereal Expert",
-        "text": "Go !!!"
+        "text": "Go !!!",
+        "presentation": "overhead"
       }
     ],
     "visiting-the-dream-world-talking-to-the-ethereal-expert-during-the-race": [
@@ -10228,7 +10235,8 @@
       {
         "type": "line",
         "speaker": "Ethereal Numerator",
-        "text": "[sequence]"
+        "text": "[sequence]",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10292,7 +10300,8 @@
     ],
     "visiting-the-dream-world-pressing-numbers-press-zero": [
       {
-        "player": "Zero!"
+        "player": "Zero!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10302,7 +10311,8 @@
     ],
     "visiting-the-dream-world-pressing-numbers-press-one": [
       {
-        "player": "One!"
+        "player": "One!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10312,7 +10322,8 @@
     ],
     "visiting-the-dream-world-pressing-numbers-press-two": [
       {
-        "player": "Two!"
+        "player": "Two!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10322,7 +10333,8 @@
     ],
     "visiting-the-dream-world-pressing-numbers-press-three": [
       {
-        "player": "Three!"
+        "player": "Three!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10332,7 +10344,8 @@
     ],
     "visiting-the-dream-world-pressing-numbers-press-four": [
       {
-        "player": "Four!"
+        "player": "Four!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10342,7 +10355,8 @@
     ],
     "visiting-the-dream-world-pressing-numbers-press-five": [
       {
-        "player": "Five!"
+        "player": "Five!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10352,7 +10366,8 @@
     ],
     "visiting-the-dream-world-pressing-numbers-press-six": [
       {
-        "player": "Six!"
+        "player": "Six!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10362,7 +10377,8 @@
     ],
     "visiting-the-dream-world-pressing-numbers-press-seven": [
       {
-        "player": "Seven!"
+        "player": "Seven!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10372,7 +10388,8 @@
     ],
     "visiting-the-dream-world-pressing-numbers-press-eight": [
       {
-        "player": "Eight!"
+        "player": "Eight!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10382,7 +10399,8 @@
     ],
     "visiting-the-dream-world-pressing-numbers-press-nine": [
       {
-        "player": "Nine!"
+        "player": "Nine!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -10404,7 +10422,8 @@
       {
         "type": "line",
         "speaker": "Ethereal Numerator",
-        "text": "[sequence]"
+        "text": "[sequence]",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -11118,16 +11137,19 @@
       {
         "type": "line",
         "speaker": "Me",
-        "text": "Are you me? Am I you?"
+        "text": "Are you me? Am I you?",
+        "presentation": "overhead"
       },
       {
-        "type": "unavailable",
-        "id": "10dymd"
+        "type": "message",
+        "text": "Me : Are you me? Am I you?",
+        "id": "Lv5VKA"
       }
     ],
     "visiting-the-dream-world-the-fight-with-me-dialogue-from-the-player-during-the-fight-with-me": [
       {
-        "player": "Leave me alone... Me..."
+        "player": "Leave me alone... Me...",
+        "presentation": "overhead"
       }
     ],
     "visiting-the-dream-world-the-fight-with-me-trying-to-teleport-out": [
@@ -11194,8 +11216,9 @@
         "player": "Thanks!"
       },
       {
-        "type": "unavailable",
-        "id": "648935"
+        "type": "action",
+        "text": "Congratulations! Quest complete!",
+        "id": "znfmjZ"
       }
     ],
     "post-quest-talking-to-the-oneiromancer-after-the-quest": [
@@ -11258,9 +11281,6 @@
                   }
                 ],
                 "id": "dzXdii"
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -11271,10 +11291,6 @@
             "text": "Ask about anything else."
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "knZcic"
       }
     ]
   },

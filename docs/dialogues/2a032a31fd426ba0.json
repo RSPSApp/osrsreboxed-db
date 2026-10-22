@@ -1906,12 +1906,14 @@
                           {
                             "type": "line",
                             "speaker": "Elfinlocks",
-                            "text": "Keep up, cat!"
+                            "text": "Keep up, cat!",
+                            "presentation": "overhead"
                           },
                           {
                             "type": "line",
                             "speaker": "Clockwork cat",
-                            "text": "Click, whirr!"
+                            "text": "Click, whirr!",
+                            "presentation": "overhead"
                           },
                           {
                             "player": "Of course! I'll make some fake cats from wood and fur!"
@@ -3412,7 +3414,8 @@
       {
         "type": "line",
         "speaker": "Mi-Gor",
-        "text": "Wheeze* And now I will take my leave."
+        "text": "Wheeze* And now I will take my leave.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -3577,13 +3580,6 @@
         "type": "line",
         "speaker": "Dr Fenkenstrain",
         "text": "Thank you for helping me see the error of my ways, [player name]."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "cdeHkp"
       }
     ]
   },

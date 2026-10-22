@@ -152,9 +152,11 @@
         "options": []
       },
       {
+        "presentation": "overhead",
         "npc": "Time to go check how rich I am!"
       },
       {
+        "presentation": "overhead",
         "npc": "Lovely day for a stroll."
       }
     ],
@@ -172,9 +174,11 @@
         "id": "YG_wD0"
       },
       {
+        "presentation": "overhead",
         "npc": "Now where did I put my keys..."
       },
       {
+        "presentation": "overhead",
         "npc": "Ah, there they are!"
       },
       {
@@ -182,17 +186,21 @@
         "options": []
       },
       {
+        "presentation": "overhead",
         "npc": "It smells funny in here..."
       },
       {
+        "presentation": "overhead",
         "npc": "There's mud all over the floor!"
       },
       {
+        "presentation": "overhead",
         "npc": "Something isn't right here..."
       }
     ],
     "overhead-dialogue-when-victor-returns-and-catches-you-inside": [
       {
+        "presentation": "overhead",
         "npc": "How did you get in here?"
       }
     ]

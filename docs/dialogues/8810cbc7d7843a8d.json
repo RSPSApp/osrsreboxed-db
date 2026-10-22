@@ -183,7 +183,8 @@
     ],
     "getting-caught-when-thieving": [
       {
-        "npc": "What do you think you're doing?"
+        "npc": "What do you think you're doing?",
+        "presentation": "overhead"
       }
     ]
   }

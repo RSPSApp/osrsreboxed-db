@@ -905,17 +905,10 @@
                 "type": "line",
                 "speaker": "Trufitus",
                 "text": "I really need that Rogues Purse if I am to make this potion."
-              },
-              {
-                "type": "end"
               }
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "JUuYkS"
       }
     ]
   },

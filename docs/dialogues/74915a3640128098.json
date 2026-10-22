@@ -80,7 +80,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "My father shall be so pleased."
+                "npc": "My father shall be so pleased.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -88,7 +89,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Hmm. If divide by 20 and take off 50%..."
+                "npc": "Hmm. If divide by 20 and take off 50%...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -96,7 +98,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Woo hoo! What a sale!"
+                "npc": "Woo hoo! What a sale!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -104,7 +107,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "What shall I trade next..."
+                "npc": "What shall I trade next...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -112,7 +116,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "I can make so much money here!"
+                "npc": "I can make so much money here!",
+                "presentation": "overhead"
               }
             ]
           }

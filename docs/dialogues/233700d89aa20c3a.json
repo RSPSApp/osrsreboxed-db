@@ -29,7 +29,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Greetings, [Master/Mistress] [player name]!"
+            "npc": "Greetings, [Master/Mistress] [player name]!",
+            "presentation": "overhead"
           }
         ],
         "id": "6iArfc"
@@ -45,7 +46,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Hello, [Master/Mistress] [player name]?"
+                    "npc": "Hello, [Master/Mistress] [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -53,7 +55,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Ehem... [Master/Mistress] [player name]?"
+                    "npc": "Ehem... [Master/Mistress] [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -61,7 +64,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "I'm waiting for you, [Master/Mistress] [player name]!"
+                    "npc": "I'm waiting for you, [Master/Mistress] [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -75,7 +79,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "K0J5R_"
@@ -104,7 +109,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Greetings, Master [player name]!"
+            "npc": "Greetings, Master [player name]!",
+            "presentation": "overhead"
           }
         ],
         "id": "1NyHsS"
@@ -114,16 +120,20 @@
         "text": "While waiting for a response by the player:",
         "steps": [
           {
-            "npc": "Ehem... Master [player name]?"
+            "npc": "Ehem... Master [player name]?",
+            "presentation": "overhead"
           },
           {
-            "npc": "Are you there, Master [player name]?"
+            "npc": "Are you there, Master [player name]?",
+            "presentation": "overhead"
           },
           {
-            "npc": "You shouldn't ignore a Genie master [player name]?"
+            "npc": "You shouldn't ignore a Genie master [player name]?",
+            "presentation": "overhead"
           },
           {
-            "npc": "No one ignores me!"
+            "npc": "No one ignores me!",
+            "presentation": "overhead"
           }
         ],
         "id": "7GESZy"
@@ -140,7 +150,8 @@
         "text": "If the player has disappeared:",
         "steps": [
           {
-            "npc": "I lose more masters that way."
+            "npc": "I lose more masters that way.",
+            "presentation": "overhead"
           }
         ],
         "id": "uhmWwo"

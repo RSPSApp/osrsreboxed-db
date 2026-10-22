@@ -178,7 +178,8 @@
     ],
     "overhead-dialogue-when-the-shot-hits-the-ref": [
       {
-        "npc": "Oi! Watch where you're throwing that [player name]!"
+        "npc": "Oi! Watch where you're throwing that [player name]!",
+        "presentation": "overhead"
       }
     ]
   }

@@ -3,11 +3,13 @@
   "variants": {
     "casual-once-enough-players-join-for-a-game-to-begin": [
       {
+        "presentation": "overhead",
         "npc": "A casual game will start in the next [60 - 5x] seconds!"
       }
     ],
     "casual-when-the-start-teleporting-the-players-to-the-arena": [
       {
+        "presentation": "overhead",
         "npc": "A casual game is starting!"
       }
     ],

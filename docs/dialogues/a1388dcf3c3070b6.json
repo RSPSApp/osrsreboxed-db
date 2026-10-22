@@ -1082,7 +1082,8 @@
       {
         "type": "line",
         "speaker": "Drezel",
-        "text": "Ashustru, blessidium, adverturasi, fidum!"
+        "text": "Ashustru, blessidium, adverturasi, fidum!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -2000,10 +2001,6 @@
         "type": "message",
         "text": "This spirit seems to be busy.",
         "id": "iue0Gw"
-      },
-      {
-        "type": "unavailable",
-        "id": "5exxjD"
       }
     ]
   },

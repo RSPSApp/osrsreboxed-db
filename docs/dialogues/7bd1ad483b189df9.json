@@ -3,6 +3,7 @@
   "variants": {
     "dialogue-upon-spawning": [
       {
+        "presentation": "overhead",
         "npc": "DUUUHHH"
       }
     ]

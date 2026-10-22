@@ -138,10 +138,12 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Ali's Discount Wares..."
+                "npc": "Ali's Discount Wares...",
+                "presentation": "overhead"
               },
               {
-                "npc": "The finest store in the world!"
+                "npc": "The finest store in the world!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -149,10 +151,12 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Dommik's crafting store..."
+                "npc": "Dommik's crafting store...",
+                "presentation": "overhead"
               },
               {
-                "npc": "The place for all your crafting needs."
+                "npc": "The place for all your crafting needs.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -160,10 +164,12 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Ellis' Tannery..."
+                "npc": "Ellis' Tannery...",
+                "presentation": "overhead"
               },
               {
-                "npc": "The prices are better than the smell!"
+                "npc": "The prices are better than the smell!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -171,10 +177,12 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Run your enemies through in style..."
+                "npc": "Run your enemies through in style...",
+                "presentation": "overhead"
               },
               {
-                "npc": "with a Scimitar from Zeke's Superior Scimitars!"
+                "npc": "with a Scimitar from Zeke's Superior Scimitars!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -182,10 +190,12 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Visit Louie's Armoured Legs Bazaar..."
+                "npc": "Visit Louie's Armoured Legs Bazaar...",
+                "presentation": "overhead"
               },
               {
-                "npc": "Number one for clanky trousers!"
+                "npc": "Number one for clanky trousers!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -193,10 +203,12 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Visit Ranael's Super Skirt Store .."
+                "npc": "Visit Ranael's Super Skirt Store ..",
+                "presentation": "overhead"
               },
               {
-                "npc": "for the most stylish protection money can buy!"
+                "npc": "for the most stylish protection money can buy!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -204,10 +216,12 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Keep west as you travel south ..."
+                "npc": "Keep west as you travel south ...",
+                "presentation": "overhead"
               },
               {
-                "npc": "to avoid the killer scorpions!"
+                "npc": "to avoid the killer scorpions!",
+                "presentation": "overhead"
               }
             ]
           }

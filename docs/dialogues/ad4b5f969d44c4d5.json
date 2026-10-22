@@ -559,26 +559,19 @@
         "type": "choice",
         "options": [
           {
-            "text": "Yes."
-          }
-        ]
-      },
-      {
-        "player": "Yes."
-      },
-      {
-        "type": "line",
-        "speaker": "Zanik",
-        "text": "Well then, let's go!",
-        "steps": [
-          {
-            "type": "end"
-          }
-        ]
-      },
-      {
-        "type": "choice",
-        "options": [
+            "text": "Yes.",
+            "steps": [
+              {
+                "player": "Yes."
+              },
+              {
+                "type": "line",
+                "speaker": "Zanik",
+                "text": "Well then, let's go!",
+                "steps": []
+              }
+            ]
+          },
           {
             "text": "Not now.",
             "steps": [
@@ -1970,6 +1963,7 @@
                 "id": "-hDn8o"
               },
               {
+                "presentation": "overhead",
                 "type": "line",
                 "speaker": "Hans",
                 "text": "Help! Help!"
@@ -7411,17 +7405,19 @@
                   {
                     "text": "Follow me!",
                     "condition": "If Zanik has been told to wait",
+                    "steps": [
+                      {
+                        "player": "Follow me!"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Zanik",
+                        "text": "Okay, let's go!"
+                      }
+                    ],
                     "id": "AIksM4"
                   }
                 ]
-              },
-              {
-                "player": "Follow me!"
-              },
-              {
-                "type": "line",
-                "speaker": "Zanik",
-                "text": "Okay, let's go!"
               }
             ]
           },
@@ -7458,14 +7454,16 @@
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Hey! What are you doing here? Get out!"
+        "text": "Hey! What are you doing here? Get out!",
+        "presentation": "overhead"
       }
     ],
     "ham-seek-getting-spotted-by-the-guard-on-the-right": [
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "You there! You aren't allowed in here!"
+        "text": "You there! You aren't allowed in here!",
+        "presentation": "overhead"
       }
     ],
     "ham-seek-getting-spotted-by-the-patrolling-guard": [
@@ -7479,7 +7477,8 @@
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Hey! You there!"
+        "text": "Hey! You there!",
+        "presentation": "overhead"
       }
     ],
     "ham-seek-trying-to-talk-to-the-patrolling-guard": [
@@ -8295,29 +8294,24 @@
         "type": "choice",
         "options": [
           {
-            "text": "Okay."
-          }
-        ]
-      },
-      {
-        "player": "Okay.",
-        "steps": [
+            "text": "Okay.",
+            "steps": [
+              {
+                "player": "Okay.",
+                "steps": []
+              }
+            ]
+          },
           {
-            "type": "end"
+            "text": "I want to get out now!",
+            "steps": [
+              {
+                "player": "I want to get out now!",
+                "steps": []
+              }
+            ]
           }
         ]
-      },
-      {
-        "type": "choice",
-        "options": [
-          {
-            "text": "I want to get out now!"
-          }
-        ]
-      },
-      {
-        "player": "I want to get out now!",
-        "steps": []
       }
     ],
     "the-power-of-the-tears-upon-collecting-twenty-tears": [
@@ -9024,28 +9018,32 @@
       {
         "type": "line",
         "speaker": "Sigmund",
-        "text": "Saradomin protect me from melee!"
+        "text": "Saradomin protect me from melee!",
+        "presentation": "overhead"
       }
     ],
     "showdown-with-sigmund-confronting-sigmund-attacking-sigmund-with-magic": [
       {
         "type": "line",
         "speaker": "Sigmund",
-        "text": "Saradomin protect me from magic!"
+        "text": "Saradomin protect me from magic!",
+        "presentation": "overhead"
       }
     ],
     "showdown-with-sigmund-confronting-sigmund-attacking-sigmund-with-ranged": [
       {
         "type": "line",
         "speaker": "Sigmund",
-        "text": "Saradomin protect me from ranged!"
+        "text": "Saradomin protect me from ranged!",
+        "presentation": "overhead"
       }
     ],
     "showdown-with-sigmund-confronting-sigmund-when-zanik-attacks-sigmund": [
       {
         "type": "line",
         "speaker": "Sigmund",
-        "text": "Saradomin protect me from this foul goblin!"
+        "text": "Saradomin protect me from this foul goblin!",
+        "presentation": "overhead"
       }
     ],
     "showdown-with-sigmund-trying-to-smash-the-machine-while-sigmund-is-undefeated": [
@@ -9273,16 +9271,9 @@
             "type": "message",
             "text": "Zanik gives you a torch so you can see.",
             "id": "TrYWPj"
-          },
-          {
-            "type": "end"
           }
         ],
         "id": "tDGde4"
-      },
-      {
-        "type": "unavailable",
-        "id": "HwCvAS"
       }
     ]
   },

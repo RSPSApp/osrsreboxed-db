@@ -50,7 +50,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Surprise exam, [player name]!"
+            "npc": "Surprise exam, [player name]!",
+            "presentation": "overhead"
           }
         ],
         "id": "zR-r-v"
@@ -66,7 +67,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Surprise exam, [player name]!"
+                    "npc": "Surprise exam, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -74,7 +76,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Come to school, [player name]!"
+                    "npc": "Come to school, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -82,7 +85,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "You're getting tested, [player name]!"
+                    "npc": "You're getting tested, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -90,7 +94,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "The teacher wants you, [player name]!"
+                    "npc": "The teacher wants you, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -98,7 +103,8 @@
                 "text": "Dialogue 5",
                 "steps": [
                   {
-                    "npc": "Teacher gets angry when he's kept waiting, [player name]!"
+                    "npc": "Teacher gets angry when he's kept waiting, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -112,7 +118,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "qaamlz"

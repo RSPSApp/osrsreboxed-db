@@ -3,10 +3,12 @@
   "variants": {
     "overhead-dialogue": [
       {
-        "npc": "Hoot! Hoot!"
+        "npc": "Hoot! Hoot!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Marvelous!"
+        "npc": "Marvelous!",
+        "presentation": "overhead"
       }
     ]
   }

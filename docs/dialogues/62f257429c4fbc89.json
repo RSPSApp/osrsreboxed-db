@@ -31,7 +31,8 @@
                 "id": "-hDn8o"
               },
               {
-                "npc": "Help! Help!"
+                "npc": "Help! Help!",
+                "presentation": "overhead"
               }
             ]
           },

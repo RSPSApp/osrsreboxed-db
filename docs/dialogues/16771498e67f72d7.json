@@ -590,7 +590,8 @@
       {
         "type": "line",
         "speaker": "Black Knight",
-        "text": "Die, intruder!"
+        "text": "Die, intruder!",
+        "presentation": "overhead"
       }
     ],
     "sabotaging-the-potion-using-any-item-on-the-hole-or-a-cabbage-before-overhearing-the-witch": [
@@ -720,10 +721,6 @@
       {
         "type": "unavailable",
         "id": "rl89Tj"
-      },
-      {
-        "type": "unavailable",
-        "id": "kTdseX"
       }
     ]
   },

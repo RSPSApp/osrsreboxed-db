@@ -1300,7 +1300,8 @@
               {
                 "type": "line",
                 "speaker": "Grip",
-                "text": "Stay out of my drinks cabinet!"
+                "text": "Stay out of my drinks cabinet!",
+                "presentation": "overhead"
               },
               {
                 "type": "end"
@@ -1509,7 +1510,8 @@
     ],
     "entrana-firebird-feather-attempting-to-pick-up-a-fire-feather-without-ice-gloves": [
       {
-        "player": "Ouch!"
+        "player": "Ouch!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1705,10 +1707,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "AVQOM4"
-      },
-      {
-        "type": "unavailable",
-        "id": "BR6QB5"
       }
     ]
   },

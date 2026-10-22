@@ -745,7 +745,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Oh the huge-manatee."
+                "npc": "Oh the huge-manatee.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -753,7 +754,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Who needs fronds when you have anenomes?"
+                "npc": "Who needs fronds when you have anenomes?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -761,7 +763,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "I'm kraken me up."
+                "npc": "I'm kraken me up.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -769,7 +772,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Why so sea-rious?"
+                "npc": "Why so sea-rious?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -777,7 +781,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Twolegs are so shellfish."
+                "npc": "Twolegs are so shellfish.",
+                "presentation": "overhead"
               }
             ]
           }

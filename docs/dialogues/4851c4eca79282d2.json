@@ -90,199 +90,196 @@
             ]
           },
           {
-            "text": "Tell me about the islands' history."
-          }
-        ]
-      },
-      {
-        "player": "Tell me about the islands' history.",
-        "steps": [
-          {
-            "player": "Tell me more about Jatizso."
+            "text": "Tell me about the islands' history.",
+            "steps": [
+              {
+                "player": "Tell me about the islands' history.",
+                "steps": [
+                  {
+                    "player": "Tell me more about Jatizso."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Well now, the history of the isles is a bloody tale. When told in its intended form it takes 9 days and 9 nights. However, I will give you the abridged version."
+                  },
+                  {
+                    "player": "Phew!"
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Four generations ago there was a mighty king who ruled wisely and was loved by all."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "He had many sons, most of whom proved themselves in the usual Fremennik ways of fighting, sailing, drinking and so on."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "His youngest two sons, however, were a problem. Ever since they were old enough to hit one another they had bickered and fought."
+                  },
+                  {
+                    "npc": "Their names were Jatizso and Neitiznot."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Hey! Who's telling this story?"
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Ahem. At the time it was customary for the Kings' sons to claim a prize from his treasury when they came of age."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Each brother rallied support and strode out to confront the other on the field of battle to claim the same prize."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "The brothers met on the field, limbs were bruised, bones were crushed and heads clashed."
+                  },
+                  {
+                    "npc": "They probably didn't notice the head-clashing bit. Too thick skulled!"
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Can I finish the story without interruptions?"
+                  },
+                  {
+                    "npc": "Carry on dear."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Anyway, long into the night they fought, until they stood alone, facing each other."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "On the second day the old king, whose patience was exhausted, strode out onto the field and demanded to know who had claimed his prize."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Jatizso looked at his father and told him yes, it was his, to which the other called out 'No! It's not'."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "And so, the argument continued through to the third day, with the sounds of 'Jah! 'tis so!', 'Ne! It's not!' echoing over the field, becoming more hoarse as the darkness enveloped the brothers."
+                  },
+                  {
+                    "npc": "Bah! What they needed was a good clip round the ear."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "At the end of the third day, when the brothers lay unable to move, let alone stand, the King stood between them in shame."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "As punishment for their squabbling he banished his sons from his realm, ordering that neither should return until they had conquered lands of their own."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Jatizso set sail with a band of loyal followers, sailing into the east, while Neitiznot went west."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Jatizso ventured far into uncharted oceans, his crew dwindling as the trials of sailing and sea monsters took them."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Jatizso's ship limped through the frozen wastes, in need of repairs, fighting off pirates who thought them easy pickings."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "At last a promising land was sighted, a land rich in minerals, deep fjords and sweeping mountains."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Jatizso claimed the land and named it after himself."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "A mighty citadel was constructed to protect his land; then Jatizso set forth to explore his new kingdom."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Crossing a few fjords, Jatizso spied an island which remained green and fertile, even at such latitude."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "With a mighty cheer Jatizso and his men marched on the island. Upon reaching the island, however, they discovered a wooden stockade."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Determined to be master of all the land, Jatizso stood in front of the gates. He looked up and demanded that those within the stockade surrendered."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Jatizso was horrified when his brother appeared on the battlements and cried 'This is my land! Go find yer own'. To which his brother replied 'No it's not!', throwing some rocks for good measure."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "And so the blood feud continued."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "The fighting between the towns has continued for generations with little sign of improvement."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Quite recently a massive troll army seized one of the islands to the north, while our townships' militias were busy fighting one another."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "They marched down and razed Neitiznot to the ground while Neitiznot's troops laid siege to Jatizso."
+                  },
+                  {
+                    "npc": "The smoke damage was atrocious, I had to replace my entire wardrobe."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Yes, dear."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "Anyway, a hasty sort of peace has been agreed until the trolls are dealt with."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Mord Gunnars",
+                    "text": "But you can still see the bitter rivalry as guards hurl insults between the towns."
+                  }
+                ]
+              }
+            ]
           },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Well now, the history of the isles is a bloody tale. When told in its intended form it takes 9 days and 9 nights. However, I will give you the abridged version."
-          },
-          {
-            "player": "Phew!"
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Four generations ago there was a mighty king who ruled wisely and was loved by all."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "He had many sons, most of whom proved themselves in the usual Fremennik ways of fighting, sailing, drinking and so on."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "His youngest two sons, however, were a problem. Ever since they were old enough to hit one another they had bickered and fought."
-          },
-          {
-            "npc": "Their names were Jatizso and Neitiznot."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Hey! Who's telling this story?"
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Ahem. At the time it was customary for the Kings' sons to claim a prize from his treasury when they came of age."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Each brother rallied support and strode out to confront the other on the field of battle to claim the same prize."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "The brothers met on the field, limbs were bruised, bones were crushed and heads clashed."
-          },
-          {
-            "npc": "They probably didn't notice the head-clashing bit. Too thick skulled!"
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Can I finish the story without interruptions?"
-          },
-          {
-            "npc": "Carry on dear."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Anyway, long into the night they fought, until they stood alone, facing each other."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "On the second day the old king, whose patience was exhausted, strode out onto the field and demanded to know who had claimed his prize."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Jatizso looked at his father and told him yes, it was his, to which the other called out 'No! It's not'."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "And so, the argument continued through to the third day, with the sounds of 'Jah! 'tis so!', 'Ne! It's not!' echoing over the field, becoming more hoarse as the darkness enveloped the brothers."
-          },
-          {
-            "npc": "Bah! What they needed was a good clip round the ear."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "At the end of the third day, when the brothers lay unable to move, let alone stand, the King stood between them in shame."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "As punishment for their squabbling he banished his sons from his realm, ordering that neither should return until they had conquered lands of their own."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Jatizso set sail with a band of loyal followers, sailing into the east, while Neitiznot went west."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Jatizso ventured far into uncharted oceans, his crew dwindling as the trials of sailing and sea monsters took them."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Jatizso's ship limped through the frozen wastes, in need of repairs, fighting off pirates who thought them easy pickings."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "At last a promising land was sighted, a land rich in minerals, deep fjords and sweeping mountains."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Jatizso claimed the land and named it after himself."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "A mighty citadel was constructed to protect his land; then Jatizso set forth to explore his new kingdom."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Crossing a few fjords, Jatizso spied an island which remained green and fertile, even at such latitude."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "With a mighty cheer Jatizso and his men marched on the island. Upon reaching the island, however, they discovered a wooden stockade."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Determined to be master of all the land, Jatizso stood in front of the gates. He looked up and demanded that those within the stockade surrendered."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Jatizso was horrified when his brother appeared on the battlements and cried 'This is my land! Go find yer own'. To which his brother replied 'No it's not!', throwing some rocks for good measure."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "And so the blood feud continued."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "The fighting between the towns has continued for generations with little sign of improvement."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Quite recently a massive troll army seized one of the islands to the north, while our townships' militias were busy fighting one another."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "They marched down and razed Neitiznot to the ground while Neitiznot's troops laid siege to Jatizso."
-          },
-          {
-            "npc": "The smoke damage was atrocious, I had to replace my entire wardrobe."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Yes, dear."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "Anyway, a hasty sort of peace has been agreed until the trolls are dealt with."
-          },
-          {
-            "type": "line",
-            "speaker": "Mord Gunnars",
-            "text": "But you can still see the bitter rivalry as guards hurl insults between the towns."
-          }
-        ]
-      },
-      {
-        "type": "choice",
-        "options": [
           {
             "text": "Tell me about Burger Mawnis Burowgar.",
             "steps": [
@@ -331,7 +328,7 @@
               {
                 "type": "jump",
                 "reference": "previous",
-                "id": "N9NUP4"
+                "id": "059-TX"
               }
             ]
           },
@@ -347,7 +344,7 @@
               {
                 "type": "message",
                 "text": "Leaving Rellekka for Neitiznot.",
-                "id": "wfwKsg"
+                "id": "lU3-YR"
               }
             ]
           },
@@ -364,7 +361,8 @@
                 "player": "I may be back later."
               },
               {
-                "npc": "Bye"
+                "npc": "Bye",
+                "presentation": "overhead"
               }
             ]
           }

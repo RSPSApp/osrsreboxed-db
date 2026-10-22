@@ -26,22 +26,27 @@
     ],
     "after-the-fremennik-trials-catching-the-player-trying-to-steal-from-his-fur-stalls": [
       {
+        "presentation": "overhead",
         "npc": "Hey! Get your hands off there!"
       }
     ],
     "after-the-fremennik-trials-interacting-with-him-after-stealing-from-his-fur-stalls-recently-talk-to-option": [
       {
+        "presentation": "overhead",
         "npc": "You think me stupid [Fremennik name]?"
       },
       {
+        "presentation": "overhead",
         "npc": "Guards guards!"
       }
     ],
     "after-the-fremennik-trials-interacting-with-him-after-stealing-from-his-fur-stalls-recently-trade-option": [
       {
+        "presentation": "overhead",
         "npc": "You're the one who stole something from me!"
       },
       {
+        "presentation": "overhead",
         "npc": "Guards guards!"
       }
     ]

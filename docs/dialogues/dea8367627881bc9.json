@@ -3,6 +3,7 @@
   "variants": {
     "standard-dialogue-without-a-catspeak-amulet": [
       {
+        "presentation": "overhead",
         "npc": "Miaoww"
       }
     ],

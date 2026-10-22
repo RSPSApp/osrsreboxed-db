@@ -96,6 +96,7 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
+            "presentation": "overhead",
             "npc": "Ahahahaha, [player name]!"
           }
         ],
@@ -112,6 +113,7 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
+                    "presentation": "overhead",
                     "npc": "Please let me check you, [player name]!"
                   }
                 ]
@@ -120,6 +122,7 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
+                    "presentation": "overhead",
                     "npc": "I have come to check you, [player name]..."
                   }
                 ]
@@ -137,6 +140,7 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
+            "presentation": "overhead",
             "npc": "Ahahahaha, ONE more person ignored me..."
           }
         ],

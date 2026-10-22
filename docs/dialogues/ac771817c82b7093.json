@@ -245,7 +245,7 @@
                                                     "type": "end"
                                                   }
                                                 ],
-                                                "id": "eNFDf8"
+                                                "id": "YYMoVi"
                                               },
                                               {
                                                 "type": "condition",
@@ -255,7 +255,7 @@
                                                     "npc": "Her house is east of here."
                                                   }
                                                 ],
-                                                "id": "kLLyj-"
+                                                "id": "ANlz4K"
                                               }
                                             ]
                                           }
@@ -272,7 +272,7 @@
                                     ]
                                   }
                                 ],
-                                "npc": "Do you want me to point you in the right direction? {{Anchor|below}}"
+                                "npc": "Do you want me to point you in the right direction?"
                               }
                             ],
                             "id": "277kq1"
@@ -316,6 +316,7 @@
     ],
     "overhead-dialogue-when-a-wealthy-citizen-is-about-to-re-enter-their-house": [
       {
+        "presentation": "overhead",
         "npc": "whistle*"
       }
     ]

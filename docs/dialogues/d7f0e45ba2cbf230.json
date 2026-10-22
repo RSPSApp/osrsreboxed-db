@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue-switching-attack-styles": [
       {
-        "npc": "Rhaaaaaaa!"
+        "npc": "Rhaaaaaaa!",
+        "presentation": "overhead"
       }
     ]
   }

@@ -1279,7 +1279,8 @@
       {
         "type": "line",
         "speaker": "Khazard Guard",
-        "text": "Die you monster!"
+        "text": "Die you monster!",
+        "presentation": "overhead"
       }
     ],
     "the-battles-upon-killing-bouncer-talking-to-the-spectator-after-defeating-khazard": [
@@ -1400,10 +1401,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "aAxtbU"
-      },
-      {
-        "type": "unavailable",
-        "id": "1W9xOx"
       }
     ]
   }

@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue-upon-spawn": [
       {
-        "npc": "No warning! Be gone!"
+        "npc": "No warning! Be gone!",
+        "presentation": "overhead"
       }
     ]
   }

@@ -3,23 +3,28 @@
   "variants": {
     "player-interactions-if-player-chooses-to-pet-molossus": [
       {
-        "player": "Who's a good doggy!"
+        "player": "Who's a good doggy!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Woof!"
+        "npc": "Woof!",
+        "presentation": "overhead"
       }
     ],
     "player-interactions-if-player-chooses-to-shoo-molossus": [
       {
-        "player": "Thbbbbt!"
+        "player": "Thbbbbt!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Whine!"
+        "npc": "Whine!",
+        "presentation": "overhead"
       }
     ],
     "item-interactions-using-a-bone-on-molossus": [
       {
-        "npc": "Woof woof!"
+        "npc": "Woof woof!",
+        "presentation": "overhead"
       },
       {
         "type": "unavailable",
@@ -28,7 +33,8 @@
     ],
     "item-interactions-using-a-piece-of-meat-on-molossus": [
       {
-        "npc": "Woof woof!"
+        "npc": "Woof woof!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -38,7 +44,8 @@
     ],
     "item-interactions-using-a-disliked-item-on-molossus": [
       {
-        "npc": "Grrrr!"
+        "npc": "Grrrr!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -48,7 +55,8 @@
     ],
     "item-interactions-using-any-other-item-on-molossus": [
       {
-        "npc": "Grrrr!"
+        "npc": "Grrrr!",
+        "presentation": "overhead"
       },
       {
         "type": "message",

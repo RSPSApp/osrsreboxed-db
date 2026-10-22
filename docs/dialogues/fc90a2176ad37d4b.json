@@ -99,7 +99,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Only a king can right the wrongs of the Council! And only you can make that happen!"
+                "npc": "Only a king can right the wrongs of the Council! And only you can make that happen!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -107,7 +108,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "How long will you keep your eyes closed? Their corruption surrounds you!"
+                "npc": "How long will you keep your eyes closed? Their corruption surrounds you!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -115,7 +117,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "This kingdom will never be safe while the Council rule!"
+                "npc": "This kingdom will never be safe while the Council rule!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -123,7 +126,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "You deserve the truth! They won't give it to you!"
+                "npc": "You deserve the truth! They won't give it to you!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -131,7 +135,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "The Council have wronged you! It's time to make things right!"
+                "npc": "The Council have wronged you! It's time to make things right!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -139,7 +144,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Together, we can bring an end to the treachery of the Council!"
+                "npc": "Together, we can bring an end to the treachery of the Council!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -147,7 +153,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "The Council care only for themselves! It's time for a ruler who cares for you!"
+                "npc": "The Council care only for themselves! It's time for a ruler who cares for you!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -155,7 +162,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "Kourend is a kingdom! A kingdom needs a king, not a council!"
+                "npc": "Kourend is a kingdom! A kingdom needs a king, not a council!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -163,7 +171,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "Democracy? What democracy? It's all a façade!"
+                "npc": "Democracy? What democracy? It's all a façade!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -171,7 +180,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "People of Kourend, you have been lied to!"
+                "npc": "People of Kourend, you have been lied to!",
+                "presentation": "overhead"
               }
             ]
           }

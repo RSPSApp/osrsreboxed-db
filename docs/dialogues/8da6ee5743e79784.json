@@ -742,7 +742,8 @@
               {
                 "type": "line",
                 "speaker": "Harold",
-                "text": "Wow!"
+                "text": "Wow!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
@@ -1225,8 +1226,9 @@
         "text": "If the player has not yet read the IOU:",
         "steps": [
           {
-            "type": "unavailable",
-            "id": "he7hjU"
+            "type": "message",
+            "text": "Harold has given you an IOU scribbled on some paper.",
+            "id": "mUS50D"
           },
           {
             "type": "end"
@@ -2279,8 +2281,9 @@
         "text": "These are expensive, do not lose another pair!"
       },
       {
-        "type": "unavailable",
-        "id": "Rgpc3S"
+        "type": "message",
+        "text": "Tenzing has given you some climbing boots.",
+        "id": "gUxInm"
       }
     ],
     "new-route-up-death-plateau-talking-to-tenzing-while-holding-climbing-or-spiked-boots": [
@@ -2448,8 +2451,9 @@
         "text": "Never mind. I'll quickly draw you another one."
       },
       {
-        "type": "unavailable",
-        "id": "vVV4wM"
+        "type": "message",
+        "text": "Tenzing has given you a map of the secret way!",
+        "id": "U16B4S"
       },
       {
         "type": "message",
@@ -2980,10 +2984,6 @@
           }
         ],
         "id": "4jsH6P"
-      },
-      {
-        "type": "unavailable",
-        "id": "T15qQt"
       }
     ]
   },
@@ -3181,7 +3181,8 @@
       {
         "type": "line",
         "speaker": "Harold",
-        "text": "Wow!"
+        "text": "Wow!",
+        "presentation": "overhead"
       },
       {
         "type": "line",

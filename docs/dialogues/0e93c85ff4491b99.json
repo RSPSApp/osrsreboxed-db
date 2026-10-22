@@ -210,13 +210,16 @@
         "options": []
       },
       {
-        "npc": "You smart. You loyal."
+        "npc": "You smart. You loyal.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Another one."
+        "npc": "Another one.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Ah, perfect!"
+        "npc": "Ah, perfect!",
+        "presentation": "overhead"
       }
     ]
   }

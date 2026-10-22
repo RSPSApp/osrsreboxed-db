@@ -14,7 +14,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "YOU ARE A TERRIBLE BARD!"
+                "npc": "YOU ARE A TERRIBLE BARD!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -22,7 +23,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Don't give up your day job outerlander!"
+                "npc": "Don't give up your day job outerlander!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -30,7 +32,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "I thought somebody was murdering a cat!"
+                "npc": "I thought somebody was murdering a cat!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -38,7 +41,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "You know, I actually quite liked that verse..."
+                "npc": "You know, I actually quite liked that verse...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -46,7 +50,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "That's kind of catchy. Irritating. But catchy."
+                "npc": "That's kind of catchy. Irritating. But catchy.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -54,7 +59,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Hey, I've done that quest too!"
+                "npc": "Hey, I've done that quest too!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -62,7 +68,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "I have produced better sounds in the outhouse!"
+                "npc": "I have produced better sounds in the outhouse!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -70,7 +77,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "Your song makes no sense outerlander!"
+                "npc": "Your song makes no sense outerlander!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -78,7 +86,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "What kind of bard are you anyway?"
+                "npc": "What kind of bard are you anyway?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -86,7 +95,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "I have met cows more musical than you!"
+                "npc": "I have met cows more musical than you!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -94,7 +104,8 @@
             "text": "Dialogue 11",
             "steps": [
               {
-                "npc": "When do you get to the good parts?"
+                "npc": "When do you get to the good parts?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -102,7 +113,8 @@
             "text": "Dialogue 12",
             "steps": [
               {
-                "npc": "would torture us so, outerlander?"
+                "npc": "would torture us so, outerlander?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -110,7 +122,8 @@
             "text": "Dialogue 13",
             "steps": [
               {
-                "npc": "Truly, this is the worst sound I have ever heard!"
+                "npc": "Truly, this is the worst sound I have ever heard!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -118,7 +131,8 @@
             "text": "Dialogue 14",
             "steps": [
               {
-                "npc": "looting and drinking part?"
+                "npc": "looting and drinking part?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -126,7 +140,8 @@
             "text": "Dialogue 15",
             "steps": [
               {
-                "npc": "Please tell me that was the last verse..."
+                "npc": "Please tell me that was the last verse...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -134,7 +149,8 @@
             "text": "Dialogue 16",
             "steps": [
               {
-                "npc": "Please... Kill me now..."
+                "npc": "Please... Kill me now...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -142,7 +158,8 @@
             "text": "Dialogue 17",
             "steps": [
               {
-                "npc": "You call THAT singing?"
+                "npc": "You call THAT singing?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -150,7 +167,8 @@
             "text": "Dialogue 18",
             "steps": [
               {
-                "npc": "Never before have mine ears been so offended!"
+                "npc": "Never before have mine ears been so offended!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -158,7 +176,8 @@
             "text": "Dialogue 19",
             "steps": [
               {
-                "npc": "Worst. Bard. EVER."
+                "npc": "Worst. Bard. EVER.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -166,7 +185,8 @@
             "text": "Dialogue 20",
             "steps": [
               {
-                "npc": "Please, ye gods! Make it stop!"
+                "npc": "Please, ye gods! Make it stop!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -174,7 +194,8 @@
             "text": "Dialogue 21",
             "steps": [
               {
-                "npc": "If you stopped singing"
+                "npc": "If you stopped singing",
+                "presentation": "overhead"
               }
             ]
           },
@@ -182,7 +203,8 @@
             "text": "Dialogue 22",
             "steps": [
               {
-                "npc": "The screams of my dying comrades sound better!"
+                "npc": "The screams of my dying comrades sound better!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -190,7 +212,8 @@
             "text": "Dialogue 23",
             "steps": [
               {
-                "npc": "My grandmother could do better, and she is dead!"
+                "npc": "My grandmother could do better, and she is dead!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -198,7 +221,8 @@
             "text": "Dialogue 24",
             "steps": [
               {
-                "npc": "I do such feats before breakfast!"
+                "npc": "I do such feats before breakfast!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -206,7 +230,8 @@
             "text": "Dialogue 25",
             "steps": [
               {
-                "npc": "Is your singing some kind of outerlander weapon?"
+                "npc": "Is your singing some kind of outerlander weapon?",
+                "presentation": "overhead"
               }
             ]
           }

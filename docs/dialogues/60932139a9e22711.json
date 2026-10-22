@@ -34,7 +34,8 @@
                 "text": "The player and Yami simultaneously continue:",
                 "steps": [
                   {
-                    "npc": "-locking me in your house, you absolutely intolerable moron."
+                    "npc": "-locking me in your house, you absolutely intolerable moron.",
+                    "presentation": "overhead"
                   },
                   {
                     "player": "Okay, I get the idea."
@@ -95,20 +96,24 @@
     ],
     "overhead-dialogue-battling-another-pet-in-the-arena-in-the-menagerie": [
       {
-        "npc": "I could incinerate you if I wanted."
+        "npc": "I could incinerate you if I wanted.",
+        "presentation": "overhead"
       },
       {
-        "npc": "I'm holding back because this house is actually habitable."
+        "npc": "I'm holding back because this house is actually habitable.",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-dropped-by-yama": [
       {
-        "npc": "Oh no."
+        "npc": "Oh no.",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-upon-being-picked-up": [
       {
-        "npc": "Get your hands off of m-"
+        "npc": "Get your hands off of m-",
+        "presentation": "overhead"
       }
     ]
   }

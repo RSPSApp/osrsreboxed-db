@@ -1224,7 +1224,8 @@
       {
         "type": "line",
         "speaker": "Sir Leye",
-        "text": "No blade may defeat me!"
+        "text": "No blade may defeat me!",
+        "presentation": "overhead"
       }
     ],
     "the-tests-sir-kuam-ferentse-talking-to-sir-leye": [
@@ -1480,10 +1481,6 @@
         "type": "message",
         "text": "Your respawn point has been left alone, but you can now speak to Sir Tiffy to change it to Falador.",
         "id": "rMlr3k"
-      },
-      {
-        "type": "unavailable",
-        "id": "rpGhae"
       }
     ]
   },

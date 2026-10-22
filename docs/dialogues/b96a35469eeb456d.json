@@ -243,7 +243,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -300,7 +300,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -465,7 +465,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -523,7 +523,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -734,12 +734,14 @@
           {
             "type": "line",
             "speaker": "Glouphrie",
-            "text": "Em Gal lauf rei!"
+            "text": "Em Gal lauf rei!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Glouphrie",
-            "text": "Emeto Laufolly egramentos umesco lamiten gan!"
+            "text": "Emeto Laufolly egramentos umesco lamiten gan!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -769,12 +771,14 @@
           {
             "type": "line",
             "speaker": "Goblin 3 (unnamed)",
-            "text": "Scarey tortisses! Runz!"
+            "text": "Scarey tortisses! Runz!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Goblin 4 (unnamed)",
-            "text": "Runz away!"
+            "text": "Runz away!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -1181,7 +1185,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -1332,7 +1336,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -1366,7 +1370,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -1627,7 +1631,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -1726,7 +1730,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -1789,7 +1793,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -1931,7 +1935,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -2053,7 +2057,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -2087,7 +2091,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -2131,7 +2135,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -2227,7 +2231,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "_cwLg0"
+                "branch": "has-eH"
               }
             ]
           }
@@ -2315,13 +2319,6 @@
         "type": "message",
         "text": "Congratulations, you've completed a quest: The Eyes of Glouphrie",
         "id": "eSgfmS"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "ggcPD6"
       }
     ]
   },
@@ -2336,7 +2333,7 @@
         "text": "Well, have a careful look around at everything in the next cave and come back and tell me what you find."
       }
     ],
-    "_cwLg0": [
+    "has-eH": [
       {
         "player": "Can you teleport me to the Rune Essence?"
       },
@@ -2346,6 +2343,7 @@
         "text": "Okay. Hold onto your hat!"
       },
       {
+        "presentation": "overhead",
         "type": "line",
         "speaker": "Brimstail",
         "text": "Senventior Disthine Molenko!"

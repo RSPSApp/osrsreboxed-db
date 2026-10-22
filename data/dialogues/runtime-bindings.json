@@ -1,4 +1,21 @@
 {
+  "Icthlarin's Little Helper": {
+    "structure": {
+      "revision": 15285199,
+      "lines": [
+        {
+          "line": 259,
+          "sha256": "8d507c4d3f5d66cfa109121f1290e8637da0bbb715e66e087fbcb4e8799292f8",
+          "depth": 4
+        },
+        {
+          "line": 415,
+          "sha256": "e9b7429c0180528c9337ef0148bfef26132b495da913b48b257a904a2d1e0678",
+          "depth": 1
+        }
+      ]
+    }
+  },
   "Shantay": {
     "effects": {
       "CrRbq8": {

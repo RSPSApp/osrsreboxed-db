@@ -23,6 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import json
 
+import jsonschema
 import pytest
 
 import config
@@ -142,6 +143,167 @@ def test_inferred_condition_replaces_the_action_type():
 def test_template_slugs_are_not_marked_as_inferred():
     node = dialogues_update.parse_step("{{tact|opens=Bank}}", [], 1)
     assert "action_source" not in node
+
+
+@pytest.mark.parametrize(
+    "raw,name,expected",
+    [
+        (
+            "'''Player:''' {{overhead|Woop!}}",
+            "Monk",
+            {"player": "Woop!", "presentation": "overhead"},
+        ),
+        (
+            "'''Monk:''' {{overhead|Yeah!}}",
+            "Monk",
+            {"npc": "Yeah!", "presentation": "overhead"},
+        ),
+        (
+            "'''Brother Omad:''' {{overhead|Party!}}",
+            "Monk",
+            {
+                "type": "line",
+                "speaker": "Brother Omad",
+                "text": "Party!",
+                "presentation": "overhead",
+            },
+        ),
+        ("'''Player:''' Thanks!", "Monk", {"player": "Thanks!"}),
+        ("'''Monk:''' Greetings.", "Monk", {"npc": "Greetings."}),
+        (
+            "'''Brother Omad:''' Hello.",
+            "Monk",
+            {"type": "line", "speaker": "Brother Omad", "text": "Hello."},
+        ),
+    ],
+)
+def test_overhead_speech_sets_presentation(raw, name, expected):
+    node = dialogues_update.parse_step(raw, [], 1)
+    assert dialogues_update.gameplay_step(node, name) == expected
+
+
+@pytest.mark.parametrize(
+    "plain,overhead",
+    [
+        (
+            "* '''Monk:''' Hello.\n** {{tact|receives=a lamp}}",
+            "* '''Monk:''' {{overhead|Hello.}}\n** {{tact|receives=a lamp}}",
+        ),
+        (
+            "* '''Player:''' Hello.\n** {{tact|receives=a lamp}}",
+            "* '''Player:''' {{overhead|Hello.}}\n** {{tact|receives=a lamp}}",
+        ),
+        (
+            "* '''Brother Omad:''' Hello.\n** {{tact|receives=a lamp}}",
+            "* '''Brother Omad:''' {{overhead|Hello.}}\n** {{tact|receives=a lamp}}",
+        ),
+    ],
+)
+def test_overhead_presentation_does_not_change_source_or_child_ids(plain, overhead):
+    def identify(raw):
+        parsed = dialogues_update.parse_npc("Monk", raw)
+        record = dialogues_update.gameplay_npc("Monk", parsed)
+        dialogues_update.enrich_records(
+            {"Monk": record}, {}, {}, dialogues_update.clean
+        )
+        steps = next(iter(record["variants"].values()))
+        return steps[0]
+
+    plain_node = identify(plain)
+    overhead_node = identify(overhead)
+    assert overhead_node["presentation"] == "overhead"
+    assert plain_node["id"] == overhead_node["id"]
+    assert "id" in plain_node["steps"][0]
+    assert plain_node["steps"][0]["id"] == overhead_node["steps"][0]["id"]
+
+
+@pytest.mark.parametrize(
+    "raw",
+    [
+        "{{tbox|pic=Law rune detail.png|Brother Omad gives you 8 Law Runes.}}"
+        "{{^|If inventory is full, runes appear on the floor after you finish dancing.}}",
+        "{{^|If inventory is full, runes appear on the floor after you finish dancing.}}"
+        "{{tbox|pic=Law rune detail.png|Brother Omad gives you 8 Law Runes.}}",
+    ],
+)
+def test_adjacent_editorial_footnotes_do_not_mask_tbox(raw):
+    assert dialogues_update.parse_step(raw, [], 1) == {
+        "type": "message",
+        "text": "Brother Omad gives you 8 Law Runes.",
+        "image": "Law rune detail.png",
+    }
+
+
+def test_normal_standalone_template_still_parses():
+    assert dialogues_update.parse_step("{{tbox|Hello.}}", [], 1) == {
+        "type": "message",
+        "text": "Hello.",
+    }
+
+
+def test_multiple_substantive_templates_remain_unparsed():
+    raw = "{{tbox|One.}}{{tbox|Two.}}"
+    node = dialogues_update.parse_step(raw, [], 1)
+    assert node == {"type": "unparsed", "raw": raw}
+    assert dialogues_update.gameplay_step(node, "Monk") == {"type": "unavailable"}
+
+
+def test_tmissing_remains_missing():
+    assert dialogues_update.parse_step("{{tmissing}}", [], 1) == {"type": "missing"}
+
+
+def test_monks_friend_final_handover_keeps_image_authoring_only():
+    pages = json.loads(
+        (config.DATA_PATH / "dialogues" / "quest-pages.json").read_text()
+    )
+    page = pages["Transcript:Monk's Friend"]
+    parsed = dialogues_update.parse_npc("Monk's Friend", page["wikitext"])
+    record = dialogues_update.gameplay_npc("Monk's Friend", parsed)
+
+    def walk(nodes):
+        for node in nodes:
+            if isinstance(node, dict):
+                yield node
+                yield from walk(node.get("steps", []))
+                yield from walk(node.get("options", []))
+
+    source_handovers = [
+        node
+        for node in walk(
+            [
+                step
+                for variant in parsed["variants"].values()
+                for step in variant["steps"]
+            ]
+        )
+        if node.get("text") == "Brother Omad gives you 8 Law Runes."
+    ]
+    handovers = [
+        node
+        for node in walk(
+            [step for steps in record["variants"].values() for step in steps]
+        )
+        if node.get("text") == "Brother Omad gives you 8 Law Runes."
+    ]
+    assert source_handovers == [
+        {
+            "type": "message",
+            "text": "Brother Omad gives you 8 Law Runes.",
+            "image": "Law rune detail.png",
+        }
+    ]
+    assert handovers == [
+        {
+            "type": "message",
+            "text": "Brother Omad gives you 8 Law Runes.",
+        }
+    ]
+    schema = json.loads(
+        (config.DATA_PATH / "schemas" / "schema-dialogues.json").read_text()
+    )
+    jsonschema.Draft202012Validator(
+        {"$defs": schema["$defs"], "$ref": "#/$defs/step"}
+    ).validate(handovers[0])
 
 
 @pytest.mark.parametrize(

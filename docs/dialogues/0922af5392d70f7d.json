@@ -55,6 +55,7 @@
     ],
     "overhead-dialogue": [
       {
+        "presentation": "overhead",
         "npc": "YYEEEEEAAARRRRGGHHHH!!!"
       }
     ]

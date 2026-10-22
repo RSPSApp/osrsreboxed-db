@@ -2320,7 +2320,8 @@
     ],
     "the-shrine-approaching-door-without-commorb": [
       {
-        "player": "Savant needs to see this. I better get my Comm Orb."
+        "player": "Savant needs to see this. I better get my Comm Orb.",
+        "presentation": "overhead"
       }
     ],
     "the-shrine-scanning-commorb-near-the-door": [
@@ -4086,10 +4087,6 @@
             "text": "Something else."
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "mmX8iA"
       }
     ]
   },

@@ -181,9 +181,11 @@
     ],
     "overhead-dialogue-before-interacting-with-him": [
       {
+        "presentation": "overhead",
         "npc": "C'mon, almost got it..."
       },
       {
+        "presentation": "overhead",
         "npc": "Agh, thought I had it that time!"
       }
     ]

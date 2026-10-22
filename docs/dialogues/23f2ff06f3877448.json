@@ -1,0 +1,632 @@
+{
+  "default": "starting-out-talking-to-the-strange-old-man",
+  "variants": {
+    "starting-out-talking-to-the-strange-old-man": [
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "It's time."
+      },
+      {
+        "player": "Time for what?"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Time to dig. To dig, dig, dig. But no normal dig. We now have new purpose!"
+      },
+      {
+        "player": "What do you mean? What purpose?"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "The brothers six! Dutiful servants of Saradomin... At least, that's what they'd tell you! Ha! Not so. Not so."
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "They made a pact you see! Strength in life for servitude in death."
+      },
+      {
+        "player": "Servitude?"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Yes! They guard it for him! That was their purpose, but that time is up now. He wants it back! You can get it! You can dig!"
+      },
+      {
+        "player": "You want me to bring you something?"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "The icon! He needs it now! You must dig, dig, dig. Slay the brothers six! It's okay, it won't hurt them... much. The icon will be in the chest!"
+      },
+      {
+        "player": "Right... So you want me to go and kill the six brothers and bring you back an icon?"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Yes! Do this! Do this! Maybe little prize for you if you do. But first you must dig! Dig, dig, dig!"
+      },
+      {
+        "player": "Okay..."
+      },
+      {
+        "type": "choice",
+        "options": [
+          {
+            "text": "Can you tell me more about the brothers?",
+            "steps": [
+              {
+                "player": "Can you tell me more about the brothers?"
+              },
+              {
+                "type": "condition",
+                "text": "If the player does not have the crumbling tome in their inventory:",
+                "steps": [
+                  {
+                    "type": "line",
+                    "speaker": "Strange Old Man",
+                    "text": "The brothers? His faithful servants! Book tell you more! Take it! I don't even want it!"
+                  },
+                  {
+                    "type": "message",
+                    "text": "The Strange Old Man gives you a book.",
+                    "id": "MykpJe"
+                  },
+                  {
+                    "type": "end"
+                  }
+                ],
+                "id": "t6pul9"
+              },
+              {
+                "type": "condition",
+                "text": "If the player has the crumbling tome in their inventory:",
+                "steps": [
+                  {
+                    "type": "line",
+                    "speaker": "Strange Old Man",
+                    "text": "The brothers? His faithful servants! Book tell you more! Read it! Read it!"
+                  }
+                ],
+                "id": "fVu487"
+              }
+            ]
+          },
+          {
+            "text": "I wanted to ask you about warnings.",
+            "steps": [
+              {
+                "player": "I wanted to ask you about warnings."
+              },
+              {
+                "type": "line",
+                "speaker": "Strange Old Man",
+                "text": "Yes?"
+              },
+              {
+                "type": "action",
+                "text": "If the warnings are not combined:",
+                "steps": [
+                  {
+                    "player": "Currently when I'm trying to go plundering the catacombs here, my mind is plagued by several inconvenient warnings about the dangers below."
+                  },
+                  {
+                    "player": "I was wondering, do you know of a way to condense these warnings into a single one?"
+                  },
+                  {
+                    "type": "jump",
+                    "reference": "continue",
+                    "id": "QLHFs3"
+                  }
+                ],
+                "id": "8zJCWl"
+              },
+              {
+                "type": "action",
+                "text": "If the warnings are combined:",
+                "steps": [
+                  {
+                    "player": "Thanks for having those mental warnings I was having condensed into a single one, but I miss having them seperated."
+                  },
+                  {
+                    "player": "Is there any chance you'd be willing to change it back for me?"
+                  },
+                  {
+                    "type": "jump",
+                    "reference": "continue",
+                    "id": "JyDJjO"
+                  }
+                ],
+                "id": "rgbKcQ"
+              },
+              {
+                "type": "line",
+                "speaker": "Strange Old Man",
+                "text": "AAAAAAAAARRRRRRGGGGGHHHHHHHH!"
+              },
+              {
+                "player": "I'm guessing that was a yes? In that case, thanks."
+              }
+            ]
+          },
+          {
+            "text": "I'll be back soon.",
+            "steps": [
+              {
+                "player": "I'll be back soon."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "starting-out-talking-to-him-again-without-the-icon": [
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Icon?"
+      },
+      {
+        "player": "I don't have it yet."
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Slow! No slow! Only fast! Fast dig! Dig, dig, dig!"
+      },
+      {
+        "type": "choice",
+        "options": [
+          {
+            "text": "Can you tell me more about the brothers?",
+            "steps": [
+              {
+                "type": "jump",
+                "id": "m_IQTT",
+                "steps": [
+                  {
+                    "type": "call",
+                    "branch": "jump-d05cf027a531e959"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "I wanted to ask you about warnings.",
+            "steps": [
+              {
+                "type": "jump",
+                "id": "XEi9K-",
+                "steps": [
+                  {
+                    "type": "call",
+                    "branch": "jump-883e729788fe3956"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Okay, I'll be back soon.",
+            "steps": [
+              {
+                "player": "Okay, I'll be back soon."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "giving-the-strange-icon": [
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Icon?"
+      },
+      {
+        "player": "Yes, I have it here."
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "At last! Quick! Give it!"
+      },
+      {
+        "type": "message",
+        "text": "You give the icon to the Strange Old Man.",
+        "id": "UbCs8y"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "You did it! Now for me."
+      },
+      {
+        "type": "message",
+        "text": "Before you can react, the Strange Old Man casts a spell. The icon disintegrates in his hands.",
+        "id": "F5Q98i"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "It's all little bits now."
+      },
+      {
+        "player": "What? But why? I thought you needed it!"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Yes! Needed it for him, but not to keep! His friend asked him to protect it, but he made a new plan, a better plan!"
+      },
+      {
+        "player": "What are you on about?"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "The old plan is gone. We're not doing it that way. His friend won't be happy, but it was for the best!"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Now we're doing it his way..."
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Anyway, job well done! Still more digging though. Always dig. Dig, dig, dig!"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Oh, and don't forget your prize! He made it very clear you had to have a prize!"
+      },
+      {
+        "type": "message",
+        "text": "The Strange Old Man gives you a lamp and a map.",
+        "id": "ShNyAX"
+      },
+      {
+        "player": "Thanks... I guess."
+      }
+    ],
+    "giving-the-strange-icon-if-the-player-gives-the-strange-old-man-the-icon": [
+      {
+        "type": "jump",
+        "id": "pAH6zn",
+        "steps": [
+          {
+            "type": "call",
+            "branch": "jump-888b838ee0b8a697"
+          }
+        ]
+      }
+    ],
+    "giving-the-strange-icon-if-the-strange-old-man-destroyed-the-icon": [
+      {
+        "player": "Why did you destroy the icon? I though you needed it!"
+      },
+      {
+        "type": "jump",
+        "id": "uxqlZH",
+        "steps": [
+          {
+            "type": "call",
+            "branch": "jump-000ceaa5a828dd8c"
+          }
+        ]
+      }
+    ],
+    "giving-the-strange-icon-if-the-player-claims-the-lamp-or-map-later": [
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "This is for you. Take it! Take it!"
+      },
+      {
+        "type": "condition",
+        "text": "If the player has not claimed the lamp nor the map:",
+        "steps": [
+          {
+            "type": "message",
+            "text": "The Strange Old Man has given you a lamp and a map.",
+            "id": "QxZGeY"
+          },
+          {
+            "type": "jump",
+            "reference": "continues",
+            "id": "irzm2-"
+          }
+        ],
+        "id": "LEVOFx"
+      },
+      {
+        "type": "condition",
+        "text": "If the player has not claimed the lamp:",
+        "steps": [
+          {
+            "type": "message",
+            "text": "The Strange Old Man has given you a lamp.",
+            "id": "PSnOhU"
+          },
+          {
+            "type": "jump",
+            "reference": "continues",
+            "id": "CsF2O8"
+          }
+        ],
+        "id": "W09o8D"
+      },
+      {
+        "type": "condition",
+        "text": "If the player has not claimed the map:",
+        "steps": [
+          {
+            "type": "message",
+            "text": "The Strange Old Man has given you a map.",
+            "id": "I0bAY_"
+          },
+          {
+            "type": "jump",
+            "reference": "continues",
+            "id": "FWY9rP"
+          }
+        ],
+        "id": "xEwvLg"
+      },
+      {
+        "player": "Thanks."
+      },
+      {
+        "type": "choice",
+        "options": [
+          {
+            "text": "Can you tell me more about the brothers?",
+            "steps": [
+              {
+                "type": "jump",
+                "id": "S7CR6x",
+                "steps": [
+                  {
+                    "type": "call",
+                    "branch": "jump-d05cf027a531e959"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "I wanted to ask you about warnings.",
+            "steps": [
+              {
+                "type": "jump",
+                "id": "Du9kRx",
+                "steps": [
+                  {
+                    "type": "call",
+                    "branch": "jump-883e729788fe3956"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "I'll leave you to it then...",
+            "steps": [
+              {
+                "player": "I'll leave you to it then..."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "branches": {
+    "jump-d05cf027a531e959": [
+      {
+        "player": "Can you tell me more about the brothers?"
+      },
+      {
+        "type": "condition",
+        "text": "If the player does not have the crumbling tome in their inventory:",
+        "steps": [
+          {
+            "type": "line",
+            "speaker": "Strange Old Man",
+            "text": "The brothers? His faithful servants! Book tell you more! Take it! I don't even want it!"
+          },
+          {
+            "type": "message",
+            "text": "The Strange Old Man gives you a book.",
+            "id": "MykpJe"
+          },
+          {
+            "type": "end"
+          }
+        ],
+        "id": "t6pul9"
+      },
+      {
+        "type": "condition",
+        "text": "If the player has the crumbling tome in their inventory:",
+        "steps": [
+          {
+            "type": "line",
+            "speaker": "Strange Old Man",
+            "text": "The brothers? His faithful servants! Book tell you more! Read it! Read it!"
+          },
+          {
+            "type": "end"
+          }
+        ],
+        "id": "fVu487"
+      }
+    ],
+    "jump-883e729788fe3956": [
+      {
+        "player": "I wanted to ask you about warnings."
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Yes?"
+      },
+      {
+        "type": "action",
+        "text": "If the warnings are not combined:",
+        "steps": [
+          {
+            "player": "Currently when I'm trying to go plundering the catacombs here, my mind is plagued by several inconvenient warnings about the dangers below."
+          },
+          {
+            "player": "I was wondering, do you know of a way to condense these warnings into a single one?"
+          },
+          {
+            "type": "jump",
+            "reference": "continue",
+            "id": "QLHFs3"
+          }
+        ],
+        "id": "8zJCWl"
+      },
+      {
+        "type": "action",
+        "text": "If the warnings are combined:",
+        "steps": [
+          {
+            "player": "Thanks for having those mental warnings I was having condensed into a single one, but I miss having them seperated."
+          },
+          {
+            "player": "Is there any chance you'd be willing to change it back for me?"
+          },
+          {
+            "type": "jump",
+            "reference": "continue",
+            "id": "JyDJjO"
+          }
+        ],
+        "id": "rgbKcQ"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "AAAAAAAAARRRRRRGGGGGHHHHHHHH!"
+      },
+      {
+        "player": "I'm guessing that was a yes? In that case, thanks."
+      },
+      {
+        "type": "end"
+      }
+    ],
+    "jump-888b838ee0b8a697": [
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "You did it! Now for me."
+      },
+      {
+        "type": "message",
+        "text": "Before you can react, the Strange Old Man casts a spell. The icon disintegrates in his hands.",
+        "id": "F5Q98i"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "It's all little bits now."
+      },
+      {
+        "player": "What? But why? I thought you needed it!"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Yes! Needed it for him, but not to keep! His friend asked him to protect it, but he made a new plan, a better plan!"
+      },
+      {
+        "player": "What are you on about?"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "The old plan is gone. We're not doing it that way. His friend won't be happy, but it was for the best!"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Now we're doing it his way..."
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Anyway, job well done! Still more digging though. Always dig. Dig, dig, dig!"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Oh, and don't forget your prize! He made it very clear you had to have a prize!"
+      },
+      {
+        "type": "message",
+        "text": "The Strange Old Man gives you a lamp and a map.",
+        "id": "ShNyAX"
+      },
+      {
+        "player": "Thanks... I guess."
+      },
+      {
+        "type": "end"
+      }
+    ],
+    "jump-000ceaa5a828dd8c": [
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Yes! Needed it for him, but not to keep! His friend asked him to protect it, but he made a new plan, a better plan!"
+      },
+      {
+        "player": "What are you on about?"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "The old plan is gone. We're not doing it that way. His friend won't be happy, but it was for the best!"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Now we're doing it his way..."
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Anyway, job well done! Still more digging though. Always dig. Dig, dig, dig!"
+      },
+      {
+        "type": "line",
+        "speaker": "Strange Old Man",
+        "text": "Oh, and don't forget your prize! He made it very clear you had to have a prize!"
+      },
+      {
+        "type": "message",
+        "text": "The Strange Old Man gives you a lamp and a map.",
+        "id": "ShNyAX"
+      },
+      {
+        "player": "Thanks... I guess."
+      },
+      {
+        "type": "end"
+      }
+    ]
+  }
+}

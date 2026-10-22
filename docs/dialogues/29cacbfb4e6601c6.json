@@ -696,7 +696,8 @@
       {
         "type": "line",
         "speaker": "Golem",
-        "text": "You may not pass!"
+        "text": "You may not pass!",
+        "presentation": "overhead"
       }
     ],
     "the-waterfall-guardian-golem-after-defeating-a-golem": [
@@ -2264,10 +2265,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "G39MGw"
-      },
-      {
-        "type": "unavailable",
-        "id": "cNdfv2"
       }
     ]
   },

@@ -281,7 +281,8 @@
     ],
     "investigating-the-disturbance-searching-outside-the-house-sand-pit": [
       {
-        "player": "What the..."
+        "player": "What the...",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2861,7 +2862,8 @@
       {
         "type": "line",
         "speaker": "Peer the Seer",
-        "text": "Concussio! Forgessan! Geodeus!"
+        "text": "Concussio! Forgessan! Geodeus!",
+        "presentation": "overhead"
       },
       {
         "player": "Thank you, Seer! I'll head back to the mountains now."
@@ -2943,7 +2945,8 @@
         "text": "If the player does not have the Ice gloves or Smiths gloves (i) equipped:",
         "steps": [
           {
-            "player": "Ow!"
+            "player": "Ow!",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -3814,7 +3817,8 @@
       {
         "type": "line",
         "speaker": "Brundt the Chieftain",
-        "text": "They've walked right through our defences!"
+        "text": "They've walked right through our defences!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -3824,7 +3828,8 @@
       {
         "type": "line",
         "speaker": "Brundt the Chieftain",
-        "text": "Kill them all!"
+        "text": "Kill them all!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -3847,7 +3852,8 @@
               {
                 "type": "line",
                 "speaker": "NPC",
-                "text": "This is Rellekka!"
+                "text": "This is Rellekka!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3857,7 +3863,8 @@
               {
                 "type": "line",
                 "speaker": "NPC",
-                "text": "Kill the invaders!"
+                "text": "Kill the invaders!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3867,7 +3874,8 @@
               {
                 "type": "line",
                 "speaker": "NPC",
-                "text": "You die here beast!"
+                "text": "You die here beast!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3877,7 +3885,8 @@
               {
                 "type": "line",
                 "speaker": "NPC",
-                "text": "Die you foul beasts!"
+                "text": "Die you foul beasts!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3887,7 +3896,8 @@
               {
                 "type": "line",
                 "speaker": "NPC",
-                "text": "Death to the basilisks!"
+                "text": "Death to the basilisks!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3897,7 +3907,8 @@
               {
                 "type": "line",
                 "speaker": "NPC",
-                "text": "Kill them! Kill them all!"
+                "text": "Kill them! Kill them all!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3907,7 +3918,8 @@
               {
                 "type": "line",
                 "speaker": "NPC",
-                "text": "You will not take our home!"
+                "text": "You will not take our home!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -3948,7 +3960,8 @@
       {
         "type": "line",
         "speaker": "Brundt the Chieftain",
-        "text": "[Fremennik name]! Get to the boat. It's time for us to go!"
+        "text": "[Fremennik name]! Get to the boat. It's time for us to go!",
+        "presentation": "overhead"
       }
     ],
     "island-of-stone-brundt": [
@@ -4114,7 +4127,8 @@
                   {
                     "type": "line",
                     "speaker": "Brundt the Chieftain",
-                    "text": "Turn away [Fremennik name]!"
+                    "text": "Turn away [Fremennik name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -4124,7 +4138,8 @@
                   {
                     "type": "line",
                     "speaker": "Brundt the Chieftain",
-                    "text": "Don't look into his eyes!"
+                    "text": "Don't look into his eyes!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -4134,7 +4149,8 @@
                   {
                     "type": "line",
                     "speaker": "Brundt the Chieftain",
-                    "text": "Don't look at him [Fremennik name]!"
+                    "text": "Don't look at him [Fremennik name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -4144,7 +4160,8 @@
                   {
                     "type": "line",
                     "speaker": "Brundt the Chieftain",
-                    "text": "[Fremennik name]! Do not face him!"
+                    "text": "[Fremennik name]! Do not face him!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -4166,7 +4183,8 @@
                   {
                     "type": "line",
                     "speaker": "Brundt the Chieftain",
-                    "text": "The stone is weak! You can break it!"
+                    "text": "The stone is weak! You can break it!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -4176,7 +4194,8 @@
                   {
                     "type": "line",
                     "speaker": "Brundt the Chieftain",
-                    "text": "Try to break free [Fremennik name]!"
+                    "text": "Try to break free [Fremennik name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -4186,7 +4205,8 @@
                   {
                     "type": "line",
                     "speaker": "Brundt the Chieftain",
-                    "text": "[Fremennik name]! You need to break loose!"
+                    "text": "[Fremennik name]! You need to break loose!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -4196,7 +4216,8 @@
                   {
                     "type": "line",
                     "speaker": "Brundt the Chieftain",
-                    "text": "You can free yourself [Fremennik name]!"
+                    "text": "You can free yourself [Fremennik name]!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -4303,27 +4324,32 @@
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "T'was on a haughty winter,"
+        "text": "T'was on a haughty winter,",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "We're bitten with frost,"
+        "text": "We're bitten with frost,",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "And none would dare venture,"
+        "text": "And none would dare venture,",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "Where many were lost."
+        "text": "Where many were lost.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "V sailed his mighty longship,"
+        "text": "V sailed his mighty longship,",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -4357,9 +4383,6 @@
         "player": "Uh oh..."
       },
       {
-        "type": "end"
-      },
-      {
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "2pgrdA"
@@ -4369,61 +4392,68 @@
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "To the Island of Stone,"
+        "text": "To the Island of Stone,",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "Where the king of the serpents,"
+        "text": "Where the king of the serpents,",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "Had made it his home."
+        "text": "Had made it his home.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "The storm it was a ragin',"
+        "text": "The storm it was a ragin',",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "Waves broke on the deck,"
+        "text": "Waves broke on the deck,",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "The bell rang with a tolling,"
+        "text": "The bell rang with a tolling,",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "To warn of the wreck."
+        "text": "To warn of the wreck.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "But naught could deter him,"
+        "text": "But naught could deter him,",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "From the fate of his quest,"
+        "text": "From the fate of his quest,",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "Winds tore through the main sail,"
+        "text": "Winds tore through the main sail,",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Olaf the Bard",
-        "text": "Yet onward he pressed."
-      },
-      {
-        "type": "unavailable",
-        "id": "OOHSkj"
+        "text": "Yet onward he pressed.",
+        "presentation": "overhead"
       }
     ]
   },

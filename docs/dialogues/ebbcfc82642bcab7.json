@@ -32,7 +32,8 @@
         "text": "If the Vampyre Juvinate is instantly killed:",
         "steps": [
           {
-            "npc": "Graahhhhhhh!"
+            "npc": "Graahhhhhhh!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -57,7 +58,8 @@
           {
             "type": "line",
             "speaker": "Feral Vampyre",
-            "text": "Rarrrghhhh!"
+            "text": "Rarrrghhhh!",
+            "presentation": "overhead"
           },
           {
             "type": "end"

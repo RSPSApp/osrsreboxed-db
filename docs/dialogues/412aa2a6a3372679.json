@@ -1055,9 +1055,11 @@
     ],
     "another-player-obtaining-a-pharaoh-s-sceptre-from-pyramid-plunder": [
       {
+        "presentation": "overhead",
         "npc": "Grrr! Someone has found the Pharaoh's sceptre!"
       },
       {
+        "presentation": "overhead",
         "npc": "Right! That's it. I'm clearing all the urns and refilling them now."
       }
     ],

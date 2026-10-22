@@ -157,13 +157,16 @@
         "text": "If a player boards the ship:",
         "steps": [
           {
-            "npc": "To the boats! We'll set sail soon!"
+            "npc": "To the boats! We'll set sail soon!",
+            "presentation": "overhead"
           },
           {
-            "npc": "We'll set sail in the next [25/20/15/10/5] seconds."
+            "npc": "We'll set sail in the next [25/20/15/10/5] seconds.",
+            "presentation": "overhead"
           },
           {
-            "npc": "Let's get underway!"
+            "npc": "Let's get underway!",
+            "presentation": "overhead"
           }
         ],
         "id": "98xyHp"
@@ -175,7 +178,8 @@
         "text": "As soon as the mission begins:",
         "steps": [
           {
-            "npc": "Tempoross will surface soon, prepare yourselves!"
+            "npc": "Tempoross will surface soon, prepare yourselves!",
+            "presentation": "overhead"
           }
         ],
         "id": "4qsybe"
@@ -191,7 +195,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "More fish!"
+                    "npc": "More fish!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -199,7 +204,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Load those cannons!"
+                    "npc": "Load those cannons!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -207,7 +213,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "Keep an eye on the waves!"
+                    "npc": "Keep an eye on the waves!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -221,14 +228,16 @@
         "text": "If Tempoross uses the colossal wave attack:",
         "steps": [
           {
-            "npc": "Tempoross is drawing in water, prepare yourselves!"
+            "npc": "Tempoross is drawing in water, prepare yourselves!",
+            "presentation": "overhead"
           },
           {
             "type": "condition",
             "text": "If the nearby mast has been damaged from the wave attack:",
             "steps": [
               {
-                "npc": "The mast has been damaged!"
+                "npc": "The mast has been damaged!",
+                "presentation": "overhead"
               }
             ],
             "id": "i10zyA"
@@ -241,7 +250,8 @@
         "text": "If Tempoross uses the lightning attack:",
         "steps": [
           {
-            "npc": "Storm clouds are rolling in, get your buckets ready!"
+            "npc": "Storm clouds are rolling in, get your buckets ready!",
+            "presentation": "overhead"
           }
         ],
         "id": "rQEOMc"
@@ -251,7 +261,8 @@
         "text": "If Tempoross uses the water torrent attack on one of the nearby cannons:",
         "steps": [
           {
-            "npc": "Tempoross has disabled a cannon! Switch to another!"
+            "npc": "Tempoross has disabled a cannon! Switch to another!",
+            "presentation": "overhead"
           }
         ],
         "id": "3jr0WK"
@@ -261,7 +272,8 @@
         "text": "If Tempoross is vulnerable:",
         "steps": [
           {
-            "npc": "Tempoross has submerged, fish from the whirlpools!"
+            "npc": "Tempoross has submerged, fish from the whirlpools!",
+            "presentation": "overhead"
           }
         ],
         "id": "o0OC8j"
@@ -271,7 +283,8 @@
         "text": "If Tempoross surfaces from the water:",
         "steps": [
           {
-            "npc": "Tempoross has surfaced, keep those cannons firing!"
+            "npc": "Tempoross has surfaced, keep those cannons firing!",
+            "presentation": "overhead"
           }
         ],
         "id": "ZsQjjF"
@@ -281,7 +294,8 @@
         "text": "If Tempoross has been subdued:",
         "steps": [
           {
-            "npc": "Tempoross has retreated to the depths!"
+            "npc": "Tempoross has retreated to the depths!",
+            "presentation": "overhead"
           }
         ],
         "id": "i3vQSI"
@@ -291,7 +305,8 @@
         "text": "If Tempoross has not been subdued after becoming vulnerable for the third time:",
         "steps": [
           {
-            "npc": "Tempoross has gathered too much energy!"
+            "npc": "Tempoross has gathered too much energy!",
+            "presentation": "overhead"
           }
         ],
         "id": "KGsGYZ"
@@ -301,7 +316,8 @@
         "text": "If Storm Intensity reaches 100%:",
         "steps": [
           {
-            "npc": "The storm has grown too strong, we must retreat!"
+            "npc": "The storm has grown too strong, we must retreat!",
+            "presentation": "overhead"
           }
         ],
         "id": "e_egDv"

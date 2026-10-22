@@ -3,6 +3,7 @@
   "variants": {
     "overhead-dialogue": [
       {
+        "presentation": "overhead",
         "npc": "Quack!"
       }
     ]

@@ -3,6 +3,7 @@
   "variants": {
     "overhead-when-a-player-is-in-the-pillory": [
       {
+        "presentation": "overhead",
         "npc": "Take that you thief!"
       }
     ]

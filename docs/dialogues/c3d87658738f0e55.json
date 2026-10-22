@@ -55,7 +55,8 @@
               {
                 "type": "line",
                 "speaker": "Gnome Troop",
-                "text": "You won't take us without a fight!"
+                "text": "You won't take us without a fight!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -65,7 +66,8 @@
               {
                 "type": "line",
                 "speaker": "Gnome Troop",
-                "text": "Get out of our lands!"
+                "text": "Get out of our lands!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -75,7 +77,8 @@
               {
                 "type": "line",
                 "speaker": "Gnome Troop",
-                "text": "Tally ho!"
+                "text": "Tally ho!",
+                "presentation": "overhead"
               }
             ]
           }

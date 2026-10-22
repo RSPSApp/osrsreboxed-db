@@ -50,7 +50,8 @@
     ],
     "overhead-dialogue-when-gaining-approval-by-chopping-trees": [
       {
-        "npc": "Thanks!"
+        "npc": "Thanks!",
+        "presentation": "overhead"
       }
     ]
   }

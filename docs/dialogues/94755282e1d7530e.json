@@ -66,17 +66,20 @@
     ],
     "overhead-dialogue-when-climbing-up-the-central-tower": [
       {
-        "npc": "The [north/east/south/west] tower is occupied, get them!"
+        "npc": "The [north/east/south/west] tower is occupied, get them!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-clearing-a-tower-of-all-three-archers": [
       {
-        "npc": "The [north/east/south/west] tower is defeated! Hurray!"
+        "npc": "The [north/east/south/west] tower is defeated! Hurray!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-a-tower-s-archers-respawn": [
       {
-        "npc": "The [north/east/south/west] tower has received reinforcements, kill them quickly!"
+        "npc": "The [north/east/south/west] tower has received reinforcements, kill them quickly!",
+        "presentation": "overhead"
       }
     ]
   }

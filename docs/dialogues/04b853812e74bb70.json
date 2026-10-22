@@ -257,7 +257,8 @@
         "id": "Mwg--6"
       },
       {
-        "npc": "Come on, we need more recruits!"
+        "npc": "Come on, we need more recruits!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-there-are-enough-players-in-the-lander": [
@@ -266,7 +267,8 @@
         "id": "YfUSje"
       },
       {
-        "npc": "We're about to launch!"
+        "npc": "We're about to launch!",
+        "presentation": "overhead"
       }
     ]
   },

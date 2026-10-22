@@ -236,15 +236,17 @@
                       "type": "choice",
                       "options": [
                         {
-                          "text": "No I'm not!"
+                          "text": "No I'm not!",
+                          "steps": [
+                            {
+                              "player": "No I'm not!"
+                            },
+                            {
+                              "npc": "What ever you say, crazy JalYt!"
+                            }
+                          ]
                         }
                       ]
-                    },
-                    {
-                      "player": "No I'm not!"
-                    },
-                    {
-                      "npc": "What ever you say, crazy JalYt!"
                     }
                   ]
                 }

@@ -740,10 +740,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "iMe5Cd"
-      },
-      {
-        "type": "unavailable",
-        "id": "nXdy7g"
       }
     ]
   },

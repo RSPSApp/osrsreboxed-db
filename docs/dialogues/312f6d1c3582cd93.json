@@ -2236,16 +2236,9 @@
             "type": "line",
             "speaker": "Alomone",
             "text": "You must find it and bring it to me! Hazeel has already waited far too long for his return."
-          },
-          {
-            "type": "end"
           }
         ],
         "id": "MEEBFM"
-      },
-      {
-        "type": "unavailable",
-        "id": "ZhqHcd"
       }
     ]
   },

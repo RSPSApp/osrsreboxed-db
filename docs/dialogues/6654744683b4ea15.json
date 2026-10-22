@@ -10,7 +10,8 @@
     ],
     "item-interactions-using-a-bone-on-floki": [
       {
-        "npc": "Woof woof!"
+        "npc": "Woof woof!",
+        "presentation": "overhead"
       },
       {
         "type": "unavailable",
@@ -19,7 +20,8 @@
     ],
     "item-interactions-using-a-piece-of-meat-on-floki": [
       {
-        "npc": "Woof woof!"
+        "npc": "Woof woof!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -29,7 +31,8 @@
     ],
     "item-interactions-using-shaikahan-bones-on-floki": [
       {
-        "npc": "Grrrr!"
+        "npc": "Grrrr!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -39,7 +42,8 @@
     ],
     "item-interactions-using-alan-s-bones-on-floki": [
       {
-        "npc": "Woof woof!"
+        "npc": "Woof woof!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -49,7 +53,8 @@
     ],
     "item-interactions-using-any-other-item-on-floki": [
       {
-        "npc": "Grrrr!"
+        "npc": "Grrrr!",
+        "presentation": "overhead"
       },
       {
         "type": "message",

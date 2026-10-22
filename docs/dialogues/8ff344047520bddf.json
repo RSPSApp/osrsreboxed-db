@@ -20,7 +20,8 @@
                 "id": "Cc5OQV"
               },
               {
-                "player": "Urrrrrgh!"
+                "player": "Urrrrrgh!",
+                "presentation": "overhead"
               },
               {
                 "player": "I feel like I've just been kicked off Entrana."
@@ -342,7 +343,8 @@
         "id": "4v4afK"
       },
       {
-        "player": "Urrrrrgh!"
+        "player": "Urrrrrgh!",
+        "presentation": "overhead"
       }
     ],
     "drinking-from-bottle-attempting-to-picklock-the-rusty-chest": [
@@ -2992,7 +2994,8 @@
       {
         "type": "line",
         "speaker": "'Crab'",
-        "text": "Mission?"
+        "text": "Mission?",
+        "presentation": "overhead"
       },
       {
         "player": "Oh no you don't!"
@@ -3114,12 +3117,14 @@
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "And a 1, and a 2..."
+        "text": "And a 1, and a 2...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "And a 1, 2, 3, 10!"
+        "text": "And a 1, 2, 3, 10!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -3134,12 +3139,14 @@
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "You're doing it wrong!"
+        "text": "You're doing it wrong!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Shush!"
+        "text": "Shush!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -3149,12 +3156,14 @@
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Can't wait!"
+        "text": "Can't wait!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Wheeee!"
+        "text": "Wheeee!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -3172,15 +3181,18 @@
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Hey!"
+        "text": "Hey!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Ow!"
+        "text": "Ow!",
+        "presentation": "overhead"
       },
       {
-        "player": "Oops!"
+        "player": "Oops!",
+        "presentation": "overhead"
       },
       {
         "player": "Don't come back!"
@@ -3188,93 +3200,112 @@
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Watch it!"
+        "text": "Watch it!",
+        "presentation": "overhead"
       },
       {
-        "player": "Sorry!"
+        "player": "Sorry!",
+        "presentation": "overhead"
       },
       {
-        "player": "Let's remain seated for the rest of the performance."
-      },
-      {
-        "type": "line",
-        "speaker": "Crab",
-        "text": "Are the girls joining soon?"
-      },
-      {
-        "type": "line",
-        "speaker": "Crab",
-        "text": "Who made this massive nest?"
+        "player": "Let's remain seated for the rest of the performance.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "This is so fun!"
+        "text": "Are the girls joining soon?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "I think I got it! 101!"
+        "text": "Who made this massive nest?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Trampling time..."
+        "text": "This is so fun!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Here they come!"
+        "text": "I think I got it! 101!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Let me through!"
+        "text": "Trampling time...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Ow!"
+        "text": "Here they come!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Woohoo!"
+        "text": "Let me through!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Ow!"
+        "text": "Ow!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Ow!"
+        "text": "Woohoo!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Ow!"
+        "text": "Ow!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "What a tune!"
+        "text": "Ow!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Whoops!"
+        "text": "Ow!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Wow, that was close!"
+        "text": "What a tune!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "So close..."
+        "text": "Whoops!",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Crab",
+        "text": "Wow, that was close!",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Crab",
+        "text": "So close...",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -3284,77 +3315,92 @@
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "What a day..."
+        "text": "What a day...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "It didn't work..."
+        "text": "It didn't work...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Er... Hi?"
+        "text": "Er... Hi?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Aaaaaah!"
+        "text": "Aaaaaah!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Oh!"
+        "text": "Oh!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "So... you..."
+        "text": "So... you...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "... Yeah..."
+        "text": "... Yeah...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Really?"
+        "text": "Really?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "... Yeah."
+        "text": "... Yeah.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Actually?"
+        "text": "Actually?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "... Yeah!"
+        "text": "... Yeah!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Wow..."
+        "text": "Wow...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Me too..."
+        "text": "Me too...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Do you...?"
+        "text": "Do you...?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "... Yeah."
+        "text": "... Yeah.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -3364,7 +3410,8 @@
       {
         "type": "line",
         "speaker": "Crab",
-        "text": "Aaaaaah!"
+        "text": "Aaaaaah!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -3411,13 +3458,6 @@
         "type": "message",
         "text": "As you look at the bottle, you notice familiar shells nearby. You collect them.",
         "id": "Uf9RIo"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "OuNyCc"
       }
     ]
   },

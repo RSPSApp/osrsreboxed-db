@@ -68,7 +68,8 @@
               {
                 "type": "line",
                 "speaker": "Octagon Referee",
-                "text": "Stay inside your triangle!"
+                "text": "Stay inside your triangle!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -78,7 +79,8 @@
               {
                 "type": "line",
                 "speaker": "Octagon Referee",
-                "text": "Who's next?"
+                "text": "Who's next?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -88,7 +90,8 @@
               {
                 "type": "line",
                 "speaker": "Octagon Referee",
-                "text": "Next bid please!"
+                "text": "Next bid please!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -98,7 +101,8 @@
               {
                 "type": "line",
                 "speaker": "Octagon Referee",
-                "text": "Need an offer, now!"
+                "text": "Need an offer, now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -108,7 +112,8 @@
               {
                 "type": "line",
                 "speaker": "Octagon Referee",
-                "text": "Keep the goods flowing!"
+                "text": "Keep the goods flowing!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -118,7 +123,8 @@
               {
                 "type": "line",
                 "speaker": "Octagon Referee",
-                "text": "Keep it civil!"
+                "text": "Keep it civil!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -128,7 +134,8 @@
               {
                 "type": "line",
                 "speaker": "Octagon Referee",
-                "text": "Come on, come on!"
+                "text": "Come on, come on!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -138,7 +145,8 @@
               {
                 "type": "line",
                 "speaker": "Octagon Referee",
-                "text": "Go again please."
+                "text": "Go again please.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -148,7 +156,8 @@
               {
                 "type": "line",
                 "speaker": "Octagon Referee",
-                "text": "Hold on there!"
+                "text": "Hold on there!",
+                "presentation": "overhead"
               }
             ]
           }

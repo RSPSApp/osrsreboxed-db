@@ -89,7 +89,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "'Ello der [player name]! *hic*"
+            "npc": "'Ello der [player name]! *hic*",
+            "presentation": "overhead"
           }
         ],
         "id": "XaMxCX"
@@ -105,7 +106,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Hey, [player name]!"
+                    "npc": "Hey, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -113,7 +115,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Oi, are you der [player name]!"
+                    "npc": "Oi, are you der [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -121,7 +124,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "Dunt ignore your mate, [player name]!"
+                    "npc": "Dunt ignore your mate, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -129,7 +133,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "I've got something for you, [player name]!"
+                    "npc": "I've got something for you, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -137,7 +142,8 @@
                 "text": "Dialogue 5",
                 "steps": [
                   {
-                    "npc": "Aww comeon, talk to ikle me [player name]!"
+                    "npc": "Aww comeon, talk to ikle me [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -151,7 +157,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Aww, my mate doesn't like me."
+            "npc": "Aww, my mate doesn't like me.",
+            "presentation": "overhead"
           }
         ],
         "id": "BQJnIw"

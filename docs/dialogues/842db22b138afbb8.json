@@ -178,7 +178,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Hello, [player name]?"
+                    "npc": "Hello, [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -186,7 +187,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Please help me, [player name]."
+                    "npc": "Please help me, [player name].",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -194,7 +196,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "I need your help, [player name]!"
+                    "npc": "I need your help, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -202,7 +205,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "Can I borrow you for a minute, [player name]?"
+                    "npc": "Can I borrow you for a minute, [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -216,7 +220,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "RjyfxR"

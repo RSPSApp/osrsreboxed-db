@@ -108,15 +108,18 @@
     ],
     "overhead-dialogue-catching-the-player-trying-to-steal-from-his-wine-stall": [
       {
-        "npc": "Hey! Get your hands off there!"
+        "npc": "Hey! Get your hands off there!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-interacting-with-him-after-stealing-from-his-wine-stall-recently": [
       {
-        "npc": "You're the thief who stole from me!"
+        "npc": "You're the thief who stole from me!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards guards!"
+        "npc": "Guards guards!",
+        "presentation": "overhead"
       }
     ]
   }

@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Human scare all da fishies!"
+                "npc": "Human scare all da fishies!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I smack you good!"
+                "npc": "I smack you good!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Da boom-boom kill all da fishies!"
+                "npc": "Da boom-boom kill all da fishies!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Tasty human!"
+                "npc": "Tasty human!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Smash stupid human!"
+                "npc": "Smash stupid human!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "I get you!"
+                "npc": "I get you!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -57,7 +63,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Human hit me on the head!"
+                "npc": "Human hit me on the head!",
+                "presentation": "overhead"
               }
             ]
           }

@@ -58,7 +58,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Gumbo!"
+                "npc": "Gumbo!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -66,7 +67,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Frogspawn gumbo!"
+                "npc": "Frogspawn gumbo!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -74,7 +76,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Nice chewy frogspawn gumbo!"
+                "npc": "Nice chewy frogspawn gumbo!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -82,7 +85,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Get your frogspawn gumbo!"
+                "npc": "Get your frogspawn gumbo!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -90,7 +94,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Fresh frogspawn gumbo!"
+                "npc": "Fresh frogspawn gumbo!",
+                "presentation": "overhead"
               }
             ]
           }

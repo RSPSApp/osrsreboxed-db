@@ -167,6 +167,10 @@ def resolve_navigation(record, anchors=None):
     positions = {id(entry[1]): i for i, entry in enumerate(entries)}
     parents = {id(node["steps"]): node for _, node, *_ in entries if "steps" in node}
     containers = {id(node): steps for _, node, steps, *_ in entries}
+    explicit_anchors = {}
+    for entry in entries:
+        for anchor in entry[1].get("_anchors", []):
+            explicit_anchors.setdefault(anchor, []).append(entry)
 
     def begins_option(entry):
         _, _, siblings, at, _, _, option = entry
@@ -217,6 +221,19 @@ def resolve_navigation(record, anchors=None):
         if node.get("type") == "action" and not node.get("action"):
             reference = node.get("text", "")
         if not reference:
+            continue
+        anchor = node.get("_anchor")
+        if anchor:
+            matches = explicit_anchors.get(anchor, [])
+            if len(matches) == 1:
+                _, target_node, siblings, at, _, _, target_option = matches[0]
+                target = (
+                    target_node.get("steps", [])
+                    if target_option is target_node
+                    else siblings[at:]
+                )
+                if target:
+                    pending[id(node)] = target
             continue
         headings = [
             key
@@ -568,6 +585,10 @@ def resolve_navigation(record, anchors=None):
                     break
         if target:
             pending[id(node)] = target
+
+    for _, node, *_ in entries:
+        node.pop("_anchor", None)
+        node.pop("_anchors", None)
 
     from scripts.dialogues.hooks import token
 

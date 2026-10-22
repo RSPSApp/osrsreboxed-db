@@ -415,7 +415,7 @@
                                 "steps": [
                                   {
                                     "type": "call",
-                                    "branch": "jump-0d7a851e5cbfd73f"
+                                    "branch": "jump-c11a93ba95d40a5c"
                                   }
                                 ]
                               }
@@ -452,31 +452,28 @@
                                 "type": "choice",
                                 "options": [
                                   {
-                                    "text": "Well, you can give me a try can't you?"
-                                  }
-                                ]
-                              },
-                              {
-                                "player": "Well, you can give me a try can't you?"
-                              },
-                              {
-                                "type": "line",
-                                "speaker": "Katrine",
-                                "text": "I'm not so sure..."
-                              },
-                              {
-                                "type": "jump",
-                                "id": "UyKOWb",
-                                "steps": [
-                                  {
-                                    "type": "call",
-                                    "branch": "jump-251c825bcc539b39"
-                                  }
-                                ]
-                              },
-                              {
-                                "type": "choice",
-                                "options": [
+                                    "text": "Well, you can give me a try can't you?",
+                                    "steps": [
+                                      {
+                                        "player": "Well, you can give me a try can't you?"
+                                      },
+                                      {
+                                        "type": "line",
+                                        "speaker": "Katrine",
+                                        "text": "I'm not so sure..."
+                                      },
+                                      {
+                                        "type": "jump",
+                                        "id": "EtZN6a",
+                                        "steps": [
+                                          {
+                                            "type": "call",
+                                            "branch": "jump-4c4f33465d8c5b21"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
                                   {
                                     "text": "Well, people tell me I have an honest face.",
                                     "steps": [
@@ -2295,9 +2292,6 @@
                 "text": "Well, in that case, it's only right that you both be rewarded. I will grant half of the reward to you and half to your companion. That means 600 coins for you. Enjoy it! You've very much earned it!"
               },
               {
-                "type": "end"
-              },
-              {
                 "type": "action",
                 "text": "Congratulations! Quest complete!",
                 "id": "25_j1f"
@@ -2320,53 +2314,50 @@
         "type": "choice",
         "options": [
           {
-            "text": "I've heard you've got some cool treasures in this place."
-          }
-        ]
-      },
-      {
-        "player": "I've heard you've got some cool treasures in this place."
-      },
-      {
-        "type": "line",
-        "speaker": "Straven",
-        "text": "Oh yeah, we've all stolen some stuff in our time. Our candlesticks down here, for example, were quite a challenge to get out of the palace."
-      },
-      {
-        "player": "And the Shield of Arrav?"
-      },
-      {
-        "type": "line",
-        "speaker": "Straven",
-        "text": "Once one of our most prized possessions."
-      },
-      {
-        "player": "Once?"
-      },
-      {
-        "type": "line",
-        "speaker": "Straven",
-        "text": "It seems the Black Arm Gang weren't content with having one half. They recently stole the other half of the shield from us as well!"
-      },
-      {
-        "player": "Oh no! I'll be sure to keep an eye out for any of their members sneaking around.",
-        "steps": [
-          {
-            "type": "jump",
-            "reference": "other",
-            "id": "mZH3sG"
-          }
-        ]
-      },
-      {
-        "type": "choice",
-        "options": [
+            "text": "I've heard you've got some cool treasures in this place.",
+            "steps": [
+              {
+                "player": "I've heard you've got some cool treasures in this place."
+              },
+              {
+                "type": "line",
+                "speaker": "Straven",
+                "text": "Oh yeah, we've all stolen some stuff in our time. Our candlesticks down here, for example, were quite a challenge to get out of the palace."
+              },
+              {
+                "player": "And the Shield of Arrav?"
+              },
+              {
+                "type": "line",
+                "speaker": "Straven",
+                "text": "Once one of our most prized possessions."
+              },
+              {
+                "player": "Once?"
+              },
+              {
+                "type": "line",
+                "speaker": "Straven",
+                "text": "It seems the Black Arm Gang weren't content with having one half. They recently stole the other half of the shield from us as well!"
+              },
+              {
+                "player": "Oh no! I'll be sure to keep an eye out for any of their members sneaking around.",
+                "steps": [
+                  {
+                    "type": "jump",
+                    "reference": "other",
+                    "id": "k3Grrt"
+                  }
+                ]
+              }
+            ]
+          },
           {
             "text": "Any suggestions for where I can go thieving?",
             "steps": [
               {
                 "type": "jump",
-                "id": "DH6nwe",
+                "id": "8V-vYo",
                 "steps": [
                   {
                     "type": "call",
@@ -2381,7 +2372,7 @@
             "steps": [
               {
                 "type": "jump",
-                "id": "v4VGp9",
+                "id": "Q8biBg",
                 "steps": [
                   {
                     "type": "call",
@@ -2426,9 +2417,6 @@
               },
               {
                 "player": "Imagine doing something like that!"
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -2463,15 +2451,11 @@
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "QyWPph"
       }
     ]
   },
   "branches": {
-    "jump-0d7a851e5cbfd73f": [
+    "jump-c11a93ba95d40a5c": [
       {
         "player": "I don't know. What would be the alternative?"
       },
@@ -2484,31 +2468,28 @@
         "type": "choice",
         "options": [
           {
-            "text": "Well, you can give me a try can't you?"
-          }
-        ]
-      },
-      {
-        "player": "Well, you can give me a try can't you?"
-      },
-      {
-        "type": "line",
-        "speaker": "Katrine",
-        "text": "I'm not so sure..."
-      },
-      {
-        "type": "jump",
-        "id": "UyKOWb",
-        "steps": [
-          {
-            "type": "call",
-            "branch": "jump-251c825bcc539b39"
-          }
-        ]
-      },
-      {
-        "type": "choice",
-        "options": [
+            "text": "Well, you can give me a try can't you?",
+            "steps": [
+              {
+                "player": "Well, you can give me a try can't you?"
+              },
+              {
+                "type": "line",
+                "speaker": "Katrine",
+                "text": "I'm not so sure..."
+              },
+              {
+                "type": "jump",
+                "id": "EtZN6a",
+                "steps": [
+                  {
+                    "type": "call",
+                    "branch": "jump-4c4f33465d8c5b21"
+                  }
+                ]
+              }
+            ]
+          },
           {
             "text": "Well, people tell me I have an honest face.",
             "steps": [
@@ -2632,7 +2613,7 @@
         ]
       }
     ],
-    "jump-251c825bcc539b39": [
+    "jump-4c4f33465d8c5b21": [
       {
         "type": "line",
         "speaker": "Katrine",

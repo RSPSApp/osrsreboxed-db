@@ -200,7 +200,8 @@
         "id": "neSlS-"
       },
       {
-        "npc": "Come on, we need more recruits!"
+        "npc": "Come on, we need more recruits!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-there-are-enough-players-in-the-lander": [
@@ -209,7 +210,8 @@
         "id": "CfAPJm"
       },
       {
-        "npc": "We're about to launch!"
+        "npc": "We're about to launch!",
+        "presentation": "overhead"
       }
     ]
   },

@@ -25,10 +25,12 @@
         "text": "When Jacky Jester is summoned:",
         "steps": [
           {
-            "npc": "Let's play a game!"
+            "npc": "Let's play a game!",
+            "presentation": "overhead"
           },
           {
-            "npc": "Everyone copy me!"
+            "npc": "Everyone copy me!",
+            "presentation": "overhead"
           }
         ],
         "id": "3sTzwT"
@@ -38,7 +40,8 @@
         "text": "When a player wins the game:",
         "steps": [
           {
-            "npc": "[player name] is the winner!"
+            "npc": "[player name] is the winner!",
+            "presentation": "overhead"
           }
         ],
         "id": "FkBbGa"
@@ -48,7 +51,8 @@
         "text": "When Jacky Jester is banished:",
         "steps": [
           {
-            "npc": "Goodbye!"
+            "npc": "Goodbye!",
+            "presentation": "overhead"
           }
         ],
         "id": "EaCiJt"

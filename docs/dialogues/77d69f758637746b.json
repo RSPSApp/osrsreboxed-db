@@ -47,249 +47,233 @@
         "type": "choice",
         "options": [
           {
-            "text": "Yes, please. I need healing."
-          }
-        ]
-      },
-      {
-        "player": "Yes, please. I need healing."
-      },
-      {
-        "npc": "Sure, how many hitpoints would you like me to heal?",
-        "steps": [
-          {
-            "type": "choice",
-            "options": [
+            "text": "Yes, please. I need healing.",
+            "steps": [
               {
-                "text": "4 Hitpoints.",
-                "steps": [
-                  {
-                    "player": "4 Hitpoints."
-                  },
-                  {
-                    "npc": "That will cost you 1 opal."
-                  },
-                  {
-                    "type": "choice",
-                    "options": [
-                      {
-                        "text": "All right.",
-                        "steps": [
-                          {
-                            "player": "All right."
-                          },
-                          {
-                            "npc": "You don't have a opal to pay me!"
-                          },
-                          {
-                            "player": "Whoops, sorry."
-                          },
-                          {
-                            "type": "end"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "On second thoughts, no thanks.",
-                        "steps": [
-                          {
-                            "player": "On second thoughts, no thanks."
-                          },
-                          {
-                            "npc": "Ok, suit yourself."
-                          },
-                          {
-                            "type": "end"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                "player": "Yes, please. I need healing."
               },
               {
-                "text": "5 Hitpoints.",
+                "npc": "Sure, how many hitpoints would you like me to heal?",
                 "steps": [
-                  {
-                    "player": "5 Hitpoints."
-                  },
-                  {
-                    "npc": "That will cost you 1 sapphire or 1 piece of jade."
-                  },
                   {
                     "type": "choice",
                     "options": [
                       {
-                        "text": "All right.",
+                        "text": "4 Hitpoints.",
                         "steps": [
                           {
-                            "player": "All right."
+                            "player": "4 Hitpoints."
                           },
                           {
-                            "npc": "You don't have a sapphire or a piece of jade with you!"
+                            "npc": "That will cost you 1 opal."
                           },
                           {
-                            "player": "Whoops, sorry."
-                          },
-                          {
-                            "type": "end"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "On second thoughts, no thanks.",
-                        "steps": [
-                          {
-                            "type": "jump",
-                            "id": "VUnTQF",
-                            "steps": [
+                            "type": "choice",
+                            "options": [
                               {
-                                "type": "call",
-                                "branch": "jump-522a5e4f447a7e5c"
+                                "text": "All right.",
+                                "steps": [
+                                  {
+                                    "player": "All right."
+                                  },
+                                  {
+                                    "npc": "You don't have a opal to pay me!"
+                                  },
+                                  {
+                                    "player": "Whoops, sorry."
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "On second thoughts, no thanks.",
+                                "steps": [
+                                  {
+                                    "player": "On second thoughts, no thanks."
+                                  },
+                                  {
+                                    "npc": "Ok, suit yourself."
+                                  }
+                                ]
                               }
                             ]
                           }
                         ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "text": "7 Hitpoints.",
-                "steps": [
-                  {
-                    "player": "7 Hitpoints."
-                  },
-                  {
-                    "npc": "That will cost you 1 emerald or 1 red topaz."
-                  },
-                  {
-                    "type": "choice",
-                    "options": [
-                      {
-                        "text": "All right.",
-                        "steps": [
-                          {
-                            "player": "All right."
-                          },
-                          {
-                            "npc": "You don't have an emerald or a red topaz to pay me with!"
-                          },
-                          {
-                            "player": "Whoops, sorry."
-                          },
-                          {
-                            "type": "end"
-                          }
-                        ]
                       },
                       {
-                        "text": "On second thoughts, no thanks.",
+                        "text": "5 Hitpoints.",
                         "steps": [
                           {
-                            "type": "jump",
-                            "id": "bfO5xm",
-                            "steps": [
+                            "player": "5 Hitpoints."
+                          },
+                          {
+                            "npc": "That will cost you 1 sapphire or 1 piece of jade."
+                          },
+                          {
+                            "type": "choice",
+                            "options": [
                               {
-                                "type": "call",
-                                "branch": "jump-522a5e4f447a7e5c"
+                                "text": "All right.",
+                                "steps": [
+                                  {
+                                    "player": "All right."
+                                  },
+                                  {
+                                    "npc": "You don't have a sapphire or a piece of jade with you!"
+                                  },
+                                  {
+                                    "player": "Whoops, sorry."
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "On second thoughts, no thanks.",
+                                "steps": [
+                                  {
+                                    "type": "jump",
+                                    "id": "kKCQkj",
+                                    "steps": [
+                                      {
+                                        "type": "call",
+                                        "branch": "jump-1c14939d3e26ed1c"
+                                      }
+                                    ]
+                                  }
+                                ]
                               }
                             ]
                           }
                         ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "text": "9 Hitpoints.",
-                "steps": [
-                  {
-                    "player": "9 Hitpoints."
-                  },
-                  {
-                    "npc": "That will cost you 1 diamond."
-                  },
-                  {
-                    "type": "choice",
-                    "options": [
-                      {
-                        "text": "All right.",
-                        "steps": [
-                          {
-                            "player": "All right."
-                          },
-                          {
-                            "npc": "You don't have a diamond to pay me!"
-                          },
-                          {
-                            "player": "Whoops, sorry."
-                          },
-                          {
-                            "type": "end"
-                          }
-                        ]
                       },
                       {
-                        "text": "On second thoughts, no thanks.",
+                        "text": "7 Hitpoints.",
                         "steps": [
                           {
-                            "type": "jump",
-                            "id": "lQgHn7",
-                            "steps": [
+                            "player": "7 Hitpoints."
+                          },
+                          {
+                            "npc": "That will cost you 1 emerald or 1 red topaz."
+                          },
+                          {
+                            "type": "choice",
+                            "options": [
                               {
-                                "type": "call",
-                                "branch": "jump-522a5e4f447a7e5c"
+                                "text": "All right.",
+                                "steps": [
+                                  {
+                                    "player": "All right."
+                                  },
+                                  {
+                                    "npc": "You don't have an emerald or a red topaz to pay me with!"
+                                  },
+                                  {
+                                    "player": "Whoops, sorry."
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "On second thoughts, no thanks.",
+                                "steps": [
+                                  {
+                                    "type": "jump",
+                                    "id": "o5S7Ca",
+                                    "steps": [
+                                      {
+                                        "type": "call",
+                                        "branch": "jump-1c14939d3e26ed1c"
+                                      }
+                                    ]
+                                  }
+                                ]
                               }
                             ]
                           }
                         ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "text": "11 Hitpoints.",
-                "steps": [
-                  {
-                    "player": "11 Hitpoints."
-                  },
-                  {
-                    "npc": "That will cost you 1 ruby."
-                  },
-                  {
-                    "type": "choice",
-                    "options": [
+                      },
                       {
-                        "text": "All right.",
+                        "text": "9 Hitpoints.",
                         "steps": [
                           {
-                            "player": "All right."
+                            "player": "9 Hitpoints."
                           },
                           {
-                            "npc": "You don't have a ruby to pay me!"
+                            "npc": "That will cost you 1 diamond."
                           },
                           {
-                            "player": "Whoops, sorry."
-                          },
-                          {
-                            "type": "end"
+                            "type": "choice",
+                            "options": [
+                              {
+                                "text": "All right.",
+                                "steps": [
+                                  {
+                                    "player": "All right."
+                                  },
+                                  {
+                                    "npc": "You don't have a diamond to pay me!"
+                                  },
+                                  {
+                                    "player": "Whoops, sorry."
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "On second thoughts, no thanks.",
+                                "steps": [
+                                  {
+                                    "type": "jump",
+                                    "id": "lJ8zCM",
+                                    "steps": [
+                                      {
+                                        "type": "call",
+                                        "branch": "jump-1c14939d3e26ed1c"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
                           }
                         ]
                       },
                       {
-                        "text": "On second thoughts, no thanks.",
+                        "text": "11 Hitpoints.",
                         "steps": [
                           {
-                            "type": "jump",
-                            "id": "lPCQWR",
-                            "steps": [
+                            "player": "11 Hitpoints."
+                          },
+                          {
+                            "npc": "That will cost you 1 ruby."
+                          },
+                          {
+                            "type": "choice",
+                            "options": [
                               {
-                                "type": "call",
-                                "branch": "jump-522a5e4f447a7e5c"
+                                "text": "All right.",
+                                "steps": [
+                                  {
+                                    "player": "All right."
+                                  },
+                                  {
+                                    "npc": "You don't have a ruby to pay me!"
+                                  },
+                                  {
+                                    "player": "Whoops, sorry."
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "On second thoughts, no thanks.",
+                                "steps": [
+                                  {
+                                    "type": "jump",
+                                    "id": "9VNRhI",
+                                    "steps": [
+                                      {
+                                        "type": "call",
+                                        "branch": "jump-1c14939d3e26ed1c"
+                                      }
+                                    ]
+                                  }
+                                ]
                               }
                             ]
                           }
@@ -300,12 +284,7 @@
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "choice",
-        "options": [
+          },
           {
             "text": "No thanks. Just looking around.",
             "steps": [
@@ -338,7 +317,7 @@
     ]
   },
   "branches": {
-    "jump-522a5e4f447a7e5c": [
+    "jump-1c14939d3e26ed1c": [
       {
         "player": "On second thoughts, no thanks."
       },

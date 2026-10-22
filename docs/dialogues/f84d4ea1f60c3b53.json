@@ -3,7 +3,8 @@
   "variants": {
     "getting-sprayed-with-the-correct-chemical-liquid": [
       {
-        "npc": "Roaaaaaaaaaaar!"
+        "npc": "Roaaaaaaaaaaar!",
+        "presentation": "overhead"
       }
     ]
   }

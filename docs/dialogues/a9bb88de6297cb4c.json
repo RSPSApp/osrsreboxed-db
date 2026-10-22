@@ -132,7 +132,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "I hate [player name]!"
+                "npc": "I hate [player name]!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -140,7 +141,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "[player name] is mean!"
+                "npc": "[player name] is mean!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -148,7 +150,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Don't ask [player name] for anything - [he's/she's/they're] stingy!"
+                "npc": "Don't ask [player name] for anything - [he's/she's/they're] stingy!",
+                "presentation": "overhead"
               }
             ]
           }

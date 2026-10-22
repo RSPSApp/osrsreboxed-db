@@ -53,7 +53,8 @@
     ],
     "any-time-he-is-aggressive-but-not-attacked-and-cannot-attack-the-player-for-long-enough": [
       {
-        "npc": "Bah, enough of you!"
+        "npc": "Bah, enough of you!",
+        "presentation": "overhead"
       }
     ]
   }

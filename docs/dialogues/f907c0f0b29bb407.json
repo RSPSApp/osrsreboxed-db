@@ -31,23 +31,28 @@
     ],
     "after-the-fremennik-trials-catching-the-player-trying-to-steal-from-his-fish-stalls": [
       {
-        "npc": "Hey! Get your hands off there!"
+        "npc": "Hey! Get your hands off there!",
+        "presentation": "overhead"
       }
     ],
     "after-the-fremennik-trials-interacting-with-him-after-stealing-from-his-fish-stalls-recently-talk-to-option": [
       {
-        "npc": "It is [Fremennik name] the thief!"
+        "npc": "It is [Fremennik name] the thief!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards guards!"
+        "npc": "Guards guards!",
+        "presentation": "overhead"
       }
     ],
     "after-the-fremennik-trials-interacting-with-him-after-stealing-from-his-fish-stalls-recently-trade-option": [
       {
-        "npc": "You're the one who stole something from me!"
+        "npc": "You're the one who stole something from me!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards guards!"
+        "npc": "Guards guards!",
+        "presentation": "overhead"
       }
     ]
   }

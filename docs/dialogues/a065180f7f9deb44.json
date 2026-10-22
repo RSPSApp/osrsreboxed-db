@@ -3,21 +3,27 @@
   "variants": {
     "overhead-dialogue-when-fighting-me": [
       {
+        "presentation": "overhead",
         "npc": "Are you me? Am I you?"
       },
       {
+        "presentation": "overhead",
         "npc": "You've got an outrageous accent, you silly thing!"
       },
       {
+        "presentation": "overhead",
         "npc": "Call that an attack? Try this on for size!"
       },
       {
+        "presentation": "overhead",
         "npc": "Oooo. Get you! Strong words from such a weed!"
       },
       {
+        "presentation": "overhead",
         "npc": "Stop hitting yourself, stop hitting yourself!"
       },
       {
+        "presentation": "overhead",
         "npc": "Do I look bothered?"
       }
     ]

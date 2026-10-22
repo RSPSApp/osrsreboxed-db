@@ -1322,8 +1322,10 @@
                 "text": "What? Oh well, if it's a matter of that much importance, I suppose you can borrow one..."
               },
               {
-                "type": "unavailable",
-                "id": "1AIzde"
+                "type": "action",
+                "action": "receive",
+                "text": "dirty robe",
+                "id": "rn5F_V"
               }
             ]
           },
@@ -1347,8 +1349,10 @@
                 "text": "You monster! Take the robes and leave this place!"
               },
               {
-                "type": "unavailable",
-                "id": "8wrONk"
+                "type": "action",
+                "action": "receive",
+                "text": "dirty robe",
+                "id": "KTbe3V"
               }
             ]
           }
@@ -1537,8 +1541,10 @@
         "player": "I think it's probably heard enough."
       },
       {
-        "type": "unavailable",
-        "id": "MQQvS9"
+        "type": "action",
+        "action": "receive",
+        "text": "drunk parrot",
+        "id": "mWPmDR"
       }
     ],
     "returning-to-eadgar-with-supplies-using-the-educated-parrot-on-the-rack": [
@@ -1701,8 +1707,10 @@
             "text": "You bumbling imbecile!"
           },
           {
-            "type": "unavailable",
-            "id": "BsAJ0F"
+            "type": "action",
+            "action": "receive",
+            "text": "fake man",
+            "id": "EraMq9"
           },
           {
             "type": "line",
@@ -1900,18 +1908,21 @@
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "!"
+        "text": "!",
+        "presentation": "overhead"
       }
     ],
     "getting-the-goutweed-searching-the-goutweed-crate": [
       {
-        "type": "unavailable",
-        "id": "h_fC6c"
+        "type": "message",
+        "text": "You've found some goutweed!",
+        "id": "ThJWLF"
       },
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Hm?"
+        "text": "Hm?",
+        "presentation": "overhead"
       }
     ],
     "getting-the-goutweed-talking-to-eadgar-after-getting-access-to-the-storeroom": [
@@ -2061,65 +2072,8 @@
             "text": "Ask about Sanfew Serum.",
             "steps": [
               {
-                "player": "Hey there, can you tell me something about this Sanfew Serum, like how do I make it, and what does it do?"
-              },
-              {
-                "type": "line",
-                "speaker": "Sanfew",
-                "text": "Certainly. It was after all, my creation, and mine alone. If anyone should know how to make it, it should be me!"
-              },
-              {
-                "player": "Can't fault that logic!"
-              },
-              {
-                "type": "line",
-                "speaker": "Sanfew",
-                "text": "Ok, essentially this potion is a mixture of a cure poison, cure disease and restore stats all rolled into one! Very handy for the adventurers with an eye on conserving inventory space."
-              },
-              {
-                "player": "Ok, I'm sold... How do you make it?"
-              },
-              {
-                "type": "line",
-                "speaker": "Sanfew",
-                "text": "Well, it's very easy really. You take a standard super stat restore potion. Add some ground unicorn horn. Then, add some snake weed from the island of Karamja. Finally, add some nail beast nails. You can"
-              },
-              {
-                "type": "line",
-                "speaker": "Sanfew",
-                "text": "only get these from the area of Morytania, specifically, if you go deep in the Mort Myre swamp."
-              },
-              {
-                "player": "How do you mean, deep into the Mort Myre swamp?"
-              },
-              {
-                "type": "line",
-                "speaker": "Sanfew",
-                "text": "Well, most adventurers avoid the deep Mort Myre swamp, whereas the Paterdomus trek and the Burgh de Rott trek take you through the most interesting areas. These area's often allow the quickest, but potentially"
-              },
-              {
-                "type": "line",
-                "speaker": "Sanfew",
-                "text": "more dangerous routes through Mort Myre. This is where you're likely to encounter a Nail beast."
-              },
-              {
-                "player": "Are they very dangerous?"
-              },
-              {
-                "type": "line",
-                "speaker": "Sanfew",
-                "text": "They can be pretty dangerous. They'll defend for a long time, then attack suddenly and seemingly without warning, landing three viscious attacks at once. This can be pretty lethal. However, the nail beasts themselves"
-              },
-              {
-                "type": "line",
-                "speaker": "Sanfew",
-                "text": "are curiously wounded from the Sanfew Serum itself...very bizzare, that a potion made from their claws should have such a pronounced effect on them."
-              },
-              {
-                "player": "Ok, that's very helpful. Many thanks for your assistance."
-              },
-              {
-                "type": "end"
+                "type": "call",
+                "branch": "DuJqJM"
               }
             ]
           },
@@ -2139,9 +2093,6 @@
                         "type": "line",
                         "speaker": "Sanfew",
                         "text": "Ah, good. Here are some herbs in exchange."
-                      },
-                      {
-                        "type": "end"
                       }
                     ]
                   },
@@ -2155,9 +2106,6 @@
                         "type": "line",
                         "speaker": "Sanfew",
                         "text": "Well, not right now I don't think young 'un. In fact, I need to make some more preparations myself for the ritual. Rest assured, if I need any more help I will ask you again."
-                      },
-                      {
-                        "type": "end"
                       }
                     ]
                   },
@@ -2181,10 +2129,6 @@
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "qCYdzK"
       }
     ]
   },

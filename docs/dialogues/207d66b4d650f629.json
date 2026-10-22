@@ -8,208 +8,276 @@
         "id": "NmsS7e"
       },
       {
-        "npc": "I will smite you! (auto-attack)"
+        "npc": "I will smite you! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "I've got you now! (auto-attack)"
+        "npc": "I've got you now! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Stand still, rat! (auto-attack)"
+        "npc": "Stand still, rat! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "You can't escape! (auto-attack)"
+        "npc": "You can't escape! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "For the lord! (auto-attack)"
+        "npc": "For the lord! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "You call that a weapon?! (auto-attack)"
+        "npc": "You call that a weapon?! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "You are weak! You are feeble! (auto-attack)"
+        "npc": "You are weak! You are feeble! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Hold still so I can smite you! (auto-attack)"
+        "npc": "Hold still so I can smite you! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Dodge this! (auto-attack)"
+        "npc": "Dodge this! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "You are powerless to me! (auto-attack)"
+        "npc": "You are powerless to me! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "I will cut you down! (auto-attack)"
+        "npc": "I will cut you down! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "I will end you! (auto-attack)"
+        "npc": "I will end you! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "You're mine now! (auto-attack)"
+        "npc": "You're mine now! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Time to die, mortal! (auto-attack)"
+        "npc": "Time to die, mortal! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Raaargh! (auto-attack)"
+        "npc": "Raaargh! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Die, rodent! (auto-attack)"
+        "npc": "Die, rodent! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Die! (auto-attack)"
+        "npc": "Die! (auto-attack)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Now I've got you! (shield bash)"
+        "npc": "Now I've got you! (shield bash)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Hands off, wretch! (shield bash)"
+        "npc": "Hands off, wretch! (shield bash)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Grrrah! (shield bash)"
+        "npc": "Grrrah! (shield bash)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Take this! (shield bash)"
+        "npc": "Take this! (shield bash)",
+        "presentation": "overhead"
       },
       {
-        "npc": "You're not blocking this one! (shield bash)"
+        "npc": "You're not blocking this one! (shield bash)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Defend yourself! (shield bash)"
+        "npc": "Defend yourself! (shield bash)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Back off, mutt! (shield bash)"
+        "npc": "Back off, mutt! (shield bash)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Perish, fool!"
+        "npc": "Perish, fool!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Time to feast, hounds! (summoning hellhounds)"
+        "npc": "Time to feast, hounds! (summoning hellhounds)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Go forth, my hounds, and destroy them! (summoning hellhounds)"
+        "npc": "Go forth, my hounds, and destroy them! (summoning hellhounds)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Hounds! Dispose of these tresspassers! (summoning hellhounds)"
+        "npc": "Hounds! Dispose of these tresspassers! (summoning hellhounds)",
+        "presentation": "overhead"
       },
       {
-        "npc": "I've had enough of this! Hounds! (summoning hellhounds)"
+        "npc": "I've had enough of this! Hounds! (summoning hellhounds)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Hounds! Get rid of these interlopers! (summoning hellhounds)"
+        "npc": "Hounds! Get rid of these interlopers! (summoning hellhounds)",
+        "presentation": "overhead"
       },
       {
-        "npc": "I'll kill you for killing my pets! (after hellhounds are killed)"
+        "npc": "I'll kill you for killing my pets! (after hellhounds are killed)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Must I do everything around here?! (after hellhounds are killed)"
+        "npc": "Must I do everything around here?! (after hellhounds are killed)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Now... DO IT AGAIN!!! (enraged form)"
+        "npc": "Now... DO IT AGAIN!!! (enraged form)",
+        "presentation": "overhead"
       },
       {
-        "npc": "I WILL SMITE YOU! (auto-attack, enraged)"
+        "npc": "I WILL SMITE YOU! (auto-attack, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "DODGE THIS!"
+        "npc": "DODGE THIS!",
+        "presentation": "overhead"
       },
       {
-        "npc": "TAKE THIS!"
+        "npc": "TAKE THIS!",
+        "presentation": "overhead"
       },
       {
-        "npc": "PERISH, FOOL!"
+        "npc": "PERISH, FOOL!",
+        "presentation": "overhead"
       },
       {
-        "npc": "RAAARGH! (auto-attack, enraged)"
+        "npc": "RAAARGH! (auto-attack, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "FOR THE LORD! (auto-attack, enraged)"
+        "npc": "FOR THE LORD! (auto-attack, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "HOLD STILL SO I CAN SMITE YOU! (auto-attack, enraged)"
+        "npc": "HOLD STILL SO I CAN SMITE YOU! (auto-attack, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "YOU CAN'T ESCAPE! (auto-attack, enraged)"
+        "npc": "YOU CAN'T ESCAPE! (auto-attack, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "DIE! (auto-attack, enraged)"
+        "npc": "DIE! (auto-attack, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "STAND STILL, RAT! (auto-attack, enraged)"
+        "npc": "STAND STILL, RAT! (auto-attack, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "YOU'RE MINE NOW!"
+        "npc": "YOU'RE MINE NOW!",
+        "presentation": "overhead"
       },
       {
-        "npc": "YOU ARE POWERLESS TO ME!"
+        "npc": "YOU ARE POWERLESS TO ME!",
+        "presentation": "overhead"
       },
       {
-        "npc": "I WILL CUT YOU DOWN! (auto-attack, enraged)"
+        "npc": "I WILL CUT YOU DOWN! (auto-attack, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "TIME TO DIE, MORTAL!"
+        "npc": "TIME TO DIE, MORTAL!",
+        "presentation": "overhead"
       },
       {
-        "npc": "FILTHY WHELPS!"
+        "npc": "FILTHY WHELPS!",
+        "presentation": "overhead"
       },
       {
-        "npc": "YOU CALL THAT A WEAPON?! (auto-attack, enraged)"
+        "npc": "YOU CALL THAT A WEAPON?! (auto-attack, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "DIE, RODENT! (auto-attack, enraged)"
+        "npc": "DIE, RODENT! (auto-attack, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "YOU'RE NOT BLOCKING THIS ONE! (shield bash, enraged)"
+        "npc": "YOU'RE NOT BLOCKING THIS ONE! (shield bash, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "DEFEND YOURSELF! (shield bash, enraged)"
+        "npc": "DEFEND YOURSELF! (shield bash, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "HANDS OFF, WRETCH! (shield bash, enraged)"
+        "npc": "HANDS OFF, WRETCH! (shield bash, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "BACK OFF, MUTT! (shield bash, enraged)"
+        "npc": "BACK OFF, MUTT! (shield bash, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "HOUNDS! DISPOSE OF THESE TRESSPASSERS! (summoning hellhounds, enraged)"
+        "npc": "HOUNDS! DISPOSE OF THESE TRESSPASSERS! (summoning hellhounds, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "HOUNDS! GET RID OF THESE INTERLOPERS! (summoning hellhounds, enraged)"
+        "npc": "HOUNDS! GET RID OF THESE INTERLOPERS! (summoning hellhounds, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "TIME TO FEAST, HOUNDS! (summoning hellhounds, enraged)"
+        "npc": "TIME TO FEAST, HOUNDS! (summoning hellhounds, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "GO FORTH, MY HOUNDS, AND DESTROY THEM! (summoning hellhounds, enraged)"
+        "npc": "GO FORTH, MY HOUNDS, AND DESTROY THEM! (summoning hellhounds, enraged)",
+        "presentation": "overhead"
       },
       {
-        "npc": "I'LL KILL YOU FOR KILLING MY PETS! (after hellhounds are killed)"
+        "npc": "I'LL KILL YOU FOR KILLING MY PETS! (after hellhounds are killed)",
+        "presentation": "overhead"
       },
       {
-        "npc": "MY HOUNDS! I'LL MAKE YOU PAY FOR THAT! (after hellhounds are killed)"
+        "npc": "MY HOUNDS! I'LL MAKE YOU PAY FOR THAT! (after hellhounds are killed)",
+        "presentation": "overhead"
       },
       {
-        "npc": "GAH! HOUNDS! GET THEM! (after hellhounds are killed)"
+        "npc": "GAH! HOUNDS! GET THEM! (after hellhounds are killed)",
+        "presentation": "overhead"
       },
       {
-        "npc": "FINE! I'LL DEAL WITH YOU MYSELF! (after hellhounds are killed)"
+        "npc": "FINE! I'LL DEAL WITH YOU MYSELF! (after hellhounds are killed)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Urgh... not... again... (death)"
+        "npc": "Urgh... not... again... (death)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Urk! I... failed... (death)"
+        "npc": "Urk! I... failed... (death)",
+        "presentation": "overhead"
       },
       {
-        "npc": "I'll... be... back... (death)"
+        "npc": "I'll... be... back... (death)",
+        "presentation": "overhead"
       },
       {
-        "npc": "This isn't... the last... of me... (death)"
+        "npc": "This isn't... the last... of me... (death)",
+        "presentation": "overhead"
       },
       {
-        "npc": "My lord... I'm... sorry... (death)"
+        "npc": "My lord... I'm... sorry... (death)",
+        "presentation": "overhead"
       },
       {
-        "npc": "I'll get you... next... time... (death)"
+        "npc": "I'll get you... next... time... (death)",
+        "presentation": "overhead"
       }
     ]
   }

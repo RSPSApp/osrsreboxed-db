@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue-when-their-tortoise-is-killed": [
       {
-        "npc": "Attack the infidel!"
+        "npc": "Attack the infidel!",
+        "presentation": "overhead"
       }
     ]
   }

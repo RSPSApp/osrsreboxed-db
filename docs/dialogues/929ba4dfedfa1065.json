@@ -284,6 +284,7 @@
                 "id": "-hDn8o"
               },
               {
+                "presentation": "overhead",
                 "type": "line",
                 "speaker": "Hans",
                 "text": "Help! Help!"
@@ -3430,10 +3431,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "_c-03w"
-      },
-      {
-        "type": "unavailable",
-        "id": "QUJ2Sw"
       }
     ]
   },

@@ -14,7 +14,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "We can fix this faster if we work together!"
+                "npc": "We can fix this faster if we work together!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -22,7 +23,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Blasted thing's broken again!"
+                "npc": "Blasted thing's broken again!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -30,7 +32,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Can I get some assistance over here?"
+                "npc": "Can I get some assistance over here?",
+                "presentation": "overhead"
               }
             ]
           }
@@ -39,7 +42,8 @@
     ],
     "overhead-dialogue-when-a-fishing-crane-has-been-successfully-repaired": [
       {
-        "npc": "Great work, this crane should be good for a while!"
+        "npc": "Great work, this crane should be good for a while!",
+        "presentation": "overhead"
       }
     ]
   }

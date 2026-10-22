@@ -1228,7 +1228,8 @@
         "id": "Ye-OFg"
       },
       {
-        "player": "Ouchie!"
+        "player": "Ouchie!",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -1239,7 +1240,8 @@
               {
                 "type": "line",
                 "speaker": "Dr Banikan",
-                "text": "Shocking!"
+                "text": "Shocking!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1249,7 +1251,8 @@
               {
                 "type": "line",
                 "speaker": "Dr Banikan",
-                "text": "Careful now!"
+                "text": "Careful now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1259,7 +1262,8 @@
               {
                 "type": "line",
                 "speaker": "Dr Banikan",
-                "text": "That looked like it hurt."
+                "text": "That looked like it hurt.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -2587,7 +2591,8 @@
       {
         "type": "line",
         "speaker": "Kasonde",
-        "text": "They're coming! Build some defences!"
+        "text": "They're coming! Build some defences!",
+        "presentation": "overhead"
       }
     ],
     "carnifex-maximus-vardorvis-the-strangled-fight-during-the-strangled-fight": [
@@ -2648,7 +2653,8 @@
       {
         "type": "line",
         "speaker": "Kasonde",
-        "text": "They seem to be running out of steam! Let's head back up."
+        "text": "They seem to be running out of steam! Let's head back up.",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -5079,7 +5085,8 @@
               {
                 "type": "line",
                 "speaker": "Jhallan",
-                "text": "There you are!"
+                "text": "There you are!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -5089,7 +5096,8 @@
               {
                 "type": "line",
                 "speaker": "Jhallan",
-                "text": "Did you think I wouldn't find you?"
+                "text": "Did you think I wouldn't find you?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -5099,7 +5107,8 @@
               {
                 "type": "line",
                 "speaker": "Jhallan",
-                "text": "Going somewhere?"
+                "text": "Going somewhere?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -5109,7 +5118,8 @@
               {
                 "type": "line",
                 "speaker": "Jhallan",
-                "text": "You won't escape me!"
+                "text": "You won't escape me!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -5120,7 +5130,8 @@
       {
         "type": "line",
         "speaker": "Jhallan",
-        "text": "I have you now!"
+        "text": "I have you now!",
+        "presentation": "overhead"
       }
     ],
     "duke-sucellus-of-the-sixth-legion-talking-to-the-assassin-after-getting-the-diamond-key": [
@@ -7092,72 +7103,86 @@
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is an open wound that bleeds only darkness."
+        "text": "There is an open wound that bleeds only darkness.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is a bard who sings of your final moments."
+        "text": "There is a bard who sings of your final moments.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is an avalanche of horrors which has discovered your name."
+        "text": "There is an avalanche of horrors which has discovered your name.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is a stranger who wears a black mask under their skin."
+        "text": "There is a stranger who wears a black mask under their skin.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is a city of blackstone where the screams are ever silent."
+        "text": "There is a city of blackstone where the screams are ever silent.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is a monument built in honour of the suffering you desire."
+        "text": "There is a monument built in honour of the suffering you desire.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is a choir of souls who you will one day meet."
+        "text": "There is a choir of souls who you will one day meet.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is a song so loud that you only hear silence."
+        "text": "There is a song so loud that you only hear silence.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is a library of sorrow where your final fate is written."
+        "text": "There is a library of sorrow where your final fate is written.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is a reaper who has a thousand gibbering faces."
+        "text": "There is a reaper who has a thousand gibbering faces.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is an atrocity written upon blackstone."
+        "text": "There is an atrocity written upon blackstone.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is a king who presides over a court of corpses."
+        "text": "There is a king who presides over a court of corpses.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is an ocean of souls where you are one day fated to swim."
+        "text": "There is an ocean of souls where you are one day fated to swim.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "[player name]",
-        "text": "There is a judge who has already passed your sentence."
+        "text": "There is a judge who has already passed your sentence.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -8564,9 +8589,6 @@
         "text": "And on that note, I must leave you, my friend. May you walk in the shadow of the Empty Lord."
       },
       {
-        "type": "end"
-      },
-      {
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "xGIiPZ"
@@ -8591,6 +8613,7 @@
                 "player": "Can you teleport me to the Rune Essence Mine?"
               },
               {
+                "presentation": "overhead",
                 "type": "line",
                 "speaker": "Archmage Sedridor",
                 "text": "Senventior disthine molenko!"
@@ -9538,10 +9561,6 @@
             "text": "More options..."
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "Xcnapw"
       }
     ]
   },
@@ -10517,6 +10536,7 @@
         "player": "Can you teleport me to the Rune Essence Mine?"
       },
       {
+        "presentation": "overhead",
         "type": "line",
         "speaker": "Archmage Sedridor",
         "text": "Senventior disthine molenko!"

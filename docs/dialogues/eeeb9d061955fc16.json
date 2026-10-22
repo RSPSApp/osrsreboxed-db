@@ -1,7 +1,8 @@
 {
   "steps": [
     {
-      "npc": "Gurrhh!"
+      "npc": "Gurrhh!",
+      "presentation": "overhead"
     }
   ]
 }

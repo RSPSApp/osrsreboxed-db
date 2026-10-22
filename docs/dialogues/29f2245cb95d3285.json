@@ -45,63 +45,83 @@
         "options": []
       },
       {
+        "presentation": "overhead",
         "npc": "Where did I need to take this?"
       },
       {
+        "presentation": "overhead",
         "npc": "Can't wait to start smashing again..."
       },
       {
+        "presentation": "overhead",
         "npc": "Feel the burn!"
       },
       {
+        "presentation": "overhead",
         "npc": "I smell human..."
       },
       {
+        "presentation": "overhead",
         "npc": "If I deliver this in time, master won't give me the hoof!"
       },
       {
+        "presentation": "overhead",
         "npc": "Hurry hurry!"
       },
       {
+        "presentation": "overhead",
         "npc": "So much to do. So little time."
       },
       {
+        "presentation": "overhead",
         "npc": "Me not deserve this treatment."
       },
       {
+        "presentation": "overhead",
         "npc": "So tired..."
       },
       {
+        "presentation": "overhead",
         "npc": "Must work hard... Mustn't get clobbered..."
       },
       {
+        "presentation": "overhead",
         "npc": "Maybe master wants this one!"
       },
       {
+        "presentation": "overhead",
         "npc": "Soon me get revenge..."
       },
       {
+        "presentation": "overhead",
         "npc": "Mind... Over... Matter!"
       },
       {
+        "presentation": "overhead",
         "npc": "Me remember everything, me not forget faces."
       },
       {
+        "presentation": "overhead",
         "npc": "Did I pick up the right relic?"
       },
       {
+        "presentation": "overhead",
         "npc": "Time to lift stuff!"
       },
       {
+        "presentation": "overhead",
         "npc": "Grrr!"
       },
       {
+        "presentation": "overhead",
         "npc": "Urgh..."
       },
       {
+        "presentation": "overhead",
         "npc": "Hrumph!"
       },
       {
+        "presentation": "overhead",
         "npc": "Gotta look busy!"
       }
     ],
@@ -290,18 +310,23 @@
         "options": []
       },
       {
+        "presentation": "overhead",
         "npc": "This is pointless. I should be stealing things."
       },
       {
+        "presentation": "overhead",
         "npc": "I'll throw this into lava soon..."
       },
       {
+        "presentation": "overhead",
         "npc": "B? No, that's a D..."
       },
       {
+        "presentation": "overhead",
         "npc": "Argh. I can't make sense of these symbols!"
       },
       {
+        "presentation": "overhead",
         "npc": "Do I really need to be able to read?"
       }
     ],
@@ -338,21 +363,27 @@
         "options": []
       },
       {
+        "presentation": "overhead",
         "npc": "Higher!"
       },
       {
+        "presentation": "overhead",
         "npc": "Oh no, is the relic starting to break? Oops!"
       },
       {
+        "presentation": "overhead",
         "npc": "I can jump higher than you all!"
       },
       {
+        "presentation": "overhead",
         "npc": "Hop hop hop!"
       },
       {
+        "presentation": "overhead",
         "npc": "Break 'em all!"
       },
       {
+        "presentation": "overhead",
         "npc": "Watch me!"
       }
     ],
@@ -362,9 +393,11 @@
         "options": []
       },
       {
+        "presentation": "overhead",
         "npc": "Gratz on your Nightmare Mode loss"
       },
       {
+        "presentation": "overhead",
         "npc": "Seriously, you died to a 1? Eat a cabbage next time, then you might survive. Yuck."
       }
     ]

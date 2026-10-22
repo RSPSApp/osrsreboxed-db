@@ -114,7 +114,8 @@
       {
         "type": "line",
         "speaker": "Monk",
-        "text": "yawn*"
+        "text": "yawn*",
+        "presentation": "overhead"
       }
     ],
     "child-s-blanket-entering-the-stone-circle": [
@@ -413,7 +414,8 @@
       {
         "type": "line",
         "speaker": "Brother Cedric",
-        "text": "Gulp... gulp!"
+        "text": "Gulp... gulp!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -607,8 +609,9 @@
         "text": "I have little to repay you with but please, take these runes."
       },
       {
-        "type": "unavailable",
-        "id": "dve3eT"
+        "type": "message",
+        "text": "Brother Omad gives you 8 Law Runes.",
+        "id": "iTAzwR"
       },
       {
         "player": "Thanks Brother Omad!"
@@ -628,54 +631,66 @@
       {
         "type": "line",
         "speaker": "Brother Omad",
-        "text": "Party!"
+        "text": "Party!",
+        "presentation": "overhead"
       },
       {
-        "player": "Woop!"
+        "player": "Woop!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Monk",
-        "text": "Yeah!"
+        "text": "Yeah!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Brother Omad",
-        "text": "Let's boogie!"
+        "text": "Let's boogie!",
+        "presentation": "overhead"
       },
       {
-        "player": "Oh baby!"
+        "player": "Oh baby!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Monk",
-        "text": "GO!"
+        "text": "GO!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Brother Omad",
-        "text": "Get down!"
+        "text": "Get down!",
+        "presentation": "overhead"
       },
       {
-        "player": "Feel the rhythm!"
+        "player": "Feel the rhythm!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Monk",
-        "text": "Dance!"
+        "text": "Dance!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Brother Omad",
-        "text": "Oh my!"
+        "text": "Oh my!",
+        "presentation": "overhead"
       },
       {
-        "player": "Watch me go!"
+        "player": "Watch me go!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Monk",
-        "text": "You go!"
+        "text": "You go!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -695,13 +710,6 @@
         "type": "line",
         "speaker": "Monk",
         "text": "hic* What a party! Wow!"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "TCuJEN"
       }
     ]
   },

@@ -8,7 +8,8 @@
     ],
     "before-the-fremennik-trials-attempting-to-pickpocket-inga": [
       {
-        "npc": "You stay away from me outerlander!"
+        "npc": "You stay away from me outerlander!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -140,7 +141,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "You shame us, [Fremennik name]!"
+                "npc": "You shame us, [Fremennik name]!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -148,7 +150,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "How can you steal from me, [Fremennik name]?"
+                "npc": "How can you steal from me, [Fremennik name]?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -156,7 +159,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "You have betrayed your heritage, [Fremennik name]!"
+                "npc": "You have betrayed your heritage, [Fremennik name]!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -164,7 +168,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Why would you try to steal from me, [Fremennik name]?"
+                "npc": "Why would you try to steal from me, [Fremennik name]?",
+                "presentation": "overhead"
               }
             ]
           }

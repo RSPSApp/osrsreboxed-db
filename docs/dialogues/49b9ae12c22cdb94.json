@@ -155,9 +155,6 @@
                 "type": "action",
                 "text": "Congratulations! Quest complete!",
                 "id": "xoRC1-"
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -181,9 +178,6 @@
                 "type": "action",
                 "text": "Congratulations! Quest complete!",
                 "id": "apFl7S"
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -227,17 +221,10 @@
                 "type": "action",
                 "text": "Congratulations! Quest complete!",
                 "id": "RB5AF3"
-              },
-              {
-                "type": "end"
               }
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "FJIkMe"
       }
     ]
   }

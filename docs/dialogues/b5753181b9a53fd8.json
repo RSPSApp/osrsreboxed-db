@@ -244,7 +244,8 @@
         "text": "If the player does not have a pet following them",
         "steps": [
           {
-            "npc": "Seventior Disthinte Molesko!"
+            "npc": "Seventior Disthinte Molesko!",
+            "presentation": "overhead"
           },
           {
             "type": "action",

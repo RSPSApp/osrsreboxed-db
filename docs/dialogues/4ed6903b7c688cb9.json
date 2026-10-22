@@ -44,7 +44,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Armour!"
+                "npc": "Armour!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -52,7 +53,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Get your leather armour here!"
+                "npc": "Get your leather armour here!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -60,7 +62,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Leather!"
+                "npc": "Leather!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -68,7 +71,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Frog-leather!"
+                "npc": "Frog-leather!",
+                "presentation": "overhead"
               }
             ]
           }

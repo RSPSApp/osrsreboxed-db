@@ -3,10 +3,12 @@
   "variants": {
     "overhead-dialogue-when-the-followed-duck-is-killed": [
       {
-        "npc": "Cheep cheep!"
+        "npc": "Cheep cheep!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Eep!"
+        "npc": "Eep!",
+        "presentation": "overhead"
       }
     ]
   }

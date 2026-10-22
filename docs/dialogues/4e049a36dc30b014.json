@@ -145,7 +145,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "I feel so weak I could faint."
+                "npc": "I feel so weak I could faint.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -153,7 +154,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'm sick of this place."
+                "npc": "I'm sick of this place.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -161,7 +163,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "I hate those Vyres."
+                "npc": "I hate those Vyres.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -169,7 +172,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Work work work, that's all I ever do."
+                "npc": "Work work work, that's all I ever do.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -177,7 +181,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "I can't think strait, I'm so tired."
+                "npc": "I can't think strait, I'm so tired.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -185,7 +190,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Ohh, my arms."
+                "npc": "Ohh, my arms.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -193,7 +199,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Ohh, my back."
+                "npc": "Ohh, my back.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -201,7 +208,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "I'm rich in experience, poor in wealth."
+                "npc": "I'm rich in experience, poor in wealth.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -209,7 +217,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "I'm so tired, I could sleep standing up."
+                "npc": "I'm so tired, I could sleep standing up.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -217,7 +226,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "What I wouldn't give for a good night's rest."
+                "npc": "What I wouldn't give for a good night's rest.",
+                "presentation": "overhead"
               }
             ]
           }

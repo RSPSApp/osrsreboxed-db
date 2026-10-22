@@ -514,7 +514,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Party! Party!"
+                "npc": "Party! Party!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -522,7 +523,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Something's happening in the party room!"
+                "npc": "Something's happening in the party room!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -530,7 +532,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Everyone get to the party room!"
+                "npc": "Everyone get to the party room!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -538,7 +541,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "What's happening in the party room?"
+                "npc": "What's happening in the party room?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -546,7 +550,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Someone's having a big party!"
+                "npc": "Someone's having a big party!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -561,7 +566,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Get to the party room NOW!"
+                "npc": "Get to the party room NOW!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -569,7 +575,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Get to the party room!"
+                "npc": "Get to the party room!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -577,7 +584,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Get to the party room quick!"
+                "npc": "Get to the party room quick!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -585,7 +593,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Big value items in the party room now!"
+                "npc": "Big value items in the party room now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -593,7 +602,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Quick! Get to the party room!"
+                "npc": "Quick! Get to the party room!",
+                "presentation": "overhead"
               }
             ]
           }

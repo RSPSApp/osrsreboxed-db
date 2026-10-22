@@ -78,9 +78,6 @@
                         "steps": [
                           {
                             "npc": "Ok, I see you are someone suitable for our order. You may join."
-                          },
-                          {
-                            "type": "end"
                           }
                         ],
                         "id": "WLZxnf"
@@ -88,13 +85,15 @@
                     ]
                   },
                   {
-                    "text": "Oh, sorry."
+                    "text": "Oh, sorry.",
+                    "steps": [
+                      {
+                        "player": "Oh, sorry.",
+                        "steps": []
+                      }
+                    ]
                   }
                 ]
-              },
-              {
-                "player": "Oh, sorry.",
-                "steps": []
               }
             ],
             "id": "cA_4Dl"

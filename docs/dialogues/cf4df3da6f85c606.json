@@ -3,7 +3,8 @@
   "variants": {
     "upon-spawning-in": [
       {
-        "npc": "Drinkies be dinky's! Leave dem drinkies!"
+        "npc": "Drinkies be dinky's! Leave dem drinkies!",
+        "presentation": "overhead"
       }
     ]
   }

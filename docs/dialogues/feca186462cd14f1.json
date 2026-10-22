@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "You have everything you need to succeed."
+                "npc": "You have everything you need to succeed.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'll never leave your side!"
+                "npc": "I'll never leave your side!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Take it one day at a time."
+                "npc": "Take it one day at a time.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "You're doing great!"
+                "npc": "You're doing great!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Eat up!"
+                "npc": "Eat up!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "I hope you get the drop soon!"
+                "npc": "I hope you get the drop soon!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -57,7 +63,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "I believe in you!"
+                "npc": "I believe in you!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -65,7 +72,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "Stay strong, you're doing great."
+                "npc": "Stay strong, you're doing great.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -73,7 +81,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "You're doing an incredible job!"
+                "npc": "You're doing an incredible job!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -81,7 +90,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "Honey I'm home!"
+                "npc": "Honey I'm home!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -89,7 +99,8 @@
             "text": "Dialogue 11",
             "steps": [
               {
-                "npc": "Your hard work is inspiring!"
+                "npc": "Your hard work is inspiring!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -97,7 +108,8 @@
             "text": "Dialogue 12",
             "steps": [
               {
-                "npc": "Great things are coming your way!"
+                "npc": "Great things are coming your way!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -105,7 +117,8 @@
             "text": "Dialogue 13",
             "steps": [
               {
-                "npc": "I've got your back!"
+                "npc": "I've got your back!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -113,7 +126,8 @@
             "text": "Dialogue 14",
             "steps": [
               {
-                "npc": "You are capable of anything you believe in!"
+                "npc": "You are capable of anything you believe in!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -121,7 +135,8 @@
             "text": "Dialogue 15",
             "steps": [
               {
-                "npc": "You've come so far, don't stop now!"
+                "npc": "You've come so far, don't stop now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -129,7 +144,8 @@
             "text": "Dialogue 16",
             "steps": [
               {
-                "npc": "It's okay to take break, you're still making progress."
+                "npc": "It's okay to take break, you're still making progress.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -137,7 +153,8 @@
             "text": "Dialogue 17",
             "steps": [
               {
-                "npc": "Don't forget how far you've come!"
+                "npc": "Don't forget how far you've come!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -145,7 +162,8 @@
             "text": "Dialogue 18",
             "steps": [
               {
-                "npc": "I was taking a break!"
+                "npc": "I was taking a break!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -153,7 +171,8 @@
             "text": "Dialogue 19",
             "steps": [
               {
-                "npc": "Your courage is your super power."
+                "npc": "Your courage is your super power.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -161,7 +180,8 @@
             "text": "Dialogue 20",
             "steps": [
               {
-                "npc": "What would you do without me?"
+                "npc": "What would you do without me?",
+                "presentation": "overhead"
               }
             ]
           }
@@ -176,7 +196,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Ribbit!"
+                "npc": "Ribbit!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -184,7 +205,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Ribbit"
+                "npc": "Ribbit",
+                "presentation": "overhead"
               }
             ]
           }

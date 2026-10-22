@@ -1209,10 +1209,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "zKzGTb"
-      },
-      {
-        "type": "unavailable",
-        "id": "UqWKJu"
       }
     ]
   }

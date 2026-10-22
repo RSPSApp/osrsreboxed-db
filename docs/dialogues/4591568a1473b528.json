@@ -3,20 +3,25 @@
   "variants": {
     "overhead-dialogue-upon-petting-joe": [
       {
-        "player": "Who's a good boy!"
+        "player": "Who's a good boy!",
+        "presentation": "overhead"
       },
       {
+        "presentation": "overhead",
         "npc": "Woof*"
       }
     ],
     "overhead-dialogue-upon-playing-fetch-with-joe": [
       {
-        "player": "Who's a good boy!"
+        "player": "Who's a good boy!",
+        "presentation": "overhead"
       },
       {
-        "player": "Go get it!"
+        "player": "Go get it!",
+        "presentation": "overhead"
       },
       {
+        "presentation": "overhead",
         "npc": "Woof*"
       }
     ],
@@ -26,9 +31,11 @@
         "options": []
       },
       {
+        "presentation": "overhead",
         "npc": "Woof*"
       },
       {
+        "presentation": "overhead",
         "npc": "Woof* Woof*"
       }
     ]

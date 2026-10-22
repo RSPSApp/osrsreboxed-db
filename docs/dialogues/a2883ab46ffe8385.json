@@ -1659,7 +1659,8 @@
           {
             "type": "line",
             "speaker": "Eric",
-            "text": "Don't ignore me!"
+            "text": "Don't ignore me!",
+            "presentation": "overhead"
           }
         ],
         "id": "VYAAJ_"
@@ -2247,7 +2248,8 @@
       {
         "type": "line",
         "speaker": "Denath",
-        "text": "Player, please take your place in the circle!"
+        "text": "Player, please take your place in the circle!",
+        "presentation": "overhead"
       }
     ],
     "performing-the-ritual-talking-to-evil-dave": [
@@ -2296,7 +2298,8 @@
       {
         "type": "line",
         "speaker": "Denath",
-        "text": "[player name] will lead us in the incantation."
+        "text": "[player name] will lead us in the incantation.",
+        "presentation": "overhead"
       },
       {
         "type": "choice",
@@ -2325,7 +2328,8 @@
       {
         "type": "line",
         "speaker": "[Everyone]",
-        "text": "[Word 1]..."
+        "text": "[Word 1]...",
+        "presentation": "overhead"
       },
       {
         "player": "[Word 2]..."
@@ -2333,7 +2337,8 @@
       {
         "type": "line",
         "speaker": "[Everyone]",
-        "text": "[Word 2]..."
+        "text": "[Word 2]...",
+        "presentation": "overhead"
       },
       {
         "player": "[Word 3]..."
@@ -2341,7 +2346,8 @@
       {
         "type": "line",
         "speaker": "[Everyone]",
-        "text": "[Word 3]..."
+        "text": "[Word 3]...",
+        "presentation": "overhead"
       },
       {
         "player": "[Word 4]..."
@@ -2349,7 +2355,8 @@
       {
         "type": "line",
         "speaker": "[Everyone]",
-        "text": "[Word 4]..."
+        "text": "[Word 4]...",
+        "presentation": "overhead"
       },
       {
         "player": "[Word 5]!"
@@ -2357,7 +2364,8 @@
       {
         "type": "line",
         "speaker": "[Everyone]",
-        "text": "[Word 5!]"
+        "text": "[Word 5!]",
+        "presentation": "overhead"
       },
       {
         "type": "condition",
@@ -3349,7 +3357,8 @@
       {
         "type": "line",
         "speaker": "[Everyone]",
-        "text": "[Word 1]..."
+        "text": "[Word 1]...",
+        "presentation": "overhead"
       },
       {
         "player": "[Word 2]..."
@@ -3357,7 +3366,8 @@
       {
         "type": "line",
         "speaker": "[Everyone]",
-        "text": "[Word 2]..."
+        "text": "[Word 2]...",
+        "presentation": "overhead"
       },
       {
         "player": "[Word 3]..."
@@ -3365,7 +3375,8 @@
       {
         "type": "line",
         "speaker": "[Everyone]",
-        "text": "[Word 3]..."
+        "text": "[Word 3]...",
+        "presentation": "overhead"
       },
       {
         "player": "[Word 4]..."
@@ -3373,7 +3384,8 @@
       {
         "type": "line",
         "speaker": "[Everyone]",
-        "text": "[Word 4]..."
+        "text": "[Word 4]...",
+        "presentation": "overhead"
       },
       {
         "player": "[Word 5]!"
@@ -3381,7 +3393,8 @@
       {
         "type": "line",
         "speaker": "[Everyone]",
-        "text": "[Word 5!]"
+        "text": "[Word 5!]",
+        "presentation": "overhead"
       },
       {
         "type": "condition",
@@ -3615,13 +3628,6 @@
         "type": "line",
         "speaker": "Evil Dave",
         "text": "I'm not going to try to be evil any more. From now on I'm going to be good!"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "WeEOIO"
       }
     ]
   },

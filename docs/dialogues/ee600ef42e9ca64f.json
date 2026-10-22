@@ -255,7 +255,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Ahah!"
+                "npc": "Ahah!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -263,7 +264,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Ooh!"
+                "npc": "Ooh!",
+                "presentation": "overhead"
               }
             ]
           }

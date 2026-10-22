@@ -552,7 +552,8 @@
       {
         "type": "line",
         "speaker": "Stray dog",
-        "text": "Bark bark"
+        "text": "Bark bark",
+        "presentation": "overhead"
       }
     ],
     "stray-dog-talking-to-the-guard-or-interacting-with-the-stray-dog": [
@@ -633,7 +634,8 @@
       {
         "type": "line",
         "speaker": "Stray dog",
-        "text": "Arf arf!"
+        "text": "Arf arf!",
+        "presentation": "overhead"
       }
     ],
     "stray-dog-interacting-with-the-dog": [
@@ -645,7 +647,8 @@
       {
         "type": "line",
         "speaker": "Stray dog",
-        "text": "Whine"
+        "text": "Whine",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -657,7 +660,8 @@
       {
         "type": "line",
         "speaker": "Stray dog",
-        "text": "Mrrph"
+        "text": "Mrrph",
+        "presentation": "overhead"
       }
     ],
     "at-the-dog-s-house-interacting-with-the-dog": [
@@ -790,43 +794,50 @@
       {
         "type": "line",
         "speaker": "Stray dog",
-        "text": "Arf arf!"
+        "text": "Arf arf!",
+        "presentation": "overhead"
       }
     ],
     "at-the-dog-s-house-upon-approaching-the-stray-dog": [
       {
         "type": "line",
         "speaker": "Stray dog",
-        "text": "Sniff sniff"
+        "text": "Sniff sniff",
+        "presentation": "overhead"
       }
     ],
     "at-the-dog-s-house-upon-entering-the-bank": [
       {
         "type": "line",
         "speaker": "Banker",
-        "text": "Oi, get that mutt out of my bank!"
+        "text": "Oi, get that mutt out of my bank!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Stray dog",
-        "text": "Grrrr"
+        "text": "Grrrr",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Banker",
-        "text": "Oh, er... carry on then."
+        "text": "Oh, er... carry on then.",
+        "presentation": "overhead"
       }
     ],
     "at-the-dog-s-house-upon-approaching-the-grand-exchange-entrance": [
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "No mutts allowed in the Grand Exchange! Keep that dog away."
+        "text": "No mutts allowed in the Grand Exchange! Keep that dog away.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Stray dog",
-        "text": "Arf!"
+        "text": "Arf!",
+        "presentation": "overhead"
       }
     ],
     "cutscene": [
@@ -851,7 +862,8 @@
       {
         "type": "line",
         "speaker": "Stray puppy",
-        "text": "Yelp!"
+        "text": "Yelp!",
+        "presentation": "overhead"
       },
       {
         "player": "Hey, is that one of your puppies?"
@@ -869,17 +881,20 @@
       {
         "type": "line",
         "speaker": "Stray puppy",
-        "text": "Yelp!"
+        "text": "Yelp!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Picklenose",
-        "text": "Get back 'ere!"
+        "text": "Get back 'ere!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Stray dog",
-        "text": "Grrrr"
+        "text": "Grrrr",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -905,7 +920,8 @@
       {
         "type": "line",
         "speaker": "Stray puppy",
-        "text": "Yip yip!"
+        "text": "Yip yip!",
+        "presentation": "overhead"
       },
       {
         "type": "condition",
@@ -1728,7 +1744,8 @@
       {
         "type": "line",
         "speaker": "Stray puppy",
-        "text": "Yop yop!"
+        "text": "Yop yop!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1874,7 +1891,8 @@
       {
         "type": "line",
         "speaker": "Stray dog",
-        "text": "Bark bark"
+        "text": "Bark bark",
+        "presentation": "overhead"
       },
       {
         "type": "random",
@@ -1883,32 +1901,38 @@
       {
         "type": "line",
         "speaker": "Outlaw",
-        "text": "Stop it!"
+        "text": "Stop it!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Outlaw",
-        "text": "Come on, I don't want to attack a dog."
+        "text": "Come on, I don't want to attack a dog.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Outlaw",
-        "text": "Why did I give up my firemaking apprencticeship for this!"
+        "text": "Why did I give up my firemaking apprencticeship for this!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Outlaw",
-        "text": "Get off me!"
+        "text": "Get off me!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Outlaw",
-        "text": "Can I get a hand over here?"
+        "text": "Can I get a hand over here?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Outlaw",
-        "text": "Leave me alone!"
+        "text": "Leave me alone!",
+        "presentation": "overhead"
       }
     ],
     "looking-for-the-third-puppy-after-killing-the-outlaws": [
@@ -1918,7 +1942,8 @@
       {
         "type": "line",
         "speaker": "Stray puppy",
-        "text": "Yip yip!"
+        "text": "Yip yip!",
+        "presentation": "overhead"
       },
       {
         "player": "Looks like you're all in one piece. Let's get you somewhere safe."
@@ -2121,17 +2146,20 @@
       {
         "type": "line",
         "speaker": "Stray puppy",
-        "text": "Yip!"
+        "text": "Yip!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Stray puppy",
-        "text": "Yop!"
+        "text": "Yop!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Stray puppy",
-        "text": "Yap yap!"
+        "text": "Yap yap!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -2295,9 +2323,6 @@
         "text": "Business is business."
       },
       {
-        "type": "end"
-      },
-      {
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "sCG0ie"
@@ -2337,13 +2362,6 @@
         "type": "line",
         "speaker": "Talia",
         "text": "Well, you'll be able to adopt any puppies you bring back."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "iPy5aT"
       }
     ]
   }

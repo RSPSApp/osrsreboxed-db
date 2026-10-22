@@ -958,52 +958,62 @@
       {
         "type": "line",
         "speaker": "Goblin",
-        "text": "Green!"
+        "text": "Green!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Goblin",
-        "text": "Green armour best!"
+        "text": "Green armour best!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Goblin",
-        "text": "Green armour stupid!"
+        "text": "Green armour stupid!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Goblin",
-        "text": "Green not red!"
+        "text": "Green not red!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Goblin",
-        "text": "Red armour best!"
+        "text": "Red armour best!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Goblin",
-        "text": "Red armour stupid!"
+        "text": "Red armour stupid!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Goblin",
-        "text": "Red not green!"
+        "text": "Red not green!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Goblin",
-        "text": "Red red red!"
+        "text": "Red red red!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Goblin",
-        "text": "Stupid greenie!"
+        "text": "Stupid greenie!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Goblin",
-        "text": "Stupid reddie!"
+        "text": "Stupid reddie!",
+        "presentation": "overhead"
       }
     ],
     "searching-crates-with-goblin-armour": [
@@ -1393,16 +1403,9 @@
             "type": "message",
             "text": "Congratulations, you've completed a quest: Goblin Diplomacy",
             "id": "QqWnqy"
-          },
-          {
-            "type": "end"
           }
         ],
         "id": "IEyrMp"
-      },
-      {
-        "type": "unavailable",
-        "id": "nknda9"
       }
     ]
   },

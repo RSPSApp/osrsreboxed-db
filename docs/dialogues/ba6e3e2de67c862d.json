@@ -68,7 +68,7 @@
                         "steps": [
                           {
                             "type": "call",
-                            "branch": "jump-f2653d0ce4b7c15b"
+                            "branch": "jump-03b8815789168969"
                           }
                         ]
                       }
@@ -316,81 +316,83 @@
         "type": "choice",
         "options": [
           {
-            "text": "Yes, who are you?"
-          }
-        ]
-      },
-      {
-        "player": "Yes, who are you?",
-        "steps": [
-          {
-            "npc": "Why, I'm Trader Stan, owner and operator of the largest fleet of trading ships and chartered vessels to ever sail the seas!"
-          },
-          {
-            "npc": "If you want to get to a port in a hurry then you can charter one of my ships to take you there - if the price is right..."
-          },
-          {
-            "player": "So, where exactly can I go with your ships?"
-          },
-          {
-            "npc": "We run ships from Port Phasmatys over to Port Tyras, stopping at Port Sarim, Catherby, Brimhaven, Musa Point, Port Khazard and more besides!"
-          },
-          {
-            "npc": "We might dock at Mos Le'Harmless once in a while, as well, if you catch my meaning..."
-          },
-          {
-            "player": "Wow, that's a lot of ports. I take it you have some exotic stuff to trade?"
-          },
-          {
-            "npc": "We certainly do! I and my crewmen have access to items bought and sold from around the world. Would you like to take a look? Or would you like to charter a ship?"
-          },
-          {
-            "type": "choice",
-            "options": [
+            "text": "Yes, who are you?",
+            "steps": [
               {
-                "text": "Yes, let's see what you're trading.",
+                "player": "Yes, who are you?",
                 "steps": [
                   {
-                    "player": "Yes, let's see what you're trading."
+                    "npc": "Why, I'm Trader Stan, owner and operator of the largest fleet of trading ships and chartered vessels to ever sail the seas!"
                   },
                   {
-                    "type": "action",
-                    "action": "open_shop",
-                    "target": "Trader Stan's Trading Post",
-                    "id": "zGml4K"
-                  }
-                ]
-              },
-              {
-                "text": "Yes, I would like to charter a ship.",
-                "steps": [
+                    "npc": "If you want to get to a port in a hurry then you can charter one of my ships to take you there - if the price is right..."
+                  },
+                  {
+                    "player": "So, where exactly can I go with your ships?"
+                  },
+                  {
+                    "npc": "We run ships from Port Phasmatys over to Port Tyras, stopping at Port Sarim, Catherby, Brimhaven, Musa Point, Port Khazard and more besides!"
+                  },
+                  {
+                    "npc": "We might dock at Mos Le'Harmless once in a while, as well, if you catch my meaning..."
+                  },
+                  {
+                    "player": "Wow, that's a lot of ports. I take it you have some exotic stuff to trade?"
+                  },
+                  {
+                    "npc": "We certainly do! I and my crewmen have access to items bought and sold from around the world. Would you like to take a look? Or would you like to charter a ship?"
+                  },
+                  {
+                    "type": "choice",
+                    "options": [
+                      {
+                        "text": "Yes, let's see what you're trading.",
+                        "steps": [
+                          {
+                            "player": "Yes, let's see what you're trading."
+                          },
+                          {
+                            "type": "action",
+                            "action": "open_shop",
+                            "target": "Trader Stan's Trading Post",
+                            "id": "dVL62R"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Yes, I would like to charter a ship.",
+                        "steps": [
+                          {
+                            "type": "jump",
+                            "id": "dHKQdO",
+                            "steps": [
+                              {
+                                "type": "call",
+                                "branch": "jump-129aba7c059233cd"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "text": "No thanks."
+                      }
+                    ]
+                  },
                   {
                     "type": "jump",
-                    "id": "nnkYZU",
+                    "id": "5SutVl",
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "jump-a86530c816fbd78b"
+                        "branch": "jump-19de4263b843cfc1"
                       }
                     ]
                   }
                 ]
-              },
-              {
-                "text": "No thanks."
               }
             ]
           },
-          {
-            "type": "jump",
-            "reference": "below",
-            "id": "X38A34"
-          }
-        ]
-      },
-      {
-        "type": "choice",
-        "options": [
           {
             "text": "Yes, I would like to charter a ship.",
             "steps": [
@@ -431,7 +433,7 @@
     ]
   },
   "branches": {
-    "jump-f2653d0ce4b7c15b": [
+    "jump-03b8815789168969": [
       {
         "player": "No thanks."
       },
@@ -439,10 +441,21 @@
         "type": "end"
       }
     ],
-    "jump-a86530c816fbd78b": [
+    "jump-129aba7c059233cd": [
       {
         "player": "Yes, I would like to charter a ship."
       },
+      {
+        "npc": "Certainly [sir/madam]. Where would you like to go?"
+      },
+      {
+        "npc": "This is a Sailing Alpha, find out how to get there yourself!"
+      },
+      {
+        "type": "end"
+      }
+    ],
+    "jump-19de4263b843cfc1": [
       {
         "npc": "Certainly [sir/madam]. Where would you like to go?"
       },

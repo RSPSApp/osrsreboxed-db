@@ -1212,12 +1212,8 @@
                     "text": "Never mind, I forgot the question.",
                     "steps": [
                       {
-                        "player": "Never mind, I forgot the question."
-                      },
-                      {
-                        "type": "line",
-                        "speaker": "Surok Magis",
-                        "text": "Fair enough. Go then. I expect you have a lot of work to do!"
+                        "type": "call",
+                        "branch": "eNmB3Q"
                       }
                     ]
                   }
@@ -1612,7 +1608,8 @@
             "id": "FOw0ON"
           },
           {
-            "player": "Hmm..."
+            "player": "Hmm...",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -1656,7 +1653,8 @@
             "id": "Ynn1tS"
           },
           {
-            "player": "Hmm..."
+            "player": "Hmm...",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -1958,17 +1956,15 @@
                     ]
                   },
                   {
-                    "text": "Never mind, I forgot the question."
+                    "text": "Never mind, I forgot the question.",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "eNmB3Q"
+                      }
+                    ]
                   }
                 ]
-              },
-              {
-                "player": "Never mind, I forgot the question."
-              },
-              {
-                "type": "line",
-                "speaker": "Surok Magis",
-                "text": "Fair enough. Go then. I expect you have a lot of work to do!"
               }
             ]
           },
@@ -1981,7 +1977,7 @@
                 "steps": [
                   {
                     "type": "call",
-                    "branch": "jump-43e28fff136fe18f"
+                    "branch": "jump-1d9332ad7146c87d"
                   }
                 ]
               }
@@ -2138,7 +2134,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "jump-43e28fff136fe18f"
+                        "branch": "jump-1d9332ad7146c87d"
                       }
                     ]
                   }
@@ -3550,7 +3546,8 @@
               {
                 "type": "line",
                 "speaker": "Surok Magis",
-                "text": "Annach Narh Hin Dei!"
+                "text": "Annach Narh Hin Dei!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
@@ -3608,7 +3605,8 @@
               {
                 "type": "line",
                 "speaker": "King Roald",
-                "text": "I will smite you, cur!"
+                "text": "I will smite you, cur!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3618,7 +3616,8 @@
               {
                 "type": "line",
                 "speaker": "King Roald",
-                "text": "Have at you!"
+                "text": "Have at you!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3628,7 +3627,8 @@
               {
                 "type": "line",
                 "speaker": "King Roald",
-                "text": "Take that, knave!"
+                "text": "Take that, knave!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3639,7 +3639,8 @@
               {
                 "type": "line",
                 "speaker": "King Roald",
-                "text": "A member of the Phoenix Gang!"
+                "text": "A member of the Phoenix Gang!",
+                "presentation": "overhead"
               }
             ],
             "id": "m3FqMl"
@@ -3651,7 +3652,8 @@
               {
                 "type": "line",
                 "speaker": "King Roald",
-                "text": "Your gang isn't here now!"
+                "text": "Your gang isn't here now!",
+                "presentation": "overhead"
               }
             ],
             "id": "h7-Hpg"
@@ -3663,7 +3665,8 @@
               {
                 "type": "line",
                 "speaker": "King Roald",
-                "text": "That garden was awful!"
+                "text": "That garden was awful!",
+                "presentation": "overhead"
               }
             ],
             "id": "rLXADp"
@@ -3675,7 +3678,8 @@
               {
                 "type": "line",
                 "speaker": "King Roald",
-                "text": "I'm allergic to roses!"
+                "text": "I'm allergic to roses!",
+                "presentation": "overhead"
               }
             ],
             "id": "EfXlHg"
@@ -3687,7 +3691,8 @@
               {
                 "type": "line",
                 "speaker": "King Roald",
-                "text": "I hate gardens!"
+                "text": "I hate gardens!",
+                "presentation": "overhead"
               }
             ],
             "id": "Jg-Yte"
@@ -3699,7 +3704,8 @@
               {
                 "type": "line",
                 "speaker": "King Roald",
-                "text": "Back, minion of evil!"
+                "text": "Back, minion of evil!",
+                "presentation": "overhead"
               }
             ],
             "id": "YSKYja"
@@ -3711,7 +3717,8 @@
               {
                 "type": "line",
                 "speaker": "King Roald",
-                "text": "You're with the Vampyres!"
+                "text": "You're with the Vampyres!",
+                "presentation": "overhead"
               }
             ],
             "id": "oMW_oo"
@@ -3780,7 +3787,8 @@
           {
             "type": "line",
             "speaker": "Zaff",
-            "text": "Sin danna nim borha!"
+            "text": "Sin danna nim borha!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
@@ -3825,7 +3833,8 @@
           {
             "type": "line",
             "speaker": "Surok Magis",
-            "text": "Mirra din namus!"
+            "text": "Mirra din namus!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -4204,13 +4213,6 @@
       },
       {
         "player": "Any time, Rat!"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "Z0HjrM"
       }
     ]
   },
@@ -4398,7 +4400,7 @@
         "id": "f8S0Sx"
       }
     ],
-    "jump-43e28fff136fe18f": [
+    "jump-1d9332ad7146c87d": [
       {
         "player": "Never mind, I forgot the question."
       },
@@ -5294,6 +5296,16 @@
           }
         ],
         "id": "sX3iUH"
+      }
+    ],
+    "eNmB3Q": [
+      {
+        "player": "Never mind, I forgot the question."
+      },
+      {
+        "type": "line",
+        "speaker": "Surok Magis",
+        "text": "Fair enough. Go then. I expect you have a lot of work to do!"
       }
     ],
     "onhy1g": [

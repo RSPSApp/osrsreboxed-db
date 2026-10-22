@@ -36,7 +36,8 @@
         "text": "If Caerwyn notices the player stealing from his stall:",
         "steps": [
           {
-            "npc": "Hey! Get your hands off there!"
+            "npc": "Hey! Get your hands off there!",
+            "presentation": "overhead"
           }
         ],
         "id": "sCLf9R"
@@ -46,10 +47,12 @@
         "text": "If the player recently stole from Caerwyn and tries to talk to him:",
         "steps": [
           {
-            "npc": "You're the one who stole something from me!"
+            "npc": "You're the one who stole something from me!",
+            "presentation": "overhead"
           },
           {
-            "npc": "Guards guards!"
+            "npc": "Guards guards!",
+            "presentation": "overhead"
           }
         ],
         "id": "mQPKuI"

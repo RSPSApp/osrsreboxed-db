@@ -3,12 +3,14 @@
   "variants": {
     "upon-searching-his-sarcophagus": [
       {
-        "npc": "You dare disturb my rest!"
+        "npc": "You dare disturb my rest!",
+        "presentation": "overhead"
       }
     ],
     "upon-searching-the-chest": [
       {
-        "npc": "You dare steal from us!"
+        "npc": "You dare steal from us!",
+        "presentation": "overhead"
       }
     ]
   }

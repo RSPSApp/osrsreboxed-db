@@ -192,8 +192,9 @@
             "text": "Imbecile!"
           },
           {
-            "type": "unavailable",
-            "id": "aiILcM"
+            "type": "message",
+            "text": "Lucien has given you another pendant!",
+            "id": "BH3ct0"
           },
           {
             "type": "end"
@@ -250,7 +251,8 @@
         "id": "WrRDl_"
       },
       {
-        "player": "Ow! Hot! Hot!"
+        "player": "Ow! Hot! Hot!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -313,7 +315,8 @@
         "id": "NM36LL"
       },
       {
-        "player": "Ouch!"
+        "player": "Ouch!",
+        "presentation": "overhead"
       }
     ],
     "inside-the-dungeon-searching-ice-arrow-chest": [
@@ -354,12 +357,14 @@
       {
         "type": "line",
         "speaker": "Fire Warrior of Lesarkus",
-        "text": "You will not pass!"
+        "text": "You will not pass!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fire Warrior of Lesarkus",
-        "text": "Amitus! Setitii!"
+        "text": "Amitus! Setitii!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -771,8 +776,9 @@
                                         "text": "He must be gaining in power again. If you can defeat him he will be banished from this plane for a while. You will need this pendant to attack him."
                                       },
                                       {
-                                        "type": "unavailable",
-                                        "id": "9p_LQ7"
+                                        "type": "message",
+                                        "text": "The guardian has given you a pendant.",
+                                        "id": "UvrBfr"
                                       }
                                     ]
                                   },
@@ -1093,7 +1099,8 @@
       {
         "type": "line",
         "speaker": "Guardian of Armadyl",
-        "text": "That is not thine to take!"
+        "text": "That is not thine to take!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1264,10 +1271,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "rgR_39"
-      },
-      {
-        "type": "unavailable",
-        "id": "Hypo2L"
       }
     ]
   },
@@ -1349,8 +1352,9 @@
                 "text": "He must be gaining in power again. If you can defeat him he will be banished from this plane for a while. You will need this pendant to attack him."
               },
               {
-                "type": "unavailable",
-                "id": "9p_LQ7"
+                "type": "message",
+                "text": "The guardian has given you a pendant.",
+                "id": "UvrBfr"
               },
               {
                 "type": "end"

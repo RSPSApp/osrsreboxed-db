@@ -3,25 +3,30 @@
   "variants": {
     "overhead-dialogue-using-prayers": [
       {
-        "npc": "Zamorak, aid me!"
+        "npc": "Zamorak, aid me!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-casting-a-curse-spell": [
       {
-        "npc": "Magicus Arcanus Afficus!"
+        "npc": "Magicus Arcanus Afficus!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-casting-fire-blast": [
       {
-        "npc": "Magicus Arcanus Infernus!"
+        "npc": "Magicus Arcanus Infernus!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-failing-to-cast-fire-blast": [
       {
-        "npc": "Magicus Arcanus Inferus!"
+        "npc": "Magicus Arcanus Inferus!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Rats, no, I meant Infernus!"
+        "npc": "Rats, no, I meant Infernus!",
+        "presentation": "overhead"
       }
     ]
   }

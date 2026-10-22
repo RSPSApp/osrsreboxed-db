@@ -4568,16 +4568,8 @@
     ],
     "misthalin-diplomacy-talking-to-vertida-sefalatis-after-talking-to-king-roald": [
       {
-        "player": "Hello there. What should I do now?"
-      },
-      {
-        "type": "line",
-        "speaker": "Vertida Sefalatis",
-        "text": "Myreque prevail, [player name]. You should have a chat with Safalaan. He may be able to help you."
-      },
-      {
-        "type": "unavailable",
-        "id": "uxCOmy"
+        "type": "call",
+        "branch": "t2mfif"
       }
     ],
     "misthalin-diplomacy-talking-to-veliaf-hurtz-after-talking-to-king-roald": [
@@ -4949,12 +4941,8 @@
     ],
     "close-encounters-with-vyre-kind-talking-to-vertida-sefalatis-after-talking-to-safalaan-hallow": [
       {
-        "player": "Hello there. What should I do now?"
-      },
-      {
-        "type": "line",
-        "speaker": "Vertida Sefalatis",
-        "text": "Myreque prevail, [player name]. You should have a chat with Safalaan. He may be able to help you."
+        "type": "call",
+        "branch": "t2mfif"
       }
     ],
     "close-encounters-with-vyre-kind-talking-to-old-man-ral-after-talking-to-safalaan-hallow": [
@@ -5973,13 +5961,6 @@
         "type": "line",
         "speaker": "Veliaf Hurtz",
         "text": "Don't worry, we will. Myreque prevail."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "lEE1xt"
       }
     ]
   },
@@ -7137,6 +7118,16 @@
         "type": "line",
         "speaker": "King Roald",
         "text": "Very well. Come back if you change your mind."
+      }
+    ],
+    "t2mfif": [
+      {
+        "player": "Hello there. What should I do now?"
+      },
+      {
+        "type": "line",
+        "speaker": "Vertida Sefalatis",
+        "text": "Myreque prevail, [player name]. You should have a chat with Safalaan. He may be able to help you."
       }
     ]
   }

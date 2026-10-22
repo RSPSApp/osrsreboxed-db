@@ -35,6 +35,7 @@
     ],
     "overhead-dialogue-when-spawning-in": [
       {
+        "presentation": "overhead",
         "npc": "Oh, Bees!"
       }
     ],
@@ -46,6 +47,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I'll find a nice new home for those bees."
               }
             ]
@@ -54,6 +56,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Come with me little bees I'll keep you safe."
               }
             ]
@@ -63,11 +66,13 @@
     ],
     "overhead-dialogue-before-another-bee-hive-spawns": [
       {
+        "presentation": "overhead",
         "npc": "Another new hive."
       }
     ],
     "overhead-dialogue-before-he-leaves": [
       {
+        "presentation": "overhead",
         "npc": "Well, I must be getting on now."
       }
     ]

@@ -2582,9 +2582,6 @@
                 "type": "message",
                 "text": "The Sailing skill will release on the 19th November.",
                 "id": "vxSB15"
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -2603,18 +2600,8 @@
                     "text": "I don't suppose I could get a lift anywhere?",
                     "steps": [
                       {
-                        "player": "I don't suppose I could get a lift anywhere?"
-                      },
-                      {
-                        "type": "line",
-                        "speaker": "Arhein",
-                        "text": "Sorry, but that's not the kind of service I offer. Why not try the charter ship?"
-                      },
-                      {
-                        "player": "I might do that. Thanks."
-                      },
-                      {
-                        "type": "end"
+                        "type": "call",
+                        "branch": "RLjlSW"
                       }
                     ]
                   },
@@ -2622,15 +2609,8 @@
                     "text": "I see. Well, I'd best be off.",
                     "steps": [
                       {
-                        "player": "I see. Well, I'd best be off."
-                      },
-                      {
-                        "type": "line",
-                        "speaker": "Arhein",
-                        "text": "Until next time!"
-                      },
-                      {
-                        "type": "end"
+                        "type": "call",
+                        "branch": "CoIBiI"
                       }
                     ]
                   }
@@ -2643,17 +2623,10 @@
             "steps": [
               {
                 "player": "I'd best be off."
-              },
-              {
-                "type": "end"
               }
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "HgNgLz"
       }
     ]
   },

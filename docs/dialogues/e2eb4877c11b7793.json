@@ -48,7 +48,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Greetings [player name], I need your help."
+            "npc": "Greetings [player name], I need your help.",
+            "presentation": "overhead"
           }
         ],
         "id": "KlFxve"
@@ -64,7 +65,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Talk to me, [player name]!"
+                    "npc": "Talk to me, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -72,7 +74,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Hello, [player name], are you there?"
+                    "npc": "Hello, [player name], are you there?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -80,7 +83,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "I'd like to talk to you, [player name]!"
+                    "npc": "I'd like to talk to you, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -88,7 +92,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "ehem... Hello [player name], please talk to me!"
+                    "npc": "ehem... Hello [player name], please talk to me!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -102,7 +107,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "miaTtE"

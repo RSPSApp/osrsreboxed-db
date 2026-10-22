@@ -35,7 +35,8 @@
         "text": "Periodically, while tracking the current:",
         "steps": [
           {
-            "npc": "Quack!"
+            "npc": "Quack!",
+            "presentation": "overhead"
           }
         ],
         "id": "WfYitB"
@@ -45,7 +46,8 @@
         "text": "Periodically, while at the end of the current:",
         "steps": [
           {
-            "npc": "Quack! Quack! Quack!"
+            "npc": "Quack! Quack! Quack!",
+            "presentation": "overhead"
           }
         ],
         "id": "YatxpI"

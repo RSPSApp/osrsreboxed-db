@@ -3,7 +3,8 @@
   "variants": {
     "when-getting-picked-up-by-the-claw": [
       {
-        "npc": "You're putting me in prison?!"
+        "npc": "You're putting me in prison?!",
+        "presentation": "overhead"
       }
     ]
   }

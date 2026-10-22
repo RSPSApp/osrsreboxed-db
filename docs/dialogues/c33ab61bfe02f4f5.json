@@ -28,18 +28,23 @@
         "id": "R1xjGw"
       },
       {
+        "presentation": "overhead",
         "npc": "Hello, [player name]"
       },
       {
+        "presentation": "overhead",
         "npc": "[player name], the frog [prince/princess] desires your attention!"
       },
       {
+        "presentation": "overhead",
         "npc": "If you kiss [him/her], [player name], [he/she] will turn into a human!"
       },
       {
+        "presentation": "overhead",
         "npc": "But if you ignore [him/her], [player name], we will turn you into a frog!"
       },
       {
+        "presentation": "overhead",
         "npc": "That's IT, [player name] you're a frog!"
       },
       {

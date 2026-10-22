@@ -9,6 +9,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I will smite you, cur!"
               }
             ]
@@ -17,6 +18,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Have at you!"
               }
             ]
@@ -25,6 +27,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Take that, knave!"
               }
             ]
@@ -34,6 +37,7 @@
             "condition": "If the player has completed Shield of Arrav:",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "A member of the Phoenix Gang!"
               }
             ],
@@ -44,6 +48,7 @@
             "condition": "If the player has completed Shield of Arrav:",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Your gang isn't here now!"
               }
             ],
@@ -54,6 +59,7 @@
             "condition": "If the player has completed Garden of Tranquillity:",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "That garden was awful!"
               }
             ],
@@ -64,6 +70,7 @@
             "condition": "If the player has completed Garden of Tranquillity:",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I'm allergic to roses!"
               }
             ],
@@ -74,6 +81,7 @@
             "condition": "If the player has completed Garden of Tranquillity:",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I hate gardens!"
               }
             ],
@@ -84,6 +92,7 @@
             "condition": "If the player has completed Darkness of Hallowvale:",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Back, minion of evil!"
               }
             ],
@@ -94,6 +103,7 @@
             "condition": "If the player has completed Darkness of Hallowvale:",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "You're with the Vampyres!"
               }
             ],

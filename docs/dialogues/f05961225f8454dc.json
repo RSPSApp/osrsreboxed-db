@@ -451,26 +451,23 @@
         "type": "choice",
         "options": [
           {
-            "text": "I've spoken to some of your crew."
-          }
-        ]
-      },
-      {
-        "player": "I've spoken to some of your crew."
-      },
-      {
-        "type": "line",
-        "speaker": "Captain Tock",
-        "text": "Arrr! Make sure ye speaks to 'em all. They'll be in their huts, over to the west. Four of them, there are - Gnocci, Ithoi, Arsen and young Colin."
-      },
-      {
-        "type": "line",
-        "speaker": "Captain Tock",
-        "text": "Have ye any idea about how to lift the curse?"
-      },
-      {
-        "type": "choice",
-        "options": [
+            "text": "I've spoken to some of your crew.",
+            "steps": [
+              {
+                "player": "I've spoken to some of your crew."
+              },
+              {
+                "type": "line",
+                "speaker": "Captain Tock",
+                "text": "Arrr! Make sure ye speaks to 'em all. They'll be in their huts, over to the west. Four of them, there are - Gnocci, Ithoi, Arsen and young Colin."
+              },
+              {
+                "type": "line",
+                "speaker": "Captain Tock",
+                "text": "Have ye any idea about how to lift the curse?"
+              }
+            ]
+          },
           {
             "text": "Please take me back to Rimmington."
           },
@@ -2195,7 +2192,8 @@
       {
         "type": "line",
         "speaker": "Ithoi the Navigator",
-        "text": "Arrr... uh-oh!"
+        "text": "Arrr... uh-oh!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2205,7 +2203,8 @@
       {
         "type": "line",
         "speaker": "Ithoi the Navigator",
-        "text": "Arrr!"
+        "text": "Arrr!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2449,22 +2448,26 @@
           {
             "type": "line",
             "speaker": "Ithoi the Navigator",
-            "text": "Ye'll pay!"
+            "text": "Ye'll pay!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Ithoi the Navigator",
-            "text": "Curse you!"
+            "text": "Curse you!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Ithoi the Navigator",
-            "text": "Curse 'em all!"
+            "text": "Curse 'em all!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Ithoi the Navigator",
-            "text": "Arrr, land-lubber!"
+            "text": "Arrr, land-lubber!",
+            "presentation": "overhead"
           }
         ],
         "id": "BXseOj"
@@ -2476,7 +2479,8 @@
           {
             "type": "line",
             "speaker": "Ithoi the Navigator",
-            "text": "Awww!"
+            "text": "Awww!",
+            "presentation": "overhead"
           }
         ],
         "id": "wWS6fw"
@@ -2627,10 +2631,6 @@
             "text": "I'll talk to you later."
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "ijxfPd"
       }
     ]
   },

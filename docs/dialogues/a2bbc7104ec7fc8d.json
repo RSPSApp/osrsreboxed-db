@@ -3,12 +3,14 @@
   "variants": {
     "upon-entering-the-arena": [
       {
-        "npc": "Drinkies be theirs! And mine!"
+        "npc": "Drinkies be theirs! And mine!",
+        "presentation": "overhead"
       }
     ],
     "at-random": [
       {
-        "npc": "Urg!"
+        "npc": "Urg!",
+        "presentation": "overhead"
       }
     ]
   }

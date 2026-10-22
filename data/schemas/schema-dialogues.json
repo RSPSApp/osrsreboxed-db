@@ -29,6 +29,11 @@
         "speaker": {
           "type": "string"
         },
+        "presentation": {
+          "enum": [
+            "overhead"
+          ]
+        },
         "prompt": {
           "type": "string"
         },

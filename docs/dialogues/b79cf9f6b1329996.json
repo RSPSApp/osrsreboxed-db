@@ -115,6 +115,7 @@
     ],
     "overhead-dialogue-as-the-fight-begins": [
       {
+        "presentation": "overhead",
         "npc": "Let's make this beastie move!"
       }
     ],
@@ -126,6 +127,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Block its attacks with your prayers!"
               }
             ]
@@ -134,6 +136,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Let's convince that beastie to move!"
               }
             ]
@@ -143,6 +146,7 @@
     ],
     "overhead-dialogue-completing-the-body-phase": [
       {
+        "presentation": "overhead",
         "npc": "Nicely done!"
       },
       {
@@ -151,6 +155,7 @@
         "id": "vvvxQv"
       },
       {
+        "presentation": "overhead",
         "npc": "Steady now!"
       },
       {
@@ -159,6 +164,7 @@
         "id": "8fjHJw"
       },
       {
+        "presentation": "overhead",
         "npc": "Let's go!"
       },
       {
@@ -169,16 +175,19 @@
     ],
     "overhead-dialogue-upon-reaching-the-three-pillars-at-the-start-of-the-head-phase": [
       {
+        "presentation": "overhead",
         "npc": "Keep praying to bolster your strength!"
       }
     ],
     "overhead-dialogue-throughout-the-rest-of-the-fight-after-reaching-the-pillars": [
       {
+        "presentation": "overhead",
         "npc": "Keep praying to charge the pillars!"
       }
     ],
     "overhead-dialogue-throughout-the-head-and-final-phases-only": [
       {
+        "presentation": "overhead",
         "npc": "Show that beastie what we're made of!"
       }
     ],
@@ -188,6 +197,7 @@
         "text": "If one of the three pillars isn't charged up:",
         "steps": [
           {
+            "presentation": "overhead",
             "npc": "We need to charge all of the pillars using our prayers!"
           }
         ],
@@ -206,6 +216,7 @@
             ]
           },
           {
+            "presentation": "overhead",
             "npc": "Excellent! The pillars are boosting your strength!"
           },
           {
@@ -217,6 +228,7 @@
             ]
           },
           {
+            "presentation": "overhead",
             "npc": "Well done! The power of the pillars is yours!"
           }
         ],
@@ -225,6 +237,7 @@
     ],
     "overhead-dialogue-when-the-tail-phase-starts": [
       {
+        "presentation": "overhead",
         "npc": "It's shielded itself! You need to break its concentration!"
       }
     ],
@@ -236,6 +249,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Watch out for its slam!"
               }
             ]
@@ -244,6 +258,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Go for the tail! It's a weakspot!"
               }
             ]
@@ -253,16 +268,19 @@
     ],
     "overhead-dialogue-as-the-final-phase-starts": [
       {
+        "presentation": "overhead",
         "npc": "Well done! Now, let's weaken it a little more!"
       }
     ],
     "overhead-dialogue-as-the-hueycoatl-is-defeated": [
       {
+        "presentation": "overhead",
         "npc": "We did it! Well done!"
       }
     ],
     "overhead-dialogue-upon-being-forced-down-the-mountain-by-the-hueycoatl": [
       {
+        "presentation": "overhead",
         "npc": "Oof!"
       }
     ]

@@ -744,7 +744,8 @@
         "id": "oCU2uO"
       },
       {
-        "player": "1... 2... 3... Pull!"
+        "player": "1... 2... 3... Pull!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -2259,7 +2260,8 @@
       {
         "type": "line",
         "speaker": "Bravek",
-        "text": "Grruurgh!"
+        "text": "Grruurgh!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -2567,12 +2569,14 @@
       {
         "type": "line",
         "speaker": "Mourner",
-        "text": "Hey... I've got someone here with a warrant from Bravek, what should we do?"
+        "text": "Hey... I've got someone here with a warrant from Bravek, what should we do?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Mourner (2)",
-        "text": "Well you can't let them in..."
+        "text": "Well you can't let them in...",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -2773,13 +2777,6 @@
         "type": "message",
         "text": "You memorise what is written on the scroll. You can now use the Ardougne Teleport Spell.",
         "id": "GAoH6-"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "R7pPOQ"
       }
     ]
   },

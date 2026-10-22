@@ -3,7 +3,8 @@
   "variants": {
     "when-entering-combat": [
       {
-        "npc": "Stand and deliver!"
+        "npc": "Stand and deliver!",
+        "presentation": "overhead"
       }
     ]
   }

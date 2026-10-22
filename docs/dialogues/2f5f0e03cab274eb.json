@@ -413,13 +413,6 @@
         "type": "message",
         "text": "You feel that you've translated enough words to fully understand all of the stone tablets!",
         "id": "L1cVhR"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "xtWsEQ"
       }
     ]
   }

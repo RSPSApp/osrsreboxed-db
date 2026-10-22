@@ -1405,8 +1405,9 @@
         "text": "pretty close."
       },
       {
-        "type": "unavailable",
-        "id": "AWfSyS"
+        "type": "message",
+        "text": "Your work with the magnet increases your Crafting experience slightly.",
+        "id": "G9W0YI"
       }
     ],
     "the-bark-has-bite-handing-the-magnet-to-ava-talking-to-ava-before-chopping-at-undead-trees": [
@@ -2538,8 +2539,9 @@
     ],
     "research-and-development-talking-to-ava-again-successfully-translating-the-notes": [
       {
-        "type": "unavailable",
-        "id": "PVzmvG"
+        "type": "message",
+        "text": "It suddenly all makes sense.",
+        "id": "Bi6_MY"
       }
     ],
     "the-final-component-handing-in-the-notes": [
@@ -2640,10 +2642,6 @@
       },
       {
         "player": "Why do I sense sarcasm somewhere here?"
-      },
-      {
-        "type": "unavailable",
-        "id": "Ok9JbE"
       }
     ],
     "the-final-component-handing-in-the-notes-talking-to-ava-after-she-gives-you-another-pattern": [
@@ -2670,13 +2668,6 @@
           }
         ],
         "id": "uU4Wlj"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "C9xfHO"
       }
     ]
   },

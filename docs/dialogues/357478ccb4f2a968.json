@@ -3,32 +3,38 @@
   "variants": {
     "when-she-changes-to-blue": [
       {
-        "npc": "Krrrrrrk"
+        "npc": "Krrrrrrk",
+        "presentation": "overhead"
       }
     ],
     "when-she-changes-to-orange": [
       {
-        "npc": "Chkhkhkhkhk"
+        "npc": "Chkhkhkhkhk",
+        "presentation": "overhead"
       }
     ],
     "when-she-changes-to-brown": [
       {
-        "npc": "Krrrrrrssssssss"
+        "npc": "Krrrrrrssssssss",
+        "presentation": "overhead"
       }
     ],
     "when-she-changes-to-red": [
       {
-        "npc": "Sssssrrrkkkkk"
+        "npc": "Sssssrrrkkkkk",
+        "presentation": "overhead"
       }
     ],
     "when-she-changes-to-green": [
       {
-        "npc": "Krkrkrkrkrkrkrkr"
+        "npc": "Krkrkrkrkrkrkrkr",
+        "presentation": "overhead"
       }
     ],
     "when-she-changes-to-white": [
       {
-        "npc": "Tktktktktktkt"
+        "npc": "Tktktktktktkt",
+        "presentation": "overhead"
       }
     ]
   }

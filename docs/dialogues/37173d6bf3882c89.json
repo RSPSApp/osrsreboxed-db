@@ -230,7 +230,8 @@
         "text": "If Anwen notices the player stealing from her stall:",
         "steps": [
           {
-            "npc": "Hey! Get your hands off there!"
+            "npc": "Hey! Get your hands off there!",
+            "presentation": "overhead"
           }
         ],
         "id": "USW9lV"
@@ -240,10 +241,12 @@
         "text": "If the player recently stole from Anwen and tries to talk to her:",
         "steps": [
           {
-            "npc": "You're the one who stole something from me!"
+            "npc": "You're the one who stole something from me!",
+            "presentation": "overhead"
           },
           {
-            "npc": "Guards guards!"
+            "npc": "Guards guards!",
+            "presentation": "overhead"
           }
         ],
         "id": "Ecgq_c"

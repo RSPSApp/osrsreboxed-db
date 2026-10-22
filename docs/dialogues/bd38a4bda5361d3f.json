@@ -3117,12 +3117,14 @@
       {
         "type": "line",
         "speaker": "Gunslik",
-        "text": "Hahaha!"
+        "text": "Hahaha!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Factory Worker",
-        "text": "Tee hee hee!"
+        "text": "Tee hee hee!",
+        "presentation": "overhead"
       },
       {
         "player": "And then, I'll tell you... Then! Ehm..."
@@ -3138,17 +3140,20 @@
       {
         "type": "line",
         "speaker": "Nolar",
-        "text": "Hahaha!"
+        "text": "Hahaha!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Factory Worker",
-        "text": "Hahaha, idiot!"
+        "text": "Hahaha, idiot!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Gunslik",
-        "text": "Tee hee hee!"
+        "text": "Tee hee hee!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -3200,13 +3205,6 @@
         "type": "line",
         "speaker": "Commander Veldaban",
         "text": "I suppose we'll just have to wait and see what happens."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "g6drr9"
       }
     ]
   },

@@ -625,19 +625,18 @@
                                                     "type": "line",
                                                     "speaker": "Cyreg Paddlehorn",
                                                     "text": "Go as far north as you can and you'll arrive at the Hollows. Keep heading north on foot, over the rotten bridge, and you'll eventually reach an odd looking tree. That is where you'll find the Myreque."
-                                                  },
-                                                  {
-                                                    "type": "end"
                                                   }
                                                 ]
                                               },
                                               {
-                                                "text": "I'll be back later."
+                                                "text": "I'll be back later.",
+                                                "steps": [
+                                                  {
+                                                    "player": "I'll be back later."
+                                                  }
+                                                ]
                                               }
                                             ]
-                                          },
-                                          {
-                                            "player": "I'll be back later."
                                           }
                                         ],
                                         "id": "39TjyD"
@@ -720,8 +719,13 @@
                     "steps": [
                       {
                         "type": "jump",
-                        "reference": "below",
-                        "id": "4FXFYz"
+                        "id": "4FXFYz",
+                        "steps": [
+                          {
+                            "type": "call",
+                            "branch": "jump-77b38e6dd86b0531"
+                          }
+                        ]
                       },
                       {
                         "type": "jump",
@@ -755,36 +759,43 @@
                     "steps": [
                       {
                         "type": "jump",
-                        "reference": "below",
-                        "id": "ibjrka"
+                        "id": "ibjrka",
+                        "steps": [
+                          {
+                            "type": "call",
+                            "branch": "jump-201419094fd7c7bd"
+                          }
+                        ]
                       }
                     ]
                   },
                   {
-                    "text": "I'll give you some cash if you tell me."
+                    "text": "I'll give you some cash if you tell me.",
+                    "steps": [
+                      {
+                        "player": "I'll give you some cash if you tell me."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Cyreg Paddlehorn",
+                        "text": "You think you can buy me?"
+                      },
+                      {
+                        "player": "Err, no. I just want to compensate you for your trouble."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Cyreg Paddlehorn",
+                        "text": "You keep your money and I'll keep my secrets."
+                      },
+                      {
+                        "type": "jump",
+                        "reference": "other",
+                        "id": "Q-K1Os"
+                      }
+                    ]
                   }
                 ]
-              },
-              {
-                "player": "I'll give you some cash if you tell me."
-              },
-              {
-                "type": "line",
-                "speaker": "Cyreg Paddlehorn",
-                "text": "You think you can buy me?"
-              },
-              {
-                "player": "Err, no. I just want to compensate you for your trouble."
-              },
-              {
-                "type": "line",
-                "speaker": "Cyreg Paddlehorn",
-                "text": "You keep your money and I'll keep my secrets."
-              },
-              {
-                "type": "jump",
-                "reference": "other",
-                "id": "rQBT_W"
               }
             ]
           },
@@ -1618,152 +1629,149 @@
                             ]
                           }
                         ]
+                      },
+                      {
+                        "type": "action",
+                        "text": "After the first question is answered:",
+                        "steps": [
+                          {
+                            "type": "line",
+                            "speaker": "Curpile Fyod",
+                            "text": "Okay, interesting answer. That's the first question done."
+                          },
+                          {
+                            "type": "action",
+                            "text": "(Continues above)",
+                            "id": "pjALaU"
+                          }
+                        ],
+                        "id": "-fFCNy"
+                      },
+                      {
+                        "type": "action",
+                        "text": "After the second question is answered:",
+                        "steps": [
+                          {
+                            "type": "line",
+                            "speaker": "Curpile Fyod",
+                            "text": "An interesting response. That's the second question answered."
+                          },
+                          {
+                            "type": "action",
+                            "text": "(Continues above)",
+                            "id": "lRd-yS"
+                          }
+                        ],
+                        "id": "z2FaeF"
+                      },
+                      {
+                        "type": "action",
+                        "text": "After the third question is answered:",
+                        "steps": [
+                          {
+                            "type": "line",
+                            "speaker": "Curpile Fyod",
+                            "text": "Hmm. Very interesting. That's the third question answered."
+                          },
+                          {
+                            "type": "condition",
+                            "text": "If the player answered zero out of three questions correctly:",
+                            "steps": [
+                              {
+                                "type": "line",
+                                "speaker": "Curpile Fyod",
+                                "text": "I'm sorry but you got no questions correct! Go on get outta here..."
+                              },
+                              {
+                                "type": "message",
+                                "text": "Curpile knocks you out and takes you back to Mort'ton.",
+                                "id": "OGn3Rx"
+                              },
+                              {
+                                "type": "end"
+                              }
+                            ],
+                            "id": "GAjXDO"
+                          },
+                          {
+                            "type": "condition",
+                            "text": "If the player answered one out of three questions correctly:",
+                            "steps": [
+                              {
+                                "type": "line",
+                                "speaker": "Curpile Fyod",
+                                "text": "I'm sorry but you only got one question correct! Go on get outta here..."
+                              },
+                              {
+                                "type": "message",
+                                "text": "Curpile knocks you out and takes you back to Mort'ton.",
+                                "id": "Dssih6"
+                              },
+                              {
+                                "type": "end"
+                              }
+                            ],
+                            "id": "e_t2CV"
+                          },
+                          {
+                            "type": "condition",
+                            "text": "If the player answered two out of three questions correctly:",
+                            "steps": [
+                              {
+                                "type": "line",
+                                "speaker": "Curpile Fyod",
+                                "text": "I'm sorry but you only got two questions correct! Go on get outta here..."
+                              },
+                              {
+                                "type": "message",
+                                "text": "Curpile knocks you out and takes you back to Mort'ton.",
+                                "id": "SGfUg5"
+                              },
+                              {
+                                "type": "end"
+                              }
+                            ],
+                            "id": "wdw1WV"
+                          },
+                          {
+                            "type": "condition",
+                            "text": "If the player answered three out of three questions correctly:",
+                            "steps": [
+                              {
+                                "type": "line",
+                                "speaker": "Curpile Fyod",
+                                "text": "Okay, I believes ya... You can go on in. Head through the doors behind the tree. Once you's in, take the first cave on the right."
+                              },
+                              {
+                                "type": "end"
+                              }
+                            ],
+                            "id": "P7_hRO"
+                          }
+                        ],
+                        "id": "bD3ND4"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "I don't have to answer to you!",
+                    "steps": [
+                      {
+                        "player": "I don't have to answer to you!"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Curpile Fyod",
+                        "text": "You do if you know what's good for you!"
+                      },
+                      {
+                        "type": "action",
+                        "text": "Curpile hits the player for 3 damage.",
+                        "id": "3VXZoN"
                       }
                     ]
                   }
                 ]
-              },
-              {
-                "type": "action",
-                "text": "After the first question is answered:",
-                "steps": [
-                  {
-                    "type": "line",
-                    "speaker": "Curpile Fyod",
-                    "text": "Okay, interesting answer. That's the first question done."
-                  },
-                  {
-                    "type": "action",
-                    "text": "(Continues above)",
-                    "id": "jIpNoT"
-                  }
-                ],
-                "id": "kR4PgQ"
-              },
-              {
-                "type": "action",
-                "text": "After the second question is answered:",
-                "steps": [
-                  {
-                    "type": "line",
-                    "speaker": "Curpile Fyod",
-                    "text": "An interesting response. That's the second question answered."
-                  },
-                  {
-                    "type": "action",
-                    "text": "(Continues above)",
-                    "id": "IIq5Ax"
-                  }
-                ],
-                "id": "FLtgQe"
-              },
-              {
-                "type": "action",
-                "text": "After the third question is answered:",
-                "steps": [
-                  {
-                    "type": "line",
-                    "speaker": "Curpile Fyod",
-                    "text": "Hmm. Very interesting. That's the third question answered."
-                  },
-                  {
-                    "type": "condition",
-                    "text": "If the player answered zero out of three questions correctly:",
-                    "steps": [
-                      {
-                        "type": "line",
-                        "speaker": "Curpile Fyod",
-                        "text": "I'm sorry but you got no questions correct! Go on get outta here..."
-                      },
-                      {
-                        "type": "message",
-                        "text": "Curpile knocks you out and takes you back to Mort'ton.",
-                        "id": "kDZQpN"
-                      },
-                      {
-                        "type": "end"
-                      }
-                    ],
-                    "id": "8hs1CH"
-                  },
-                  {
-                    "type": "condition",
-                    "text": "If the player answered one out of three questions correctly:",
-                    "steps": [
-                      {
-                        "type": "line",
-                        "speaker": "Curpile Fyod",
-                        "text": "I'm sorry but you only got one question correct! Go on get outta here..."
-                      },
-                      {
-                        "type": "message",
-                        "text": "Curpile knocks you out and takes you back to Mort'ton.",
-                        "id": "4t7Rpj"
-                      },
-                      {
-                        "type": "end"
-                      }
-                    ],
-                    "id": "4-GJhg"
-                  },
-                  {
-                    "type": "condition",
-                    "text": "If the player answered two out of three questions correctly:",
-                    "steps": [
-                      {
-                        "type": "line",
-                        "speaker": "Curpile Fyod",
-                        "text": "I'm sorry but you only got two questions correct! Go on get outta here..."
-                      },
-                      {
-                        "type": "message",
-                        "text": "Curpile knocks you out and takes you back to Mort'ton.",
-                        "id": "iVqbuD"
-                      },
-                      {
-                        "type": "end"
-                      }
-                    ],
-                    "id": "V3mUmH"
-                  },
-                  {
-                    "type": "condition",
-                    "text": "If the player answered three out of three questions correctly:",
-                    "steps": [
-                      {
-                        "type": "line",
-                        "speaker": "Curpile Fyod",
-                        "text": "Okay, I believes ya... You can go on in. Head through the doors behind the tree. Once you's in, take the first cave on the right."
-                      },
-                      {
-                        "type": "end"
-                      }
-                    ],
-                    "id": "3l6Jxc"
-                  }
-                ],
-                "id": "q55E_q"
-              },
-              {
-                "type": "choice",
-                "options": [
-                  {
-                    "text": "I don't have to answer to you!"
-                  }
-                ]
-              },
-              {
-                "player": "I don't have to answer to you!"
-              },
-              {
-                "type": "line",
-                "speaker": "Curpile Fyod",
-                "text": "You do if you know what's good for you!"
-              },
-              {
-                "type": "action",
-                "text": "Curpile hits the player for 3 damage.",
-                "id": "7F_BXh"
               }
             ]
           },
@@ -2339,33 +2347,30 @@
             ]
           },
           {
-            "text": "What do you know about Morytania?"
-          }
-        ]
-      },
-      {
-        "player": "What do you know about Morytania?"
-      },
-      {
-        "type": "line",
-        "speaker": "Polmafi Ferdygris",
-        "text": "All the land on this side of the Salve is known as Morytania. Humans and vampyres are the main occupants of the region, though other races also live out here."
-      },
-      {
-        "type": "line",
-        "speaker": "Polmafi Ferdygris",
-        "text": "The humans here live like cattle with the vampyres taking regular blood tithes to keep themselves fed. All in all, it's a dire place. Though we hope to change that.",
-        "steps": [
-          {
-            "type": "jump",
-            "reference": "other",
-            "id": "IHkD5x"
-          }
-        ]
-      },
-      {
-        "type": "choice",
-        "options": [
+            "text": "What do you know about Morytania?",
+            "steps": [
+              {
+                "player": "What do you know about Morytania?"
+              },
+              {
+                "type": "line",
+                "speaker": "Polmafi Ferdygris",
+                "text": "All the land on this side of the Salve is known as Morytania. Humans and vampyres are the main occupants of the region, though other races also live out here."
+              },
+              {
+                "type": "line",
+                "speaker": "Polmafi Ferdygris",
+                "text": "The humans here live like cattle with the vampyres taking regular blood tithes to keep themselves fed. All in all, it's a dire place. Though we hope to change that.",
+                "steps": [
+                  {
+                    "type": "jump",
+                    "reference": "other",
+                    "id": "3qRS8j"
+                  }
+                ]
+              }
+            ]
+          },
           {
             "text": "Have you heard any rumours?",
             "steps": [
@@ -2380,7 +2385,7 @@
               {
                 "type": "jump",
                 "reference": "other",
-                "id": "s6MhEe"
+                "id": "pVA7uv"
               }
             ]
           },
@@ -2400,7 +2405,7 @@
                 "player": "Okay, thanks."
               }
             ],
-            "id": "0Ehc-D"
+            "id": "ylgDHl"
           }
         ]
       }
@@ -3250,13 +3255,6 @@
       },
       {
         "player": "I definitely have!"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "9sQzxV"
       }
     ]
   },
@@ -3340,6 +3338,49 @@
         "type": "jump",
         "reference": "other",
         "id": "wFOW4N"
+      }
+    ],
+    "jump-77b38e6dd86b0531": [
+      {
+        "player": "I'll give you some cash if you tell me."
+      },
+      {
+        "type": "line",
+        "speaker": "Cyreg Paddlehorn",
+        "text": "You think you can buy me?"
+      },
+      {
+        "player": "Err, no. I just want to compensate you for your trouble."
+      },
+      {
+        "type": "line",
+        "speaker": "Cyreg Paddlehorn",
+        "text": "You keep your money and I'll keep my secrets."
+      },
+      {
+        "type": "jump",
+        "reference": "other",
+        "id": "Q-K1Os"
+      }
+    ],
+    "jump-201419094fd7c7bd": [
+      {
+        "type": "line",
+        "speaker": "Cyreg Paddlehorn",
+        "text": "You think you can buy me?"
+      },
+      {
+        "player": "Err, no. I just want to compensate you for your trouble."
+      },
+      {
+        "type": "line",
+        "speaker": "Cyreg Paddlehorn",
+        "text": "You keep your money and I'll keep my secrets."
+      },
+      {
+        "type": "jump",
+        "reference": "other",
+        "id": "Q-K1Os"
       }
     ],
     "jump-37c3689eac3c1261": [
@@ -3426,12 +3467,14 @@
                 ]
               },
               {
-                "text": "I'll be back later."
+                "text": "I'll be back later.",
+                "steps": [
+                  {
+                    "player": "I'll be back later."
+                  }
+                ]
               }
             ]
-          },
-          {
-            "player": "I'll be back later."
           }
         ],
         "id": "39TjyD"

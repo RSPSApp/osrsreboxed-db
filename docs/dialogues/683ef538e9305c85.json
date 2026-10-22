@@ -41,7 +41,8 @@
                 "npc": "The main aim is to leave with no broken limbs. I think you should be fine."
               },
               {
-                "npc": "Peeeeeeeeep"
+                "npc": "Peeeeeeeeep",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -101,7 +102,8 @@
                 "id": "YgADG0"
               },
               {
-                "npc": "Peeeeeeeeep"
+                "npc": "Peeeeeeeeep",
+                "presentation": "overhead"
               }
             ]
           },
@@ -136,7 +138,8 @@
                 "id": "P_vdtC"
               },
               {
-                "npc": "Peeeeeeeeep"
+                "npc": "Peeeeeeeeep",
+                "presentation": "overhead"
               }
             ]
           },
@@ -233,7 +236,8 @@
         "id": "7_fRmf"
       },
       {
-        "npc": "Peeeeeeeeep"
+        "npc": "Peeeeeeeeep",
+        "presentation": "overhead"
       }
     ],
     "treasure-trails-medium": [

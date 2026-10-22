@@ -35,15 +35,18 @@
     ],
     "overhead-dialogue-catching-the-player-trying-to-steal-from-his-bakery-stall": [
       {
-        "npc": "Hey! Get your hands off there!"
+        "npc": "Hey! Get your hands off there!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-interacting-with-him-after-stealing-from-his-bakery-stall-recently": [
       {
-        "npc": "You just stole something from me!"
+        "npc": "You just stole something from me!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards guards!"
+        "npc": "Guards guards!",
+        "presentation": "overhead"
       }
     ]
   }

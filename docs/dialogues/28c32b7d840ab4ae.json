@@ -460,10 +460,6 @@
         "type": "action",
         "text": "Quest completion scroll appears",
         "id": "lIjXJa"
-      },
-      {
-        "type": "unavailable",
-        "id": "INdbke"
       }
     ]
   }

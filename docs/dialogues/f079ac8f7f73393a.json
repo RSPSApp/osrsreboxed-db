@@ -2374,7 +2374,8 @@
       {
         "type": "line",
         "speaker": "Wise Old Man",
-        "text": "snore *"
+        "text": "snore *",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -2394,7 +2395,8 @@
       {
         "type": "line",
         "speaker": "Wise Old Man",
-        "text": "parp *"
+        "text": "parp *",
+        "presentation": "overhead"
       },
       {
         "player": "I don't remember Juliet doing that!"
@@ -3072,10 +3074,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "d0d9eU"
-      },
-      {
-        "type": "unavailable",
-        "id": "raNwAi"
       }
     ]
   },

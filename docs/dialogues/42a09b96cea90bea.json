@@ -20,7 +20,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Rum, rum, we want rum!"
+                "npc": "Rum, rum, we want rum!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -28,7 +29,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Give us rum or give us death!"
+                "npc": "Give us rum or give us death!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -36,7 +38,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Whadda we want? Rum!"
+                "npc": "Whadda we want? Rum!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -44,7 +47,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Spare us a drop, you scurvy dogs!"
+                "npc": "Spare us a drop, you scurvy dogs!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -52,7 +56,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Yer rum or yer brains!"
+                "npc": "Yer rum or yer brains!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -60,7 +65,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "When do we want it? Now!"
+                "npc": "When do we want it? Now!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -75,7 +81,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Arr! Come back here!"
+                "npc": "Arr! Come back here!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -83,7 +90,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Ye'll never get away!"
+                "npc": "Ye'll never get away!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -91,7 +99,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Where d'ye think yer goin?"
+                "npc": "Where d'ye think yer goin?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -99,7 +108,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Give us yer rum, ye scurvy dog!"
+                "npc": "Give us yer rum, ye scurvy dog!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -107,7 +117,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Ye'll never beat us all!"
+                "npc": "Ye'll never beat us all!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -115,7 +126,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "United we stagger!"
+                "npc": "United we stagger!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -130,7 +142,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Rum! Rum! Rum!"
+                "npc": "Rum! Rum! Rum!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -138,7 +151,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Drink!"
+                "npc": "Drink!",
+                "presentation": "overhead"
               }
             ]
           }

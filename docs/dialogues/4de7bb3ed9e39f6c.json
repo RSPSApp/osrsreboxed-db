@@ -3,12 +3,14 @@
   "variants": {
     "when-firing-his-special-attack": [
       {
-        "npc": "Rain of knowledge!"
+        "npc": "Rain of knowledge!",
+        "presentation": "overhead"
       }
     ],
     "when-dying": [
       {
-        "npc": "Ow!"
+        "npc": "Ow!",
+        "presentation": "overhead"
       }
     ],
     "randomly-said-when-in-combat": [
@@ -19,7 +21,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "You belong in a museum!"
+                "npc": "You belong in a museum!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -27,7 +30,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'm Bellock - respect me!"
+                "npc": "I'm Bellock - respect me!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -35,7 +39,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Get off my site!"
+                "npc": "Get off my site!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -43,7 +48,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "These ruins are mine!"
+                "npc": "These ruins are mine!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -51,7 +57,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Taste my knowledge!"
+                "npc": "Taste my knowledge!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -59,7 +66,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "No-one messes with Bellock's dig!"
+                "npc": "No-one messes with Bellock's dig!",
+                "presentation": "overhead"
               }
             ]
           }

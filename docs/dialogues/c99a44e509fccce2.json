@@ -323,10 +323,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "f0-q02"
-      },
-      {
-        "type": "unavailable",
-        "id": "hsD8y_"
       }
     ]
   }

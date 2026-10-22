@@ -3,27 +3,32 @@
   "variants": {
     "overhead-dialogue-regular": [
       {
-        "npc": "Moo"
+        "npc": "Moo",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-charging": [
       {
-        "npc": "growls*"
+        "npc": "growls*",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-stomping": [
       {
-        "npc": "snorts*"
+        "npc": "snorts*",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-switching-into-smart-pathing": [
       {
-        "npc": "huff*"
+        "npc": "huff*",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-upon-death": [
       {
-        "npc": "m-moo..."
+        "npc": "m-moo...",
+        "presentation": "overhead"
       }
     ]
   }

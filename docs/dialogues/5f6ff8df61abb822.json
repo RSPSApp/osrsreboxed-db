@@ -144,7 +144,8 @@
                             "id": "t78fY9"
                           },
                           {
-                            "player": "Argh! I can't stop [dancing/headbanging/jumping]!"
+                            "player": "Argh! I can't stop [dancing/headbanging/jumping]!",
+                            "presentation": "overhead"
                           },
                           {
                             "npc": "Hah! I knew you were no mage! Let that be a lesson to you! Now, please leave."
@@ -167,7 +168,8 @@
                             "id": "6_jqVm"
                           },
                           {
-                            "npc": "Argh!"
+                            "npc": "Argh!",
+                            "presentation": "overhead"
                           },
                           {
                             "npc": "So! You are a good mage! You deflected my spell."

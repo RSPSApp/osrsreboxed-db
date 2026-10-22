@@ -32,7 +32,8 @@
         "text": "If the player isn't wearing a Vyre disguise:",
         "steps": [
           {
-            "npc": "You're not meant to be here human! Time to die!"
+            "npc": "You're not meant to be here human! Time to die!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -124,7 +125,8 @@
         "text": "If the Vampyre Juvenile is instantly killed:",
         "steps": [
           {
-            "npc": "Graahhhhhhh!"
+            "npc": "Graahhhhhhh!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -149,7 +151,8 @@
           {
             "type": "line",
             "speaker": "Feral Vampyre",
-            "text": "Rarrrghhhh!"
+            "text": "Rarrrghhhh!",
+            "presentation": "overhead"
           },
           {
             "type": "end"

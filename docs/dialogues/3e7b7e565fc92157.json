@@ -76,7 +76,8 @@
         "npc": "You! You're the one who killed Bouncer."
       },
       {
-        "npc": "Die you monster!"
+        "npc": "Die you monster!",
+        "presentation": "overhead"
       }
     ]
   }

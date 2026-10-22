@@ -110,7 +110,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Just one more offer! One more!"
+                "npc": "Just one more offer! One more!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -118,7 +119,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Such a joy it is to be in this building."
+                "npc": "Such a joy it is to be in this building.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -126,7 +128,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Yes! Yet another great deal."
+                "npc": "Yes! Yet another great deal.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -134,7 +137,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "My people shall be so proud!"
+                "npc": "My people shall be so proud!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -142,7 +146,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Hmmm. These numbers don't quite add up."
+                "npc": "Hmmm. These numbers don't quite add up.",
+                "presentation": "overhead"
               }
             ]
           }

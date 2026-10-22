@@ -187,12 +187,14 @@
           {
             "type": "line",
             "speaker": "Holgart",
-            "text": "Right me hearty. Let's get this boat fixed."
+            "text": "Right me hearty. Let's get this boat fixed.",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Holgart",
-            "text": "Huzzah! We've fixed the leaky old tub."
+            "text": "Huzzah! We've fixed the leaky old tub.",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -278,12 +280,14 @@
           {
             "type": "line",
             "speaker": "Holgart",
-            "text": "Right me hearty. Let's get this boat fixed."
+            "text": "Right me hearty. Let's get this boat fixed.",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Holgart",
-            "text": "Huzzah! We've fixed the leaky old tub."
+            "text": "Huzzah! We've fixed the leaky old tub.",
+            "presentation": "overhead"
           }
         ],
         "id": "OtijM_"
@@ -393,7 +397,8 @@
         "id": "z10VLm"
       },
       {
-        "player": "Ouch!"
+        "player": "Ouch!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -972,7 +977,8 @@
         "id": "o7FMsM"
       },
       {
-        "player": "Ouch!"
+        "player": "Ouch!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1291,10 +1297,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "U0muMo"
-      },
-      {
-        "type": "unavailable",
-        "id": "rWEWub"
       }
     ]
   }

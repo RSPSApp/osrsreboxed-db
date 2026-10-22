@@ -1850,17 +1850,19 @@
                     ]
                   },
                   {
-                    "text": "The suqah will never fit through that tunnel."
+                    "text": "The suqah will never fit through that tunnel.",
+                    "steps": [
+                      {
+                        "player": "The suqah will never fit through that tunnel."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Fallen Man",
+                        "text": "Very true. I think I picked a good spot."
+                      }
+                    ]
                   }
                 ]
-              },
-              {
-                "player": "The suqah will never fit through that tunnel."
-              },
-              {
-                "type": "line",
-                "speaker": "Fallen Man",
-                "text": "Very true. I think I picked a good spot."
               }
             ]
           }
@@ -4771,35 +4773,38 @@
       {
         "type": "line",
         "speaker": "The Inadequacy",
-        "text": "Graaaaarrr!"
+        "text": "Graaaaarrr!",
+        "presentation": "overhead"
       }
     ],
     "cyrisus-courage-overhead-dialogue-cyrisus": [
       {
-        "type": "line",
-        "speaker": "Cyrisus",
-        "text": "Fight to give me courage."
+        "type": "call",
+        "branch": "oTZTaQ"
       }
     ],
     "cyrisus-courage-overhead-dialogue-healing-the-player": [
       {
         "type": "line",
         "speaker": "Cyrisus",
-        "text": "Hope you're okay, [player name]"
+        "text": "Hope you're okay, [player name]",
+        "presentation": "overhead"
       }
     ],
     "cyrisus-courage-overhead-dialogue-teleporting": [
       {
         "type": "line",
         "speaker": "Cyrisus",
-        "text": "You shall never get me!"
+        "text": "You shall never get me!",
+        "presentation": "overhead"
       }
     ],
     "cyrisus-courage-overhead-dialogue-casting-vengeance": [
       {
         "type": "line",
         "speaker": "Cyrisus",
-        "text": "Have vengeance!"
+        "text": "Have vengeance!",
+        "presentation": "overhead"
       }
     ],
     "cyrisus-courage-overhead-dialogue-randomly-when-courage-isn-t-full": [
@@ -4812,7 +4817,8 @@
               {
                 "type": "line",
                 "speaker": "Cyrisus",
-                "text": "Oh, I can't attack. I'm too afraid!"
+                "text": "Oh, I can't attack. I'm too afraid!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -4822,7 +4828,8 @@
               {
                 "type": "line",
                 "speaker": "Cyrisus",
-                "text": "I'm building up my courage. I'll attack soon."
+                "text": "I'm building up my courage. I'll attack soon.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -4830,9 +4837,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "type": "line",
-                "speaker": "Cyrisus",
-                "text": "Fight to give me courage."
+                "type": "call",
+                "branch": "oTZTaQ"
               }
             ]
           },
@@ -4842,7 +4848,8 @@
               {
                 "type": "line",
                 "speaker": "Cyrisus",
-                "text": "I don't know if I can do this."
+                "text": "I don't know if I can do this.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -4853,7 +4860,8 @@
       {
         "type": "line",
         "speaker": "Cyrisus",
-        "text": "Take this!"
+        "text": "Take this!",
+        "presentation": "overhead"
       }
     ],
     "cyrisus-courage-defeating-the-illusive": [
@@ -5257,17 +5265,9 @@
           },
           {
             "text": "Nothing.",
-            "steps": [
-              {
-                "type": "end"
-              }
-            ]
+            "steps": []
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "OHRBxK"
       }
     ]
   },
@@ -5385,6 +5385,14 @@
         "type": "action",
         "text": "Continues to next missing item, or ends dialogue if that was the last missing item.",
         "id": "kLzEPu"
+      }
+    ],
+    "oTZTaQ": [
+      {
+        "type": "line",
+        "speaker": "Cyrisus",
+        "text": "Fight to give me courage.",
+        "presentation": "overhead"
       }
     ]
   }

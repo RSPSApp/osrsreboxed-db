@@ -2237,7 +2237,8 @@
           {
             "type": "line",
             "speaker": "King's men and the Player",
-            "text": "."
+            "text": ".",
+            "presentation": "overhead"
           },
           {
             "type": "jump",
@@ -2254,7 +2255,8 @@
           {
             "type": "line",
             "speaker": "King's men and the Player",
-            "text": "Bollocks."
+            "text": "Bollocks.",
+            "presentation": "overhead"
           },
           {
             "type": "jump",
@@ -2451,13 +2453,6 @@
         "type": "line",
         "speaker": "Kauayotl",
         "text": "It was my pleasure, iknami. We of course wouldn't have been able to do it without you either."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "dXOOGi"
       }
     ]
   },

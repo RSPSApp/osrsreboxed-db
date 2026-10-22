@@ -171,7 +171,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Wow, that's cheap."
+                "npc": "Wow, that's cheap.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -179,7 +180,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Oh. That didn't sell so well."
+                "npc": "Oh. That didn't sell so well.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -187,7 +189,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Hmmm. If I spend twenty thousand on that, then..."
+                "npc": "Hmmm. If I spend twenty thousand on that, then...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -195,7 +198,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Jackpot! I'm in the money now!"
+                "npc": "Jackpot! I'm in the money now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -203,7 +207,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Hahaha! Trading the likes of which I have never seen."
+                "npc": "Hahaha! Trading the likes of which I have never seen.",
+                "presentation": "overhead"
               }
             ]
           }

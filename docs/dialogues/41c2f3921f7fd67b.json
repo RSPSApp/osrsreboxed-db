@@ -1458,17 +1458,20 @@
       {
         "type": "line",
         "speaker": "Knight of Varlamore",
-        "text": "Ralos will defend me!"
+        "text": "Ralos will defend me!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Knight of Varlamore",
-        "text": "Ralos' light protects me!"
+        "text": "Ralos' light protects me!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Knight of Varlamore",
-        "text": "Shield me, Ralos!"
+        "text": "Shield me, Ralos!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1641,7 +1644,8 @@
               {
                 "type": "line",
                 "speaker": "Knight of Varlamore",
-                "text": "Ohh, this is tiring. I think I need a quick break."
+                "text": "Ohh, this is tiring. I think I need a quick break.",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -1656,7 +1660,8 @@
               {
                 "type": "line",
                 "speaker": "Knight of Varlamore",
-                "text": "Can we have a break? I'm feeling a bit iffy..."
+                "text": "Can we have a break? I'm feeling a bit iffy...",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -1671,7 +1676,8 @@
               {
                 "type": "line",
                 "speaker": "Knight of Varlamore",
-                "text": "Huh? That looks interesting..."
+                "text": "Huh? That looks interesting...",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -1686,7 +1692,8 @@
               {
                 "type": "line",
                 "speaker": "Knight of Varlamore",
-                "text": "Wow! What's that over there?!"
+                "text": "Wow! What's that over there?!",
+                "presentation": "overhead"
               },
               {
                 "type": "jump",
@@ -1709,7 +1716,8 @@
           {
             "type": "line",
             "speaker": "Knight of Varlamore",
-            "text": "Hey! You're going too fast!"
+            "text": "Hey! You're going too fast!",
+            "presentation": "overhead"
           }
         ],
         "id": "3coEs9"
@@ -2842,10 +2850,6 @@
         "type": "line",
         "speaker": "Prince Itzla Arkan",
         "text": "Don't worry, I'll be in touch soon enough. Until then, timoiva, and may the sun light your way."
-      },
-      {
-        "type": "unavailable",
-        "id": "H9w7H2"
       }
     ]
   },

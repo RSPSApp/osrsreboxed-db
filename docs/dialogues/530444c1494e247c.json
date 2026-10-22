@@ -57,7 +57,8 @@
     ],
     "overhead-dialogue-upon-leaving-the-swamp-through-the-gate": [
       {
-        "npc": "Oh my! You're still alive!"
+        "npc": "Oh my! You're still alive!",
+        "presentation": "overhead"
       }
     ],
     "treasure-trails-medium": [

@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Glod smash!"
+                "npc": "Glod smash!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Glod bash!"
+                "npc": "Glod bash!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Grind your bones!"
+                "npc": "Grind your bones!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Stupid clouds make Glod angry!"
+                "npc": "Stupid clouds make Glod angry!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "You wouldn't like Glod when Glod angry!"
+                "npc": "You wouldn't like Glod when Glod angry!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Why everyone attack Glod?"
+                "npc": "Why everyone attack Glod?",
+                "presentation": "overhead"
               }
             ]
           }
@@ -58,7 +64,8 @@
     ],
     "overhead-dialogue-when-powering-up": [
       {
-        "npc": "Gods, give Glod strength!"
+        "npc": "Gods, give Glod strength!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -68,7 +75,8 @@
     ],
     "overhead-dialogue-when-healing": [
       {
-        "npc": "Glod not die so easily!"
+        "npc": "Glod not die so easily!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -78,7 +86,8 @@
     ],
     "overhead-dialogue-when-draining-and-disabling-the-player-s-prayer": [
       {
-        "npc": "GLOD SMASH!"
+        "npc": "GLOD SMASH!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -88,7 +97,8 @@
     ],
     "overhead-dialogue-when-intimidating-the-player": [
       {
-        "npc": "Flee, pesky mortal!"
+        "npc": "Flee, pesky mortal!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -98,7 +108,8 @@
     ],
     "overhead-dialogue-when-taunting-the-player": [
       {
-        "npc": "You puny human. Come to Glod!"
+        "npc": "You puny human. Come to Glod!",
+        "presentation": "overhead"
       },
       {
         "type": "message",

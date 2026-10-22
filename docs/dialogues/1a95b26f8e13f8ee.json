@@ -1143,45 +1143,58 @@
     ],
     "current-overheads": [
       {
-        "npc": "Overlord of Morytania, Lowerniel Drakan, is back! (30 Jun 2026){{Fact|unsure of specific start date}}"
+        "npc": "Overlord of Morytania, Lowerniel Drakan, is back! (30 Jun 2026){{Fact|unsure of specific start date}}",
+        "presentation": "overhead"
       },
       {
-        "npc": "Blood moon has risen over Morytania! (30 Jun 2026){{Fact|unsure of specific start date}}"
+        "npc": "Blood moon has risen over Morytania! (30 Jun 2026){{Fact|unsure of specific start date}}",
+        "presentation": "overhead"
       }
     ],
     "historical-overheads": [
       {
-        "npc": "Make sure your account security is up to date! (Dates unknown)"
+        "npc": "Make sure your account security is up to date! (Dates unknown)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Sailing has been announced! Coming November 19th! (2 Nov 2025 – Date unknown){{Fact|unsure of specific start date}}"
+        "npc": "Sailing has been announced! Coming November 19th! (2 Nov 2025 – Date unknown){{Fact|unsure of specific start date}}",
+        "presentation": "overhead"
       },
       {
-        "npc": "Are you ready for Sailing on November 19th?! (2 Nov 2025){{Fact|unsure of specific start date}}"
+        "npc": "Are you ready for Sailing on November 19th?! (2 Nov 2025){{Fact|unsure of specific start date}}",
+        "presentation": "overhead"
       },
       {
-        "npc": "Have you checked out the latest additions to Varlamore yet? (13 Aug 2025 – 20 Aug 2025)"
+        "npc": "Have you checked out the latest additions to Varlamore yet? (13 Aug 2025 – 20 Aug 2025)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Thanks for helping us break player records! (20 Aug 2025 – 27 Aug 2025)"
+        "npc": "Thanks for helping us break player records! (20 Aug 2025 – 27 Aug 2025)",
+        "presentation": "overhead"
       },
       {
-        "npc": "The Summer Sweep-Up Slayer & Misc changes are here! (27 Aug 2025 – 03 Sep 2025)"
+        "npc": "The Summer Sweep-Up Slayer & Misc changes are here! (27 Aug 2025 – 03 Sep 2025)",
+        "presentation": "overhead"
       },
       {
-        "npc": "The Combat Achievements for the Doom of Mokhaiotl are here! (03 Sep 2025 – 17 Sep 2025)"
+        "npc": "The Combat Achievements for the Doom of Mokhaiotl are here! (03 Sep 2025 – 17 Sep 2025)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Not long now until Grid Master! Are you up to date on all the latest infomation? (17 Sep 2025 – 16 Oct 2025)"
+        "npc": "Not long now until Grid Master! Are you up to date on all the latest infomation? (17 Sep 2025 – 16 Oct 2025)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Old School has loads going on right now! Keep up to date with our latest newsposts! (Date unknown – 16 Oct 2025)"
+        "npc": "Old School has loads going on right now! Keep up to date with our latest newsposts! (Date unknown – 16 Oct 2025)",
+        "presentation": "overhead"
       },
       {
-        "npc": "Grid Master has arrived! Time to get your game on! (16 Oct 2025 - 2 Nov 2025){{Fact|unsure of specific end date}}"
+        "npc": "Grid Master has arrived! Time to get your game on! (16 Oct 2025 - 2 Nov 2025){{Fact|unsure of specific end date}}",
+        "presentation": "overhead"
       },
       {
-        "npc": "It's spooky season! Halloween is here! (16 Oct 2025 - 2 Nov 2025){{Fact|unsure of specific end date}}"
+        "npc": "It's spooky season! Halloween is here! (16 Oct 2025 - 2 Nov 2025){{Fact|unsure of specific end date}}",
+        "presentation": "overhead"
       }
     ]
   },

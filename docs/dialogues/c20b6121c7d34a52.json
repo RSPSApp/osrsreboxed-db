@@ -58,7 +58,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Fingers!"
+                "npc": "Fingers!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -66,7 +67,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Wall beast fingers!"
+                "npc": "Wall beast fingers!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -74,7 +76,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Fresh wall beast fingers!"
+                "npc": "Fresh wall beast fingers!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -82,7 +85,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Lovely wall beast fingers!"
+                "npc": "Lovely wall beast fingers!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -90,7 +94,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Tasty wall beast fingers!"
+                "npc": "Tasty wall beast fingers!",
+                "presentation": "overhead"
               }
             ]
           }

@@ -55,32 +55,38 @@
     ],
     "standard-dialogue-during-the-fight-start-of-fight": [
       {
-        "npc": "Let's start by testing your footwork."
+        "npc": "Let's start by testing your footwork.",
+        "presentation": "overhead"
       }
     ],
     "standard-dialogue-during-the-fight-upon-reaching-1350-hitpoints": [
       {
-        "npc": "Not bad. Let's try something else..."
+        "npc": "Not bad. Let's try something else...",
+        "presentation": "overhead"
       }
     ],
     "standard-dialogue-during-the-fight-upon-reaching-1125-hitpoints": [
       {
-        "npc": "Impressive. Let's see how you handle this..."
+        "npc": "Impressive. Let's see how you handle this...",
+        "presentation": "overhead"
       }
     ],
     "standard-dialogue-during-the-fight-upon-reaching-750-hitpoints": [
       {
-        "npc": "You can't win!"
+        "npc": "You can't win!",
+        "presentation": "overhead"
       }
     ],
     "standard-dialogue-during-the-fight-upon-reaching-375-hitpoints": [
       {
-        "npc": "Ralos guides my hand!"
+        "npc": "Ralos guides my hand!",
+        "presentation": "overhead"
       }
     ],
     "standard-dialogue-during-the-fight-upon-reaching-150-hitpoints": [
       {
-        "npc": "LET'S END THIS!"
+        "npc": "LET'S END THIS!",
+        "presentation": "overhead"
       }
     ],
     "standard-dialogue-praying-early-against-the-triple-attack": [
@@ -98,7 +104,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "I'LL BREAK YOUR BACK!"
+                "npc": "I'LL BREAK YOUR BACK!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -106,7 +113,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'LL CRUSH YOUR BODY!"
+                "npc": "I'LL CRUSH YOUR BODY!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -114,7 +122,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "I'LL TWIST YOUR HANDS OFF!"
+                "npc": "I'LL TWIST YOUR HANDS OFF!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -122,7 +131,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "I'LL BREAK YOUR LEGS!"
+                "npc": "I'LL BREAK YOUR LEGS!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -130,7 +140,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "I'LL CUT YOUR FEET OFF!"
+                "npc": "I'LL CUT YOUR FEET OFF!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -173,7 +184,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Your light shines... brightly..."
+                "npc": "Your light shines... brightly...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -181,7 +193,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "A worthy... opponent..."
+                "npc": "A worthy... opponent...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -189,7 +202,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Ralos has smiled upon you..."
+                "npc": "Ralos has smiled upon you...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -197,7 +211,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "My compliments, champion..."
+                "npc": "My compliments, champion...",
+                "presentation": "overhead"
               }
             ]
           }
@@ -212,7 +227,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "How disappointing..."
+                "npc": "How disappointing...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -220,7 +236,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I knew you weren't the one."
+                "npc": "I knew you weren't the one.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -228,7 +245,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "You had me excited for a moment."
+                "npc": "You had me excited for a moment.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -236,7 +254,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Your lack of coordination is concerning."
+                "npc": "Your lack of coordination is concerning.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -244,7 +263,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Your light shines no more."
+                "npc": "Your light shines no more.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -252,7 +272,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Maybe next time..."
+                "npc": "Maybe next time...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -260,7 +281,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Pathetic, really..."
+                "npc": "Pathetic, really...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -268,7 +290,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "I was just getting into my rhythm..."
+                "npc": "I was just getting into my rhythm...",
+                "presentation": "overhead"
               }
             ]
           }

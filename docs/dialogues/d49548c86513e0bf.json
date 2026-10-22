@@ -336,6 +336,7 @@
       },
       {
         "npc": "Purr!",
+        "presentation": "overhead",
         "steps": [
           {
             "type": "jump",
@@ -354,6 +355,7 @@
       },
       {
         "npc": "Purpurr",
+        "presentation": "overhead",
         "steps": [
           {
             "type": "jump",
@@ -372,6 +374,7 @@
       },
       {
         "npc": "Puuurrrrr!",
+        "presentation": "overhead",
         "steps": [
           {
             "type": "jump",

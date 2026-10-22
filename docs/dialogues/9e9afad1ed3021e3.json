@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Bwaaaaaauk bwuk bwuk"
+                "npc": "Bwaaaaaauk bwuk bwuk",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Bwuk"
+                "npc": "Bwuk",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Bwuk bwuk bwuk"
+                "npc": "Bwuk bwuk bwuk",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Flee from me, [player name]!"
+                "npc": "Flee from me, [player name]!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Begone, [player name]!"
+                "npc": "Begone, [player name]!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "MUAHAHAHAHAAA!"
+                "npc": "MUAHAHAHAHAAA!",
+                "presentation": "overhead"
               }
             ]
           }

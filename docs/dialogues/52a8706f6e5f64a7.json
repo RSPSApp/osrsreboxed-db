@@ -163,7 +163,8 @@
                               {
                                 "type": "line",
                                 "speaker": "Black Guard Berserker",
-                                "text": "Halt!"
+                                "text": "Halt!",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "line",
@@ -2512,18 +2513,15 @@
                             "type": "choice",
                             "options": [
                               {
-                                "text": "Return to Keldagrim immediately."
-                              }
-                            ]
-                          },
-                          {
-                            "type": "action",
-                            "text": "The screen fades to black briefly, and the player arrives at Keldagrim, where Blasidar is.",
-                            "id": "z3YxxS"
-                          },
-                          {
-                            "type": "choice",
-                            "options": [
+                                "text": "Return to Keldagrim immediately.",
+                                "steps": [
+                                  {
+                                    "type": "action",
+                                    "text": "The screen fades to black briefly, and the player arrives at Keldagrim, where Blasidar is.",
+                                    "id": "e1zjyh"
+                                  }
+                                ]
+                              },
                               {
                                 "text": "Explore the area before returning.",
                                 "steps": []
@@ -5631,17 +5629,20 @@
       {
         "type": "line",
         "speaker": "Purple Pewter Director",
-        "text": "Aye."
+        "text": "Aye.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Green Gemstone Director",
-        "text": "Aye."
+        "text": "Aye.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Silver Cog Director",
-        "text": "Aye."
+        "text": "Aye.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -5720,10 +5721,6 @@
         "type": "jump",
         "reference": "above",
         "id": "ccqZEg"
-      },
-      {
-        "type": "unavailable",
-        "id": "bxRjAG"
       }
     ]
   },

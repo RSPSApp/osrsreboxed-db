@@ -58,7 +58,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Tasty soup!"
+                "npc": "Tasty soup!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -66,7 +67,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Green cave-slime soup!"
+                "npc": "Green cave-slime soup!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -74,7 +76,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Soup!"
+                "npc": "Soup!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -82,7 +85,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Hot, tasty soup!"
+                "npc": "Hot, tasty soup!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -90,7 +94,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Cave slime soup!"
+                "npc": "Cave slime soup!",
+                "presentation": "overhead"
               }
             ]
           }

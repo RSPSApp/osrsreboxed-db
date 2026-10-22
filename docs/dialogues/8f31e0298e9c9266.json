@@ -2453,37 +2453,38 @@
     ],
     "descending-into-the-tower-of-ascension-second-trial-dialogue-during-the-fight-wave-1": [
       {
-        "type": "line",
-        "speaker": "Forebearer Janus",
-        "text": "Brawlers attack!"
+        "type": "call",
+        "branch": "c2uyd4"
       }
     ],
     "descending-into-the-tower-of-ascension-second-trial-dialogue-during-the-fight-wave-2": [
       {
         "type": "line",
         "speaker": "Forebearer Janus",
-        "text": "Don't go so easy on them this time, brawlers!"
+        "text": "Don't go so easy on them this time, brawlers!",
+        "presentation": "overhead"
       }
     ],
     "descending-into-the-tower-of-ascension-second-trial-dialogue-during-the-fight-wave-3": [
       {
         "type": "line",
         "speaker": "Forebearer Janus",
-        "text": "Conjurers, aid your brawlers!"
+        "text": "Conjurers, aid your brawlers!",
+        "presentation": "overhead"
       }
     ],
     "descending-into-the-tower-of-ascension-second-trial-dialogue-during-the-fight-wave-4": [
       {
-        "type": "line",
-        "speaker": "Forebearer Janus",
-        "text": "Brawlers attack!"
+        "type": "call",
+        "branch": "c2uyd4"
       }
     ],
     "descending-into-the-tower-of-ascension-second-trial-dialogue-during-the-fight-if-itzla-dies-during-the-fight": [
       {
         "type": "line",
         "speaker": "Forebearer Janus",
-        "text": "It appears your companion has fallen in battle!"
+        "text": "It appears your companion has fallen in battle!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -2551,7 +2552,8 @@
           {
             "type": "line",
             "speaker": "Forebearer Janus",
-            "text": "You have fought well... This trial is now complete!"
+            "text": "You have fought well... This trial is now complete!",
+            "presentation": "overhead"
           }
         ],
         "id": "428YHT"
@@ -3341,7 +3343,8 @@
               {
                 "type": "line",
                 "speaker": "Prince Itzla Arkan",
-                "text": "You might want to dodge this one!"
+                "text": "You might want to dodge this one!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3351,7 +3354,8 @@
               {
                 "type": "line",
                 "speaker": "Prince Itzla Arkan",
-                "text": "Reckon you can dodge this?"
+                "text": "Reckon you can dodge this?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -3361,7 +3365,8 @@
               {
                 "type": "line",
                 "speaker": "Prince Itzla Arkan",
-                "text": "I'd move if I were you!"
+                "text": "I'd move if I were you!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -3372,7 +3377,8 @@
       {
         "type": "line",
         "speaker": "Prince Itzla Arkan",
-        "text": "Prayers? What prayers?"
+        "text": "Prayers? What prayers?",
+        "presentation": "overhead"
       }
     ],
     "descending-into-the-tower-of-ascension-during-the-fight-against-prince-itzla-using-a-special-attack": [
@@ -3382,7 +3388,8 @@
         "id": "J8l76h"
       },
       {
-        "player": "You're not allowed to do that!"
+        "player": "You're not allowed to do that!",
+        "presentation": "overhead"
       }
     ],
     "descending-into-the-tower-of-ascension-during-the-fight-against-prince-itzla-after-dealing-the-final-blow": [
@@ -4403,7 +4410,8 @@
       {
         "type": "line",
         "speaker": "Amoxliatl",
-        "text": "Zema ami miki!"
+        "text": "Zema ami miki!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -4539,10 +4547,6 @@
             "text": "No."
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "9lo8go"
       }
     ]
   },
@@ -4928,6 +4932,14 @@
         "type": "line",
         "speaker": "Forebearer Janus",
         "text": "Then come back to me when you are."
+      }
+    ],
+    "c2uyd4": [
+      {
+        "type": "line",
+        "speaker": "Forebearer Janus",
+        "text": "Brawlers attack!",
+        "presentation": "overhead"
       }
     ],
     "s_fle1": [

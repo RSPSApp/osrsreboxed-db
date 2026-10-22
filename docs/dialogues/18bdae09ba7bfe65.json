@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Intruder!"
+                "npc": "Intruder!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Protect the keystone!"
+                "npc": "Protect the keystone!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Stop them at all costs!"
+                "npc": "Stop them at all costs!",
+                "presentation": "overhead"
               }
             ]
           }

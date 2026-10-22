@@ -315,48 +315,8 @@
             "text": "Can you tell me more about the library?",
             "steps": [
               {
-                "player": "Can you tell me more about the library?"
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "Why, certainly, it is one of my favourite subjects!"
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "I am Hugi, you see, I am the chief librarian here. Hugi, my parents named me that, it means 'personification of thought' in the ancient dwarvish tongue."
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "Quite like the name myself."
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "The books in this library have been collected for many centuries now, through various generous donations."
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "You'll find books dating from many different eras as well, such as the Era of Kings, the Rise of the Consortium and the Era of Prosperity, our current era."
-              },
-              {
-                "player": "How do these eras correspond with the Ages of the world?"
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "Oh, they are quite different, and most of them take place in the Fourth Age."
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "Since we dwarves hid underground for a long time to sit out the wars that raged above the ground our history books differ slightly from those written by humans."
-              },
-              {
-                "player": "Thanks for the information!"
+                "type": "call",
+                "branch": "w2Syui"
               }
             ]
           },
@@ -3072,51 +3032,8 @@
             "text": "Can you tell me more about the library?",
             "steps": [
               {
-                "player": "Can you tell me more about the library?"
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "Why, certainly, it is one of my favourite subjects!"
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "I am Hugi, you see, I am the chief librarian here. Hugi, my parents named me that, it means 'personification of thought' in the ancient dwarvish tongue."
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "Quite like the name myself."
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "The books in this library have been collected for many centuries now, through various generous donations."
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "You'll find books dating from many different eras as well, such as the Era of Kings, the Rise of the Consortium and the Era of Prosperity, our current era."
-              },
-              {
-                "player": "How do these eras correspond with the Ages of the world?"
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "Oh, they are quite different, and most of them take place in the Fourth Age."
-              },
-              {
-                "type": "line",
-                "speaker": "Librarian",
-                "text": "Since we dwarves hid underground for a long time to sit out the wars that raged above the ground our history books differ slightly from those written by humans."
-              },
-              {
-                "player": "Thanks for the information!"
-              },
-              {
-                "type": "end"
+                "type": "call",
+                "branch": "w2Syui"
               }
             ]
           },
@@ -3179,17 +3096,10 @@
                 "type": "line",
                 "speaker": "Librarian",
                 "text": "No, we won't see him again and the mines are safe to dig for gold now. Of course, that might lead to other problems eventually..."
-              },
-              {
-                "type": "end"
               }
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "C6gP_u"
       }
     ]
   },
@@ -3241,6 +3151,52 @@
       },
       {
         "type": "end"
+      }
+    ],
+    "w2Syui": [
+      {
+        "player": "Can you tell me more about the library?"
+      },
+      {
+        "type": "line",
+        "speaker": "Librarian",
+        "text": "Why, certainly, it is one of my favourite subjects!"
+      },
+      {
+        "type": "line",
+        "speaker": "Librarian",
+        "text": "I am Hugi, you see, I am the chief librarian here. Hugi, my parents named me that, it means 'personification of thought' in the ancient dwarvish tongue."
+      },
+      {
+        "type": "line",
+        "speaker": "Librarian",
+        "text": "Quite like the name myself."
+      },
+      {
+        "type": "line",
+        "speaker": "Librarian",
+        "text": "The books in this library have been collected for many centuries now, through various generous donations."
+      },
+      {
+        "type": "line",
+        "speaker": "Librarian",
+        "text": "You'll find books dating from many different eras as well, such as the Era of Kings, the Rise of the Consortium and the Era of Prosperity, our current era."
+      },
+      {
+        "player": "How do these eras correspond with the Ages of the world?"
+      },
+      {
+        "type": "line",
+        "speaker": "Librarian",
+        "text": "Oh, they are quite different, and most of them take place in the Fourth Age."
+      },
+      {
+        "type": "line",
+        "speaker": "Librarian",
+        "text": "Since we dwarves hid underground for a long time to sit out the wars that raged above the ground our history books differ slightly from those written by humans."
+      },
+      {
+        "player": "Thanks for the information!"
       }
     ],
     "-a5r0Z": [

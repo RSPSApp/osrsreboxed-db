@@ -38,15 +38,18 @@
     ],
     "overhead-dialogue-catching-the-player-trying-to-steal-from-his-silver-stall": [
       {
-        "npc": "That's my silver!"
+        "npc": "That's my silver!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-interacting-with-him-after-stealing-from-his-silver-stall-recently": [
       {
-        "npc": "Halt, thief!"
+        "npc": "Halt, thief!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards, catch that thief!"
+        "npc": "Guards, catch that thief!",
+        "presentation": "overhead"
       }
     ]
   }

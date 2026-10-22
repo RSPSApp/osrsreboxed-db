@@ -17,6 +17,7 @@
     ],
     "when-entering-the-woodcutting-guild": [
       {
+        "presentation": "overhead",
         "npc": "Welcome to the Woodcutting Guild, adventurer."
       }
     ]

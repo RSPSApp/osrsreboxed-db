@@ -87,7 +87,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Come play game, [player name]!"
+                    "npc": "Come play game, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -95,7 +96,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "We got good game, [player name]!"
+                    "npc": "We got good game, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -103,7 +105,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "You want play game, [player name]!"
+                    "npc": "You want play game, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -111,7 +114,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "You like hitting things, [player name]?"
+                    "npc": "You like hitting things, [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -125,7 +129,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "zZPREs"

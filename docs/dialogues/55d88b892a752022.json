@@ -3900,13 +3900,6 @@
       },
       {
         "player": "You're welcome, your Majesty."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "QUD_Vd"
       }
     ]
   },

@@ -2400,10 +2400,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "5AdqF8"
-      },
-      {
-        "type": "unavailable",
-        "id": "oaJA1x"
       }
     ]
   },

@@ -280,12 +280,14 @@
                               {
                                 "type": "line",
                                 "speaker": "Wise Old Man",
-                                "text": "Take THAT!"
+                                "text": "Take THAT!",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "line",
                                 "speaker": "Ogre Shaman",
-                                "text": "Ssssss!"
+                                "text": "Ssssss!",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "action",
@@ -295,22 +297,26 @@
                               {
                                 "type": "line",
                                 "speaker": "Drunken Dwarf",
-                                "text": "'Ello matey!"
+                                "text": "'Ello matey!",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "line",
                                 "speaker": "Drunken Dwarf",
-                                "text": "Don't ignore your mate!"
+                                "text": "Don't ignore your mate!",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "line",
                                 "speaker": "Drunken Dwarf",
-                                "text": "Hey, matey!"
+                                "text": "Hey, matey!",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "line",
                                 "speaker": "Wise Old Man",
-                                "text": "I AM NOT YOUR MATE!"
+                                "text": "I AM NOT YOUR MATE!",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "action",
@@ -320,17 +326,20 @@
                               {
                                 "type": "line",
                                 "speaker": "Wise Old Man",
-                                "text": "Aaah!"
+                                "text": "Aaah!",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "line",
                                 "speaker": "Shaikahan",
-                                "text": "RAAAaaarrgh!"
+                                "text": "RAAAaaarrgh!",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "line",
                                 "speaker": "Wise Old Man",
-                                "text": "Lie still, and trouble us no more."
+                                "text": "Lie still, and trouble us no more.",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "action",
@@ -340,12 +349,14 @@
                               {
                                 "type": "line",
                                 "speaker": "Wise Old Man",
-                                "text": "Avaunt, foul fiend!."
+                                "text": "Avaunt, foul fiend!.",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "line",
                                 "speaker": "Wise Old Man",
-                                "text": "Oh deary me..."
+                                "text": "Oh deary me...",
+                                "presentation": "overhead"
                               },
                               {
                                 "type": "action",
@@ -5370,7 +5381,8 @@
       {
         "type": "line",
         "speaker": "Wise Old Man",
-        "text": "Wait - I think something's coming!"
+        "text": "Wait - I think something's coming!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -5382,19 +5394,22 @@
       {
         "type": "line",
         "speaker": "Wise Old Man",
-        "text": "First fight, talk later!"
+        "text": "First fight, talk later!",
+        "presentation": "overhead"
       }
     ],
     "outside-the-colony-when-the-wise-old-man-runs-out-of-runes": [
       {
         "type": "line",
         "speaker": "Wise Old Man",
-        "text": "Blast - I'm out of runes!"
+        "text": "Blast - I'm out of runes!",
+        "presentation": "overhead"
       }
     ],
     "outside-the-colony-after-defeating-the-sea-trolls": [
       {
-        "player": "Got them all!"
+        "player": "Got them all!",
+        "presentation": "overhead"
       }
     ],
     "outside-the-colony-speaking-to-the-wise-old-man-after-defeating-the-sea-trolls": [
@@ -5873,7 +5888,8 @@
     ],
     "helping-franklin-using-hammer-on-the-broken-wall": [
       {
-        "player": "YAAAAARRRRGH!"
+        "player": "YAAAAARRRRGH!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -5893,7 +5909,8 @@
     ],
     "helping-franklin-using-hammer-on-an-already-repaired-wall": [
       {
-        "player": "YAAAAARRRRGH!"
+        "player": "YAAAAARRRRGH!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -7967,10 +7984,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "RV_XI6"
-      },
-      {
-        "type": "unavailable",
-        "id": "pciPf6"
       }
     ]
   },

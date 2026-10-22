@@ -297,7 +297,8 @@
         "id": "6eaIw3"
       },
       {
-        "player": "Ow!"
+        "player": "Ow!",
+        "presentation": "overhead"
       },
       {
         "player": "... and a lot of piranhas! I can't get the gauge out."
@@ -369,7 +370,8 @@
         "id": "qWEVCU"
       },
       {
-        "player": "Ow!"
+        "player": "Ow!",
+        "presentation": "overhead"
       }
     ],
     "the-pressure-gauge-attempting-to-fill-a-water-container-after-poisoning-the-water": [
@@ -558,10 +560,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "2wle32"
-      },
-      {
-        "type": "unavailable",
-        "id": "ENYUDq"
       }
     ]
   }

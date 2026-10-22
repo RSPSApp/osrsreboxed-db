@@ -265,7 +265,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Please, please, please work."
+                "npc": "Please, please, please work.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -273,7 +274,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'm in the money!"
+                "npc": "I'm in the money!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -281,7 +283,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "I could have sworn that would have worked."
+                "npc": "I could have sworn that would have worked.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -289,7 +292,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Now what should I buy?"
+                "npc": "Now what should I buy?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -297,7 +301,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Hope this item sells well."
+                "npc": "Hope this item sells well.",
+                "presentation": "overhead"
               }
             ]
           }

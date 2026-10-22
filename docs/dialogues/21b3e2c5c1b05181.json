@@ -691,7 +691,8 @@
               {
                 "type": "line",
                 "speaker": "Conrad King",
-                "text": "I'm coming Elizabeth!"
+                "text": "I'm coming Elizabeth!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -706,7 +707,8 @@
               {
                 "type": "line",
                 "speaker": "Conrad King",
-                "text": "I'm coming Elizabeth!"
+                "text": "I'm coming Elizabeth!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -1058,10 +1060,6 @@
         "type": "action",
         "text": "(Non-quest dialogue.)",
         "id": "YoJGbr"
-      },
-      {
-        "type": "unavailable",
-        "id": "F3kyoE"
       }
     ]
   },

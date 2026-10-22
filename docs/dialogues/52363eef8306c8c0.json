@@ -490,8 +490,9 @@
         "npc": "I need you to answer this for me."
       },
       {
-        "type": "unavailable",
-        "id": "gVGgsj"
+        "type": "message",
+        "text": "Otto Godblessed has given you a challenge scroll!",
+        "id": "WYobdj"
       }
     ],
     "treasure-trails-hard-solving-the-challenge": [

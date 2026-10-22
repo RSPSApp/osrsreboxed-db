@@ -9,7 +9,8 @@
           {
             "type": "line",
             "speaker": "Battle mage (Saradomin)",
-            "text": "Hail Saradomin!"
+            "text": "Hail Saradomin!",
+            "presentation": "overhead"
           }
         ],
         "id": "46oDgS"
@@ -21,7 +22,8 @@
           {
             "type": "line",
             "speaker": "Battle mage (Saradomin)",
-            "text": "Feel the wrath of Saradomin."
+            "text": "Feel the wrath of Saradomin.",
+            "presentation": "overhead"
           }
         ],
         "id": "XorHA8"
@@ -35,7 +37,8 @@
           {
             "type": "line",
             "speaker": "Battle mage (Zamorak)",
-            "text": "Hail Zamorak!"
+            "text": "Hail Zamorak!",
+            "presentation": "overhead"
           }
         ],
         "id": "naqO27"
@@ -47,7 +50,8 @@
           {
             "type": "line",
             "speaker": "Battle mage (Zamorak)",
-            "text": "Feel the wrath of Zamorak."
+            "text": "Feel the wrath of Zamorak.",
+            "presentation": "overhead"
           }
         ],
         "id": "6LAtbr"
@@ -61,7 +65,8 @@
           {
             "type": "line",
             "speaker": "Battle mage (Guthix)",
-            "text": "Hail Guthix!"
+            "text": "Hail Guthix!",
+            "presentation": "overhead"
           }
         ],
         "id": "uWWIER"
@@ -73,7 +78,8 @@
           {
             "type": "line",
             "speaker": "Battle mage (Guthix)",
-            "text": "Feel the wrath of Guthix."
+            "text": "Feel the wrath of Guthix.",
+            "presentation": "overhead"
           }
         ],
         "id": "kkNGQC"

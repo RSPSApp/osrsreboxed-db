@@ -2644,7 +2644,8 @@
       {
         "type": "line",
         "speaker": "Lady Keli",
-        "text": "You tricked me, and tied me up, Guards kill this stranger!!"
+        "text": "You tricked me, and tied me up, Guards kill this stranger!!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -2654,7 +2655,8 @@
       {
         "type": "line",
         "speaker": "Jail Guard",
-        "text": "Yes M'lady"
+        "text": "Yes M'lady",
+        "presentation": "overhead"
       }
     ],
     "executing-the-rescue-talking-to-joe-after-rescuing-the-prince": [

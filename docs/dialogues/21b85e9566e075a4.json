@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue": [
       {
-        "npc": "Moo"
+        "npc": "Moo",
+        "presentation": "overhead"
       }
     ]
   }

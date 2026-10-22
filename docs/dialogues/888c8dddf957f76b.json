@@ -9,6 +9,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "[Ore name] in demand!"
               }
             ]
@@ -17,6 +18,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Trading mining rights!"
               }
             ]
@@ -25,6 +27,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Selling 100 crates of rune ore!"
               }
             ]
@@ -33,6 +36,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Selling excess bronze stock!"
               }
             ]
@@ -41,6 +45,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Every 2 iron for 1 coal!"
               }
             ]
@@ -49,6 +54,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Trading [ore name] for gold!"
               }
             ]
@@ -57,6 +63,7 @@
             "text": "Dialogue 7",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "We need more [ore name]!"
               }
             ]
@@ -65,6 +72,7 @@
             "text": "Dialogue 8",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "New territory wanted!"
               }
             ]
@@ -73,6 +81,7 @@
             "text": "Dialogue 9",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Looking for coal!"
               }
             ]
@@ -81,6 +90,7 @@
             "text": "Dialogue 10",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "We're dumping our mithril!"
               }
             ]

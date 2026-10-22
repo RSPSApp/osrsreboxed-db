@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Another recovery? This won't take long..."
+                "npc": "Another recovery? This won't take long...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Need a recovery? One moment please..."
+                "npc": "Need a recovery? One moment please...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Recovery is it? Right, give me a moment..."
+                "npc": "Recovery is it? Right, give me a moment...",
+                "presentation": "overhead"
               }
             ]
           }

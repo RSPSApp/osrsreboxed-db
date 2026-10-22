@@ -3,12 +3,14 @@
   "variants": {
     "upon-entering-the-arena": [
       {
-        "npc": "Drinkies be mine!"
+        "npc": "Drinkies be mine!",
+        "presentation": "overhead"
       }
     ],
     "at-random": [
       {
-        "npc": "Graaaaarg!"
+        "npc": "Graaaaarg!",
+        "presentation": "overhead"
       }
     ]
   }

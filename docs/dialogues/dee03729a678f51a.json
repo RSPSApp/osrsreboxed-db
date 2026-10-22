@@ -12749,7 +12749,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "player": "la-de-da"
+                    "player": "la-de-da",
+                    "presentation": "overhead"
                   },
                   {
                     "type": "jump",
@@ -12762,7 +12763,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "player": "dum-de-dum"
+                    "player": "dum-de-dum",
+                    "presentation": "overhead"
                   },
                   {
                     "type": "jump",
@@ -12775,7 +12777,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "player": "Nice day for it."
+                    "player": "Nice day for it.",
+                    "presentation": "overhead"
                   },
                   {
                     "type": "jump",
@@ -12788,7 +12791,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "player": "(whistles a happy tune)"
+                    "player": "(whistles a happy tune)",
+                    "presentation": "overhead"
                   },
                   {
                     "type": "jump",
@@ -13161,17 +13165,20 @@
           {
             "type": "line",
             "speaker": "Bob, another guard of Falador",
-            "text": "Aaarrrgghhh!!!!"
+            "text": "Aaarrrgghhh!!!!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Billy, a guard of Falador",
-            "text": "NOOOOO!!!!!!!!!"
+            "text": "NOOOOO!!!!!!!!!",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Billy, a guard of Falador",
-            "text": "Why are you doing this?!?"
+            "text": "Why are you doing this?!?",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -13181,7 +13188,8 @@
           {
             "type": "line",
             "speaker": "Billy, a guard of Falador",
-            "text": "Aaarrrgghhh!!!!"
+            "text": "Aaarrrgghhh!!!!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -14342,9 +14350,6 @@
                 "type": "line",
                 "speaker": "Queen Ellamaria",
                 "text": "You wish to know how to use it? Pour it on some normal compost and it will transform into supercompost. You can do this with a bucket of compost, although it is possibly wiser to use it on a full compost bin."
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -14366,17 +14371,10 @@
                 "type": "line",
                 "speaker": "Queen Ellamaria",
                 "text": "Impertinent peasant! Oh, if you promise to leave one alone then feel free to pick fruit from the White Tree. One is told that they are a great natural energy restorative."
-              },
-              {
-                "type": "end"
               }
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "nlpZOV"
       }
     ]
   },

@@ -35,15 +35,18 @@
     ],
     "overhead-dialogue-catching-the-player-trying-to-steal-from-his-crafting-stall": [
       {
-        "npc": "Hey you, hands off that!"
+        "npc": "Hey you, hands off that!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-interacting-with-him-after-stealing-from-his-crafting-stall-recently": [
       {
-        "npc": "Thief! You stole from me!"
+        "npc": "Thief! You stole from me!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards, guards!"
+        "npc": "Guards, guards!",
+        "presentation": "overhead"
       }
     ]
   }

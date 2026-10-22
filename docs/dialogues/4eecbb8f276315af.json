@@ -35,7 +35,8 @@
                 "id": "jChhkV"
               },
               {
-                "player": "Aaarrgghh!"
+                "player": "Aaarrgghh!",
+                "presentation": "overhead"
               },
               {
                 "type": "message",
@@ -168,7 +169,8 @@
     ],
     "standard-dialogue-overhead-dialogue": [
       {
-        "npc": "Hic!"
+        "npc": "Hic!",
+        "presentation": "overhead"
       }
     ]
   }

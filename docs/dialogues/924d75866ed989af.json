@@ -1673,7 +1673,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Anyone lookin' fer work?"
+                "npc": "Anyone lookin' fer work?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1681,7 +1682,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Arr! Looking fer good pirates!"
+                "npc": "Arr! Looking fer good pirates!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1689,7 +1691,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Come join me crew!"
+                "npc": "Come join me crew!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1697,7 +1700,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Don't join them, join us!"
+                "npc": "Don't join them, join us!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1705,7 +1709,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Free(ish) rum fer all!"
+                "npc": "Free(ish) rum fer all!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1713,7 +1718,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Join the winnin' team now!"
+                "npc": "Join the winnin' team now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1721,7 +1727,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Need pirates fer brewin'!"
+                "npc": "Need pirates fer brewin'!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1729,7 +1736,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "Recruiting!"
+                "npc": "Recruiting!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1737,7 +1745,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "Roll up, roll up!"
+                "npc": "Roll up, roll up!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1745,7 +1754,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "We have dental!"
+                "npc": "We have dental!",
+                "presentation": "overhead"
               }
             ]
           }

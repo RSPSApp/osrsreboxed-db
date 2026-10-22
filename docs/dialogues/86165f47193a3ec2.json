@@ -165,8 +165,9 @@
                             "npc": "There you go, finest rope in Gielinor."
                           },
                           {
-                            "type": "unavailable",
-                            "id": "T0Ll6J"
+                            "type": "message",
+                            "text": "You hand Ned 15 coins. Ned gives you a coil of rope.",
+                            "id": "iAbPH4"
                           },
                           {
                             "type": "condition",
@@ -445,8 +446,9 @@
                     "npc": "There you go, finest rope in Gielinor."
                   },
                   {
-                    "type": "unavailable",
-                    "id": "T0Ll6J"
+                    "type": "message",
+                    "text": "You hand Ned 15 coins. Ned gives you a coil of rope.",
+                    "id": "iAbPH4"
                   },
                   {
                     "type": "condition",

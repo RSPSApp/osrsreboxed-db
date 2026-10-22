@@ -735,87 +735,82 @@
         "type": "choice",
         "options": [
           {
-            "text": "Yes, I have them here."
-          }
-        ]
-      },
-      {
-        "player": "Yes, I have them here.",
-        "steps": [
-          {
-            "type": "condition",
-            "text": "If the player has them:",
+            "text": "Yes, I have them here.",
             "steps": [
               {
-                "type": "line",
-                "speaker": "Auguste",
-                "text": "Commendable. If I may have those, I will construct this experiment."
-              },
-              {
-                "type": "action",
-                "text": "Cutscene where the player launches the balloon, a flash mob with pitchforks attack and the balloon burns down.",
-                "id": "MqDt3v"
-              },
-              {
-                "type": "line",
-                "speaker": "Moe",
-                "text": "Destroy the floating thing!"
-              },
-              {
-                "player": "Well, that went down like a lead balloon."
-              },
-              {
-                "type": "end"
+                "player": "Yes, I have them here.",
+                "steps": [
+                  {
+                    "type": "condition",
+                    "text": "If the player has them:",
+                    "steps": [
+                      {
+                        "type": "line",
+                        "speaker": "Auguste",
+                        "text": "Commendable. If I may have those, I will construct this experiment."
+                      },
+                      {
+                        "type": "action",
+                        "text": "Cutscene where the player launches the balloon, a flash mob with pitchforks attack and the balloon burns down.",
+                        "id": "1JQEmc"
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Moe",
+                        "text": "Destroy the floating thing!",
+                        "presentation": "overhead"
+                      },
+                      {
+                        "player": "Well, that went down like a lead balloon."
+                      },
+                      {
+                        "type": "end"
+                      }
+                    ],
+                    "id": "bhVUCf"
+                  },
+                  {
+                    "type": "condition",
+                    "text": "If the player does not have potatoes or enough papyrus:",
+                    "steps": [
+                      {
+                        "type": "line",
+                        "speaker": "Auguste",
+                        "text": "You need a full sack of potatoes and more papyrus."
+                      },
+                      {
+                        "type": "end"
+                      }
+                    ],
+                    "id": "_OGIzV"
+                  },
+                  {
+                    "type": "condition",
+                    "text": "If the player does not have potatoes:",
+                    "steps": [
+                      {
+                        "type": "call",
+                        "branch": "sNnyeN"
+                      }
+                    ],
+                    "id": "e-wFDO"
+                  },
+                  {
+                    "type": "condition",
+                    "text": "If the player does not have enough papyrus:",
+                    "steps": [
+                      {
+                        "type": "line",
+                        "speaker": "Auguste",
+                        "text": "You need more papyrus."
+                      }
+                    ],
+                    "id": "iBZETA"
+                  }
+                ]
               }
-            ],
-            "id": "HqA8Gq"
+            ]
           },
-          {
-            "type": "condition",
-            "text": "If the player does not have potatoes or enough papyrus:",
-            "steps": [
-              {
-                "type": "line",
-                "speaker": "Auguste",
-                "text": "You need a full sack of potatoes and more papyrus."
-              },
-              {
-                "type": "end"
-              }
-            ],
-            "id": "y8uuFQ"
-          },
-          {
-            "type": "condition",
-            "text": "If the player does not have potatoes:",
-            "steps": [
-              {
-                "type": "call",
-                "branch": "sNnyeN"
-              }
-            ],
-            "id": "NbTsCS"
-          },
-          {
-            "type": "condition",
-            "text": "If the player does not have enough papyrus:",
-            "steps": [
-              {
-                "type": "line",
-                "speaker": "Auguste",
-                "text": "You need more papyrus."
-              },
-              {
-                "type": "end"
-              }
-            ],
-            "id": "YB6Lup"
-          }
-        ]
-      },
-      {
-        "type": "choice",
-        "options": [
           {
             "text": "Oh, I've misplaced them.",
             "steps": [
@@ -2362,9 +2357,6 @@
             "steps": [
               {
                 "player": "No."
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -2398,17 +2390,10 @@
                 "type": "line",
                 "speaker": "Auguste",
                 "text": "You can release the balloon and watch it float in the air, just use a tinderbox on it."
-              },
-              {
-                "type": "end"
               }
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "f4w0LP"
       }
     ]
   },

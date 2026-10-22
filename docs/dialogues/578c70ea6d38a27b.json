@@ -3,10 +3,12 @@
   "variants": {
     "standard-dialogue-overhead-dialogue-during-battle": [
       {
-        "npc": "Skreeee!"
+        "npc": "Skreeee!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Kraaaw!"
+        "npc": "Kraaaw!",
+        "presentation": "overhead"
       }
     ]
   }

@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "All praise Saradomin!"
+                "npc": "All praise Saradomin!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Slay the evil ones!"
+                "npc": "Slay the evil ones!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Death to the enemies of the light!"
+                "npc": "Death to the enemies of the light!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Saradomin lend me strength!"
+                "npc": "Saradomin lend me strength!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Saradomin is with us!"
+                "npc": "Saradomin is with us!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Forward! Our allies are with us!"
+                "npc": "Forward! Our allies are with us!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -57,7 +63,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Good will always triumph!"
+                "npc": "Good will always triumph!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -65,7 +72,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "May Saradomin be my sword!"
+                "npc": "May Saradomin be my sword!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -73,7 +81,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "In the name of Saradomin!"
+                "npc": "In the name of Saradomin!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -81,7 +90,8 @@
             "text": "Dialogue 10",
             "steps": [
               {
-                "npc": "Attack! Find the Godsword!"
+                "npc": "Attack! Find the Godsword!",
+                "presentation": "overhead"
               }
             ]
           }

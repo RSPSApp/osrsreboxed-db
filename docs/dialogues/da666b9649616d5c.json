@@ -47,16 +47,20 @@
     ],
     "overhead-dialogue-battling-another-pet-in-the-arena-in-the-menagerie": [
       {
-        "npc": "?"
+        "npc": "?",
+        "presentation": "overhead"
       },
       {
-        "npc": "!"
+        "npc": "!",
+        "presentation": "overhead"
       },
       {
-        "npc": "-#"
+        "npc": "-#",
+        "presentation": "overhead"
       },
       {
-        "npc": "-("
+        "npc": "-(",
+        "presentation": "overhead"
       }
     ]
   }

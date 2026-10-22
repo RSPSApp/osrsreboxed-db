@@ -4548,7 +4548,8 @@
       {
         "type": "line",
         "speaker": "Clodius",
-        "text": "Aha, villain! This is where you fall!"
+        "text": "Aha, villain! This is where you fall!",
+        "presentation": "overhead"
       }
     ],
     "the-stage-attacking-clodius": [
@@ -4558,12 +4559,14 @@
         "id": "-7LlHY"
       },
       {
-        "player": "You're no match for me!"
+        "player": "You're no match for me!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Clodius",
-        "text": "I'm sorry... You'll have to fight alone."
+        "text": "I'm sorry... You'll have to fight alone.",
+        "presentation": "overhead"
       }
     ],
     "the-stage-attacking-naiatli": [
@@ -5031,25 +5034,14 @@
               },
               {
                 "player": "Gulp*"
-              },
-              {
-                "type": "end"
               }
             ]
           },
           {
             "text": "No.",
-            "steps": [
-              {
-                "type": "end"
-              }
-            ]
+            "steps": []
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "z_Roq6"
       }
     ]
   },

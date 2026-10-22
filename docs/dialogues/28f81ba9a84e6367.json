@@ -4581,8 +4581,9 @@
     ],
     "finding-the-lair-searching-evil-chicken-s-nest-after-losing-the-egg": [
       {
-        "type": "unavailable",
-        "id": "hP8K5O"
+        "type": "message",
+        "text": "You take an egg from the Evil Chicken's nest.",
+        "id": "P79f11"
       }
     ],
     "finding-the-lair-rubbing-dragon-token-while-not-in-zanaris-or-lumbridge": [

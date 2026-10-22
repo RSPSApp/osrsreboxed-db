@@ -26,7 +26,8 @@
                   {
                     "type": "line",
                     "speaker": "Cat",
-                    "text": "Meeow Meeeoow!"
+                    "text": "Meeow Meeeoow!",
+                    "presentation": "overhead"
                   },
                   {
                     "npc": "A heroic cat like yours needs a heroic name, don't you think?"

@@ -1879,7 +1879,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Tickets! Tickets!"
+                "npc": "Tickets! Tickets!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1887,7 +1888,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Buy your tickets here!"
+                "npc": "Buy your tickets here!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1895,7 +1897,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Selling tickets!"
+                "npc": "Selling tickets!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -1910,7 +1913,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Ice Mountain carts departing from Track 1!"
+                "npc": "Ice Mountain carts departing from Track 1!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1918,7 +1922,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Grand Exchange carts departing from Track 3!"
+                "npc": "Grand Exchange carts departing from Track 3!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1926,7 +1931,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "White Wolf Mountain carts departing from Track 4!"
+                "npc": "White Wolf Mountain carts departing from Track 4!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1934,7 +1940,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Mind the cart!"
+                "npc": "Mind the cart!",
+                "presentation": "overhead"
               }
             ]
           }

@@ -1,7 +1,8 @@
 {
   "steps": [
     {
-      "npc": "Cheryl where is our crate? We can't leave without our luggage!"
+      "npc": "Cheryl where is our crate? We can't leave without our luggage!",
+      "presentation": "overhead"
     }
   ]
 }

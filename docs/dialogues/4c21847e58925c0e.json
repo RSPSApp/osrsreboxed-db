@@ -21,6 +21,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Mean pair of horns he'd got."
               }
             ]
@@ -29,6 +30,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Got enough leather off 'im for a new carpet."
               }
             ]
@@ -37,6 +39,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Grew to the size of a cart, I swear!"
               }
             ]
@@ -45,6 +48,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "It's not like that these days."
               }
             ]
@@ -53,6 +57,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "'E went MOO MOO MOO all night."
               }
             ]
@@ -61,6 +66,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Never had a year like that since."
               }
             ]
@@ -69,6 +75,7 @@
             "text": "Dialogue 7",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "That prize should've been mine!"
               }
             ]
@@ -77,6 +84,7 @@
             "text": "Dialogue 8",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ol' Hosidius thought we'd need a bigger barn."
               }
             ]
@@ -85,6 +93,7 @@
             "text": "Dialogue 9",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Best bull I ever 'ad."
               }
             ]
@@ -93,6 +102,7 @@
             "text": "Dialogue 11",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I've got a brand new plough!"
               }
             ]
@@ -101,6 +111,7 @@
             "text": "Dialogue 12",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "No-one got so much corn out of one field before."
               }
             ]
@@ -109,6 +120,7 @@
             "text": "Dialogue 13",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Sacks and sacks of grain like you've never seen!"
               }
             ]
@@ -117,6 +129,7 @@
             "text": "Dialogue 14",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Hosidius says we gotta optimise land use. Bleah!"
               }
             ]
@@ -125,6 +138,7 @@
             "text": "Dialogue 15",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Them dwarves won't pay a decent price anymore."
               }
             ]
@@ -133,6 +147,7 @@
             "text": "Dialogue 16",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Best harvest we'd ever 'ad."
               }
             ]
@@ -141,6 +156,7 @@
             "text": "Dialogue 17",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "'Course, the weather were better back then."
               }
             ]
@@ -149,6 +165,7 @@
             "text": "Dialogue 18",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Fed the kids for a year off 'is beef."
               }
             ]
@@ -157,6 +174,7 @@
             "text": "Dialogue 19",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Could 'ave passed for a mammoth."
               }
             ]
@@ -165,6 +183,7 @@
             "text": "Dialogue 20",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ain't no-one ever tipped that bull."
               }
             ]
@@ -173,6 +192,7 @@
             "text": "Dialogue 21",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "You've never seen a bull like 'im."
               }
             ]
@@ -188,6 +208,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Pearls of wisdom!"
               }
             ]
@@ -196,6 +217,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Ah, tell it!"
               }
             ]
@@ -204,6 +226,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Best times ever!"
               }
             ]
@@ -212,6 +235,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Right you are."
               }
             ]
@@ -220,6 +244,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Great days!"
               }
             ]
@@ -228,6 +253,7 @@
             "text": "Dialogue 6",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I'm going to be sick!"
               }
             ]
@@ -236,6 +262,7 @@
             "text": "Dialogue 7",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "You're right."
               }
             ]
@@ -244,6 +271,7 @@
             "text": "Dialogue 8",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "You're so right."
               }
             ]
@@ -252,6 +280,7 @@
             "text": "Dialogue 9",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Those were the days!"
               }
             ]
@@ -260,6 +289,7 @@
             "text": "Dialogue 10",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Not like nowadays."
               }
             ]

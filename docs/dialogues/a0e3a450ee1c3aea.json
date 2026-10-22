@@ -793,8 +793,9 @@
     ],
     "infiltrating-the-mourner-hq-talking-to-sickest-mourner-upstairs-when-the-sickest-mourner-dies": [
       {
-        "type": "unavailable",
-        "id": "KcPYUM"
+        "type": "message",
+        "text": "The mourner drops a key as he dies.",
+        "id": "MDhZ7U"
       }
     ],
     "infiltrating-the-mourner-hq-talking-to-sickest-mourner-upstairs-talking-to-sickest-mourner-again-while-holding-the-key": [
@@ -1241,8 +1242,9 @@
                     "text": "Okay, here you go."
                   },
                   {
-                    "type": "unavailable",
-                    "id": "nHJ8i6"
+                    "type": "message",
+                    "text": "The chemist gives you some touch paper.",
+                    "id": "9S8xcG"
                   },
                   {
                     "type": "line",
@@ -1760,8 +1762,10 @@
                 "text": "Well, there's no pleasing some people. Here's your cut anyway."
               },
               {
-                "type": "unavailable",
-                "id": "LC4udY"
+                "type": "action",
+                "action": "receive",
+                "text": "10 coins",
+                "id": "dzf0rc"
               }
             ]
           },
@@ -1777,8 +1781,10 @@
                 "text": "Ignorance is bliss I'm afraid. Here's your cut anyway."
               },
               {
-                "type": "unavailable",
-                "id": "VgegGx"
+                "type": "action",
+                "action": "receive",
+                "text": "10 coins",
+                "id": "D3bNsS"
               }
             ]
           }
@@ -2749,13 +2755,6 @@
       },
       {
         "player": "Good for you."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "5YLcuY"
       }
     ]
   },

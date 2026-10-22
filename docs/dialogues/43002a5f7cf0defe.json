@@ -3,7 +3,8 @@
   "variants": {
     "when-spawned-or-regenerated": [
       {
-        "npc": "Urrrrr..."
+        "npc": "Urrrrr...",
+        "presentation": "overhead"
       }
     ]
   }

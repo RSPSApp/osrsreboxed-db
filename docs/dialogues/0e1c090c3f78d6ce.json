@@ -2072,95 +2072,91 @@
         "text": "Hello, [player name]. You'd better get moving. Ranis will be starting his speech soon."
       },
       {
-        "type": "unavailable",
-        "steps": [
+        "type": "choice",
+        "options": [
           {
-            "type": "line",
-            "speaker": "Vertida Sefalatis",
-            "text": "Well I have made a few more. I suppose I could let you have one. I'll have to charge you though, some of this stuff isn't easy to get hold of."
-          },
-          {
-            "player": "How much?"
-          },
-          {
-            "type": "line",
-            "speaker": "Vertida Sefalatis",
-            "text": "20,000 coins should do it."
-          },
-          {
-            "type": "choice",
-            "prompt": "Buy an Ivandis Flail for 20,000 coins?",
-            "options": [
-              {
-                "text": "Yes.",
-                "steps": [
-                  {
-                    "player": "Sounds good to me. I'll take it."
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Vertida Sefalatis",
-                    "text": "Here you go. Put it to good use"
-                  },
-                  {
-                    "type": "condition",
-                    "text": "If the player's inventory is full:",
-                    "steps": [
-                      {
-                        "type": "line",
-                        "speaker": "Vertida Sefalatis",
-                        "text": "I'm afraid you don't have enough room for it. Come back when you do."
-                      }
-                    ],
-                    "id": "Atteou"
-                  },
-                  {
-                    "type": "end"
-                  }
-                ]
-              },
-              {
-                "text": "No."
-              }
-            ]
-          },
-          {
-            "type": "condition",
-            "text": "If the player has enough coins:",
+            "text": "I need another flail.",
             "steps": [
               {
-                "player": "That's a bit too much for me. I guess I'll make myself another one instead."
+                "type": "line",
+                "speaker": "Vertida Sefalatis",
+                "text": "Well I have made a few more. I suppose I could let you have one. I'll have to charge you though, some of this stuff isn't easy to get hold of."
               },
               {
-                "type": "end"
-              }
-            ],
-            "id": "Daicok"
-          },
-          {
-            "type": "condition",
-            "text": "If the player doesn't have enough coins:",
-            "steps": [
-              {
-                "player": "I don't have that much on me."
+                "player": "How much?"
               },
               {
                 "type": "line",
                 "speaker": "Vertida Sefalatis",
-                "text": "I'll be here when you do."
+                "text": "20,000 coins should do it."
               },
               {
-                "type": "end"
+                "type": "choice",
+                "prompt": "Buy an Ivandis Flail for 20,000 coins?",
+                "options": [
+                  {
+                    "text": "Yes.",
+                    "steps": [
+                      {
+                        "player": "Sounds good to me. I'll take it."
+                      },
+                      {
+                        "type": "line",
+                        "speaker": "Vertida Sefalatis",
+                        "text": "Here you go. Put it to good use"
+                      },
+                      {
+                        "type": "condition",
+                        "text": "If the player's inventory is full:",
+                        "steps": [
+                          {
+                            "type": "line",
+                            "speaker": "Vertida Sefalatis",
+                            "text": "I'm afraid you don't have enough room for it. Come back when you do."
+                          }
+                        ],
+                        "id": "dW0APH"
+                      },
+                      {
+                        "type": "end"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "No."
+                  }
+                ]
+              },
+              {
+                "type": "condition",
+                "text": "If the player has enough coins:",
+                "steps": [
+                  {
+                    "player": "That's a bit too much for me. I guess I'll make myself another one instead."
+                  },
+                  {
+                    "type": "end"
+                  }
+                ],
+                "id": "TDOJYA"
+              },
+              {
+                "type": "condition",
+                "text": "If the player doesn't have enough coins:",
+                "steps": [
+                  {
+                    "player": "I don't have that much on me."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Vertida Sefalatis",
+                    "text": "I'll be here when you do."
+                  }
+                ],
+                "id": "oZcD9-"
               }
-            ],
-            "id": "YRtwWI"
-          }
-        ],
-        "id": "w9HqDt"
-      },
-      {
-        "type": "choice",
-        "options": [
+            ]
+          },
           {
             "text": "Goodbye.",
             "steps": [
@@ -2308,7 +2304,8 @@
       {
         "type": "line",
         "speaker": "Ranis Drakan",
-        "text": "Guards!"
+        "text": "Guards!",
+        "presentation": "overhead"
       }
     ],
     "the-taste-of-hope-the-fight-with-ranis-after-killing-a-vyrewatch": [
@@ -2327,7 +2324,8 @@
       {
         "type": "line",
         "speaker": "Ranis Drakan",
-        "text": "Guards!"
+        "text": "Guards!",
+        "presentation": "overhead"
       }
     ],
     "the-taste-of-hope-the-fight-with-ranis-after-killing-the-final-vyrewatch": [
@@ -2488,8 +2486,13 @@
             "steps": [
               {
                 "type": "jump",
-                "reference": "above",
-                "id": "CCXm5G"
+                "id": "CCXm5G",
+                "steps": [
+                  {
+                    "type": "call",
+                    "branch": "jump-376d0e0a3ca4ab64"
+                  }
+                ]
               }
             ]
           },
@@ -2520,10 +2523,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "4unz2S"
-      },
-      {
-        "type": "unavailable",
-        "id": "bQ7MeV"
       }
     ]
   },
@@ -2754,6 +2753,89 @@
       },
       {
         "type": "end"
+      }
+    ],
+    "jump-376d0e0a3ca4ab64": [
+      {
+        "type": "line",
+        "speaker": "Vertida Sefalatis",
+        "text": "Well I have made a few more. I suppose I could let you have one. I'll have to charge you though, some of this stuff isn't easy to get hold of."
+      },
+      {
+        "player": "How much?"
+      },
+      {
+        "type": "line",
+        "speaker": "Vertida Sefalatis",
+        "text": "20,000 coins should do it."
+      },
+      {
+        "type": "choice",
+        "prompt": "Buy an Ivandis Flail for 20,000 coins?",
+        "options": [
+          {
+            "text": "Yes.",
+            "steps": [
+              {
+                "player": "Sounds good to me. I'll take it."
+              },
+              {
+                "type": "line",
+                "speaker": "Vertida Sefalatis",
+                "text": "Here you go. Put it to good use"
+              },
+              {
+                "type": "condition",
+                "text": "If the player's inventory is full:",
+                "steps": [
+                  {
+                    "type": "line",
+                    "speaker": "Vertida Sefalatis",
+                    "text": "I'm afraid you don't have enough room for it. Come back when you do."
+                  }
+                ],
+                "id": "dW0APH"
+              },
+              {
+                "type": "end"
+              }
+            ]
+          },
+          {
+            "text": "No."
+          }
+        ]
+      },
+      {
+        "type": "condition",
+        "text": "If the player has enough coins:",
+        "steps": [
+          {
+            "player": "That's a bit too much for me. I guess I'll make myself another one instead."
+          },
+          {
+            "type": "end"
+          }
+        ],
+        "id": "TDOJYA"
+      },
+      {
+        "type": "condition",
+        "text": "If the player doesn't have enough coins:",
+        "steps": [
+          {
+            "player": "I don't have that much on me."
+          },
+          {
+            "type": "line",
+            "speaker": "Vertida Sefalatis",
+            "text": "I'll be here when you do."
+          },
+          {
+            "type": "end"
+          }
+        ],
+        "id": "oZcD9-"
       }
     ]
   }

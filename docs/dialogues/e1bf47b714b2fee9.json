@@ -1926,9 +1926,6 @@
                 "type": "message",
                 "text": "Johnathon takes your gauntlets from you, and begins a low chant over them. You see them begin to glow and sparkle, before he returns them to you.",
                 "id": "oicU8Z"
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -1942,17 +1939,10 @@
                 "type": "line",
                 "speaker": "Johnathon",
                 "text": "I doubt they will offer anything as useful as my magical boost, but as you wish."
-              },
-              {
-                "type": "end"
               }
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "8W_Fb5"
       }
     ]
   },

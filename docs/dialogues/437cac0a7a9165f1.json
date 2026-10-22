@@ -214,15 +214,18 @@
     ],
     "overhead-dialogue-catching-the-player-trying-to-steal-from-his-crossbow-stall": [
       {
-        "npc": "Hey! Get your hands off there!"
+        "npc": "Hey! Get your hands off there!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-interacting-with-him-after-stealing-from-his-crossbow-stall-recently": [
       {
-        "npc": "Halt, thief!"
+        "npc": "Halt, thief!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards, catch that thief!"
+        "npc": "Guards, catch that thief!",
+        "presentation": "overhead"
       }
     ]
   },

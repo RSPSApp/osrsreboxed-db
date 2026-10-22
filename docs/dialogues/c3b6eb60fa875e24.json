@@ -327,7 +327,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Life isn't fair, that doesn't mean you can't win."
+                "npc": "Life isn't fair, that doesn't mean you can't win.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -335,7 +336,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Be master of your mind rather than mastered by your mind."
+                "npc": "Be master of your mind rather than mastered by your mind.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -343,7 +345,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "A reflection on a pool of water does not reveal its depth."
+                "npc": "A reflection on a pool of water does not reveal its depth.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -351,7 +354,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "When you aim for perfection, you discover it's a moving target."
+                "npc": "When you aim for perfection, you discover it's a moving target.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -359,7 +363,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "He who speaks in anger makes his anger heard, but his words forgotten."
+                "npc": "He who speaks in anger makes his anger heard, but his words forgotten.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -367,7 +372,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Patience and persistence can bring down the tallest trees."
+                "npc": "Patience and persistence can bring down the tallest trees.",
+                "presentation": "overhead"
               }
             ]
           }

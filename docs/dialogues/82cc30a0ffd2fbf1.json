@@ -194,8 +194,9 @@
                         "player": "Yes, please."
                       },
                       {
-                        "type": "unavailable",
-                        "id": "hqkzqF"
+                        "type": "message",
+                        "text": "You hand over Bryophyta's essence and 50,000 coins to Zaff.",
+                        "id": "erQonm"
                       },
                       {
                         "npc": "Thank you, here you go. I'm not sure what it does, but it feels pretty magical."

@@ -28,7 +28,8 @@
                       {
                         "type": "line",
                         "speaker": "[current leech name]",
-                        "text": "noms [item name]*"
+                        "text": "noms [item name]*",
+                        "presentation": "overhead"
                       }
                     ]
                   }

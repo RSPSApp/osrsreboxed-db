@@ -44,7 +44,8 @@
             "text": "Dialogue 1:",
             "steps": [
               {
-                "npc": "[player name]?"
+                "npc": "[player name]?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -52,7 +53,8 @@
             "text": "Dialogue 2:",
             "steps": [
               {
-                "npc": "Are you there [player name]?"
+                "npc": "Are you there [player name]?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -60,7 +62,8 @@
             "text": "Dialogue 3:",
             "steps": [
               {
-                "npc": "[player name]? I have a message for you."
+                "npc": "[player name]? I have a message for you.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -68,7 +71,8 @@
             "text": "Dialogue 4:",
             "steps": [
               {
-                "npc": "[player name]? You've been sent a message."
+                "npc": "[player name]? You've been sent a message.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -79,7 +83,8 @@
         "text": "If the player ignores them for too long:",
         "steps": [
           {
-            "npc": "Maybe another time."
+            "npc": "Maybe another time.",
+            "presentation": "overhead"
           }
         ],
         "id": "Kgc9fI"

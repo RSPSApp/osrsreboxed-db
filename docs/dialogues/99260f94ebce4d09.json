@@ -999,7 +999,8 @@
       {
         "type": "line",
         "speaker": "Dagannoth mother",
-        "text": "Krrrrrrk"
+        "text": "Krrrrrrk",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -1011,7 +1012,8 @@
       {
         "type": "line",
         "speaker": "Dagannoth mother",
-        "text": "Chkhkhkhkhk"
+        "text": "Chkhkhkhkhk",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -1023,7 +1025,8 @@
       {
         "type": "line",
         "speaker": "Dagannoth mother",
-        "text": "Krrrrrrssssssss"
+        "text": "Krrrrrrssssssss",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -1035,7 +1038,8 @@
       {
         "type": "line",
         "speaker": "Dagannoth mother",
-        "text": "Sssssrrrkkkkk"
+        "text": "Sssssrrrkkkkk",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -1047,7 +1051,8 @@
       {
         "type": "line",
         "speaker": "Dagannoth mother",
-        "text": "Krkrkrkrkrkrkrkr"
+        "text": "Krkrkrkrkrkrkrkr",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -1059,7 +1064,8 @@
       {
         "type": "line",
         "speaker": "Dagannoth mother",
-        "text": "Tktktktktktkt"
+        "text": "Tktktktktktkt",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -1097,13 +1103,6 @@
         "type": "line",
         "speaker": "Jossik",
         "text": "Bring it to my library, it looks familiar somehow..."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "Tn0jWx"
       }
     ]
   },

@@ -6,29 +6,25 @@
         "player": "What's going on?"
       },
       {
-        "type": "unavailable",
-        "id": "5JZjta"
+        "npc": "Ah, we be building this 'ere tower. Lookin' good ain't it?"
       },
       {
         "player": "It does look pretty impressive, but what are you doing hanging around?"
       },
       {
-        "type": "unavailable",
-        "id": "v9St9k"
+        "npc": "Tea break, naturally."
       },
       {
         "player": "Naturally. Not sure why I asked."
       },
       {
-        "type": "unavailable",
-        "id": "QsmaHs"
+        "npc": "Fancy some?"
       },
       {
         "player": "Tea? Sure."
       },
       {
-        "type": "unavailable",
-        "id": "io9hJA"
+        "npc": "You'll find a kettle in the box to the-"
       },
       {
         "player": "Erm...yeah...no...sorry...gotta go."
@@ -227,8 +223,7 @@
         "text": "Player has Hard hat in bank:",
         "steps": [
           {
-            "type": "unavailable",
-            "id": "q89piU"
+            "npc": "Thank you - just as nice as the one in your bank!"
           },
           {
             "type": "end"

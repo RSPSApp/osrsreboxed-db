@@ -3434,12 +3434,14 @@
       {
         "type": "line",
         "speaker": "Villager",
-        "text": "I know your tricks, thief."
+        "text": "I know your tricks, thief.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Villager",
-        "text": "You won't get my purse."
+        "text": "You won't get my purse.",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -3557,12 +3559,14 @@
       {
         "type": "line",
         "speaker": "Street urchin",
-        "text": "Hey you, camel features! Come here."
+        "text": "Hey you, camel features! Come here.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Villager",
-        "text": "Excuse me?"
+        "text": "Excuse me?",
+        "presentation": "overhead"
       }
     ],
     "pickpocketing-part-three-talking-to-a-street-urchin-first-time-after-the-distraction": [
@@ -3726,22 +3730,26 @@
           {
             "type": "line",
             "speaker": "Street urchin",
-            "text": "Hey you, camel features! Come here."
+            "text": "Hey you, camel features! Come here.",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Villager",
-            "text": "I know your game guttersnipe."
+            "text": "I know your game guttersnipe.",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Street urchin",
-            "text": "???"
+            "text": "???",
+            "presentation": "overhead"
           },
           {
             "type": "line",
             "speaker": "Villager",
-            "text": "You won't fool anyone with that trick again."
+            "text": "You won't fool anyone with that trick again.",
+            "presentation": "overhead"
           },
           {
             "type": "jump",
@@ -4169,7 +4177,8 @@
         "text": "Otherwise:",
         "steps": [
           {
-            "player": "I better be careful, this cactus is prickly!"
+            "player": "I better be careful, this cactus is prickly!",
+            "presentation": "overhead"
           }
         ],
         "id": "3PO7Fj"
@@ -5261,19 +5270,22 @@
       {
         "type": "line",
         "speaker": "Menaphite Leader",
-        "text": "Guards!"
+        "text": "Guards!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Tough Guy",
-        "text": "Grr!"
+        "text": "Grr!",
+        "presentation": "overhead"
       }
     ],
     "meeting-the-leader-after-defeating-the-tough-guy": [
       {
         "type": "line",
         "speaker": "Menaphite Leader",
-        "text": "You haven't seen the last of me!"
+        "text": "You haven't seen the last of me!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -5607,7 +5619,8 @@
       {
         "type": "line",
         "speaker": "Bandit champion",
-        "text": "Grrr"
+        "text": "Grrr",
+        "presentation": "overhead"
       }
     ],
     "running-the-bandits-out-of-town-talking-to-the-bandit-leader-again": [
@@ -5619,12 +5632,14 @@
       {
         "type": "line",
         "speaker": "Bandit Leader",
-        "text": "Ali, come here!"
+        "text": "Ali, come here!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Bandit champion",
-        "text": "Grrr"
+        "text": "Grrr",
+        "presentation": "overhead"
       }
     ],
     "running-the-bandits-out-of-town-upon-defeating-the-bandit-champion": [
@@ -6187,10 +6202,6 @@
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "lx--99"
       }
     ]
   },

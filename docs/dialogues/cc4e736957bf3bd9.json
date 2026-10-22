@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue-upon-spawning": [
       {
-        "npc": "I expect you to die!"
+        "npc": "I expect you to die!",
+        "presentation": "overhead"
       }
     ]
   }

@@ -192,7 +192,8 @@
     ],
     "temple-trekking-dialogue-when-a-piece-of-acceptable-food-is-used-on-them-and-they-are-not-full-health": [
       {
-        "npc": "Thanks, I'll get this down my neck."
+        "npc": "Thanks, I'll get this down my neck.",
+        "presentation": "overhead"
       }
     ],
     "temple-trekking-dialogue-bridge-event": [

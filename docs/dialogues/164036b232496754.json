@@ -93,25 +93,29 @@
                 "npc": "YYEEEEEAAARRRRGGHHHH!!!"
               },
               {
+                "npc": "YYEEEEEAAARRRRGGHHHH!!!",
+                "presentation": "overhead"
+              },
+              {
+                "player": "Yyeeeeeaaarrrrgghhhh!!!"
+              },
+              {
+                "player": "Yyeeeeeaaarrrrgghhhh!!!",
+                "presentation": "overhead"
+              },
+              {
                 "npc": "YYEEEEEAAARRRRGGHHHH!!!"
               },
               {
-                "player": "Yyeeeeeaaarrrrgghhhh!!!"
+                "npc": "YYEEEEEAAARRRRGGHHHH!!!",
+                "presentation": "overhead"
               },
               {
                 "player": "Yyeeeeeaaarrrrgghhhh!!!"
               },
               {
-                "npc": "YYEEEEEAAARRRRGGHHHH!!!"
-              },
-              {
-                "npc": "YYEEEEEAAARRRRGGHHHH!!!"
-              },
-              {
-                "player": "Yyeeeeeaaarrrrgghhhh!!!"
-              },
-              {
-                "player": "Yyeeeeeaaarrrrgghhhh!!!"
+                "player": "Yyeeeeeaaarrrrgghhhh!!!",
+                "presentation": "overhead"
               },
               {
                 "npc": "Ha ha ha! Little [player name] cannot yell like barbarian. Also, I strong barbarian woman; I get my own drink. Run away now, little [player name]."
@@ -150,7 +154,8 @@
         "id": "l3MXi-"
       },
       {
-        "npc": "Oi - That's ours!"
+        "npc": "Oi - That's ours!",
+        "presentation": "overhead"
       },
       {
         "type": "action",

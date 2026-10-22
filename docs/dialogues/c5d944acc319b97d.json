@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue-when-spoken-to": [
       {
-        "npc": "Hey leave me alone, can't you see that I'm busy?"
+        "npc": "Hey leave me alone, can't you see that I'm busy?",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-regular-slaves-in-the-underground-mine": [
@@ -14,7 +15,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Oohh, my arms."
+                "npc": "Oohh, my arms.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -22,7 +24,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Work, work, work, that's all I ever do."
+                "npc": "Work, work, work, that's all I ever do.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -30,7 +33,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "I feel so weak, I could faint."
+                "npc": "I feel so weak, I could faint.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -38,7 +42,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "I'm so tired, I could sleep standing up."
+                "npc": "I'm so tired, I could sleep standing up.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -46,7 +51,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "What I wouldn't give for a good night's rest."
+                "npc": "What I wouldn't give for a good night's rest.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -54,7 +60,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Ooh, my back."
+                "npc": "Ooh, my back.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -62,7 +69,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "I'm rich in experience, poor in wealth."
+                "npc": "I'm rich in experience, poor in wealth.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -70,7 +78,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "I can't think straight I'm so tired."
+                "npc": "I can't think straight I'm so tired.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -78,7 +87,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "I'm sick of this place."
+                "npc": "I'm sick of this place.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -93,7 +103,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Beware the rowdies, they're spoiling for a fight."
+                "npc": "Beware the rowdies, they're spoiling for a fight.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -101,7 +112,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "One day I'm gonna get out of here."
+                "npc": "One day I'm gonna get out of here.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -109,7 +121,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "I need a new pick axe."
+                "npc": "I need a new pick axe.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -117,7 +130,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Work, work work, that's all I ever do!"
+                "npc": "Work, work work, that's all I ever do!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -125,7 +139,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Good luck to ya, you're gonna need it."
+                "npc": "Good luck to ya, you're gonna need it.",
+                "presentation": "overhead"
               }
             ]
           }

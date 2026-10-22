@@ -544,7 +544,8 @@
             "id": "h_YxQH"
           },
           {
-            "player": "Ouch"
+            "player": "Ouch",
+            "presentation": "overhead"
           }
         ],
         "id": "iH8IJm"
@@ -729,7 +730,8 @@
               {
                 "type": "line",
                 "speaker": "Twig",
-                "text": "What do you think you're doing?"
+                "text": "What do you think you're doing?",
+                "presentation": "overhead"
               },
               {
                 "type": "end"
@@ -785,7 +787,8 @@
               {
                 "type": "line",
                 "speaker": "Berry",
-                "text": "What do you think you're doing?"
+                "text": "What do you think you're doing?",
+                "presentation": "overhead"
               },
               {
                 "type": "end"
@@ -900,13 +903,6 @@
         "action": "receive",
         "text": "a Law talisman",
         "id": "GT_EpY"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "UqqAHb"
       }
     ]
   },

@@ -735,31 +735,40 @@
     ],
     "overhead-dialogue": [
       {
-        "npc": "Somebody refuel the stove!"
+        "npc": "Somebody refuel the stove!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Somebody fix that pipe!"
+        "npc": "Somebody fix that pipe!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Somebody work the conveyer belt!"
+        "npc": "Somebody work the conveyer belt!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Somebody fix the conveyer belt!"
+        "npc": "Somebody fix the conveyer belt!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Somebody operate the pump!"
+        "npc": "Somebody operate the pump!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Keep the temperature controlled."
+        "npc": "Keep the temperature controlled.",
+        "presentation": "overhead"
       },
       {
-        "npc": "That's it, keep it going!"
+        "npc": "That's it, keep it going!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Work faster!"
+        "npc": "Work faster!",
+        "presentation": "overhead"
       },
       {
-        "npc": "You fools, you let it overheat!"
+        "npc": "You fools, you let it overheat!",
+        "presentation": "overhead"
       }
     ]
   },

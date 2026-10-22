@@ -38,7 +38,8 @@
     ],
     "standard-dialogue-if-the-player-has-recently-stolen-from-their-stall": [
       {
-        "npc": "You're the one who stole from me! Guards! Guards!"
+        "npc": "You're the one who stole from me! Guards! Guards!",
+        "presentation": "overhead"
       }
     ]
   }

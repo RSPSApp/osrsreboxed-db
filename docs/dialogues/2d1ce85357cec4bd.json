@@ -25,7 +25,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Oi!"
+                "npc": "Oi!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +34,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Rahr!"
+                "npc": "Rahr!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +43,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "No!"
+                "npc": "No!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +52,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Grr!"
+                "npc": "Grr!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -64,7 +68,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Aargh!"
+                "npc": "Aargh!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -72,7 +77,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I'm a gonner!"
+                "npc": "I'm a gonner!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -80,7 +86,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "It's no use, I'm done for!"
+                "npc": "It's no use, I'm done for!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -88,7 +95,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Uggh!"
+                "npc": "Uggh!",
+                "presentation": "overhead"
               }
             ]
           }

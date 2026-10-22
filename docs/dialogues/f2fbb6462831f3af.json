@@ -200,8 +200,14 @@
                         "id": "I5aj1j"
                       },
                       {
-                        "type": "unavailable",
-                        "id": "O_MY-J"
+                        "type": "jump",
+                        "id": "7LSs3T",
+                        "steps": [
+                          {
+                            "type": "call",
+                            "branch": "jump-ad520890f56985c2"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -768,6 +774,60 @@
           }
         ],
         "id": "hCMMe-"
+      }
+    ],
+    "jump-ad520890f56985c2": [
+      {
+        "type": "choice",
+        "options": [
+          {
+            "text": "I'd like another one.",
+            "steps": [
+              {
+                "player": "I'd like another one."
+              },
+              {
+                "type": "condition",
+                "text": "If the player has no inventory space:",
+                "steps": [
+                  {
+                    "npc": "I'm afraid you don't have space to take it."
+                  },
+                  {
+                    "type": "end"
+                  }
+                ],
+                "id": "V5iQN8"
+              },
+              {
+                "type": "message",
+                "text": "Larxus hands you the cape of Leon d'Cour.",
+                "id": "I5aj1j"
+              },
+              {
+                "type": "jump",
+                "id": "7LSs3T",
+                "steps": [
+                  {
+                    "type": "call",
+                    "branch": "jump-ad520890f56985c2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Thank you, and goodbye.",
+            "steps": [
+              {
+                "player": "Thank you, and goodbye."
+              },
+              {
+                "type": "end"
+              }
+            ]
+          }
+        ]
       }
     ],
     "jump-e2aabe5a7d282831": [

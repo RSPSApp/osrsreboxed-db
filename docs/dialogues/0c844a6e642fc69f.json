@@ -469,7 +469,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Hmm..."
+                "npc": "Hmm...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -477,7 +478,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "I wonder..."
+                "npc": "I wonder...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -485,7 +487,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "That's funny..."
+                "npc": "That's funny...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -493,7 +496,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "What if I..."
+                "npc": "What if I...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -501,7 +505,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "No, that's not right..."
+                "npc": "No, that's not right...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -509,7 +514,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "But that means..."
+                "npc": "But that means...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -517,7 +523,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Aha!"
+                "npc": "Aha!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -525,7 +532,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "Ah! I was wrong about it all along!"
+                "npc": "Ah! I was wrong about it all along!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -533,7 +541,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "I wonder what happens if..."
+                "npc": "I wonder what happens if...",
+                "presentation": "overhead"
               }
             ]
           }

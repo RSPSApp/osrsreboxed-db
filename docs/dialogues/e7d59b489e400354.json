@@ -386,7 +386,8 @@
               {
                 "type": "line",
                 "speaker": "Mord Gunnars",
-                "text": "Bye"
+                "text": "Bye",
+                "presentation": "overhead"
               }
             ]
           }
@@ -461,7 +462,8 @@
                       {
                         "type": "line",
                         "speaker": "Mord Gunnars",
-                        "text": "Bye!"
+                        "text": "Bye!",
+                        "presentation": "overhead"
                       }
                     ]
                   }
@@ -1703,7 +1705,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "PxCPs9"
+                "branch": "yxG7Ar"
               }
             ]
           }
@@ -2445,7 +2447,8 @@
             "id": "XA0BKe"
           },
           {
-            "player": "Let me entertain you!"
+            "player": "Let me entertain you!",
+            "presentation": "overhead"
           }
         ],
         "id": "PPEKkE"
@@ -2455,32 +2458,38 @@
       {
         "type": "line",
         "speaker": "Mawnis Burowgar",
-        "text": "Talk, fool"
+        "text": "Talk, fool",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Mawnis Burowgar",
-        "text": "Dance, fool"
+        "text": "Dance, fool",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Mawnis Burowgar",
-        "text": "Juggle, fool"
+        "text": "Juggle, fool",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Mawnis Burowgar",
-        "text": "Skip, fool"
+        "text": "Skip, fool",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Mawnis Burowgar",
-        "text": "Pie in your face"
+        "text": "Pie in your face",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Mawnis Burowgar",
-        "text": "Jig, you fool"
+        "text": "Jig, you fool",
+        "presentation": "overhead"
       },
       {
         "type": "missing",
@@ -2491,111 +2500,132 @@
       {
         "type": "line",
         "speaker": "Honour guard",
-        "text": "Och..."
+        "text": "Och...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Honour guard",
-        "text": "The jester's not bad."
+        "text": "The jester's not bad.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Honour guard",
-        "text": "What was in that bottle you found?"
+        "text": "What was in that bottle you found?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Honour guard",
-        "text": "The bottle had a paper hat in it."
+        "text": "The bottle had a paper hat in it.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Honour guard",
-        "text": "Go on, drop it!"
+        "text": "Go on, drop it!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Honour guard",
-        "text": "I wonder what's for dinner?"
+        "text": "I wonder what's for dinner?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Honour guard",
-        "text": "Fancy a pint at the Yellow Hind later?"
+        "text": "Fancy a pint at the Yellow Hind later?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Honour guard",
-        "text": "I have seen better jesters."
+        "text": "I have seen better jesters.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Honour guard",
-        "text": "Coming over for a game of cards later?"
+        "text": "Coming over for a game of cards later?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Honour guard",
-        "text": "Is your helmet chafing?"
+        "text": "Is your helmet chafing?",
+        "presentation": "overhead"
       }
     ],
     "your-mission-should-you-choose-to-accept-it-performing-for-the-burgher-friedleif-and-thakkrad-s-plans": [
       {
         "type": "line",
         "speaker": "Fridleif Shieldson",
-        "text": "When do we assault the caves?"
+        "text": "When do we assault the caves?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Thakkrad Sigmundson",
-        "text": "I can be ready in two days."
+        "text": "I can be ready in two days.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fridleif Shieldson",
-        "text": "Good, my recruits are nearly ready"
+        "text": "Good, my recruits are nearly ready",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Thakkrad Sigmundson",
-        "text": "How many militia have you trained?"
+        "text": "How many militia have you trained?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fridleif Shieldson",
-        "text": "Seventeen, so far"
+        "text": "Seventeen, so far",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Thakkrad Sigmundson",
-        "text": "More shields will be completed by noon."
+        "text": "More shields will be completed by noon.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fridleif Shieldson",
-        "text": "And the armour?"
+        "text": "And the armour?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Thakkrad Sigmundson",
-        "text": "I will finish their armour tomorrow"
+        "text": "I will finish their armour tomorrow",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fridleif Shieldson",
-        "text": "And the two bridges we need repaired?"
+        "text": "And the two bridges we need repaired?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Thakkrad Sigmundson",
-        "text": "I will fix them as soon as I can."
+        "text": "I will fix them as soon as I can.",
+        "presentation": "overhead"
       }
     ],
     "your-mission-should-you-choose-to-accept-it-performing-for-the-burgher-failing-or-doing-nothing": [
       {
         "type": "line",
         "speaker": "Mawnis Burowgar",
-        "text": "Useless fool! Return when you routine is more polished!"
+        "text": "Useless fool! Return when you routine is more polished!",
+        "presentation": "overhead"
       }
     ],
     "your-mission-should-you-choose-to-accept-it-performing-for-the-burgher-after-a-successful-performance": [
@@ -3015,7 +3045,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "PxCPs9"
+                "branch": "yxG7Ar"
               }
             ]
           }
@@ -6249,52 +6279,62 @@
       {
         "type": "line",
         "speaker": "Fridleif Shieldson",
-        "text": "So what do you think of the Burgher's Champion?"
+        "text": "So what do you think of the Burgher's Champion?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Thakkrad Sigmundson",
-        "text": "[He/She] seems honourable and courageous to me."
+        "text": "[He/She] seems honourable and courageous to me.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fridleif Shieldson",
-        "text": "What about their collaboration with King Sorvott?"
+        "text": "What about their collaboration with King Sorvott?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Thakkrad Sigmundson",
-        "text": "Well I trust Mord Gunnars, and he works for the King."
+        "text": "Well I trust Mord Gunnars, and he works for the King.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fridleif Shieldson",
-        "text": "And the Champion did help repair your bridges."
+        "text": "And the Champion did help repair your bridges.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Thakkrad Sigmundson",
-        "text": "Yes, well. So are your militia ready?"
+        "text": "Yes, well. So are your militia ready?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fridleif Shieldson",
-        "text": "I have them anchored near Etceteria."
+        "text": "I have them anchored near Etceteria.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Thakkrad Sigmundson",
-        "text": "Then I shall sail the potions to them tonight."
+        "text": "Then I shall sail the potions to them tonight.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fridleif Shieldson",
-        "text": "Then we are ready to launch our raid at dawn?"
+        "text": "Then we are ready to launch our raid at dawn?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Thakkrad Sigmundson",
-        "text": "Absolutely. Long live Burgher Burowgar"
+        "text": "Absolutely. Long live Burgher Burowgar",
+        "presentation": "overhead"
       }
     ],
     "jestering-again-performing-for-the-burgher-again-after-a-successful-performance": [
@@ -6472,17 +6512,19 @@
             ]
           },
           {
-            "text": "No, I need to make a fool of myself again."
+            "text": "No, I need to make a fool of myself again.",
+            "steps": [
+              {
+                "player": "No, I need to make a fool of myself again."
+              },
+              {
+                "type": "line",
+                "speaker": "Slug Hemligssen",
+                "text": "Please pay more attention to what the Burgher's advisors say this time. Are you ready?"
+              }
+            ]
           }
         ]
-      },
-      {
-        "player": "No, I need to make a fool of myself again."
-      },
-      {
-        "type": "line",
-        "speaker": "Slug Hemligssen",
-        "text": "Please pay more attention to what the Burgher's advisors say this time. Are you ready?"
       },
       {
         "type": "condition",
@@ -7509,12 +7551,14 @@
       {
         "type": "line",
         "speaker": "Honour guard",
-        "text": "Aye Champion!."
+        "text": "Aye Champion!.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Bork Sigmundson",
-        "text": "Aye [sir/madam]!"
+        "text": "Aye [sir/madam]!",
+        "presentation": "overhead"
       },
       {
         "player": "Warriors, advance!"
@@ -7522,7 +7566,8 @@
       {
         "type": "line",
         "speaker": "Bork Sigmundson",
-        "text": "Charge!"
+        "text": "Charge!",
+        "presentation": "overhead"
       }
     ],
     "facing-the-trolls-talking-to-bork": [
@@ -7544,7 +7589,8 @@
                 "player": "Give me food, Bork!"
               },
               {
-                "player": "Give me food, Bork!"
+                "player": "Give me food, Bork!",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
@@ -7565,7 +7611,8 @@
                 "player": "I need Strength potions."
               },
               {
-                "player": "I need Strength potions."
+                "player": "I need Strength potions.",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
@@ -7586,7 +7633,8 @@
                 "player": "I need Prayer potions."
               },
               {
-                "player": "I need Prayer potions."
+                "player": "I need Prayer potions.",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
@@ -7670,12 +7718,14 @@
     ],
     "facing-the-trolls-facing-the-ice-troll-king": [
       {
-        "player": "What was that!"
+        "player": "What was that!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Ice Troll King",
-        "text": "Gruurg!"
+        "text": "Gruurg!",
+        "presentation": "overhead"
       }
     ],
     "returning-victorious-talking-to-king-sorvott": [
@@ -8186,13 +8236,6 @@
         "type": "line",
         "speaker": "Fridleif Shieldson",
         "text": "Congratulations, Champion [Fremennik name]. Thank you for defeating the Troll King."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "7JNJfa"
       }
     ]
   },
@@ -8401,7 +8444,7 @@
         "text": "Hello, [Fremennik name]."
       }
     ],
-    "PxCPs9": [
+    "yxG7Ar": [
       {
         "player": "I just stopped to say hello."
       },
@@ -8416,7 +8459,8 @@
       {
         "type": "line",
         "speaker": "Maria Gunnars",
-        "text": "Bye"
+        "text": "Bye",
+        "presentation": "overhead"
       }
     ],
     "_sfvGe": [

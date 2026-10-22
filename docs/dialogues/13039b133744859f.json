@@ -1275,7 +1275,8 @@
                       {
                         "type": "line",
                         "speaker": "Mage of Zamorak",
-                        "text": "Veniens! Sallakar! Rinnesset!"
+                        "text": "Veniens! Sallakar! Rinnesset!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -1396,7 +1397,8 @@
                           {
                             "type": "line",
                             "speaker": "Mage of Zamorak",
-                            "text": "Veniens! Sallakar! Rinnesset!"
+                            "text": "Veniens! Sallakar! Rinnesset!",
+                            "presentation": "overhead"
                           },
                           {
                             "type": "action",
@@ -2745,7 +2747,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "f3JE4d"
+                "branch": "uoqmcP"
               }
             ]
           },
@@ -2875,7 +2877,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "f3JE4d"
+                        "branch": "uoqmcP"
                       }
                     ]
                   },
@@ -3164,7 +3166,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "f3JE4d"
+                "branch": "uoqmcP"
               }
             ]
           },
@@ -3187,7 +3189,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "f3JE4d"
+                        "branch": "uoqmcP"
                       }
                     ]
                   },
@@ -4664,7 +4666,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "f3JE4d"
+                "branch": "uoqmcP"
               }
             ]
           },
@@ -4904,7 +4906,8 @@
       {
         "type": "line",
         "speaker": "Persten and co.",
-        "text": "Saris! Val! Curak! Belito!"
+        "text": "Saris! Val! Curak! Belito!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -5009,7 +5012,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "f3JE4d"
+                "branch": "uoqmcP"
               }
             ]
           },
@@ -5698,7 +5701,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "f3JE4d"
+                "branch": "uoqmcP"
               }
             ]
           },
@@ -6844,7 +6847,7 @@
             "steps": [
               {
                 "type": "call",
-                "branch": "f3JE4d"
+                "branch": "uoqmcP"
               }
             ]
           },
@@ -7121,10 +7124,6 @@
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "rvirt1"
       }
     ]
   },
@@ -7772,6 +7771,7 @@
         "player": "Can you teleport me to the Rune Essence Mine?"
       },
       {
+        "presentation": "overhead",
         "type": "line",
         "speaker": "Archmage Sedridor",
         "text": "Senventior disthine molenko!"
@@ -8242,11 +8242,12 @@
         "text": "Good. I'm attempting to subdue the elemental mechanisms of the universe to my will. Inane chatter from random idiots is not helping me achieve this!"
       }
     ],
-    "f3JE4d": [
+    "uoqmcP": [
       {
         "player": "Can you teleport me to the Rune Essence Mine?"
       },
       {
+        "presentation": "overhead",
         "type": "line",
         "speaker": "Archmage Sedridor",
         "text": "Senventior disthine molenko!"

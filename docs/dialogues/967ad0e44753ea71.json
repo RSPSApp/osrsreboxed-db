@@ -6,8 +6,7 @@
         "player": "Wow, that looks pretty heavy."
       },
       {
-        "type": "unavailable",
-        "id": "J4JxC8"
+        "npc": "Umpf! Yeah, mate...argghh...this is...umpf...hard work..."
       },
       {
         "player": "What would happen if I were to say..."
@@ -25,15 +24,13 @@
         "player": "2351..."
       },
       {
-        "type": "unavailable",
-        "id": "Rpfbpy"
+        "npc": "Stop! Stop! Humpf...I'll beat you to...urghh...a pulp!"
       },
       {
         "player": "Okay, okay! Don't cry!"
       },
       {
-        "type": "unavailable",
-        "id": "mIqXzS"
+        "npc": "Why, I oughta..."
       }
     ],
     "standard-dialogue-after-tower-of-life": [
@@ -41,19 +38,16 @@
         "player": "What do you do when you're not lifting logs above your head?"
       },
       {
-        "type": "unavailable",
-        "id": "zS0O2-"
+        "npc": "In my free time?"
       },
       {
         "player": "Yes."
       },
       {
-        "type": "unavailable",
-        "id": "FQywKk"
+        "npc": "All sorts. I like...hummff...a good kebab and a cold beer down...urrghh...the pub. And for those quiet evenings...hurrr..."
       },
       {
-        "type": "unavailable",
-        "id": "Hl__0a"
+        "npc": "A bit of needlepoint is always welcome."
       },
       {
         "player": "I can honestly say you're a very original guy."
@@ -61,12 +55,12 @@
     ],
     "overhead-dialogue-below-5-000": [
       {
-        "type": "unavailable",
-        "id": "M3IEI7"
+        "npc": "1",
+        "presentation": "overhead"
       },
       {
-        "type": "unavailable",
-        "id": "SoNiDS"
+        "npc": "2",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -74,12 +68,12 @@
         "id": "dNo6Lq"
       },
       {
-        "type": "unavailable",
-        "id": "rb2mka"
+        "npc": "4999",
+        "presentation": "overhead"
       },
       {
-        "type": "unavailable",
-        "id": "iiEJZV"
+        "npc": "5000",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-above-5-000": [
@@ -89,24 +83,24 @@
         "id": "g_986J"
       },
       {
-        "type": "unavailable",
-        "id": "bvNB3Y"
+        "npc": "[xxxx]",
+        "presentation": "overhead"
       },
       {
-        "type": "unavailable",
-        "id": "TRBAbK"
+        "npc": "10012...15?",
+        "presentation": "overhead"
       },
       {
-        "type": "unavailable",
-        "id": "m3NZqp"
+        "npc": "Huh?",
+        "presentation": "overhead"
       },
       {
-        "type": "unavailable",
-        "id": "TqrHbf"
+        "npc": "Bah",
+        "presentation": "overhead"
       },
       {
-        "type": "unavailable",
-        "id": "XBVWbh"
+        "npc": "Start again!",
+        "presentation": "overhead"
       },
       {
         "type": "jump",
@@ -114,6 +108,5 @@
         "id": "INEo79"
       }
     ]
-  },
-  "branches": {}
+  }
 }

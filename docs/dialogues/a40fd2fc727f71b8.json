@@ -2030,8 +2030,9 @@
             "text": "to join my fellow mahjarrat and regain my strength and powers. I shall return when I am ready to fight my enemies and much blood shall flow across these lands!"
           },
           {
-            "type": "unavailable",
-            "id": "9CGMWd"
+            "type": "message",
+            "text": "The cultists let out a mighty cheer",
+            "id": "ZGHhYl"
           },
           {
             "type": "action",

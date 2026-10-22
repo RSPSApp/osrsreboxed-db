@@ -131,7 +131,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "This really is my passion."
+                "npc": "This really is my passion.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -139,7 +140,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Life is easier on the sea."
+                "npc": "Life is easier on the sea.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -147,7 +149,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "This is so much better than being cooped up in that camp."
+                "npc": "This is so much better than being cooped up in that camp.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -155,7 +158,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "I'm just happy to be here."
+                "npc": "I'm just happy to be here.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -170,7 +174,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "This reminds me of my last holiday."
+                "npc": "This reminds me of my last holiday.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -178,7 +183,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "All looking good on the sails."
+                "npc": "All looking good on the sails.",
+                "presentation": "overhead"
               }
             ]
           }
@@ -187,12 +193,14 @@
     ],
     "at-sea-spotting-an-ocean-encounter": [
       {
-        "npc": "I can see something to the [compass direction]!"
+        "npc": "I can see something to the [compass direction]!",
+        "presentation": "overhead"
       }
     ],
     "at-sea-trimming-the-sails": [
       {
-        "npc": "Trimmed those sails good and proper, Captain!"
+        "npc": "Trimmed those sails good and proper, Captain!",
+        "presentation": "overhead"
       }
     ],
     "at-sea-idle-at-cannon": [
@@ -201,7 +209,8 @@
         "text": "If there are no cannon balls in the cargo hold:",
         "steps": [
           {
-            "npc": "I can't find any ammo in the cargo hold."
+            "npc": "I can't find any ammo in the cargo hold.",
+            "presentation": "overhead"
           }
         ],
         "id": "buyrWb"
@@ -211,7 +220,8 @@
         "text": "If there are cannon balls in the cargo hold:",
         "steps": [
           {
-            "npc": "Sailing was supposed to be peaceful."
+            "npc": "Sailing was supposed to be peaceful.",
+            "presentation": "overhead"
           }
         ],
         "id": "wwjXIm"
@@ -223,7 +233,8 @@
         "text": "Unknown condition:",
         "steps": [
           {
-            "npc": "I can't attack your target, Captain."
+            "npc": "I can't attack your target, Captain.",
+            "presentation": "overhead"
           }
         ],
         "id": "Yeddxs"
@@ -231,7 +242,8 @@
     ],
     "at-sea-randomly-while-at-the-salvaging-hook": [
       {
-        "npc": "One man's rubbish..."
+        "npc": "One man's rubbish...",
+        "presentation": "overhead"
       }
     ],
     "at-sea-recovering-salvaging": [
@@ -240,7 +252,8 @@
         "text": "With space in the cargo hold:",
         "steps": [
           {
-            "npc": "Managed to hook some salvage! I'll put it in the cargo hold."
+            "npc": "Managed to hook some salvage! I'll put it in the cargo hold.",
+            "presentation": "overhead"
           }
         ],
         "id": "z_G_jA"
@@ -250,7 +263,8 @@
         "text": "If the cargo hold is full:",
         "steps": [
           {
-            "npc": "The cargo hold is full. I can't salvage anything."
+            "npc": "The cargo hold is full. I can't salvage anything.",
+            "presentation": "overhead"
           }
         ],
         "id": "K8ju7f"
@@ -258,7 +272,8 @@
     ],
     "at-sea-catching-a-wind-mote": [
       {
-        "npc": "I've caught a wind mote!"
+        "npc": "I've caught a wind mote!",
+        "presentation": "overhead"
       }
     ],
     "at-sea-operating-the-wind-catcher": [
@@ -267,7 +282,8 @@
         "text": "Enabling the wind catcher:",
         "steps": [
           {
-            "npc": "Enabling the wind catcher!"
+            "npc": "Enabling the wind catcher!",
+            "presentation": "overhead"
           }
         ],
         "id": "9MAP23"
@@ -277,7 +293,8 @@
         "text": "Disabling the wind catcher:",
         "steps": [
           {
-            "npc": "Disabling the wind catcher!"
+            "npc": "Disabling the wind catcher!",
+            "presentation": "overhead"
           }
         ],
         "id": "vCxugm"
@@ -289,7 +306,8 @@
         "text": "If there are repair kits in the cargo hold:",
         "steps": [
           {
-            "npc": "Aye, that's better."
+            "npc": "Aye, that's better.",
+            "presentation": "overhead"
           }
         ],
         "id": "5XBhMx"
@@ -299,7 +317,8 @@
         "text": "If there are no repair kits in the cargo hold:",
         "steps": [
           {
-            "npc": "I can't find any repair kits in the cargo hold."
+            "npc": "I can't find any repair kits in the cargo hold.",
+            "presentation": "overhead"
           }
         ],
         "id": "uVkRIh"

@@ -200,12 +200,14 @@
       {
         "type": "line",
         "speaker": "Nora T. Hagg",
-        "text": "Stop! Thief!"
+        "text": "Stop! Thief!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Nora T. Hagg",
-        "text": "Klarata... Sepptento... Valkan!"
+        "text": "Klarata... Sepptento... Valkan!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -316,10 +318,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "uyv8q6"
-      },
-      {
-        "type": "unavailable",
-        "id": "i8whTV"
       }
     ]
   }

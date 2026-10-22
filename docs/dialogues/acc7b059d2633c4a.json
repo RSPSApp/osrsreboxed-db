@@ -3,7 +3,8 @@
   "variants": {
     "overhead-when-being-chased-by-a-cat": [
       {
-        "npc": "Checheche!"
+        "npc": "Checheche!",
+        "presentation": "overhead"
       }
     ]
   }

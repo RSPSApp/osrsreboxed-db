@@ -45,15 +45,18 @@
     ],
     "overhead-dialogue-catching-the-player-trying-to-steal-from-her-seed-stalls": [
       {
-        "npc": "Hey! Get your hands off there!"
+        "npc": "Hey! Get your hands off there!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-interacting-with-her-after-stealing-from-her-seed-stalls-recently": [
       {
-        "npc": "You're the one who stole something from me!"
+        "npc": "You're the one who stole something from me!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Guards guards!"
+        "npc": "Guards guards!",
+        "presentation": "overhead"
       }
     ]
   }

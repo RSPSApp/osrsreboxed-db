@@ -51,67 +51,80 @@
       {
         "type": "line",
         "speaker": "Guard (Jatizso tower)",
-        "text": "YOU WOULDN'T KNOW HOW TO KILL A TROLL IF IT CAME UP AND BIT YER ARM OFF!"
+        "text": "YOU WOULDN'T KNOW HOW TO KILL A TROLL IF IT CAME UP AND BIT YER ARM OFF!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Neitiznot tower)",
-        "text": "YOU WOULDN'T KNOW HOW TO SHAVE A YAK IF YOUR LIFE DEPENDED ON IT!"
+        "text": "YOU WOULDN'T KNOW HOW TO SHAVE A YAK IF YOUR LIFE DEPENDED ON IT!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Jatizso tower)",
-        "text": "YAK LOVERS!"
+        "text": "YAK LOVERS!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Neitiznot tower)",
-        "text": "MISERABLE LOSERS!"
+        "text": "MISERABLE LOSERS!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Jatizso tower)",
-        "text": "CALL THAT A TOWN, I'VE SEEN BETTER HAMLETS!"
+        "text": "CALL THAT A TOWN, I'VE SEEN BETTER HAMLETS!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Neitiznot tower)",
-        "text": "YOUR MOTHER WAS A HAMSTER."
+        "text": "YOUR MOTHER WAS A HAMSTER.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Jatizso tower)",
-        "text": "AND YOUR FATHER SMELLED OF WINTERBERRIES."
+        "text": "AND YOUR FATHER SMELLED OF WINTERBERRIES.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Neitiznot tower)",
-        "text": "AT LEAST WE HAVE SOMETHING OTHER THAN SMELLY FISH!"
+        "text": "AT LEAST WE HAVE SOMETHING OTHER THAN SMELLY FISH!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Jatizso tower)",
-        "text": "WOODEN BRIDGES ARE RUBBISH!"
+        "text": "WOODEN BRIDGES ARE RUBBISH!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Neitiznot tower)",
-        "text": "AT LEAST WE CAN COOK!"
+        "text": "AT LEAST WE CAN COOK!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Jatizso tower)",
-        "text": "OUR KING'S BETTER THAN YOUR BURGHER!"
+        "text": "OUR KING'S BETTER THAN YOUR BURGHER!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Jatizso tower)",
-        "text": "JATIZSO!"
+        "text": "JATIZSO!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Guard (Neitiznot tower)",
-        "text": "NEITIZNOT!"
+        "text": "NEITIZNOT!",
+        "presentation": "overhead"
       },
       {
         "type": "action",

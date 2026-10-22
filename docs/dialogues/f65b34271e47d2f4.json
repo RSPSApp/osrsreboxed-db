@@ -3025,7 +3025,8 @@
       {
         "type": "line",
         "speaker": "Assassin",
-        "text": "Martin Holt. You have been marked for death."
+        "text": "Martin Holt. You have been marked for death.",
+        "presentation": "overhead"
       }
     ],
     "kourend-s-last-princess-talking-to-martin-holt-at-the-settlement-ruins-talking-to-martin-holt-again-after-defeating-the-assassin": [
@@ -4645,7 +4646,8 @@
       {
         "type": "line",
         "speaker": "Xamphur",
-        "text": "Really now? You actually thought you could defeat me?"
+        "text": "Really now? You actually thought you could defeat me?",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -7577,7 +7579,8 @@
               {
                 "type": "line",
                 "speaker": "Assassin",
-                "text": "Jorra Ashtar. You have been marked for death."
+                "text": "Jorra Ashtar. You have been marked for death.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -9686,10 +9689,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "ba1Q60"
-      },
-      {
-        "type": "unavailable",
-        "id": "Z5b9xl"
       }
     ]
   },

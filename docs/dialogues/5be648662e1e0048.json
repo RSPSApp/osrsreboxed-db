@@ -3,10 +3,12 @@
   "variants": {
     "overhead-dialogue-upon-petting-sky": [
       {
-        "player": "Who's a beautiful girl?"
+        "player": "Who's a beautiful girl?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Woof woof!"
+        "npc": "Woof woof!",
+        "presentation": "overhead"
       }
     ]
   }

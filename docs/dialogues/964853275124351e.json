@@ -1348,7 +1348,8 @@
             "id": "QlOxYR"
           },
           {
-            "player": "Ow!"
+            "player": "Ow!",
+            "presentation": "overhead"
           },
           {
             "type": "action",
@@ -1419,7 +1420,8 @@
           {
             "type": "line",
             "speaker": "Everyone in the longhall",
-            "text": "what was THAT?"
+            "text": "what was THAT?",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -2519,16 +2521,20 @@
         "id": "Wv7uzT"
       },
       {
-        "player": "Dor Ray Me So."
+        "player": "Dor Ray Me So.",
+        "presentation": "overhead"
       },
       {
-        "player": "Fah La Ti Doh."
+        "player": "Fah La Ti Doh.",
+        "presentation": "overhead"
       },
       {
-        "player": "La La La La."
+        "player": "La La La La.",
+        "presentation": "overhead"
       },
       {
-        "player": "De-Doo-De-Doo."
+        "player": "De-Doo-De-Doo.",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -2566,16 +2572,20 @@
         "text": "If the player has gained entrance to the Champions Guild:",
         "steps": [
           {
-            "player": "The thought of lots of questing"
+            "player": "The thought of lots of questing",
+            "presentation": "overhead"
           },
           {
-            "player": "leaves some people unfulfilled,"
+            "player": "leaves some people unfulfilled,",
+            "presentation": "overhead"
           },
           {
-            "player": "but I have done my simple best"
+            "player": "but I have done my simple best",
+            "presentation": "overhead"
           },
           {
-            "player": "in entering the Champions' Guild."
+            "player": "in entering the Champions' Guild.",
+            "presentation": "overhead"
           },
           {
             "type": "jump",
@@ -2590,16 +2600,20 @@
         "text": "If the player has gained entrance to the Heroes' Guild:",
         "steps": [
           {
-            "player": "When it comes to fighting"
+            "player": "When it comes to fighting",
+            "presentation": "overhead"
           },
           {
-            "player": "I hit my share of zeroes"
+            "player": "I hit my share of zeroes",
+            "presentation": "overhead"
           },
           {
-            "player": "But I'm well respected at"
+            "player": "But I'm well respected at",
+            "presentation": "overhead"
           },
           {
-            "player": "the Guild reserved for Heroes."
+            "player": "the Guild reserved for Heroes.",
+            "presentation": "overhead"
           },
           {
             "type": "jump",
@@ -2614,16 +2628,20 @@
         "text": "If the player has gained entrance to the Legends' Guild:",
         "steps": [
           {
-            "player": "I cannot even start to list"
+            "player": "I cannot even start to list",
+            "presentation": "overhead"
           },
           {
-            "player": "the amount of foes I've killed."
+            "player": "the amount of foes I've killed.",
+            "presentation": "overhead"
           },
           {
-            "player": "I will simply tell you this:"
+            "player": "I will simply tell you this:",
+            "presentation": "overhead"
           },
           {
-            "player": "I've joined the Legends' Guild!"
+            "player": "I've joined the Legends' Guild!",
+            "presentation": "overhead"
           },
           {
             "type": "jump",
@@ -2638,16 +2656,20 @@
         "text": "If the player has level 99 in any skill:",
         "steps": [
           {
-            "player": "When people speak of training"
+            "player": "When people speak of training",
+            "presentation": "overhead"
           },
           {
-            "player": "some people think they're fine."
+            "player": "some people think they're fine.",
+            "presentation": "overhead"
           },
           {
-            "player": "But they just all seem jealous that"
+            "player": "But they just all seem jealous that",
+            "presentation": "overhead"
           },
           {
-            "player": "my [skill]'s ninety-nine!"
+            "player": "my [skill]'s ninety-nine!",
+            "presentation": "overhead"
           },
           {
             "type": "jump",
@@ -2662,16 +2684,20 @@
         "text": "If the player doesn't have any achievements:",
         "steps": [
           {
-            "player": "[player name] is my name,"
+            "player": "[player name] is my name,",
+            "presentation": "overhead"
           },
           {
-            "player": "I haven't much to say."
+            "player": "I haven't much to say.",
+            "presentation": "overhead"
           },
           {
-            "player": "But since I have to sing this song,"
+            "player": "But since I have to sing this song,",
+            "presentation": "overhead"
           },
           {
-            "player": "I'll just go ahead and play."
+            "player": "I'll just go ahead and play.",
+            "presentation": "overhead"
           },
           {
             "type": "jump",
@@ -6656,7 +6682,8 @@
               {
                 "type": "line",
                 "speaker": "Koschei the deathless",
-                "text": "Prepare to die, [player name]!"
+                "text": "Prepare to die, [player name]!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -6666,7 +6693,8 @@
               {
                 "type": "line",
                 "speaker": "Koschei the deathless",
-                "text": "I will crush your dead bones!"
+                "text": "I will crush your dead bones!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -6676,7 +6704,8 @@
               {
                 "type": "line",
                 "speaker": "Koschei the deathless",
-                "text": "Outerlander... you have made a mistake coming down here!"
+                "text": "Outerlander... you have made a mistake coming down here!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -6686,7 +6715,8 @@
               {
                 "type": "line",
                 "speaker": "Koschei the deathless",
-                "text": "What kind of a person calls [him/her]self [player name]?"
+                "text": "What kind of a person calls [him/her]self [player name]?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -6696,7 +6726,8 @@
               {
                 "type": "line",
                 "speaker": "Koschei the deathless",
-                "text": "You have no idea of my true power, outerlander!"
+                "text": "You have no idea of my true power, outerlander!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -6706,7 +6737,8 @@
               {
                 "type": "line",
                 "speaker": "Koschei the deathless",
-                "text": "Today is the day you die, outerlander!"
+                "text": "Today is the day you die, outerlander!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -6716,7 +6748,8 @@
               {
                 "type": "line",
                 "speaker": "Koschei the deathless",
-                "text": "[player name]! Meet your doom!"
+                "text": "[player name]! Meet your doom!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -6726,7 +6759,8 @@
               {
                 "type": "line",
                 "speaker": "Koschei the deathless",
-                "text": "Prepare to face my power, outerlander!"
+                "text": "Prepare to face my power, outerlander!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -8973,13 +9007,6 @@
         "type": "line",
         "speaker": "Brundt the Chieftain",
         "text": "From this day onward, you are outerlander no more! In honour of your acceptance into the Fremennik You gain a new name to be known as. You will now be called [Fremennik name]."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "PskD6q"
       }
     ]
   },

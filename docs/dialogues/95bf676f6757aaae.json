@@ -101,7 +101,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Avast there, [player name]!"
+            "npc": "Avast there, [player name]!",
+            "presentation": "overhead"
           }
         ],
         "id": "V_yZuB"
@@ -117,7 +118,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Ahoy, [player name]!"
+                    "npc": "Ahoy, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -125,7 +127,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Parley wi' me, my old fruit!"
+                    "npc": "Parley wi' me, my old fruit!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -133,7 +136,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "I needs yer help, [player name]!"
+                    "npc": "I needs yer help, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -141,7 +145,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "I got treasure here, [player name]!"
+                    "npc": "I got treasure here, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -149,7 +154,8 @@
                 "text": "Dialogue 5",
                 "steps": [
                   {
-                    "npc": "Shiver me' timbers, are you ignoring me?"
+                    "npc": "Shiver me' timbers, are you ignoring me?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -157,7 +163,8 @@
                 "text": "Dialogue 6",
                 "steps": [
                   {
-                    "npc": "Will ye help an old pirate, [player name]?"
+                    "npc": "Will ye help an old pirate, [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -165,7 +172,8 @@
                 "text": "Dialogue 7",
                 "steps": [
                   {
-                    "npc": "I knows somethin' you should knows, [player name]."
+                    "npc": "I knows somethin' you should knows, [player name].",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -179,7 +187,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "Z2INZY"

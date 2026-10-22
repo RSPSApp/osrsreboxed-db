@@ -39,27 +39,32 @@
     ],
     "during-the-fight-upon-reaching-phase-two": [
       {
-        "npc": "You think you can defeat me?"
+        "npc": "You think you can defeat me?",
+        "presentation": "overhead"
       }
     ],
     "during-the-fight-upon-reaching-phase-two-if-standing-under-verzik": [
       {
-        "npc": "There's nothing for you there!"
+        "npc": "There's nothing for you there!",
+        "presentation": "overhead"
       }
     ],
     "during-the-fight-upon-reaching-phase-three": [
       {
-        "npc": "Behold my true nature!"
+        "npc": "Behold my true nature!",
+        "presentation": "overhead"
       }
     ],
     "during-the-fight-upon-reaching-20-hitpoints-in-phase-three": [
       {
-        "npc": "I'm not finished with you just yet!"
+        "npc": "I'm not finished with you just yet!",
+        "presentation": "overhead"
       }
     ],
     "during-the-fight-upon-reaching-5-hitpoints-in-phase-three-hard-mode-only": [
       {
-        "npc": "You think this is over?!"
+        "npc": "You think this is over?!",
+        "presentation": "overhead"
       }
     ]
   }

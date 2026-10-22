@@ -60,7 +60,8 @@
     ],
     "overhead-dialogue-failed-pickpocket-attempt-in-lletya": [
       {
-        "npc": "What do you think you're doing?"
+        "npc": "What do you think you're doing?",
+        "presentation": "overhead"
       }
     ]
   }

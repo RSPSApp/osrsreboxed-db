@@ -1459,11 +1459,8 @@
         "text": "Have you cooked the snake yet?"
       },
       {
-        "type": "unavailable",
-        "id": "HV5gky"
-      },
-      {
         "type": "choice",
+        "prompt": "I haven't cooked the snake yet.",
         "options": [
           {
             "text": "I've lost the snake",
@@ -1571,11 +1568,11 @@
             "steps": [
               {
                 "type": "jump",
-                "id": "W938b2",
+                "id": "02WzsQ",
                 "steps": [
                   {
                     "type": "call",
-                    "branch": "jump-f91e27a405744cc3"
+                    "branch": "jump-a97b3464863edb55"
                   }
                 ]
               }
@@ -1992,7 +1989,7 @@
     ]
   },
   "branches": {
-    "jump-f91e27a405744cc3": [
+    "jump-a97b3464863edb55": [
       {
         "player": "How do I cook this thing, it's huge! It's not going to fit in an oven or on a spit?"
       },

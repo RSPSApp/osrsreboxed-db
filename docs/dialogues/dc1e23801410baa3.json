@@ -71,10 +71,12 @@
     ],
     "overhead-dialogue-when-attempting-to-open-a-coffin": [
       {
-        "npc": "C'mon, almost got it..."
+        "npc": "C'mon, almost got it...",
+        "presentation": "overhead"
       },
       {
-        "npc": "Agh, thought I had it that time!"
+        "npc": "Agh, thought I had it that time!",
+        "presentation": "overhead"
       }
     ]
   }

@@ -310,24 +310,28 @@
       {
         "type": "line",
         "speaker": "Fluffs' kitten",
-        "text": "Mew!"
+        "text": "Mew!",
+        "presentation": "overhead"
       }
     ],
     "finding-fluffs-talk-to-fluffs": [
       {
         "type": "line",
         "speaker": "Fluffs",
-        "text": "Miaoww"
+        "text": "Miaoww",
+        "presentation": "overhead"
       }
     ],
     "finding-fluffs-pick-up-fluffs": [
       {
         "type": "line",
         "speaker": "Fluffs",
-        "text": "Hisss!"
+        "text": "Hisss!",
+        "presentation": "overhead"
       },
       {
-        "player": "Ouch!"
+        "player": "Ouch!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -339,10 +343,12 @@
       {
         "type": "line",
         "speaker": "Fluffs",
-        "text": "Hisss!"
+        "text": "Hisss!",
+        "presentation": "overhead"
       },
       {
-        "player": "Ouch!"
+        "player": "Ouch!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -354,17 +360,20 @@
       {
         "type": "line",
         "speaker": "Fluffs",
-        "text": "Mew!"
+        "text": "Mew!",
+        "presentation": "overhead"
       }
     ],
     "finding-fluffs-pick-up-fluffs-2": [
       {
         "type": "line",
         "speaker": "Fluffs",
-        "text": "Hisss!"
+        "text": "Hisss!",
+        "presentation": "overhead"
       },
       {
-        "player": "Ouch!"
+        "player": "Ouch!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -448,17 +457,20 @@
       {
         "type": "line",
         "speaker": "Fluffs",
-        "text": "Mew!"
+        "text": "Mew!",
+        "presentation": "overhead"
       }
     ],
     "making-seasoned-sardines-pick-up-fluffs": [
       {
         "type": "line",
         "speaker": "Fluffs",
-        "text": "Hisss!"
+        "text": "Hisss!",
+        "presentation": "overhead"
       },
       {
-        "player": "Ouch!"
+        "player": "Ouch!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -501,12 +513,14 @@
       {
         "type": "line",
         "speaker": "Fluffs",
-        "text": "Purr..."
+        "text": "Purr...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fluffs' kitten",
-        "text": "Purr..."
+        "text": "Purr...",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -583,10 +597,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "Rf4BAK"
-      },
-      {
-        "type": "unavailable",
-        "id": "tBDGIA"
       }
     ]
   }

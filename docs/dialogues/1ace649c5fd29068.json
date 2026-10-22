@@ -144,7 +144,8 @@
                     "text": "Attack Olbertus.",
                     "steps": [
                       {
-                        "npc": "Foolish decision!"
+                        "npc": "Foolish decision!",
+                        "presentation": "overhead"
                       },
                       {
                         "type": "action",
@@ -154,7 +155,8 @@
                       {
                         "type": "line",
                         "speaker": "Shaeded Beast",
-                        "text": "I require this one alive human!"
+                        "text": "I require this one alive human!",
+                        "presentation": "overhead"
                       }
                     ]
                   },

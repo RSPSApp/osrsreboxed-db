@@ -468,7 +468,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "No! Me prices, they be goin' down!"
+                "npc": "No! Me prices, they be goin' down!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -476,7 +477,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Arrr! Another good sale!"
+                "npc": "Arrr! Another good sale!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -484,7 +486,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "I'm lovin' this Grand Exchange! Arrr!"
+                "npc": "I'm lovin' this Grand Exchange! Arrr!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -492,7 +495,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Sure be a busy place, today."
+                "npc": "Sure be a busy place, today.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -500,7 +504,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Yarrr! I'm gonna be rich, I tell ye!"
+                "npc": "Yarrr! I'm gonna be rich, I tell ye!",
+                "presentation": "overhead"
               }
             ]
           }

@@ -166,7 +166,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "[player name]!"
+                    "npc": "[player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -174,7 +175,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Hello? [player name]?"
+                    "npc": "Hello? [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -182,7 +184,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "Talk to me, [player name]!"
+                    "npc": "Talk to me, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -190,7 +193,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "[player name]? Are you there?!"
+                    "npc": "[player name]? Are you there?!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -198,7 +202,8 @@
                 "text": "Dialogue 5",
                 "steps": [
                   {
-                    "npc": "I'd like to talk to you, [player name]!"
+                    "npc": "I'd like to talk to you, [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -212,7 +217,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "Ddybz5"

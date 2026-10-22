@@ -23,7 +23,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Don't let any goblins through the breach in our fence!"
+                "npc": "Don't let any goblins through the breach in our fence!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -31,7 +32,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Keep an eye open for goblins!"
+                "npc": "Keep an eye open for goblins!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -39,7 +41,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Don't just do something! Stand there!"
+                "npc": "Don't just do something! Stand there!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -47,7 +50,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Stop dawdling soldier! You're in the army now!"
+                "npc": "Stop dawdling soldier! You're in the army now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -55,7 +59,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Hurry up on that patrol route, trooper!"
+                "npc": "Hurry up on that patrol route, trooper!",
+                "presentation": "overhead"
               }
             ]
           }

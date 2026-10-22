@@ -118,6 +118,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I hear you brother..."
               }
             ]
@@ -126,6 +127,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "You speak the truth brother..."
               }
             ]
@@ -134,6 +136,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Well said brother..."
               }
             ]

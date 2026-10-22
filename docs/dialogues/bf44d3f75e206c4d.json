@@ -3,12 +3,14 @@
   "variants": {
     "attempting-to-mine": [
       {
-        "npc": "Grr... Ge'roff us!"
+        "npc": "Grr... Ge'roff us!",
+        "presentation": "overhead"
       }
     ],
     "attempting-to-mine-while-being-attacked-by-another-elemental": [
       {
-        "npc": "I told you... Ge'roff us!"
+        "npc": "I told you... Ge'roff us!",
+        "presentation": "overhead"
       }
     ]
   }

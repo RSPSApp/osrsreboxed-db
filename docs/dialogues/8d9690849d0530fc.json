@@ -316,7 +316,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Private [player name], atten-SHUN!"
+            "npc": "Private [player name], atten-SHUN!",
+            "presentation": "overhead"
           }
         ],
         "id": "0V_aIE"
@@ -332,7 +333,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Private [player name], atten-SHUN!"
+                    "npc": "Private [player name], atten-SHUN!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -340,7 +342,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Stop day-dreaming, Private [player name]!"
+                    "npc": "Stop day-dreaming, Private [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -348,7 +351,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "Get your rear in gear, Private [player name]!"
+                    "npc": "Get your rear in gear, Private [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -356,7 +360,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "I want you for my corps, Private [player name]!"
+                    "npc": "I want you for my corps, Private [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -370,7 +375,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "lTFCh9"

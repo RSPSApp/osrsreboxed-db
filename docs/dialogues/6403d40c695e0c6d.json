@@ -1870,7 +1870,8 @@
           {
             "type": "line",
             "speaker": "Fareed",
-            "text": "You dare trespass in my realm?"
+            "text": "You dare trespass in my realm?",
+            "presentation": "overhead"
           }
         ],
         "id": "lGBeZr"
@@ -2552,19 +2553,22 @@
       {
         "type": "line",
         "speaker": "Damis",
-        "text": "You should... have listened to me!"
+        "text": "You should... have listened to me!",
+        "presentation": "overhead"
       }
     ],
     "shadow-diamond-upon-defeating-his-first-form": [
       {
         "type": "line",
         "speaker": "Damis",
-        "text": "This armour... is for restraint, not... protection..."
+        "text": "This armour... is for restraint, not... protection...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Damis",
-        "text": "Now I show... you... my true... power!"
+        "text": "Now I show... you... my true... power!",
+        "presentation": "overhead"
       }
     ],
     "shadow-diamond-fighting-damis": [
@@ -2577,7 +2581,8 @@
               {
                 "type": "line",
                 "speaker": "Damis",
-                "text": "I will crush you utterly!"
+                "text": "I will crush you utterly!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2587,7 +2592,8 @@
               {
                 "type": "line",
                 "speaker": "Damis",
-                "text": "You are no match for my power!"
+                "text": "You are no match for my power!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2597,7 +2603,8 @@
               {
                 "type": "line",
                 "speaker": "Damis",
-                "text": "Taste my blade and feel my wrath!"
+                "text": "Taste my blade and feel my wrath!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2607,7 +2614,8 @@
               {
                 "type": "line",
                 "speaker": "Damis",
-                "text": "I... am... invincible!"
+                "text": "I... am... invincible!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2617,7 +2625,8 @@
               {
                 "type": "line",
                 "speaker": "Damis",
-                "text": "You will regret ever coming here!"
+                "text": "You will regret ever coming here!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2627,7 +2636,8 @@
               {
                 "type": "line",
                 "speaker": "Damis",
-                "text": "Hah! I fear not your feeble power!"
+                "text": "Hah! I fear not your feeble power!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2638,7 +2648,8 @@
               {
                 "type": "line",
                 "speaker": "Damis",
-                "text": "Your pathetic skill won't help you now!"
+                "text": "Your pathetic skill won't help you now!",
+                "presentation": "overhead"
               }
             ],
             "id": "mZm95r"
@@ -3578,7 +3589,8 @@
       {
         "type": "line",
         "speaker": "Dessous",
-        "text": "Hssssssssssss"
+        "text": "Hssssssssssss",
+        "presentation": "overhead"
       }
     ],
     "blood-diamond-after-defeating-dessous": [
@@ -3861,7 +3873,8 @@
       {
         "type": "line",
         "speaker": "Kamil",
-        "text": "Sallamakar Ro!"
+        "text": "Sallamakar Ro!",
+        "presentation": "overhead"
       }
     ],
     "ice-diamond-after-defeating-kamil": [
@@ -4034,7 +4047,8 @@
       {
         "type": "line",
         "speaker": "Stranger",
-        "text": "You are not worthy of holding that Diamond of [Blood/Shadow/Smoke/Ice]!"
+        "text": "You are not worthy of holding that Diamond of [Blood/Shadow/Smoke/Ice]!",
+        "presentation": "overhead"
       }
     ],
     "the-ancient-pyramid-upon-defeating-the-stranger": [
@@ -4554,13 +4568,6 @@
         "type": "line",
         "speaker": "Eblis",
         "text": "Greetings. I await the return of my Lord Azzanadra and of our god. I do not know why, but I feel this spot has some significance..."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "XZk7eh"
       }
     ]
   },

@@ -335,7 +335,8 @@
     ],
     "overhead-dialogue-upon-completion-of-a-round": [
       {
-        "npc": "[TzHaar caste]-[champion's name] is the champion!"
+        "npc": "[TzHaar caste]-[champion's name] is the champion!",
+        "presentation": "overhead"
       }
     ]
   }

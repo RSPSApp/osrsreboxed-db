@@ -14886,102 +14886,122 @@
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "She acted like I was a monster! Come... look upon her monster!"
+        "text": "She acted like I was a monster! Come... look upon her monster!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "She left me, like I wasn't real! But I know what's real, do you?"
+        "text": "She left me, like I wasn't real! But I know what's real, do you?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "Did she think I would rot here? I am eternal, unlike you!"
+        "text": "Did she think I would rot here? I am eternal, unlike you!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "She feared my power, and she was right to! Let me show you..."
+        "text": "She feared my power, and she was right to! Let me show you...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "Look at me! Look at what she made me! Do you see?"
+        "text": "Look at me! Look at what she made me! Do you see?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "She treated me like I was less than her, but I'm so much more!"
+        "text": "She treated me like I was less than her, but I'm so much more!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "I won't let her destroy me! She doesn't get to decide that!"
+        "text": "I won't let her destroy me! She doesn't get to decide that!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "This power, she gave it to me! It's her power too! Feel it!"
+        "text": "This power, she gave it to me! It's her power too! Feel it!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "I just wanted her to love me, but she wouldn't even look at me!"
+        "text": "I just wanted her to love me, but she wouldn't even look at me!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "She tried to forget me, but everywhere she looked she saw me!"
+        "text": "She tried to forget me, but everywhere she looked she saw me!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "I have more power than she ever did! I will survive!"
+        "text": "I have more power than she ever did! I will survive!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "Do you know pain? I do! She made sure of that! I'll show you..."
+        "text": "Do you know pain? I do! She made sure of that! I'll show you...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "Come! Come look upon her work, and despair!"
+        "text": "Come! Come look upon her work, and despair!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "Do you think she cares? Maybe reality isn't what you think..."
+        "text": "Do you think she cares? Maybe reality isn't what you think...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "I am infinite! As hard as she tries, I can't be destroyed!"
+        "text": "I am infinite! As hard as she tries, I can't be destroyed!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "The pain she caused me, let me give you a taste of it!"
+        "text": "The pain she caused me, let me give you a taste of it!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "Are you afraid? Too scared to even look at me?"
+        "text": "Are you afraid? Too scared to even look at me?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "I'm better than her! I'm greater than her! That's what she hated!"
+        "text": "I'm better than her! I'm greater than her! That's what she hated!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "The things I've endured, do you think you could endure them?"
+        "text": "The things I've endured, do you think you could endure them?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Fragment of Seren",
-        "text": "She didn't love me! She feared the strength of her own creation!"
+        "text": "She didn't love me! She feared the strength of her own creation!",
+        "presentation": "overhead"
       }
     ],
     "the-fragment-of-seren-the-fragment-defeated": [
@@ -15178,10 +15198,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "W-ainS"
-      },
-      {
-        "type": "unavailable",
-        "id": "SILoB2"
       }
     ]
   },

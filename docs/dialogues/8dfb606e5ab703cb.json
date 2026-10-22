@@ -1074,7 +1074,8 @@
       {
         "type": "line",
         "speaker": "Kruk",
-        "text": "?"
+        "text": "?",
+        "presentation": "overhead"
       }
     ],
     "chapter-ii-talking-to-awowogei-as-kruk": [
@@ -2164,7 +2165,8 @@
       {
         "type": "line",
         "speaker": "Glough",
-        "text": "Umesc pro ta lauf!"
+        "text": "Umesc pro ta lauf!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
@@ -2220,7 +2222,8 @@
       {
         "type": "line",
         "speaker": "Glough",
-        "text": "Umesc pro ta andra!"
+        "text": "Umesc pro ta andra!",
+        "presentation": "overhead"
       }
     ],
     "chapter-iii-at-glough-s-secret-lab-tampering-the-device": [
@@ -2875,13 +2878,6 @@
       },
       {
         "player": "Thank you, King Narnode!"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "slY1n-"
       }
     ]
   },

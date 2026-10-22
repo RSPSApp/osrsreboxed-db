@@ -55,7 +55,8 @@
         "text": "Upon spawning in for the player:",
         "steps": [
           {
-            "npc": "Sandwiches, [player name]!"
+            "npc": "Sandwiches, [player name]!",
+            "presentation": "overhead"
           }
         ],
         "id": "a5SFSh"
@@ -71,7 +72,8 @@
                 "text": "Dialogue 1",
                 "steps": [
                   {
-                    "npc": "Did you hear me, [player name]?"
+                    "npc": "Did you hear me, [player name]?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -79,7 +81,8 @@
                 "text": "Dialogue 2",
                 "steps": [
                   {
-                    "npc": "Sandwich delivery for [player name]!"
+                    "npc": "Sandwich delivery for [player name]!",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -87,7 +90,8 @@
                 "text": "Dialogue 3",
                 "steps": [
                   {
-                    "npc": "You think I made these just for fun?!!?"
+                    "npc": "You think I made these just for fun?!!?",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -95,7 +99,8 @@
                 "text": "Dialogue 4",
                 "steps": [
                   {
-                    "npc": "All types of sandwiches, [player name]."
+                    "npc": "All types of sandwiches, [player name].",
+                    "presentation": "overhead"
                   }
                 ]
               },
@@ -103,7 +108,8 @@
                 "text": "Dialogue 5",
                 "steps": [
                   {
-                    "npc": "Come on [player name], I made these specially!!"
+                    "npc": "Come on [player name], I made these specially!!",
+                    "presentation": "overhead"
                   }
                 ]
               }
@@ -117,7 +123,8 @@
         "text": "If the player does not respond in time:",
         "steps": [
           {
-            "npc": "Maybe later."
+            "npc": "Maybe later.",
+            "presentation": "overhead"
           }
         ],
         "id": "FafvN7"

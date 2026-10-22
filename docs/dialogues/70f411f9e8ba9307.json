@@ -277,8 +277,10 @@
             "id": "D2k2aH"
           },
           {
-            "type": "unavailable",
-            "id": "zv9l_s"
+            "type": "action",
+            "action": "receive",
+            "text": "a Gold ore",
+            "id": "Rns98l"
           },
           {
             "npc": "Good – that's three; I can exchange them for normal gold now. You can get this refined and make a profit!"

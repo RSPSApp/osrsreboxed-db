@@ -4,22 +4,19 @@
       "player": "This is quite the tower."
     },
     {
-      "type": "unavailable",
-      "id": "66fTWQ"
+      "npc": "Yeah, it cost a fair bit."
     },
     {
       "player": "How much?"
     },
     {
-      "type": "unavailable",
-      "id": "xUtNtQ"
+      "npc": "Well, I had to 'alch' a fair few belongings of my fellow alchemists to afford it."
     },
     {
       "player": "I bet they love you for that."
     },
     {
-      "type": "unavailable",
-      "id": "kNJ_iF"
+      "npc": "Everyone loves someone that can create money."
     },
     {
       "player": "I don't."
@@ -29,7 +26,7 @@
     },
     {
       "type": "unavailable",
-      "id": "IBLpqL"
+      "id": "66fTWQ"
     }
   ]
 }

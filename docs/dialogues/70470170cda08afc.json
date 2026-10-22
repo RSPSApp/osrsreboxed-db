@@ -445,7 +445,8 @@
             "id": "VfJLRk"
           },
           {
-            "player": "Crikey!"
+            "player": "Crikey!",
+            "presentation": "overhead"
           },
           {
             "type": "message",
@@ -477,7 +478,8 @@
         "text": "If the player does not successfully cross the rocks:",
         "steps": [
           {
-            "player": "Ouch!"
+            "player": "Ouch!",
+            "presentation": "overhead"
           }
         ],
         "id": "sn3VWw"
@@ -948,23 +950,12 @@
             "text": "Goodbye.",
             "steps": [
               {
-                "player": "Goodbye."
-              },
-              {
-                "type": "line",
-                "speaker": "Lord Kandur Hosidius",
-                "text": "Until next time."
-              },
-              {
-                "type": "end"
+                "type": "call",
+                "branch": "hGzwlb"
               }
             ]
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "yARffe"
       }
     ]
   },

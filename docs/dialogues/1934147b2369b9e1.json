@@ -408,7 +408,8 @@
       {
         "type": "line",
         "speaker": "High Priest",
-        "text": "Protect the relic!"
+        "text": "Protect the relic!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -418,7 +419,8 @@
       {
         "type": "line",
         "speaker": "Monk",
-        "text": "You won't have it!"
+        "text": "You won't have it!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -594,10 +596,6 @@
             "text": "Something else."
           }
         ]
-      },
-      {
-        "type": "unavailable",
-        "id": "7ncsJT"
       }
     ]
   }

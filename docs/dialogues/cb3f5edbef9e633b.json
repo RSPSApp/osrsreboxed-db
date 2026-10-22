@@ -1905,10 +1905,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "Y7bMs-"
-      },
-      {
-        "type": "unavailable",
-        "id": "UYns5K"
       }
     ]
   },

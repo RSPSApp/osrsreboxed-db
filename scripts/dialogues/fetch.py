@@ -10,9 +10,16 @@ from scripts.wiki.wiki_page_text import WikiPageText
 from scripts.wiki.wiki_page_titles import WikiPageTitles
 
 API = "https://oldschool.runescape.wiki/api.php"
+DIALOGUE_CATEGORIES = (
+    "NPC dialogue",
+    "Quest transcript",
+    "Miniquest transcript",
+)
+TRANSCRIPT_CATEGORIES = ("Quest transcript", "Miniquest transcript")
 CACHE = config.DATA_PATH / "dialogues" / "wiki-pages.json"
 QUEST_CACHE = CACHE.with_name("quest-pages.json")
 NPC_CACHE = CACHE.with_name("npc-pages.json")
+TEMPLATE_CACHE = CACHE.with_name("template-pages.json")
 
 
 def save(path, data, *, minified=False):
@@ -30,6 +37,48 @@ def save(path, data, *, minified=False):
 
 def read_cache(path):
     return json.loads(path.read_text()) if path.exists() else {}
+
+
+def trailing_template_name(raw, name):
+    """Return a standalone, non-bulleted final template named after the page."""
+    lines = [line.strip() for line in str(raw).splitlines() if line.strip()]
+    if not lines or lines[-1].startswith("*"):
+        return None
+    line = lines[-1]
+    code = mw.parse(line)
+    templates = code.filter_templates(recursive=False)
+    if (
+        len(templates) != 1
+        or str(templates[0]).strip() != line
+        or templates[0].params
+        or str(templates[0].name).strip().casefold() != name.casefold()
+    ):
+        return None
+    return str(templates[0].name).strip()
+
+
+def navigation_template(page):
+    """Classify a template as navigation from its fetched source or categories."""
+    categories = {str(value).casefold() for value in page.get("categories", [])}
+    if any("navbox" in category for category in categories):
+        return True
+    templates = mw.parse(str(page.get("wikitext", ""))).filter_templates(
+        recursive=False
+    )
+    return bool(
+        templates
+        and str(templates[0].name).strip().casefold().startswith("navbox")
+    )
+
+
+def load_navigation_templates():
+    if not TEMPLATE_CACHE.exists():
+        raise FileNotFoundError(f"Missing dialogue template cache: {TEMPLATE_CACHE}")
+    return {
+        title.removeprefix("Template:")
+        for title, page in read_cache(TEMPLATE_CACHE).items()
+        if navigation_template(page)
+    }
 
 
 def transcript_targets(raw):
@@ -60,7 +109,7 @@ def participant_pages(raw):
     return sorted(pages)
 
 
-def download(names, path, session, refresh=False):
+def download(names, path, session, refresh=False, with_categories=False):
     pages = read_cache(path)
     missing = sorted(set(names) if refresh else set(names) - pages.keys())
     for offset in range(0, len(missing), 50):
@@ -72,7 +121,7 @@ def download(names, path, session, refresh=False):
                 "action": "query",
                 "format": "json",
                 "formatversion": 2,
-                "prop": "revisions",
+                "prop": "revisions|categories" if with_categories else "revisions",
                 "rvprop": "ids|content",
                 "rvslots": "main",
                 "redirects": 1,
@@ -95,6 +144,10 @@ def download(names, path, session, refresh=False):
                 "revision": revision["revid"],
                 "wikitext": revision["slots"]["main"]["content"],
             }
+            if with_categories:
+                fetched[page["title"]]["categories"] = [
+                    category["title"] for category in page.get("categories", [])
+                ]
         aliases = {
             item["from"]: item["to"]
             for kind in ("normalized", "redirects")
@@ -121,7 +174,7 @@ def download(names, path, session, refresh=False):
 
 def fetch(refresh=False):
     categories = {}
-    for category in ("NPC dialogue", "Quest transcript"):
+    for category in DIALOGUE_CATEGORIES:
         titles = WikiPageTitles(API, [category])
         titles.extract_page_titles()
         categories[category] = {
@@ -131,14 +184,13 @@ def fetch(refresh=False):
             raise ValueError(f"{category} returned no transcripts")
     session = WikiPageText(API, "").session
     npc_names = categories["NPC dialogue"]
-    pages = download(npc_names, CACHE, session, refresh)
-    quests = download(
-        categories["Quest transcript"] - npc_names, QUEST_CACHE, session, refresh
+    transcript_names = set().union(
+        *(categories[category] for category in TRANSCRIPT_CATEGORIES)
     )
+    pages = download(npc_names, CACHE, session, refresh)
+    quests = download(transcript_names - npc_names, QUEST_CACHE, session, refresh)
     if refresh:
-        quests = download(
-            set(quests) - categories["Quest transcript"], QUEST_CACHE, session, True
-        )
+        quests = download(set(quests) - transcript_names, QUEST_CACHE, session, True)
     # Follow explicit dependencies to a fixed point. Cache missing pages too, so a
     # broken wiki link is reported once rather than retried forever.
     while True:
@@ -152,6 +204,20 @@ def fetch(refresh=False):
         if not missing:
             break
         quests = download(missing, QUEST_CACHE, session)
+    footer_templates = set()
+    for title, page in [*pages.items(), *quests.items()]:
+        template = trailing_template_name(
+            page.get("wikitext", ""), title.removeprefix("Transcript:")
+        )
+        if template:
+            footer_templates.add("Template:" + template)
+    download(
+        footer_templates,
+        TEMPLATE_CACHE,
+        session,
+        refresh,
+        with_categories=True,
+    )
     identity_names = {title.removeprefix("Transcript:") for title in npc_names}
     for page in quests.values():
         identity_names.update(participant_pages(page.get("wikitext", "")))

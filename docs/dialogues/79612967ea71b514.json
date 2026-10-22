@@ -355,12 +355,14 @@
     ],
     "overhead-dialogue-attacking-a-nearby-tzhaar-hur": [
       {
-        "npc": "Kot e TzHaar-Hur!"
+        "npc": "Kot e TzHaar-Hur!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-catching-players-attempting-to-steal-from-stalls-in-mor-ul-rek": [
       {
-        "npc": "Oi JalYt!"
+        "npc": "Oi JalYt!",
+        "presentation": "overhead"
       }
     ]
   },

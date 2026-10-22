@@ -3,17 +3,20 @@
   "variants": {
     "overhead-dialogue-using-prayers": [
       {
-        "npc": "Zamorak, aid me!"
+        "npc": "Zamorak, aid me!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-switching-their-prayers-early": [
       {
-        "npc": "So predictable!"
+        "npc": "So predictable!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-hitting-them-through-prayer-after-they-switched-prayers-to-match-the-attack-style": [
       {
-        "npc": "Dirty trickster!"
+        "npc": "Dirty trickster!",
+        "presentation": "overhead"
       }
     ]
   }

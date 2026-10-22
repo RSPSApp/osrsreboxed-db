@@ -9,11 +9,14 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "steps": [
                   {
-                    "player": "Err, excuse me?"
+                    "player": "Err, excuse me?",
+                    "presentation": "overhead"
                   },
                   {
+                    "presentation": "overhead",
                     "npc": "Why? Am I in your way?"
                   },
                   {
@@ -21,7 +24,8 @@
                     "id": "YJjBlC"
                   },
                   {
-                    "player": "That was just plain weird!"
+                    "player": "That was just plain weird!",
+                    "presentation": "overhead"
                   }
                 ],
                 "npc": "When it comes to gold, most dwarves are short."
@@ -32,6 +36,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "steps": [
                   {
                     "type": "jump",
@@ -47,6 +52,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "steps": [
                   {
                     "type": "jump",
@@ -62,6 +68,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "steps": [
                   {
                     "type": "jump",
@@ -77,6 +84,7 @@
             "text": "Dialogue 5",
             "steps": [
               {
+                "presentation": "overhead",
                 "steps": [
                   {
                     "type": "jump",

@@ -31,7 +31,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "A fine selection of blades for you to peruse, come take a look!"
+                "npc": "A fine selection of blades for you to peruse, come take a look!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -39,7 +40,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Armours and axes to suit your needs."
+                "npc": "Armours and axes to suit your needs.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -47,7 +49,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Imported weapons from the finest smithys around the lands!"
+                "npc": "Imported weapons from the finest smithys around the lands!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -55,7 +58,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Ow my toe! That armour is heavy."
+                "npc": "Ow my toe! That armour is heavy.",
+                "presentation": "overhead"
               }
             ]
           }

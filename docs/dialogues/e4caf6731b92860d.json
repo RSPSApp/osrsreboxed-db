@@ -3,25 +3,32 @@
   "variants": {
     "overhead-dialogue": [
       {
-        "npc": "Out of the way!"
+        "npc": "Out of the way!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Coming through!"
+        "npc": "Coming through!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Make way, make way!"
+        "npc": "Make way, make way!",
+        "presentation": "overhead"
       },
       {
-        "npc": "[20-40] ores of [copper/tin/iron/mithril/silver/gold] coming in!"
+        "npc": "[20-40] ores of [copper/tin/iron/mithril/silver/gold] coming in!",
+        "presentation": "overhead"
       },
       {
-        "npc": "[20-40] pieces of coal coming in!"
+        "npc": "[20-40] pieces of coal coming in!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Here, [20-40] ores of [copper/tin/iron/mithril/silver/gold]."
+        "npc": "Here, [20-40] ores of [copper/tin/iron/mithril/silver/gold].",
+        "presentation": "overhead"
       },
       {
-        "npc": "Here, [20-40] pieces of coal."
+        "npc": "Here, [20-40] pieces of coal.",
+        "presentation": "overhead"
       }
     ]
   }

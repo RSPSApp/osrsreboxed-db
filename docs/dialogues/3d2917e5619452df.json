@@ -147,10 +147,12 @@
         "options": []
       },
       {
-        "npc": "Time to go check how rich I am!"
+        "npc": "Time to go check how rich I am!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Lovely day for a stroll."
+        "npc": "Lovely day for a stroll.",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-if-the-player-is-still-inside-when-caius-leaves": [
@@ -167,28 +169,34 @@
         "id": "lU5oaq"
       },
       {
-        "npc": "Now where did I put my keys..."
+        "npc": "Now where did I put my keys...",
+        "presentation": "overhead"
       },
       {
-        "npc": "Ah, there they are!"
+        "npc": "Ah, there they are!",
+        "presentation": "overhead"
       },
       {
         "type": "random",
         "options": []
       },
       {
-        "npc": "It smells funny in here..."
+        "npc": "It smells funny in here...",
+        "presentation": "overhead"
       },
       {
-        "npc": "There's mud all over the floor!"
+        "npc": "There's mud all over the floor!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Something isn't right here..."
+        "npc": "Something isn't right here...",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-caius-catches-you-inside-his-house-after-returning": [
       {
-        "npc": "How did you get in here?"
+        "npc": "How did you get in here?",
+        "presentation": "overhead"
       }
     ]
   }

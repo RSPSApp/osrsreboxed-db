@@ -31,30 +31,36 @@
     ],
     "overhead-dialogue-when-flying-down": [
       {
-        "npc": "Sqwark!"
+        "npc": "Sqwark!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-backing-away-from-the-player": [
       {
-        "npc": "Screech!"
+        "npc": "Screech!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-eating-a-bloated-toad": [
       {
-        "npc": "Sqwark!"
+        "npc": "Sqwark!",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Bloated toad",
-        "text": "!!Croak!!"
+        "text": "!!Croak!!",
+        "presentation": "overhead"
       },
       {
-        "npc": "Gobble!"
+        "npc": "Gobble!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-flying-off": [
       {
-        "npc": "Rawk!"
+        "npc": "Rawk!",
+        "presentation": "overhead"
       }
     ]
   }

@@ -860,7 +860,8 @@
         "id": "qMlBCp"
       },
       {
-        "player": "Ouch!"
+        "player": "Ouch!",
+        "presentation": "overhead"
       }
     ],
     "accessing-the-waterfall-dungeon-using-rope-on-the-dead-tree": [
@@ -908,7 +909,8 @@
             "id": "_RLAUN"
           },
           {
-            "player": "Ouch!"
+            "player": "Ouch!",
+            "presentation": "overhead"
           }
         ],
         "id": "m0zkKU"
@@ -1111,13 +1113,6 @@
         "type": "message",
         "text": "The chalice only contains some old ashes.",
         "id": "HYh5uY"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "ABiZRD"
       }
     ]
   }

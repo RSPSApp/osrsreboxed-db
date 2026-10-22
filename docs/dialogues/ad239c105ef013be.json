@@ -510,8 +510,9 @@
                     "text": "Great! I'll sort that fishbowl out for you."
                   },
                   {
-                    "type": "unavailable",
-                    "id": "2UA9Sd"
+                    "type": "message",
+                    "text": "Murphy attaches some tubes to the backpack and the fishbowl and puts a rubber hood inside.",
+                    "id": "FY6rCP"
                   },
                   {
                     "type": "line",

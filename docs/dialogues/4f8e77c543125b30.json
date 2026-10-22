@@ -25,12 +25,14 @@
     ],
     "overhead-dialogue-when-jumping-on-the-first-stepping-stone": [
       {
-        "npc": "FETCH!!!!!"
+        "npc": "FETCH!!!!!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-when-jumping-on-the-first-stepping-stone-while-carrying-a-stick": [
       {
-        "npc": "Why didn't you hand the stick over?!!?"
+        "npc": "Why didn't you hand the stick over?!!?",
+        "presentation": "overhead"
       }
     ]
   }

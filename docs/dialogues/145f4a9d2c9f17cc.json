@@ -43,13 +43,16 @@
                 "id": "TK3Fei"
               },
               {
-                "npc": "On your marks!"
+                "npc": "On your marks!",
+                "presentation": "overhead"
               },
               {
-                "npc": "Get set!"
+                "npc": "Get set!",
+                "presentation": "overhead"
               },
               {
-                "npc": "Go !!!"
+                "npc": "Go !!!",
+                "presentation": "overhead"
               },
               {
                 "type": "action",

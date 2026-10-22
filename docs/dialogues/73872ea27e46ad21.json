@@ -45,7 +45,8 @@
         "id": "l6D4mg"
       },
       {
-        "npc": "There's been a breach! Red alert!"
+        "npc": "There's been a breach! Red alert!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -60,14 +61,16 @@
         "id": "sIF1MA"
       },
       {
-        "npc": "Phew, that was a close call."
+        "npc": "Phew, that was a close call.",
+        "presentation": "overhead"
       },
       {
         "type": "condition",
         "text": "If the player moves:",
         "steps": [
           {
-            "player": "Urrrrgh!"
+            "player": "Urrrrgh!",
+            "presentation": "overhead"
           }
         ],
         "id": "wYF5Ao"

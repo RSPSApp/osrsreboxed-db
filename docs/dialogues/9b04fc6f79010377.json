@@ -3,12 +3,14 @@
   "variants": {
     "overhead-dialogue-after-successfully-mining-an-ore-vein": [
       {
-        "npc": "Pay-dirt!"
+        "npc": "Pay-dirt!",
+        "presentation": "overhead"
       }
     ],
     "overhead-dialogue-upon-being-struck-by-a-rockfall": [
       {
-        "npc": "Ow!"
+        "npc": "Ow!",
+        "presentation": "overhead"
       }
     ]
   }

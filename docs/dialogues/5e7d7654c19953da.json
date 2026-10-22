@@ -315,7 +315,8 @@
         "text": "Dialogue 1",
         "steps": [
           {
-            "npc": "Think not dishonestly."
+            "npc": "Think not dishonestly.",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -328,7 +329,8 @@
         "text": "Dialogue 2",
         "steps": [
           {
-            "npc": "The Way in training is."
+            "npc": "The Way in training is.",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -341,7 +343,8 @@
         "text": "Dialogue 3",
         "steps": [
           {
-            "npc": "Acquainted with every art become."
+            "npc": "Acquainted with every art become.",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -354,7 +357,8 @@
         "text": "Dialogue 4",
         "steps": [
           {
-            "npc": "Ways of all professions know you."
+            "npc": "Ways of all professions know you.",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -367,7 +371,8 @@
         "text": "Dialogue 5",
         "steps": [
           {
-            "npc": "Gain and loss between you must distinguish."
+            "npc": "Gain and loss between you must distinguish.",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -380,7 +385,8 @@
         "text": "Dialogue 6",
         "steps": [
           {
-            "npc": "Judgment and understanding for everything develop you must."
+            "npc": "Judgment and understanding for everything develop you must.",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -393,7 +399,8 @@
         "text": "Dialogue 7",
         "steps": [
           {
-            "npc": "Those things which cannot be seen, perceive them."
+            "npc": "Those things which cannot be seen, perceive them.",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -406,7 +413,8 @@
         "text": "Dialogue 8",
         "steps": [
           {
-            "npc": "Trifles pay attention even to."
+            "npc": "Trifles pay attention even to.",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -419,7 +427,8 @@
         "text": "Dialogue 9",
         "steps": [
           {
-            "npc": "Do nothing which is of no use."
+            "npc": "Do nothing which is of no use.",
+            "presentation": "overhead"
           },
           {
             "type": "end"
@@ -432,7 +441,8 @@
         "text": "Dialogue 10",
         "steps": [
           {
-            "npc": "Way of the Warrior this is."
+            "npc": "Way of the Warrior this is.",
+            "presentation": "overhead"
           }
         ],
         "id": "HmV2eb"

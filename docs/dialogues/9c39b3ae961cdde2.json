@@ -342,7 +342,8 @@
         ]
       },
       {
-        "npc": "Where?"
+        "npc": "Where?",
+        "presentation": "overhead"
       }
     ],
     "using-the-gate-near-50-luke-from-the-north-side": [

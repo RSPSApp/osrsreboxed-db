@@ -1307,12 +1307,14 @@
       {
         "type": "line",
         "speaker": "Restless ghost",
-        "text": "Release! Thank you"
+        "text": "Release! Thank you",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Restless ghost",
-        "text": "stranger.."
+        "text": "stranger..",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1332,13 +1334,6 @@
         "type": "message",
         "text": "Surprisingly, this altar is empty. Probably because you took the skull off it earlier.",
         "id": "X2ITr3"
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "q1mIeB"
       }
     ]
   },

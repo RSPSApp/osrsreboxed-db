@@ -32,7 +32,8 @@
                 "player": "Can you teleport me to the Rune Essence?"
               },
               {
-                "npc": "Senventior Disthine Molenko!"
+                "npc": "Senventior Disthine Molenko!",
+                "presentation": "overhead"
               },
               {
                 "type": "action",

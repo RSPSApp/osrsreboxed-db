@@ -499,8 +499,9 @@
         "text": "If the player enters 1 or more coins:",
         "steps": [
           {
-            "type": "unavailable",
-            "id": "SRDGVE"
+            "type": "message",
+            "text": "Added [number] coins to the coffers.",
+            "id": "OEUSy3"
           }
         ],
         "id": "kugNz6"
@@ -565,8 +566,9 @@
         "text": "If the player enters 1 or more coins:",
         "steps": [
           {
-            "type": "unavailable",
-            "id": "n_h-z1"
+            "type": "message",
+            "text": "Withdrew [number] coins.",
+            "id": "6ISpMa"
           }
         ],
         "id": "Ocdil6"

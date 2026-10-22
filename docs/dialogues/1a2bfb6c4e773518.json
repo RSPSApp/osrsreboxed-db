@@ -5,138 +5,172 @@
       {
         "type": "line",
         "speaker": "Naghead",
-        "text": "What was I talking about, now?"
+        "text": "What was I talking about, now?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Weren't you going to tell me about the rumour?"
-      },
-      {
-        "type": "line",
-        "speaker": "Naghead",
-        "text": "Oh yeah, that was it!"
-      },
-      {
-        "npc": "Carry on."
+        "npc": "Weren't you going to tell me about the rumour?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Naghead",
-        "text": "It's about the new family."
+        "text": "Oh yeah, that was it!",
+        "presentation": "overhead"
       },
       {
-        "npc": "That joined our horde?"
-      },
-      {
-        "type": "line",
-        "speaker": "Naghead",
-        "text": "The very same!"
-      },
-      {
-        "npc": "Oh my! Do tell."
+        "npc": "Carry on.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Naghead",
-        "text": "I were hangin' out me washin'."
+        "text": "It's about the new family.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Yes..."
-      },
-      {
-        "type": "line",
-        "speaker": "Naghead",
-        "text": "And I looked over at-"
-      },
-      {
-        "npc": "I'm listening."
+        "npc": "That joined our horde?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Naghead",
-        "text": "Wait, we're being watched!"
+        "text": "The very same!",
+        "presentation": "overhead"
       },
       {
-        "npc": "We are?"
-      },
-      {
-        "type": "line",
-        "speaker": "Naghead",
-        "text": "Yes, a person over there."
-      },
-      {
-        "npc": "Where?"
+        "npc": "Oh my! Do tell.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Naghead",
-        "text": "No! Don't make eye contact."
+        "text": "I were hangin' out me washin'.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Oh my!"
-      },
-      {
-        "type": "line",
-        "speaker": "Naghead",
-        "text": "They're listening to us."
-      },
-      {
-        "npc": "A goblin folk?"
+        "npc": "Yes...",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Naghead",
-        "text": "Oh no! It's one of those tall people."
+        "text": "And I looked over at-",
+        "presentation": "overhead"
       },
       {
-        "npc": "Bizarre creatures for sure."
-      },
-      {
-        "type": "line",
-        "speaker": "Naghead",
-        "text": "Makes my skin crawl to see them."
-      },
-      {
-        "npc": "Why?"
+        "npc": "I'm listening.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Naghead",
-        "text": "So tall and neat."
+        "text": "Wait, we're being watched!",
+        "presentation": "overhead"
       },
       {
-        "npc": "For sure, my dear."
-      },
-      {
-        "type": "line",
-        "speaker": "Naghead",
-        "text": "I hope it doesn't come to speak with us."
-      },
-      {
-        "npc": "What a horrid thought!"
+        "npc": "We are?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Naghead",
-        "text": "Horrid indeed, my dear."
+        "text": "Yes, a person over there.",
+        "presentation": "overhead"
       },
       {
-        "npc": "What should we do?"
-      },
-      {
-        "type": "line",
-        "speaker": "Naghead",
-        "text": "Let us carry on our conversation."
-      },
-      {
-        "npc": "Let's!"
+        "npc": "Where?",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Naghead",
-        "text": "So..."
+        "text": "No! Don't make eye contact.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Yes?"
+        "npc": "Oh my!",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Naghead",
+        "text": "They're listening to us.",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "A goblin folk?",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Naghead",
+        "text": "Oh no! It's one of those tall people.",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "Bizarre creatures for sure.",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Naghead",
+        "text": "Makes my skin crawl to see them.",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "Why?",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Naghead",
+        "text": "So tall and neat.",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "For sure, my dear.",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Naghead",
+        "text": "I hope it doesn't come to speak with us.",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "What a horrid thought!",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Naghead",
+        "text": "Horrid indeed, my dear.",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "What should we do?",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Naghead",
+        "text": "Let us carry on our conversation.",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "Let's!",
+        "presentation": "overhead"
+      },
+      {
+        "type": "line",
+        "speaker": "Naghead",
+        "text": "So...",
+        "presentation": "overhead"
+      },
+      {
+        "npc": "Yes?",
+        "presentation": "overhead"
       },
       {
         "type": "jump",

@@ -3,34 +3,44 @@
   "variants": {
     "overhead-dialogue": [
       {
-        "npc": "We are the righteous ones in his eyes alone."
+        "npc": "We are the righteous ones in his eyes alone.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Let them not infest our cities and towns..."
+        "npc": "Let them not infest our cities and towns...",
+        "presentation": "overhead"
       },
       {
-        "npc": "And lo, we become the power, indeed the force to stop these monsters in their tracks."
+        "npc": "And lo, we become the power, indeed the force to stop these monsters in their tracks.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Verily I urge you, my friends to take up your spades and farm your farms to feed our people in this blessed sanctuary."
+        "npc": "Verily I urge you, my friends to take up your spades and farm your farms to feed our people in this blessed sanctuary.",
+        "presentation": "overhead"
       },
       {
-        "npc": "If thine monsters visage does frighten thee, then tear it off I say... tear it off!"
+        "npc": "If thine monsters visage does frighten thee, then tear it off I say... tear it off!",
+        "presentation": "overhead"
       },
       {
-        "npc": "For Saradomin will guide our sword arms and smash the enemies of humans till their bones become dust."
+        "npc": "For Saradomin will guide our sword arms and smash the enemies of humans till their bones become dust.",
+        "presentation": "overhead"
       },
       {
-        "npc": "And let us smite these monsters unto their deaths."
+        "npc": "And let us smite these monsters unto their deaths.",
+        "presentation": "overhead"
       },
       {
-        "npc": "For they are not the chosen ones in Saradomin's eyes."
+        "npc": "For they are not the chosen ones in Saradomin's eyes.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Where do we go for safety from these monsters... here, with our brethren!"
+        "npc": "Where do we go for safety from these monsters... here, with our brethren!",
+        "presentation": "overhead"
       },
       {
-        "npc": "And let there be no cave or shelter for their spawn until the end of days."
+        "npc": "And let there be no cave or shelter for their spawn until the end of days.",
+        "presentation": "overhead"
       }
     ]
   }

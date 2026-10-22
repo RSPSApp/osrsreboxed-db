@@ -433,14 +433,16 @@
       {
         "type": "line",
         "speaker": "Dire Wolf Alpha",
-        "text": "Grrr!"
+        "text": "Grrr!",
+        "presentation": "overhead"
       }
     ],
     "browsing-for-buffalo-meat-when-summoning-another-wolf": [
       {
         "type": "line",
         "speaker": "Dire Wolf Alpha",
-        "text": "Aarrooooo!"
+        "text": "Aarrooooo!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -452,7 +454,8 @@
       {
         "type": "line",
         "speaker": "Dire Wolf",
-        "text": "Aarrooooo!"
+        "text": "Aarrooooo!",
+        "presentation": "overhead"
       },
       {
         "type": "action",
@@ -1710,15 +1713,7 @@
                     "player": "Oh boy..."
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "type": "end"
-          },
-          {
-            "type": "choice",
-            "options": [
+              },
               {
                 "text": "I need to prepare first.",
                 "steps": [
@@ -1742,14 +1737,16 @@
       {
         "type": "line",
         "speaker": "Minotaur",
-        "text": "Moo!"
+        "text": "Moo!",
+        "presentation": "overhead"
       }
     ],
     "guerilla-marketing-minotaur-upon-reaching-50-and-25-of-its-hitpoints": [
       {
         "type": "line",
         "speaker": "Minotaur",
-        "text": "Moooooo!"
+        "text": "Moooooo!",
+        "presentation": "overhead"
       }
     ],
     "guerilla-marketing-talking-to-leila-after-giving-her-a-test-kebab-but-before-being-told-to-market-the-kebab": [
@@ -1802,7 +1799,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "jump-c532fbcccb78e887"
+                        "branch": "jump-1095254755769868"
                       }
                     ]
                   }
@@ -1887,7 +1884,7 @@
                 "steps": [
                   {
                     "type": "call",
-                    "branch": "jump-c532fbcccb78e887"
+                    "branch": "jump-1095254755769868"
                   }
                 ]
               }
@@ -1924,7 +1921,7 @@
                     "steps": [
                       {
                         "type": "call",
-                        "branch": "jump-c532fbcccb78e887"
+                        "branch": "jump-1095254755769868"
                       }
                     ]
                   }
@@ -2018,13 +2015,6 @@
       },
       {
         "player": "Right..."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "ZntBH2"
       }
     ]
   },
@@ -2149,7 +2139,7 @@
         "id": "r0O40y"
       }
     ],
-    "jump-c532fbcccb78e887": [
+    "jump-1095254755769868": [
       {
         "player": "I need to prepare first."
       },

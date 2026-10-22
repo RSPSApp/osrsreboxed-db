@@ -3,23 +3,28 @@
   "variants": {
     "spawning": [
       {
-        "npc": "Slurp..."
+        "npc": "Slurp...",
+        "presentation": "overhead"
       }
     ],
     "targeting-a-player": [
       {
-        "npc": "Slurp!"
+        "npc": "Slurp!",
+        "presentation": "overhead"
       },
       {
-        "player": "Gulp!"
+        "player": "Gulp!",
+        "presentation": "overhead"
       }
     ],
     "dash-attack": [
       {
-        "npc": "Slurrrrrrrrp..."
+        "npc": "Slurrrrrrrrp...",
+        "presentation": "overhead"
       },
       {
-        "npc": "Slurp!"
+        "npc": "Slurp!",
+        "presentation": "overhead"
       }
     ],
     "deciding-the-snail-master": [
@@ -28,7 +33,8 @@
         "text": "If you received the snelm:",
         "steps": [
           {
-            "player": "I am the snail master."
+            "player": "I am the snail master.",
+            "presentation": "overhead"
           }
         ],
         "id": "2FONpN"
@@ -38,7 +44,8 @@
         "text": "If you didn't receive the snelm:",
         "steps": [
           {
-            "player": "I'm just a regular snail... How could this be?!"
+            "player": "I'm just a regular snail... How could this be?!",
+            "presentation": "overhead"
           }
         ],
         "id": "SrtZ_L"

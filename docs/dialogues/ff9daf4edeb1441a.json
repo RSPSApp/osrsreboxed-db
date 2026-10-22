@@ -19,6 +19,7 @@
     ],
     "overhead-dialogue-when-failing-to-steal-from-a-nearby-stall": [
       {
+        "presentation": "overhead",
         "npc": "Hey! Get your hands off there!"
       }
     ],
@@ -30,6 +31,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Oi!"
               }
             ]
@@ -38,6 +40,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Rahr!"
               }
             ]
@@ -46,6 +49,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "No!"
               }
             ]
@@ -54,6 +58,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Grr!"
               }
             ]
@@ -69,6 +74,7 @@
             "text": "Dialogue 1",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Aargh!"
               }
             ]
@@ -77,6 +83,7 @@
             "text": "Dialogue 2",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "I'm a gonner!"
               }
             ]
@@ -85,6 +92,7 @@
             "text": "Dialogue 3",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "It's no use, I'm done for!"
               }
             ]
@@ -93,6 +101,7 @@
             "text": "Dialogue 4",
             "steps": [
               {
+                "presentation": "overhead",
                 "npc": "Uggh!"
               }
             ]

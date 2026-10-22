@@ -5,7 +5,8 @@
       {
         "type": "line",
         "speaker": "Market Guard",
-        "text": "Hey! Get your hands off there!"
+        "text": "Hey! Get your hands off there!",
+        "presentation": "overhead"
       }
     ]
   }

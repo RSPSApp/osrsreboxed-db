@@ -9,7 +9,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Here I come!"
+                "npc": "Here I come!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -17,7 +18,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "You can't escape me!"
+                "npc": "You can't escape me!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -25,7 +27,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Time to feel my strength!"
+                "npc": "Time to feel my strength!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -33,7 +36,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Time to feel the strength of fire!"
+                "npc": "Time to feel the strength of fire!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -41,7 +45,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "I'll crush you now!"
+                "npc": "I'll crush you now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -49,7 +54,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "No more running, face me now!"
+                "npc": "No more running, face me now!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -64,7 +70,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Time to meet your end!"
+                "npc": "Time to meet your end!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -72,7 +79,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "The real battle begins now!"
+                "npc": "The real battle begins now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -80,7 +88,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "You'll regret provoking me!"
+                "npc": "You'll regret provoking me!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -88,7 +97,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Let's end this fight!"
+                "npc": "Let's end this fight!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -96,7 +106,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Your time is up!"
+                "npc": "Your time is up!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -104,7 +115,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "This is no game anymore!"
+                "npc": "This is no game anymore!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -119,7 +131,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Behold the power of fire!"
+                "npc": "Behold the power of fire!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -127,7 +140,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Face the force of my fury!"
+                "npc": "Face the force of my fury!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -135,7 +149,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Let's see how you handle this!"
+                "npc": "Let's see how you handle this!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -143,7 +158,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Time to face your doom!"
+                "npc": "Time to face your doom!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -151,7 +167,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Time to taste my wrath!"
+                "npc": "Time to taste my wrath!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -159,7 +176,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Can you withstand this power?"
+                "npc": "Can you withstand this power?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -167,7 +185,8 @@
             "text": "Dialogue 7",
             "steps": [
               {
-                "npc": "Feel the heat of my wrath!"
+                "npc": "Feel the heat of my wrath!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -175,7 +194,8 @@
             "text": "Dialogue 8",
             "steps": [
               {
-                "npc": "Prepare to be scorched!"
+                "npc": "Prepare to be scorched!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -183,7 +203,8 @@
             "text": "Dialogue 9",
             "steps": [
               {
-                "npc": "Time to feel my flames!"
+                "npc": "Time to feel my flames!",
+                "presentation": "overhead"
               }
             ]
           }
@@ -198,7 +219,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Time to show you my full strength!"
+                "npc": "Time to show you my full strength!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -206,7 +228,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Finally I can unleash my true power!"
+                "npc": "Finally I can unleash my true power!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -214,7 +237,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Feel the full strength of my wrath now!"
+                "npc": "Feel the full strength of my wrath now!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -222,7 +246,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Now, there's nothing holding me back!"
+                "npc": "Now, there's nothing holding me back!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -230,7 +255,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "No more holding back! Prepare to feel my full strength!"
+                "npc": "No more holding back! Prepare to feel my full strength!",
+                "presentation": "overhead"
               }
             ]
           }

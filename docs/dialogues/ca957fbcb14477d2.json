@@ -3,7 +3,8 @@
   "variants": {
     "overhead-dialogue-randomly": [
       {
-        "npc": "Baa"
+        "npc": "Baa",
+        "presentation": "overhead"
       }
     ]
   }

@@ -423,15 +423,18 @@
                 "id": "fASNA-"
               },
               {
-                "player": "Are you sure this is a good idea?"
+                "player": "Are you sure this is a good idea?",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Goblin Cook",
-                "text": "Absolutely, best idea Mudknuckles ever had."
+                "text": "Absolutely, best idea Mudknuckles ever had.",
+                "presentation": "overhead"
               },
               {
-                "player": "I'm really not convinced that..."
+                "player": "I'm really not convinced that...",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -439,7 +442,8 @@
                 "id": "Xhr3Oo"
               },
               {
-                "player": "Should it shake like that?"
+                "player": "Should it shake like that?",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -449,7 +453,8 @@
               {
                 "type": "line",
                 "speaker": "Goblin Cook",
-                "text": "It fine, it..."
+                "text": "It fine, it...",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -464,7 +469,8 @@
               {
                 "type": "line",
                 "speaker": "Goblin 1",
-                "text": "What that noise?"
+                "text": "What that noise?",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -474,12 +480,14 @@
               {
                 "type": "line",
                 "speaker": "Goblin 1",
-                "text": "You just hear that?"
+                "text": "You just hear that?",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Goblin 2",
-                "text": "Hear what?"
+                "text": "Hear what?",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -489,7 +497,8 @@
               {
                 "type": "line",
                 "speaker": "Goblin 1",
-                "text": "Now there shaking too!"
+                "text": "Now there shaking too!",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -499,7 +508,8 @@
               {
                 "type": "line",
                 "speaker": "Goblin 1",
-                "text": "Ah. That'd be Mudknuckles again then."
+                "text": "Ah. That'd be Mudknuckles again then.",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -507,7 +517,8 @@
                 "id": "CFnAZp"
               },
               {
-                "player": "Mudknuckles?"
+                "player": "Mudknuckles?",
+                "presentation": "overhead"
               },
               {
                 "type": "action",
@@ -517,15 +528,18 @@
               {
                 "type": "line",
                 "speaker": "Goblin Cook",
-                "text": "It..."
+                "text": "It...",
+                "presentation": "overhead"
               },
               {
                 "type": "line",
                 "speaker": "Goblin Cook",
-                "text": "It worked!"
+                "text": "It worked!",
+                "presentation": "overhead"
               },
               {
-                "player": "It did... ?!"
+                "player": "It did... ?!",
+                "presentation": "overhead"
               }
             ]
           },

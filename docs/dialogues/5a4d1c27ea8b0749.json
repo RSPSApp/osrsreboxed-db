@@ -52,7 +52,8 @@
     ],
     "overhead-dialogue-catching-players-attempting-to-steal-from-stalls-in-keldagrim": [
       {
-        "npc": "You! Human! Hands off!"
+        "npc": "You! Human! Hands off!",
+        "presentation": "overhead"
       }
     ]
   }

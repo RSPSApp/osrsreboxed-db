@@ -84,7 +84,8 @@
         "text": "If 0% progress was made during the event:",
         "steps": [
           {
-            "npc": "No ritual steps were completed."
+            "npc": "No ritual steps were completed.",
+            "presentation": "overhead"
           }
         ],
         "id": "UZOqJG"
@@ -94,7 +95,8 @@
         "text": "If 1-24% progress was made during the event:",
         "steps": [
           {
-            "npc": "Under one-quarter of the ritual steps have been completed."
+            "npc": "Under one-quarter of the ritual steps have been completed.",
+            "presentation": "overhead"
           }
         ],
         "id": "U3yWVF"
@@ -104,7 +106,8 @@
         "text": "If 25-49% progress was made during the event:",
         "steps": [
           {
-            "npc": "Over one-quarter of the ritual steps have been completed."
+            "npc": "Over one-quarter of the ritual steps have been completed.",
+            "presentation": "overhead"
           }
         ],
         "id": "eNZg0a"
@@ -114,7 +117,8 @@
         "text": "If 50-74% progress was made during the event:",
         "steps": [
           {
-            "npc": "Over half the ritual steps have been completed."
+            "npc": "Over half the ritual steps have been completed.",
+            "presentation": "overhead"
           }
         ],
         "id": "hwb2rB"
@@ -124,7 +128,8 @@
         "text": "If 75-99% progress was made during the event:",
         "steps": [
           {
-            "npc": "Over three-quarters of the ritual steps were completed. Well done!"
+            "npc": "Over three-quarters of the ritual steps were completed. Well done!",
+            "presentation": "overhead"
           }
         ],
         "id": "K36tzI"
@@ -134,7 +139,8 @@
         "text": "If 100% progress was made during the event:",
         "steps": [
           {
-            "npc": "You all completed every ritual step, amazing!"
+            "npc": "You all completed every ritual step, amazing!",
+            "presentation": "overhead"
           }
         ],
         "id": "rOebnD"

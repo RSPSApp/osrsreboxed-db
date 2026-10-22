@@ -58,7 +58,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Burgers!"
+                "npc": "Burgers!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -66,7 +67,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Hot frogburgers!"
+                "npc": "Hot frogburgers!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -74,7 +76,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "Frogburgers!"
+                "npc": "Frogburgers!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -82,7 +85,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Frog in a bun!"
+                "npc": "Frog in a bun!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -90,7 +94,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "Tasty frogburgers!"
+                "npc": "Tasty frogburgers!",
+                "presentation": "overhead"
               }
             ]
           }

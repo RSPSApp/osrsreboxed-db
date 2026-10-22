@@ -1164,8 +1164,9 @@
                     "player": "Alright, here's the money."
                   },
                   {
-                    "type": "unavailable",
-                    "id": "8Nhp3b"
+                    "type": "message",
+                    "text": "You give 100 coins to the barman.",
+                    "id": "WN9Bk8"
                   },
                   {
                     "type": "line",
@@ -2917,10 +2918,6 @@
         "type": "line",
         "speaker": "Claus the Chef",
         "text": "Go ahead."
-      },
-      {
-        "type": "unavailable",
-        "id": "p1cdNB"
       }
     ],
     "the-mysterious-benefactor-talking-to-claus-the-chef-talking-to-claus-the-chef-again": [
@@ -5218,13 +5215,6 @@
         "type": "line",
         "speaker": "Claus the Chef",
         "text": "Things aren't the same here now that Sir Ceril is gone."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "oJ-za0"
       }
     ]
   },
@@ -5509,8 +5499,9 @@
             "player": "Alright, here's the money."
           },
           {
-            "type": "unavailable",
-            "id": "8Nhp3b"
+            "type": "message",
+            "text": "You give 100 coins to the barman.",
+            "id": "WN9Bk8"
           },
           {
             "type": "line",

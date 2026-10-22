@@ -9,131 +9,172 @@
     ],
     "standard-dialogue-monologue-1": [
       {
-        "npc": "So there I was, minding my own business on the boat, when I feel us slow to a halt."
+        "npc": "So there I was, minding my own business on the boat, when I feel us slow to a halt.",
+        "presentation": "overhead"
       },
       {
-        "npc": "This man walks over to me and says that it's my stop, absurd though that is."
+        "npc": "This man walks over to me and says that it's my stop, absurd though that is.",
+        "presentation": "overhead"
       },
       {
-        "npc": "So they all sort of... toss me onto this island with a meagre amount of survival objects."
+        "npc": "So they all sort of... toss me onto this island with a meagre amount of survival objects.",
+        "presentation": "overhead"
       },
       {
-        "npc": "I think they were laughing whilst they did it."
+        "npc": "I think they were laughing whilst they did it.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Either way, there I was. Alone. On this island."
+        "npc": "Either way, there I was. Alone. On this island.",
+        "presentation": "overhead"
       },
       {
-        "npc": "I'd paid quite handsomely for my passage too!"
+        "npc": "I'd paid quite handsomely for my passage too!",
+        "presentation": "overhead"
       },
       {
-        "npc": "A tour to the rainforest, and then dinner in Tal Teklan."
+        "npc": "A tour to the rainforest, and then dinner in Tal Teklan.",
+        "presentation": "overhead"
       },
       {
-        "npc": "This crew were all so very willing to get me where I wanted to go."
+        "npc": "This crew were all so very willing to get me where I wanted to go.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Very helpful as they collected my belongings. Eager, even."
+        "npc": "Very helpful as they collected my belongings. Eager, even.",
+        "presentation": "overhead"
       },
       {
-        "npc": "It felt exclusive. I was the only passenger they took aboard."
+        "npc": "It felt exclusive. I was the only passenger they took aboard.",
+        "presentation": "overhead"
       },
       {
-        "npc": "I do see now that I was perhaps foolish."
+        "npc": "I do see now that I was perhaps foolish.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Drawn in by their charms, throwing money around."
+        "npc": "Drawn in by their charms, throwing money around.",
+        "presentation": "overhead"
       },
       {
-        "npc": "I just really wanted that dinner in Tal Teklan, you know?"
+        "npc": "I just really wanted that dinner in Tal Teklan, you know?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Now I'm going to die alone on an island, bereft of my worldly possessions."
+        "npc": "Now I'm going to die alone on an island, bereft of my worldly possessions.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Perhaps the bards of Temptestus will write of my sorrow, should they hear my tale."
+        "npc": "Perhaps the bards of Temptestus will write of my sorrow, should they hear my tale.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Tell people of my struggles!"
+        "npc": "Tell people of my struggles!",
+        "presentation": "overhead"
       }
     ],
     "standard-dialogue-monologue-2": [
       {
-        "npc": "Excuse me! Hello! I appear to have found myself in a situation here."
+        "npc": "Excuse me! Hello! I appear to have found myself in a situation here.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Can you see any way for me to... defamiliarise myself with this island?"
+        "npc": "Can you see any way for me to... defamiliarise myself with this island?",
+        "presentation": "overhead"
       },
       {
-        "npc": "I'm getting rather bored being stuck here waiting for the tide to swallow me."
+        "npc": "I'm getting rather bored being stuck here waiting for the tide to swallow me.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Though, that is reliant on me not throwing myself into the dark sea first."
+        "npc": "Though, that is reliant on me not throwing myself into the dark sea first.",
+        "presentation": "overhead"
       },
       {
-        "npc": "But fear not! I shan't do that, for it would be improper."
+        "npc": "But fear not! I shan't do that, for it would be improper.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Though if it rains again, I may be tempted."
+        "npc": "Though if it rains again, I may be tempted.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Observe how I have nothing here on this island."
+        "npc": "Observe how I have nothing here on this island.",
+        "presentation": "overhead"
       },
       {
-        "npc": "There's myself and the occasional crab, but I've been left here... Abandoned! Forgotten!"
+        "npc": "There's myself and the occasional crab, but I've been left here... Abandoned! Forgotten!",
+        "presentation": "overhead"
       },
       {
-        "npc": "I don't suppose you could send for a boat to retrieve me?"
+        "npc": "I don't suppose you could send for a boat to retrieve me?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Or perhaps an armada."
+        "npc": "Or perhaps an armada.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Yes, this predicament needs excessive force to be resolved peacefully."
+        "npc": "Yes, this predicament needs excessive force to be resolved peacefully.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Maybe I should pack a flag next time. Claim this land for myself."
+        "npc": "Maybe I should pack a flag next time. Claim this land for myself.",
+        "presentation": "overhead"
       }
     ],
     "standard-dialogue-monologue-3": [
       {
-        "npc": "No! I can't be stuck here! It's far too small."
+        "npc": "No! I can't be stuck here! It's far too small.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Are you finding the air just chokes you here? It is the air, isn't it?"
+        "npc": "Are you finding the air just chokes you here? It is the air, isn't it?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Gosh, it feels as if my skin is just crawling."
+        "npc": "Gosh, it feels as if my skin is just crawling.",
+        "presentation": "overhead"
       },
       {
-        "npc": "Nobody's going to find me here... I'm going to rot on this island alone."
+        "npc": "Nobody's going to find me here... I'm going to rot on this island alone.",
+        "presentation": "overhead"
       },
       {
-        "npc": "No, no, no!"
+        "npc": "No, no, no!",
+        "presentation": "overhead"
       },
       {
-        "npc": "My regular baker will realise I've not come by in a day. He will send a search party!"
+        "npc": "My regular baker will realise I've not come by in a day. He will send a search party!",
+        "presentation": "overhead"
       },
       {
-        "npc": "They will send a search party, won't they?"
+        "npc": "They will send a search party, won't they?",
+        "presentation": "overhead"
       },
       {
-        "npc": "What if they don't?"
+        "npc": "What if they don't?",
+        "presentation": "overhead"
       },
       {
-        "npc": "Someone will know I'm missing."
+        "npc": "Someone will know I'm missing.",
+        "presentation": "overhead"
       },
       {
-        "npc": "This island is too small though... They won't be able to see it."
+        "npc": "This island is too small though... They won't be able to see it.",
+        "presentation": "overhead"
       },
       {
-        "npc": "I'd start a fire, if only I had the tools to do so."
+        "npc": "I'd start a fire, if only I had the tools to do so.",
+        "presentation": "overhead"
       },
       {
-        "npc": "This isn't how I was meant to die!"
+        "npc": "This isn't how I was meant to die!",
+        "presentation": "overhead"
       },
       {
-        "npc": "I was meant to go down gloriously in the Colosseum!"
+        "npc": "I was meant to go down gloriously in the Colosseum!",
+        "presentation": "overhead"
       }
     ]
   }

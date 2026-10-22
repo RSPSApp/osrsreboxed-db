@@ -82,7 +82,8 @@
             "text": "Dialogue 1",
             "steps": [
               {
-                "npc": "Pink bananas... mmmmmm."
+                "npc": "Pink bananas... mmmmmm.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -90,7 +91,8 @@
             "text": "Dialogue 2",
             "steps": [
               {
-                "npc": "Demons are a Ghoul's best Friend."
+                "npc": "Demons are a Ghoul's best Friend.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -98,7 +100,8 @@
             "text": "Dialogue 3",
             "steps": [
               {
-                "npc": "It's not an optical illusion, it just looks like one."
+                "npc": "It's not an optical illusion, it just looks like one.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -106,7 +109,8 @@
             "text": "Dialogue 4",
             "steps": [
               {
-                "npc": "Don't look back, they might be gaining on you."
+                "npc": "Don't look back, they might be gaining on you.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -114,7 +118,8 @@
             "text": "Dialogue 5",
             "steps": [
               {
-                "npc": "If you don't care where you are, then you ain't lost."
+                "npc": "If you don't care where you are, then you ain't lost.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -122,7 +127,8 @@
             "text": "Dialogue 6",
             "steps": [
               {
-                "npc": "Madness takes its toll. Please have exact change."
+                "npc": "Madness takes its toll. Please have exact change.",
+                "presentation": "overhead"
               }
             ]
           }

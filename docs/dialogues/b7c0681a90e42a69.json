@@ -19,7 +19,8 @@
               "npc": "Not in my house. Be gone!"
             },
             {
-              "npc": "Be gone, intruder!"
+              "npc": "Be gone, intruder!",
+              "presentation": "overhead"
             },
             {
               "type": "action",
@@ -40,7 +41,8 @@
               "npc": "I think not!"
             },
             {
-              "npc": "Be gone, intruder!"
+              "npc": "Be gone, intruder!",
+              "presentation": "overhead"
             },
             {
               "type": "action",

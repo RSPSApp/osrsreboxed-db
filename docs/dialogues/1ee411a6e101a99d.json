@@ -137,16 +137,19 @@
     ],
     "overhead-dialogue-when-the-player-is-balancing-kegs-when-balancing-1-3-kegs": [
       {
+        "presentation": "overhead",
         "npc": "Ya got no chance o' beatin' me [player name]!"
       }
     ],
     "overhead-dialogue-when-the-player-is-balancing-kegs-when-balancing-4-5-kegs": [
       {
+        "presentation": "overhead",
         "npc": "No one's stronger than me, 'speshly not [player name]!"
       }
     ],
     "overhead-dialogue-when-the-player-is-balancing-kegs-when-the-kegs-fall-after-balancing-5-or-more": [
       {
+        "presentation": "overhead",
         "npc": "Wow! That'sh bery impr....imp...impresh.... good [player name]! Equalsh my record!"
       }
     ]

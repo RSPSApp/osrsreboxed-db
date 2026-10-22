@@ -2828,13 +2828,6 @@
         "type": "line",
         "speaker": "Junior Navigator",
         "text": "Here, take this journal so you can keep track of your discoveries. Base camp is being set up on shore, let me know if you'd like to head there."
-      },
-      {
-        "type": "end"
-      },
-      {
-        "type": "unavailable",
-        "id": "zfbZg1"
       }
     ]
   },

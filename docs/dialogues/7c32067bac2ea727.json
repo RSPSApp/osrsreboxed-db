@@ -1293,7 +1293,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "Whistles*"
+                "text": "Whistles*",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1303,7 +1304,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "At least I'm not guarding the market."
+                "text": "At least I'm not guarding the market.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1313,7 +1315,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "10 green bottles... or was it 9 green bottles?"
+                "text": "10 green bottles... or was it 9 green bottles?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1323,7 +1326,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "99 green bottles..."
+                "text": "99 green bottles...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1333,7 +1337,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "508 green bottles..."
+                "text": "508 green bottles...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1343,7 +1348,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "Why me?"
+                "text": "Why me?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1353,7 +1359,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "Fun party..."
+                "text": "Fun party...",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1363,7 +1370,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "I need a new job."
+                "text": "I need a new job.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1373,7 +1381,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "I'd kill for a kebab."
+                "text": "I'd kill for a kebab.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1383,7 +1392,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "Can't wait for the weekend."
+                "text": "Can't wait for the weekend.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1393,7 +1403,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "I'm hungry."
+                "text": "I'm hungry.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1403,7 +1414,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "Where's that relief guard?"
+                "text": "Where's that relief guard?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1413,7 +1425,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "I wonder if Ali Morissane is hiring?"
+                "text": "I wonder if Ali Morissane is hiring?",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1423,7 +1436,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "These night shifts just go on and on."
+                "text": "These night shifts just go on and on.",
+                "presentation": "overhead"
               }
             ]
           },
@@ -1433,7 +1447,8 @@
               {
                 "type": "line",
                 "speaker": "Guard",
-                "text": "I'm so bored..."
+                "text": "I'm so bored...",
+                "presentation": "overhead"
               }
             ]
           }
@@ -1444,7 +1459,8 @@
       {
         "type": "line",
         "speaker": "Guard",
-        "text": "Halt thief!"
+        "text": "Halt thief!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -1456,7 +1472,8 @@
       {
         "type": "line",
         "speaker": "Guest",
-        "text": "A Thief!"
+        "text": "A Thief!",
+        "presentation": "overhead"
       },
       {
         "type": "message",
@@ -2538,7 +2555,8 @@
                 "text": "Pfssst!"
               },
               {
-                "player": "Go get him, kitty!"
+                "player": "Go get him, kitty!",
+                "presentation": "overhead"
               }
             ]
           },
@@ -2585,15 +2603,18 @@
       {
         "type": "line",
         "speaker": "Cat",
-        "text": "Miaooow!"
+        "text": "Miaooow!",
+        "presentation": "overhead"
       },
       {
-        "player": "Come here, kitty."
+        "player": "Come here, kitty.",
+        "presentation": "overhead"
       },
       {
         "type": "line",
         "speaker": "Cat",
-        "text": "Miaooow!"
+        "text": "Miaooow!",
+        "presentation": "overhead"
       }
     ],
     "hooknosed-jack-returning-to-jack-2": [
@@ -4051,10 +4072,6 @@
         "type": "action",
         "text": "Congratulations! Quest complete!",
         "id": "LHwBkP"
-      },
-      {
-        "type": "unavailable",
-        "id": "NKdlel"
       }
     ]
   },

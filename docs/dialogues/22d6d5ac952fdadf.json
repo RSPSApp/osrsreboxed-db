@@ -772,7 +772,8 @@
     ],
     "overhead-dialogue-when-a-player-starts-a-game": [
       {
-        "npc": "[player name] has started up a mine! Join [him/her/them] down there now!"
+        "npc": "[player name] has started up a mine! Join [him/her/them] down there now!",
+        "presentation": "overhead"
       }
     ],
     "dragon-pickaxe-broken-using-a-dragon-pickaxe-broken-on-pete": [
