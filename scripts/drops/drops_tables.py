@@ -35,8 +35,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import json
 import logging
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import date
+from decimal import Decimal
+from itertools import groupby
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -106,6 +108,10 @@ class ResolvedEntry:
     brimstone_combat_roll: bool = False
     brimstone_konar_bonus: bool = False
     notes: List[str] = field(default_factory=list)
+    quantity_condition: Optional[Dict[str, str]] = None
+    bundle_ref: str = ""
+    bundle_eligibility: List[str] = field(default_factory=list)
+    bonus_drops: List["ResolvedEntry"] = field(default_factory=list)
 
 
 @dataclass
@@ -127,6 +133,7 @@ class DropTableSpec:
     table_name: str
     wiki_page: str
     npc_ids: List[int]
+    excluded_npc_ids: List[int] = field(default_factory=list)
     guaranteed: List[ResolvedEntry] = field(default_factory=list)
     pre_roll: List[ResolvedEntry] = field(default_factory=list)
     pre_roll_separate: List[SeparateRoll] = field(default_factory=list)
@@ -328,6 +335,9 @@ def _resolve_entry(drop: ParsedDrop, items: ItemIdLookup) -> Optional[ResolvedEn
         is_noted=drop.is_noted,
         clue_scroll_box=drop.clue_scroll_box,
         notes=list(drop.notes),
+        quantity_condition=drop.quantity_condition,
+        bundle_ref=drop.bundle_ref,
+        bundle_eligibility=list(drop.bundle_eligibility),
     )
 
     if drop.section == SECTION_GUARANTEED:
@@ -349,6 +359,55 @@ def _resolve_entry(drop: ParsedDrop, items: ItemIdLookup) -> Optional[ResolvedEn
         return None
     entry.weight, entry.out_of = rate
     return entry
+
+
+def _bundle_dropped_together(main: List[ResolvedEntry]) -> List[ResolvedEntry]:
+    """Merge adjacent main-table rows the wiki footnotes as dropped together.
+
+    Exactly two adjacent rows in one subsection, sharing the footnote and the
+    same rate, become one slot: the second row moves into the first row's
+    ``bonus_drops``. Any other shape (a lone row whose partner did not resolve,
+    rows at different rates, three or more rows) is left as separate slots,
+    because the source then does not establish one slot.
+    """
+    bundled: List[ResolvedEntry] = []
+    index = 0
+    while index < len(main):
+        entry = main[index]
+        run = [entry]
+        if entry.bundle_ref:
+            while index + len(run) < len(main):
+                candidate = main[index + len(run)]
+                if (
+                    candidate.bundle_ref != entry.bundle_ref
+                    or candidate.subsection != entry.subsection
+                ):
+                    break
+                run.append(candidate)
+        first, partners = run[0], run[1:]
+        if (
+            len(partners) == 1
+            and not first.is_nothing
+            and not partners[0].is_nothing
+            and (first.weight, first.roll_denominator)
+            == (partners[0].weight, partners[0].roll_denominator)
+            and first.bundle_eligibility == partners[0].bundle_eligibility
+            and first.quantity_condition == partners[0].quantity_condition
+            and wikitext.parse_quantity_alternatives(partners[0].quantity) is None
+            and _parse_quantity(partners[0].quantity) is not None
+        ):
+            first.bonus_drops.append(partners[0])
+            bundled.append(first)
+        else:
+            if len(partners) > 1:
+                logger.warning(
+                    "Footnote %r joins %d rows; left as separate slots",
+                    entry.bundle_ref,
+                    len(run),
+                )
+            bundled.extend(run)
+        index += len(run)
+    return bundled
 
 
 def _finalize_main_rolls(
@@ -422,6 +481,17 @@ def build_table_spec(
         access.table_key in ("seed", "rareSeed") for access in table.subtable_accesses
     )
 
+    # Keep adjacency and run size from source rows, before unresolved items or
+    # skipped seed entries disappear. Distinct runs of one footnote stay distinct.
+    source_pairs = {}
+    for (ref, subsection), run in groupby(
+        enumerate(table.drops), key=lambda row: (row[1].bundle_ref, row[1].subsection)
+    ):
+        rows = list(run)
+        if ref and len(rows) == 2:
+            for _, source_drop in rows:
+                source_pairs[id(source_drop)] = f"{ref}:{rows[0][0]}"
+
     for drop in table.drops:
         if has_seed_access and drop.subsection.lower() == "seeds":
             continue
@@ -430,12 +500,15 @@ def build_table_spec(
             if not drop.is_nothing and wikitext.has_known_drop_rate(drop.rarity):
                 unresolved.append(drop.name)
             continue
+        entry.bundle_ref = source_pairs.get(id(drop), "")
         if drop.section == SECTION_GUARANTEED:
             guaranteed.append(entry)
         elif drop.section == SECTION_TERTIARY:
             tertiary.append(entry)
         else:
             main.append(entry)
+
+    main = _bundle_dropped_together(main)
 
     pre_roll_drops = []
     standard_main = []
@@ -461,6 +534,7 @@ def build_table_spec(
         table_name=_table_identifier(wiki_page, table.table_name, table.drop_variant),
         wiki_page=display_wiki_page_name(wiki_page),
         npc_ids=table.npc_ids,
+        excluded_npc_ids=list(table.excluded_npc_ids),
         guaranteed=guaranteed,
         pre_roll=pre_roll,
         pre_roll_separate=pre_roll_separate,
@@ -493,7 +567,7 @@ def _rarity(weight: Optional[int], out_of: Optional[int]) -> Optional[float]:
 
 def _parse_quantity(raw: str) -> Optional[List[int]]:
     """``"1"`` -> [1, 1]; ``"3-5"`` -> [3, 5]; anything else stays raw."""
-    trimmed = raw.strip().replace(",", "")
+    trimmed = raw.strip()
     if not trimmed:
         return None
     if re.fullmatch(r"\d+", trimmed):
@@ -502,6 +576,23 @@ def _parse_quantity(raw: str) -> Optional[List[int]]:
     if not match:
         return None
     return [int(match.group(1)), int(match.group(2))]
+
+
+def _bonus_drop_json(entry: ResolvedEntry) -> Dict:
+    """A row dropped together with its slot's first row: item and amount only."""
+    alternatives = wikitext.parse_quantity_alternatives(entry.quantity)
+    quantity = (
+        list(alternatives[0]) if alternatives else _parse_quantity(entry.quantity)
+    )
+    return _without_nulls(
+        {
+            "item_id": entry.item_id,
+            "name": entry.name,
+            "quantity": quantity,
+            "quantity_raw": entry.quantity if quantity is None else None,
+            "noted": True if entry.is_noted else None,
+        }
+    )
 
 
 def _entry_json(
@@ -518,7 +609,26 @@ def _entry_json(
     if not entry.name:
         return None
 
-    quantity = _parse_quantity(entry.quantity)
+    alternatives = wikitext.parse_quantity_alternatives(entry.quantity)
+    if alternatives:
+        # The first-listed alternative is the source's default; the full list
+        # stays beside it so a consumer with the right context can choose.
+        quantity: Optional[List[int]] = list(alternatives[0])
+        quantity_raw: Optional[str] = entry.quantity
+        quantity_alternatives: Optional[List[Dict]] = [
+            {"quantity": [low, high]} for low, high in alternatives
+        ]
+        if entry.quantity_condition:
+            for alternative in quantity_alternatives[1:]:
+                alternative["condition"] = dict(entry.quantity_condition)
+            quantity_selection: Optional[str] = "conditional"
+        else:
+            quantity_selection = "unknown"
+    else:
+        quantity = _parse_quantity(entry.quantity)
+        quantity_raw = entry.quantity if entry.quantity and quantity is None else None
+        quantity_alternatives = None
+        quantity_selection = None
     rarity = _rarity(entry.weight if entry.weight is not None else 1, out_of)
 
     return _without_nulls(
@@ -526,9 +636,9 @@ def _entry_json(
             "item_id": entry.item_id,
             "name": entry.name,
             "quantity": quantity,
-            "quantity_raw": (
-                entry.quantity if entry.quantity and quantity is None else None
-            ),
+            "quantity_raw": quantity_raw,
+            "quantity_alternatives": quantity_alternatives,
+            "quantity_selection": quantity_selection,
             "always": True if always else None,
             "pre_roll": True if pre_roll else None,
             "separate_roll": True if separate else None,
@@ -543,9 +653,33 @@ def _entry_json(
             "clue_scroll_box": True if entry.clue_scroll_box else None,
             "assumed_rarity": True if entry.assumed_rarity else None,
             "notes": entry.notes or None,
+            "bonus_drops": [_bonus_drop_json(bonus) for bonus in entry.bonus_drops]
+            or None,
         },
         keep=("item_id",),
     )
+
+
+def _pre_roll_json(entry: ResolvedEntry) -> Optional[Dict]:
+    """Keep a pre-roll's source probability exact, including decimal fractions.
+
+    Scale decimal components together without reducing integer source slots:
+    1/181.1 becomes 10/1811, while 4/540 stays 4/540 so peer rows still share
+    their source pool. Invalid probabilities retain raw provenance only.
+    """
+    out_of = entry.out_of or entry.roll_denominator
+    match = wikitext.DECIMAL_FRACTION_RARITY.search(entry.rarity_raw)
+    if match:
+        numerator, denominator = map(Decimal, match.groups())
+        out_of = None
+        if denominator > 0 and 0 <= numerator <= denominator:
+            places = max(
+                0, -numerator.as_tuple().exponent, -denominator.as_tuple().exponent
+            )
+            scale = 10**places
+            entry = replace(entry, weight=int(numerator * scale))
+            out_of = int(denominator * scale)
+    return _entry_json(entry, out_of=out_of, pre_roll=True)
 
 
 def build_table_json(spec: DropTableSpec) -> Dict:
@@ -556,7 +690,7 @@ def build_table_json(spec: DropTableSpec) -> Dict:
         if row:
             entries.append(row)
     for entry in spec.pre_roll:
-        row = _entry_json(entry, out_of=entry.out_of, pre_roll=True)
+        row = _pre_roll_json(entry)
         if row:
             entries.append(row)
     for entry in spec.main:
@@ -653,7 +787,9 @@ class NpcDropsAggregator:
             self.shared_refs.add(access.table_key)
         self.unresolved_items.update(spec.unresolved_items)
 
-        for npc_id in spec.npc_ids:
+        # Keep known source variants even when this table explicitly excludes
+        # them. An empty table list is executable no-loot data, not a lost ID.
+        for npc_id in dict.fromkeys(spec.npc_ids + spec.excluded_npc_ids):
             npc = self.npcs.get(npc_id)
             if npc is None:
                 npc = _without_nulls(
@@ -668,7 +804,7 @@ class NpcDropsAggregator:
                     }
                 )
                 self.npcs[npc_id] = npc
-            if table_id not in npc["tables"]:
+            if npc_id in spec.npc_ids and table_id not in npc["tables"]:
                 npc["tables"].append(table_id)
 
     def _register_table(self, table: Dict) -> str:

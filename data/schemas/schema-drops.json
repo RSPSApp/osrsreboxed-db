@@ -160,6 +160,103 @@
           "schema": {
             "type": "string"
           }
+        },
+        "quantity_alternatives": {
+          "description": "Every quantity the wiki lists for this drop, in source order; the first is the default and later ones may carry the source-stated condition that selects them.",
+          "type": "list",
+          "required": false,
+          "nullable": false,
+          "minlength": 2,
+          "schema": {
+            "type": "dict",
+            "schema": {
+              "quantity": {
+                "type": "list",
+                "required": true,
+                "nullable": false,
+                "minlength": 2,
+                "maxlength": 2,
+                "schema": {
+                  "type": "integer"
+                }
+              },
+              "condition": {
+                "type": "dict",
+                "required": false,
+                "nullable": false,
+                "schema": {
+                  "type": {
+                    "type": "string",
+                    "required": true,
+                    "nullable": false
+                  },
+                  "monster": {
+                    "type": "string",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "location": {
+                    "type": "string",
+                    "required": false,
+                    "nullable": false
+                  }
+                }
+              }
+            }
+          }
+        },
+        "quantity_selection": {
+          "description": "How a consumer chooses among quantity_alternatives: 'conditional' when every alternative after the first has a typed condition, 'unknown' when the source publishes no rule.",
+          "type": "string",
+          "required": false,
+          "nullable": false,
+          "allowed": [
+            "conditional",
+            "unknown"
+          ]
+        },
+        "bonus_drops": {
+          "description": "Drops the wiki footnotes as dropped together with this one: they land whenever this slot is rolled.",
+          "type": "list",
+          "required": false,
+          "nullable": false,
+          "minlength": 1,
+          "schema": {
+            "type": "dict",
+            "schema": {
+              "item_id": {
+                "type": "integer",
+                "required": true,
+                "nullable": true,
+                "min": 0
+              },
+              "name": {
+                "type": "string",
+                "required": true,
+                "nullable": false
+              },
+              "quantity": {
+                "type": "list",
+                "required": false,
+                "nullable": false,
+                "minlength": 2,
+                "maxlength": 2,
+                "schema": {
+                  "type": "integer"
+                }
+              },
+              "quantity_raw": {
+                "type": "string",
+                "required": false,
+                "nullable": false
+              },
+              "noted": {
+                "type": "boolean",
+                "required": false,
+                "nullable": false
+              }
+            }
+          }
         }
       }
     }

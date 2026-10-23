@@ -73,7 +73,8 @@ def test_npcs_reference_known_tables():
 
     for npc_id, npc in npc_drops["npcs"].items():
         assert npc["npc_id"] == int(npc_id)
-        assert npc["tables"], f"npc {npc_id} has no drop tables"
+        # Explicitly excluded encounter variants retain an empty no-loot mapping.
+        assert isinstance(npc["tables"], list)
         for table_id in npc["tables"]:
             assert (
                 table_id in tables
@@ -94,3 +95,65 @@ def test_shared_tables_are_exported():
                 assert (
                     shared_table in subtables
                 ), f"drop table {table_id} rolls undefined shared table {shared_table}"
+
+
+def test_generated_quantities_keep_source_conditions_and_discrete_alternatives():
+    dump = _load("npc-drops.json")
+    rows = [
+        row
+        for table in dump["tables"].values()
+        for row in table["entries"] + table["tertiary"]
+    ]
+    alternatives = [row for row in rows if "quantity_alternatives" in row]
+    counts = {}
+    for row in alternatives:
+        assert row["quantity"] == row["quantity_alternatives"][0]["quantity"]
+        kind = (
+            "unknown"
+            if row["quantity_selection"] == "unknown"
+            else row["quantity_alternatives"][1]["condition"]["type"]
+        )
+        counts[kind] = counts.get(kind, 0) + 1
+    assert counts == {
+        "perfect_kill": 99,
+        "bounty_task": 2,
+        "preferred_method": 3,
+        "unknown": 12,
+    }
+    assert all("quantity" in row for row in rows if "quantity_raw" in row)
+
+
+def test_quantity_export_preserves_npc_mappings_and_unrelated_reward_paths():
+    dump = _load("npc-drops.json")
+    assert len(dump["tables"]) == 1112
+    assert len(dump["npcs"]) == 3092
+    assert {npc_id for npc_id, npc in dump["npcs"].items() if not npc["tables"]} == {
+        "8058",
+        "8060",
+        "13686",
+    }
+    for npc_id in ("8059", "8061"):
+        assert dump["npcs"][npc_id]["tables"] == ["vorkath"]
+    assert dump["npcs"]["13685"]["tables"] == ["amoxliatl"]
+    # Preserve this repository's existing export. TSPS's older import has
+    # thirty Mimic rows and only one Bandit champion row; importing the complete
+    # canonical dump requires its existing reward/eligibility consumer paths.
+    assert len(dump["tables"]["the_mimic"]["entries"]) == 1
+    assert len(dump["tables"]["the_mimic_2"]["entries"]) == 1
+    assert len(dump["tables"]["bandit_champion"]["entries"]) == 3
+    occult = next(
+        row
+        for row in dump["tables"]["thermonuclear_smoke_devil"]["entries"]
+        if row.get("item_id") == 12002
+    )
+    assert [occult["weight"], occult["out_of"]] == [1, 350]
+
+
+def test_generated_nex_keeps_two_paired_supply_slots():
+    nex = _load("npc-drops.json")["tables"]["nex"]
+    assert nex["main_max_roll"] == 12
+    assert sorted(
+        (row["item_id"], bonus["item_id"])
+        for row in nex["entries"]
+        for bonus in row.get("bonus_drops", [])
+    ) == [(385, 2434), (6685, 3024)]

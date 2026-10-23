@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated": "2026-10-07",
+    "generated": "2026-10-24",
     "source": "https://oldschool.runescape.wiki",
     "license": "CC BY-NC-SA 3.0 \u2014 content from the Old School RuneScape Wiki",
     "id_space": "osrs cache ids (item and npc ids from the osrsreboxed databases)",
     "npc_count": 3092,
     "table_count": 1112,
-    "table_refs": 3122,
+    "table_refs": 3119,
     "wiki_pages_scanned": 1659,
     "shared_tables": [
       "",
@@ -1695,7 +1695,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/100",
+          "out_of": 100,
+          "rarity": 0.01,
           "section": "Pre-roll"
         },
         {
@@ -3635,7 +3636,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/35",
+          "out_of": 35,
+          "rarity": 0.0285714,
           "section": "Pre-roll"
         },
         {
@@ -3963,8 +3965,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/181.1",
+          "weight": 10,
+          "out_of": 1811,
+          "rarity": 0.0055218,
           "section": "Pre-roll",
           "notes": [
             "The order in which players receive the items is: Hydra's eye, Hydra's fang and finally Hydra's heart."
@@ -3978,8 +3981,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/181.1",
+          "weight": 10,
+          "out_of": 1811,
+          "rarity": 0.0055218,
           "section": "Pre-roll",
           "notes": [
             "The order in which players receive the items is: Hydra's eye, Hydra's fang and finally Hydra's heart."
@@ -3993,8 +3997,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/181.1",
+          "weight": 10,
+          "out_of": 1811,
+          "rarity": 0.0055218,
           "section": "Pre-roll",
           "notes": [
             "The order in which players receive the items is: Hydra's eye, Hydra's fang and finally Hydra's heart."
@@ -5030,7 +5035,7 @@
       "label": "Drops",
       "table_name": "Ammonite Crab Drops",
       "wiki_page": "Ammonite Crab",
-      "main_max_roll": 129,
+      "main_max_roll": 128,
       "entries": [
         {
           "item_id": 1267,
@@ -5040,8 +5045,8 @@
             1
           ],
           "weight": 5,
-          "out_of": 129,
-          "rarity": 0.0387597,
+          "out_of": 128,
+          "rarity": 0.0390625,
           "section": "Weapons"
         },
         {
@@ -5052,8 +5057,8 @@
             4
           ],
           "weight": 29,
-          "out_of": 129,
-          "rarity": 0.2248062,
+          "out_of": 128,
+          "rarity": 0.2265625,
           "section": "Fossilised currency"
         },
         {
@@ -5064,8 +5069,8 @@
             2
           ],
           "weight": 8,
-          "out_of": 129,
-          "rarity": 0.0620155,
+          "out_of": 128,
+          "rarity": 0.0625,
           "section": "Fossilised currency"
         },
         {
@@ -5076,8 +5081,8 @@
             8
           ],
           "weight": 6,
-          "out_of": 129,
-          "rarity": 0.0465116,
+          "out_of": 128,
+          "rarity": 0.046875,
           "section": "Fossilised currency"
         },
         {
@@ -5088,8 +5093,8 @@
             1
           ],
           "weight": 6,
-          "out_of": 129,
-          "rarity": 0.0465116,
+          "out_of": 128,
+          "rarity": 0.046875,
           "section": "Materials"
         },
         {
@@ -5100,8 +5105,8 @@
             1
           ],
           "weight": 2,
-          "out_of": 129,
-          "rarity": 0.0155039,
+          "out_of": 128,
+          "rarity": 0.015625,
           "section": "Materials"
         },
         {
@@ -5112,8 +5117,8 @@
             3
           ],
           "weight": 4,
-          "out_of": 129,
-          "rarity": 0.0310078,
+          "out_of": 128,
+          "rarity": 0.03125,
           "section": "Materials"
         },
         {
@@ -5124,8 +5129,8 @@
             5
           ],
           "weight": 2,
-          "out_of": 129,
-          "rarity": 0.0155039,
+          "out_of": 128,
+          "rarity": 0.015625,
           "section": "Materials"
         },
         {
@@ -5136,8 +5141,8 @@
             2
           ],
           "weight": 2,
-          "out_of": 129,
-          "rarity": 0.0155039,
+          "out_of": 128,
+          "rarity": 0.015625,
           "section": "Materials"
         },
         {
@@ -5148,8 +5153,8 @@
             3
           ],
           "weight": 2,
-          "out_of": 129,
-          "rarity": 0.0155039,
+          "out_of": 128,
+          "rarity": 0.015625,
           "section": "Materials"
         },
         {
@@ -5160,8 +5165,8 @@
             2
           ],
           "weight": 12,
-          "out_of": 129,
-          "rarity": 0.0930233,
+          "out_of": 128,
+          "rarity": 0.09375,
           "section": "Oysters and Seaweed"
         },
         {
@@ -5172,8 +5177,8 @@
             1
           ],
           "weight": 9,
-          "out_of": 129,
-          "rarity": 0.0697674,
+          "out_of": 128,
+          "rarity": 0.0703125,
           "section": "Oysters and Seaweed"
         },
         {
@@ -5184,8 +5189,8 @@
             2
           ],
           "weight": 8,
-          "out_of": 129,
-          "rarity": 0.0620155,
+          "out_of": 128,
+          "rarity": 0.0625,
           "section": "Oysters and Seaweed"
         },
         {
@@ -5196,8 +5201,8 @@
             1
           ],
           "weight": 3,
-          "out_of": 129,
-          "rarity": 0.0232558,
+          "out_of": 128,
+          "rarity": 0.0234375,
           "section": "Oysters and Seaweed"
         },
         {
@@ -5208,8 +5213,8 @@
             5
           ],
           "weight": 2,
-          "out_of": 129,
-          "rarity": 0.0155039,
+          "out_of": 128,
+          "rarity": 0.015625,
           "section": "Oysters and Seaweed"
         },
         {
@@ -5220,8 +5225,8 @@
             2
           ],
           "weight": 2,
-          "out_of": 129,
-          "rarity": 0.0155039,
+          "out_of": 128,
+          "rarity": 0.015625,
           "section": "Oysters and Seaweed"
         },
         {
@@ -5232,8 +5237,8 @@
             1
           ],
           "weight": 1,
-          "out_of": 129,
-          "rarity": 0.0077519,
+          "out_of": 128,
+          "rarity": 0.0078125,
           "section": "Oysters and Seaweed"
         },
         {
@@ -5244,14 +5249,14 @@
             3
           ],
           "weight": 1,
-          "out_of": 129,
-          "rarity": 0.0077519,
+          "out_of": 128,
+          "rarity": 0.0078125,
           "section": "Oysters and Seaweed"
         },
         {
           "nothing": true,
           "weight": 18,
-          "out_of": 129
+          "out_of": 128
         },
         {
           "item_id": 313,
@@ -5261,8 +5266,8 @@
             10
           ],
           "weight": 2,
-          "out_of": 129,
-          "rarity": 0.0155039,
+          "out_of": 128,
+          "rarity": 0.015625,
           "section": "Other"
         },
         {
@@ -5273,24 +5278,22 @@
             1
           ],
           "weight": 1,
-          "out_of": 129,
-          "rarity": 0.0077519,
+          "out_of": 128,
+          "rarity": 0.0078125,
           "section": "Other",
           "notes": [
             "Calcite and pyrophosphite are always dropped together."
-          ]
-        },
-        {
-          "item_id": 21545,
-          "name": "Pyrophosphite",
-          "quantity": [
-            1,
-            1
           ],
-          "weight": 1,
-          "out_of": 129,
-          "rarity": 0.0077519,
-          "section": "Other"
+          "bonus_drops": [
+            {
+              "item_id": 21545,
+              "name": "Pyrophosphite",
+              "quantity": [
+                1,
+                1
+              ]
+            }
+          ]
         },
         {
           "item_id": 21490,
@@ -5300,8 +5303,8 @@
             2
           ],
           "weight": 1,
-          "out_of": 129,
-          "rarity": 0.0077519,
+          "out_of": 128,
+          "rarity": 0.0078125,
           "section": "Other"
         },
         {
@@ -5312,8 +5315,8 @@
             1
           ],
           "weight": 1,
-          "out_of": 129,
-          "rarity": 0.0077519,
+          "out_of": 128,
+          "rarity": 0.0078125,
           "section": "Other"
         },
         {
@@ -6761,19 +6764,17 @@
           "notes": [
             "Pyrophosphite and calcite are dropped together.",
             "Only dropped by ancient zygomites on Fossil Island."
-          ]
-        },
-        {
-          "item_id": 21543,
-          "name": "Calcite",
-          "quantity": [
-            1,
-            1
           ],
-          "weight": 18,
-          "out_of": 118,
-          "rarity": 0.1525424,
-          "section": "Other"
+          "bonus_drops": [
+            {
+              "item_id": 21543,
+              "name": "Calcite",
+              "quantity": [
+                1,
+                1
+              ]
+            }
+          ]
         },
         {
           "item_id": 2970,
@@ -8848,7 +8849,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/3500",
+          "out_of": 3500,
+          "rarity": 0.0002857,
           "section": "Pre-roll",
           "notes": [
             "The rarity changes to 1/750 while on an Aquanite Slayer task."
@@ -10890,7 +10892,8 @@
           ],
           "pre_roll": true,
           "weight": 4,
-          "rarity_raw": "4/540",
+          "out_of": 540,
+          "rarity": 0.0074074,
           "section": "Pre-roll",
           "notes": [
             "The drop rate is increased while on an armoured kraken bounty task."
@@ -10905,7 +10908,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/540",
+          "out_of": 540,
+          "rarity": 0.0018519,
           "section": "Pre-roll"
         },
         {
@@ -10917,7 +10921,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/540",
+          "out_of": 540,
+          "rarity": 0.0018519,
           "section": "Pre-roll"
         },
         {
@@ -19542,7 +19547,30 @@
         {
           "item_id": 25772,
           "name": "Malicious ashes",
+          "quantity": [
+            1,
+            1
+          ],
           "quantity_raw": "1;2",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                2,
+                2
+              ],
+              "condition": {
+                "type": "preferred_method",
+                "location": "Chasm of Fire"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "always": true,
           "rarity_raw": "Always",
           "section": "100%",
@@ -22690,7 +22718,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/5",
+          "out_of": 5,
+          "rarity": 0.2,
           "section": "Pre-roll"
         },
         {
@@ -27080,7 +27109,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -27092,7 +27122,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -27714,7 +27745,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/256",
+          "out_of": 256,
+          "rarity": 0.0039062,
           "section": "Pre-roll"
         },
         {
@@ -28464,7 +28496,10 @@
         {
           "item_id": 22786,
           "name": "Hydra bones",
-          "quantity_raw": "1<!-- Regular hydras only drop one set of bones. If you are changing this to 2, you might be confusing this page with Alchemical Hydra.-->",
+          "quantity": [
+            1,
+            1
+          ],
           "always": true,
           "rarity_raw": "Always",
           "section": "100%"
@@ -28477,8 +28512,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/360.72",
+          "weight": 100,
+          "out_of": 36072,
+          "rarity": 0.0027722,
           "section": "Pre-roll",
           "notes": [
             "The order players receive the items in are: Hydra's eye, Hydra's fang, and finally Hydra's heart."
@@ -28492,8 +28528,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/360.72",
+          "weight": 100,
+          "out_of": 36072,
+          "rarity": 0.0027722,
           "section": "Pre-roll"
         },
         {
@@ -28504,8 +28541,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/360.72",
+          "weight": 100,
+          "out_of": 36072,
+          "rarity": 0.0027722,
           "section": "Pre-roll"
         },
         {
@@ -33675,7 +33713,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2000",
+          "out_of": 2000,
+          "rarity": 0.0005,
           "section": "Pre-roll"
         },
         {
@@ -33687,7 +33726,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2000",
+          "out_of": 2000,
+          "rarity": 0.0005,
           "section": "Pre-roll"
         },
         {
@@ -33699,7 +33739,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2000",
+          "out_of": 2000,
+          "rarity": 0.0005,
           "section": "Pre-roll"
         },
         {
@@ -33711,7 +33752,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2000",
+          "out_of": 2000,
+          "rarity": 0.0005,
           "section": "Pre-roll"
         },
         {
@@ -38086,7 +38128,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/75",
+          "out_of": 75,
+          "rarity": 0.0133333,
           "section": "Pre-roll"
         },
         {
@@ -38098,7 +38141,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/75",
+          "out_of": 75,
+          "rarity": 0.0133333,
           "section": "Pre-roll",
           "notes": [
             "No longer dropped after reading the scroll."
@@ -39589,7 +39633,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2048",
+          "out_of": 2048,
+          "rarity": 0.0004883,
           "section": "Pre-roll",
           "notes": [
             "The drop rate is 1/2,048 for a specific dragon legging, or 1/1,024 for any dragon legging."
@@ -39604,7 +39649,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2048",
+          "out_of": 2048,
+          "rarity": 0.0004883,
           "section": "Pre-roll"
         },
         {
@@ -41929,7 +41975,8 @@
           ],
           "pre_roll": true,
           "weight": 5,
-          "rarity_raw": "5/150",
+          "out_of": 150,
+          "rarity": 0.0333333,
           "section": "Pre-roll"
         },
         {
@@ -41941,7 +41988,8 @@
           ],
           "pre_roll": true,
           "weight": 4,
-          "rarity_raw": "4/150",
+          "out_of": 150,
+          "rarity": 0.0266667,
           "section": "Pre-roll"
         },
         {
@@ -41953,7 +42001,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/150",
+          "out_of": 150,
+          "rarity": 0.0066667,
           "section": "Pre-roll"
         },
         {
@@ -43320,7 +43369,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/45",
+          "out_of": 45,
+          "rarity": 0.0222222,
           "section": "Pre-roll"
         },
         {
@@ -48947,7 +48997,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/256",
+          "out_of": 256,
+          "rarity": 0.0039062,
           "section": "Pre-roll"
         },
         {
@@ -49468,7 +49519,7 @@
       "label": "Drops",
       "table_name": "Chaos Fanatic Drops",
       "wiki_page": "Chaos Fanatic",
-      "main_max_roll": 137,
+      "main_max_roll": 133,
       "entries": [
         {
           "item_id": 526,
@@ -49490,7 +49541,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/256",
+          "out_of": 256,
+          "rarity": 0.0039062,
           "section": "Pre-roll",
           "notes": [
             "The drop rate is 1/256 for a specific shard, or 1/128 for any shard."
@@ -49505,7 +49557,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/256",
+          "out_of": 256,
+          "rarity": 0.0039062,
           "section": "Pre-roll"
         },
         {
@@ -49516,8 +49569,8 @@
             5
           ],
           "weight": 5,
-          "out_of": 137,
-          "rarity": 0.0364964,
+          "out_of": 133,
+          "rarity": 0.037594,
           "section": "Weapons and armour",
           "noted": true
         },
@@ -49529,8 +49582,8 @@
             1
           ],
           "weight": 5,
-          "out_of": 137,
-          "rarity": 0.0364964,
+          "out_of": 133,
+          "rarity": 0.037594,
           "section": "Weapons and armour"
         },
         {
@@ -49541,8 +49594,8 @@
             1
           ],
           "weight": 5,
-          "out_of": 137,
-          "rarity": 0.0364964,
+          "out_of": 133,
+          "rarity": 0.037594,
           "section": "Weapons and armour"
         },
         {
@@ -49553,24 +49606,22 @@
             1
           ],
           "weight": 4,
-          "out_of": 137,
-          "rarity": 0.0291971,
+          "out_of": 133,
+          "rarity": 0.0300752,
           "section": "Weapons and armour",
           "notes": [
             "Zamorak robe top and bottom are dropped together."
-          ]
-        },
-        {
-          "item_id": 1033,
-          "name": "Zamorak monk bottom",
-          "quantity": [
-            1,
-            1
           ],
-          "weight": 4,
-          "out_of": 137,
-          "rarity": 0.0291971,
-          "section": "Weapons and armour"
+          "bonus_drops": [
+            {
+              "item_id": 1033,
+              "name": "Zamorak monk bottom",
+              "quantity": [
+                1,
+                1
+              ]
+            }
+          ]
         },
         {
           "item_id": 4675,
@@ -49580,8 +49631,8 @@
             1
           ],
           "weight": 1,
-          "out_of": 137,
-          "rarity": 0.0072993,
+          "out_of": 133,
+          "rarity": 0.0075188,
           "section": "Weapons and armour"
         },
         {
@@ -49592,8 +49643,8 @@
             250
           ],
           "weight": 4,
-          "out_of": 137,
-          "rarity": 0.0291971,
+          "out_of": 133,
+          "rarity": 0.0300752,
           "section": "Runes"
         },
         {
@@ -49604,8 +49655,8 @@
             30
           ],
           "weight": 4,
-          "out_of": 137,
-          "rarity": 0.0291971,
+          "out_of": 133,
+          "rarity": 0.0300752,
           "section": "Runes"
         },
         {
@@ -49616,8 +49667,8 @@
             175
           ],
           "weight": 4,
-          "out_of": 137,
-          "rarity": 0.0291971,
+          "out_of": 133,
+          "rarity": 0.0300752,
           "section": "Runes"
         },
         {
@@ -49628,8 +49679,8 @@
             50
           ],
           "weight": 4,
-          "out_of": 137,
-          "rarity": 0.0291971,
+          "out_of": 133,
+          "rarity": 0.0300752,
           "section": "Runes"
         },
         {
@@ -49640,8 +49691,8 @@
             3
           ],
           "weight": 8,
-          "out_of": 137,
-          "rarity": 0.0583942,
+          "out_of": 133,
+          "rarity": 0.0601504,
           "section": "Consumables"
         },
         {
@@ -49652,8 +49703,8 @@
             1
           ],
           "weight": 8,
-          "out_of": 137,
-          "rarity": 0.0583942,
+          "out_of": 133,
+          "rarity": 0.0601504,
           "section": "Consumables"
         },
         {
@@ -49664,8 +49715,8 @@
             1
           ],
           "weight": 8,
-          "out_of": 137,
-          "rarity": 0.0583942,
+          "out_of": 133,
+          "rarity": 0.0601504,
           "section": "Consumables"
         },
         {
@@ -49676,8 +49727,8 @@
             8
           ],
           "weight": 4,
-          "out_of": 137,
-          "rarity": 0.0291971,
+          "out_of": 133,
+          "rarity": 0.0300752,
           "section": "Consumables",
           "noted": true
         },
@@ -49689,8 +49740,8 @@
             3998
           ],
           "weight": 18,
-          "out_of": 137,
-          "rarity": 0.1313869,
+          "out_of": 133,
+          "rarity": 0.1353383,
           "section": "Other"
         },
         {
@@ -49701,8 +49752,8 @@
             4
           ],
           "weight": 8,
-          "out_of": 137,
-          "rarity": 0.0583942,
+          "out_of": 133,
+          "rarity": 0.0601504,
           "section": "Other",
           "noted": true
         },
@@ -49714,8 +49765,8 @@
             1
           ],
           "weight": 7,
-          "out_of": 137,
-          "rarity": 0.0510949,
+          "out_of": 133,
+          "rarity": 0.0526316,
           "section": "Other"
         },
         {
@@ -49726,8 +49777,8 @@
             1
           ],
           "weight": 6,
-          "out_of": 137,
-          "rarity": 0.0437956,
+          "out_of": 133,
+          "rarity": 0.0451128,
           "section": "Other"
         },
         {
@@ -49738,8 +49789,8 @@
             10
           ],
           "weight": 6,
-          "out_of": 137,
-          "rarity": 0.0437956,
+          "out_of": 133,
+          "rarity": 0.0451128,
           "section": "Other",
           "noted": true
         },
@@ -49751,8 +49802,8 @@
             6
           ],
           "weight": 5,
-          "out_of": 137,
-          "rarity": 0.0364964,
+          "out_of": 133,
+          "rarity": 0.037594,
           "section": "Other",
           "noted": true,
           "notes": [
@@ -49767,8 +49818,8 @@
             4
           ],
           "weight": 5,
-          "out_of": 137,
-          "rarity": 0.0364964,
+          "out_of": 133,
+          "rarity": 0.037594,
           "section": "Other",
           "noted": true
         },
@@ -49780,8 +49831,8 @@
             1
           ],
           "weight": 4,
-          "out_of": 137,
-          "rarity": 0.0291971,
+          "out_of": 133,
+          "rarity": 0.0300752,
           "section": "Other"
         },
         {
@@ -49792,8 +49843,8 @@
             250
           ],
           "weight": 2,
-          "out_of": 137,
-          "rarity": 0.0145985,
+          "out_of": 133,
+          "rarity": 0.0150376,
           "section": "Other",
           "noted": true
         },
@@ -52138,7 +52189,10 @@
         {
           "item_id": 22786,
           "name": "Hydra bones",
-          "quantity_raw": "1<!-- Regular hydras only drop one set of bones. If you are changing this to 2, you might be confusing this page with Alchemical Hydra.-->",
+          "quantity": [
+            1,
+            1
+          ],
           "always": true,
           "rarity_raw": "Always",
           "section": "100%"
@@ -52165,8 +52219,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/360.72",
+          "weight": 100,
+          "out_of": 36072,
+          "rarity": 0.0027722,
           "section": "Pre-roll",
           "notes": [
             "The order players receive the items in are: Hydra's eye, Hydra's fang, and finally Hydra's heart."
@@ -52180,8 +52235,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/360.72",
+          "weight": 100,
+          "out_of": 36072,
+          "rarity": 0.0027722,
           "section": "Pre-roll"
         },
         {
@@ -52192,8 +52248,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/360.72",
+          "weight": 100,
+          "out_of": 36072,
+          "rarity": 0.0027722,
           "section": "Pre-roll"
         },
         {
@@ -52666,7 +52723,7 @@
       "label": "Drops",
       "table_name": "Commander Zilyana Drops",
       "wiki_page": "Commander Zilyana",
-      "main_max_roll": 133,
+      "main_max_roll": 127,
       "entries": [
         {
           "item_id": 526,
@@ -52701,8 +52758,8 @@
             1
           ],
           "weight": 1,
-          "out_of": 133,
-          "rarity": 0.0075188,
+          "out_of": 127,
+          "rarity": 0.007874,
           "section": "Uniques"
         },
         {
@@ -52713,8 +52770,8 @@
             1
           ],
           "weight": 8,
-          "out_of": 133,
-          "rarity": 0.0601504,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Weapons and armour"
         },
         {
@@ -52725,8 +52782,8 @@
             40
           ],
           "weight": 8,
-          "out_of": 133,
-          "rarity": 0.0601504,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Weapons and armour"
         },
         {
@@ -52737,8 +52794,8 @@
             1
           ],
           "weight": 8,
-          "out_of": 133,
-          "rarity": 0.0601504,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Weapons and armour"
         },
         {
@@ -52749,8 +52806,8 @@
             1
           ],
           "weight": 8,
-          "out_of": 133,
-          "rarity": 0.0601504,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Weapons and armour"
         },
         {
@@ -52761,8 +52818,8 @@
             3
           ],
           "weight": 8,
-          "out_of": 133,
-          "rarity": 0.0601504,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Potions"
         },
         {
@@ -52773,24 +52830,22 @@
             3
           ],
           "weight": 6,
-          "out_of": 133,
-          "rarity": 0.0451128,
+          "out_of": 127,
+          "rarity": 0.0472441,
           "section": "Potions",
           "notes": [
             "Saradomin brews and Super restore potions are dropped together"
-          ]
-        },
-        {
-          "item_id": 3024,
-          "name": "Super restore(4)",
-          "quantity": [
-            3,
-            3
           ],
-          "weight": 6,
-          "out_of": 133,
-          "rarity": 0.0451128,
-          "section": "Potions"
+          "bonus_drops": [
+            {
+              "item_id": 3024,
+              "name": "Super restore(4)",
+              "quantity": [
+                3,
+                3
+              ]
+            }
+          ]
         },
         {
           "item_id": 163,
@@ -52800,24 +52855,22 @@
             3
           ],
           "weight": 8,
-          "out_of": 133,
-          "rarity": 0.0601504,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Potions",
           "notes": [
             "Super defence potions and magic potions are dropped together"
-          ]
-        },
-        {
-          "item_id": 3042,
-          "name": "Magic potion(3)",
-          "quantity": [
-            3,
-            3
           ],
-          "weight": 8,
-          "out_of": 133,
-          "rarity": 0.0601504,
-          "section": "Potions"
+          "bonus_drops": [
+            {
+              "item_id": 3042,
+              "name": "Magic potion(3)",
+              "quantity": [
+                3,
+                3
+              ]
+            }
+          ]
         },
         {
           "item_id": 995,
@@ -52827,8 +52880,8 @@
             20000
           ],
           "weight": 31,
-          "out_of": 133,
-          "rarity": 0.2330827,
+          "out_of": 127,
+          "rarity": 0.2440945,
           "section": "Other",
           "notes": [
             "Coins come from rolls on all loot tables, including the unique table, GDT and RDT."
@@ -52842,8 +52895,8 @@
             6
           ],
           "weight": 8,
-          "out_of": 133,
-          "rarity": 0.0601504,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Other",
           "noted": true
         },
@@ -52855,8 +52908,8 @@
             100
           ],
           "weight": 8,
-          "out_of": 133,
-          "rarity": 0.0601504,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Other"
         },
         {
@@ -52867,8 +52920,8 @@
             5
           ],
           "weight": 8,
-          "out_of": 133,
-          "rarity": 0.0601504,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Other",
           "noted": true
         },
@@ -52880,8 +52933,8 @@
             2
           ],
           "weight": 8,
-          "out_of": 133,
-          "rarity": 0.0601504,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Other"
         },
         {
@@ -52892,8 +52945,8 @@
             1
           ],
           "weight": 1,
-          "out_of": 133,
-          "rarity": 0.0075188,
+          "out_of": 127,
+          "rarity": 0.007874,
           "section": "Other"
         },
         {
@@ -54900,7 +54953,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/256",
+          "out_of": 256,
+          "rarity": 0.0039062,
           "section": "Pre-roll",
           "notes": [
             "The drop rate is 1/256 for a specific shard, or 1/128 for any shard."
@@ -54915,7 +54969,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/256",
+          "out_of": 256,
+          "rarity": 0.0039062,
           "section": "Pre-roll"
         },
         {
@@ -55613,9 +55668,25 @@
           "item_id": 23872,
           "name": "Raw paddlefish",
           "quantity": [
-            13,
-            13
+            1,
+            1
           ],
+          "quantity_raw": "1,3",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                3,
+                3
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 1,
           "out_of": 8,
           "rarity": 0.125,
@@ -55987,9 +56058,25 @@
           "item_id": 23872,
           "name": "Raw paddlefish",
           "quantity": [
-            13,
-            13
+            1,
+            1
           ],
+          "quantity_raw": "1,3",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                3,
+                3
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 1,
           "out_of": 8,
           "rarity": 0.125,
@@ -56125,9 +56212,25 @@
           "item_id": 23872,
           "name": "Raw paddlefish",
           "quantity": [
-            13,
-            13
+            1,
+            1
           ],
+          "quantity_raw": "1,3",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                3,
+                3
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 1,
           "out_of": 8,
           "rarity": 0.125,
@@ -56635,7 +56738,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/100",
+          "out_of": 100,
+          "rarity": 0.01,
           "section": "Pre-roll"
         },
         {
@@ -61459,7 +61563,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -65295,7 +65400,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/1200",
+          "out_of": 1200,
+          "rarity": 0.0008333,
           "section": "Pre-roll"
         },
         {
@@ -66172,7 +66278,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2560",
+          "out_of": 2560,
+          "rarity": 0.0003906,
           "section": "Pre-roll",
           "notes": [
             "The drop rate is increased to 1/512 while on a drake Slayer task."
@@ -66187,7 +66294,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2560",
+          "out_of": 2560,
+          "rarity": 0.0003906,
           "section": "Pre-roll"
         },
         {
@@ -66326,7 +66434,32 @@
         {
           "item_id": 30900,
           "name": "Shark lure",
+          "quantity": [
+            8,
+            8
+          ],
           "quantity_raw": "8;10;12",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                8,
+                8
+              ]
+            },
+            {
+              "quantity": [
+                10,
+                10
+              ]
+            },
+            {
+              "quantity": [
+                12,
+                12
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 2,
           "out_of": 93,
           "rarity": 0.0215054,
@@ -67454,9 +67587,28 @@
           "item_id": 1103,
           "name": "Bronze chainbody",
           "quantity": [
-            1117,
-            1117
+            11,
+            11
           ],
+          "quantity_raw": "11,17",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                11,
+                11
+              ]
+            },
+            {
+              "quantity": [
+                17,
+                17
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67467,9 +67619,28 @@
           "item_id": 1109,
           "name": "Mithril chainbody",
           "quantity": [
-            57,
-            57
+            5,
+            5
           ],
+          "quantity_raw": "5,7",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                5,
+                5
+              ]
+            },
+            {
+              "quantity": [
+                7,
+                7
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67480,9 +67651,28 @@
           "item_id": 1111,
           "name": "Adamant chainbody",
           "quantity": [
-            610,
-            610
+            6,
+            6
           ],
+          "quantity_raw": "6,10",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                6,
+                6
+              ]
+            },
+            {
+              "quantity": [
+                10,
+                10
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67493,9 +67683,28 @@
           "item_id": 4087,
           "name": "Dragon platelegs",
           "quantity": [
-            57,
-            57
+            5,
+            5
           ],
+          "quantity_raw": "5,7",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                5,
+                5
+              ]
+            },
+            {
+              "quantity": [
+                7,
+                7
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67505,9 +67714,28 @@
           "item_id": 7936,
           "name": "Pure essence",
           "quantity": [
-            200300,
-            200300
+            200,
+            200
           ],
+          "quantity_raw": "200,300",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                200,
+                200
+              ]
+            },
+            {
+              "quantity": [
+                300,
+                300
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67518,9 +67746,28 @@
           "item_id": 440,
           "name": "Iron ore",
           "quantity": [
-            6395,
-            6395
+            63,
+            63
           ],
+          "quantity_raw": "63,95",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                63,
+                63
+              ]
+            },
+            {
+              "quantity": [
+                95,
+                95
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67531,9 +67778,28 @@
           "item_id": 453,
           "name": "Coal",
           "quantity": [
-            216325,
-            216325
+            216,
+            216
           ],
+          "quantity_raw": "216,325",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                216,
+                216
+              ]
+            },
+            {
+              "quantity": [
+                325,
+                325
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -67544,9 +67810,28 @@
           "item_id": 447,
           "name": "Mithril ore",
           "quantity": [
-            3350,
-            3350
+            33,
+            33
           ],
+          "quantity_raw": "33,50",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                33,
+                33
+              ]
+            },
+            {
+              "quantity": [
+                50,
+                50
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67557,9 +67842,28 @@
           "item_id": 449,
           "name": "Adamantite ore",
           "quantity": [
-            75112,
-            75112
+            75,
+            75
           ],
+          "quantity_raw": "75,112",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                75,
+                75
+              ]
+            },
+            {
+              "quantity": [
+                112,
+                112
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -67570,9 +67874,28 @@
           "item_id": 451,
           "name": "Runite ore",
           "quantity": [
-            3045,
-            3045
+            30,
+            30
           ],
+          "quantity_raw": "30,45",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                30,
+                30
+              ]
+            },
+            {
+              "quantity": [
+                45,
+                45
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -67583,9 +67906,28 @@
           "item_id": 1607,
           "name": "Sapphire",
           "quantity": [
-            2842,
-            2842
+            28,
+            28
           ],
+          "quantity_raw": "28,42",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                28,
+                28
+              ]
+            },
+            {
+              "quantity": [
+                42,
+                42
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67596,9 +67938,28 @@
           "item_id": 1605,
           "name": "Emerald",
           "quantity": [
-            2842,
-            2842
+            28,
+            28
           ],
+          "quantity_raw": "28,42",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                28,
+                28
+              ]
+            },
+            {
+              "quantity": [
+                42,
+                42
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67609,9 +67970,28 @@
           "item_id": 1603,
           "name": "Ruby",
           "quantity": [
-            2842,
-            2842
+            28,
+            28
           ],
+          "quantity_raw": "28,42",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                28,
+                28
+              ]
+            },
+            {
+              "quantity": [
+                42,
+                42
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67622,9 +68002,28 @@
           "item_id": 1619,
           "name": "Uncut ruby",
           "quantity": [
-            4162,
-            4162
+            41,
+            41
           ],
+          "quantity_raw": "41,62",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                41,
+                41
+              ]
+            },
+            {
+              "quantity": [
+                62,
+                62
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 5,
           "out_of": 100,
           "rarity": 0.05,
@@ -67635,9 +68034,28 @@
           "item_id": 1617,
           "name": "Uncut diamond",
           "quantity": [
-            4162,
-            4162
+            41,
+            41
           ],
+          "quantity_raw": "41,62",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                41,
+                41
+              ]
+            },
+            {
+              "quantity": [
+                62,
+                62
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 5,
           "out_of": 100,
           "rarity": 0.05,
@@ -67648,9 +68066,28 @@
           "item_id": 2349,
           "name": "Bronze bar",
           "quantity": [
-            6395,
-            6395
+            63,
+            63
           ],
+          "quantity_raw": "63,95",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                63,
+                63
+              ]
+            },
+            {
+              "quantity": [
+                95,
+                95
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67661,9 +68098,28 @@
           "item_id": 11237,
           "name": "Dragon arrowtips",
           "quantity": [
-            166250,
-            166250
+            166,
+            166
           ],
+          "quantity_raw": "166,250",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                166,
+                166
+              ]
+            },
+            {
+              "quantity": [
+                250,
+                250
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -67673,9 +68129,28 @@
           "item_id": 19580,
           "name": "Rune javelin tips",
           "quantity": [
-            6090,
-            6090
+            60,
+            60
           ],
+          "quantity_raw": "60,90",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                60,
+                60
+              ]
+            },
+            {
+              "quantity": [
+                90,
+                90
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -67685,9 +68160,28 @@
           "item_id": 19582,
           "name": "Dragon javelin tips",
           "quantity": [
-            6090,
-            6090
+            60,
+            60
           ],
+          "quantity_raw": "60,90",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                60,
+                60
+              ]
+            },
+            {
+              "quantity": [
+                90,
+                90
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -67697,9 +68191,28 @@
           "item_id": 395,
           "name": "Raw sea turtle",
           "quantity": [
-            200300,
-            200300
+            200,
+            200
           ],
+          "quantity_raw": "200,300",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                200,
+                200
+              ]
+            },
+            {
+              "quantity": [
+                300,
+                300
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67710,9 +68223,28 @@
           "item_id": 556,
           "name": "Air rune",
           "quantity": [
-            200300,
-            200300
+            200,
+            200
           ],
+          "quantity_raw": "200,300",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                200,
+                200
+              ]
+            },
+            {
+              "quantity": [
+                300,
+                300
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -67722,9 +68254,28 @@
           "item_id": 4695,
           "name": "Mist rune",
           "quantity": [
-            100150,
-            100150
+            100,
+            100
           ],
+          "quantity_raw": "100,150",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                100,
+                100
+              ]
+            },
+            {
+              "quantity": [
+                150,
+                150
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -67734,9 +68285,28 @@
           "item_id": 562,
           "name": "Chaos rune",
           "quantity": [
-            100150,
-            100150
+            100,
+            100
           ],
+          "quantity_raw": "100,150",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                100,
+                100
+              ]
+            },
+            {
+              "quantity": [
+                150,
+                150
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 9,
           "out_of": 100,
           "rarity": 0.09,
@@ -67746,9 +68316,28 @@
           "item_id": 566,
           "name": "Soul rune",
           "quantity": [
-            6661000,
-            6661000
+            666,
+            666
           ],
+          "quantity_raw": "666,1000",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                666,
+                666
+              ]
+            },
+            {
+              "quantity": [
+                1000,
+                1000
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -69096,7 +69685,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/50",
+          "out_of": 50,
+          "rarity": 0.02,
           "section": "Pre-roll"
         },
         {
@@ -71277,7 +71867,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/75",
+          "out_of": 75,
+          "rarity": 0.0133333,
           "section": "Pre-roll"
         },
         {
@@ -71289,7 +71880,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/75",
+          "out_of": 75,
+          "rarity": 0.0133333,
           "section": "Pre-roll",
           "notes": [
             "No longer dropped after reading the scroll."
@@ -74260,9 +74852,25 @@
           "item_id": 1511,
           "name": "Logs",
           "quantity": [
-            12,
-            12
+            1,
+            1
           ],
+          "quantity_raw": "1,2",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                2,
+                2
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 1,
           "out_of": 128,
           "rarity": 0.0078125,
@@ -74274,9 +74882,25 @@
           "item_id": 1521,
           "name": "Oak logs",
           "quantity": [
-            12,
-            12
+            1,
+            1
           ],
+          "quantity_raw": "1,2",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                2,
+                2
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 1,
           "out_of": 128,
           "rarity": 0.0078125,
@@ -74288,9 +74912,25 @@
           "item_id": 1519,
           "name": "Willow logs",
           "quantity": [
-            12,
-            12
+            1,
+            1
           ],
+          "quantity_raw": "1,2",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                2,
+                2
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 1,
           "out_of": 128,
           "rarity": 0.0078125,
@@ -74302,9 +74942,25 @@
           "item_id": 1517,
           "name": "Maple logs",
           "quantity": [
-            12,
-            12
+            1,
+            1
           ],
+          "quantity_raw": "1,2",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                2,
+                2
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 1,
           "out_of": 128,
           "rarity": 0.0078125,
@@ -74316,9 +74972,25 @@
           "item_id": 1515,
           "name": "Yew logs",
           "quantity": [
-            12,
-            12
+            1,
+            1
           ],
+          "quantity_raw": "1,2",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                2,
+                2
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 1,
           "out_of": 128,
           "rarity": 0.0078125,
@@ -74330,9 +75002,25 @@
           "item_id": 1513,
           "name": "Magic logs",
           "quantity": [
-            12,
-            12
+            1,
+            1
           ],
+          "quantity_raw": "1,2",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                2,
+                2
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 1,
           "out_of": 128,
           "rarity": 0.0078125,
@@ -79387,7 +80075,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/100",
+          "out_of": 100,
+          "rarity": 0.01,
           "section": "Pre-roll",
           "notes": [
             "Drop rate increased to 1/40 while on a frost dragon Slayer task."
@@ -80570,7 +81259,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/80",
+          "out_of": 80,
+          "rarity": 0.0125,
           "section": "Pre-roll"
         },
         {
@@ -80817,7 +81507,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/80",
+          "out_of": 80,
+          "rarity": 0.0125,
           "section": "Pre-roll"
         },
         {
@@ -81085,7 +81776,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/256",
+          "out_of": 256,
+          "rarity": 0.0039062,
           "section": "Pre-roll"
         },
         {
@@ -88219,7 +88911,8 @@
           ],
           "pre_roll": true,
           "weight": 4,
-          "rarity_raw": "4/720",
+          "out_of": 720,
+          "rarity": 0.0055556,
           "section": "Pre-roll"
         },
         {
@@ -88231,7 +88924,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/720",
+          "out_of": 720,
+          "rarity": 0.0013889,
           "section": "Pre-roll"
         },
         {
@@ -88243,7 +88937,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/720",
+          "out_of": 720,
+          "rarity": 0.0013889,
           "section": "Pre-roll"
         },
         {
@@ -89166,7 +89861,30 @@
         {
           "item_id": 25769,
           "name": "Vile ashes",
+          "quantity": [
+            1,
+            1
+          ],
           "quantity_raw": "1;2",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                2,
+                2
+              ],
+              "condition": {
+                "type": "preferred_method",
+                "location": "Chasm of Fire"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "always": true,
           "rarity_raw": "Always",
           "section": "100%",
@@ -95823,7 +96541,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -95835,7 +96554,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -95974,7 +96694,32 @@
         {
           "item_id": 30900,
           "name": "Shark lure",
+          "quantity": [
+            8,
+            8
+          ],
           "quantity_raw": "8;10;12",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                8,
+                8
+              ]
+            },
+            {
+              "quantity": [
+                10,
+                10
+              ]
+            },
+            {
+              "quantity": [
+                12,
+                12
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 2,
           "out_of": 93,
           "rarity": 0.0215054,
@@ -97665,7 +98410,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -97677,7 +98423,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -98705,7 +99452,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/35",
+          "out_of": 35,
+          "rarity": 0.0285714,
           "section": "Pre-roll"
         },
         {
@@ -99241,7 +99989,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/128",
+          "out_of": 128,
+          "rarity": 0.0078125,
           "section": "Pre-roll",
           "notes": [
             "The drop rate is doubled in the Wilderness."
@@ -100469,7 +101218,10 @@
         {
           "item_id": 22786,
           "name": "Hydra bones",
-          "quantity_raw": "1<!-- Regular hydras only drop one set of bones. If you are changing this to 2, you might be confusing this page with Alchemical Hydra.-->",
+          "quantity": [
+            1,
+            1
+          ],
           "always": true,
           "rarity_raw": "Always",
           "section": "100%"
@@ -100482,8 +101234,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/1800.72",
+          "weight": 100,
+          "out_of": 180072,
+          "rarity": 0.0005553,
           "section": "Pre-roll",
           "notes": [
             "The order players receive the items in are: Hydra's eye, Hydra's fang, and finally Hydra's heart.",
@@ -100499,8 +101252,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/1800.72",
+          "weight": 100,
+          "out_of": 180072,
+          "rarity": 0.0005553,
           "section": "Pre-roll"
         },
         {
@@ -100511,8 +101265,9 @@
             1
           ],
           "pre_roll": true,
-          "weight": 1,
-          "rarity_raw": "1/1800.72",
+          "weight": 100,
+          "out_of": 180072,
+          "rarity": 0.0005553,
           "section": "Pre-roll"
         },
         {
@@ -105107,7 +105862,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -105119,7 +105875,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -106976,7 +107733,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/1024",
+          "out_of": 1024,
+          "rarity": 0.0009766,
           "section": "Pre-roll"
         },
         {
@@ -107712,7 +108470,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/1024",
+          "out_of": 1024,
+          "rarity": 0.0009766,
           "section": "Pre-roll",
           "notes": [
             "The drop rate is 1/1,024 for a specific legging, or 1/512 for any leggings."
@@ -107727,7 +108486,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/1024",
+          "out_of": 1024,
+          "rarity": 0.0009766,
           "section": "Pre-roll"
         },
         {
@@ -112743,7 +113503,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/1000",
+          "out_of": 1000,
+          "rarity": 0.001,
           "section": "Pre-roll"
         },
         {
@@ -114910,21 +115671,16 @@
           "section": "Other",
           "notes": [
             "Ranging potions and super defence potions are dropped together."
-          ]
-        },
-        {
-          "item_id": 163,
-          "name": "Super defence(3)",
-          "quantity": [
-            3,
-            3
           ],
-          "weight": 8,
-          "out_of": 127,
-          "rarity": 0.0629921,
-          "section": "Other",
-          "notes": [
-            "Ranging potions and super defence potions are dropped together."
+          "bonus_drops": [
+            {
+              "item_id": 163,
+              "name": "Super defence(3)",
+              "quantity": [
+                3,
+                3
+              ]
+            }
           ]
         },
         {
@@ -115151,7 +115907,7 @@
       "label": "Drops",
       "table_name": "K'ril Tsutsaroth Drops",
       "wiki_page": "K'ril Tsutsaroth",
-      "main_max_roll": 136,
+      "main_max_roll": 127,
       "entries": [
         {
           "item_id": 25778,
@@ -115186,8 +115942,8 @@
             1
           ],
           "weight": 1,
-          "out_of": 136,
-          "rarity": 0.0073529,
+          "out_of": 127,
+          "rarity": 0.007874,
           "section": "Uniques"
         },
         {
@@ -115198,8 +115954,8 @@
             1
           ],
           "weight": 1,
-          "out_of": 136,
-          "rarity": 0.0073529,
+          "out_of": 127,
+          "rarity": 0.007874,
           "section": "Uniques"
         },
         {
@@ -115210,8 +115966,8 @@
             300
           ],
           "weight": 8,
-          "out_of": 136,
-          "rarity": 0.0588235,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Weapons and armour"
         },
         {
@@ -115222,8 +115978,8 @@
             1
           ],
           "weight": 8,
-          "out_of": 136,
-          "rarity": 0.0588235,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Weapons and armour"
         },
         {
@@ -115234,8 +115990,8 @@
             1
           ],
           "weight": 8,
-          "out_of": 136,
-          "rarity": 0.0588235,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Weapons and armour"
         },
         {
@@ -115246,8 +116002,8 @@
             1
           ],
           "weight": 7,
-          "out_of": 136,
-          "rarity": 0.0514706,
+          "out_of": 127,
+          "rarity": 0.0551181,
           "section": "Weapons and armour"
         },
         {
@@ -115258,8 +116014,8 @@
             1
           ],
           "weight": 2,
-          "out_of": 136,
-          "rarity": 0.0147059,
+          "out_of": 127,
+          "rarity": 0.015748,
           "section": "Weapons and armour"
         },
         {
@@ -115270,24 +116026,22 @@
             3
           ],
           "weight": 8,
-          "out_of": 136,
-          "rarity": 0.0588235,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Potions",
           "notes": [
             "Super attack and Super strength potions are always dropped together."
-          ]
-        },
-        {
-          "item_id": 157,
-          "name": "Super strength(3)",
-          "quantity": [
-            3,
-            3
           ],
-          "weight": 8,
-          "out_of": 136,
-          "rarity": 0.0588235,
-          "section": "Potions"
+          "bonus_drops": [
+            {
+              "item_id": 157,
+              "name": "Super strength(3)",
+              "quantity": [
+                3,
+                3
+              ]
+            }
+          ]
         },
         {
           "item_id": 3026,
@@ -115297,24 +116051,22 @@
             3
           ],
           "weight": 8,
-          "out_of": 136,
-          "rarity": 0.0588235,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Potions",
           "notes": [
             "Super restore potions and Zamorak brews are always dropped together."
-          ]
-        },
-        {
-          "item_id": 189,
-          "name": "Zamorak brew(3)",
-          "quantity": [
-            3,
-            3
           ],
-          "weight": 8,
-          "out_of": 136,
-          "rarity": 0.0588235,
-          "section": "Potions"
+          "bonus_drops": [
+            {
+              "item_id": 189,
+              "name": "Zamorak brew(3)",
+              "quantity": [
+                3,
+                3
+              ]
+            }
+          ]
         },
         {
           "item_id": 995,
@@ -115324,8 +116076,8 @@
             20000
           ],
           "weight": 37,
-          "out_of": 136,
-          "rarity": 0.2720588,
+          "out_of": 127,
+          "rarity": 0.2913386,
           "section": "Other",
           "notes": [
             "Coins come from rolls on all loot tables, including the unique table, GDT and RDT."
@@ -115339,8 +116091,8 @@
             10
           ],
           "weight": 8,
-          "out_of": 136,
-          "rarity": 0.0588235,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Other",
           "noted": true
         },
@@ -115352,8 +116104,8 @@
             3
           ],
           "weight": 8,
-          "out_of": 136,
-          "rarity": 0.0588235,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Other"
         },
         {
@@ -115364,8 +116116,8 @@
             125
           ],
           "weight": 8,
-          "out_of": 136,
-          "rarity": 0.0588235,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Other"
         },
         {
@@ -115376,8 +116128,8 @@
             85
           ],
           "weight": 8,
-          "out_of": 136,
-          "rarity": 0.0588235,
+          "out_of": 127,
+          "rarity": 0.0629921,
           "section": "Other"
         },
         {
@@ -117061,7 +117813,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/115",
+          "out_of": 115,
+          "rarity": 0.0086957,
           "section": "Pre-roll",
           "notes": [
             "The drop rate increases to 1/45 while on a wyrm Slayer task."
@@ -118130,7 +118883,30 @@
         {
           "item_id": 25769,
           "name": "Vile ashes",
+          "quantity": [
+            1,
+            1
+          ],
           "quantity_raw": "1;2",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1,
+                1
+              ]
+            },
+            {
+              "quantity": [
+                2,
+                2
+              ],
+              "condition": {
+                "type": "preferred_method",
+                "location": "Chasm of Fire"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "always": true,
           "rarity_raw": "Always",
           "section": "100%",
@@ -121891,7 +122667,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/25",
+          "out_of": 25,
+          "rarity": 0.04,
           "section": "Pre-roll"
         },
         {
@@ -122272,7 +123049,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/340",
+          "out_of": 340,
+          "rarity": 0.0029412,
           "section": "Pre-roll"
         },
         {
@@ -124569,7 +125347,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/20",
+          "out_of": 20,
+          "rarity": 0.05,
           "section": "Pre-roll"
         },
         {
@@ -126104,7 +126883,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/256",
+          "out_of": 256,
+          "rarity": 0.0039062,
           "section": "Pre-roll"
         },
         {
@@ -128628,7 +129408,8 @@
           ],
           "pre_roll": true,
           "weight": 2,
-          "rarity_raw": "2/60",
+          "out_of": 60,
+          "rarity": 0.0333333,
           "section": "Pre-roll"
         },
         {
@@ -128640,7 +129421,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/60",
+          "out_of": 60,
+          "rarity": 0.0166667,
           "section": "Pre-roll"
         },
         {
@@ -128869,7 +129651,8 @@
           ],
           "pre_roll": true,
           "weight": 2,
-          "rarity_raw": "2/60",
+          "out_of": 60,
+          "rarity": 0.0333333,
           "section": "Pre-roll"
         },
         {
@@ -128881,7 +129664,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/60",
+          "out_of": 60,
+          "rarity": 0.0166667,
           "section": "Pre-roll"
         },
         {
@@ -134265,7 +135049,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/20",
+          "out_of": 20,
+          "rarity": 0.05,
           "section": "Pre-roll"
         },
         {
@@ -134501,7 +135286,30 @@
         {
           "item_id": 31406,
           "name": "Dragon nails",
+          "quantity": [
+            3,
+            7
+          ],
           "quantity_raw": "3-7,5-10",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                3,
+                7
+              ]
+            },
+            {
+              "quantity": [
+                5,
+                10
+              ],
+              "condition": {
+                "type": "bounty_task",
+                "monster": "narwhal"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "pre_roll": true,
           "separate_roll": true,
           "weight": 1,
@@ -136179,7 +136987,7 @@
       "label": "Drops",
       "table_name": "Nex Drops",
       "wiki_page": "Nex",
-      "main_max_roll": 14,
+      "main_max_roll": 12,
       "entries": [
         {
           "item_id": 532,
@@ -136200,8 +137008,8 @@
             876
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Runes and ammunition",
           "assumed_rarity": true
         },
@@ -136213,8 +137021,8 @@
             986
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Runes and ammunition",
           "assumed_rarity": true
         },
@@ -136226,8 +137034,8 @@
             592
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Runes and ammunition",
           "assumed_rarity": true
         },
@@ -136239,8 +137047,8 @@
             283
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Runes and ammunition",
           "assumed_rarity": true
         },
@@ -136252,8 +137060,8 @@
             2252
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Runes and ammunition",
           "assumed_rarity": true
         },
@@ -136265,8 +137073,8 @@
             100
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Resources",
           "noted": true,
           "assumed_rarity": true
@@ -136279,8 +137087,8 @@
             80
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Resources",
           "noted": true,
           "assumed_rarity": true
@@ -136293,8 +137101,8 @@
             64
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Resources",
           "noted": true,
           "assumed_rarity": true
@@ -136307,8 +137115,8 @@
             64
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Resources",
           "noted": true,
           "assumed_rarity": true
@@ -136321,26 +137129,23 @@
             10
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Consumables",
           "assumed_rarity": true,
           "notes": [
             "Sharks and Prayer potions are dropped together"
-          ]
-        },
-        {
-          "item_id": 2434,
-          "name": "Prayer potion(4)",
-          "quantity": [
-            3,
-            3
           ],
-          "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
-          "section": "Consumables",
-          "assumed_rarity": true
+          "bonus_drops": [
+            {
+              "item_id": 2434,
+              "name": "Prayer potion(4)",
+              "quantity": [
+                3,
+                3
+              ]
+            }
+          ]
         },
         {
           "item_id": 6685,
@@ -136350,26 +137155,23 @@
             10
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Consumables",
           "assumed_rarity": true,
           "notes": [
             "Saradomin brews and Super restores are dropped together"
-          ]
-        },
-        {
-          "item_id": 3024,
-          "name": "Super restore(4)",
-          "quantity": [
-            1,
-            5
           ],
-          "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
-          "section": "Consumables",
-          "assumed_rarity": true
+          "bonus_drops": [
+            {
+              "item_id": 3024,
+              "name": "Super restore(4)",
+              "quantity": [
+                1,
+                5
+              ]
+            }
+          ]
         },
         {
           "item_id": 26388,
@@ -136379,8 +137181,8 @@
             39
           ],
           "weight": 1,
-          "out_of": 14,
-          "rarity": 0.0714286,
+          "out_of": 12,
+          "rarity": 0.0833333,
           "section": "Other",
           "assumed_rarity": true
         },
@@ -140434,7 +141236,8 @@
           ],
           "pre_roll": true,
           "weight": 2,
-          "rarity_raw": "2/400",
+          "out_of": 400,
+          "rarity": 0.005,
           "section": "Pre-roll"
         },
         {
@@ -140446,7 +141249,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/400",
+          "out_of": 400,
+          "rarity": 0.0025,
           "section": "Pre-roll"
         },
         {
@@ -140458,7 +141262,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/400",
+          "out_of": 400,
+          "rarity": 0.0025,
           "section": "Pre-roll"
         },
         {
@@ -140734,7 +141539,30 @@
         {
           "item_id": 31406,
           "name": "Dragon nails",
+          "quantity": [
+            4,
+            8
+          ],
           "quantity_raw": "4-8,7-11",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                4,
+                8
+              ]
+            },
+            {
+              "quantity": [
+                7,
+                11
+              ],
+              "condition": {
+                "type": "bounty_task",
+                "monster": "orca"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "pre_roll": true,
           "separate_roll": true,
           "weight": 1,
@@ -145284,7 +146112,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/3000",
+          "out_of": 3000,
+          "rarity": 0.0003333,
           "section": "Pre-roll"
         },
         {
@@ -150451,7 +151280,8 @@
           ],
           "pre_roll": true,
           "weight": 2,
-          "rarity_raw": "2/384",
+          "out_of": 384,
+          "rarity": 0.0052083,
           "section": "Pre-roll"
         },
         {
@@ -150463,7 +151293,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/384",
+          "out_of": 384,
+          "rarity": 0.0026042,
           "section": "Pre-roll"
         },
         {
@@ -151945,7 +152776,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/256",
+          "out_of": 256,
+          "rarity": 0.0039062,
           "section": "Pre-roll",
           "notes": [
             "The drop rate is 1/256 for a specific shard, or 1/128 for any shard."
@@ -151960,7 +152792,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/256",
+          "out_of": 256,
+          "rarity": 0.0039062,
           "section": "Pre-roll"
         },
         {
@@ -154656,7 +155489,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -154668,7 +155502,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -155914,7 +156749,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2000",
+          "out_of": 2000,
+          "rarity": 0.0005,
           "section": "Pre-roll"
         },
         {
@@ -155926,7 +156762,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2000",
+          "out_of": 2000,
+          "rarity": 0.0005,
           "section": "Pre-roll"
         },
         {
@@ -155938,7 +156775,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2000",
+          "out_of": 2000,
+          "rarity": 0.0005,
           "section": "Pre-roll"
         },
         {
@@ -155950,7 +156788,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2000",
+          "out_of": 2000,
+          "rarity": 0.0005,
           "section": "Pre-roll"
         },
         {
@@ -156919,7 +157758,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/75",
+          "out_of": 75,
+          "rarity": 0.0133333,
           "section": "Pre-roll"
         },
         {
@@ -158529,7 +159369,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -158541,7 +159382,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -158553,7 +159395,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -159421,9 +160264,25 @@
           "item_id": 556,
           "name": "Air rune",
           "quantity": [
-            1215,
-            1215
+            12,
+            12
           ],
+          "quantity_raw": "12,15",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                12,
+                12
+              ]
+            },
+            {
+              "quantity": [
+                15,
+                15
+              ]
+            }
+          ],
+          "quantity_selection": "unknown",
           "weight": 3,
           "out_of": 148,
           "rarity": 0.0202703,
@@ -171119,7 +171978,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2500",
+          "out_of": 2500,
+          "rarity": 0.0004,
           "section": "Pre-roll"
         },
         {
@@ -173311,7 +174171,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll",
           "notes": [
             "The drop rate is 1/512 for a specific legging, or 1/256 for any legging."
@@ -173326,7 +174187,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/512",
+          "out_of": 512,
+          "rarity": 0.0019531,
           "section": "Pre-roll"
         },
         {
@@ -173974,7 +174836,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/30",
+          "out_of": 30,
+          "rarity": 0.0333333,
           "section": "Pre-roll"
         },
         {
@@ -175136,7 +175999,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/450",
+          "out_of": 450,
+          "rarity": 0.0022222,
           "section": "Pre-roll"
         },
         {
@@ -175373,7 +176237,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/5",
+          "out_of": 5,
+          "rarity": 0.2,
           "section": "Pre-roll"
         },
         {
@@ -175776,7 +176641,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/2",
+          "out_of": 2,
+          "rarity": 0.5,
           "section": "Pre-roll",
           "notes": [
             "Quest requirement: WikiQuestDropRequirement(questKey=quest_lunardiplomacyafteraskingmeteoraaboutherheadgear, mode=RequiresDuring)"
@@ -179301,9 +180167,28 @@
           "item_id": 30771,
           "name": "Aether catalyst",
           "quantity": [
-            15002250,
-            15002250
+            1500,
+            1500
           ],
+          "quantity_raw": "1500,2250",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                1500,
+                1500
+              ]
+            },
+            {
+              "quantity": [
+                2250,
+                2250
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179313,9 +180198,28 @@
           "item_id": 440,
           "name": "Iron ore",
           "quantity": [
-            5785,
-            5785
+            57,
+            57
           ],
+          "quantity_raw": "57,85",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                57,
+                57
+              ]
+            },
+            {
+              "quantity": [
+                85,
+                85
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179326,9 +180230,28 @@
           "item_id": 442,
           "name": "Silver ore",
           "quantity": [
-            5785,
-            5785
+            57,
+            57
           ],
+          "quantity_raw": "57,85",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                57,
+                57
+              ]
+            },
+            {
+              "quantity": [
+                85,
+                85
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179339,9 +180262,28 @@
           "item_id": 453,
           "name": "Coal",
           "quantity": [
-            195292,
-            195292
+            195,
+            195
           ],
+          "quantity_raw": "195,292",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                195,
+                195
+              ]
+            },
+            {
+              "quantity": [
+                292,
+                292
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -179352,9 +180294,28 @@
           "item_id": 444,
           "name": "Gold ore",
           "quantity": [
-            67101,
-            67101
+            67,
+            67
           ],
+          "quantity_raw": "67,101",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                67,
+                67
+              ]
+            },
+            {
+              "quantity": [
+                101,
+                101
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -179365,9 +180326,28 @@
           "item_id": 449,
           "name": "Adamantite ore",
           "quantity": [
-            5785,
-            5785
+            57,
+            57
           ],
+          "quantity_raw": "57,85",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                57,
+                57
+              ]
+            },
+            {
+              "quantity": [
+                85,
+                85
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179378,9 +180358,28 @@
           "item_id": 451,
           "name": "Runite ore",
           "quantity": [
-            2740,
-            2740
+            27,
+            27
           ],
+          "quantity_raw": "27,40",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                27,
+                27
+              ]
+            },
+            {
+              "quantity": [
+                40,
+                40
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -179391,9 +180390,28 @@
           "item_id": 1607,
           "name": "Sapphire",
           "quantity": [
-            2538,
-            2538
+            25,
+            25
           ],
+          "quantity_raw": "25,38",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                25,
+                25
+              ]
+            },
+            {
+              "quantity": [
+                38,
+                38
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179404,9 +180422,28 @@
           "item_id": 1605,
           "name": "Emerald",
           "quantity": [
-            2538,
-            2538
+            25,
+            25
           ],
+          "quantity_raw": "25,38",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                25,
+                25
+              ]
+            },
+            {
+              "quantity": [
+                38,
+                38
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179417,9 +180454,28 @@
           "item_id": 1603,
           "name": "Ruby",
           "quantity": [
-            2538,
-            2538
+            25,
+            25
           ],
+          "quantity_raw": "25,38",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                25,
+                25
+              ]
+            },
+            {
+              "quantity": [
+                38,
+                38
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179430,9 +180486,28 @@
           "item_id": 1619,
           "name": "Uncut ruby",
           "quantity": [
-            3756,
-            3756
+            37,
+            37
           ],
+          "quantity_raw": "37,56",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                37,
+                37
+              ]
+            },
+            {
+              "quantity": [
+                56,
+                56
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 5,
           "out_of": 100,
           "rarity": 0.05,
@@ -179443,9 +180518,28 @@
           "item_id": 1617,
           "name": "Uncut diamond",
           "quantity": [
-            3756,
-            3756
+            37,
+            37
           ],
+          "quantity_raw": "37,56",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                37,
+                37
+              ]
+            },
+            {
+              "quantity": [
+                56,
+                56
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 5,
           "out_of": 100,
           "rarity": 0.05,
@@ -179456,9 +180550,28 @@
           "item_id": 19582,
           "name": "Dragon javelin tips",
           "quantity": [
-            5481,
-            5481
+            54,
+            54
           ],
+          "quantity_raw": "54,81",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                54,
+                54
+              ]
+            },
+            {
+              "quantity": [
+                81,
+                81
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -179468,9 +180581,28 @@
           "item_id": 21930,
           "name": "Dragon bolts (unf)",
           "quantity": [
-            150225,
-            150225
+            150,
+            150
           ],
+          "quantity_raw": "150,225",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                150,
+                150
+              ]
+            },
+            {
+              "quantity": [
+                225,
+                225
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -179480,9 +180612,28 @@
           "item_id": 9194,
           "name": "Onyx bolt tips",
           "quantity": [
-            90135,
-            90135
+            90,
+            90
           ],
+          "quantity_raw": "90,135",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                90,
+                90
+              ]
+            },
+            {
+              "quantity": [
+                135,
+                135
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179492,9 +180643,28 @@
           "item_id": 389,
           "name": "Raw manta ray",
           "quantity": [
-            180270,
-            180270
+            180,
+            180
           ],
+          "quantity_raw": "180,270",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                180,
+                180
+              ]
+            },
+            {
+              "quantity": [
+                270,
+                270
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179505,9 +180675,28 @@
           "item_id": 13441,
           "name": "Anglerfish",
           "quantity": [
-            46,
-            46
+            4,
+            4
           ],
+          "quantity_raw": "4,6",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                4,
+                4
+              ]
+            },
+            {
+              "quantity": [
+                6,
+                6
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -179517,9 +180706,28 @@
           "item_id": 882,
           "name": "Bronze arrow",
           "quantity": [
-            6394,
-            6394
+            63,
+            63
           ],
+          "quantity_raw": "63,94",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                63,
+                63
+              ]
+            },
+            {
+              "quantity": [
+                94,
+                94
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179529,9 +180737,28 @@
           "item_id": 888,
           "name": "Mithril arrow",
           "quantity": [
-            6394,
-            6394
+            63,
+            63
           ],
+          "quantity_raw": "63,94",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                63,
+                63
+              ]
+            },
+            {
+              "quantity": [
+                94,
+                94
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179541,9 +180768,28 @@
           "item_id": 890,
           "name": "Adamant arrow",
           "quantity": [
-            6394,
-            6394
+            63,
+            63
           ],
+          "quantity_raw": "63,94",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                63,
+                63
+              ]
+            },
+            {
+              "quantity": [
+                94,
+                94
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179553,9 +180799,28 @@
           "item_id": 892,
           "name": "Rune arrow",
           "quantity": [
-            5481,
-            5481
+            54,
+            54
           ],
+          "quantity_raw": "54,81",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                54,
+                54
+              ]
+            },
+            {
+              "quantity": [
+                81,
+                81
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -179565,9 +180830,28 @@
           "item_id": 559,
           "name": "Body rune",
           "quantity": [
-            180270,
-            180270
+            180,
+            180
           ],
+          "quantity_raw": "180,270",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                180,
+                180
+              ]
+            },
+            {
+              "quantity": [
+                270,
+                270
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179577,9 +180861,28 @@
           "item_id": 557,
           "name": "Earth rune",
           "quantity": [
-            180270,
-            180270
+            180,
+            180
           ],
+          "quantity_raw": "180,270",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                180,
+                180
+              ]
+            },
+            {
+              "quantity": [
+                270,
+                270
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -179589,9 +180892,28 @@
           "item_id": 4697,
           "name": "Smoke rune",
           "quantity": [
-            300450,
-            300450
+            300,
+            300
           ],
+          "quantity_raw": "300,450",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                300,
+                300
+              ]
+            },
+            {
+              "quantity": [
+                450,
+                450
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -179601,9 +180923,28 @@
           "item_id": 566,
           "name": "Soul rune",
           "quantity": [
-            600900,
-            600900
+            600,
+            600
           ],
+          "quantity_raw": "600,900",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                600,
+                600
+              ]
+            },
+            {
+              "quantity": [
+                900,
+                900
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -180501,9 +181842,28 @@
           "item_id": 1291,
           "name": "Bronze longsword",
           "quantity": [
-            1624,
-            1624
+            16,
+            16
           ],
+          "quantity_raw": "16,24",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                16,
+                16
+              ]
+            },
+            {
+              "quantity": [
+                24,
+                24
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180514,9 +181874,28 @@
           "item_id": 1299,
           "name": "Mithril longsword",
           "quantity": [
-            710,
-            710
+            7,
+            7
           ],
+          "quantity_raw": "7,10",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                7,
+                7
+              ]
+            },
+            {
+              "quantity": [
+                10,
+                10
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180527,9 +181906,28 @@
           "item_id": 1301,
           "name": "Adamant longsword",
           "quantity": [
-            914,
-            914
+            9,
+            9
           ],
+          "quantity_raw": "9,14",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                9,
+                9
+              ]
+            },
+            {
+              "quantity": [
+                14,
+                14
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180540,9 +181938,28 @@
           "item_id": 1391,
           "name": "Battlestaff",
           "quantity": [
-            70105,
-            70105
+            70,
+            70
           ],
+          "quantity_raw": "70,105",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                70,
+                70
+              ]
+            },
+            {
+              "quantity": [
+                105,
+                105
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -180553,9 +181970,28 @@
           "item_id": 4585,
           "name": "Dragon plateskirt",
           "quantity": [
-            710,
-            710
+            7,
+            7
           ],
+          "quantity_raw": "7,10",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                7,
+                7
+              ]
+            },
+            {
+              "quantity": [
+                10,
+                10
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180564,7 +182000,29 @@
         {
           "item_id": 7936,
           "name": "Pure essence",
+          "quantity": [
+            280,
+            280
+          ],
           "quantity_raw": "280; 420",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                280,
+                280
+              ]
+            },
+            {
+              "quantity": [
+                420,
+                420
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180575,9 +182033,28 @@
           "item_id": 440,
           "name": "Iron ore",
           "quantity": [
-            88133,
-            88133
+            88,
+            88
           ],
+          "quantity_raw": "88,133",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                88,
+                88
+              ]
+            },
+            {
+              "quantity": [
+                133,
+                133
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180588,9 +182065,28 @@
           "item_id": 453,
           "name": "Coal",
           "quantity": [
-            303455,
-            303455
+            303,
+            303
           ],
+          "quantity_raw": "303,455",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                303,
+                303
+              ]
+            },
+            {
+              "quantity": [
+                455,
+                455
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -180601,9 +182097,28 @@
           "item_id": 444,
           "name": "Gold ore",
           "quantity": [
-            88133,
-            88133
+            88,
+            88
           ],
+          "quantity_raw": "88,133",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                88,
+                88
+              ]
+            },
+            {
+              "quantity": [
+                133,
+                133
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180614,9 +182129,28 @@
           "item_id": 447,
           "name": "Mithril ore",
           "quantity": [
-            88133,
-            88133
+            88,
+            88
           ],
+          "quantity_raw": "88,133",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                88,
+                88
+              ]
+            },
+            {
+              "quantity": [
+                133,
+                133
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180627,9 +182161,28 @@
           "item_id": 449,
           "name": "Adamantite ore",
           "quantity": [
-            105157,
-            105157
+            105,
+            105
           ],
+          "quantity_raw": "105,157",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                105,
+                105
+              ]
+            },
+            {
+              "quantity": [
+                157,
+                157
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -180640,9 +182193,28 @@
           "item_id": 451,
           "name": "Runite ore",
           "quantity": [
-            4263,
-            4263
+            42,
+            42
           ],
+          "quantity_raw": "42,63",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                42,
+                42
+              ]
+            },
+            {
+              "quantity": [
+                63,
+                63
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -180653,9 +182225,28 @@
           "item_id": 1607,
           "name": "Sapphire",
           "quantity": [
-            3959,
-            3959
+            39,
+            39
           ],
+          "quantity_raw": "39,59",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                39,
+                39
+              ]
+            },
+            {
+              "quantity": [
+                59,
+                59
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180666,9 +182257,28 @@
           "item_id": 1605,
           "name": "Emerald",
           "quantity": [
-            3959,
-            3959
+            39,
+            39
           ],
+          "quantity_raw": "39,59",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                39,
+                39
+              ]
+            },
+            {
+              "quantity": [
+                59,
+                59
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180679,9 +182289,28 @@
           "item_id": 1603,
           "name": "Ruby",
           "quantity": [
-            3959,
-            3959
+            39,
+            39
           ],
+          "quantity_raw": "39,59",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                39,
+                39
+              ]
+            },
+            {
+              "quantity": [
+                59,
+                59
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180692,9 +182321,28 @@
           "item_id": 1619,
           "name": "Uncut ruby",
           "quantity": [
-            5887,
-            5887
+            58,
+            58
           ],
+          "quantity_raw": "58,87",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                58,
+                58
+              ]
+            },
+            {
+              "quantity": [
+                87,
+                87
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 5,
           "out_of": 100,
           "rarity": 0.05,
@@ -180705,9 +182353,28 @@
           "item_id": 1617,
           "name": "Uncut diamond",
           "quantity": [
-            5887,
-            5887
+            58,
+            58
           ],
+          "quantity_raw": "58,87",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                58,
+                58
+              ]
+            },
+            {
+              "quantity": [
+                87,
+                87
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 5,
           "out_of": 100,
           "rarity": 0.05,
@@ -180718,9 +182385,28 @@
           "item_id": 19582,
           "name": "Dragon javelin tips",
           "quantity": [
-            84126,
-            84126
+            84,
+            84
           ],
+          "quantity_raw": "84,126",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                84,
+                84
+              ]
+            },
+            {
+              "quantity": [
+                126,
+                126
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -180730,9 +182416,28 @@
           "item_id": 9381,
           "name": "Runite bolts (unf)",
           "quantity": [
-            84126,
-            84126
+            84,
+            84
           ],
+          "quantity_raw": "84,126",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                84,
+                84
+              ]
+            },
+            {
+              "quantity": [
+                126,
+                126
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -180742,9 +182447,28 @@
           "item_id": 7944,
           "name": "Raw monkfish",
           "quantity": [
-            7001050,
-            7001050
+            700,
+            700
           ],
+          "quantity_raw": "700,1050",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                700,
+                700
+              ]
+            },
+            {
+              "quantity": [
+                1050,
+                1050
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180755,9 +182479,28 @@
           "item_id": 555,
           "name": "Water rune",
           "quantity": [
-            280420,
-            280420
+            280,
+            280
           ],
+          "quantity_raw": "280,420",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                280,
+                280
+              ]
+            },
+            {
+              "quantity": [
+                420,
+                420
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180767,9 +182510,28 @@
           "item_id": 4694,
           "name": "Steam rune",
           "quantity": [
-            466700,
-            466700
+            466,
+            466
           ],
+          "quantity_raw": "466,700",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                466,
+                466
+              ]
+            },
+            {
+              "quantity": [
+                700,
+                700
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -180779,9 +182541,28 @@
           "item_id": 562,
           "name": "Chaos rune",
           "quantity": [
-            140210,
-            140210
+            140,
+            140
           ],
+          "quantity_raw": "140,210",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                140,
+                140
+              ]
+            },
+            {
+              "quantity": [
+                210,
+                210
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -180791,9 +182572,28 @@
           "item_id": 560,
           "name": "Death rune",
           "quantity": [
-            466700,
-            466700
+            466,
+            466
           ],
+          "quantity_raw": "466,700",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                466,
+                466
+              ]
+            },
+            {
+              "quantity": [
+                700,
+                700
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -180803,9 +182603,28 @@
           "item_id": 566,
           "name": "Soul rune",
           "quantity": [
-            9331400,
-            9331400
+            933,
+            933
           ],
+          "quantity_raw": "933,1400",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                933,
+                933
+              ]
+            },
+            {
+              "quantity": [
+                1400,
+                1400
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -181104,7 +182923,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/350",
+          "out_of": 350,
+          "rarity": 0.0028571,
           "section": "Pre-roll"
         },
         {
@@ -189508,7 +191328,8 @@
           ],
           "pre_roll": true,
           "weight": 2,
-          "rarity_raw": "2/320",
+          "out_of": 320,
+          "rarity": 0.00625,
           "section": "Pre-roll",
           "notes": [
             "The drop rate is increased while on a vampyre kraken bounty task."
@@ -189523,7 +191344,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/320",
+          "out_of": 320,
+          "rarity": 0.003125,
           "section": "Pre-roll"
         },
         {
@@ -189535,7 +191357,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/320",
+          "out_of": 320,
+          "rarity": 0.003125,
           "section": "Pre-roll"
         },
         {
@@ -189989,9 +191812,28 @@
           "item_id": 7936,
           "name": "Pure essence",
           "quantity": [
-            120180,
-            120180
+            120,
+            120
           ],
+          "quantity_raw": "120,180",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                120,
+                120
+              ]
+            },
+            {
+              "quantity": [
+                180,
+                180
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190002,9 +191844,28 @@
           "item_id": 440,
           "name": "Iron ore",
           "quantity": [
-            3857,
-            3857
+            38,
+            38
           ],
+          "quantity_raw": "38,57",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                38,
+                38
+              ]
+            },
+            {
+              "quantity": [
+                57,
+                57
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190015,9 +191876,28 @@
           "item_id": 442,
           "name": "Silver ore",
           "quantity": [
-            3857,
-            3857
+            38,
+            38
           ],
+          "quantity_raw": "38,57",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                38,
+                38
+              ]
+            },
+            {
+              "quantity": [
+                57,
+                57
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190028,9 +191908,28 @@
           "item_id": 453,
           "name": "Coal",
           "quantity": [
-            130195,
-            130195
+            130,
+            130
           ],
+          "quantity_raw": "130,195",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                130,
+                130
+              ]
+            },
+            {
+              "quantity": [
+                195,
+                195
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -190041,9 +191940,28 @@
           "item_id": 447,
           "name": "Mithril ore",
           "quantity": [
-            3857,
-            3857
+            38,
+            38
           ],
+          "quantity_raw": "38,57",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                38,
+                38
+              ]
+            },
+            {
+              "quantity": [
+                57,
+                57
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190054,9 +191972,28 @@
           "item_id": 449,
           "name": "Adamantite ore",
           "quantity": [
-            4567,
-            4567
+            45,
+            45
           ],
+          "quantity_raw": "45,67",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                45,
+                45
+              ]
+            },
+            {
+              "quantity": [
+                67,
+                67
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -190067,9 +192004,28 @@
           "item_id": 451,
           "name": "Runite ore",
           "quantity": [
-            1827,
-            1827
+            18,
+            18
           ],
+          "quantity_raw": "18,27",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                18,
+                18
+              ]
+            },
+            {
+              "quantity": [
+                27,
+                27
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -190080,9 +192036,28 @@
           "item_id": 1607,
           "name": "Sapphire",
           "quantity": [
-            1725,
-            1725
+            17,
+            17
           ],
+          "quantity_raw": "17,25",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                17,
+                17
+              ]
+            },
+            {
+              "quantity": [
+                25,
+                25
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190093,9 +192068,28 @@
           "item_id": 1605,
           "name": "Emerald",
           "quantity": [
-            1725,
-            1725
+            17,
+            17
           ],
+          "quantity_raw": "17,25",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                17,
+                17
+              ]
+            },
+            {
+              "quantity": [
+                25,
+                25
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190106,9 +192100,28 @@
           "item_id": 1603,
           "name": "Ruby",
           "quantity": [
-            1725,
-            1725
+            17,
+            17
           ],
+          "quantity_raw": "17,25",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                17,
+                17
+              ]
+            },
+            {
+              "quantity": [
+                25,
+                25
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190119,9 +192132,28 @@
           "item_id": 1619,
           "name": "Uncut ruby",
           "quantity": [
-            2537,
-            2537
+            25,
+            25
           ],
+          "quantity_raw": "25,37",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                25,
+                25
+              ]
+            },
+            {
+              "quantity": [
+                37,
+                37
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 5,
           "out_of": 100,
           "rarity": 0.05,
@@ -190132,9 +192164,28 @@
           "item_id": 1617,
           "name": "Uncut diamond",
           "quantity": [
-            2537,
-            2537
+            25,
+            25
           ],
+          "quantity_raw": "25,37",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                25,
+                25
+              ]
+            },
+            {
+              "quantity": [
+                37,
+                37
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 5,
           "out_of": 100,
           "rarity": 0.05,
@@ -190145,9 +192196,28 @@
           "item_id": 19580,
           "name": "Rune javelin tips",
           "quantity": [
-            3654,
-            3654
+            36,
+            36
           ],
+          "quantity_raw": "36,54",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                36,
+                36
+              ]
+            },
+            {
+              "quantity": [
+                54,
+                54
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -190157,9 +192227,28 @@
           "item_id": 19582,
           "name": "Dragon javelin tips",
           "quantity": [
-            3654,
-            3654
+            36,
+            36
           ],
+          "quantity_raw": "36,54",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                36,
+                36
+              ]
+            },
+            {
+              "quantity": [
+                54,
+                54
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -190169,9 +192258,28 @@
           "item_id": 11232,
           "name": "Dragon dart tip",
           "quantity": [
-            100150,
-            100150
+            100,
+            100
           ],
+          "quantity_raw": "100,150",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                100,
+                100
+              ]
+            },
+            {
+              "quantity": [
+                150,
+                150
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -190181,9 +192289,28 @@
           "item_id": 383,
           "name": "Raw shark",
           "quantity": [
-            200300,
-            200300
+            200,
+            200
           ],
+          "quantity_raw": "200,300",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                200,
+                200
+              ]
+            },
+            {
+              "quantity": [
+                300,
+                300
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190194,9 +192321,28 @@
           "item_id": 825,
           "name": "Bronze javelin",
           "quantity": [
-            4263,
-            4263
+            42,
+            42
           ],
+          "quantity_raw": "42,63",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                42,
+                42
+              ]
+            },
+            {
+              "quantity": [
+                63,
+                63
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190206,9 +192352,28 @@
           "item_id": 828,
           "name": "Mithril javelin",
           "quantity": [
-            4263,
-            4263
+            42,
+            42
           ],
+          "quantity_raw": "42,63",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                42,
+                42
+              ]
+            },
+            {
+              "quantity": [
+                63,
+                63
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190218,9 +192383,28 @@
           "item_id": 829,
           "name": "Adamant javelin",
           "quantity": [
-            4263,
-            4263
+            42,
+            42
           ],
+          "quantity_raw": "42,63",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                42,
+                42
+              ]
+            },
+            {
+              "quantity": [
+                63,
+                63
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190230,9 +192414,28 @@
           "item_id": 9245,
           "name": "Onyx bolts (e)",
           "quantity": [
-            6090,
-            6090
+            60,
+            60
           ],
+          "quantity_raw": "60,90",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                60,
+                60
+              ]
+            },
+            {
+              "quantity": [
+                90,
+                90
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190242,9 +192445,28 @@
           "item_id": 558,
           "name": "Mind rune",
           "quantity": [
-            120180,
-            120180
+            120,
+            120
           ],
+          "quantity_raw": "120,180",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                120,
+                120
+              ]
+            },
+            {
+              "quantity": [
+                180,
+                180
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190254,9 +192476,28 @@
           "item_id": 554,
           "name": "Fire rune",
           "quantity": [
-            120180,
-            120180
+            120,
+            120
           ],
+          "quantity_raw": "120,180",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                120,
+                120
+              ]
+            },
+            {
+              "quantity": [
+                180,
+                180
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 1,
           "out_of": 100,
           "rarity": 0.01,
@@ -190266,9 +192507,28 @@
           "item_id": 4699,
           "name": "Lava rune",
           "quantity": [
-            200300,
-            200300
+            200,
+            200
           ],
+          "quantity_raw": "200,300",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                200,
+                200
+              ]
+            },
+            {
+              "quantity": [
+                300,
+                300
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -190278,9 +192538,28 @@
           "item_id": 565,
           "name": "Blood rune",
           "quantity": [
-            200300,
-            200300
+            200,
+            200
           ],
+          "quantity_raw": "200,300",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                200,
+                200
+              ]
+            },
+            {
+              "quantity": [
+                300,
+                300
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 8,
           "out_of": 100,
           "rarity": 0.08,
@@ -190290,9 +192569,28 @@
           "item_id": 566,
           "name": "Soul rune",
           "quantity": [
-            400600,
-            400600
+            400,
+            400
           ],
+          "quantity_raw": "400,600",
+          "quantity_alternatives": [
+            {
+              "quantity": [
+                400,
+                400
+              ]
+            },
+            {
+              "quantity": [
+                600,
+                600
+              ],
+              "condition": {
+                "type": "perfect_kill"
+              }
+            }
+          ],
+          "quantity_selection": "conditional",
           "weight": 2,
           "out_of": 100,
           "rarity": 0.02,
@@ -190662,7 +192960,8 @@
           ],
           "pre_roll": true,
           "weight": 2,
-          "rarity_raw": "2/360",
+          "out_of": 360,
+          "rarity": 0.0055556,
           "section": "Pre-roll",
           "notes": [
             "The drop rate is increased while on a veiled kraken bounty task."
@@ -190677,7 +192976,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/360",
+          "out_of": 360,
+          "rarity": 0.0027778,
           "section": "Pre-roll"
         },
         {
@@ -190689,7 +192989,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/360",
+          "out_of": 360,
+          "rarity": 0.0027778,
           "section": "Pre-roll"
         },
         {
@@ -191141,7 +193442,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/860",
+          "out_of": 860,
+          "rarity": 0.0011628,
           "section": "Pre-roll"
         },
         {
@@ -197510,7 +199812,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/3000",
+          "out_of": 3000,
+          "rarity": 0.0003333,
           "section": "Pre-roll"
         },
         {
@@ -200926,7 +203229,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/10000",
+          "out_of": 10000,
+          "rarity": 0.0001,
           "section": "Pre-roll",
           "notes": [
             "The rarity changes to 1/2,000 while on a wyrm Slayer task."
@@ -200941,7 +203245,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/10000",
+          "out_of": 10000,
+          "rarity": 0.0001,
           "section": "Pre-roll"
         },
         {
@@ -200953,7 +203258,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/10000",
+          "out_of": 10000,
+          "rarity": 0.0001,
           "section": "Pre-roll"
         },
         {
@@ -200965,7 +203271,8 @@
           ],
           "pre_roll": true,
           "weight": 1,
-          "rarity_raw": "1/10000",
+          "out_of": 10000,
+          "rarity": 0.0001,
           "section": "Pre-roll"
         },
         {
@@ -209818,7 +212125,10 @@
         {
           "item_id": 12934,
           "name": "Zulrah's scales",
-          "quantity_raw": "100-299<!--note: the 500 scale drop is separate and intentionally excluded here-->",
+          "quantity": [
+            100,
+            299
+          ],
           "always": true,
           "rarity_raw": "Always",
           "section": "100%"
@@ -230499,9 +232809,7 @@
       "npc_id": 8058,
       "name": "Vorkath",
       "wiki_page": "Vorkath",
-      "tables": [
-        "vorkath"
-      ]
+      "tables": []
     },
     "8059": {
       "npc_id": 8059,
@@ -230516,9 +232824,7 @@
       "name": "Vorkath",
       "cache_name": "Vorkath",
       "wiki_page": "Vorkath",
-      "tables": [
-        "vorkath"
-      ]
+      "tables": []
     },
     "8061": {
       "npc_id": 8061,
@@ -236537,9 +238843,7 @@
       "name": "Amoxliatl",
       "cache_name": "Amoxliatl",
       "wiki_page": "Amoxliatl",
-      "tables": [
-        "amoxliatl"
-      ]
+      "tables": []
     },
     "13706": {
       "npc_id": 13706,
