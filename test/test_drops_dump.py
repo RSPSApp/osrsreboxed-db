@@ -21,6 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ###############################################################################
 """
 
+import pytest
+
 from scripts.drops import drops_tables, drops_wikitext
 
 
@@ -48,6 +50,169 @@ ITEMS = drops_tables.ItemIdLookup(
         FakeItem(5072, "Bird nest", "Bird nest (egg) (Blue egg)"),
     ]
 )
+
+
+def test_pre_roll_keeps_its_own_denominator_after_pool_finalization():
+    source = """{{Infobox Monster|id=1}}
+==Drops==
+===Pre-roll===
+{{DropsLine|name=Rune full helm|quantity=1|rarity=1/350}}
+===Other===
+{{DropsLine|name=Coins|quantity=100|rarity=1/100}}
+"""
+    table = drops_wikitext.parse_all_drop_tables(source)[0]
+    exported = drops_tables.build_table_json(
+        drops_tables.build_table_spec("Test", table, ITEMS)
+    )
+    row = next(row for row in exported["entries"] if row.get("pre_roll"))
+    assert [row["weight"], row["out_of"]] == [1, 350]
+    assert row["rarity"] == 0.0028571
+    assert exported["main_max_roll"] == 100
+
+
+def test_unresolved_pre_roll_does_not_receive_an_invented_denominator():
+    source = """{{Infobox Monster|id=1}}
+==Drops==
+===Pre-roll===
+{{DropsLine|name=Rune full helm|quantity=1|rarity=Unpublished}}
+===Other===
+{{DropsLine|name=Coins|quantity=100|rarity=1/100}}
+"""
+    table = drops_wikitext.parse_all_drop_tables(source)[0]
+    exported = drops_tables.build_table_json(
+        drops_tables.build_table_spec("Test", table, ITEMS)
+    )
+    assert not any(row.get("pre_roll") for row in exported["entries"])
+
+
+def test_cached_thermy_occult_pre_roll_exports_its_source_rate():
+    import json
+    from pathlib import Path
+
+    pages = json.loads(
+        (
+            Path(__file__).parents[1] / "data/monsters/monsters-wiki-page-text.json"
+        ).read_text(encoding="utf-8")
+    )
+    items = drops_tables.ItemIdLookup([FakeItem(12002, "Occult necklace")])
+    table = drops_wikitext.parse_all_drop_tables(pages["Thermonuclear smoke devil"])[0]
+    exported = drops_tables.build_table_json(
+        drops_tables.build_table_spec("Thermonuclear_smoke_devil", table, items)
+    )
+    row = next(row for row in exported["entries"] if row.get("item_id") == 12002)
+    assert row["pre_roll"] is True
+    assert [row["weight"], row["out_of"]] == [1, 350]
+
+
+def test_explicit_postquest_table_keeps_the_quest_npc_as_an_empty_mapping():
+    source = """{{Infobox Monster|id1=1|version1=Post-quest|id2=2|version2=Quest}}
+==Drops==
+===Other===
+{{DropsTableHead|dropversion=Post-quest}}
+{{DropsLine|name=Coins|quantity=100|rarity=1/100}}
+{{DropsTableBottom}}
+"""
+    table = drops_wikitext.parse_all_drop_tables(source)[0]
+    assert table.npc_ids == [1]
+    spec = drops_tables.build_table_spec("Test", table, ITEMS)
+    dump = drops_tables.NpcDropsAggregator()
+    dump.add(spec)
+    assert dump.npcs[1]["tables"] == ["test"]
+    assert dump.npcs[2]["tables"] == []
+
+
+def test_cached_postquest_mapping_follows_source_versions_and_cache_ids():
+    import json
+    from pathlib import Path
+    from osrsreboxed import items_api
+
+    root = Path(__file__).parents[1]
+    pages = json.loads(
+        (root / "data/monsters/monsters-wiki-page-text.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    cache = json.loads(
+        (root / "data/monsters/monsters-cache-data.json").read_text(encoding="utf-8")
+    )
+    assert [
+        (cache[str(i)]["name"], cache[str(i)]["combatLevel"]) for i in [13685, 13686]
+    ] == [("Amoxliatl", 263), ("Amoxliatl", 226)]
+    items = drops_tables.ItemIdLookup(items_api.load())
+    dump = drops_tables.NpcDropsAggregator()
+    for title in ["Amoxliatl", "Vorkath"]:
+        for table in drops_wikitext.parse_all_drop_tables(pages[title]):
+            dump.add(drops_tables.build_table_spec(title, table, items))
+    assert dump.npcs[13685]["tables"] == ["amoxliatl"]
+    for npc_id in [13686, 8058, 8060]:
+        assert dump.npcs[npc_id]["tables"] == []
+    for npc_id in [8059, 8061]:
+        assert dump.npcs[npc_id]["tables"] == ["vorkath"]
+
+
+def test_regular_variants_still_inherit_tables_without_uniform_postquest_headers():
+    import json
+    from pathlib import Path
+
+    pages = json.loads(
+        (
+            Path(__file__).parents[1] / "data/monsters/monsters-wiki-page-text.json"
+        ).read_text(encoding="utf-8")
+    )
+    for title, expected in [
+        ("Crocodile", {11582}),
+        ("Moss giant", {2090, 2091, 2092, 2093, 7262, 14422}),
+    ]:
+        actual = {
+            npc_id
+            for table in drops_wikitext.parse_all_drop_tables(pages[title])
+            for npc_id in table.npc_ids
+        }
+        assert expected <= actual
+
+
+@pytest.mark.parametrize(
+    "rate,expected",
+    [
+        ("1/181.1", [10, 1811]),
+        ("1/360.72", [100, 36072]),
+        ("1/1800.72", [100, 180072]),
+        ("0.5/100", [5, 1000]),
+        ("4/540", [4, 540]),
+        ("0/350", [0, 350]),
+        ("350/350", [350, 350]),
+    ],
+)
+def test_pre_roll_exports_exact_source_ratio_without_reducing_pool_slots(
+    rate, expected
+):
+    source = (
+        "{{Infobox Monster|id=1}}\n==Drops==\n===Pre-roll===\n"
+        "{{DropsLine|name=Rune full helm|quantity=1|rarity=" + rate + "}}"
+    )
+    table = drops_wikitext.parse_all_drop_tables(source)[0]
+    exported = drops_tables.build_table_json(
+        drops_tables.build_table_spec("Test", table, ITEMS)
+    )
+    row = exported["entries"][0]
+    assert [row["weight"], row["out_of"]] == expected
+    assert row["pre_roll"] is True
+
+
+@pytest.mark.parametrize("rate", ["1/0", "351/350"])
+def test_invalid_pre_roll_probability_stays_raw_and_unexecutable(rate):
+    source = (
+        "{{Infobox Monster|id=1}}\n==Drops==\n===Pre-roll===\n"
+        "{{DropsLine|name=Rune full helm|quantity=1|rarity=" + rate + "}}"
+    )
+    table = drops_wikitext.parse_all_drop_tables(source)[0]
+    row = drops_tables.build_table_json(
+        drops_tables.build_table_spec("Test", table, ITEMS)
+    )["entries"][0]
+    assert row["rarity_raw"] == rate
+    assert "out_of" not in row
+    assert "rarity" not in row
+
 
 WIKITEXT = """
 {{Infobox Monster
