@@ -68,6 +68,103 @@
           "required": false,
           "nullable": false
         },
+        "quantity_alternatives": {
+          "description": "Every quantity the wiki lists for this drop, in source order; the first is the default and later ones may carry the source-stated condition that selects them.",
+          "type": "list",
+          "required": false,
+          "nullable": false,
+          "minlength": 2,
+          "schema": {
+            "type": "dict",
+            "schema": {
+              "quantity": {
+                "type": "list",
+                "required": true,
+                "nullable": false,
+                "minlength": 2,
+                "maxlength": 2,
+                "schema": {
+                  "type": "integer"
+                }
+              },
+              "condition": {
+                "type": "dict",
+                "required": false,
+                "nullable": false,
+                "schema": {
+                  "type": {
+                    "type": "string",
+                    "required": true,
+                    "nullable": false
+                  },
+                  "monster": {
+                    "type": "string",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "location": {
+                    "type": "string",
+                    "required": false,
+                    "nullable": false
+                  }
+                }
+              }
+            }
+          }
+        },
+        "bonus_drops": {
+          "description": "Drops the wiki footnotes as dropped together with this one: they land whenever this slot is rolled.",
+          "type": "list",
+          "required": false,
+          "nullable": false,
+          "minlength": 1,
+          "schema": {
+            "type": "dict",
+            "schema": {
+              "item_id": {
+                "type": "integer",
+                "required": true,
+                "nullable": true,
+                "min": 0
+              },
+              "name": {
+                "type": "string",
+                "required": true,
+                "nullable": false
+              },
+              "quantity": {
+                "type": "list",
+                "required": false,
+                "nullable": false,
+                "minlength": 2,
+                "maxlength": 2,
+                "schema": {
+                  "type": "integer"
+                }
+              },
+              "quantity_raw": {
+                "type": "string",
+                "required": false,
+                "nullable": false
+              },
+              "noted": {
+                "type": "boolean",
+                "required": false,
+                "nullable": false
+              }
+            }
+          }
+        },
+        "quantity_selection": {
+          "description": "How a consumer chooses among quantity_alternatives: 'conditional' when every alternative after the first has a typed condition, 'unknown' when the source publishes no rule.",
+          "type": "string",
+          "required": false,
+          "nullable": false,
+          "allowed": [
+            "conditional",
+            "unknown"
+          ]
+        },
         "always": {
           "description": "If the drop is guaranteed on every kill.",
           "type": "boolean",
@@ -134,6 +231,22 @@
           "required": false,
           "nullable": false
         },
+        "weight_basis": {
+          "description": "'conditional_pool' conditions relative resource weights on guaranteed fallback; 'remainder' when the weight is the slots the pool's other rows and shared table accesses leave, because the published rate also counts those tables' coins.",
+          "type": "string",
+          "allowed": [
+            "remainder",
+            "conditional_pool"
+          ],
+          "required": false,
+          "nullable": false
+        },
+        "published_rarity": {
+          "description": "The wiki's published rate before exact pool normalization or inclusive coin-rate resolution.",
+          "type": "string",
+          "required": false,
+          "nullable": false
+        },
         "noted": {
           "description": "If the drop is noted (the wiki quantity ends in \"(noted)\").",
           "type": "boolean",
@@ -160,6 +273,27 @@
           "schema": {
             "type": "string"
           }
+        },
+        "roll_count_weights": {
+          "type": "list",
+          "schema": {
+            "type": "dict",
+            "schema": {
+              "rolls": {
+                "type": "integer",
+                "min": 1,
+                "required": true
+              },
+              "weight": {
+                "type": "integer",
+                "min": 1,
+                "required": true
+              }
+            }
+          }
+        },
+        "unresolved_roll_count": {
+          "type": "boolean"
         }
       }
     }
@@ -192,6 +326,746 @@
     "nullable": false,
     "schema": {
       "type": "string"
+    }
+  },
+  "reward_chain": {
+    "type": "dict",
+    "required": false,
+    "schema": {
+      "type": {
+        "type": "string",
+        "required": true,
+        "allowed": [
+          "ordered_exclusive"
+        ]
+      },
+      "state_domain": {
+        "type": "string",
+        "required": true,
+        "allowed": [
+          "forgotten_four"
+        ]
+      },
+      "stages": {
+        "type": "list",
+        "minlength": 1,
+        "required": true,
+        "schema": {
+          "type": "dict",
+          "required": false,
+          "schema": {
+            "key": {
+              "type": "string",
+              "required": true
+            },
+            "weight": {
+              "type": "integer",
+              "min": 1,
+              "required": true
+            },
+            "out_of": {
+              "type": "integer",
+              "min": 1,
+              "required": true
+            },
+            "main_max_roll": {
+              "type": "integer",
+              "min": 1,
+              "required": true
+            },
+            "entries": {
+              "type": "list",
+              "required": true,
+              "minlength": 1,
+              "schema": {
+                "type": "dict",
+                "schema": {
+                  "item_id": {
+                    "description": "Unique OSRS item ID of the drop.",
+                    "type": "integer",
+                    "required": false,
+                    "nullable": true,
+                    "min": 0
+                  },
+                  "name": {
+                    "description": "The name of the drop, as written on the wiki.",
+                    "type": "string",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "quantity": {
+                    "description": "The quantity dropped, as a [minimum, maximum] pair.",
+                    "type": "list",
+                    "required": false,
+                    "nullable": false,
+                    "minlength": 2,
+                    "maxlength": 2,
+                    "schema": {
+                      "type": "integer"
+                    }
+                  },
+                  "quantity_raw": {
+                    "description": "The raw wiki quantity, when it is not a plain number or range.",
+                    "type": "string",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "quantity_alternatives": {
+                    "description": "Every quantity the wiki lists for this drop, in source order; the first is the default and later ones may carry the source-stated condition that selects them.",
+                    "type": "list",
+                    "required": false,
+                    "nullable": false,
+                    "minlength": 2,
+                    "schema": {
+                      "type": "dict",
+                      "schema": {
+                        "quantity": {
+                          "type": "list",
+                          "required": true,
+                          "nullable": false,
+                          "minlength": 2,
+                          "maxlength": 2,
+                          "schema": {
+                            "type": "integer"
+                          }
+                        },
+                        "condition": {
+                          "type": "dict",
+                          "required": false,
+                          "nullable": false,
+                          "schema": {
+                            "type": {
+                              "type": "string",
+                              "required": true,
+                              "nullable": false
+                            },
+                            "monster": {
+                              "type": "string",
+                              "required": false,
+                              "nullable": false
+                            },
+                            "location": {
+                              "type": "string",
+                              "required": false,
+                              "nullable": false
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "bonus_drops": {
+                    "description": "Drops the wiki footnotes as dropped together with this one: they land whenever this slot is rolled.",
+                    "type": "list",
+                    "required": false,
+                    "nullable": false,
+                    "minlength": 1,
+                    "schema": {
+                      "type": "dict",
+                      "schema": {
+                        "item_id": {
+                          "type": "integer",
+                          "required": true,
+                          "nullable": true,
+                          "min": 0
+                        },
+                        "name": {
+                          "type": "string",
+                          "required": true,
+                          "nullable": false
+                        },
+                        "quantity": {
+                          "type": "list",
+                          "required": false,
+                          "nullable": false,
+                          "minlength": 2,
+                          "maxlength": 2,
+                          "schema": {
+                            "type": "integer"
+                          }
+                        },
+                        "quantity_raw": {
+                          "type": "string",
+                          "required": false,
+                          "nullable": false
+                        },
+                        "noted": {
+                          "type": "boolean",
+                          "required": false,
+                          "nullable": false
+                        }
+                      }
+                    }
+                  },
+                  "quantity_selection": {
+                    "description": "How a consumer chooses among quantity_alternatives: 'conditional' when every alternative after the first has a typed condition, 'unknown' when the source publishes no rule.",
+                    "type": "string",
+                    "required": false,
+                    "nullable": false,
+                    "allowed": [
+                      "conditional",
+                      "unknown"
+                    ]
+                  },
+                  "always": {
+                    "description": "If the drop is guaranteed on every kill.",
+                    "type": "boolean",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "pre_roll": {
+                    "description": "If the drop is rolled before the main table.",
+                    "type": "boolean",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "separate_roll": {
+                    "description": "If the drop is rolled independently of the main table pool.",
+                    "type": "boolean",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "nothing": {
+                    "description": "If the entry is an empty slot in the main table pool.",
+                    "type": "boolean",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "shared_table": {
+                    "description": "Name of the shared table rolled by this entry, as keyed in subtables.json.",
+                    "type": "string",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "weight": {
+                    "description": "How many of the out_of slots this entry occupies.",
+                    "type": "integer",
+                    "required": false,
+                    "nullable": false,
+                    "min": 0
+                  },
+                  "out_of": {
+                    "description": "The denominator this entry is rolled against.",
+                    "type": "integer",
+                    "required": false,
+                    "nullable": false,
+                    "min": 1
+                  },
+                  "rarity": {
+                    "description": "Chance of a single roll landing on this entry (as a float out of 1.0).",
+                    "type": [
+                      "float",
+                      "integer"
+                    ],
+                    "required": false,
+                    "nullable": true,
+                    "min": 0
+                  },
+                  "rarity_raw": {
+                    "description": "The raw wiki rarity, when it could not be resolved to a numeric rate.",
+                    "type": "string",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "assumed_rarity": {
+                    "description": "If the rate is a convention for a word rarity ('Common', 'Rare') rather than wiki data.",
+                    "type": "boolean",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "weight_basis": {
+                    "description": "'conditional_pool' conditions relative resource weights on guaranteed fallback; 'remainder' when the weight is the slots the pool's other rows and shared table accesses leave, because the published rate also counts those tables' coins.",
+                    "type": "string",
+                    "allowed": [
+                      "remainder",
+                      "conditional_pool"
+                    ],
+                    "required": false,
+                    "nullable": false
+                  },
+                  "published_rarity": {
+                    "description": "The wiki's published rate before exact pool normalization or inclusive coin-rate resolution.",
+                    "type": "string",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "noted": {
+                    "description": "If the drop is noted (the wiki quantity ends in \"(noted)\").",
+                    "type": "boolean",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "clue_scroll_box": {
+                    "description": "If the drop arrives as a clue scroll box.",
+                    "type": "boolean",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "section": {
+                    "description": "The wiki subsection the drop was listed under.",
+                    "type": "string",
+                    "required": false,
+                    "nullable": false
+                  },
+                  "notes": {
+                    "description": "Wiki footnotes attached to the drop, such as quest or area requirements.",
+                    "type": "list",
+                    "required": false,
+                    "nullable": false,
+                    "schema": {
+                      "type": "string"
+                    }
+                  },
+                  "roll_count_weights": {
+                    "type": "list",
+                    "schema": {
+                      "type": "dict",
+                      "schema": {
+                        "rolls": {
+                          "type": "integer",
+                          "min": 1,
+                          "required": true
+                        },
+                        "weight": {
+                          "type": "integer",
+                          "min": 1,
+                          "required": true
+                        }
+                      }
+                    }
+                  },
+                  "unresolved_roll_count": {
+                    "type": "boolean"
+                  },
+                  "progression": {
+                    "type": "dict",
+                    "required": false,
+                    "schema": {
+                      "type": {
+                        "type": "string",
+                        "required": true,
+                        "allowed": [
+                          "cyclic_hits"
+                        ]
+                      },
+                      "state_key": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "hits": {
+                        "type": "integer",
+                        "min": 1,
+                        "required": true
+                      },
+                      "intermediate_item_id": {
+                        "type": "integer",
+                        "min": 1,
+                        "required": true
+                      },
+                      "intermediate_quantities": {
+                        "type": "list",
+                        "required": true,
+                        "schema": {
+                          "type": "integer",
+                          "min": 1,
+                          "required": true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "eligibility": {
+              "type": "dict",
+              "required": false,
+              "schema": {
+                "type": {
+                  "type": "string",
+                  "required": true,
+                  "allowed": [
+                    "until_first_received"
+                  ]
+                },
+                "state_key": {
+                  "type": "string",
+                  "required": true
+                }
+              }
+            },
+            "record_first_received": {
+              "type": "dict",
+              "required": false,
+              "schema": {
+                "state_key": {
+                  "type": "string",
+                  "required": true
+                }
+              }
+            },
+            "source_scaling": {
+              "type": "dict",
+              "required": false,
+              "schema": {
+                "status": {
+                  "type": "string",
+                  "required": true,
+                  "allowed": [
+                    "unresolved"
+                  ]
+                },
+                "execution": {
+                  "type": "string",
+                  "required": true,
+                  "allowed": [
+                    "documented_base_only",
+                    "documented_base_and_endpoint"
+                  ]
+                },
+                "before_first_received": {
+                  "type": "boolean",
+                  "required": true
+                },
+                "known_endpoint": {
+                  "type": "dict",
+                  "required": false,
+                  "schema": {
+                    "kill_count": {
+                      "type": "integer",
+                      "min": 1,
+                      "required": true
+                    },
+                    "weight": {
+                      "type": "integer",
+                      "min": 1,
+                      "required": true
+                    },
+                    "out_of": {
+                      "type": "integer",
+                      "min": 1,
+                      "required": true
+                    }
+                  }
+                },
+                "after_first_received": {
+                  "type": "dict",
+                  "required": false,
+                  "schema": {
+                    "weight": {
+                      "type": "integer",
+                      "min": 1,
+                      "required": true
+                    },
+                    "out_of": {
+                      "type": "integer",
+                      "min": 1,
+                      "required": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tertiary_groups": {
+    "type": "list",
+    "schema": {
+      "type": "dict",
+      "required": false,
+      "schema": {
+        "type": {
+          "type": "string",
+          "required": true,
+          "allowed": [
+            "exclusive"
+          ]
+        },
+        "source_access": {
+          "type": "dict",
+          "required": true,
+          "schema": {
+            "weight": {
+              "type": "integer",
+              "min": 1,
+              "required": true
+            },
+            "out_of": {
+              "type": "integer",
+              "min": 1,
+              "required": true
+            }
+          }
+        },
+        "entries": {
+          "type": "list",
+          "required": true,
+          "schema": {
+            "type": "dict",
+            "schema": {
+              "item_id": {
+                "description": "Unique OSRS item ID of the drop.",
+                "type": "integer",
+                "required": false,
+                "nullable": true,
+                "min": 0
+              },
+              "name": {
+                "description": "The name of the drop, as written on the wiki.",
+                "type": "string",
+                "required": false,
+                "nullable": false
+              },
+              "quantity": {
+                "description": "The quantity dropped, as a [minimum, maximum] pair.",
+                "type": "list",
+                "required": false,
+                "nullable": false,
+                "minlength": 2,
+                "maxlength": 2,
+                "schema": {
+                  "type": "integer"
+                }
+              },
+              "quantity_raw": {
+                "description": "The raw wiki quantity, when it is not a plain number or range.",
+                "type": "string",
+                "required": false,
+                "nullable": false
+              },
+              "quantity_alternatives": {
+                "description": "Every quantity the wiki lists for this drop, in source order; the first is the default and later ones may carry the source-stated condition that selects them.",
+                "type": "list",
+                "required": false,
+                "nullable": false,
+                "minlength": 2,
+                "schema": {
+                  "type": "dict",
+                  "schema": {
+                    "quantity": {
+                      "type": "list",
+                      "required": true,
+                      "nullable": false,
+                      "minlength": 2,
+                      "maxlength": 2,
+                      "schema": {
+                        "type": "integer"
+                      }
+                    },
+                    "condition": {
+                      "type": "dict",
+                      "required": false,
+                      "nullable": false,
+                      "schema": {
+                        "type": {
+                          "type": "string",
+                          "required": true,
+                          "nullable": false
+                        },
+                        "monster": {
+                          "type": "string",
+                          "required": false,
+                          "nullable": false
+                        },
+                        "location": {
+                          "type": "string",
+                          "required": false,
+                          "nullable": false
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "bonus_drops": {
+                "description": "Drops the wiki footnotes as dropped together with this one: they land whenever this slot is rolled.",
+                "type": "list",
+                "required": false,
+                "nullable": false,
+                "minlength": 1,
+                "schema": {
+                  "type": "dict",
+                  "schema": {
+                    "item_id": {
+                      "type": "integer",
+                      "required": true,
+                      "nullable": true,
+                      "min": 0
+                    },
+                    "name": {
+                      "type": "string",
+                      "required": true,
+                      "nullable": false
+                    },
+                    "quantity": {
+                      "type": "list",
+                      "required": false,
+                      "nullable": false,
+                      "minlength": 2,
+                      "maxlength": 2,
+                      "schema": {
+                        "type": "integer"
+                      }
+                    },
+                    "quantity_raw": {
+                      "type": "string",
+                      "required": false,
+                      "nullable": false
+                    },
+                    "noted": {
+                      "type": "boolean",
+                      "required": false,
+                      "nullable": false
+                    }
+                  }
+                }
+              },
+              "quantity_selection": {
+                "description": "How a consumer chooses among quantity_alternatives: 'conditional' when every alternative after the first has a typed condition, 'unknown' when the source publishes no rule.",
+                "type": "string",
+                "required": false,
+                "nullable": false,
+                "allowed": [
+                  "conditional",
+                  "unknown"
+                ]
+              },
+              "always": {
+                "description": "If the drop is guaranteed on every kill.",
+                "type": "boolean",
+                "required": false,
+                "nullable": false
+              },
+              "pre_roll": {
+                "description": "If the drop is rolled before the main table.",
+                "type": "boolean",
+                "required": false,
+                "nullable": false
+              },
+              "separate_roll": {
+                "description": "If the drop is rolled independently of the main table pool.",
+                "type": "boolean",
+                "required": false,
+                "nullable": false
+              },
+              "nothing": {
+                "description": "If the entry is an empty slot in the main table pool.",
+                "type": "boolean",
+                "required": false,
+                "nullable": false
+              },
+              "shared_table": {
+                "description": "Name of the shared table rolled by this entry, as keyed in subtables.json.",
+                "type": "string",
+                "required": false,
+                "nullable": false
+              },
+              "weight": {
+                "description": "How many of the out_of slots this entry occupies.",
+                "type": "integer",
+                "required": false,
+                "nullable": false,
+                "min": 0
+              },
+              "out_of": {
+                "description": "The denominator this entry is rolled against.",
+                "type": "integer",
+                "required": false,
+                "nullable": false,
+                "min": 1
+              },
+              "rarity": {
+                "description": "Chance of a single roll landing on this entry (as a float out of 1.0).",
+                "type": [
+                  "float",
+                  "integer"
+                ],
+                "required": false,
+                "nullable": true,
+                "min": 0
+              },
+              "rarity_raw": {
+                "description": "The raw wiki rarity, when it could not be resolved to a numeric rate.",
+                "type": "string",
+                "required": false,
+                "nullable": false
+              },
+              "assumed_rarity": {
+                "description": "If the rate is a convention for a word rarity ('Common', 'Rare') rather than wiki data.",
+                "type": "boolean",
+                "required": false,
+                "nullable": false
+              },
+              "weight_basis": {
+                "description": "'conditional_pool' conditions relative resource weights on guaranteed fallback; 'remainder' when the weight is the slots the pool's other rows and shared table accesses leave, because the published rate also counts those tables' coins.",
+                "type": "string",
+                "allowed": [
+                  "remainder",
+                  "conditional_pool"
+                ],
+                "required": false,
+                "nullable": false
+              },
+              "published_rarity": {
+                "description": "The wiki's published rate before exact pool normalization or inclusive coin-rate resolution.",
+                "type": "string",
+                "required": false,
+                "nullable": false
+              },
+              "noted": {
+                "description": "If the drop is noted (the wiki quantity ends in \"(noted)\").",
+                "type": "boolean",
+                "required": false,
+                "nullable": false
+              },
+              "clue_scroll_box": {
+                "description": "If the drop arrives as a clue scroll box.",
+                "type": "boolean",
+                "required": false,
+                "nullable": false
+              },
+              "section": {
+                "description": "The wiki subsection the drop was listed under.",
+                "type": "string",
+                "required": false,
+                "nullable": false
+              },
+              "notes": {
+                "description": "Wiki footnotes attached to the drop, such as quest or area requirements.",
+                "type": "list",
+                "required": false,
+                "nullable": false,
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "roll_count_weights": {
+                "type": "list",
+                "schema": {
+                  "type": "dict",
+                  "schema": {
+                    "rolls": {
+                      "type": "integer",
+                      "min": 1,
+                      "required": true
+                    },
+                    "weight": {
+                      "type": "integer",
+                      "min": 1,
+                      "required": true
+                    }
+                  }
+                }
+              },
+              "unresolved_roll_count": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
