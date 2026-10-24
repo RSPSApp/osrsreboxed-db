@@ -60,6 +60,9 @@ SUBTABLE_LABELS = {
     "rareSeed": "rare seed drop table",
     "rareDrop": "rare drop table",
     "megaRare": "mega-rare drop table",
+    "gwdRareDrop": "God Wars Dungeon-variant rare drop table",
+    "gwdGem": "God Wars Dungeon-variant gem drop table",
+    "gwdMegaRare": "God Wars Dungeon-variant mega-rare drop table",
 }
 
 
@@ -77,6 +80,9 @@ class ParsedDrop:
     is_noted: bool = False
     notes: List[str] = field(default_factory=list)
     clue_scroll_box: bool = False
+    quantity_condition: Optional[Dict[str, str]] = None
+    bundle_ref: str = ""
+    bundle_eligibility: List[str] = field(default_factory=list)
 
 
 @dataclass
@@ -98,6 +104,7 @@ class ParsedDropTable:
     drops: List[ParsedDrop]
     subtable_accesses: List[ParsedSubtableAccess]
     npc_ids: List[int]
+    excluded_npc_ids: List[int] = field(default_factory=list)
 
 
 # ---------------------------------------------------------------------------
@@ -784,6 +791,103 @@ def _resolve_named_ref_links(
     return resolved
 
 
+# Footnotes that make two adjacent rows one slot: "X and Y are dropped together".
+DROPPED_TOGETHER = re.compile(r"\bdrop(?:ped|s)?\s+together\b", re.I)
+REF_TAG = re.compile(r"<ref\s+([^>]*?)\s*/?>", re.I)
+
+
+def _drop_ref_name(attrs: str) -> Optional[str]:
+    """The name of a ``<ref>`` in the exact drop-footnote group, or None.
+
+    Attributes are read by mwparserfromhell so quoted and unquoted forms agree.
+    """
+    cleaned = attrs.strip().rstrip("/").strip()
+    tags = mwparserfromhell.parse(f"<ref {cleaned}/>").filter_tags()
+    if not tags:
+        return None
+    attributes = {
+        str(attribute.name).strip().lower(): str(attribute.value).strip()
+        for attribute in tags[0].attributes
+    }
+    if attributes.get("group", "").strip("'\"").lower() != "d":
+        return None
+    name = attributes.get("name", "").strip().strip("'\"")
+    return name or None
+
+
+def collect_named_drop_footnotes(section_body: str) -> Dict[str, str]:
+    """Collect group-d named footnotes for source-pair and eligibility checks.
+
+    Both definition syntaxes count: ``<ref group="d" name="x">body</ref>`` and
+    ``{{Refn|body|group=d|name=x}}``. Resolution of ordinary notes is separate
+    (:func:`collect_named_footnotes`), so this adds no note text to rows.
+
+    :param section_body: Wikitext of one drop subsection.
+    :return: Dictionary of ref name to cleaned footnote text.
+    """
+    refs: Dict[str, str] = {}
+    for match in NAMED_REF.finditer(SELF_CLOSING_REF.sub("", section_body)):
+        name = _drop_ref_name(match.group(1))
+        if not name:
+            continue
+        text = clean_wiki_notes(match.group(2))
+        if text:
+            refs.setdefault(name, text)
+    for template in mwparserfromhell.parse(section_body).filter_templates():
+        if str(template.name).strip().lower() != "refn":
+            continue
+        params = template_params(template)
+        if params.get("group", "").strip().lower() != "d":
+            continue
+        name = params.get("name", "").strip()
+        text = clean_wiki_notes(
+            params.get("_0") or params.get("note") or params.get("1") or ""
+        )
+        if name and text:
+            refs.setdefault(name, text)
+    return refs
+
+
+def named_drop_refs(*fields: str) -> List[str]:
+    """Names of every group-d footnote a row's note fields define or reference.
+
+    Covers ``<ref …>`` and ``<ref …/>`` tags, ``{{Refn|…|group=d|name=x}}`` and
+    ``{{NamedRef|x|group=d}}`` in either parameter order.
+    """
+    names: List[str] = []
+    for value in fields:
+        if not value or not value.strip():
+            continue
+        for match in REF_TAG.finditer(value):
+            name = _drop_ref_name(match.group(1))
+            if name:
+                names.append(name)
+        for template in mwparserfromhell.parse(value).filter_templates():
+            template_name = str(template.name).strip().lower()
+            if template_name not in ("refn", "namedref"):
+                continue
+            params = template_params(template)
+            if params.get("group", "").strip().lower() != "d":
+                continue
+            if template_name == "refn":
+                name = params.get("name", "").strip()
+            else:
+                name = params.get("_0", "").strip()
+            if name:
+                names.append(name)
+    return names
+
+
+def bundle_ref_for(params: Dict[str, str], bundle_refs: Dict[str, str]) -> str:
+    """The dropped-together footnote a drop line carries, or "" for none."""
+    for name in named_drop_refs(
+        params.get("namenotes", ""), params.get("raritynotes", "")
+    ):
+        if name in bundle_refs:
+            return name
+    return ""
+
+
 def _note_mentions_item(drop_name: str, note: str) -> bool:
     normalized_drop = _normalize_item_name(drop_name)
     if not normalized_drop:
@@ -1231,9 +1335,93 @@ def parse_wiki_quantity(raw_quantity: str) -> Tuple[str, bool]:
     :param raw_quantity: The raw quantity field, e.g. ``5 (noted)``.
     :return: A (quantity, is noted) tuple.
     """
+    raw_quantity = re.sub(r"<!--.*?-->", "", raw_quantity, flags=re.S)
     is_noted = "(noted)" in raw_quantity.lower()
     quantity = re.sub(r"\s*\(noted\)", "", raw_quantity, flags=re.I).strip()
     return quantity or "1", is_noted
+
+
+# One quantity alternative: a number or an ``a-b`` range.
+QUANTITY_ALTERNATIVE = re.compile(r"(\d+)(?:\s*[-–]\s*(\d+))?")
+QUANTITY_ALTERNATIVE_SEPARATOR = re.compile(r"[,;]")
+
+
+def parse_quantity_alternatives(quantity: str) -> Optional[List[Tuple[int, int]]]:
+    """Split a quantity that lists alternatives into (min, max) pairs.
+
+    Template:DropsLine/doc defines commas (and semicolons, as the wiki also
+    writes them) as separators between distinct quantities and forbids
+    thousands separators, so ``"120,180"`` is two alternatives and
+    ``"3-7,5-10"`` two ranges. A token with a leading zero (``"1,000"``) is
+    not a quantity the template allows, so the whole field stays unparsed.
+
+    :param quantity: The cleaned quantity field (comments and ``(noted)`` removed).
+    :return: The alternatives in source order, or None when the field does not
+             list two or more plain numbers/ranges.
+    """
+    tokens = [token.strip() for token in QUANTITY_ALTERNATIVE_SEPARATOR.split(quantity)]
+    if len(tokens) < 2:
+        return None
+    alternatives: List[Tuple[int, int]] = []
+    for token in tokens:
+        match = QUANTITY_ALTERNATIVE.fullmatch(token)
+        if not match or re.search(r"(?<!\d)0\d", token):
+            return None
+        low = int(match.group(1))
+        high = int(match.group(2)) if match.group(2) is not None else low
+        alternatives.append((low, high))
+    return alternatives
+
+
+# Source rules that select the second of exactly two quantity alternatives.
+# Each regex is the wiki's own wording; nothing is inferred from arithmetic alone.
+PERFECT_KILL_STATEMENT = re.compile(
+    r"defeating the boss perfectly will earn 50% more loot from the standard drop table",
+    re.I,
+)
+BOUNTY_TASK_QUANTITY_NOTE = re.compile(r"\bwhile on an?\s+(.+?)\s+bounty task\b", re.I)
+PREFERRED_METHOD_CHASM_NOTE = re.compile(
+    r"killed with preferred method in the Chasm of Fire", re.I
+)
+
+
+def _two_alternatives(quantity: str) -> Optional[List[Tuple[int, int]]]:
+    alternatives = parse_quantity_alternatives(quantity)
+    return alternatives if alternatives and len(alternatives) == 2 else None
+
+
+def quantity_condition_from_notes(
+    quantity: str, quantity_notes: List[str], attached_notes: List[str]
+) -> Optional[Dict[str, str]]:
+    """Type the row-level note that selects the second quantity alternative.
+
+    Bounty wording counts only in the row's quantity notes: the same phrase in
+    a rarity footnote describes the drop chance, not the amount.
+    """
+    if not _two_alternatives(quantity):
+        return None
+    for note in quantity_notes:
+        match = BOUNTY_TASK_QUANTITY_NOTE.search(note)
+        if match:
+            return {"type": "bounty_task", "monster": match.group(1).strip().lower()}
+    for note in attached_notes:
+        if PREFERRED_METHOD_CHASM_NOTE.search(note):
+            return {"type": "preferred_method", "location": "Chasm of Fire"}
+    return None
+
+
+def apply_perfect_kill_condition(drop: ParsedDrop) -> ParsedDrop:
+    """On a page stating the 50% perfect-kill bonus, the larger of two main-table
+    quantities is the perfect-kill amount."""
+    if drop.section != SECTION_MAIN or drop.quantity_condition is not None:
+        return drop
+    alternatives = _two_alternatives(drop.quantity)
+    if not alternatives:
+        return drop
+    (low, high), (bonus_low, bonus_high) = alternatives
+    if bonus_low >= low and bonus_high >= high:
+        drop.quantity_condition = {"type": "perfect_kill"}
+    return drop
 
 
 def _parse_drop_line(
@@ -1248,6 +1436,10 @@ def _parse_drop_line(
 
     name_notes = params.get("namenotes", "")
     rarity_notes = params.get("raritynotes", "")
+    quantity_notes = params.get("quantitynotes", "")
+    quantity_note_values = parse_inline_note_fields(
+        quantity_notes
+    ) + _resolve_named_ref_links("", quantity_notes, named_refs)
     attached_notes = parse_inline_note_fields(
         name_notes, rarity_notes
     ) + _resolve_named_ref_links(name_notes, rarity_notes, named_refs)
@@ -1291,6 +1483,9 @@ def _parse_drop_line(
         is_noted=is_noted,
         notes=notes.as_list(),
         clue_scroll_box=notes.has_clue_scroll_box(),
+        quantity_condition=quantity_condition_from_notes(
+            quantity, quantity_note_values, relevant_notes
+        ),
     )
 
 
@@ -1299,10 +1494,29 @@ def _parse_drops_from_body(body: str) -> List[ParsedDrop]:
     for heading, section_body in _split_drop_subsections(body):
         section = _classify_section(heading)
         named_refs = collect_named_footnotes(section_body)
+        source_refs = collect_named_drop_footnotes(section_body)
+        bundle_refs = {
+            name: text
+            for name, text in source_refs.items()
+            if DROPPED_TOGETHER.search(text)
+        }
 
         for _, params in extract_templates(section_body, "DropsLine"):
             drop = _parse_drop_line(params, section, heading, named_refs)
             if drop:
+                drop.bundle_ref = bundle_ref_for(params, bundle_refs)
+                # Compare source notes rather than classified output notes:
+                # NamedRef references and inline definitions must agree, while
+                # an extra quest/location condition must never disappear.
+                fields = (params.get("namenotes", ""), params.get("raritynotes", ""))
+                source_notes = parse_inline_note_fields(*fields) + [
+                    source_refs[name]
+                    for name in named_drop_refs(*fields)
+                    if name in source_refs
+                ]
+                drop.bundle_eligibility = sorted(
+                    set(source_notes) - {bundle_refs.get(drop.bundle_ref, "")}
+                )
                 drops.append(drop)
 
         for _, params in extract_templates(section_body, "DropsLineClue"):
@@ -1370,6 +1584,12 @@ PROSE_ACCESS_PATTERNS = [
     ("megaRare", r"chance of rolling the mega-?rare drop table"),
 ]
 
+# {{GWDRDT}} takes no arguments, so its rates live in the template, not the page:
+# "2/127 to go to gems OR 8/127 to go to RDT" (Mod Ash, cited on Template:GWDRDT
+# and on the God Wars Dungeon-variant rare drop table page, which states both).
+# These are the God Wars variant tables, not the regular rare drop and gem tables.
+GWDRDT_ACCESSES = [("gwdRareDrop", 8, 127), ("gwdGem", 2, 127)]
+
 HERB_TABLE_ACCESS = re.compile(
     r"(\d+)\s*/\s*(\d+)\s+chance of rolling (?:the\s+)?(?:\[\[)?(?:[^|\]]+\|)?herb drop table",
     re.I,
@@ -1424,6 +1644,12 @@ def _parse_subtable_accesses(body: str) -> List[ParsedSubtableAccess]:
                     ParsedSubtableAccess(key, fraction[0], fraction[1], "Herbs")
                 )
             break
+
+    if extract_templates(body, "GWDRDT"):
+        for key, numerator, denominator in GWDRDT_ACCESSES:
+            accesses.append(
+                ParsedSubtableAccess(key, numerator, denominator, "Rare drop table")
+            )
 
     for raw, params in extract_templates(body, "RareDropTable"):
         rdt_chance = _first_fraction(params.get("_0", "")) or _first_fraction(raw)
@@ -1489,6 +1715,7 @@ def parse_all_drop_tables(wikitext: str) -> List[ParsedDropTable]:
     npc_ids_by_table = parse_npc_ids_by_drop_table(wikitext)
     fallback_npc_ids = parse_npc_ids(wikitext)
     page_vars = collect_page_vars(wikitext)
+    perfect_kill_page = bool(PERFECT_KILL_STATEMENT.search(wikitext))
 
     tables = []
     for table_name, body in sections:
@@ -1513,10 +1740,36 @@ def parse_all_drop_tables(wikitext: str) -> List[ParsedDropTable]:
             else:
                 npc_ids = []
 
+            # Uniform explicit post-quest headers select that encounter's IDs,
+            # not the quest variants sharing the page. Other header families
+            # can inherit regular tables and do not establish an exclusion.
+            excluded_npc_ids = []
+            headers = extract_templates(variant_body, "DropsTableHead")
+            declared_versions = {
+                params.get("dropversion", "").strip().lower() for _, params in headers
+            }
+            if not variant_name and declared_versions == {"post-quest"}:
+                version_ids = parse_npc_ids_by_drop_table(
+                    wikitext, include_versions=True
+                )
+                selected_ids = sorted(
+                    {
+                        npc_id
+                        for name, ids in version_ids.items()
+                        if name.lower() == "post-quest"
+                        for npc_id in ids
+                    }
+                )
+                if selected_ids:
+                    excluded_npc_ids = sorted(set(fallback_npc_ids) - set(selected_ids))
+                    npc_ids = selected_ids
+
             drops = [
                 _resolve_drop_rarity(drop, page_vars)
                 for drop in _parse_drops_from_body(variant_body)
             ]
+            if perfect_kill_page:
+                drops = [apply_perfect_kill_condition(drop) for drop in drops]
             tables.append(
                 ParsedDropTable(
                     table_name=table_name,
@@ -1524,6 +1777,7 @@ def parse_all_drop_tables(wikitext: str) -> List[ParsedDropTable]:
                     drops=drops,
                     subtable_accesses=_parse_subtable_accesses(variant_body),
                     npc_ids=npc_ids,
+                    excluded_npc_ids=excluded_npc_ids,
                 )
             )
     if not strict_headings:

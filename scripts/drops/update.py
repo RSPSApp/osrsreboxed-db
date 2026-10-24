@@ -80,36 +80,38 @@ def load_monster_wikitext() -> Dict[str, str]:
         return json.load(wiki_file)
 
 
-def load_shared_table_wikitext(refresh: bool = False) -> Optional[str]:
-    """Load the wikitext of the wiki's ``Drop table`` page, fetching it if needed.
+def load_shared_table_wikitext(refresh: bool = False) -> Dict[str, Optional[str]]:
+    """Load the wikitext of every shared drop table page, fetching any not cached.
 
-    :param refresh: Re-fetch the page even when a cached copy exists.
-    :return: The page wikitext, or None when it could not be fetched.
+    :param refresh: Re-fetch the pages even when a cached copy exists.
+    :return: Page title to wikitext, None for a page that could not be fetched.
     """
     config.DATA_DROPS_PATH.mkdir(parents=True, exist_ok=True)
     cache_file = Path(config.DATA_DROPS_PATH / "drop-tables-wiki-page-text.json")
 
+    cached = {}
     if cache_file.exists() and not refresh:
         with open(cache_file) as drop_table_file:
             cached = json.load(drop_table_file)
-        page_text = cached.get(drops_tables.SHARED_TABLE_PAGE)
-        if page_text and page_text != "None":
-            return page_text
 
-    logger.info(
-        "Fetching '%s' wiki page for shared drop tables...",
-        drops_tables.SHARED_TABLE_PAGE,
-    )
-    page = WikiPageText(WIKI_API_URL, drops_tables.SHARED_TABLE_PAGE)
-    page.extract_page_wiki_text()
-    if not page.wiki_text:
-        logger.warning(
-            "Could not fetch '%s' — shared tables will be empty.",
-            drops_tables.SHARED_TABLE_PAGE,
-        )
-        return None
-    page.export_wiki_text_to_json(str(cache_file))
-    return page.wiki_text
+    pages = {}
+    for title in drops_tables.SHARED_TABLE_PAGES:
+        page_text = cached.get(title)
+        if page_text and page_text != "None":
+            pages[title] = page_text
+            continue
+        logger.info("Fetching '%s' wiki page for shared drop tables...", title)
+        page = WikiPageText(WIKI_API_URL, title)
+        page.extract_page_wiki_text()
+        if not page.wiki_text:
+            logger.warning(
+                "Could not fetch '%s' — its shared tables will be empty.", title
+            )
+            pages[title] = None
+            continue
+        page.export_wiki_text_to_json(str(cache_file))
+        pages[title] = page.wiki_text
+    return pages
 
 
 def generate(
@@ -119,7 +121,7 @@ def generate(
 
     :param out_dir: Directory to write the dump files to.
     :param limit: Stop after this many wiki pages (for quick test runs).
-    :param refresh_shared: Re-fetch the shared drop table wiki page.
+    :param refresh_shared: Re-fetch the shared drop table wiki pages.
     """
     logger.info("Loading item database for drop item ID lookup...")
     items = ItemIdLookup(items_api.load())
@@ -202,7 +204,7 @@ def main():
     parser.add_argument(
         "--refresh-shared",
         action="store_true",
-        help="Re-fetch the 'Drop table' wiki page instead of using the cached copy.",
+        help="Re-fetch the shared drop table wiki pages instead of using cached copies.",
     )
     args = parser.parse_args()
 
