@@ -33,11 +33,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 import ast
+import json
 import math
 import re
 from dataclasses import dataclass, field
 from decimal import ROUND_HALF_UP, Decimal, InvalidOperation
+from functools import lru_cache
+from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+from scripts.drops.reward_chain import parse_reward_policy
 
 import mwparserfromhell
 
@@ -81,6 +86,9 @@ class ParsedDrop:
     is_noted: bool = False
     notes: List[str] = field(default_factory=list)
     clue_scroll_box: bool = False
+    is_reward: bool = False
+    alternate_rarity: str = ""
+    reward_source_rarity: str = ""
     quantity_condition: Optional[Dict[str, str]] = None
     bundle_ref: str = ""
     bundle_eligibility: List[str] = field(default_factory=list)
@@ -101,6 +109,8 @@ class ParsedSubtableAccess:
     denominator: int
     subsection: str
     rolls: int = 1
+    roll_count_weights: List[Dict[str, int]] = field(default_factory=list)
+    unresolved_roll_count: bool = False
 
 
 @dataclass
@@ -114,6 +124,7 @@ class ParsedDropTable:
     npc_ids: List[int]
     excluded_npc_ids: List[int] = field(default_factory=list)
     rolls: int = 1
+    reward_policy: Optional[Dict] = None
 
 
 # ---------------------------------------------------------------------------
@@ -551,7 +562,7 @@ def classify_note(note: str, drop_name: str = "") -> DropNotes:
     :return: A :class:`DropNotes` holding just this note.
     """
     cleaned = note.strip()
-    if not cleaned or F2P_NOTE.search(cleaned):
+    if not cleaned or F2P_ONLY_DROP.search(cleaned):
         return DropNotes()
 
     if LOOTING_BAG_WILDERNESS_NOTE.search(cleaned):
@@ -563,7 +574,9 @@ def classify_note(note: str, drop_name: str = "") -> DropNotes:
 
     quest_requirement = parse_quest_requirement(cleaned)
     if quest_requirement:
-        return DropNotes(quest_requirements=[quest_requirement])
+        # Keep extra requirements (NPC conversations, items, location, etc.)
+        # instead of allowing a recognized quest name to erase the rest.
+        return DropNotes(condition=[cleaned], quest_requirements=[quest_requirement])
 
     if TRANSFORM_ITEM_NOTE.search(cleaned):
         return DropNotes(transform_item=[cleaned])
@@ -669,10 +682,45 @@ def parse_quest_requirement(note: str) -> Optional[str]:
     )
 
 
+@lru_cache(maxsize=1)
+def _quest_titles() -> Tuple[str, ...]:
+    """Names from the checked-in Wiki quest-transcript source, longest first."""
+    source = Path(__file__).resolve().parents[2] / "data/dialogues/quest-pages.json"
+    pages = json.loads(source.read_text(encoding="utf-8"))
+    return tuple(
+        sorted(
+            (
+                name[len("Transcript:") :]
+                for name in pages
+                if name.startswith("Transcript:")
+            ),
+            key=lambda name: (-len(name), name),
+        )
+    )
+
+
+def _known_quest_title(candidate: str) -> Optional[str]:
+    cleaned = _clean_quest_title(candidate).casefold()
+    for title in _quest_titles():
+        folded = title.casefold()
+        prefixes = (folded, "the " + folded)
+        if folded.startswith("the "):
+            # DURING_NOTE consumes a grammatical article even when it belongs
+            # to the actual quest title.
+            prefixes += (folded[4:],)
+        for prefix in prefixes:
+            if not cleaned.startswith(prefix):
+                continue
+            suffix = cleaned[len(prefix) :]
+            if not suffix or not suffix[0].isalnum():
+                return title
+    return None
+
+
 def _extract_quest_name(note: str, mode: str) -> Optional[str]:
     for match in QUEST_LINK.finditer(note):
-        title = _clean_quest_title(match.group(1).strip())
-        if len(title) >= 3 and title.lower() != "quest":
+        title = _known_quest_title(match.group(1).strip())
+        if title:
             return title
 
     raw = None
@@ -688,10 +736,7 @@ def _extract_quest_name(note: str, mode: str) -> Optional[str]:
     if not raw:
         return None
 
-    title = _clean_quest_title(raw.split(".")[0].split(",")[0].split(" if ")[0].strip())
-    if len(title) < 3 or title.lower() == "quest":
-        return None
-    return title
+    return _known_quest_title(raw)
 
 
 def _clean_quest_title(title: str) -> str:
@@ -717,8 +762,20 @@ GROUP_D_TAG_REF = re.compile(r"\{\{#tag:ref\|([^|}]+)\|[^}]*group\s*=\s*d", re.I
 NAMED_REF = re.compile(r"<ref\s+([^>]*?)>(.*?)</ref>", re.I | re.S)
 SELF_CLOSING_REF = re.compile(r"<ref\s+([^>]*?)/>", re.I)
 REF_NAME = re.compile(r"name\s*=\s*['\"]([^'\"]+)['\"]", re.I)
-REFN_TEMPLATE = re.compile(r"\{\{Refn\|[^}]*\}\}", re.I)
 GROUP_D_REF_TAG_STRIP = re.compile(r"<ref[^>]*group\s*=\s*['\"]?d['\"]?[^>]*/?>", re.I)
+
+
+def _is_drop_reference(attrs: str) -> bool:
+    """Named references share notes only within the exact drop-footnote group."""
+    tags = mwparserfromhell.parse(f"<ref {attrs}/>").filter_tags()
+    if not tags:
+        return False
+    groups = [
+        str(attribute.value).strip().lower()
+        for attribute in tags[0].attributes
+        if str(attribute.name).strip().lower() == "group"
+    ]
+    return groups == ["d"]
 
 
 def collect_named_footnotes(section_body: str) -> Dict[str, str]:
@@ -727,20 +784,29 @@ def collect_named_footnotes(section_body: str) -> Dict[str, str]:
 
 
 def parse_inline_note_fields(*fields: str) -> List[str]:
-    """Read the footnotes written inline in ``namenotes`` / ``raritynotes``."""
+    """Read footnotes written inline in a drop line's note fields."""
     notes: List[str] = []
     for value in fields:
         if not value or not value.strip():
             continue
-        for _, params in extract_templates(value, "Refn"):
-            text = _refn_note(params)
+        parsed = mwparserfromhell.parse(value)
+        refn_templates = [
+            template
+            for template in parsed.filter_templates()
+            if str(template.name).strip().lower() == "refn"
+        ]
+        for template in refn_templates:
+            text = _refn_note(template_params(template))
             if text:
                 notes.append(text)
         for match in GROUP_D_REF.finditer(value):
             text = clean_wiki_notes(match.group(1))
             if text:
                 notes.append(text)
-        stripped = GROUP_D_REF_TAG_STRIP.sub(" ", REFN_TEMPLATE.sub(" ", value))
+        # Remove whole AST nodes so citations nested in Refn cannot leave braces.
+        for template in reversed(refn_templates):
+            parsed.replace(template, " ")
+        stripped = GROUP_D_REF_TAG_STRIP.sub(" ", str(parsed))
         text = clean_wiki_notes(stripped)
         if text:
             notes.append(text)
@@ -1266,7 +1332,7 @@ def npc_ids_for_drop_variant(
 
 
 def parse_wiki_quantity(raw_quantity: str) -> Tuple[str, bool]:
-    """Strip a wiki ``(noted)`` quantity suffix.
+    """Strip invisible wiki comments and a ``(noted)`` quantity suffix.
 
     :param raw_quantity: The raw quantity field, e.g. ``5 (noted)``.
     :return: A (quantity, is noted) tuple.
@@ -1381,9 +1447,11 @@ def _parse_drop_line(
     quantity_note_values = parse_inline_note_fields(
         quantity_notes
     ) + _resolve_named_ref_links("", quantity_notes, named_refs)
-    attached_notes = parse_inline_note_fields(
-        name_notes, rarity_notes
-    ) + _resolve_named_ref_links(name_notes, rarity_notes, named_refs)
+    attached_notes = (
+        parse_inline_note_fields(name_notes, rarity_notes)
+        + _resolve_named_ref_links(name_notes, rarity_notes, named_refs)
+        + quantity_note_values
+    )
     if _should_skip_f2p_drop(params, attached_notes):
         return None
 
@@ -1478,7 +1546,9 @@ def _apply_conditional_group(
         drop.group_weight_denominator = denominator
 
 
-def _parse_drops_from_body(body: str) -> List[ParsedDrop]:
+def _parse_drops_from_body(
+    body: str, include_rewards: bool = False
+) -> List[ParsedDrop]:
     drops = []
     for heading, section_body in _split_drop_subsections(body):
         section_drops = []
@@ -1498,7 +1568,11 @@ def _parse_drops_from_body(body: str) -> List[ParsedDrop]:
                 # Compare source notes rather than classified output notes:
                 # NamedRef references and inline definitions must agree, while
                 # an extra quest/location condition must never disappear.
-                fields = (params.get("namenotes", ""), params.get("raritynotes", ""))
+                fields = (
+                    params.get("namenotes", ""),
+                    params.get("raritynotes", ""),
+                    params.get("quantitynotes", ""),
+                )
                 source_notes = parse_inline_note_fields(*fields) + [
                     source_refs[name]
                     for name in named_drop_refs(*fields)
@@ -1508,6 +1582,34 @@ def _parse_drops_from_body(body: str) -> List[ParsedDrop]:
                     set(source_notes) - {bundle_refs.get(drop.bundle_ref, "")}
                 )
                 section_drops.append(drop)
+
+        if include_rewards:
+            for _, params in extract_templates(section_body, "DropsLineReward"):
+                drop = _parse_drop_line(params, section, heading, named_refs)
+                if not drop:
+                    continue
+                drop.is_reward = True
+                drop.alternate_rarity = params.get("altrarity", "").strip()
+                drop.reward_source_rarity = drop.rarity
+                # A reward's explicitly attached notes use several groups:
+                # quantities(d), rates(e), eligibility(f). Keep every such Refn
+                # body without broadening global named-reference resolution.
+                for field_name in ("namenotes", "raritynotes", "quantitynotes"):
+                    for template in mwparserfromhell.parse(
+                        params.get(field_name, "")
+                    ).filter_templates():
+                        if str(template.name).strip().lower() != "refn":
+                            continue
+                        values = template_params(template)
+                        note = clean_wiki_notes(
+                            values.get("_0")
+                            or values.get("note")
+                            or values.get("1")
+                            or ""
+                        )
+                        if note and note not in drop.notes:
+                            drop.notes.append(note)
+                drops.append(drop)
 
         for _, params in extract_templates(section_body, "DropsLineClue"):
             attached = parse_inline_note_fields(params.get("raritynotes", ""))
@@ -1590,7 +1692,7 @@ HERB_TABLE_ACCESS = re.compile(
     re.I,
 )
 HERB_ROLL_VARIANT = re.compile(
-    r"(\d+)\s*/\s*(\d+)\s+chance of dropping ([123]) herbs?", re.I
+    r"(\d+)\s*/\s*(\d+)\s+chance of dropping (\d+) herbs?", re.I
 )
 HERB_QUANTITY_RANGE = re.compile(r"^(\d+)\s*-\s*(\d+)$")
 
@@ -1616,8 +1718,7 @@ def _parse_subtable_accesses(body: str) -> List[ParsedSubtableAccess]:
     def has_key(key: str) -> bool:
         return any(access.table_key == key for access in accesses)
 
-    # A monster that rolls the herb table several times has no single shared
-    # table to point at, so those accesses keep the empty table key.
+    # Resolve variable herb counts below after reading the access templates.
     multi_roll_herbs = False
     for raw, params in extract_templates(body, "HerbDropTableInfo"):
         text = params.get("override") or raw
@@ -1711,6 +1812,43 @@ def _parse_subtable_accesses(body: str) -> List[ParsedSubtableAccess]:
                 )
             )
 
+    # Preserve the conditional number of independent herb-table selections.
+    # A displayed quantity range alone does not establish its distribution.
+    herb_lines = extract_templates(body, "HerbDropLines")
+    herb_quantity = next((p.get("_1", "1") for _, p in herb_lines), "1")
+    variants = HERB_ROLL_VARIANT.findall(body)
+    weights = [{"rolls": int(n), "weight": int(w)} for w, _, n in variants]
+    if not weights:
+        word_counts = {"one": 1, "two": 2, "three": 3, "four": 4}
+        chances = re.findall(
+            r"chance of (one|two|three|four) herbs? is (\d+)/(\d+)", body, re.I
+        )
+        weights = [
+            {"rolls": word_counts[n.lower()], "weight": int(w)} for n, w, _ in chances
+        ]
+    if not weights:
+        fixed = re.search(
+            r"(?:always drop|dropping|rolled,)\s+(\d+|two|three)\s+(?:random\s+)?herbs?(?:\s+will always drop|\s+at a time)"
+            r"|(?:\b(\d+) herbs are always dropped at a time)|herb drop table\]\] (twice)"
+            r"|\b(two|three) random herbs are dropped when",
+            body,
+            re.I,
+        )
+        if fixed:
+            value = next(v for v in fixed.groups() if v)
+            count = {"two": 2, "three": 3, "twice": 2}.get(value.lower())
+            weights = [{"rolls": count if count else int(value), "weight": 1}]
+    if not weights and re.search(
+        r"equal chance (?:of dropping|to receive) 1, 2,? (?:or )?3", body, re.I
+    ):
+        weights = [{"rolls": n, "weight": 1} for n in (1, 2, 3)]
+    for access in accesses:
+        if access.table_key in ("", "herb"):
+            access.table_key = "herb"
+            access.roll_count_weights = weights
+            access.unresolved_roll_count = not weights and _is_variable_herb_quantity(
+                herb_quantity
+            )
     return accesses
 
 
@@ -1745,7 +1883,9 @@ def expand_unique_templates(wikitext: str, templates: Optional[Dict[str, str]]) 
 
 
 def parse_all_drop_tables(
-    wikitext: str, unique_templates: Optional[Dict[str, str]] = None
+    wikitext: str,
+    include_rewards: bool = False,
+    unique_templates: Optional[Dict[str, str]] = None,
 ) -> List[ParsedDropTable]:
     """Parse every drop table declared on a monster's wiki page.
 
@@ -1757,6 +1897,7 @@ def parse_all_drop_tables(
     sections, strict_headings = _parse_drop_table_sections(wikitext)
     if not sections:
         return []
+    reward_policy = parse_reward_policy(wikitext)
 
     npc_ids_by_table = parse_npc_ids_by_drop_table(wikitext)
     fallback_npc_ids = parse_npc_ids(wikitext)
@@ -1812,9 +1953,12 @@ def parse_all_drop_tables(
 
             drops = [
                 _resolve_drop_rarity(drop, page_vars)
-                for drop in _parse_drops_from_body(variant_body)
+                for drop in _parse_drops_from_body(
+                    variant_body, include_rewards=include_rewards
+                )
             ]
             if perfect_kill_page:
+                # After rarity resolution, which can move rows between sections.
                 drops = [apply_perfect_kill_condition(drop) for drop in drops]
             accesses = _parse_subtable_accesses(variant_body)
             # Only uniform main rolls can be represented by a table-wide count.
@@ -1830,6 +1974,7 @@ def parse_all_drop_tables(
                     rolls=next(iter(roll_counts)) if len(roll_counts) == 1 else 1,
                     npc_ids=npc_ids,
                     excluded_npc_ids=excluded_npc_ids,
+                    reward_policy=reward_policy if not variant_name else None,
                 )
             )
     if not strict_headings:

@@ -204,6 +204,8 @@ class DropTableSpec:
     tertiary: List[ResolvedEntry] = field(default_factory=list)
     unresolved_items: List[str] = field(default_factory=list)
     rolls: int = 1
+    reward_chain: Optional[Dict] = None
+    tertiary_groups: List[Dict] = field(default_factory=list)
 
     def has_drop_content(self) -> bool:
         """True when the table resolved to anything worth exporting."""
@@ -216,6 +218,7 @@ class DropTableSpec:
             or self.separate_rolls
             or self.subtable_accesses
             or self.tertiary
+            or self.reward_chain
         )
 
 
@@ -725,6 +728,18 @@ def build_table_spec(
 
     main = _bundle_dropped_together(main)
 
+    reward_chain = None
+    tertiary_groups = []
+    if table.reward_policy:
+        from scripts.drops.reward_chain import build_reward_chain, build_clue_group
+
+        reward_chain, main = build_reward_chain(
+            table.reward_policy, main, items, _entry_json, _bonus_drop_json
+        )
+        tertiary_groups, tertiary = build_clue_group(
+            table.reward_policy, tertiary, _entry_json
+        )
+
     standard_main, conditional_groups = _build_conditional_groups(main)
 
     pre_roll_drops = []
@@ -762,6 +777,22 @@ def build_table_spec(
         )
         main_max_roll = max(main_max_roll, used)
 
+    if reward_chain:
+        # The source guarantees resources after failed accesses. Published rates
+        # describe relative resource weights; condition this remaining pool on access.
+        if accesses or separate_rolls or not main_entries:
+            raise ValueError("Unsupported conditional resource pool")
+        main_max_roll = sum(entry.weight for entry in main_entries)
+        main_entries = [
+            replace(
+                entry,
+                out_of=main_max_roll,
+                published_rarity=entry.rarity_raw,
+                weight_basis="conditional_pool",
+            )
+            for entry in main_entries
+        ]
+
     return DropTableSpec(
         table_id=_table_id(wiki_page, table.table_name, table.drop_variant),
         label=(table.drop_variant or table.table_name or "Drops"),
@@ -780,6 +811,8 @@ def build_table_spec(
         subtable_accesses=accesses,
         tertiary=tertiary,
         unresolved_items=list(dict.fromkeys(unresolved)),
+        reward_chain=reward_chain,
+        tertiary_groups=tertiary_groups,
     )
 
 
@@ -803,6 +836,8 @@ def _rarity(weight: Optional[int], out_of: Optional[int]) -> Optional[float]:
 
 def _parse_quantity(raw: str) -> Optional[List[int]]:
     """``"1"`` -> [1, 1]; ``"3-5"`` -> [3, 5]; anything else stays raw."""
+    # Wiki DropsLine commas separate alternatives, not thousands. Keep those
+    # expressions raw rather than inventing a quantity or distribution.
     trimmed = raw.strip()
     if not trimmed:
         return None
@@ -840,7 +875,13 @@ def _entry_json(
 ) -> Optional[Dict]:
     if entry.is_nothing:
         return _without_nulls(
-            {"nothing": True, "weight": entry.weight, "out_of": out_of}
+            {
+                "nothing": True,
+                "weight": entry.weight,
+                "out_of": out_of,
+                "pre_roll": True if pre_roll else None,
+                "separate_roll": True if separate else None,
+            }
         )
     if not entry.name:
         return None
@@ -898,7 +939,7 @@ def _entry_json(
     )
 
 
-def _pre_roll_json(entry: ResolvedEntry) -> Optional[Dict]:
+def _pre_roll_json(entry: ResolvedEntry, separate: bool = False) -> Optional[Dict]:
     """Keep a pre-roll's source probability exact, including decimal fractions.
 
     Scale decimal components together without reducing integer source slots:
@@ -917,7 +958,7 @@ def _pre_roll_json(entry: ResolvedEntry) -> Optional[Dict]:
             scale = 10**places
             entry = replace(entry, weight=int(numerator * scale))
             out_of = int(denominator * scale)
-    return _entry_json(entry, out_of=out_of, pre_roll=True)
+    return _entry_json(entry, out_of=out_of, pre_roll=True, separate=separate)
 
 
 def _conditional_entry_json(
@@ -966,6 +1007,10 @@ def build_table_json(spec: DropTableSpec) -> Dict:
                     "out_of": access.denominator,
                     "rarity": _rarity(access.numerator, access.denominator),
                     "section": access.subsection or None,
+                    "roll_count_weights": access.roll_count_weights or None,
+                    "unresolved_roll_count": (
+                        True if access.unresolved_roll_count else None
+                    ),
                 },
                 keep=("rarity",),
             )
@@ -976,11 +1021,14 @@ def build_table_json(spec: DropTableSpec) -> Dict:
     ):
         for roll in rolls:
             for entry in roll.entries:
-                row = _entry_json(
-                    entry,
-                    out_of=entry.out_of or roll.access_denominator,
-                    separate=True,
-                    pre_roll=is_pre_roll,
+                row = (
+                    _pre_roll_json(entry, separate=True)
+                    if is_pre_roll
+                    else _entry_json(
+                        entry,
+                        out_of=entry.out_of or roll.access_denominator,
+                        separate=True,
+                    )
                 )
                 if row:
                     entries.append(row)
@@ -1003,6 +1051,8 @@ def build_table_json(spec: DropTableSpec) -> Dict:
             "rolls": spec.rolls if spec.rolls > 1 else None,
             "entries": entries,
             "tertiary": tertiary,
+            "reward_chain": spec.reward_chain,
+            "tertiary_groups": spec.tertiary_groups or None,
             "brimstone_key_roll": (
                 True
                 if any(entry.brimstone_combat_roll for entry in spec.tertiary)
@@ -1203,4 +1253,34 @@ def export_shared_subtables(
             "wiki_page": source_page,
             "entries": entries,
         }
+        if key == "seed" and body:
+            # Each displayed seed table has its own denominator and is selected
+            # by an interval of random(CombatLevel * 10), not a merged pool.
+            groups = re.findall(
+                r"less than (\d+).*?\n(\{\{DropsTableHead\}\}.*?\{\{DropsTableBottom\}\})|"
+                r"is (\d+) or greater, the player.*?\n(\{\{DropsTableHead\}\}.*?\{\{DropsTableBottom\}\})",
+                body,
+                re.S,
+            )
+            categories = []
+            offset = 0
+            minimum = 0
+            for upper, group, lower, last_group in groups:
+                count = len(
+                    wikitext.extract_templates(group or last_group, "DropsLine")
+                )
+                category = {
+                    "minimum": minimum,
+                    "entries": entries[offset : offset + count],
+                }
+                if upper:
+                    category["maximum_exclusive"] = int(upper)
+                    minimum = int(upper)
+                categories.append(category)
+                offset += count
+            if len(categories) != 6 or offset != len(entries):
+                raise ValueError("General seed table category structure is incomplete")
+            subtables[key].update(
+                entries=[], combat_level_multiplier=10, categories=categories
+            )
     return subtables
