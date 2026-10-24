@@ -233,19 +233,25 @@ def venomous(value: str) -> bool:
         return False
 
 
+def _full_status_resistance(value: str) -> bool:
+    if not value:
+        return False
+    value = value.strip().lower()
+    if value in ["true", "yes"]:
+        return True
+    try:
+        return int(value) >= 100
+    except ValueError:
+        return False
+
+
 def immune_poison(value: str) -> bool:
     """Convert the immune_poison property to a boolean.
 
     :param value: Template value extracted from raw wikitext.
     :return value: A cleaned immune_poison value as a boolean.
     """
-    if not value:
-        return False
-
-    if value.lower() in ["true", "yes"]:
-        return True
-    else:
-        return False
+    return _full_status_resistance(value)
 
 
 def immune_venom(value: str) -> bool:
@@ -254,13 +260,11 @@ def immune_venom(value: str) -> bool:
     :param value: Template value extracted from raw wikitext.
     :return value: A cleaned immune_venom value as a boolean.
     """
-    if not value:
-        return False
-
-    if value.lower() in ["true", "yes"]:
-        return True
-    else:
-        return False
+    # The current Wiki uses "Poison" when venom becomes ordinary poison.
+    # This is venom immunity, independently of poison susceptibility.
+    return _full_status_resistance(value) or bool(
+        value and value.strip().lower() == "poison"
+    )
 
 
 def attributes(value: str) -> str:

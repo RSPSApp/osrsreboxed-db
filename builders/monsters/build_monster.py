@@ -243,8 +243,8 @@ class BuildMonster:
             "aggressive": "aggressive",
             "poisonous": "poisonous",
             "venomous": "poisonous",
-            "immune_poison": "immunepoison",
-            "immune_venom": "immunevenom",
+            "immune_poison": ("poisonresistance", "immunepoison"),
+            "immune_venom": ("venomresistance", "immunevenom"),
             "attributes": "attributes",
             "category": "cat",
             "slayer_level": "slaylvl",
@@ -255,12 +255,19 @@ class BuildMonster:
         # Loop each of the combat bonuses and populate
         for proj_name, prop_name in monster_properties.items():
             value = None
-            if self.infobox_version_number is not None:
-                key = prop_name + str(self.infobox_version_number)
-                value = self.extract_infobox_value(self.template, key)
-
-            if value is None:
-                value = self.extract_infobox_value(self.template, prop_name)
+            aliases = prop_name if isinstance(prop_name, tuple) else (prop_name,)
+            suffixes = (
+                (str(self.infobox_version_number), "")
+                if self.infobox_version_number is not None
+                else ("",)
+            )
+            for suffix in suffixes:
+                for alias in aliases:
+                    value = self.extract_infobox_value(self.template, alias + suffix)
+                    if value is not None:
+                        break
+                if value is not None:
+                    break
 
             self.monster_dict[proj_name] = infobox_cleaner.caller(value, proj_name)
 

@@ -2,3 +2,4 @@
 * text=auto
 # Reward provenance hashes the captured factual input bytes on every platform.
 /scripts/drops/sources/*.tsv text eol=lf
+/docs/npc-status-immunities.json text eol=lf
