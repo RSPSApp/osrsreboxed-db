@@ -80,6 +80,16 @@ def test_npcs_reference_known_tables():
             ), f"npc {npc_id} references unknown table {table_id}"
 
 
+def test_shellbane_uses_current_page_without_stale_duplicate():
+    drops = _load("npc-drops.json")
+    npc = drops["npcs"]["14860"]
+    assert npc["tables"] == ["shellbane_gryphon"]
+    table = drops["tables"][npc["tables"][0]]
+    assert table["wiki_page"] == "Shellbane gryphon"
+    assert table["main_max_roll"] == 128
+    assert "shellbane_gryphon_2" not in drops["tables"]
+
+
 def test_shared_tables_are_exported():
     """Every shared table a drop table rolls into is defined in subtables.json."""
     npc_drops = _load("npc-drops.json")

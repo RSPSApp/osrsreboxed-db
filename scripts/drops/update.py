@@ -70,14 +70,33 @@ def load_npc_cache_names() -> Dict[int, str]:
 
 
 def load_monster_wikitext() -> Dict[str, str]:
-    """Load the monster wiki page text fetched by ``scripts.monsters.update``."""
+    """Load currently listed monster pages from the incremental wikitext cache.
+
+    Renamed/deleted pages remain in that cache. The category title listing is
+    authoritative, as in the shops exporter; NPC IDs cannot identify obsolete
+    pages because distinct current encounters can legitimately share those IDs.
+    """
     page_text_file = Path(config.DATA_MONSTERS_PATH / "monsters-wiki-page-text.json")
     if not page_text_file.exists():
         raise SystemExit(
             f">>> ERROR: {page_text_file.name} not found. Run scripts.monsters.update first."
         )
+    titles_file = Path(config.DATA_MONSTERS_PATH / "monsters-wiki-page-titles.json")
+    if not titles_file.exists():
+        raise SystemExit(
+            f">>> ERROR: {titles_file.name} not found. Run scripts.monsters.update first."
+        )
+    with open(titles_file) as titles:
+        current_titles = json.load(titles)
+    if not current_titles:
+        raise SystemExit(
+            f">>> ERROR: {titles_file.name} is empty; refusing drop export."
+        )
     with open(page_text_file) as wiki_file:
-        return json.load(wiki_file)
+        cached = json.load(wiki_file)
+    current = {title: text for title, text in cached.items() if title in current_titles}
+    logger.info("Ignoring %d obsolete cached monster pages", len(cached) - len(current))
+    return current
 
 
 def load_shared_table_wikitext(refresh: bool = False) -> Optional[str]:

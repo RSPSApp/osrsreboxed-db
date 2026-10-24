@@ -283,3 +283,41 @@ def test_noted_drops_are_flagged():
     assert coins["noted"] is True
     assert "quantity_raw" not in coins
     assert "noted" not in bones
+
+
+def test_drop_source_loader_excludes_obsolete_titles_not_shared_npc_ids(
+    tmp_path, monkeypatch
+):
+    import json
+    import config
+    from scripts.drops.update import load_monster_wikitext
+
+    # An incremental cache can retain the pre-rename page before the current one.
+    # Separate current encounters must survive even when they share NPC IDs.
+    pages = {
+        "Shellbane Gryphon": WIKITEXT,
+        "Shellbane gryphon": WIKITEXT,
+        "Shellbane gryphon (Troubled Tortugans)": WIKITEXT,
+    }
+    current = {title: "2026-08-24T15:07:44Z" for title in list(pages)[1:]}
+    (tmp_path / "monsters-wiki-page-text.json").write_text(json.dumps(pages))
+    (tmp_path / "monsters-wiki-page-titles.json").write_text(json.dumps(current))
+    monkeypatch.setattr(config, "DATA_MONSTERS_PATH", tmp_path)
+    assert load_monster_wikitext() == {title: pages[title] for title in current}
+
+
+def test_drop_source_loader_requires_nonempty_current_listing(tmp_path, monkeypatch):
+    import json
+    import pytest
+    import config
+    from scripts.drops.update import load_monster_wikitext
+
+    (tmp_path / "monsters-wiki-page-text.json").write_text(
+        json.dumps({"Old": WIKITEXT})
+    )
+    monkeypatch.setattr(config, "DATA_MONSTERS_PATH", tmp_path)
+    with pytest.raises(SystemExit, match="monsters-wiki-page-titles.json"):
+        load_monster_wikitext()
+    (tmp_path / "monsters-wiki-page-titles.json").write_text("{}")
+    with pytest.raises(SystemExit, match="empty"):
+        load_monster_wikitext()
