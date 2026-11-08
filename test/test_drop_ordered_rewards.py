@@ -165,3 +165,11 @@ def test_partial_overview_sentinels_do_not_silently_restore_flat_loot(corpus, ol
 
     with pytest.raises(ValueError):
         parse_reward_policy(corpus[0]["Duke Sucellus"].replace(old, new))
+
+
+def test_zalcano_death_runes_keep_current_source_range_and_rate(corpus):
+    table = exported(corpus, "Zalcano")
+    row = next(row for row in table["entries"] if row.get("item_id") == 560)
+    assert row["quantity"] == [201, 1046]
+    assert row["weight"] == 1
+    assert row["out_of"] == table["main_max_roll"] == 36
