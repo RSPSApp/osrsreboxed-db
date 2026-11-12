@@ -989,3 +989,80 @@ def test_reviewed_drop_version_anchor_is_the_source_version1():
     assert lookup.resolve("Giantsoul amulet") == 30637
     assert lookup.resolve("Giantsoul amulet (charged)") == 30638
     assert lookup.resolve("Fishbowl") == 6668
+
+
+def _rolls_of(source, name="Test"):
+    parsed = drops_wikitext.parse_all_drop_tables(source)[0]
+    table = drops_tables.build_table_json(drops_tables.build_table_spec(name, parsed, ITEMS))
+    return table.get("rolls")
+
+
+ACCESS_SOURCE = """
+{{Infobox Monster|id=1}}
+==Drops==
+===Weapons===
+{{DropsTableHead}}
+{{DropsLine|name=Coins|quantity=8|rarity=24/128|rolls=3}}
+{{DropsTableBottom}}
+===Herbs===
+{{HerbDropTableInfo|46/128|override=There is a 46/128 chance of rolling the [[herb drop table]].}}
+{{DropsTableHead}}
+{{HerbDropLines|46/128|1-3|rolls=3}}
+{{DropsTableBottom}}
+===Tertiary===
+{{DropsLine|name=Draconic visage|quantity=1|rarity=1/500}}
+"""
+
+
+def test_an_access_takes_its_roll_count_from_the_sibling_lines_template():
+    # The *DropTableInfo template states the chance but has no rolls; the page writes rolls=3 on the *DropLines.
+    parsed = drops_wikitext.parse_all_drop_tables(ACCESS_SOURCE)[0]
+    assert [(a.table_key, a.rolls) for a in parsed.subtable_accesses] == [("herb", 3)]
+    assert _rolls_of(ACCESS_SOURCE) == 3
+
+
+def test_an_explicit_rolls_on_the_access_template_wins_over_its_sibling():
+    source = ACCESS_SOURCE.replace(
+        "[[herb drop table]].}}", "[[herb drop table]].|rolls=2}}"
+    )
+    parsed = drops_wikitext.parse_all_drop_tables(source)[0]
+    assert [(a.table_key, a.rolls) for a in parsed.subtable_accesses] == [("herb", 2)]
+    # main rows say 3, the access says 2: mixed, so no table-wide count.
+    assert _rolls_of(source) is None
+
+
+def test_an_access_without_a_rolls_count_anywhere_keeps_the_table_unrepeated():
+    source = ACCESS_SOURCE.replace("{{HerbDropLines|46/128|1-3|rolls=3}}", "{{HerbDropLines|46/128|1-3}}")
+    assert _rolls_of(source) is None
+
+
+def test_mixed_main_row_counts_still_export_no_table_roll_count():
+    source = ACCESS_SOURCE.replace(
+        "{{DropsLine|name=Coins|quantity=8|rarity=24/128|rolls=3}}",
+        "{{DropsLine|name=Coins|quantity=8|rarity=24/128|rolls=3}}\n{{DropsLine|name=Bones|quantity=1|rarity=5/128}}",
+    )
+    assert _rolls_of(source) is None
+
+
+@pytest.mark.parametrize(
+    "page, expected",
+    [
+        ("Repugnant spectre", 3),
+        ("Nechryarch", 3),
+        ("Guardian Drake", 3),
+        # Its gem table access has no rolls anywhere on the page, so the gem is not repeated.
+        ("Mutated Tortoise", None),
+        # The page states 9 rolls ("had it been possible to kill ... would have provided 9 rolls"); the NPC has
+        # no spawn, so it never fires. Exported as the page says, not excluded by name.
+        ("Bloodthirst rockslug", 9),
+        # Mixed main rows (rolls 1 and 9): no table-wide count.
+        ("Bloodthirsty Repugnant spectre", None),
+    ],
+)
+def test_cached_pages_export_the_roll_count_their_wiki_rows_share(page, expected):
+    pages = update.load_monster_wikitext()
+    unique = update.load_unique_template_wikitext(
+        sorted(drops_wikitext.unique_template_titles(pages[page]))
+    )
+    tables = drops_wikitext.parse_all_drop_tables(pages[page], unique_templates=unique)
+    assert tables and all((t.rolls if t.rolls > 1 else None) == expected for t in tables)
