@@ -1699,6 +1699,22 @@ def _is_variable_herb_quantity(quantity: str) -> bool:
     return minimum >= 1 and maximum > minimum
 
 
+def _sibling_roll_count(body: str, params: Dict[str, str], names: List[str]) -> int:
+    """The roll count of a shared-table access.
+
+    The ``*DropTableInfo`` template that states an access chance carries no ``rolls`` parameter; the
+    page writes it on the sibling ``*DropLines`` template (``HerbDropLines|46/128|1-3|rolls=3``). Use the
+    access template's own count when it has one, otherwise the first sibling that does, otherwise 1.
+    """
+    if "rolls" in params:
+        return _roll_count(params)
+    for name in names:
+        for _, sibling in extract_templates(body, name):
+            if "rolls" in sibling:
+                return _roll_count(sibling)
+    return 1
+
+
 def _parse_subtable_accesses(body: str) -> List[ParsedSubtableAccess]:
     accesses: List[ParsedSubtableAccess] = []
 
@@ -1715,7 +1731,13 @@ def _parse_subtable_accesses(body: str) -> List[ParsedSubtableAccess]:
             key = "" if multi_roll_herbs else "herb"
             accesses.append(
                 ParsedSubtableAccess(
-                    key, fraction[0], fraction[1], "Herbs", rolls=_roll_count(params)
+                    key,
+                    fraction[0],
+                    fraction[1],
+                    "Herbs",
+                    rolls=_sibling_roll_count(
+                        body, params, ["HerbDropTableInfo", "HerbDropLines"]
+                    ),
                 )
             )
 
@@ -1781,7 +1803,7 @@ def _parse_subtable_accesses(body: str) -> List[ParsedSubtableAccess]:
                             fraction[0],
                             fraction[1],
                             subsection,
-                            rolls=_roll_count(params),
+                            rolls=_sibling_roll_count(body, params, template_names),
                         )
                     )
                     break
