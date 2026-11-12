@@ -1971,8 +1971,15 @@ def parse_all_drop_tables(
                 drops = [apply_perfect_kill_condition(drop) for drop in drops]
             accesses = _parse_subtable_accesses(variant_body)
             # Only uniform main rolls can be represented by a table-wide count.
+            # A Pre-roll row without its own rolls is rolled once per kill whatever the table
+            # repeats (the Wiki's "rolls" is on the repeated rows only), so it does not make the
+            # count mixed; build_table_json flags such rows `once_per_kill`. A plain row without
+            # rolls does (the page may simply have omitted it).
             roll_counts = {
-                drop.rolls for drop in drops if drop.section == SECTION_MAIN
+                drop.rolls
+                for drop in drops
+                if drop.section == SECTION_MAIN
+                and not (drop.rolls == 1 and drop.subsection.lower() == "pre-roll")
             } | {access.rolls for access in accesses}
             tables.append(
                 ParsedDropTable(

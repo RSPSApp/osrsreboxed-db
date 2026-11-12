@@ -190,6 +190,12 @@
           "required": false,
           "nullable": false
         },
+        "once_per_kill": {
+          "description": "If a pre-roll drop is rolled once per kill although the table repeats (`rolls` > 1): its Wiki line has no rolls of its own while the repeated rows do.",
+          "type": "boolean",
+          "required": false,
+          "nullable": false
+        },
         "nothing": {
           "description": "If the entry is an empty slot in the main table pool.",
           "type": "boolean",
