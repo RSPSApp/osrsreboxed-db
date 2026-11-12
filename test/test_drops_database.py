@@ -127,7 +127,7 @@ def test_quantity_export_preserves_npc_mappings_and_unrelated_reward_paths():
     dump = _load("npc-drops.json")
     # The source-title filter excludes audited obsolete pages (including five
     # nonattackable cultists and the old manta variant), not quantity outcomes.
-    assert len(dump["tables"]) == 1105
+    assert len(dump["tables"]) == 1106
     assert len(dump["npcs"]) == 3086
     assert {npc_id for npc_id, npc in dump["npcs"].items() if not npc["tables"]} == {
         "8058",
