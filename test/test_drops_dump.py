@@ -1066,3 +1066,98 @@ def test_cached_pages_export_the_roll_count_their_wiki_rows_share(page, expected
     )
     tables = drops_wikitext.parse_all_drop_tables(pages[page], unique_templates=unique)
     assert tables and all((t.rolls if t.rolls > 1 else None) == expected for t in tables)
+
+
+PRE_ROLL_ONCE_SOURCE = """{{Infobox Monster|id=1}}
+==Drops==
+===100%===
+{{DropsLine|name=Bones|quantity=1|rarity=Always}}
+===Pre-roll===
+{{DropsTableHead}}
+{{DropsLine|name=Rune full helm|quantity=1|rarity=1/5}}
+{{DropsTableBottom}}
+===Other===
+{{DropsLine|name=Coins|quantity=8|rarity=24/128|rolls=3}}
+{{DropsLine|name=Nothing|rarity=102/128|rolls=3}}
+{{GemDropTable|2/128|rolls=3}}
+===Tertiary===
+{{DropsLine|name=Draconic visage|quantity=1|rarity=1/500}}
+"""
+
+
+def _export(source, name="Test"):
+    parsed = drops_wikitext.parse_all_drop_tables(source)[0]
+    return drops_tables.build_table_json(drops_tables.build_table_spec(name, parsed, ITEMS))
+
+
+def test_a_pre_roll_row_without_rolls_is_rolled_once_beside_a_repeated_table():
+    table = _export(PRE_ROLL_ONCE_SOURCE)
+    assert table["rolls"] == 3
+    pre = next(row for row in table["entries"] if row.get("pre_roll"))
+    assert pre["once_per_kill"] is True
+    assert not any(
+        row.get("once_per_kill") for row in table["entries"] if not row.get("pre_roll")
+    )
+    assert table["tertiary"][0]["out_of"] == 500
+
+
+def test_a_pre_roll_row_with_the_tables_rolls_is_repeated_not_flagged():
+    # Marble gargoyle: "Granite maul ... |rolls=3" is a Pre-roll row the Wiki repeats three times.
+    source = PRE_ROLL_ONCE_SOURCE.replace("rarity=1/5}}", "rarity=1/5|rolls=3}}")
+    table = _export(source)
+    assert table["rolls"] == 3
+    assert not any(row.get("once_per_kill") for row in table["entries"])
+
+
+def test_a_plain_row_without_rolls_still_leaves_the_table_unexported():
+    # King kurask's Limpwurt seed row: the page may simply have omitted it, so it is not a once row.
+    source = PRE_ROLL_ONCE_SOURCE.replace(
+        "{{DropsLine|name=Nothing|rarity=102/128|rolls=3}}",
+        "{{DropsLine|name=Nothing|rarity=102/128|rolls=3}}\n{{DropsLine|name=Bones|quantity=1|rarity=3/128}}",
+    )
+    table = _export(source)
+    assert "rolls" not in table
+    assert not any(row.get("once_per_kill") for row in table["entries"])
+
+
+@pytest.mark.parametrize(
+    "page, rolls, once_rows",
+    [
+        ("Blood-starved venator", 3, ["Blood shard"]),
+        (
+            "Colossal Hydra",
+            3,
+            ["Hydra's eye", "Hydra's fang", "Hydra's heart", "Hydra tail", "Dragon thrownaxe", "Dragon knife"],
+        ),
+        # The pinned cache names the first row "Dragon sword" (master's newer cache: "Dragon shortsword").
+        (
+            "Shadow Wyrm",
+            3,
+            ["Dragon sword", "Dragon harpoon", "Dragon knife", "Dragon thrownaxe"],
+        ),
+        ("Marble gargoyle", 3, []),
+        # One plain row without rolls (a Wiki omission?) keeps the table unexported on the pinned cache.
+        ("Chasm Crawler", 1, ["Tooth half of key (moon key)"]),
+        ("King kurask", 1, ["Limpwurt seed"]),
+        # Its gem access has no rolls on the pinned cache.
+        ("Mutated Tortoise", 1, []),
+    ],
+)
+def test_cached_pages_split_repeated_rows_from_once_pre_rolls(page, rolls, once_rows):
+    pages = update.load_monster_wikitext()
+    unique = update.load_unique_template_wikitext(
+        sorted(drops_wikitext.unique_template_titles(pages[page]))
+    )
+    tables = drops_wikitext.parse_all_drop_tables(pages[page], unique_templates=unique)
+    assert [t.rolls for t in tables] == [rolls] * len(tables)
+    table = tables[0]
+    # The rows the table-wide count does not repeat are exactly the Pre-roll rows named here.
+    ones = [d.name for d in table.drops if d.section == "Main" and d.rolls == 1]
+    assert ones == once_rows
+    if rolls > 1:
+        assert all(
+            d.subsection.lower() == "pre-roll"
+            for d in table.drops
+            if d.section == "Main" and d.rolls == 1
+        )
+    # else: the stray plain row(s) keep the table-wide count unexported.
