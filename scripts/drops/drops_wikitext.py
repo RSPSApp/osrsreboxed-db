@@ -1140,8 +1140,9 @@ def is_standard_drop_subsection(heading: str) -> bool:
 
 
 def _heading_matches_drop_version(heading: str, version: str) -> bool:
-    heading = heading.lower()
-    version = version.lower()
+    # The Wiki uses both spellings for the same guild floor.
+    heading = re.sub(r"\btop floor\b", "rooftop", heading.lower())
+    version = re.sub(r"\btop floor\b", "rooftop", version.lower())
     return bool(
         re.search(r"(?<!\w)" + re.escape(version) + r"(?!\w)", heading)
         or re.search(r"(?<!\w)" + re.escape(heading) + r"(?!\w)", version)
