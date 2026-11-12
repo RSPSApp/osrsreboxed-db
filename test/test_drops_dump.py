@@ -110,10 +110,13 @@ def test_uniform_main_roll_counts_survive_export_without_repeating_tertiaries():
 class FakeItem:
     """Stand-in for an osrsreboxed item, so the tests need no item database."""
 
-    def __init__(self, item_id, name, wiki_name=None, tradeable_on_ge=True):
+    def __init__(
+        self, item_id, name, wiki_name=None, tradeable_on_ge=True, wiki_url=None
+    ):
         self.id = item_id
         self.name = name
         self.wiki_name = wiki_name or name
+        self.wiki_url = wiki_url
         self.tradeable_on_ge = tradeable_on_ge
         self.duplicate = False
         self.noted = False
@@ -278,6 +281,38 @@ def test_pre_roll_exports_exact_source_ratio_without_reducing_pool_slots(
     row = exported["entries"][0]
     assert [row["weight"], row["out_of"]] == expected
     assert row["pre_roll"] is True
+
+
+@pytest.mark.parametrize(
+    "rate, expected",
+    [("1/181.1", [10, 1811]), ("4/540", [4, 540]), ("1/0", None), ("351/350", None)],
+)
+def test_mixed_denominator_pre_rolls_keep_exact_and_invalid_source_rates(
+    rate, expected
+):
+    source = (
+        "{{Infobox Monster|id=1}}\n==Drops==\n===Pre-roll===\n"
+        "{{DropsLine|name=Rune full helm|quantity=1|rarity=1/100}}\n"
+        "{{DropsLine|name=Draconic visage|quantity=1|rarity=1/100}}\n"
+        "{{DropsLine|name=Coins|quantity=17|rarity=" + rate + "}}"
+    )
+    parsed = drops_wikitext.parse_all_drop_tables(source)[0]
+    row = next(
+        row
+        for row in drops_tables.build_table_json(
+            drops_tables.build_table_spec("Test", parsed, ITEMS)
+        )["entries"]
+        if row.get("name") == "Coins"
+    )
+    assert row["pre_roll"] is True
+    assert row["separate_roll"] is True
+    assert row["quantity"] == [17, 17]
+    if expected is not None:
+        assert [row["weight"], row["out_of"]] == expected
+    else:
+        assert row["rarity_raw"] == rate
+        assert "out_of" not in row
+        assert "rarity" not in row
 
 
 @pytest.mark.parametrize("rate", ["1/0", "351/350"])
@@ -802,3 +837,155 @@ def test_cached_zalcano_death_runes_keep_current_source_range():
     assert row["quantity"] == [201, 1046]
     assert row["weight"] == 1
     assert row["out_of"] == table["main_max_roll"] == 36
+
+
+def _cached_unique_templates(*names):
+    """Cached ``Template:Uniques/<name>`` wikitext from the committed input."""
+    import json
+    from pathlib import Path
+
+    cache = json.loads(
+        (
+            Path(__file__).parents[1]
+            / "data/drops/unique-templates-wiki-page-text.json"
+        ).read_text(encoding="utf-8")
+    )
+    return {name: cache[f"Template:Uniques/{name}"] for name in names}
+
+
+def test_unique_drop_templates_are_expanded_before_parsing():
+    """Corp's sigils live in ``{{Uniques/Corporeal Beast}}``, not inline rows."""
+    import json
+    from pathlib import Path
+
+    pages = json.loads(
+        (
+            Path(__file__).parents[1] / "data/monsters/monsters-wiki-page-text.json"
+        ).read_text(encoding="utf-8")
+    )
+    page = pages["Corporeal Beast"]
+    templates = _cached_unique_templates("Corporeal Beast")
+    assert drops_wikitext.unique_template_titles(page) == ["Corporeal Beast"]
+    assert drops_wikitext.unique_template_titles(page)[0] in templates
+
+    with pytest.raises(ValueError, match="Uniques/Corporeal Beast"):
+        drops_wikitext.parse_all_drop_tables(page, unique_templates={})
+
+    table = drops_wikitext.parse_all_drop_tables(
+        page, unique_templates=templates
+    )[0]
+    items = drops_tables.ItemIdLookup(
+        [
+            FakeItem(12819, "Elysian sigil"),
+            FakeItem(12823, "Spectral sigil"),
+            FakeItem(12827, "Arcane sigil"),
+            FakeItem(4091, "Mystic robe top"),
+        ]
+    )
+    exported = drops_tables.build_table_json(
+        drops_tables.build_table_spec("Corporeal_Beast", table, items)
+    )
+    sigils = {
+        row["item_id"]: row
+        for row in exported["entries"]
+        if row.get("item_id") in (12819, 12823, 12827)
+    }
+    assert set(sigils) == {12819, 12823, 12827}
+    assert all(row["pre_roll"] and row["roll_group"] == "Sigils" for row in sigils.values())
+    assert all(
+        (row["group_access_weight"], row["group_access_out_of"]) == (1, 585)
+        for row in sigils.values()
+    )
+    assert {item_id: (row["weight"], row["out_of"]) for item_id, row in sigils.items()} == {
+        12823: (3, 7),
+        12827: (3, 7),
+        12819: (1, 7),
+    }
+    assert sigils[12823]["rarity"] == pytest.approx(1 / 1365)
+    assert sigils[12819]["rarity"] == pytest.approx(1 / 4095)
+    # The ordinary main table is intact and excludes the conditional group.
+    main = [row for row in exported["entries"] if not row.get("pre_roll")]
+    assert exported["main_max_roll"] == 512
+    assert any(row.get("item_id") == 4091 and row.get("out_of") == 512 for row in main)
+
+
+def test_adjacent_unique_templates_keep_their_uniques():
+    """The same include-only mechanism hides the Lizardman and Vyrewatch uniques."""
+    import json
+    from pathlib import Path
+
+    pages = json.loads(
+        (
+            Path(__file__).parents[1] / "data/monsters/monsters-wiki-page-text.json"
+        ).read_text(encoding="utf-8")
+    )
+    templates = _cached_unique_templates("Lizardman shaman", "Vyrewatch Sentinel")
+    items = drops_tables.ItemIdLookup(
+        [FakeItem(13576, "Dragon warhammer"), FakeItem(24777, "Blood shard")]
+    )
+    expected = {
+        "Lizardman shaman": ("Dragon warhammer", 13576, 3000),
+        "Vyrewatch Sentinel": ("Blood shard", 24777, 1500),
+    }
+    for page, (name, item_id, out_of) in expected.items():
+        table = drops_wikitext.parse_all_drop_tables(
+            pages[page], unique_templates=templates
+        )[0]
+        exported = drops_tables.build_table_json(
+            drops_tables.build_table_spec(page, table, items)
+        )
+        row = next(row for row in exported["entries"] if row.get("item_id") == item_id)
+        assert row["name"] == name
+        assert row["out_of"] == out_of
+
+
+def test_reviewed_drop_version_anchor_is_the_source_version1():
+    """The reviewed Giantsoul anchor matches the wiki page's version 1."""
+    import json
+    from pathlib import Path
+
+    item_pages = json.loads(
+        (
+            Path(__file__).parents[1] / "data/items/items-wiki-page-text.json"
+        ).read_text(encoding="utf-8")
+    )
+    source = item_pages["Giantsoul amulet"]
+    assert "|version1 = Uncharged" in source
+    assert "|name1 = Giantsoul amulet (uncharged)" in source
+    assert "|id1 = 30637" in source
+    assert update.REVIEWED_DROP_VERSIONS == {"Giantsoul amulet": "Uncharged"}
+
+    items = [
+        FakeItem(
+            30637,
+            "Giantsoul amulet (uncharged)",
+            "Giantsoul amulet (Uncharged)",
+            wiki_url="https://oldschool.runescape.wiki/w/Giantsoul_amulet#Uncharged",
+        ),
+        FakeItem(
+            30638,
+            "Giantsoul amulet",
+            "Giantsoul amulet (Charged)",
+            wiki_url="https://oldschool.runescape.wiki/w/Giantsoul_amulet#Charged",
+        ),
+        # A drop that names a later variant keeps the existing plain-name match.
+        FakeItem(
+            6667,
+            "Empty fishbowl",
+            "Fishbowl (Empty)",
+            wiki_url="https://oldschool.runescape.wiki/w/Fishbowl#Empty",
+        ),
+        FakeItem(
+            6668,
+            "Fishbowl",
+            "Fishbowl (Water)",
+            wiki_url="https://oldschool.runescape.wiki/w/Fishbowl#Water",
+        ),
+    ]
+    dropped = update.load_drop_version_items(items)
+    assert dropped == {"Giantsoul amulet": 30637}
+
+    lookup = drops_tables.ItemIdLookup(items, dropped)
+    assert lookup.resolve("Giantsoul amulet") == 30637
+    assert lookup.resolve("Giantsoul amulet (charged)") == 30638
+    assert lookup.resolve("Fishbowl") == 6668
