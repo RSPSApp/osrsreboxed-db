@@ -8,8 +8,10 @@ Program to generate the OSRS npc drops JSON dump.
 Reads the monster wiki page text already fetched by ``scripts.monsters.update``,
 parses every ``==Drops==`` table on those pages, and writes the dump to
 ``docs/drops-json/``. Item and npc IDs come from the databases in this
-repository, so the only network access is a single wiki page (``Drop table``)
-holding the shared drop tables, which is cached under ``data/drops/``.
+repository, so the only network access is for wiki pages missing from the
+caches under ``data/drops/``: the shared drop table pages (``Drop table`` and
+the God Wars rare drop table) and the include-only ``Template:Uniques/<name>``
+pages that hold some monsters' unique drops.
 
 Usage:
     python -m scripts.drops.update
