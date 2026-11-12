@@ -765,19 +765,6 @@ REF_NAME = re.compile(r"name\s*=\s*['\"]([^'\"]+)['\"]", re.I)
 GROUP_D_REF_TAG_STRIP = re.compile(r"<ref[^>]*group\s*=\s*['\"]?d['\"]?[^>]*/?>", re.I)
 
 
-def _is_drop_reference(attrs: str) -> bool:
-    """Named references share notes only within the exact drop-footnote group."""
-    tags = mwparserfromhell.parse(f"<ref {attrs}/>").filter_tags()
-    if not tags:
-        return False
-    groups = [
-        str(attribute.value).strip().lower()
-        for attribute in tags[0].attributes
-        if str(attribute.name).strip().lower() == "group"
-    ]
-    return groups == ["d"]
-
-
 def collect_named_footnotes(section_body: str) -> Dict[str, str]:
     """Resolve drop-row notes through the same named refs as source bundles."""
     return collect_named_drop_footnotes(section_body)
@@ -1447,11 +1434,10 @@ def _parse_drop_line(
     quantity_note_values = parse_inline_note_fields(
         quantity_notes
     ) + _resolve_named_ref_links("", quantity_notes, named_refs)
-    attached_notes = (
-        parse_inline_note_fields(name_notes, rarity_notes)
-        + _resolve_named_ref_links(name_notes, rarity_notes, named_refs)
-        + quantity_note_values
-    )
+    row_notes = parse_inline_note_fields(
+        name_notes, rarity_notes
+    ) + _resolve_named_ref_links(name_notes, rarity_notes, named_refs)
+    attached_notes = row_notes + quantity_note_values
     if _should_skip_f2p_drop(params, attached_notes):
         return None
 
@@ -1482,7 +1468,8 @@ def _parse_drop_line(
         rarity = alternate
 
     # An explicit row reference applies even when its text does not repeat the item name.
-    relevant_notes = attached_notes
+    # Quantity notes select an amount; they are not row footnotes.
+    relevant_notes = row_notes
     notes = classify_notes(list(dict.fromkeys(relevant_notes)), name)
 
     if rarity.strip().lower() == "always" and section != SECTION_TERTIARY:
