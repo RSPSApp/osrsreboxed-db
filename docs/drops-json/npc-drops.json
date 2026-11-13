@@ -124864,7 +124864,7 @@
       "label": "Drops (open-stomach)",
       "table_name": "Maggot King Drops (open-stomach)",
       "wiki_page": "Maggot King",
-      "main_max_roll": 200,
+      "main_max_roll": 159,
       "entries": [
         {
           "item_id": 33634,
@@ -124887,21 +124887,19 @@
             4
           ],
           "weight": 41,
-          "out_of": 200,
-          "rarity": 0.205,
-          "section": "Supplies"
-        },
-        {
-          "item_id": 33627,
-          "name": "Dull ancient medal",
-          "quantity": [
-            1,
-            1
-          ],
-          "weight": 41,
-          "out_of": 200,
-          "rarity": 0.205,
-          "section": "Supplies"
+          "out_of": 159,
+          "rarity": 0.2578616,
+          "section": "Supplies",
+          "bonus_drops": [
+            {
+              "item_id": 33627,
+              "name": "Dull ancient medal",
+              "quantity": [
+                1,
+                1
+              ]
+            }
+          ]
         },
         {
           "item_id": 1619,
@@ -124911,8 +124909,8 @@
             13
           ],
           "weight": 15,
-          "out_of": 200,
-          "rarity": 0.075,
+          "out_of": 159,
+          "rarity": 0.0943396,
           "section": "Resources",
           "noted": true
         },
@@ -124924,8 +124922,8 @@
             74
           ],
           "weight": 10,
-          "out_of": 200,
-          "rarity": 0.05,
+          "out_of": 159,
+          "rarity": 0.0628931,
           "section": "Resources"
         },
         {
@@ -124936,8 +124934,8 @@
             76
           ],
           "weight": 10,
-          "out_of": 200,
-          "rarity": 0.05,
+          "out_of": 159,
+          "rarity": 0.0628931,
           "section": "Resources",
           "noted": true
         },
@@ -124949,8 +124947,8 @@
             34
           ],
           "weight": 10,
-          "out_of": 200,
-          "rarity": 0.05,
+          "out_of": 159,
+          "rarity": 0.0628931,
           "section": "Resources"
         },
         {
@@ -124961,8 +124959,8 @@
             15
           ],
           "weight": 5,
-          "out_of": 200,
-          "rarity": 0.025,
+          "out_of": 159,
+          "rarity": 0.0314465,
           "section": "Resources",
           "noted": true
         },
@@ -124974,8 +124972,8 @@
             11
           ],
           "weight": 5,
-          "out_of": 200,
-          "rarity": 0.025,
+          "out_of": 159,
+          "rarity": 0.0314465,
           "section": "Resources"
         },
         {
@@ -124986,8 +124984,8 @@
             32
           ],
           "weight": 5,
-          "out_of": 200,
-          "rarity": 0.025,
+          "out_of": 159,
+          "rarity": 0.0314465,
           "section": "Resources",
           "noted": true
         },
@@ -124999,8 +124997,8 @@
             41
           ],
           "weight": 5,
-          "out_of": 200,
-          "rarity": 0.025,
+          "out_of": 159,
+          "rarity": 0.0314465,
           "section": "Resources",
           "noted": true
         },
@@ -125012,8 +125010,8 @@
             40
           ],
           "weight": 10,
-          "out_of": 200,
-          "rarity": 0.05,
+          "out_of": 159,
+          "rarity": 0.0628931,
           "section": "Resources",
           "noted": true
         },
@@ -125025,8 +125023,8 @@
             5
           ],
           "weight": 4,
-          "out_of": 200,
-          "rarity": 0.02,
+          "out_of": 159,
+          "rarity": 0.0251572,
           "section": "Resources"
         },
         {
@@ -125037,8 +125035,8 @@
             179
           ],
           "weight": 2,
-          "out_of": 200,
-          "rarity": 0.01,
+          "out_of": 159,
+          "rarity": 0.0125786,
           "section": "Resources"
         },
         {
@@ -125049,8 +125047,8 @@
             219
           ],
           "weight": 2,
-          "out_of": 200,
-          "rarity": 0.01,
+          "out_of": 159,
+          "rarity": 0.0125786,
           "section": "Resources"
         },
         {
@@ -125061,8 +125059,8 @@
             1
           ],
           "weight": 12,
-          "out_of": 200,
-          "rarity": 0.06,
+          "out_of": 159,
+          "rarity": 0.0754717,
           "section": "Tarnished items"
         },
         {
@@ -125073,8 +125071,8 @@
             1
           ],
           "weight": 6,
-          "out_of": 200,
-          "rarity": 0.03,
+          "out_of": 159,
+          "rarity": 0.0377358,
           "section": "Tarnished items"
         },
         {
@@ -125085,8 +125083,8 @@
             1
           ],
           "weight": 3,
-          "out_of": 200,
-          "rarity": 0.015,
+          "out_of": 159,
+          "rarity": 0.0188679,
           "section": "Tarnished items"
         },
         {
@@ -125097,8 +125095,8 @@
             1
           ],
           "weight": 3,
-          "out_of": 200,
-          "rarity": 0.015,
+          "out_of": 159,
+          "rarity": 0.0188679,
           "section": "Tarnished items"
         },
         {
@@ -125109,8 +125107,8 @@
             1
           ],
           "weight": 3,
-          "out_of": 200,
-          "rarity": 0.015,
+          "out_of": 159,
+          "rarity": 0.0188679,
           "section": "Tarnished items"
         },
         {
@@ -125121,8 +125119,8 @@
             1
           ],
           "weight": 2,
-          "out_of": 200,
-          "rarity": 0.01,
+          "out_of": 159,
+          "rarity": 0.0125786,
           "section": "Tarnished items"
         },
         {
@@ -125133,8 +125131,8 @@
             1
           ],
           "weight": 2,
-          "out_of": 200,
-          "rarity": 0.01,
+          "out_of": 159,
+          "rarity": 0.0125786,
           "section": "Tarnished items"
         },
         {
@@ -125145,8 +125143,8 @@
             1
           ],
           "weight": 2,
-          "out_of": 200,
-          "rarity": 0.01,
+          "out_of": 159,
+          "rarity": 0.0125786,
           "section": "Tarnished items"
         },
         {
@@ -125157,8 +125155,8 @@
             1
           ],
           "weight": 2,
-          "out_of": 200,
-          "rarity": 0.01,
+          "out_of": 159,
+          "rarity": 0.0125786,
           "section": "Tarnished items"
         },
         {

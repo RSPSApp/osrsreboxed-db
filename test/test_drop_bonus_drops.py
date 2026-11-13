@@ -368,9 +368,10 @@ def used_slots(exported):
         ("Ammonite Crab", "ammonite_crab", [(21543, 21545)], 128, 128),
         ("Chaos Fanatic", "chaos_fanatic", [(1035, 1033)], 133, 133),
         # The footnoted pair is in the take-eggs variant, a different table
-        # (its rows are checked in test_drop_lead_in_rows); the open-stomach rows
-        # carry no footnote, so the source rule leaves them as separate slots.
-        ("Maggot King", "maggot_king", [], 200, 200),
+        # (its rows are checked in test_drop_lead_in_rows). Open-stomach's
+        # Supplies subsection says in prose that its two rows drop together, so
+        # they are one 41/159 slot and the pool sums to exactly 159.
+        ("Maggot King", "maggot_king", [(33628, 33627)], 159, 159),
         ("Ancient Zygomite", "ancient_zygomite", [(21545, 21543)], 118, 89),
         ("Scavenger beast", "scavenger_beast", [], 18, 18),
     ],

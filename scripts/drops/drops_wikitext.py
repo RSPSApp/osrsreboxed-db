@@ -907,6 +907,25 @@ def named_drop_refs(*fields: str) -> List[str]:
     return names
 
 
+def _section_bundle_ref(heading: str, section_body: str) -> str:
+    """A bundle name for a subsection whose own prose says its rows drop together.
+
+    Maggot King's ``===Supplies===`` says "These supplies are dropped together."
+    above a two-row table instead of footnoting the rows. The sentence is read
+    only in the prose ahead of the first table and only when the subsection has
+    exactly two rows, the one shape ``_bundle_dropped_together`` can merge.
+    """
+    table_start = section_body.find("{{DropsTableHead")
+    prose = section_body if table_start < 0 else section_body[:table_start]
+    prose = re.sub(r"\{\{.*?\}\}|<ref\b.*?(?:</ref>|/>)", " ", prose, flags=re.S)
+    match = DROPPED_TOGETHER.search(prose)
+    if not match or re.search(r"\bnot\b", prose[max(0, match.start() - 24) : match.start()], re.I):
+        return ""
+    if len(extract_templates(section_body, "DropsLine")) != 2:
+        return ""
+    return f"section:{heading}"
+
+
 def bundle_ref_for(params: Dict[str, str], bundle_refs: Dict[str, str]) -> str:
     """The dropped-together footnote a drop line carries, or "" for none."""
     for name in named_drop_refs(
@@ -1559,10 +1578,13 @@ def _parse_drops_from_body(
             if DROPPED_TOGETHER.search(text)
         }
 
+        section_bundle_ref = _section_bundle_ref(heading, section_body)
         for _, params in extract_templates(section_body, "DropsLine"):
             drop = _parse_drop_line(params, section, heading, named_refs)
             if drop:
-                drop.bundle_ref = bundle_ref_for(params, bundle_refs)
+                drop.bundle_ref = (
+                    bundle_ref_for(params, bundle_refs) or section_bundle_ref
+                )
                 # Compare source notes rather than classified output notes:
                 # NamedRef references and inline definitions must agree, while
                 # an extra quest/location condition must never disappear.
