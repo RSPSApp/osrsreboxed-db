@@ -36,7 +36,7 @@ import ast
 import json
 import math
 import re
-from dataclasses import dataclass, field, replace
+from dataclasses import dataclass, field
 from decimal import ROUND_HALF_UP, Decimal, InvalidOperation
 from functools import lru_cache
 from pathlib import Path
@@ -1999,17 +1999,11 @@ def parse_all_drop_tables(
             } | {access.rolls for access in accesses}
             # A superior Slayer page states the count for the whole table ("will always roll 3 additional
             # items"), so when every explicit count on it is that number, a plain row that omitted `rolls`
-            # is one of the repeated rows (King kurask's Limpwurt seed), not a mixed table.
+            # (King kurask's Limpwurt seed) does not make the table mixed. The row keeps its own `rolls` of 1:
+            # a pool row is repeated with the table, and an independent row that carries no `rolls` beside
+            # repeated ones is rolled once (build_table_json flags it once_per_kill).
             stated = superior_rolls_stated(wikitext)
             if stated and roll_counts == {1, stated}:
-                drops = [
-                    replace(drop, rolls=stated)
-                    if drop.section == SECTION_MAIN
-                    and drop.rolls == 1
-                    and drop.subsection.lower() != "pre-roll"
-                    else drop
-                    for drop in drops
-                ]
                 roll_counts = {stated}
             tables.append(
                 ParsedDropTable(
