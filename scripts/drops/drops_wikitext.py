@@ -36,7 +36,7 @@ import ast
 import json
 import math
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from decimal import ROUND_HALF_UP, Decimal, InvalidOperation
 from functools import lru_cache
 from pathlib import Path
@@ -1413,6 +1413,22 @@ def apply_perfect_kill_condition(drop: ParsedDrop) -> ParsedDrop:
     return drop
 
 
+SUPERIOR_ROLLS_STATEMENT = re.compile(
+    r"superior slayer monsters will always roll (\w+) additional items", re.I
+)
+_NUMBER_WORDS = {"two": 2, "three": 3, "four": 4, "five": 5}
+
+
+def superior_rolls_stated(wikitext: str) -> Optional[int]:
+    """The table-wide roll count a superior Slayer monster's page states in words or digits, if any."""
+    match = SUPERIOR_ROLLS_STATEMENT.search(wikitext)
+    if not match:
+        return None
+    word = match.group(1).lower()
+    count = _NUMBER_WORDS.get(word) or (int(word) if word.isdigit() else None)
+    return count if count and count > 1 else None
+
+
 def _roll_count(params: Dict[str, str]) -> int:
     value = params.get("rolls", "1").strip()
     return int(value) if re.fullmatch(r"[1-9]\d*", value) else 1
@@ -1981,6 +1997,20 @@ def parse_all_drop_tables(
                 if drop.section == SECTION_MAIN
                 and not (drop.rolls == 1 and drop.subsection.lower() == "pre-roll")
             } | {access.rolls for access in accesses}
+            # A superior Slayer page states the count for the whole table ("will always roll 3 additional
+            # items"), so when every explicit count on it is that number, a plain row that omitted `rolls`
+            # is one of the repeated rows (King kurask's Limpwurt seed), not a mixed table.
+            stated = superior_rolls_stated(wikitext)
+            if stated and roll_counts == {1, stated}:
+                drops = [
+                    replace(drop, rolls=stated)
+                    if drop.section == SECTION_MAIN
+                    and drop.rolls == 1
+                    and drop.subsection.lower() != "pre-roll"
+                    else drop
+                    for drop in drops
+                ]
+                roll_counts = {stated}
             tables.append(
                 ParsedDropTable(
                     table_name=table_name,
