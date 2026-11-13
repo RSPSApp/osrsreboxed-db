@@ -127,8 +127,10 @@ def test_quantity_export_preserves_npc_mappings_and_unrelated_reward_paths():
     dump = _load("npc-drops.json")
     # The source-title filter excludes audited obsolete pages (including five
     # nonattackable cultists and the old manta variant), not quantity outcomes.
-    assert len(dump["tables"]) == 1106
-    assert len(dump["npcs"]) == 3086
+    assert len(dump["tables"]) == 1107
+    assert len(dump["npcs"]) == 3087
+    # TzKal-Zuk's lead-in rows now export as their own table (new in this export).
+    assert dump["npcs"]["7706"]["tables"] == ["tz_kal_zuk"]
     assert {npc_id for npc_id, npc in dump["npcs"].items() if not npc["tables"]} == {
         "8058",
         "8060",
