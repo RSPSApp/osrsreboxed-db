@@ -1077,3 +1077,48 @@ def test_slug_menace_follows_the_revision_242_capture():
     assert "Hoorah, me boys, we're homeward bound." in normal and "pre-occupied" in normal
     assert "What is happening to the people in this town?" in normal
     assert "Can you see it?" in possessed and "She is close now... so close" in possessed
+
+
+def test_nature_spirit_follows_the_revision_242_capture():
+    sources = json.loads(
+        (config.DATA_PATH / "dialogues" / "capture-sources.json").read_text(encoding="utf-8")
+    )
+    page = json.loads((config.DATA_PATH / "dialogues/quest-pages.json").read_text())[
+        "Transcript:Nature Spirit"
+    ]
+    source = sources["Nature Spirit"]
+    assert source["revision"] == page["revision"]
+    raw = apply_capture_lines("Nature Spirit", page["wikitext"], source, page["revision"])
+    assert raw == apply_capture_lines("Nature Spirit", page["wikitext"], source, page["revision"])
+    with pytest.raises(ValueError, match="Stale dialogue capture source"):
+        apply_capture_lines("Nature Spirit", "\n" + page["wikitext"], source, page["revision"])
+
+    variants = json.loads((config.DOCS_PATH / "npc-dialogues.json").read_text())["Nature Spirit"]["variants"]
+    text = json.dumps(variants)
+    # Wording as live sends it (ticks 56, 553, 558, 1120, 1257).
+    assert '"prompt": "Start the Nature Spirit quest?"' in text
+    assert "rude or anything" in text and "rude or something" not in text
+    assert "protect it as a nature spirit." in text
+    assert "you can bless ~ ~ a new sickle" in text
+    assert "The druid pouch makes the Ghast visible." in text
+    assert text.count("~ The druid attempts to cast a spell. ~") == 3
+    # The fungus talk (933-939) and Filliman's later greeting before the same menu (966), in the
+    # order that keeps the greeting off the first talk once 55 is recorded.
+    talk = next(step for step in variants["talking-to-filliman"] if step.get("id") == "L_2i2x")["steps"]
+    assert [step["text"] for step in talk[:2]] == [
+        "If the player has already shown Filliman the fungus:",
+        "If the player has not shown Filliman the fungus yet:",
+    ]
+    assert talk[0]["steps"][0]["text"].startswith("Hello again! I don't suppose you've found out")
+    assert talk[1]["steps"][2] == {"player": "Yes, I have a fungus here that I picked."}
+    menu = talk[2]
+    assert menu["options"][0]["steps"][0] == {"player": "What are the things that are needed again?"}
+    puzzle = menu["options"][2]["steps"]
+    assert puzzle[-1]["text"] == "If all the items are placed onto their respective stones:"
+    assert puzzle[-1]["steps"][0]["text"].startswith("Aha, everything seems to be in place!")
+    # Filliman approves each offering (1008, 1021); an unused bloom spell is the "spell scroll".
+    brown = next(step for step in variants["talking-to-filliman-brown-stone"] if step.get("id") == "rjopYY")
+    assert brown["steps"][1]["text"] == "Aha, yes, that seems right well done!"
+    grey = variants["talking-to-filliman-grey-stone"][1]
+    assert grey["text"] == "If the player uses the bloom spell scroll on the grey stone:"
+    assert grey["steps"][0]["text"] == "The stone seems to absorb the spell scroll."

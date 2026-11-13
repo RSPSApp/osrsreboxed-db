@@ -1430,5 +1430,115 @@
         "text": "** '''Sir Tiffy Cashien:''' Certainly, [milady/sirrah]! As you know, we Temple Knights are personally favoured by Saradomin himself."
       }
     ]
+  },
+  "Nature Spirit": {
+    "revision": 15328806,
+    "reason": "Nature Spirit as the revision 242 capture plays it: 'Start the Nature Spirit quest?', 'rude or anything', 'nature spirit', the player's fungus line and Filliman's later 'Hello again!' greeting before the same menu, 'What are the things that are needed again?', the puzzle's success answer in that menu, Filliman's 'Aha, yes' after the fungus and for an unused bloom spell scroll on the grey stone, the spaced '~' in the druid's spell and sickle boxes, and 'Ghast' in the pouch message.",
+    "sources": [
+      "RSProx capture NatureSpirit (revision 242.1, SHA-256 4af3abdc91ff8cd2d63ad9de20f875455a9260c08f4b8ffb77a16db1b259eb33, ticks 56, 553, 558, 933-979, 1005-1042, 1120, 1257)",
+      "Transcript:Nature Spirit revision 15328806 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 20,
+        "sha256": "b3d61b513294114dcd26b9f5542bc78535b2e648cd36dad47904f9d89317decd",
+        "text": "*** {{tselect|Start the Nature Spirit quest?}}"
+      },
+      {
+        "line": 214,
+        "sha256": "9c52741fd948243dd2af4acc7264f286c2b096ede6896293fbc8f68873802951",
+        "text": "*** '''Player:''' Being dead, what options do you think you have? I'm not trying to be rude or anything, but it's not like you have many options is it? I mean, it's either up or down for you isn't it?"
+      },
+      {
+        "line": 219,
+        "sha256": "2c4e69dd2c753c3195e9059f5b632314fe281e1cc5c3ef4130b531fd5914936b",
+        "text": "*** '''Filliman Tarlock:''' In my former incarnation I was Filliman Tarlock, a great druid of some power. I spent many years in this place, which was once a forest and I would wish to protect it as a nature spirit."
+      },
+      {
+        "line": 303,
+        "sha256": "2f5ee8d06f2437e15a92ae811d0458d5bffea18c15c7287a2a6764b0697014e3",
+        "text": "*** '''Filliman Tarlock:''' Did you manage to get something from nature?",
+        "insert_before": [
+          "** {{tcond|If the player has already shown Filliman the fungus:}}",
+          "*** '''Filliman Tarlock:''' Hello again! I don't suppose you've found out what the other components of the Nature spell are have you?",
+          "** {{tcond|If the player has not shown Filliman the fungus yet:}}"
+        ]
+      },
+      {
+        "line": 304,
+        "sha256": "69be3e2bc98332448750b76046bff126056a6f3286bf3127590ed6b39052bbf0",
+        "text": "*** {{tbox|pic=Mort myre fungus detail.png|You show the fungus to Filliman.}}"
+      },
+      {
+        "line": 305,
+        "sha256": "b611d2b73b57860f177726d74d59b1166a79d29e8010bcf91ca6242aa0caac73",
+        "text": "*** '''Filliman Tarlock:''' Wonderful, the mushroom represents 'something from nature'. Now we need to work out what the other components of the spell are!",
+        "insert_before": [
+          "*** '''Player:''' Yes, I have a fungus here that I picked."
+        ]
+      },
+      {
+        "line": 308,
+        "sha256": "132a24de218505679830280d99b28cb92409cc2f66c84c1da064dd2603fbb3ec",
+        "text": "*** '''Filliman Tarlock:''' The three things are: 'Something with faith', 'something from nature' and 'something of the spirit-to-become freely given'.",
+        "insert_before": [
+          "*** '''Player:''' What are the things that are needed again?"
+        ]
+      },
+      {
+        "line": 322,
+        "sha256": "a288500c0ee59d848ad5af7b9176af72636af4d2f6ccaf78ff1cd401cb0da010",
+        "text": "*** '''Filliman Tarlock:''' Oh really.. Have you placed all the items on the stones? Ok, well, lets try! {{colour|#0000ff|~ The druid attempts to cast a spell. ~}}"
+      },
+      {
+        "line": 326,
+        "sha256": "5cc3bba9b44f2e7d9d2259f05e703a246d285dcdf9eb8ab9e3a72ff93236f1b6",
+        "text": "** {{topt|Could I have another bloom scroll please?}}",
+        "insert_before": [
+          "*** {{tcond|If all the items are placed onto their respective stones:}}",
+          "**** '''Filliman Tarlock:''' Aha, everything seems to be in place! You can come through now into the grotto for the final section of my transformation.",
+          "**** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 348,
+        "sha256": "931bf4506b683e52aac35536b3453f0b35e9bc31eb2328fb96c58fa0c09690d1",
+        "text": "** {{tact|end}}",
+        "insert_before": [
+          "** '''Filliman Tarlock:''' Aha, yes, that seems right well done!"
+        ]
+      },
+      {
+        "line": 357,
+        "sha256": "ac98db507182e1e02d2a18d3110af03e0113dc07bf281a32eafb982246641371",
+        "text": "* {{tcond|If the player uses the used spell scroll on the grey stone:}}",
+        "insert_before": [
+          "* {{tcond|If the player uses the bloom spell scroll on the grey stone:}}",
+          "** {{mes|The stone seems to absorb the spell scroll.}}",
+          "** '''Filliman Tarlock:''' Aha, yes, that seems right well done!",
+          "** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 373,
+        "sha256": "bac8e96898540075a2ccd729c5132192dd882df2b225e9f35c6fed9a6b9e44ac",
+        "text": "** '''Filliman Tarlock:''' Oh really.. Have you placed all the items on the stones? Ok, well, lets try! {{colour|#0000ff|~ The druid attempts to cast a spell. ~}}"
+      },
+      {
+        "line": 378,
+        "sha256": "a62ec0f826c4e92d20f19b91b2cbc3b0f440295cef0f10a4f5b1518a0c1fdefc",
+        "text": "** '''Filliman Tarlock:''' Oh really.. Have you placed all the items on the stones? Ok, well, lets try! {{colour|#0000ff|~ The druid attempts to cast a spell. ~}}"
+      },
+      {
+        "line": 439,
+        "sha256": "536a091e77dbdbbad00b63d3c90f908e2ad6b6e5379950d59866cd26b7bfa0fd",
+        "text": "** {{tbox|pic=Silver sickle (b) detail.png|Your sickle has been blessed!  {{colour|#0000ff|~ If you lose the blessed sickle, you can bless ~ ~ a new sickle by dipping it in the grotto waters. ~}}}}"
+      },
+      {
+        "line": 494,
+        "sha256": "acba55e89a6bff997a85f2597f43a69a7f5e649825b065ea4a496d53a0fb59a9",
+        "text": "** {{mes|The druid pouch makes the Ghast visible.}}"
+      }
+    ]
   }
 }
