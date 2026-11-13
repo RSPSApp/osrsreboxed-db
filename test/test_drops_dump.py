@@ -1162,7 +1162,6 @@ def test_cached_pages_split_repeated_rows_from_once_pre_rolls(page, rolls, once_
         )
 
 
-
 SUPERIOR_SOURCE = PRE_ROLL_ONCE_SOURCE.replace(
     "==Drops==\n",
     "==Drops==\n''In addition to 100% drops and tertiary drops, superior slayer monsters will always roll 3 additional items, "
