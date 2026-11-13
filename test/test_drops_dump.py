@@ -1050,8 +1050,8 @@ def test_mixed_main_row_counts_still_export_no_table_roll_count():
         ("Repugnant spectre", 3),
         ("Nechryarch", 3),
         ("Guardian Drake", 3),
-        # Its gem table access has no rolls anywhere on the page, so the gem is not repeated.
-        ("Mutated Tortoise", None),
+        # Its gem access has no rolls on the pinned cache (the live page has rolls=3 there); the page states 3 rolls.
+        ("Mutated Tortoise", 3),
         # The page states 9 rolls ("had it been possible to kill ... would have provided 9 rolls"); the NPC has
         # no spawn, so it never fires. Exported as the page says, not excluded by name.
         ("Bloodthirst rockslug", 9),
@@ -1136,11 +1136,12 @@ def test_a_plain_row_without_rolls_still_leaves_the_table_unexported():
             ["Dragon sword", "Dragon harpoon", "Dragon knife", "Dragon thrownaxe"],
         ),
         ("Marble gargoyle", 3, []),
-        # One plain row without rolls (a Wiki omission?) keeps the table unexported on the pinned cache.
-        ("Chasm Crawler", 1, ["Tooth half of key (moon key)"]),
-        ("King kurask", 1, ["Limpwurt seed"]),
-        # Its gem access has no rolls on the pinned cache.
-        ("Mutated Tortoise", 1, []),
+        # The page states "will always roll 3 additional items", so a plain row that omitted rolls does not make the
+        # table mixed: the pinned cache's moon key tooth half is an independent row (rolled once), King kurask's
+        # Limpwurt seed a pool row (repeated with the table); a gem access without rolls takes the table's 3.
+        ("Chasm Crawler", 3, ["Tooth half of key (moon key)"]),
+        ("King kurask", 3, ["Limpwurt seed"]),
+        ("Mutated Tortoise", 3, []),
     ],
 )
 def test_cached_pages_split_repeated_rows_from_once_pre_rolls(page, rolls, once_rows):
@@ -1151,13 +1152,61 @@ def test_cached_pages_split_repeated_rows_from_once_pre_rolls(page, rolls, once_
     tables = drops_wikitext.parse_all_drop_tables(pages[page], unique_templates=unique)
     assert [t.rolls for t in tables] == [rolls] * len(tables)
     table = tables[0]
-    # The rows the table-wide count does not repeat are exactly the Pre-roll rows named here.
+    # The rows the table-wide count does not repeat are exactly the ones named here: Pre-roll rows, and on a page that
+    # states its roll count the plain rows beside rows that carry it.
     ones = [d.name for d in table.drops if d.section == "Main" and d.rolls == 1]
     assert ones == once_rows
-    if rolls > 1:
-        assert all(
-            d.subsection.lower() == "pre-roll"
-            for d in table.drops
-            if d.section == "Main" and d.rolls == 1
-        )
-    # else: the stray plain row(s) keep the table-wide count unexported.
+    plain = [d.name for d in table.drops if d.section == "Main" and d.rolls == 1 and d.subsection.lower() != "pre-roll"]
+    assert plain == {"Chasm Crawler": ["Tooth half of key (moon key)"], "King kurask": ["Limpwurt seed"]}.get(page, [])
+
+
+SUPERIOR_SOURCE = PRE_ROLL_ONCE_SOURCE.replace(
+    "==Drops==\n",
+    "==Drops==\n''In addition to 100% drops and tertiary drops, superior slayer monsters will always roll 3 additional items, "
+    "of which only 1 roll may be from the superior unique table.''\n",
+).replace(
+    "{{DropsLine|name=Nothing|rarity=102/128|rolls=3}}",
+    "{{DropsLine|name=Nothing|rarity=102/128|rolls=3}}\n{{DropsLine|name=Bones|quantity=1|rarity=3/128}}",
+)
+
+
+def test_a_superior_page_that_states_its_roll_count_repeats_a_row_that_omitted_rolls():
+    table = _export(SUPERIOR_SOURCE)
+    assert table["rolls"] == 3
+    seed = next(row for row in table["entries"] if row.get("name") == "Bones" and not row.get("pre_roll") and row.get("rarity") != "Always")
+    assert not seed.get("once_per_kill")
+    # The Pre-roll row stays once per kill.
+    assert next(row for row in table["entries"] if row.get("pre_roll"))["once_per_kill"] is True
+
+
+def test_the_statement_is_ignored_when_the_explicit_counts_disagree_with_it():
+    source = SUPERIOR_SOURCE.replace("roll 3 additional", "roll 2 additional")
+    assert "rolls" not in _export(source)
+
+
+def test_without_the_statement_a_plain_row_still_leaves_the_count_unexported():
+    source = SUPERIOR_SOURCE.replace("superior slayer monsters will always roll 3 additional items", "monsters drop items")
+    assert "rolls" not in _export(source)
+
+
+SUPERIOR_INDEPENDENT_SOURCE = SUPERIOR_SOURCE.replace(
+    "{{DropsLine|name=Bones|quantity=1|rarity=3/128}}",
+    "{{DropsLine|name=Bones|quantity=1|rarity=3/128}}\n{{DropsLine|name=Bird nest|quantity=1|rarity=1/729}}",
+)
+
+
+def test_an_independent_row_without_rolls_beside_repeated_rows_is_rolled_once():
+    # Chasm crawler's moon key tooth half: its own 1/729 roll, no rolls= while its table repeats three times.
+    table = _export(SUPERIOR_INDEPENDENT_SOURCE)
+    assert table["rolls"] == 3
+    nest = next(row for row in table["entries"] if row.get("name") == "Bird nest")
+    assert nest["separate_roll"] is True and nest["once_per_kill"] is True
+    bones = next(row for row in table["entries"] if row.get("name") == "Bones" and not row.get("pre_roll") and row.get("rarity") != "Always")
+    assert not bones.get("once_per_kill") and not bones.get("separate_roll"), "a pool row is repeated with the table"
+
+
+def test_an_independent_row_that_carries_the_tables_rolls_is_repeated_not_flagged():
+    source = SUPERIOR_INDEPENDENT_SOURCE.replace("rarity=1/729}}", "rarity=1/729|rolls=3}}")
+    table = _export(source)
+    nest = next(row for row in table["entries"] if row.get("name") == "Bird nest")
+    assert nest["separate_roll"] is True and not nest.get("once_per_kill")
