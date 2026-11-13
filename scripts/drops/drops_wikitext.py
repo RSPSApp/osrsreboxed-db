@@ -1138,12 +1138,23 @@ def _parse_drop_table_sections(wikitext: str) -> Tuple[List[Tuple[str, str]], bo
     return sections, strict
 
 
+DROP_ROW_TEMPLATE = re.compile(r"\{\{\s*DropsLine", re.I)
+
+
 def _split_drop_subsections(drops_section: str) -> List[Tuple[str, str]]:
     matches = list(DROP_SUBSECTION_HEADING.finditer(drops_section))
     if not matches:
         return [("", drops_section)]
 
     subsections = []
+    # Rows placed directly under the level-2 heading, before its first
+    # subheading, belong to the section too: ``==Drops (take-eggs)==`` lists its
+    # table there and keeps only ``===Tertiary===`` below. Prose, an
+    # average-value line or a note ahead of the first subheading carries no
+    # rows and still contributes nothing.
+    lead = drops_section[: matches[0].start()]
+    if DROP_ROW_TEMPLATE.search(lead):
+        subsections.append(("", lead))
     for index, match in enumerate(matches):
         start = match.end()
         end = (
