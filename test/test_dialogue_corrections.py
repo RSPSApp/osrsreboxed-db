@@ -150,6 +150,15 @@ def test_captured_ides_line_replaces_the_wiki_typo():
     assert "he'll he happy" not in text
 
 
+def test_baraek_medium_clue_answer_prompt_is_spoken_by_baraek():
+    # Live sends "Baraek|Please enter the answer to the question." with his chathead
+    # (revision 227 capture); the Wiki transcript names Dunstan, a copy from his page.
+    dialogues = json.loads((config.DOCS_PATH / "npc-dialogues.json").read_text())
+    again = dialogues["Baraek"]["variants"]["treasure-trails-medium-when-talked-to-again"]
+    assert again[0] == {"npc": "Please enter the answer to the question."}
+    assert "Dunstan" not in json.dumps(dialogues["Baraek"])
+
+
 def test_prince_ali_rescue_keeps_the_captured_paste_line_and_the_wiki_flow():
     record = json.loads((config.DOCS_PATH / "npc-dialogues.json").read_text())[
         "Prince Ali Rescue"
