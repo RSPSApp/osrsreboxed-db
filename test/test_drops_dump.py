@@ -319,6 +319,38 @@ def test_pre_roll_exports_exact_source_ratio_without_reducing_pool_slots(
     assert row["pre_roll"] is True
 
 
+@pytest.mark.parametrize(
+    "rate, expected",
+    [("1/181.1", [10, 1811]), ("4/540", [4, 540]), ("1/0", None), ("351/350", None)],
+)
+def test_mixed_denominator_pre_rolls_keep_exact_and_invalid_source_rates(
+    rate, expected
+):
+    source = (
+        "{{Infobox Monster|id=1}}\n==Drops==\n===Pre-roll===\n"
+        "{{DropsLine|name=Rune full helm|quantity=1|rarity=1/100}}\n"
+        "{{DropsLine|name=Draconic visage|quantity=1|rarity=1/100}}\n"
+        "{{DropsLine|name=Coins|quantity=17|rarity=" + rate + "}}"
+    )
+    parsed = drops_wikitext.parse_all_drop_tables(source)[0]
+    row = next(
+        row
+        for row in drops_tables.build_table_json(
+            drops_tables.build_table_spec("Test", parsed, ITEMS)
+        )["entries"]
+        if row.get("name") == "Coins"
+    )
+    assert row["pre_roll"] is True
+    assert row["separate_roll"] is True
+    assert row["quantity"] == [17, 17]
+    if expected is not None:
+        assert [row["weight"], row["out_of"]] == expected
+    else:
+        assert row["rarity_raw"] == rate
+        assert "out_of" not in row
+        assert "rarity" not in row
+
+
 @pytest.mark.parametrize("rate", ["1/0", "351/350"])
 def test_invalid_pre_roll_probability_stays_raw_and_unexecutable(rate):
     source = (
@@ -710,6 +742,181 @@ def test_several_word_rarity_rows_in_one_section_are_flagged():
     assert [[entry.name for entry in roll.entries] for roll in stacked] == [
         ["Bones", "Rune full helm"]
     ]
+
+
+def _cached_page_tables(page, items=None):
+    import json
+    from pathlib import Path
+
+    pages = json.loads(
+        (
+            Path(__file__).parents[1] / "data/monsters/monsters-wiki-page-text.json"
+        ).read_text(encoding="utf-8")
+    )
+    return [
+        drops_tables.build_table_json(
+            drops_tables.build_table_spec(page, table, items or ITEMS)
+        )
+        for table in drops_wikitext.parse_all_drop_tables(pages[page])
+    ]
+
+
+def test_cached_lizardmen_roll_the_uncommon_seed_table():
+    """{{UncommonSeedDropLines}} was dropped without a warning, so a lizardman
+    killed six times dropping only bones was likely (RSPSApp/tsps#1952). The
+    Wiki's level 53, level 62 and brute tables roll it at 15/87, 15/78, 15/67."""
+    accesses = {
+        (table["label"], row["weight"], row["out_of"])
+        for page in ("Lizardman", "Lizardman brute")
+        for table in _cached_page_tables(page)
+        for row in table["entries"]
+        if row.get("shared_table") == "uncommonSeed"
+    }
+    assert accesses == {
+        ("Level 53 drops", 15, 87),
+        ("Level 62 drops", 15, 78),
+        ("Drops", 15, 67),
+    }
+
+
+def test_uncommon_seed_table_lines_are_a_shared_access_not_rows():
+    wikitext = """{{Infobox Monster\n|id1 = 1\n}}\n==Drops==\n"""
+    wikitext += "===Seeds===\n{{UncommonSeedDropTableInfo|35/128}}\n"
+    wikitext += "{{UncommonSeedDropLines|35/128|f2p=yes}}\n"
+    table = drops_wikitext.parse_all_drop_tables(wikitext)[0]
+    exported = drops_tables.build_table_json(
+        drops_tables.build_table_spec("Test_monster", table, ITEMS)
+    )
+    assert [
+        (e.get("shared_table"), e.get("weight"), e.get("out_of"))
+        for e in exported["entries"]
+    ] == [("uncommonSeed", 35, 128)]
+
+
+def test_uncommon_seed_table_is_exported_from_the_drop_table_page():
+    from scripts.drops.update import load_shared_table_wikitext
+
+    shared = drops_tables.export_shared_subtables(load_shared_table_wikitext(), ITEMS)
+    seeds = shared["uncommonSeed"]
+    assert seeds["wiki_label"] == "uncommon seed drop table"
+    assert seeds["entries"][0]["rarity_raw"] == "137/1048"
+
+
+def test_members_world_rate_replaces_the_free_to_play_rate():
+    """The dump describes members worlds: "Drop rate is decreased to 8/128 in
+    [[members]] worlds" with altrarity=8/128 rolls 8/128. The moss giant's
+    table, its seed roll restored, now fills exactly 128 slots."""
+    line = drops_wikitext._parse_drop_line(
+        {
+            "name": "Coins",
+            "quantity": "2",
+            "rarity": "11/128",
+            "altrarity": "8/128",
+            "raritynotes": '<ref group="d">Drop rate is decreased to 8/128 in [[members]] worlds.</ref>',
+        },
+        "Main",
+        "Coins",
+        {},
+    )
+    assert line.rarity == "8/128"
+    skeleton = drops_wikitext._parse_drop_line(
+        {
+            "name": "Coins",
+            "quantity": "2",
+            "rarity": "29/128",
+            "altrarity": "24/128",
+            "raritynotes": "<ref group=d>The drop rate decreases to 24/128 on a [[members]] world.</ref>",
+        },
+        "Main",
+        "Coins",
+        {},
+    )
+    assert skeleton.rarity == "24/128"
+    unrelated = drops_wikitext._parse_drop_line(
+        {
+            "name": "Coins",
+            "quantity": "2",
+            "rarity": "11/128",
+            "altrarity": "Never",
+            "raritynotes": "<ref group=d>Not dropped in the Forgotten Cemetery.</ref>",
+        },
+        "Main",
+        "Coins",
+        {},
+    )
+    assert unrelated.rarity == "11/128"
+    from osrsreboxed import items_api
+
+    (moss_giant,) = [
+        t
+        for t in _cached_page_tables(
+            "Moss giant", drops_tables.ItemIdLookup(items_api.load())
+        )
+        if t["label"] == "Drops"
+    ]
+    assert moss_giant["main_max_roll"] == 128
+    assert sum(
+        e["weight"]
+        for e in moss_giant["entries"]
+        if "weight" in e and not e.get("separate_roll")
+    ) == 128
+
+
+def test_cached_manta_ray_keeps_its_other_seed_pools():
+    """The manta ray's Seeds section has {{UncommonSeedDropLines}} beside its own
+    rare and tree-herb seed rows. The uncommon access must not swallow those rows:
+    Yew, Magic and Redwood tree seeds come only from them (RSPSApp/tsps#1982)."""
+    from osrsreboxed import items_api
+
+    (manta,) = _cached_page_tables(
+        "Manta ray (monster)", drops_tables.ItemIdLookup(items_api.load())
+    )
+    names = {row.get("name") for row in manta["entries"]}
+    assert {"Yew seed", "Magic seed", "Redwood tree seed"} <= names
+    assert [
+        (row["weight"], row["out_of"])
+        for row in manta["entries"]
+        if row.get("shared_table") == "uncommonSeed"
+    ] == [(30, 99)]
+    seeds = [row for row in manta["entries"] if row.get("section") == "Seeds" and row.get("item_id")]
+    assert len(seeds) == 28
+
+
+def test_explicit_named_location_notes_apply_to_every_referencing_row():
+    """HTML refs, Refn and NamedRef preserve conditions without repeating an item name."""
+    text = """
+{{Infobox Monster|id=123}}
+==Drops==
+===Other===
+{{DropsLine|name=Trading sticks|quantity=1|rarity=1/128|raritynotes=<ref group="d" name="karamja">Only dropped by Hobgoblins on [[Karamja]], in place of the regular coin drops.</ref>}}
+{{DropsLine|name=Trading sticks|quantity=5|rarity=12/128|raritynotes=<ref group="d" name="karamja"/>}}
+{{DropsLine|name=Iron med helm|quantity=1|rarity=5/128|raritynotes={{Refn|group=d|name=giant|Only dropped by giants on the Giants' Plateau.}}}}
+{{DropsLine|name=Steel scimitar|quantity=1|rarity=2/128|raritynotes={{Refn|group=d|name=giant}}}}
+{{DropsLine|name=Pyrophosphite|quantity=1|rarity=18/118|raritynotes={{Refn|Only dropped by ancient zygomites on Fossil Island.|group=d|name=island}}}}
+{{DropsLine|name=Volcanic ash|quantity=2|rarity=16/590|raritynotes={{NamedRef|island|group=d}}}}
+{{DropsLine|name=Coins|quantity=1|rarity=1/128}}
+"""
+    rows = drops_wikitext.parse_all_drop_tables(text)[0].drops
+    assert len(rows) == 7
+    for first, reference in ((0, 1), (2, 3), (4, 5)):
+        assert rows[first].notes
+        assert rows[reference].notes == rows[first].notes
+    assert rows[-1].notes == []
+
+
+def test_cached_zalcano_death_runes_keep_current_source_range():
+    from scripts.drops import update
+
+    pages = update.load_monster_wikitext()
+    items = drops_tables.ItemIdLookup([FakeItem(560, "Death rune")])
+    parsed = drops_wikitext.parse_all_drop_tables(pages["Zalcano"])[0]
+    table = drops_tables.build_table_json(
+        drops_tables.build_table_spec("Zalcano", parsed, items)
+    )
+    row = next(row for row in table["entries"] if row.get("item_id") == 560)
+    assert row["quantity"] == [201, 1046]
+    assert row["weight"] == 1
+    assert row["out_of"] == table["main_max_roll"] == 36
 
 
 def _cached_unique_templates(*names):

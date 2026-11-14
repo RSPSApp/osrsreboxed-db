@@ -63,6 +63,7 @@ SUBTABLE_LABELS = {
     "gem": "gem drop table",
     "seed": "general seed drop table",
     "rareSeed": "rare seed drop table",
+    "uncommonSeed": "uncommon seed drop table",
     "rareDrop": "rare drop table",
     "megaRare": "mega-rare drop table",
     "gwdRareDrop": "God Wars Dungeon-variant rare drop table",
@@ -113,9 +114,9 @@ class ParsedSubtableAccess:
     numerator: int
     denominator: int
     subsection: str
+    rolls: int = 1
     roll_count_weights: List[Dict[str, int]] = field(default_factory=list)
     unresolved_roll_count: bool = False
-    rolls: int = 1
 
 
 @dataclass
@@ -128,8 +129,8 @@ class ParsedDropTable:
     subtable_accesses: List[ParsedSubtableAccess]
     npc_ids: List[int]
     excluded_npc_ids: List[int] = field(default_factory=list)
-    reward_policy: Optional[Dict] = None
     rolls: int = 1
+    reward_policy: Optional[Dict] = None
 
 
 # ---------------------------------------------------------------------------
@@ -479,7 +480,6 @@ def parse_tertiary_rarity(rarity: str) -> Optional[Tuple[int, int]]:
 # Drop line notes
 # ---------------------------------------------------------------------------
 
-WIKI_LINK = re.compile(r"\[\[([^|\]]+)")
 F2P_NOTE = re.compile(r"free[\s-]*to[\s-]*play", re.I)
 F2P_ONLY_DROP = re.compile(
     r"only dropped in(?:\s*\[\[)?\s*free[\s-]*to[\s-]*play", re.I
@@ -777,39 +777,8 @@ def _is_drop_reference(attrs: str) -> bool:
 
 
 def collect_named_footnotes(section_body: str) -> Dict[str, str]:
-    """Collect ``<ref name="…" group="d">…</ref>`` footnote bodies from a section.
-
-    Definitions embedded in a ``{{DropsLine}}`` note field count too, since the
-    wiki often defines a footnote on the first drop line that uses it.
-
-    :param section_body: Wikitext of one drop subsection.
-    :return: Dictionary of ref name to cleaned footnote text.
-    """
-    refs = _parse_named_footnotes(section_body)
-    for _, params in extract_templates(section_body, "DropsLine"):
-        for field_name in ("namenotes", "raritynotes", "quantitynotes"):
-            value = params.get(field_name, "")
-            if not value.strip():
-                continue
-            for name, text in _parse_named_footnotes(value).items():
-                refs.setdefault(name, text)
-    return refs
-
-
-def _parse_named_footnotes(section_body: str) -> Dict[str, str]:
-    refs: Dict[str, str] = {}
-    # A reference before its definition must not be mistaken for an opening tag.
-    for match in NAMED_REF.finditer(SELF_CLOSING_REF.sub("", section_body)):
-        attrs = match.group(1)
-        if not _is_drop_reference(attrs):
-            continue
-        name_match = REF_NAME.search(attrs.strip())
-        if not name_match:
-            continue
-        text = clean_wiki_notes(match.group(2))
-        if text:
-            refs.setdefault(name_match.group(1).strip(), text)
-    return refs
+    """Resolve drop-row notes through the same named refs as source bundles."""
+    return collect_named_drop_footnotes(section_body)
 
 
 def parse_inline_note_fields(*fields: str) -> List[str]:
@@ -855,21 +824,11 @@ def _refn_note(params: Dict[str, str]) -> Optional[str]:
 def _resolve_named_ref_links(
     name_notes: str, rarity_notes: str, named_refs: Dict[str, str]
 ) -> List[str]:
-    if not named_refs:
-        return []
-    combined = f"{name_notes} {rarity_notes}"
-    resolved = []
-    for match in SELF_CLOSING_REF.finditer(combined):
-        attrs = match.group(1)
-        if not _is_drop_reference(attrs):
-            continue
-        name_match = REF_NAME.search(attrs.strip())
-        if not name_match:
-            continue
-        note = named_refs.get(name_match.group(1).strip())
-        if note:
-            resolved.append(note)
-    return resolved
+    return [
+        named_refs[name]
+        for name in named_drop_refs(name_notes, rarity_notes)
+        if name in named_refs
+    ]
 
 
 # Footnotes that make two adjacent rows one slot: "X and Y are dropped together".
@@ -1560,9 +1519,14 @@ def _roll_count(params: Dict[str, str]) -> int:
 
 
 # This export targets members worlds. Use the explicit alternate rate only
-# when the source identifies it as the members-world rate.
+# when the source identifies it as the members-world rate. Whole-sentence forms
+# the wiki uses: "Drop rate is decreased to 8/128 in members worlds.", "The drop
+# rate decreases to 24/128 on a members world.", "Adamant arrows drop rate
+# decreases to 2/128 in members worlds." and "The drop rate decreases to 10/128
+# while in a members world." Anything else keeps the free-to-play rate.
 MEMBERS_RATE_NOTE = re.compile(
-    r"Drop rate is (?:decreased|increased) to (\d+/\d+) in members worlds[.]",
+    r"(?:[A-Za-z ]*[Dd]rop rate(?: of [A-Za-z ]+?)?) (?:is )?(?:de|in)creas(?:es|ed) to "
+    r"(\d+/\d+) (?:in|on|while in) (?:an? )?members? worlds?[.]",
     re.I,
 )
 COIN_REPLACEMENT_NOTE = re.compile(
@@ -1586,11 +1550,10 @@ def _parse_drop_line(
     quantity_note_values = parse_inline_note_fields(
         quantity_notes
     ) + _resolve_named_ref_links("", quantity_notes, named_refs)
-    attached_notes = (
-        parse_inline_note_fields(name_notes, rarity_notes)
-        + _resolve_named_ref_links(name_notes, rarity_notes, named_refs)
-        + quantity_note_values
-    )
+    row_notes = parse_inline_note_fields(
+        name_notes, rarity_notes
+    ) + _resolve_named_ref_links(name_notes, rarity_notes, named_refs)
+    attached_notes = row_notes + quantity_note_values
     if _should_skip_f2p_drop(params, attached_notes):
         return None
 
@@ -1618,12 +1581,17 @@ def _parse_drop_line(
     quantity, is_noted = parse_wiki_quantity(params.get("quantity", "").strip() or "1")
     if not rarity.strip():
         return None
+    alternate = params.get("altrarity", "").strip()
+    if alternate and any(
+        match.group(1) == alternate
+        for match in map(MEMBERS_RATE_NOTE.search, attached_notes)
+        if match
+    ):
+        rarity = alternate
 
-    relevant_notes = parse_inline_note_fields(name_notes, rarity_notes) + [
-        note
-        for note in _resolve_named_ref_links(name_notes, rarity_notes, named_refs)
-        if _relevant_to_drop(name, note)
-    ]
+    # An explicit row reference applies even when its text does not repeat the item name.
+    # Quantity notes select an amount; they are not row footnotes.
+    relevant_notes = row_notes
     notes = classify_notes(list(dict.fromkeys(relevant_notes)), name)
 
     if rarity.strip().lower() == "always" and section != SECTION_TERTIARY:
@@ -1824,6 +1792,7 @@ SUBTABLE_TEMPLATES = [
         "Seeds",
     ),
     ("rareSeed", ["RareSeedDropTableInfo", "RareSeedDropLines"], "Seeds"),
+    ("uncommonSeed", ["UncommonSeedDropTableInfo", "UncommonSeedDropLines"], "Seeds"),
 ]
 
 PROSE_ACCESS_PATTERNS = [
@@ -1833,6 +1802,7 @@ PROSE_ACCESS_PATTERNS = [
     ("gem", r"chance of rolling the gem drop table"),
     ("seed", r"chance of rolling the general seed drop table"),
     ("rareSeed", r"chance of rolling the rare seed drop table"),
+    ("uncommonSeed", r"chance of rolling the uncommon seed drop table"),
     ("rareDrop", r"chance of rolling the rare drop table"),
     ("megaRare", r"chance of rolling the mega-?rare drop table"),
 ]
