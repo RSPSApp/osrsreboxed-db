@@ -3658,12 +3658,13 @@
     ]
   },
   "Baraek": {
-    "reason": "Baraek's quest option label as captured live; the player's spoken reply was not captured and stays as the wiki gives it.",
+    "reason": "Baraek's quest option label as captured live; the player's spoken reply was not captured and stays as the wiki gives it. His medium-clue answer prompt is spoken by Baraek, as captured live; the Wiki transcript names Dunstan there (a copy from Dunstan's page).",
     "sources": [
-      "https://rsprox.net/database (submission 1705: Baraek's menu \"Can you sell me some furs?|Can you tell me where I can find the Phoenix Gang?|Hello! I'm in search of a quest.\")"
+      "https://rsprox.net/database (submission 1705: Baraek's menu \"Can you sell me some furs?|Can you tell me where I can find the Phoenix Gang?|Hello! I'm in search of a quest.\")",
+      "rsprox transcript revision 227, submission 91: message_game dialogue \"Baraek|Please enter the answer to the question.\" with Baraek's chathead (chat_left)"
     ],
     "base_sha256": "2eab0cecc54f058cfe0c0c6a509f25c64759481e4d9152e7b261d5cfcd91aa28",
-    "audited_sha256": "ae017fa98f98e16e174c51bc895c8835411fc39b85258883b3f3dd0138a9f8c5",
+    "audited_sha256": "89b1ca9a207047d30f1b80fb70c4cbd0788e5f0e8ff06fb5a890ebbac4621301",
     "changes": [
       {
         "path": [
@@ -3678,6 +3679,19 @@
         ],
         "expected": "542125697b0f6357870cda7954753355962d95012b3d5779163cc4999b7db86a",
         "value": "Hello! I'm in search of a quest."
+      },
+      {
+        "path": [
+          "records",
+          "Baraek",
+          "variants",
+          "treasure-trails-medium-when-talked-to-again",
+          0
+        ],
+        "expected": "afb47ef646e0b5085d1105de20f1ccd9fe7c992dc68e838fb73cb5d13a2f2c15",
+        "value": {
+          "npc": "Please enter the answer to the question."
+        }
       }
     ]
   },
