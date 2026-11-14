@@ -856,11 +856,11 @@ def _drop_ref_name(attrs: str) -> Optional[str]:
 
 
 def collect_named_drop_footnotes(section_body: str) -> Dict[str, str]:
-    """Collect group-d named footnotes for source-pair and eligibility checks.
+    """Collect group-d named footnotes for drop rows, source pairs and eligibility checks.
 
     Both definition syntaxes count: ``<ref group="d" name="x">body</ref>`` and
-    ``{{Refn|body|group=d|name=x}}``. Resolution of ordinary notes is separate
-    (:func:`collect_named_footnotes`), so this adds no note text to rows.
+    ``{{Refn|body|group=d|name=x}}``. :func:`collect_named_footnotes` is the row-note
+    entry point and returns exactly this mapping.
 
     :param section_body: Wikitext of one drop subsection.
     :return: Dictionary of ref name to cleaned footnote text.
@@ -945,47 +945,6 @@ def bundle_ref_for(params: Dict[str, str], bundle_refs: Dict[str, str]) -> str:
         if name in bundle_refs:
             return name
     return ""
-
-
-def _note_mentions_item(drop_name: str, note: str) -> bool:
-    normalized_drop = _normalize_item_name(drop_name)
-    if not normalized_drop:
-        return False
-    for match in WIKI_LINK.finditer(note):
-        candidate = _normalize_item_name(match.group(1))
-        if candidate and (
-            normalized_drop == candidate
-            or normalized_drop in candidate
-            or candidate in normalized_drop
-        ):
-            return True
-    return normalized_drop in _normalize_item_name(note)
-
-
-def _relevant_to_drop(drop_name: str, note: str) -> bool:
-    """Decide whether a shared footnote actually applies to this drop line."""
-    name = drop_name.lower()
-    text = note.lower()
-
-    if "looting bag" in text or ("wilderness" in text and "bag" in text):
-        return "looting bag" in name
-    if "key" in text and "medium" in text:
-        return "key" in name
-    if TRANSFORM_ITEM_NOTE.search(text) or ("clue" in text and "scroll" in text):
-        return "clue scroll" in name
-    if TRANSFORM_RATE_NOTE.search(text) and "easy" in text:
-        return "clue scroll" in name and "easy" in name
-    if TRANSFORM_RATE_NOTE.search(text) and "clue" in text:
-        return "clue scroll" in name
-    if F2P_ONLY_DROP.search(text):
-        return False
-    if "increases to" in text or "decreases to" in text:
-        return name == "nothing"
-    return _note_mentions_item(drop_name, note)
-
-
-def _normalize_item_name(name: str) -> str:
-    return re.sub(r"[^a-z0-9]+", " ", name.lower()).strip()
 
 
 def _should_skip_f2p_drop(params: Dict[str, str], attached_notes: List[str]) -> bool:
@@ -1560,8 +1519,9 @@ def _parse_drop_line(
     rarity = params.get("rarity", "").strip() or rarity_notes
     alternate = params.get("altrarity", "").strip()
     if alternate and any(
-        (rate := MEMBERS_RATE_NOTE.fullmatch(note)) and rate[1] == alternate
-        for note in attached_notes
+        match.group(1) == alternate
+        for match in map(MEMBERS_RATE_NOTE.search, attached_notes)
+        if match
     ):
         rarity = alternate
 
@@ -1581,14 +1541,6 @@ def _parse_drop_line(
     quantity, is_noted = parse_wiki_quantity(params.get("quantity", "").strip() or "1")
     if not rarity.strip():
         return None
-    alternate = params.get("altrarity", "").strip()
-    if alternate and any(
-        match.group(1) == alternate
-        for match in map(MEMBERS_RATE_NOTE.search, attached_notes)
-        if match
-    ):
-        rarity = alternate
-
     # An explicit row reference applies even when its text does not repeat the item name.
     # Quantity notes select an amount; they are not row footnotes.
     relevant_notes = row_notes
