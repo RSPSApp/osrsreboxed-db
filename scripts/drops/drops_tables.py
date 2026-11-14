@@ -73,6 +73,7 @@ SHARED_TABLE_SECTIONS = [
     ("combatHerb", "Combat herb drop table", "combat herb drop table"),
     ("seed", "General seed drop table", "general seed drop table"),
     ("rareSeed", "Rare seed drop table", "rare seed drop table"),
+    ("uncommonSeed", "Uncommon seed drop table", "uncommon seed drop table"),
     # Referenced from the gem table; monsters never roll it directly.
     ("talisman", "Talisman drop table", "talisman drop table"),
     (
@@ -110,6 +111,7 @@ NESTED_TABLE_REFS = {
     "seed drop table": "seed",
     "general seed drop table": "seed",
     "rare seed drop table": "rareSeed",
+    "uncommon seed drop table": "uncommonSeed",
     "talisman": "talisman",
     "talisman drop table": "talisman",
     "god wars dungeon-variant gem drop table": "gwdGem",
@@ -204,9 +206,9 @@ class DropTableSpec:
     subtable_accesses: List[wikitext.ParsedSubtableAccess] = field(default_factory=list)
     tertiary: List[ResolvedEntry] = field(default_factory=list)
     unresolved_items: List[str] = field(default_factory=list)
+    rolls: int = 1
     reward_chain: Optional[Dict] = None
     tertiary_groups: List[Dict] = field(default_factory=list)
-    rolls: int = 1
 
     def has_drop_content(self) -> bool:
         """True when the table resolved to anything worth exporting."""
@@ -768,7 +770,10 @@ def build_table_spec(
     unresolved_pool: List[str] = []
 
     # Seed drops are listed individually and as a shared table access on some
-    # pages; the access wins so the seeds are not counted twice.
+    # pages; the access wins so the seeds are not counted twice. Not for the
+    # uncommon seed table: {{UncommonSeedDropLines}} is that pool's own listing,
+    # so a page's DropsLine seeds beside it are other pools (the manta ray's
+    # rare and tree-herb seed rolls) and are kept.
     has_seed_access = any(
         access.table_key in ("seed", "rareSeed") for access in table.subtable_accesses
     )

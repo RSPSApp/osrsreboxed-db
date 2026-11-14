@@ -136,8 +136,10 @@ def test_generated_quantities_keep_source_conditions_and_discrete_alternatives()
 def test_quantity_export_preserves_npc_mappings_and_unrelated_reward_paths():
     dump = _load("npc-drops.json")
     # Keep restored bare-ID variants, excluding stale category-unlisted pages.
-    assert len(dump["tables"]) == 1111
-    assert len(dump["npcs"]) == 3225
+    assert len(dump["tables"]) == 1112
+    assert len(dump["npcs"]) == 3226
+    # TzKal-Zuk's lead-in rows now export as their own table (new in this export).
+    assert dump["npcs"]["7706"]["tables"] == ["tz_kal_zuk"]
     assert {npc_id for npc_id, npc in dump["npcs"].items() if not npc["tables"]} == {
         "8058",
         "8060",
@@ -198,3 +200,13 @@ def test_generated_god_wars_variant_accesses_and_coin_remainders():
             sum(int(e["rarity_raw"].split("/")[0]) for e in shared[key]["entries"])
             == 128
         )
+
+
+def test_shellbane_uses_current_page_without_stale_duplicate():
+    drops = _load("npc-drops.json")
+    npc = drops["npcs"]["14860"]
+    assert npc["tables"] == ["shellbane_gryphon"]
+    table = drops["tables"][npc["tables"][0]]
+    assert table["wiki_page"] == "Shellbane gryphon"
+    assert table["main_max_roll"] == 128
+    assert "shellbane_gryphon_2" not in drops["tables"]
