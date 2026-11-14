@@ -1540,5 +1540,165 @@
         "text": "** {{mes|The druid pouch makes the Ghast visible.}}"
       }
     ]
+  },
+  "The Fremennik Trials": {
+    "revision": 15263294,
+    "reason": "The Fremennik Trials as the captures play it: Brundt's opening greeting, and his seven-vote acceptance before the reminder lines with its own end (the Wiki puts it after their end, so it could never play); Manni's 'Ah, I see', 'As you wish outerlander;' and 'I alsho' lines and the longhall's 'What was THAT?'; the tuning's 'Doh Ray Me So.' and 'Your lyre is perfectly tuned.'; the Champions' Guild ballad as sung; the performance's messages and Olaf's two separate lines in live's order; Koschei's overheads ('you made a mistake', 'What kind of person', the missing 'Hey outerlander! Let's see what you have!'); Thorvald's two missing lines after the fight; and the unicorn head's 'It's unusual because you removed it already!'.",
+    "sources": [
+      "RSProx capture local 1002236 (revision 242, SHA-256 3d50bf4cf26f6ae2187a4d18ca421271dc16c8685a056470735ca6fbca9a0bee, ticks 3093, 3266-3300, 5726-5752, 5812, 8412, 10284-10305)",
+      "RSProx capture local 1001646 (revision 241, SHA-256 2084c0ff0cc3b29b49d9536592340a3acca38d8cf2a296037f65c5dc283e7409, ticks 2331, 2440, 2703-2709, 3145, 3163)",
+      "RSProx capture local 1001364 (revision 241, SHA-256 b11b798e5c81ba86cffc56d6017262f21bde524e7fa44ef68e5f22fda5fed7e2, ticks 2714-2728)",
+      "Transcript:The Fremennik Trials revision 15263294 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 25,
+        "sha256": "25058031293ac911baf431e5411ba39a5d6b18d57097c95d3c1855fdf8ad723e",
+        "insert_before": [
+          "* '''Brundt the Chieftain:''' Greetings outerlander!"
+        ]
+      },
+      {
+        "line": 249,
+        "sha256": "baae8f84fd0296c1716fe0ec86f3cb82f54fda2535a800cae437b6c78a9c91de",
+        "text": "** '''Manni the Reveller:''' Ah, I see you have your keg of beer. Are we ready to drink against each other?"
+      },
+      {
+        "line": 253,
+        "sha256": "fa4ea4c83d0da4f3444da992d998a65e06857015ec331300542b19c347b1cdcf",
+        "text": "*** '''Manni the Reveller:''' As you wish outerlander; I will drink first, then you will drink."
+      },
+      {
+        "line": 258,
+        "sha256": "c15b40b3fdf025435815832f9e1690afbba25906edb4766f245a6350010cf4f3",
+        "text": "*** '''Player:''' Ish no' fair! (hic) I canna drink another drop! I alsho feel veddy, veddy ill..."
+      },
+      {
+        "line": 397,
+        "sha256": "187cf26e4a3f6b11207d05e8589de025e89ba8b4a5a2ea8a662d72b18a83c60c",
+        "text": "** '''Everyone in the longhall:''' {{overhead|What was THAT?}}"
+      },
+      {
+        "line": 675,
+        "sha256": "d5c5709f6e1fae4fa990c3b28fdabfef6765a505255a968c33895c2b427403a9",
+        "text": "* '''Player:''' {{overhead|Doh Ray Me So.}}"
+      },
+      {
+        "line": 679,
+        "sha256": "41b6fcfc1021bcaf3e526b6386215bfc2c6005ad710223646be08b68df05b3fa",
+        "text": "* {{mes|Your lyre is perfectly tuned.}}"
+      },
+      {
+        "line": 694,
+        "sha256": "6888b9df062280758c454247b5b1b1d7533197fc7cd345602a2936c1edc91d79",
+        "text": "** '''Player:''' {{overhead|The thought of lots of questing,}}"
+      },
+      {
+        "line": 695,
+        "sha256": "f05da28f83137a1a67a88bf4baced55ca564e3483bc667fcba20ce9020ce4791",
+        "text": "** '''Player:''' {{overhead|Leaves some people unfulfilled,}}"
+      },
+      {
+        "line": 696,
+        "sha256": "bc67df2508b756c8ebb8ff9ab776e5db706a1702437476b2f961742ebcca27a7",
+        "text": "** '''Player:''' {{overhead|But I have done my simple best, in}}"
+      },
+      {
+        "line": 697,
+        "sha256": "e1c02d4f4c889aec39db5d7d93dd6f2669c010485a9a8fdb8c38e206e000e061",
+        "text": "** '''Player:''' {{overhead|Entering the Champions' Guild.}}"
+      },
+      {
+        "line": 724,
+        "sha256": "46b07d7739dd86eb0670bd836633403f9cbdf80982449dd02c9f54736c242a57",
+        "text": "* {{mes|Congratulations! You have completed the Bard's Trial!}}"
+      },
+      {
+        "line": 725,
+        "sha256": "36966202a22df29f3f04894f7977cf967e6834a0ff8a9a92ebec779ee1efa80c",
+        "text": "* {{mes|As you finished playing you felt Fossegrimen's power leave you...}}"
+      },
+      {
+        "line": 726,
+        "sha256": "4e4a553af3b00ff4a69693887171457157b14652b02d63be25fad42beb3f038d",
+        "text": "* '''Olaf the Bard:''' Wow! That was awesome! You are one of the greatest bards I have ever had the pleasure of watching performing!"
+      },
+      {
+        "line": 727,
+        "sha256": "63304f0db7e529366f44f803cf4794f16b3769178d6bdddcfa6cf828a0faa67c",
+        "insert_before": [
+          "* '''Olaf the Bard:''' You have certainly earned my vote! I hope we can duet together soon!"
+        ]
+      },
+      {
+        "line": 1837,
+        "sha256": "35306d25c107d5b7cb8981acd26b00ad0a3fd3de4cd771e00590599c2c702042",
+        "text": "** '''Koschei the deathless:''' {{overhead|Outerlander... you made a mistake coming down here!}}"
+      },
+      {
+        "line": 1839,
+        "sha256": "b4ba9d1a24c86fb7cca7e0a454a699cfa4b6d4021ddc4508571783e78e9b2650",
+        "text": "** '''Koschei the deathless:''' {{overhead|What kind of person calls [him/her]self [player name]?}}"
+      },
+      {
+        "line": 1849,
+        "sha256": "358cf478c96ebb38e20a0e054f2c1d1e30af9296bc810c6119574d20b238379b",
+        "insert_before": [
+          "* {{topt|Dialogue 9}}",
+          "** '''Koschei the deathless:''' {{overhead|Hey outerlander! Let's see what you have!}}",
+          ""
+        ]
+      },
+      {
+        "line": 1854,
+        "sha256": "5ecfd2ac783ca81e60c008cd4f332263fb2efe09cc3e91dd6e5e43aa17e9ca8f",
+        "insert_before": [
+          "** '''Thorvald the Warrior:''' I did not say you had to, outerlander! All I asked was that you fought to the death! And you did! The death was your own!",
+          "** '''Thorvald the Warrior:''' I was not interested in how strong you are! I was interested in how BRAVE you are! You fought a superior enemy to your very last breath - THAT is bravery."
+        ]
+      },
+      {
+        "line": 2005,
+        "sha256": "56a7fa52c8fff89551dfac0a7d22f2d3bd9d3115c7dfb6e86e202f3ad3bf58dc",
+        "text": "** {{mes|It's unusual because you removed it already!}}"
+      },
+      {
+        "line": 2337,
+        "sha256": "bc1ede0a86dce9e0602b3d9efa6f62c93b77416a50a5fd75759c20180923c423",
+        "insert_before": [
+          "* {{tcond|If the player has gotten all 7 votes:}}",
+          "** '''Player:''' I have seven members of the council prepared to vote in my favour now!",
+          "** '''Brundt the Chieftain:''' I know outerlander, for I have been closely monitoring your progress so far!",
+          "** '''Brundt the Chieftain:''' Then let us put the formality aside, and let me personally welcome you into the Fremennik! May you bring us honour!",
+          "** {{mes|Congratulations, you've completed a quest: {{colour|#000080|The Fremennik Trials}}}}",
+          "** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 2340,
+        "sha256": "45f73c6f33970f81619e1a30f86c4676708e4789d399be17e10fe2a34f452563",
+        "text": ""
+      },
+      {
+        "line": 2341,
+        "sha256": "7df079e5c92b92f4c4da5fa7f0b99216bea7c426c943474402e2519aab507722",
+        "text": ""
+      },
+      {
+        "line": 2342,
+        "sha256": "80b31c6261cd3f6fce5f4a9aa6481fdc043a7e9d0b4e4e65ddc7281485b8ee32",
+        "text": ""
+      },
+      {
+        "line": 2343,
+        "sha256": "551714ab0b42d1fccca0e5ea07b363c4da483dc53de2f8a1f5fddd8c5b05af62",
+        "text": ""
+      },
+      {
+        "line": 2344,
+        "sha256": "739d907bf1b9d211125127f354180877a6a89262561bb8e86311593c3c3d5974",
+        "text": ""
+      }
+    ]
   }
 }
