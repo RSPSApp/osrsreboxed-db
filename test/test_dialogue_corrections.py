@@ -1131,3 +1131,57 @@ def test_nature_spirit_follows_the_revision_242_capture():
     grey = variants["talking-to-filliman-grey-stone"][1]
     assert grey["text"] == "If the player uses the bloom spell scroll on the grey stone:"
     assert grey["steps"][0]["text"] == "The stone seems to absorb the spell scroll."
+
+
+def test_fremennik_trials_follows_the_revision_241_242_captures():
+    sources = json.loads(
+        (config.DATA_PATH / "dialogues" / "capture-sources.json").read_text(encoding="utf-8")
+    )
+    page = json.loads((config.DATA_PATH / "dialogues/quest-pages.json").read_text())[
+        "Transcript:The Fremennik Trials"
+    ]
+    source = sources["The Fremennik Trials"]
+    assert source["revision"] == page["revision"]
+    raw = apply_capture_lines("The Fremennik Trials", page["wikitext"], source, page["revision"])
+    assert raw == apply_capture_lines("The Fremennik Trials", page["wikitext"], source, page["revision"])
+    with pytest.raises(ValueError, match="Stale dialogue capture source"):
+        apply_capture_lines("The Fremennik Trials", "\n" + page["wikitext"], source, page["revision"])
+
+    variants = json.loads((config.DOCS_PATH / "npc-dialogues.json").read_text())["The Fremennik Trials"]["variants"]
+    text = json.dumps(variants)
+    # Brundt greets before his first menu (local 1002236 t3093).
+    start = variants["starting-off-talking-to-brundt-the-chieftain"]
+    assert start[0]["text"] == "Greetings outerlander!" and start[1]["type"] == "choice"
+    # Seven votes: the acceptance comes before the reminder and ends the talk (t10284-10305).
+    votes = variants["the-council-members-talking-to-brundt"]
+    accept = next(index for index, step in enumerate(votes) if step.get("id") == "Ve_OpV")
+    remember = next(index for index, step in enumerate(votes) if str(step.get("text", "")).startswith("Remember:"))
+    assert accept < remember
+    assert votes[accept]["steps"][-1]["type"] == "end"
+    assert votes[accept]["steps"][-2]["id"] == "3gWp4j"
+    # Manni (t3266-3300) and the longhall's shout (t5812).
+    assert "Ah, I see you have your keg of beer." in text and "As, I see" not in text
+    assert "As you wish outerlander; I will drink first" in text
+    assert "I canna drink another drop! I alsho feel veddy, veddy ill..." in text
+    assert '"What was THAT?"' in text
+    # Tuning (local 1001364 t2714-2728) and the Champions' Guild ballad (1002236 t5726-5738).
+    assert "Doh Ray Me So." in text and "Dor Ray" not in text
+    assert "Your lyre is perfectly tuned." in text and "Your lure" not in text
+    for line in ("The thought of lots of questing,", "Leaves some people unfulfilled,",
+                 "But I have done my simple best, in", "Entering the Champions' Guild."):
+        assert line in text
+    # The performance ends as live sends it (t5742-5752): messages, then Olaf's two lines.
+    perform = json.dumps(variants["the-council-members-olaf-the-bard-performing-with-the-lyre"])
+    order = ["Your lyre is perfectly tuned.", "Congratulations! You have completed the Bard's Trial!",
+             "As you finished playing you felt Fossegrimen's power leave you...",
+             "You are one of the greatest bards I have ever had the pleasure of watching performing!\"",
+             "You have certainly earned my vote! I hope we can duet together soon!",
+             "You feel the musical ability from the Fossegrimen leave you..."]
+    assert [perform.index(line) for line in order] == sorted(perform.index(line) for line in order)
+    # Koschei's overheads (t8412; local 1001646 t2331, t2440) and Thorvald after the fight (t2703-2709).
+    assert "Outerlander... you made a mistake coming down here!" in text
+    assert "What kind of person calls [him/her]self [player name]?" in text
+    assert "Hey outerlander! Let's see what you have!" in text
+    assert "The death was your own!" in text and "THAT is bravery." in text
+    # The unicorn head when its disk is already taken (t3145, t3163).
+    assert "It's unusual because you removed it already!" in text
