@@ -3277,5 +3277,182 @@
         ]
       }
     ]
+  },
+  "The Hand in the Sand": {
+    "revision": 15263349,
+    "reason": "The Hand in the Sand as the revision 242 capture plays it, where the Wiki's markup does not: the quest's start prompt (the Wiki writes it as prose), the bell conversation before Zogre Flesh Eaters (the Wiki nests the ringing lines under the Zogre-completed condition and the hand hand-in under 'inside the guild', so the bell never reaches it), the player's own question before Sandy's second and third answers (the Wiki has only the first), and the runes-and-sand hand-in, where the Wiki leaves the forgotten-items line outside its condition and repeats Zavistic's greeting. The Wiki's own wording is kept everywhere, including where the capture words a line differently.",
+    "sources": [
+      "RSProx capture of a whole run of the quest (revision 242, SHA-256 a90f3c41117051ecbdb5f48b381d3cd8e8b639c637621502de67f72a8d5d4ea8): the start prompt at tick 7264, the bell at 7398-7474, Sandy's questions at 8302-8353, the runes and sand at 8578-8593",
+      "Transcript:The Hand in the Sand revision 15263349 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 18,
+        "sha256": "b2f968ad12848c4e6418dccbab25691c5a57d3eda3e2f531badd4973eeff04ab",
+        "text": "** {{tselect|Start The Hand in the Sand quest?}}"
+      },
+      {
+        "line": 79,
+        "sha256": "140ca1cd449263fef8d99ca68f762a281fc533611c857a36c0e1d57d26f11665",
+        "text": "** {{tcond|If the player has completed Zogre Flesh Eaters:}}"
+      },
+      {
+        "line": 80,
+        "sha256": "f8a7e1f357e919e15be7f62a72e940f8388fe6badc1b7f71027cc41f041fc725",
+        "text": "*** '''Zavistic Rarve:''' What are you doing...Oh, it's you...sorry...didn't realise...what can I do for you?"
+      },
+      {
+        "line": 81,
+        "sha256": "1d858e901835dda024663c2901a9455d0b4fe3818d527f73ab00b8e6b997a4d9",
+        "text": "*** {{topt|quest=No|I'm here about the sicks...err Zogres}}"
+      },
+      {
+        "line": 82,
+        "sha256": "afd684b3be09126a30b0d39b039a5ea936dd8ec7033ca605807d173a634ea2c7",
+        "text": "*** {{topt|I have a rather sandy problem that I'd like to palm off on you.}}"
+      },
+      {
+        "line": 83,
+        "sha256": "bb551c2e58110b88acc136327a0deff7c6ad799e2ef989a1c77982e251f0ccbf",
+        "text": "**** {{tact|continue}}"
+      },
+      {
+        "line": 84,
+        "sha256": "d6391a506ea14052b17f38abfad8a166a02eafd0094845f9fac1cd25f9192e1d",
+        "insert_before": [
+          "** {{tcond|If the player has not completed Zogre Flesh Eaters:}}"
+        ],
+        "text": "*** '''Zavistic Rarve:''' What are you doing ringing that bell?! Don't you think some of us have work to do?"
+      },
+      {
+        "line": 85,
+        "sha256": "05036abc35e5a96d60716af02850084a6fc8b5359b050ca71efd56023e1ac3a4",
+        "text": "*** '''Player:''' But I was told to ring the bell if I wanted some attention."
+      },
+      {
+        "line": 86,
+        "sha256": "b45b0fffb2212cb04e0fbf25f5f69a80cd722f2344664a152ef8350f164f3bd2",
+        "text": "*** '''Zavistic Rarve:'''Well...anyway...we're very busy here, hurry up what do you want?"
+      },
+      {
+        "line": 87,
+        "sha256": "010f2c1ac1c5bf3eba481086d44c8df960fe9fc937c3ff87fb5cf3c5ae1cc6f5",
+        "text": ""
+      },
+      {
+        "line": 92,
+        "sha256": "87c8af5487cb87ea037c3d84f0e1f0ce16d3722461494b8219fcc17fc2307ff2",
+        "text": "* {{tcond|If the player does not have the beer soaked hand in their inventory:}}"
+      },
+      {
+        "line": 93,
+        "sha256": "7ca3bd174858d86485afb44599ec37c1c85b3817f738feee2389245d6ddc0c1b",
+        "text": "** {{tbox|Maybe you should have the hand with you before speaking to Zavistic.}}"
+      },
+      {
+        "line": 94,
+        "sha256": "391eafbf8acc133926d98989b14bc186d262be111047edd84e5fc8253ff45ecc",
+        "text": "** {{tact|end}}"
+      },
+      {
+        "line": 95,
+        "sha256": "eaf7c8fea526cac8bac0ffd99764c8778657aa9a29f10442339a4330ab2fb1b7",
+        "text": "* {{tcond|If the player has the beer soaked hand in their inventory:}}"
+      },
+      {
+        "line": 96,
+        "sha256": "3c553c5981cd35225e4f4728e259e00e9c1d189ac2eb1eb27a78ff0664a7ed44",
+        "text": "** {{tbox|pic=Beer soaked hand detail.png|You wave the hand at the wizard.}}"
+      },
+      {
+        "line": 97,
+        "sha256": "d13749efcc37c56ca71f25785784b7addb6672959c657786f959b45494045a77",
+        "text": "** '''Player:''' Ummm... Do you have all your wizards?"
+      },
+      {
+        "line": 98,
+        "sha256": "a4a821802a4bc61863b4d93602f63f43501ceab79b5af78c989ef7d1fe112e69",
+        "text": "** '''Zavistic Rarve:''' All my.... whatever do you mean...?"
+      },
+      {
+        "line": 99,
+        "sha256": "c40b9107d96d4037c79511d1aad87b503a24f637e50b17d516fb34228d6ccf6c",
+        "text": "** '''Player:''' The Guard Captain asked me to see if you have any... missing... wizards."
+      },
+      {
+        "line": 100,
+        "sha256": "501c82a0ebbe1e33c867eb0bdd1b04dfde386093074ccb7530ea2eb04712fc2d",
+        "text": "** '''Zavistic Rarve:''' That's silly! No one would kill a wizard... would they?"
+      },
+      {
+        "line": 101,
+        "sha256": "6d40ea23fa6233c38d36232f7df69ed23d385f15d16afd8622cc47e632061550",
+        "text": "** '''Player:''' Erm... no..."
+      },
+      {
+        "line": 102,
+        "sha256": "4685f8efc83e02cd7453493b684c953d2eb546f7edf8ac93f57426d99c5c2191",
+        "text": "** '''Player:''' Well.. maybe, you see Bert found this hand and it might belong to.. a wizard!"
+      },
+      {
+        "line": 103,
+        "sha256": "73774d94e823b00e0b91294c6499bf874f81a8d4e9cb86a1104a402187e6c6be",
+        "text": "** '''Zavistic Rarve:''' Bert? Ahh yes, the sandman who seems to have been working very long hours recently. Let's see that hand..."
+      },
+      {
+        "line": 104,
+        "sha256": "aea2507ed7f79fedc2a50ea956e02c914da166b0489b8e93c60c3fe6f58a100a",
+        "text": "** {{tbox|pic=Beer soaked hand detail.png|You hand it over.}}"
+      },
+      {
+        "line": 105,
+        "sha256": "8322e8d581610d9a1d958ca69ebd6dee4b9531cfb2261e3a07a77920f6053c4a",
+        "text": "** '''Zavistic Rarve:''' Oh my! This is most definitely Clarence, my most able student! You must find out who did this!"
+      },
+      {
+        "line": 106,
+        "sha256": "4ed8824ffbb9b5e577cf24411d3b73a6ea520743f51682e858a19dc1026dd6f2",
+        "text": "** '''Player:''' Do you have any input as to the matter at hand?"
+      },
+      {
+        "line": 107,
+        "sha256": "5b2d843e16bb024bdf69ee243bb8f1f5b22d9cada2e1cb28f9a60ab1d50ef78e",
+        "text": "** '''Zavistic Rarve:''' Well.... Ask Bert about the long hours he's been working, that sounds suspicious to me. Digging things up at all hours of the day isn't natural."
+      },
+      {
+        "line": 108,
+        "sha256": "391eafbf8acc133926d98989b14bc186d262be111047edd84e5fc8253ff45ecc",
+        "text": "** {{tact|end}}"
+      },
+      {
+        "line": 399,
+        "sha256": "578efb56d4e60884466ed413895c26c646c7ddef24261f29729b0f398d3b8672",
+        "insert_before": [
+          "*** '''Player:''' Why doesn't Bert remember the change in his hours?"
+        ]
+      },
+      {
+        "line": 407,
+        "sha256": "d0eb6b56bfc04ebe62f0df243b0d51598e11ee2329337e372f131926b4bc0d68",
+        "insert_before": [
+          "*** '''Player:''' What happened to the wizard?"
+        ]
+      },
+      {
+        "line": 453,
+        "sha256": "9d6af8d28c4bba979bb85b97d0f6a0a1bd4998067cf5c93b5f42aeccea237239",
+        "text": "**** '''Zavistic Rarve:''' You really mean you forgot? Bring me 5 earth runes and 1 bucket of sand to help stop that moneygrabbing Sandy!"
+      },
+      {
+        "line": 454,
+        "sha256": "391eafbf8acc133926d98989b14bc186d262be111047edd84e5fc8253ff45ecc",
+        "text": "**** {{tact|end}}"
+      },
+      {
+        "line": 455,
+        "sha256": "f8a7e1f357e919e15be7f62a72e940f8388fe6badc1b7f71027cc41f041fc725",
+        "text": ""
+      }
+    ]
   }
 }

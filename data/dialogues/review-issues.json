@@ -62307,11 +62307,6 @@
       "text": "getting the hand originally from bert without inventory space"
     },
     {
-      "line": 18,
-      "reason": "Unrecognised markup retained",
-      "raw": "Start The Hand in the Sand quest?"
-    },
-    {
       "line": 73,
       "reason": "Unrecognised markup retained",
       "raw": "The Guard Captain fished the hand out of his beer and hands it to you."
@@ -62322,47 +62317,42 @@
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 87,
+      "line": 320,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 319,
+      "line": 396,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 395,
-      "reason": "Unresolved dialogue reference",
-      "raw": "{{tact|continue}}"
-    },
-    {
-      "line": 397,
+      "line": 398,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
-    },
-    {
-      "line": 403,
-      "reason": "Unresolved dialogue reference",
-      "raw": "{{tact|continue}}"
     },
     {
       "line": 405,
       "reason": "Unresolved dialogue reference",
+      "raw": "{{tact|continue}}"
+    },
+    {
+      "line": 407,
+      "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
     },
     {
-      "line": 409,
+      "line": 412,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 411,
+      "line": 414,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
     },
     {
-      "line": 439,
+      "line": 442,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     }

@@ -1635,3 +1635,50 @@ def test_zogre_flesh_eaters_capture_lines_add_what_the_wiki_lacks():
     assert balm[2]["text"] == "If the player has not learned how to cure the disease:"
     assert balm[2]["steps"][-1] == {"type": "end"}
     assert balm[-1]["text"] == "You sell the potion and get 650 coins in return."
+
+
+def test_the_hand_in_the_sand_follows_the_capture_where_the_wiki_markup_does_not():
+    source = json.loads(
+        (config.DATA_PATH / "dialogues" / "capture-sources.json").read_text(encoding="utf-8")
+    )["The Hand in the Sand"]
+    page = json.loads((config.DATA_PATH / "dialogues/quest-pages.json").read_text())[
+        "Transcript:The Hand in the Sand"
+    ]
+    assert source["revision"] == page["revision"]
+    raw = apply_capture_lines("The Hand in the Sand", page["wikitext"], source, page["revision"])
+    assert raw == apply_capture_lines("The Hand in the Sand", page["wikitext"], source, page["revision"])
+    with pytest.raises(ValueError, match="Stale dialogue capture source"):
+        apply_capture_lines("The Hand in the Sand", "\n" + page["wikitext"], source, page["revision"])
+    variants = json.loads((config.DOCS_PATH / "npc-dialogues.json").read_text())["The Hand in the Sand"]["variants"]
+    # The start prompt (capture tick 7264).
+    start = variants["talking-to-bert"][3]["options"][1]["steps"][-1]
+    assert start["prompt"] == "Start The Hand in the Sand quest?"
+    assert [option["text"] for option in start["options"]] == ["Yes.", "No."]
+    # The bell before Zogre Flesh Eaters (ticks 7398-7474): the ringing lines, then the hand.
+    zavistic = variants["talking-to-zavistic-rarve"]
+    bell = zavistic[0]
+    assert bell["text"] == "Speaking to Zavistic Rarve via the bell:"
+    assert [branch["text"] for branch in bell["steps"]] == [
+        "If the player has completed Zogre Flesh Eaters:",
+        "If the player has not completed Zogre Flesh Eaters:",
+    ]
+    assert bell["steps"][1]["steps"][0]["text"].startswith("What are you doing ringing that bell?!")
+    assert [step["text"] for step in zavistic[1:]] == [
+        "Speaking to Zavistic Rarve inside the guild:",
+        "If the player does not have the beer soaked hand in their inventory:",
+        "If the player has the beer soaked hand in their inventory:",
+    ]
+    assert zavistic[-1]["steps"][0]["text"] == "You wave the hand at the wizard."
+    # The player asks each question before Sandy answers (ticks 8313, 8334).
+    questions = variants["the-truth-serum-talking-to-sandy-afterwards"][1]["steps"][2]["options"]
+    for option in questions[:3]:
+        assert option["steps"][0] == {"player": option["text"]}
+    # One greeting before the runes and sand; the forgotten-items line is its condition's (ticks 8578-8593).
+    runes = variants["returning-back-to-zavistic-with-the-magical-orb-talking-to-zavistic-rarve-again"]
+    assert len(runes) == 1
+    forgot = runes[0]["steps"][0]["options"][1]["steps"][0]
+    assert forgot["text"] == "If the player doesn't have the required items:"
+    assert forgot["steps"][-1] == {"type": "end"}
+    assert runes[0]["steps"][1] == {"player": "I've brought what you wanted, what are you going to do?"}
+    # The Wiki's own wording stays where the capture words a line differently.
+    assert "You pour the serum in Sandy's coffee, the a little while later watch him drink it." in json.dumps(variants)
