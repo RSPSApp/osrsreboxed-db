@@ -1635,3 +1635,41 @@ def test_zogre_flesh_eaters_capture_lines_add_what_the_wiki_lacks():
     assert balm[2]["text"] == "If the player has not learned how to cure the disease:"
     assert balm[2]["steps"][-1] == {"type": "end"}
     assert balm[-1]["text"] == "You sell the potion and get 650 coins in return."
+
+
+def test_cabin_fever_capture_lines_add_what_the_wiki_lacks():
+    source = json.loads(
+        (config.DATA_PATH / "dialogues" / "capture-sources.json").read_text(encoding="utf-8")
+    )["Cabin Fever"]
+    page = json.loads((config.DATA_PATH / "dialogues/quest-pages.json").read_text())[
+        "Transcript:Cabin Fever"
+    ]
+    assert source["revision"] == page["revision"]
+    raw = apply_capture_lines("Cabin Fever", page["wikitext"], source, page["revision"])
+    assert raw == apply_capture_lines("Cabin Fever", page["wikitext"], source, page["revision"])
+    with pytest.raises(ValueError, match="Stale dialogue capture source"):
+        apply_capture_lines("Cabin Fever", "\n" + page["wikitext"], source, page["revision"])
+    variants = json.loads((config.DOCS_PATH / "npc-dialogues.json").read_text())["Cabin Fever"]["variants"]
+    # The start prompt and Bill's line after naming his ship (capture ticks 350, 428-433).
+    start = json.dumps(variants["starting-the-quest"])
+    assert '"prompt": "Start the Cabin Fever quest?"' in start
+    assert '"text": "Yes."' in start and '"text": "No."' in start
+    assert start.index("she's at the east dock.") < start.index("I'm all ready te get underway")
+    assert start.index("I'm all ready te get underway") < start.index("ye'll not regret it Cap'n!")
+    # The Wiki's own wording stays where the capture words a line differently.
+    assert "Yes, I am a [man/woman] of my word." in start and "Yes, I keep my word." not in start
+    assert "lily-like" in start
+    # The four lines Bill adds once the holes are fixed (ticks 1219-1228), in live's order.
+    fixed = json.dumps(variants["sort-out-the-leaks-after-all-the-holes-have-been-fixed"])
+    order = [
+        "Good work [lad/lass].",
+        "I'd think ye was a born pirate.",
+        "those cowardly dogs seem a little too scared to swing over.",
+        "Why not pay them a visit and go plunder their hold?",
+        "Gadzooks...",
+        "Look, just go below their decks and search their hold for Plunder.",
+        "Come back here and drop it in the chest in the hold.",
+        "it may take a while for the stuff to reappear.",
+        "Aye aye Cap'n! One plunderin' comin' right up!",
+    ]
+    assert [fixed.index(line) for line in order] == sorted(fixed.index(line) for line in order)

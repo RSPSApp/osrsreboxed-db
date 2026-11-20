@@ -39349,17 +39349,12 @@
       "raw": "{{tact|continues}}"
     },
     {
-      "line": 90,
-      "reason": "Unresolved dialogue reference",
-      "raw": "{{tact|above}}"
-    },
-    {
       "line": 92,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 177,
+      "line": 94,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
@@ -39369,12 +39364,17 @@
       "raw": "{{tact|above}}"
     },
     {
-      "line": 280,
+      "line": 181,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 339,
+      "line": 282,
+      "reason": "Unresolved dialogue reference",
+      "raw": "{{tact|above}}"
+    },
+    {
+      "line": 345,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     }

@@ -3277,5 +3277,57 @@
         ]
       }
     ]
+  },
+  "Cabin Fever": {
+    "revision": 15263353,
+    "reason": "Cabin Fever lines the Wiki lacks, as the revision 242 capture plays them: the quest's start prompt with its Yes. and No. options, Bill Teach's line after naming his ship, and the four lines he adds when the holes are fixed. The Wiki's own wording is kept everywhere else, including where the capture words a line differently.",
+    "sources": [
+      "RSProx capture CabinFever (revision 242.1, SHA-256 bc530d37523fd6d8ff2774c69c488e28eff622aa0d63ff95134c11eb98fc7f8d, a whole run of the quest: the start prompt at ticks 350 and 428, Bill's ship line at 433, the holes-fixed talk at 1212-1231)",
+      "Transcript:Cabin Fever revision 15263353 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 43,
+        "sha256": "7b5e8c5906a96d1432e228f0796f811de451fe7673d1c1345c1843f69e18ed03",
+        "insert_before": [
+          "** {{tselect|Start the Cabin Fever quest?}}"
+        ],
+        "text": "** {{topt|Yes.}}"
+      },
+      {
+        "line": 47,
+        "sha256": "73d6dfdb6e57fe64d68e76a4826aed69fd535c8d3eef93cc3468eb4b6fe10ebb",
+        "insert_before": [
+          "*** '''Bill Teach:''' I'm all ready te get underway, and I'll see ye onboard when yer ready te go too."
+        ]
+      },
+      {
+        "line": 50,
+        "sha256": "2b1dd3e21b3edd7c9edc87608f322c7312e74c32901ec389d5251b29a937043a",
+        "text": "** {{topt|No.}}"
+      },
+      {
+        "line": 316,
+        "sha256": "bee65f5e4495821ed07ff71edcd4c30fab6dc8ad2d58df999d339611b53c64e0",
+        "insert_before": [
+          "* '''Bill Teach:''' If ye weren't set on yellin' 'Arr!' all the time I'd think ye was a born pirate.",
+          "* '''Bill Teach:''' Regardless, those cowardly dogs seem a little too scared to swing over."
+        ]
+      },
+      {
+        "line": 319,
+        "sha256": "3edfb6aecb432cba34309e163106d7357a02b007bdacb2b4f2f94f714f496e11",
+        "insert_before": [
+          "* '''Bill Teach:''' Look, just go below their decks and search their hold for Plunder."
+        ]
+      },
+      {
+        "line": 320,
+        "sha256": "ecb38c8f617dd8755afb77489ca96f2705c65e3c2db4f7244bb0e8838ce965f8",
+        "insert_before": [
+          "* '''Bill Teach:''' Ye should be able to round up ten loads of the stuff if ye keep searchin' the hold, but it may take a while for the stuff to reappear."
+        ]
+      }
+    ]
   }
 }
