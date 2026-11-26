@@ -72,7 +72,7 @@
     ],
     "standard-dialogue-after-completing-family-pest": [
       {
-        "npc": "I have received word from my father that you assisted us again! I get the feeling you weren't going to stop trying until you did though."
+        "npc": "I received word from my father that you assisted us again! I get the feeling you weren't going to stop trying until you did though."
       },
       {
         "type": "condition",
@@ -82,9 +82,14 @@
             "npc": "As a token of my appreciation, I will happily forge you as many pairs of Goldsmith gauntlets as you desire."
           },
           {
+            "type": "input",
+            "text": "How many would you like to take?",
+            "id": "lEtW8v"
+          },
+          {
             "type": "message",
-            "text": "Avan hands you a pair of Goldsmith gauntlets.",
-            "id": "gqV59f"
+            "text": "Avan hands you some goldsmith gauntlets.",
+            "id": "WoB3G1"
           },
           {
             "npc": "You will find the rate you gain experience when smelting gold much improved whilst wearing these gauntlets."

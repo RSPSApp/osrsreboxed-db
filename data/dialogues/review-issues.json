@@ -8399,12 +8399,12 @@
       "raw": "{{tact|continues}}"
     },
     {
-      "line": 112,
+      "line": 115,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 135,
+      "line": 138,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     }
@@ -44533,54 +44533,66 @@
       "raw": "{{tact|above}}"
     },
     {
-      "line": 128,
+      "line": 145,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continues}}"
     },
     {
-      "line": 136,
+      "line": 153,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 312,
+      "line": 331,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 348,
+      "line": 367,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
     },
     {
-      "line": 352,
+      "line": 371,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
     },
     {
-      "line": 356,
+      "line": 375,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
     },
     {
-      "line": 366,
+      "line": 385,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 368,
+      "line": 387,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 393,
+      "line": 412,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continues}}"
     },
     {
-      "line": 396,
+      "line": 415,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continues}}"
+    }
+  ],
+  "Transcript:Family Pest": [
+    {
+      "line": 182,
+      "reason": "Unresolved dialogue reference",
+      "raw": "{{tact|above}}"
+    },
+    {
+      "line": 184,
+      "reason": "Unresolved dialogue reference",
+      "raw": "{{tact|above}}"
     }
   ],
   "Transcript:Fight Arena/Historical": [

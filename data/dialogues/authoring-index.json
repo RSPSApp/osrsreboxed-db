@@ -85085,6 +85085,10 @@
         "Caleb",
         "Talking to Caleb again"
       ],
+      "caleb-talking-to-caleb-after-getting-his-crest-piece": [
+        "Caleb",
+        "Talking to Caleb after getting his crest piece"
+      ],
       "caleb-talking-to-caleb-again-after-obtaining-the-first-crest-piece": [
         "Caleb",
         "Talking to Caleb again after obtaining the first crest piece"
@@ -85206,6 +85210,76 @@
       "post-quest-dialogue-talking-to-johnathon-after-the-quest": [
         "Post quest dialogue",
         "Talking to Johnathon after the quest"
+      ]
+    }
+  },
+  "Transcript:Family Pest": {
+    "source": {
+      "page": "Transcript:Family Pest",
+      "revision": 15329029
+    },
+    "participants": [
+      "Avan",
+      "Caleb",
+      "Dimintheis",
+      "Johnathon"
+    ],
+    "sections": {
+      "starting-out-talking-to-dimintheis": [
+        "Starting out",
+        "Talking to Dimintheis"
+      ],
+      "starting-out-talking-to-dimintheis-again": [
+        "Starting out",
+        "Talking to Dimintheis again"
+      ],
+      "avan-talking-to-avan": [
+        "Avan",
+        "Talking to Avan"
+      ],
+      "avan-talking-to-avan-again": [
+        "Avan",
+        "Talking to Avan again"
+      ],
+      "caleb-talking-to-caleb": [
+        "Caleb",
+        "Talking to Caleb"
+      ],
+      "caleb-talking-to-caleb-again": [
+        "Caleb",
+        "Talking to Caleb again"
+      ],
+      "johnathon-talking-to-johnathon": [
+        "Johnathon",
+        "Talking to Johnathon"
+      ],
+      "johnathon-talking-to-johnathon-again": [
+        "Johnathon",
+        "Talking to Johnathon again"
+      ],
+      "returning-to-dimintheis-talking-to-dimintheis": [
+        "Returning to Dimintheis",
+        "Talking to Dimintheis"
+      ],
+      "returning-to-dimintheis-talking-to-dimintheis-again-before-handing-out-the-money": [
+        "Returning to Dimintheis",
+        "Talking to Dimintheis again before handing out the money"
+      ],
+      "post-miniquest-dialogue-dimintheis": [
+        "Post-miniquest dialogue",
+        "Dimintheis"
+      ],
+      "post-miniquest-dialogue-avan": [
+        "Post-miniquest dialogue",
+        "Avan"
+      ],
+      "post-miniquest-dialogue-caleb": [
+        "Post-miniquest dialogue",
+        "Caleb"
+      ],
+      "post-miniquest-dialogue-johnathon": [
+        "Post-miniquest dialogue",
+        "Johnathon"
       ]
     }
   },

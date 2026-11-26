@@ -17,13 +17,13 @@
             ]
           },
           {
-            "text": "I see you are a chef, will you cook me anything?",
+            "text": "I see you are a chef. Can you cook me anything?",
             "steps": [
               {
-                "player": "I see you are a chef... Could you cook me something?"
+                "player": "I see you are a chef. Can you cook me anything?"
               },
               {
-                "npc": "I would, but I am very busy. I am trying to increase my reknown as one of the worlds' leading chefs by preparing a special and unique fish salad."
+                "npc": "I would, but I am very busy. I am trying to increase my reknown as one of the world's leading chefs by preparing a special and unique fish salad."
               }
             ]
           }
@@ -97,7 +97,7 @@
             "text": "Gauntlets",
             "steps": [
               {
-                "npc": "I hear you have brought the completed crest to my father. I must say, that was awfully impressive work."
+                "npc": "I heard you brought the completed crest to my father. I must say, that was awfully impressive work."
               },
               {
                 "player": "It was easy really."
@@ -205,19 +205,24 @@
     ],
     "standard-dialogue-after-completing-family-pest": [
       {
-        "npc": "I have received word from my father that you assisted us again! I get the feeling you weren't going to stop trying until you did though."
+        "npc": "I received word from my father that you assisted us again! I get the feeling you weren't going to stop trying until you did though."
       },
       {
         "type": "condition",
         "text": "If this is the first time the player has talked to Caleb after completing Family Pest:",
         "steps": [
           {
-            "npc": "As thanks, I'll provide you with as many pairs of Cooking gauntlets as you wish."
+            "npc": "As thanks, I'll provide you with as many pairs of cooking gauntlets as you wish."
+          },
+          {
+            "type": "input",
+            "text": "How many would you like to take?",
+            "id": "Dkvlsw"
           },
           {
             "type": "message",
-            "text": "Caleb hands you a pair of Cooking gauntlets.",
-            "id": "Jsoiaj"
+            "text": "Caleb hands you some cooking gauntlets.",
+            "id": "Tj45hY"
           },
           {
             "npc": "You will find the rate you burn certain foods is much reduced whilst wearing these gauntlets."

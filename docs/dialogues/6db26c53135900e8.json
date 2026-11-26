@@ -359,6 +359,19 @@
               },
               {
                 "type": "condition",
+                "text": "If the player has their goldsmith gauntlets:",
+                "steps": [
+                  {
+                    "npc": "You asked Avan to convert them into goldsmithing gauntlets, didn't you? I think you must still have them somewhere."
+                  },
+                  {
+                    "type": "end"
+                  }
+                ],
+                "id": "6oqHtM"
+              },
+              {
+                "type": "condition",
                 "text": "If the player has their gauntlets:",
                 "steps": [
                   {
@@ -446,7 +459,7 @@
             ]
           },
           {
-            "text": "The gauntlets are a family heirloom?",
+            "text": "I thought these gauntlets were a family heirloom.",
             "steps": [
               {
                 "player": "I thought these gauntlets were a family heirloom. How do you have several of them?"
@@ -474,7 +487,7 @@
                     "steps": [
                       {
                         "type": "jump",
-                        "id": "zokRtm",
+                        "id": "hk0U76",
                         "steps": [
                           {
                             "type": "call",

@@ -69,19 +69,24 @@
     ],
     "standard-dialogue-after-completing-family-pest": [
       {
-        "npc": "I have received word from my father that you assisted us again! I get the feeling you weren't going to stop trying until you did though."
+        "npc": "I received word from my father that you assisted us again! I get the feeling you weren't going to stop trying until you did though."
       },
       {
         "type": "condition",
         "text": "If this is the first time the player has talked to Johnathon after completing Family Pest:",
         "steps": [
           {
-            "npc": "If you want, I'll provide you with as many pairs of Chaos gauntlets as you wish to say thanks!"
+            "npc": "If you want, I'll provide you with as many pairs of chaos gauntlets as you wish, to say thanks."
+          },
+          {
+            "type": "input",
+            "text": "How many would you like to take?",
+            "id": "9bws-b"
           },
           {
             "type": "message",
-            "text": "Johnathon hands you a pair of Chaos gauntlets.",
-            "id": "eNdtqa"
+            "text": "Johnathon hands you some chaos gauntlets.",
+            "id": "xIoYqJ"
           },
           {
             "npc": "You will find the power of bolt spells increases substantially whilst wearing these gauntlets."

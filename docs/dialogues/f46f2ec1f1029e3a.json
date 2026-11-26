@@ -4824,68 +4824,7 @@
                 ]
               },
               {
-                "text": "The gauntlets are a family heirloom?",
-                "steps": [
-                  {
-                    "player": "I thought these gauntlets were a family heirloom. How do you have several of them?"
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Dimintheis",
-                    "text": "I'm sorry for lying to you, [player name], it was just all part of the ploy to make our family seem wealthy.",
-                    "speaker_ids": [
-                      4984,
-                      12629
-                    ]
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Dimintheis",
-                    "text": "They're not heirlooms at all, we have crates full of the things hidden away in the basement.",
-                    "speaker_ids": [
-                      4984,
-                      12629
-                    ]
-                  },
-                  {
-                    "player": "And you still think that these are an acceptable reward for what I have done for your family?"
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Dimintheis",
-                    "text": "It's all I have to give...",
-                    "speaker_ids": [
-                      4984,
-                      12629
-                    ]
-                  },
-                  {
-                    "player": "Very well, I do admit, they are useful."
-                  },
-                  {
-                    "type": "choice",
-                    "options": [
-                      {
-                        "text": "Could I get some more gauntlets, please?",
-                        "steps": [
-                          {
-                            "type": "jump",
-                            "reference": "above",
-                            "id": "zokRtm"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "See you another time, Dimintheis.",
-                        "steps": [
-                          {
-                            "player": "See you another time, Dimintheis."
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                "text": "The gauntlets are a family heirloom?"
               }
             ]
           }
@@ -4992,68 +4931,7 @@
                 ]
               },
               {
-                "text": "The gauntlets are a family heirloom?",
-                "steps": [
-                  {
-                    "player": "I thought these gauntlets were a family heirloom. How do you have several of them?"
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Dimintheis",
-                    "text": "I'm sorry for lying to you, [player name], it was just all part of the ploy to make our family seem wealthy.",
-                    "speaker_ids": [
-                      4984,
-                      12629
-                    ]
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Dimintheis",
-                    "text": "They're not heirlooms at all, we have crates full of the things hidden away in the basement.",
-                    "speaker_ids": [
-                      4984,
-                      12629
-                    ]
-                  },
-                  {
-                    "player": "And you still think that these are an acceptable reward for what I have done for your family?"
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Dimintheis",
-                    "text": "It's all I have to give...",
-                    "speaker_ids": [
-                      4984,
-                      12629
-                    ]
-                  },
-                  {
-                    "player": "Very well, I do admit, they are useful."
-                  },
-                  {
-                    "type": "choice",
-                    "options": [
-                      {
-                        "text": "Could I get some more gauntlets, please?",
-                        "steps": [
-                          {
-                            "type": "jump",
-                            "reference": "above",
-                            "id": "zokRtm"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "See you another time, Dimintheis.",
-                        "steps": [
-                          {
-                            "player": "See you another time, Dimintheis."
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                "text": "The gauntlets are a family heirloom?"
               }
             ]
           }

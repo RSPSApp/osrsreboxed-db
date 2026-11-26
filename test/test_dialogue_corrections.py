@@ -2240,3 +2240,73 @@ def test_the_golem_capture_lines_and_the_curators_fossil_island_menu():
     ]
     # The Wiki's own wording stays where the capture words a line differently.
     assert "Damage... severe... Task... incomplete..." in json.dumps(start)
+
+
+def test_family_crest_and_family_pest_follow_the_revision_242_captures():
+    sources = json.loads(
+        (config.DATA_PATH / "dialogues" / "capture-sources.json").read_text(encoding="utf-8")
+    )
+    corrections = json.loads(
+        (config.DATA_PATH / "dialogues" / "corrections.json").read_text(encoding="utf-8")
+    )
+    quests = json.loads((config.DATA_PATH / "dialogues/quest-pages.json").read_text())
+    # Family Pest's miniquest transcript is a cached source page, so the export has the page.
+    assert "Transcript:Family Pest" in quests
+    for name, cache, title in (
+        ("Family Crest", "quest-pages", "Transcript:Family Crest"),
+        ("Family Pest", "quest-pages", "Transcript:Family Pest"),
+        ("Dimintheis", "wiki-pages", "Transcript:Dimintheis"),
+        ("Caleb", "wiki-pages", "Transcript:Caleb"),
+        ("Avan", "wiki-pages", "Transcript:Avan"),
+        ("Johnathon", "wiki-pages", "Transcript:Johnathon"),
+    ):
+        # Source inputs over the cached revision, not edits of the generated record.
+        assert name not in corrections
+        source = sources[name]
+        page = json.loads((config.DATA_PATH / f"dialogues/{cache}.json").read_text())[title]
+        assert source["revision"] == page["revision"]
+        lines = page["wikitext"].splitlines()
+        for fix in source["lines"]:
+            assert hashlib.sha256(lines[fix["line"] - 1].encode()).hexdigest() == fix["sha256"]
+        raw = apply_capture_lines(name, page["wikitext"], source, page["revision"])
+        assert raw == apply_capture_lines(name, page["wikitext"], source, page["revision"])
+        with pytest.raises(ValueError, match="Stale dialogue capture source"):
+            apply_capture_lines(name, page["wikitext"], source, page["revision"] + 1)
+
+    records = json.loads(
+        (config.DOCS_PATH / "npc-dialogues.json").read_text(),
+        object_hook=lambda node: {k: v for k, v in node.items() if k not in ("speaker_ids", "id")},
+    )
+    words = lambda steps: [step.get("player") or step.get("npc") or f"{step.get('speaker', step.get('type'))}: {step.get('text')}" for step in steps]
+    crest = records["Family Crest"]["variants"]
+    # Caleb's cook option and the player's "to be restored" (ticks 330, 339).
+    assert [option["text"] for option in crest["caleb"][1]["options"]][2] == "I see you are a chef. Can you cook me anything?"
+    assert crest["caleb"][1]["options"][0]["steps"][2] == {"player": "I have been sent by your father. He wishes the Fitzharmon Crest to be restored."}
+    # Caleb between handing over his piece and telling you about Avan (ticks 385-392).
+    after_piece = crest["caleb-talking-to-caleb-after-getting-his-crest-piece"]
+    assert words(after_piece[:1]) == ["Caleb: Hello again. I'm just putting the finishing touches to my masterful salad."]
+    assert [option["text"] for option in after_piece[1]["options"]] == ["Uh.. what happened to the rest of the crest?", "Good luck with that then."]
+    # Avan's menu (615) and Boot's "Hello short person." ending the talk during the quest (797-798).
+    assert [option["text"] for option in crest["avan-talking-to-avan"][0]["options"]] == [
+        "Why are you hanging around in a scorpion pit?", "I'm looking for a man named Avan Fitzharmon."]
+    short = crest["avan-boot"][1]["options"][1]
+    assert short["text"] == "Hello short person." and words(short["steps"]) == ["Hello short person."]
+    assert "magicks" in crest["post-quest-dialogue-talking-to-johnathon-after-the-quest"][2]["text"]
+    pest = records["Family Pest"]["variants"]
+    # The smell after a son goes by how many have been asked (3232, 3349), and "Gauntlets" stays beside "Family Pest".
+    johnathon = pest["johnathon-talking-to-johnathon"][0]["options"][0]["steps"]
+    branches = [step for step in johnathon if step.get("type") == "condition"]
+    assert [branch["text"] for branch in branches] == [f"If Johnathon is the {n} brother the player talks to:" for n in ("first", "second", "last")]
+    assert words(branches[0]["steps"])[1] == "message: The sweet smell of the great rewards that may come fades slightly."
+    assert words(branches[1]["steps"])[1] == "message: The sweet smell of the great rewards that may come fades even more."
+    assert [option["text"] for option in pest["johnathon-talking-to-johnathon-again"][0]["options"]] == ["Family Pest", "Gauntlets"]
+    # After Family Pest: the first hand-out asks how many, as live does (6026-6029).
+    post = records["Johnathon"]["variants"]["standard-dialogue-after-completing-family-pest"]
+    assert words(post[:1]) == ["I received word from my father that you assisted us again! I get the feeling you weren't going to stop trying until you did though."]
+    first = post[1]["steps"]
+    assert words(first[:3]) == ["If you want, I'll provide you with as many pairs of chaos gauntlets as you wish, to say thanks.",
+        "input: How many would you like to take?", "message: Johnathon hands you some chaos gauntlets."]
+    # Dimintheis names goldsmith gauntlets (3800).
+    other = records["Dimintheis"]["variants"]["standard-dialogue-after-completing-family-crest"][0]["options"][1]["steps"]
+    named = [step for step in other if step.get("type") == "condition" and step["text"] == "If the player has their goldsmith gauntlets:"]
+    assert words(named[0]["steps"])[0] == "You asked Avan to convert them into goldsmithing gauntlets, didn't you? I think you must still have them somewhere."

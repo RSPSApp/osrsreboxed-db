@@ -340,7 +340,7 @@
                 ]
               },
               {
-                "player": "I have been sent by your father. He wishes the Fitzharmon Crest be restored."
+                "player": "I have been sent by your father. He wishes the Fitzharmon Crest to be restored."
               },
               {
                 "type": "line",
@@ -491,15 +491,15 @@
             ]
           },
           {
-            "text": "I see you are a chef, will you cook me anything?",
+            "text": "I see you are a chef. Can you cook me anything?",
             "steps": [
               {
-                "player": "I see you are a chef... Could you cook me something?"
+                "player": "I see you are a chef. Can you cook me anything?"
               },
               {
                 "type": "line",
                 "speaker": "Caleb",
-                "text": "I would, but I am very busy. I am trying to increase my reknown as one of the worlds' leading chefs by preparing a special and unique fish salad.",
+                "text": "I would, but I am very busy. I am trying to increase my reknown as one of the world's leading chefs by preparing a special and unique fish salad.",
                 "speaker_ids": [
                   4317,
                   5433
@@ -561,64 +561,8 @@
                 "text": "Uh... what happened to the rest of it?",
                 "steps": [
                   {
-                    "player": "Uh... what happened to the rest of it?"
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Caleb",
-                    "text": "Well... my brothers and I had a slight disagreement about it... we all wanted to be heir to my fathers' lands, and we each ended up with a piece of the crest.",
-                    "speaker_ids": [
-                      4317,
-                      5433
-                    ]
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Caleb",
-                    "text": "None of us wanted to give up our rights to our brothers, so we didn't want to give up our pieces of the crest, but none of us wanted to face our father by",
-                    "speaker_ids": [
-                      4317,
-                      5433
-                    ]
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Caleb",
-                    "text": "returning to him with an incomplete crest... We each went our seperate ways many years past, none of us seeing our father or willing to give up our fragments.",
-                    "speaker_ids": [
-                      4317,
-                      5433
-                    ]
-                  },
-                  {
-                    "player": "So do you know where I could find any of your brothers?"
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Caleb",
-                    "text": "Well, we haven't really kept in touch... what with the dispute over the crest and all... I did hear from my brother Avan a while ago though.",
-                    "speaker_ids": [
-                      4317,
-                      5433
-                    ]
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Caleb",
-                    "text": "He said he was on some kind of search for treasure, or gold, or something out in the desert east of Lumbridge. You might want to ask the traders there about him.",
-                    "speaker_ids": [
-                      4317,
-                      5433
-                    ]
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Caleb",
-                    "text": "Avan always did have expensive tastes however. You may find he is not prepared to hand over his crest piece to you as easily as I have.",
-                    "speaker_ids": [
-                      4317,
-                      5433
-                    ]
+                    "type": "call",
+                    "branch": "QoYeTQ"
                   }
                 ]
               },
@@ -643,6 +587,39 @@
           }
         ],
         "id": "rCeyS0"
+      }
+    ],
+    "caleb-talking-to-caleb-after-getting-his-crest-piece": [
+      {
+        "type": "line",
+        "speaker": "Caleb",
+        "text": "Hello again. I'm just putting the finishing touches to my masterful salad.",
+        "speaker_ids": [
+          4317,
+          5433
+        ]
+      },
+      {
+        "type": "choice",
+        "options": [
+          {
+            "text": "Uh.. what happened to the rest of the crest?",
+            "steps": [
+              {
+                "type": "call",
+                "branch": "QoYeTQ"
+              }
+            ]
+          },
+          {
+            "text": "Good luck with that then.",
+            "steps": [
+              {
+                "player": "Good luck with that then."
+              }
+            ]
+          }
+        ]
       }
     ],
     "caleb-talking-to-caleb-again-after-obtaining-the-first-crest-piece": [
@@ -1439,7 +1416,7 @@
         "type": "choice",
         "options": [
           {
-            "text": "Why are you hanging around a in a scorpion pit?",
+            "text": "Why are you hanging around in a scorpion pit?",
             "steps": [
               {
                 "player": "Why are you lurking around a scorpion pit?"
@@ -1457,7 +1434,7 @@
             ]
           },
           {
-            "text": "I'm looking for a man named Avan Fitzharmon",
+            "text": "I'm looking for a man named Avan Fitzharmon.",
             "steps": [
               {
                 "player": "I'm looking for a man... his name is Avan Fitzharmon."
@@ -1655,19 +1632,6 @@
             "steps": [
               {
                 "player": "Hello short person."
-              },
-              {
-                "type": "line",
-                "speaker": "Boot",
-                "text": "Hello tall person.",
-                "speaker_ids": [
-                  4985
-                ]
-              },
-              {
-                "type": "jump",
-                "reference": "initial",
-                "id": "YnSmT9"
               }
             ]
           },
@@ -2366,7 +2330,7 @@
       {
         "type": "line",
         "speaker": "Avan",
-        "text": "I have received word from my father of your assistance to our family in this matter. You have my thanks for restoring our honour.",
+        "text": "I received word from my father of your assistance to our family. You have my thanks for restoring our honour.",
         "speaker_ids": [
           385,
           386,
@@ -2403,7 +2367,7 @@
             "text": "That sounds good, improve them for me.",
             "steps": [
               {
-                "player": "That sounds good, improve them for me!"
+                "player": "That sounds good, improve them for me."
               },
               {
                 "type": "message",
@@ -2449,7 +2413,7 @@
       {
         "type": "line",
         "speaker": "Johnathon",
-        "text": "And right he is at that. Although my skill with Death Rune magiks was not great enough to defeat Chronozon, I am adequately skilled at Chaos Rune magiks.",
+        "text": "And right he is at that. Although my skill with Death Rune magicks was not great enough to defeat Chronozon, I am adequately skilled at Chaos Rune magicks.",
         "speaker_ids": [
           5443,
           5445
@@ -2671,6 +2635,68 @@
       },
       {
         "type": "end"
+      }
+    ],
+    "QoYeTQ": [
+      {
+        "player": "Uh... what happened to the rest of it?"
+      },
+      {
+        "type": "line",
+        "speaker": "Caleb",
+        "text": "Well... my brothers and I had a slight disagreement about it... we all wanted to be heir to my fathers' lands, and we each ended up with a piece of the crest.",
+        "speaker_ids": [
+          4317,
+          5433
+        ]
+      },
+      {
+        "type": "line",
+        "speaker": "Caleb",
+        "text": "None of us wanted to give up our rights to our brothers, so we didn't want to give up our pieces of the crest, but none of us wanted to face our father by",
+        "speaker_ids": [
+          4317,
+          5433
+        ]
+      },
+      {
+        "type": "line",
+        "speaker": "Caleb",
+        "text": "returning to him with an incomplete crest... We each went our seperate ways many years past, none of us seeing our father or willing to give up our fragments.",
+        "speaker_ids": [
+          4317,
+          5433
+        ]
+      },
+      {
+        "player": "So do you know where I could find any of your brothers?"
+      },
+      {
+        "type": "line",
+        "speaker": "Caleb",
+        "text": "Well, we haven't really kept in touch... what with the dispute over the crest and all... I did hear from my brother Avan a while ago though.",
+        "speaker_ids": [
+          4317,
+          5433
+        ]
+      },
+      {
+        "type": "line",
+        "speaker": "Caleb",
+        "text": "He said he was on some kind of search for treasure, or gold, or something out in the desert east of Lumbridge. You might want to ask the traders there about him.",
+        "speaker_ids": [
+          4317,
+          5433
+        ]
+      },
+      {
+        "type": "line",
+        "speaker": "Caleb",
+        "text": "Avan always did have expensive tastes however. You may find he is not prepared to hand over his crest piece to you as easily as I have.",
+        "speaker_ids": [
+          4317,
+          5433
+        ]
       }
     ]
   }

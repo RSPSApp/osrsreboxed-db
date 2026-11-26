@@ -4523,5 +4523,300 @@
         ]
       }
     ]
+  },
+  "Family Crest": {
+    "revision": 15332218,
+    "reason": "Wording and branches as the revision 242 captures send them: the player's 'to be restored', Caleb's cook option, Avan's two options, 'Hello short person.' ending the talk in the quest, Caleb's talk after handing over his piece (before he tells you about Avan), and the post-quest brothers' 'magicks', Avan's greeting and 'improve them for me.'",
+    "sources": [
+      "RSProx capture FamilyCrest + FamilyPest.bin (revision 242, SHA-256 c03a509bec91e3cedcd919eca805c440c2165226418ae77198d130a493bf8e86)",
+      "RSProx capture 20261112T152650-57eba26 (revision 242, SHA-256 0e60f24f72e23bd4809419733adb97e4528a86e5fef0d0484d8e84c3d33e3b40)",
+      "Transcript:Family Crest revision 15332218 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 70,
+        "sha256": "76a122ea446f9ed4045f90935bce8f48a5d178136b30744d2d0b8c7da2a1e154",
+        "text": "** '''Player:''' I have been sent by your father. He wishes the Fitzharmon Crest to be restored."
+      },
+      {
+        "line": 97,
+        "sha256": "22312d9fb5e70638fd5dca9402180bce99611347c0759bc1f16cd1bb9eb65b52",
+        "text": "* {{topt|I see you are a chef. Can you cook me anything?|quest=no}}"
+      },
+      {
+        "line": 124,
+        "sha256": "40d845f4336cd68d10211695170ced7068a40e28e9796e53b048dba5fc307190",
+        "insert_before": [
+          "===Talking to Caleb after getting his crest piece===",
+          "* '''Caleb:''' Hello again. I'm just putting the finishing touches to my masterful salad.",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Uh.. what happened to the rest of the crest?}}",
+          "** '''Player:''' Uh... what happened to the rest of it?",
+          "** '''Caleb:''' Well... my brothers and I had a slight disagreement about it... we all wanted to be heir to my fathers' lands, and we each ended up with a piece of the crest.",
+          "** '''Caleb:''' None of us wanted to give up our rights to our brothers, so we didn't want to give up our pieces of the crest, but none of us wanted to face our father by",
+          "** '''Caleb:''' returning to him with an incomplete crest... We each went our seperate{{sic}} ways many years past, none of us seeing our father or willing to give up our fragments.",
+          "** '''Player:''' So do you know where I could find any of your brothers?",
+          "** '''Caleb:''' Well, we haven't really kept in touch... what with the dispute over the crest and all... I did hear from my brother Avan a while ago though.",
+          "** '''Caleb:''' He said he was on some kind of search for treasure, or gold, or something out in the desert east of Lumbridge. You might want to ask the traders there about him.",
+          "** '''Caleb:''' Avan always did have expensive tastes however. You may find he is not prepared to hand over his crest piece to you as easily as I have.",
+          "** {{tact|end}}",
+          "* {{topt|Good luck with that then.}}",
+          "** '''Player:''' Good luck with that then.",
+          "** {{tact|end}}",
+          ""
+        ]
+      },
+      {
+        "line": 236,
+        "sha256": "79c5f3d29a9d726f5d80fe68a3b07308dae822fed4aedb3f82585d9599ef3473",
+        "text": "* {{topt|Why are you hanging around in a scorpion pit?}}"
+      },
+      {
+        "line": 240,
+        "sha256": "3da41d9e8e0c21e094ff7de339e2a68ca613f10f292ac3c304a19b85f5070dfc",
+        "text": "* {{topt|I'm looking for a man named Avan Fitzharmon.}}"
+      },
+      {
+        "line": 273,
+        "sha256": "48fe917473dd1ac314fc3d1c70f12f7d1625866d8ed6a149554e432c8b4ae8ac",
+        "text": "* {{topt|Hello short person.}}"
+      },
+      {
+        "line": 274,
+        "sha256": "5174c6f0a975a7d2277f41a611b6a8dc1e3947ea85a4d6ce6ecb9cdeda14dc35",
+        "insert_before": [
+          "** '''Player:''' Hello short person.",
+          "** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 421,
+        "sha256": "15733fcc8885aa7817074df73d19789116a72d3aa87f2f563beb2cdb4cb1a18f",
+        "text": "* '''Avan:''' I received word from my father of your assistance to our family. You have my thanks for restoring our honour."
+      },
+      {
+        "line": 427,
+        "sha256": "6fb6ed37163979bda6d1d3e65059dd7916747a084bb8758712857a7b5801aa2e",
+        "text": "** '''Player:''' That sounds good, improve them for me."
+      },
+      {
+        "line": 438,
+        "sha256": "cc1e84c3a18f07c351153fecafa919063bc33ad8ddb1832b0e62fa01c90004be",
+        "text": "* '''Johnathon:''' And right he is at that. Although my skill with Death Rune magicks was not great enough to defeat Chronozon, I am adequately skilled at Chaos Rune magicks."
+      }
+    ]
+  },
+  "Caleb": {
+    "revision": 15255715,
+    "reason": "Wording as the revision 242 capture sends it: the chef option and the player's line ('I see you are a chef. Can you cook me anything?', tick 330), 'world's leading chefs' (331), 'I heard you brought the completed crest' in the gauntlets talk (3517), and 'I received word' and 'cooking gauntlets as you wish.' after Family Pest (6127-6128). After Family Pest the first talk asks how many pairs to take, as the repeat talk does, and the box says 'some' gauntlets (Johnathon ticks 6026-6033, Caleb 6127-6130; Avan's first-talk offer is the Wiki's, with the same prompt).",
+    "sources": [
+      "RSProx capture FamilyCrest + FamilyPest.bin (revision 242, SHA-256 c03a509bec91e3cedcd919eca805c440c2165226418ae77198d130a493bf8e86)",
+      "Transcript:Caleb revision 15255715 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 10,
+        "sha256": "558bbd1e01cfce926108346e8705b11fe0d93905c1460b4d8e600f7008d45687",
+        "text": "* {{topt|I see you are a chef. Can you cook me anything?}}"
+      },
+      {
+        "line": 11,
+        "sha256": "cff02d92b8b1ecd93969c61168159f31e310f07e23b93a284ceaaa5d0f497c47",
+        "text": "** '''Player:''' I see you are a chef. Can you cook me anything?"
+      },
+      {
+        "line": 12,
+        "sha256": "f4ec43a1fedbb802e92b44c6e1a92e7fde0a68a09a70fff644e273496893aa50",
+        "text": "** '''Caleb:''' I would, but I am very busy. I am trying to increase my reknown{{sic}} as one of the world's leading chefs by preparing a special and unique fish salad."
+      },
+      {
+        "line": 34,
+        "sha256": "49e25411535fae0ca841a07e4fb2f35eace84940b5769ef0b892f67fd2628dd7",
+        "text": "** '''Caleb:''' I heard you brought the completed crest to my father. I must say, that was awfully impressive work."
+      },
+      {
+        "line": 63,
+        "sha256": "af01042f1cd601fa38aa4e586f1005e3d24f4a02930f0ca78c8fd9ca0f15a1b4",
+        "text": "* '''Caleb:''' I received word from my father that you assisted us again! I get the feeling you weren't going to stop trying until you did though."
+      },
+      {
+        "line": 65,
+        "sha256": "b7f13b5949a3287a9e81460b7a8cbcc3fa77f45b4a321c50849749bd52d3d255",
+        "text": "** '''Caleb:''' As thanks, I'll provide you with as many pairs of cooking gauntlets as you wish."
+      },
+      {
+        "line": 66,
+        "sha256": "d659ccebe40a3562c2bc2562e8abfef85b2f25b1c903f1407ddc131acb1d5859",
+        "text": "** {{tbox|pic=Cooking gauntlets detail.png|Caleb hands you some cooking gauntlets.}}",
+        "insert_before": [
+          "** {{tinput|How many would you like to take?}}"
+        ]
+      }
+    ]
+  },
+  "Johnathon": {
+    "revision": 15255817,
+    "reason": "Wording as the revision 242 capture sends it after Family Pest: 'I received word' and the offer 'as many pairs of chaos gauntlets as you wish, to say thanks.' (ticks 6026-6027). After Family Pest the first talk asks how many pairs to take, as the repeat talk does, and the box says 'some' gauntlets (Johnathon ticks 6026-6033, Caleb 6127-6130; Avan's first-talk offer is the Wiki's, with the same prompt).",
+    "sources": [
+      "RSProx capture FamilyCrest + FamilyPest.bin (revision 242, SHA-256 c03a509bec91e3cedcd919eca805c440c2165226418ae77198d130a493bf8e86)",
+      "Transcript:Johnathon revision 15255817 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 29,
+        "sha256": "5210977c1b74cc4a364e986699b901074e90f8711fb3e3a3f37a1e306b1614d5",
+        "text": "* '''Johnathon:''' I received word from my father that you assisted us again! I get the feeling you weren't going to stop trying until you did though."
+      },
+      {
+        "line": 31,
+        "sha256": "8cab28190356aee5401510b27dbc10167c5f7ee78256194d29fdcaa99e2febac",
+        "text": "** '''Johnathon:''' If you want, I'll provide you with as many pairs of chaos gauntlets as you wish, to say thanks."
+      },
+      {
+        "line": 32,
+        "sha256": "78991148c790945c2a53d2af8feaa58b17522295b6096bbe7a47575e1eee55b3",
+        "text": "** {{tbox|pic=Chaos gauntlets detail.png|Johnathon hands you some chaos gauntlets.}}",
+        "insert_before": [
+          "** {{tinput|How many would you like to take?}}"
+        ]
+      }
+    ]
+  },
+  "Avan": {
+    "revision": 15255845,
+    "reason": "Wording as the revision 242 capture sends it after Family Pest: 'I received word' (tick 6204). After Family Pest the first talk asks how many pairs to take, as the repeat talk does, and the box says 'some' gauntlets (Johnathon ticks 6026-6033, Caleb 6127-6130; Avan's first-talk offer is the Wiki's, with the same prompt).",
+    "sources": [
+      "RSProx capture FamilyCrest + FamilyPest.bin (revision 242, SHA-256 c03a509bec91e3cedcd919eca805c440c2165226418ae77198d130a493bf8e86)",
+      "Transcript:Avan revision 15255845 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 30,
+        "sha256": "06bd2a939169fbdf617796788b1c58f2e2ea9281ece210048c180818caef7db3",
+        "text": "* '''Avan:''' I received word from my father that you assisted us again! I get the feeling you weren't going to stop trying until you did though."
+      },
+      {
+        "line": 33,
+        "sha256": "efe3b8d053c47ce391dd853e5ca748527da07f077d54d93a031685fab1419a25",
+        "text": "** {{tbox|pic=Goldsmith gauntlets detail.png|Avan hands you some goldsmith gauntlets.}}",
+        "insert_before": [
+          "** {{tinput|How many would you like to take?}}"
+        ]
+      }
+    ]
+  },
+  "Family Pest": {
+    "revision": 15329029,
+    "reason": "As the revision 242 capture plays the miniquest: the box after a brother who isn't the last one asked says how far the smell has faded by how many brothers have been asked (the first, Johnathon at tick 3232: 'fades slightly'; the second, Avan at 3349: 'fades even more'), not by which brother; 'of great rewards' in Dimintheis's box (3806); and a son asked already still offers 'Gauntlets' beside 'Family Pest' (Johnathon 3235, Avan 3352, Caleb 3515, 3526), not 'Other'.",
+    "sources": [
+      "RSProx capture FamilyCrest + FamilyPest.bin (revision 242, SHA-256 c03a509bec91e3cedcd919eca805c440c2165226418ae77198d130a493bf8e86)",
+      "Transcript:Family Pest revision 15329029 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 42,
+        "sha256": "669a9d1cbb1c7ae3f624dbd52dcb7c067f7c5aa50a7e8fd80e4091e2b9b46878",
+        "text": "** {{tcond|If Avan is the first brother the player talks to:}}"
+      },
+      {
+        "line": 44,
+        "sha256": "6c247f080c6029d1edfc40b8f05b8a7d546b2aa3fe7b740db98f7f2c3c649f13",
+        "text": "*** {{tbox|The sweet smell of the great rewards that may come fades slightly.}}"
+      },
+      {
+        "line": 46,
+        "sha256": "1dc6d3729b28f4a22c13c894065c15e9c2f9bc74517503b2de9316523d3379fa",
+        "insert_before": [
+          "** {{tcond|If Avan is the second brother the player talks to:}}",
+          "*** '''Player:''' Very well, I'll go and see if your other brothers need anything...",
+          "*** {{tbox|The sweet smell of the great rewards that may come fades even more.}}",
+          "*** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 58,
+        "sha256": "3227f65d9fb4d0e709fea9a91e0663daab1ef6a921d95b724a465eebf8cb0eb1",
+        "text": "* {{topt|quest=No|Gauntlets}}"
+      },
+      {
+        "line": 71,
+        "sha256": "6bd5265d9db1611e26f1d9c06d6c08a31e26bab85fdc676ee3527f6b4837b08e",
+        "text": "** {{tcond|If Caleb is the first brother the player talks to:}}"
+      },
+      {
+        "line": 73,
+        "sha256": "b5c0d245e4cede05a14c7e81057103d7a4bcbfe09f3898d693f9baf5e30b3b60",
+        "text": "*** {{tbox|The sweet smell of the great rewards that may come fades slightly.}}"
+      },
+      {
+        "line": 75,
+        "sha256": "9b604bf3adc2cd57b5930dad4fb1efd5e6d558a7ff67d254faf3c005643d4675",
+        "insert_before": [
+          "** {{tcond|If Caleb is the second brother the player talks to:}}",
+          "*** '''Player:''' Very well, I'll go and see if your other brothers need anything...",
+          "*** {{tbox|The sweet smell of the great rewards that may come fades even more.}}",
+          "*** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 87,
+        "sha256": "3227f65d9fb4d0e709fea9a91e0663daab1ef6a921d95b724a465eebf8cb0eb1",
+        "text": "* {{topt|quest=No|Gauntlets}}"
+      },
+      {
+        "line": 105,
+        "sha256": "88405555c07826fc494013d81b53337b5826100a36e31e511b8eb59cfafe7350",
+        "text": "** {{tcond|If Johnathon is the first brother the player talks to:}}"
+      },
+      {
+        "line": 107,
+        "sha256": "b5c0d245e4cede05a14c7e81057103d7a4bcbfe09f3898d693f9baf5e30b3b60",
+        "text": "*** {{tbox|The sweet smell of the great rewards that may come fades slightly.}}"
+      },
+      {
+        "line": 109,
+        "sha256": "f7a6eaf05505bc18be81266ffe55565180c376b78d95009b00bc1f304568e3e1",
+        "insert_before": [
+          "** {{tcond|If Johnathon is the second brother the player talks to:}}",
+          "*** '''Player:''' Very well, I'll go and see if your other brothers need anything...",
+          "*** {{tbox|The sweet smell of the great rewards that may come fades even more.}}",
+          "*** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 121,
+        "sha256": "3227f65d9fb4d0e709fea9a91e0663daab1ef6a921d95b724a465eebf8cb0eb1",
+        "text": "* {{topt|quest=No|Gauntlets}}"
+      },
+      {
+        "line": 129,
+        "sha256": "c5757784fbbe210203706a6a7143fa5be73f6d8fc5a1ae3fb0a365d1ec3416a4",
+        "text": "** {{tbox|The sweet smell of great rewards is a distant memory.}}"
+      }
+    ]
+  },
+  "Dimintheis": {
+    "revision": 15329031,
+    "reason": "As the revision 242 capture sends it: asked for gauntlets while holding goldsmith gauntlets, Dimintheis names them (tick 3800); the post-Family Pest heirloom option reads 'I thought these gauntlets were a family heirloom.' (3845).",
+    "sources": [
+      "RSProx capture FamilyCrest + FamilyPest.bin (revision 242, SHA-256 c03a509bec91e3cedcd919eca805c440c2165226418ae77198d130a493bf8e86)",
+      "Transcript:Dimintheis revision 15329031 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 102,
+        "sha256": "2a2d767dbec0b0fb906934fcde9cffeb3f7199bad5deea9b69431c247678ecb2",
+        "insert_before": [
+          "** {{tcond|If the player has their goldsmith gauntlets:}}",
+          "*** '''Dimintheis:''' You asked Avan to convert them into goldsmithing gauntlets, didn't you? I think you must still have them somewhere.",
+          "*** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 127,
+        "sha256": "c2ac37c8ab5088a39fff14295e78a5414c148ed6d07765afb2ad68b97b948d97",
+        "text": "* {{topt|I thought these gauntlets were a family heirloom.}}"
+      }
+    ]
   }
 }
