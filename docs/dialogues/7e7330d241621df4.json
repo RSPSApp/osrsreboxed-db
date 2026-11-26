@@ -223,6 +223,17 @@
       {
         "type": "line",
         "speaker": "Sir Kay",
+        "text": "'Tis a magick most powerful and foul.",
+        "speaker_ids": [
+          3521,
+          4349,
+          4352,
+          4355
+        ]
+      },
+      {
+        "type": "line",
+        "speaker": "Sir Kay",
         "text": "The only person I know of who would possibly have been of help is Merlin...",
         "speaker_ids": [
           3521,
@@ -406,7 +417,17 @@
       {
         "type": "line",
         "speaker": "Sir Tristram",
-        "text": "Funnily enough...absolutely nothing.",
+        "text": "Funnily enough...",
+        "speaker_ids": [
+          3523,
+          4346,
+          4359
+        ]
+      },
+      {
+        "type": "line",
+        "speaker": "Sir Tristram",
+        "text": "Absolutely nothing.",
         "speaker_ids": [
           3523,
           4346,
@@ -497,18 +518,8 @@
                     "text": "Any idea how to get into Morgan Le Faye's stronghold?",
                     "steps": [
                       {
-                        "player": "Any idea how to get into Morgan Le Faye's stronghold?"
-                      },
-                      {
-                        "type": "line",
-                        "speaker": "Sir Gawain",
-                        "text": "No, you've got me stumped there...",
-                        "speaker_ids": [
-                          3520,
-                          4348,
-                          4351,
-                          4356
-                        ]
+                        "type": "call",
+                        "branch": "Hu5XBH"
                       }
                     ]
                   },
@@ -725,6 +736,41 @@
           3523,
           4346,
           4359
+        ]
+      }
+    ],
+    "investigating-keep-le-faye-sir-gawain": [
+      {
+        "type": "line",
+        "speaker": "Sir Gawain",
+        "text": "Good day to you!",
+        "speaker_ids": [
+          3520,
+          4348,
+          4351,
+          4356
+        ]
+      },
+      {
+        "type": "choice",
+        "options": [
+          {
+            "text": "Any idea how to get into Morgan Le Faye's stronghold?",
+            "steps": [
+              {
+                "type": "call",
+                "branch": "Hu5XBH"
+              }
+            ]
+          },
+          {
+            "text": "Hello again.",
+            "steps": [
+              {
+                "player": "Hello again."
+              }
+            ]
+          }
         ]
       }
     ],
@@ -1298,12 +1344,7 @@
                         "id": "kOxDPU"
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "type": "choice",
-                "options": [
+                  },
                   {
                     "text": "OK I will do all that.",
                     "steps": [
@@ -1313,7 +1354,7 @@
                       {
                         "type": "message",
                         "text": "Morgan Le Faye vanishes.",
-                        "id": "N1Z186"
+                        "id": "62Y8K5"
                       }
                     ]
                   },
@@ -1344,7 +1385,7 @@
                       {
                         "type": "jump",
                         "reference": "other",
-                        "id": "TLmhNn"
+                        "id": "Pwa7Rx"
                       }
                     ]
                   }
@@ -1430,6 +1471,14 @@
                 "type": "line",
                 "speaker": "Candle maker",
                 "text": "I still dunno...",
+                "speaker_ids": [
+                  3199
+                ]
+              },
+              {
+                "type": "line",
+                "speaker": "Candle maker",
+                "text": "Tell you what. I'll supply you with a black candle...",
                 "speaker_ids": [
                   3199
                 ]
@@ -1729,7 +1778,20 @@
         "type": "choice",
         "options": [
           {
-            "text": "Who are you?"
+            "text": "Who are you?",
+            "steps": [
+              {
+                "player": "Who are you?"
+              },
+              {
+                "type": "line",
+                "speaker": "The Lady of the Lake",
+                "text": "I am the Lady of the Lake.",
+                "speaker_ids": [
+                  3530
+                ]
+              }
+            ]
           },
           {
             "text": "Good day.",
@@ -1817,84 +1879,78 @@
         "type": "choice",
         "options": [
           {
-            "text": "Yes certainly."
-          }
-        ]
-      },
-      {
-        "type": "condition",
-        "text": "If the player has bread in their inventory:",
-        "steps": [
-          {
-            "player": "Yes, certainly."
-          },
-          {
-            "type": "message",
-            "text": "You give the bread to the beggar.",
-            "id": "emEYqa"
-          },
-          {
-            "type": "line",
-            "speaker": "Beggar",
-            "text": "Thank you very much!",
-            "speaker_ids": [
-              3532
+            "text": "Yes certainly.",
+            "steps": [
+              {
+                "type": "condition",
+                "text": "If the player has bread in their inventory:",
+                "steps": [
+                  {
+                    "player": "Yes, certainly."
+                  },
+                  {
+                    "type": "message",
+                    "text": "You give the bread to the beggar.",
+                    "id": "nwLfk0"
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Beggar",
+                    "text": "Thank you very much!",
+                    "speaker_ids": [
+                      3532
+                    ]
+                  },
+                  {
+                    "type": "message",
+                    "text": "The beggar has turned into the Lady of the Lake!",
+                    "id": "BVKMHf"
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "The Lady of the Lake",
+                    "text": "Well done. You have passed my test.",
+                    "speaker_ids": [
+                      3530
+                    ]
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "The Lady of the Lake",
+                    "text": "Here is Excalibur, guard it well.",
+                    "speaker_ids": [
+                      3530
+                    ]
+                  },
+                  {
+                    "type": "end"
+                  }
+                ],
+                "id": "f2nU4m"
+              },
+              {
+                "type": "condition",
+                "text": "If the player has no bread in their inventory:",
+                "steps": [
+                  {
+                    "player": "Yes, certainly."
+                  },
+                  {
+                    "player": "... except I don't have any bread on me at the moment..."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Beggar",
+                    "text": "Well, if you get some, you know where to come.",
+                    "speaker_ids": [
+                      3532
+                    ]
+                  }
+                ],
+                "id": "TTqIpl"
+              }
             ]
           },
-          {
-            "type": "message",
-            "text": "The beggar has turned into the Lady of the Lake!",
-            "id": "4DJqdx"
-          },
-          {
-            "type": "line",
-            "speaker": "The Lady of the Lake",
-            "text": "Well done. You have passed my test.",
-            "speaker_ids": [
-              3530
-            ]
-          },
-          {
-            "type": "line",
-            "speaker": "The Lady of the Lake",
-            "text": "Here is Excalibur, guard it well.",
-            "speaker_ids": [
-              3530
-            ]
-          },
-          {
-            "type": "end"
-          }
-        ],
-        "id": "Ab4k10"
-      },
-      {
-        "type": "condition",
-        "text": "If the player has no bread in their inventory:",
-        "steps": [
-          {
-            "player": "Yes, certainly."
-          },
-          {
-            "player": "... except I don't have any bread on me at the moment..."
-          },
-          {
-            "type": "line",
-            "speaker": "Beggar",
-            "text": "Well, if you get some, you know where to come.",
-            "speaker_ids": [
-              3532
-            ]
-          },
-          {
-            "type": "end"
-          }
-        ],
-        "id": "yXizE3"
-      },
-      {
-        "type": "choice",
-        "options": [
           {
             "text": "No I don't have any bread with me.",
             "steps": [
@@ -1927,76 +1983,70 @@
         "type": "choice",
         "options": [
           {
-            "text": "Yes, here you go."
-          }
-        ]
-      },
-      {
-        "type": "condition",
-        "text": "If the player has bread in their inventory:",
-        "steps": [
-          {
-            "player": "Yes, here you go."
-          },
-          {
-            "type": "message",
-            "text": "You give the bread to the beggar.",
-            "id": "aS5Xkw"
-          },
-          {
-            "type": "line",
-            "speaker": "Beggar",
-            "text": "Thank you very much!",
-            "speaker_ids": [
-              3532
+            "text": "Yes, here you go.",
+            "steps": [
+              {
+                "type": "condition",
+                "text": "If the player has bread in their inventory:",
+                "steps": [
+                  {
+                    "player": "Yes, here you go."
+                  },
+                  {
+                    "type": "message",
+                    "text": "You give the bread to the beggar.",
+                    "id": "l56X2t"
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Beggar",
+                    "text": "Thank you very much!",
+                    "speaker_ids": [
+                      3532
+                    ]
+                  },
+                  {
+                    "type": "message",
+                    "text": "The beggar has turned into the Lady of the Lake!",
+                    "id": "UTsfYc"
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "The Lady of the Lake",
+                    "text": "Well done. You have passed my test.",
+                    "speaker_ids": [
+                      3530
+                    ]
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "The Lady of the Lake",
+                    "text": "Here is Excalibur, guard it well.",
+                    "speaker_ids": [
+                      3530
+                    ]
+                  },
+                  {
+                    "type": "end"
+                  }
+                ],
+                "id": "Z5t9Wk"
+              },
+              {
+                "type": "condition",
+                "text": "If the player has no bread in their inventory:",
+                "steps": [
+                  {
+                    "player": "Yes, here you go."
+                  },
+                  {
+                    "player": "Actually, I'm wrong. I still don't have any bread. Sorry."
+                  }
+                ],
+                "id": "5CjN_l"
+              }
             ]
           },
-          {
-            "type": "message",
-            "text": "The beggar has turned into the Lady of the Lake!",
-            "id": "IgIzfo"
-          },
-          {
-            "type": "line",
-            "speaker": "The Lady of the Lake",
-            "text": "Well done. You have passed my test.",
-            "speaker_ids": [
-              3530
-            ]
-          },
-          {
-            "type": "line",
-            "speaker": "The Lady of the Lake",
-            "text": "Here is Excalibur, guard it well.",
-            "speaker_ids": [
-              3530
-            ]
-          },
-          {
-            "type": "end"
-          }
-        ],
-        "id": "nxaoXZ"
-      },
-      {
-        "type": "condition",
-        "text": "If the player has no bread in their inventory:",
-        "steps": [
-          {
-            "player": "Yes, here you go."
-          },
-          {
-            "player": "Actually, I'm wrong. I still don't have any bread. Sorry."
-          },
-          {
-            "type": "end"
-          }
-        ],
-        "id": "m_1ATt"
-      },
-      {
-        "type": "choice",
-        "options": [
           {
             "text": "No, I still have none.",
             "steps": [
@@ -2360,6 +2410,22 @@
           3519,
           4344,
           4354
+        ]
+      }
+    ],
+    "Hu5XBH": [
+      {
+        "player": "Any idea how to get into Morgan Le Faye's stronghold?"
+      },
+      {
+        "type": "line",
+        "speaker": "Sir Gawain",
+        "text": "No, you've got me stumped there...",
+        "speaker_ids": [
+          3520,
+          4348,
+          4351,
+          4356
         ]
       }
     ]

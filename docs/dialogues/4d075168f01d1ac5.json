@@ -112,125 +112,116 @@
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "condition",
-        "text": "If the player has a message for him:",
-        "steps": [
+          },
           {
-            "type": "choice",
-            "options": [
+            "text": "The Wise Old Man of Draynor Village sent you this message.",
+            "steps": [
               {
-                "text": "The Wise Old Man of Draynor Village sent you this message.",
+                "player": "The Wise Old Man of Draynor Village sent you this message."
+              },
+              {
+                "npc": "Ah, I am always delighted to hear from him. You would not imagine the depths of his wisdom!"
+              },
+              {
+                "type": "condition",
+                "text": "If the player has no inventory space for a reward:",
                 "steps": [
                   {
-                    "player": "The Wise Old Man of Draynor Village sent you this message."
+                    "npc": "I'd give you a reward, but you don't seem to have any space for it. Come back when you do."
                   },
                   {
-                    "npc": "Ah, I am always delighted to hear from him. You would not imagine the depths of his wisdom!"
-                  },
+                    "type": "end"
+                  }
+                ],
+                "id": "8-sbDP"
+              },
+              {
+                "type": "condition",
+                "text": "If the player has at least one inventory space for a reward:",
+                "steps": [
                   {
-                    "type": "condition",
-                    "text": "If the player has no inventory space for a reward:",
-                    "steps": [
+                    "type": "random",
+                    "options": [
                       {
-                        "npc": "I'd give you a reward, but you don't seem to have any space for it. Come back when you do."
+                        "text": "If the player receives coins:",
+                        "steps": [
+                          {
+                            "type": "message",
+                            "text": "Reldo gives you some coins.",
+                            "styled": "<col=000080>Reldo gives you some coins</col>.",
+                            "id": "BfjLdv"
+                          },
+                          {
+                            "type": "action",
+                            "action": "receive",
+                            "text": "some coins",
+                            "id": "f5CkYf"
+                          },
+                          {
+                            "npc": "King Roald has been very generous with my salary, so I can spare you some coins for your trouble."
+                          },
+                          {
+                            "type": "end"
+                          }
+                        ]
                       },
                       {
-                        "type": "end"
-                      }
-                    ],
-                    "id": "8-sbDP"
-                  },
-                  {
-                    "type": "condition",
-                    "text": "If the player has at least one inventory space for a reward:",
-                    "steps": [
+                        "text": "If the player receives seeds:",
+                        "steps": [
+                          {
+                            "type": "message",
+                            "text": "Reldo gives you some seeds.",
+                            "styled": "<col=000080>Reldo gives you some seeds.</col>",
+                            "id": "dUlBWy"
+                          },
+                          {
+                            "type": "action",
+                            "action": "receive",
+                            "text": "assorted seeds",
+                            "id": "FMeJg4"
+                          },
+                          {
+                            "npc": "These little things seem to be everywhere these days! Perhaps you'd like them?"
+                          },
+                          {
+                            "type": "end"
+                          }
+                        ]
+                      },
                       {
-                        "type": "random",
-                        "options": [
+                        "text": "If the player receives runes:",
+                        "steps": [
                           {
-                            "text": "If the player receives coins:",
-                            "steps": [
-                              {
-                                "type": "message",
-                                "text": "Reldo gives you some coins.",
-                                "styled": "<col=000080>Reldo gives you some coins</col>.",
-                                "id": "BfjLdv"
-                              },
-                              {
-                                "type": "action",
-                                "action": "receive",
-                                "text": "some coins",
-                                "id": "f5CkYf"
-                              },
-                              {
-                                "npc": "King Roald has been very generous with my salary, so I can spare you some coins for your trouble."
-                              },
-                              {
-                                "type": "end"
-                              }
-                            ]
+                            "type": "message",
+                            "text": "Reldo gives you some runes.",
+                            "styled": "<col=000080>Reldo gives you some runes.</col>",
+                            "id": "SzA69R"
                           },
                           {
-                            "text": "If the player receives seeds:",
-                            "steps": [
-                              {
-                                "type": "message",
-                                "text": "Reldo gives you some seeds.",
-                                "styled": "<col=000080>Reldo gives you some seeds.</col>",
-                                "id": "dUlBWy"
-                              },
-                              {
-                                "type": "action",
-                                "action": "receive",
-                                "text": "assorted seeds",
-                                "id": "FMeJg4"
-                              },
-                              {
-                                "npc": "These little things seem to be everywhere these days! Perhaps you'd like them?"
-                              },
-                              {
-                                "type": "end"
-                              }
-                            ]
+                            "type": "action",
+                            "action": "receive",
+                            "text": "assorted runes",
+                            "id": "nTuSuc"
                           },
                           {
-                            "text": "If the player receives runes:",
-                            "steps": [
-                              {
-                                "type": "message",
-                                "text": "Reldo gives you some runes.",
-                                "styled": "<col=000080>Reldo gives you some runes.</col>",
-                                "id": "SzA69R"
-                              },
-                              {
-                                "type": "action",
-                                "action": "receive",
-                                "text": "assorted runes",
-                                "id": "nTuSuc"
-                              },
-                              {
-                                "npc": "My old friend Aubury sent me some runes in return for some books he wanted. Perhaps you'd like them?"
-                              },
-                              {
-                                "type": "end"
-                              }
-                            ]
+                            "npc": "My old friend Aubury sent me some runes in return for some books he wanted. Perhaps you'd like them?"
+                          },
+                          {
+                            "type": "end"
                           }
                         ]
                       }
-                    ],
-                    "id": "s8c04w"
+                    ]
                   }
-                ]
+                ],
+                "id": "s8c04w"
               }
-            ]
+            ],
+            "id": "b6-VeS",
+            "condition": "If the player has a message for him:",
+            "condition_id": "FeOKl3"
           }
-        ],
-        "id": "FeOKl3"
+        ]
       },
       {
         "type": "choice",

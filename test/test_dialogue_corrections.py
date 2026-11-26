@@ -2240,3 +2240,82 @@ def test_the_golem_capture_lines_and_the_curators_fossil_island_menu():
     ]
     # The Wiki's own wording stays where the capture words a line differently.
     assert "Damage... severe... Task... incomplete..." in json.dumps(start)
+
+
+def test_merlins_crystal_follows_the_revision_242_capture():
+    # speaker_ids is derived identity metadata, not part of the captured wording.
+    variants = json.loads(
+        (config.DOCS_PATH / "npc-dialogues.json").read_text(),
+        object_hook=lambda node: {k: v for k, v in node.items() if k != "speaker_ids"},
+    )["Merlin's Crystal"]["variants"]
+    kay = variants["investigating-merlin-s-entrapment-sir-kay"]
+    # Sir Kay's second line on the crystal (capture ticks 477 and 485).
+    assert [step.get("text") for step in kay[2:5]] == [
+        "Unfortunately not, Sirrah.",
+        "'Tis a magick most powerful and foul.",
+        "The only person I know of who would possibly have been of help is Merlin...",
+    ]
+    # Sir Tristram's answer as live's two boxes (567-568).
+    assert [step.get("text") for step in variants["investigating-merlin-s-entrapment-sir-tristram"][3:5]] == [
+        "Funnily enough...",
+        "Absolutely nothing.",
+    ]
+    # Sir Gawain's own talk once he has named Morgan Le Faye (656-660).
+    gawain = variants["investigating-keep-le-faye-sir-gawain"]
+    assert gawain[0]["text"] == "Good day to you!"
+    assert [option["text"] for option in gawain[1]["options"]] == [
+        "Any idea how to get into Morgan Le Faye's stronghold?",
+        "Hello again.",
+    ]
+    # Morgan Le Faye's three questions in one menu (1216-1229).
+    morgan = variants["inside-keep-le-faye-defeating-sir-mordred"]
+    untrap = morgan[2]["options"][0]["steps"]
+    menus = [step for step in untrap if step.get("type") == "choice"]
+    assert len(menus) == 1
+    assert [option["text"] for option in menus[0]["options"]] == [
+        "So where can I find Excalibur?",
+        "OK I will do all that.",
+        "What are the magic words?",
+    ]
+    # The candle maker's line before his terms (1348; local 1001994 tick 17618).
+    candle = variants["obtaining-the-black-candle-talking-to-the-candle-maker"][1]["options"][0]["steps"]
+    assert [step.get("text") for step in candle[-2:]] == [
+        "Tell you what. I'll supply you with a black candle...",
+        "IF you can bring me a bucket FULL of wax.",
+    ]
+    # The beggar's bread conditions belong to the option that offers the bread (structure annotation).
+    for variant, offer, refuse in (
+        ("searching-for-excalibur-attempting-to-enter-the-jewellery-shop", "Yes certainly.", "No I don't have any bread with me."),
+        ("searching-for-excalibur-talking-to-the-beggar-again-if-they-were-not-given-bread-initially", "Yes, here you go.", "No, I still have none."),
+    ):
+        menu = next(step for step in variants[variant] if step.get("type") == "choice")
+        assert [option["text"] for option in menu["options"]] == [offer, refuse]
+        assert [step["type"] for step in menu["options"][0]["steps"]] == ["condition", "condition"]
+
+    # The Lady's "Who are you?" during the quest is her own page's answer (capture tick 1461).
+    lady = variants["searching-for-excalibur-the-lady-of-the-lake"][1]["options"][0]
+    assert lady["text"] == "Who are you?"
+    assert [step.get("player") or step.get("text") for step in lady["steps"]] == [
+        "Who are you?",
+        "I am the Lady of the Lake.",
+    ]
+
+    # Source inputs over the cached revision, not edits of the generated record.
+    corrections = json.loads(
+        (config.DATA_PATH / "dialogues" / "corrections.json").read_text(encoding="utf-8")
+    )
+    assert "Merlin's Crystal" not in corrections
+    source = json.loads(
+        (config.DATA_PATH / "dialogues" / "capture-sources.json").read_text(encoding="utf-8")
+    )["Merlin's Crystal"]
+    page = json.loads((config.DATA_PATH / "dialogues/quest-pages.json").read_text())[
+        "Transcript:Merlin's Crystal"
+    ]
+    assert source["revision"] == page["revision"]
+    lines = page["wikitext"].splitlines()
+    for fix in source["lines"]:
+        assert hashlib.sha256(lines[fix["line"] - 1].encode()).hexdigest() == fix["sha256"]
+    raw = apply_capture_lines("Merlin's Crystal", page["wikitext"], source, page["revision"])
+    assert raw == apply_capture_lines("Merlin's Crystal", page["wikitext"], source, page["revision"])
+    with pytest.raises(ValueError, match="Stale dialogue capture source"):
+        apply_capture_lines("Merlin's Crystal", page["wikitext"], source, page["revision"] + 1)

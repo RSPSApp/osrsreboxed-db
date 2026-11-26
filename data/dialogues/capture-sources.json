@@ -4523,5 +4523,60 @@
         ]
       }
     ]
+  },
+  "Merlin's Crystal": {
+    "revision": 15327973,
+    "reason": "Merlin's Crystal lines and menus the Wiki lacks, as the revision 242 capture plays them: Sir Kay's second line on the crystal, Sir Tristram's answer as the two boxes live shows it, Sir Gawain's own talk once he has named Morgan Le Faye (the Wiki has none for him in the keep section), Morgan Le Faye's three questions as the one menu live shows them, and the candle maker's line before his terms. The Wiki's own wording is kept everywhere else, including Morgan's option labels where the capture words the later menus differently.",
+    "sources": [
+      "RSProx capture MerlinsCrystal (revision 242, SHA-256 ad1b5def9b8eba8e341dc97f65ee59ac388a18dd7d0d7baba5d8e65bc771bbbe, a whole run of the quest: Sir Kay's line at ticks 477 and 485, Sir Tristram's at 567-568, Sir Gawain after the stage moved at 656-660, Morgan Le Faye's menu at 1216-1229, the candle maker's line at 1348)",
+      "RSProx local recording 1001994 (revision 242: the candle maker's line again at tick 17618, the same words)",
+      "Transcript:Merlin's Crystal revision 15327973 as cached; all other lines are parsed unchanged; Sir Gawain's answer to 'Any idea how to get into Morgan Le Faye's stronghold?' in the new section is the Wiki's own answer to that question one menu earlier (not captured: the capture took 'Hello again.')"
+    ],
+    "lines": [
+      {
+        "line": 46,
+        "sha256": "5a6e7551724b4a1bebc374384f5456d2b3b6128aa8c93b1fd148e3bcff1ed1a0",
+        "insert_before": [
+          "* '''Sir Kay:''' 'Tis a magick most powerful and foul."
+        ]
+      },
+      {
+        "line": 86,
+        "sha256": "7bade98a441ad713f1c6f31de39ac73d6ccbc05a3e4393dedb6de5f315ff4beb",
+        "insert_before": [
+          "* '''Sir Tristram:''' Funnily enough..."
+        ],
+        "text": "* '''Sir Tristram:''' Absolutely nothing."
+      },
+      {
+        "line": 157,
+        "sha256": "c9fdf0a4381472ae6a3cdbd29dbb8597586cf15d4050c24ebe42971f7e281fa3",
+        "insert_before": [
+          "===Sir Gawain===",
+          "* '''Sir Gawain:''' Good day to you!",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Any idea how to get into Morgan Le Faye's stronghold?}}",
+          "** '''Player:''' Any idea how to get into Morgan Le Faye's stronghold?",
+          "** '''Sir Gawain:''' No, you've got me stumped there...",
+          "** {{tact|end}}",
+          "* {{topt|Hello again.}}",
+          "** '''Player:''' Hello again.",
+          "** {{tact|end}}",
+          ""
+        ]
+      },
+      {
+        "line": 275,
+        "sha256": "b5aeecbaafb511b70efacefe9630c7f09d3dad3dc4420ee57b7c1d30f2c0de5a",
+        "text": ""
+      },
+      {
+        "line": 305,
+        "sha256": "af5e2ffaee16d006091ea7c1b325ff98e640efc87e60d1e1b6fdafa81e34ed5b",
+        "insert_before": [
+          "** '''Candle maker:''' Tell you what. I'll supply you with a black candle..."
+        ]
+      }
+    ]
   }
 }

@@ -881,9 +881,6 @@
                 "type": "message",
                 "text": "Sir Galahad gives you a cup of tea.",
                 "id": "UM_Nt9"
-              },
-              {
-                "type": "end"
               }
             ]
           },
@@ -957,9 +954,6 @@
                         "speaker_ids": [
                           4064
                         ]
-                      },
-                      {
-                        "type": "end"
                       }
                     ]
                   },
@@ -987,9 +981,6 @@
                         "action": "receive",
                         "text": "a cup of tea",
                         "id": "7SPxqF"
-                      },
-                      {
-                        "type": "end"
                       }
                     ]
                   },
@@ -1079,55 +1070,43 @@
                 "type": "message",
                 "text": "Sir Galahad gives you a cup of tea.",
                 "id": "lIuD4R"
+              }
+            ]
+          },
+          {
+            "text": "I seek an item from the realm of the Fisher King.",
+            "steps": [
+              {
+                "player": "I seek an item from the realm of the Fisher King."
               },
               {
-                "type": "end"
+                "type": "line",
+                "speaker": "Galahad",
+                "text": "Funny you should mention that, but when I left there I took this small cloth from the table as a keepsake.",
+                "speaker_ids": [
+                  4064
+                ]
+              },
+              {
+                "player": "I don't suppose I could borrow that? It could come in useful on my quest."
+              },
+              {
+                "type": "message",
+                "text": "Galahad reluctantly passes you a small cloth.",
+                "id": "TCOaoy"
+              },
+              {
+                "type": "action",
+                "action": "receive",
+                "text": "a Holy table napkin",
+                "id": "IWEKeT"
               }
-            ]
+            ],
+            "id": "PpNsXe",
+            "condition": "If the player talked to the High Priest of Entrana first:",
+            "condition_id": "4-e5Br"
           }
         ]
-      },
-      {
-        "type": "condition",
-        "text": "If the player talked to the High Priest of Entrana first:",
-        "steps": [
-          {
-            "type": "choice",
-            "options": [
-              {
-                "text": "I seek an item from the realm of the Fisher King.",
-                "steps": [
-                  {
-                    "player": "I seek an item from the realm of the Fisher King."
-                  },
-                  {
-                    "type": "line",
-                    "speaker": "Galahad",
-                    "text": "Funny you should mention that, but when I left there I took this small cloth from the table as a keepsake.",
-                    "speaker_ids": [
-                      4064
-                    ]
-                  },
-                  {
-                    "player": "I don't suppose I could borrow that? It could come in useful on my quest."
-                  },
-                  {
-                    "type": "message",
-                    "text": "Galahad reluctantly passes you a small cloth.",
-                    "id": "TCOaoy"
-                  },
-                  {
-                    "type": "action",
-                    "action": "receive",
-                    "text": "a Holy table napkin",
-                    "id": "IWEKeT"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "id": "4-e5Br"
       }
     ],
     "talking-to-sir-galahad-blowing-on-the-magic-whistle": [

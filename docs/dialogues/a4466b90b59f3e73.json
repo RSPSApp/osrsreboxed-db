@@ -43,108 +43,99 @@
               "id": "OYjQdU"
             }
           ]
-        }
-      ]
-    },
-    {
-      "type": "condition",
-      "text": "If the player is on a Deadman Mode world:",
-      "steps": [
+        },
         {
-          "type": "choice",
-          "options": [
+          "text": "Let's talk about where I respawn when I die.",
+          "steps": [
             {
-              "text": "Let's talk about where I respawn when I die.",
+              "player": "Let's talk about where I respawn when I die."
+            },
+            {
+              "type": "condition",
+              "text": "If the player's respawn location is not at the Grand Exchange:",
               "steps": [
                 {
-                  "player": "Let's talk about where I respawn when I die."
+                  "npc": "You're currently due to respawn somewhere else. Would you rather respawn here, at the Grand Exchange, instead."
                 },
                 {
-                  "type": "condition",
-                  "text": "If the player's respawn location is not at the Grand Exchange:",
-                  "steps": [
+                  "type": "choice",
+                  "options": [
                     {
-                      "npc": "You're currently due to respawn somewhere else. Would you rather respawn here, at the Grand Exchange, instead."
-                    },
-                    {
-                      "type": "choice",
-                      "options": [
+                      "text": "Yes, I'd like to respawn at the Grand Exchange.",
+                      "steps": [
                         {
-                          "text": "Yes, I'd like to respawn at the Grand Exchange.",
-                          "steps": [
-                            {
-                              "player": "Yes, I'd like to respawn at the Grand Exchange."
-                            },
-                            {
-                              "npc": "Okay, you can respawn here when you die. Let me know if you change your mind."
-                            },
-                            {
-                              "type": "end"
-                            }
-                          ]
+                          "player": "Yes, I'd like to respawn at the Grand Exchange."
                         },
                         {
-                          "text": "No thanks, leave me alone.",
-                          "steps": [
-                            {
-                              "player": "No thanks, leave me alone."
-                            },
-                            {
-                              "type": "end"
-                            }
-                          ]
+                          "npc": "Okay, you can respawn here when you die. Let me know if you change your mind."
+                        },
+                        {
+                          "type": "end"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "No thanks, leave me alone.",
+                      "steps": [
+                        {
+                          "player": "No thanks, leave me alone."
+                        },
+                        {
+                          "type": "end"
                         }
                       ]
                     }
-                  ],
-                  "id": "9sbF_i"
-                },
-                {
-                  "type": "condition",
-                  "text": "If the player's respawn location is at the Grand Exchange:",
-                  "steps": [
-                    {
-                      "npc": "You're currently due to respawn here, at the Grand Exchange."
-                    },
-                    {
-                      "type": "choice",
-                      "options": [
-                        {
-                          "text": "I'd rather respawn in Lumbridge.",
-                          "steps": [
-                            {
-                              "player": "I'd rather respawn in Lumbridge."
-                            },
-                            {
-                              "npc": "Please yourself. You will now respawn in Lumbridge when you die. Let me know if you change your mind."
-                            },
-                            {
-                              "type": "end"
-                            }
-                          ]
-                        },
-                        {
-                          "text": "Okay, respawning here sounds great.",
-                          "steps": [
-                            {
-                              "player": "Okay, respawning here sounds great."
-                            },
-                            {
-                              "type": "end"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "id": "eKDWRT"
+                  ]
                 }
-              ]
+              ],
+              "id": "9sbF_i"
+            },
+            {
+              "type": "condition",
+              "text": "If the player's respawn location is at the Grand Exchange:",
+              "steps": [
+                {
+                  "npc": "You're currently due to respawn here, at the Grand Exchange."
+                },
+                {
+                  "type": "choice",
+                  "options": [
+                    {
+                      "text": "I'd rather respawn in Lumbridge.",
+                      "steps": [
+                        {
+                          "player": "I'd rather respawn in Lumbridge."
+                        },
+                        {
+                          "npc": "Please yourself. You will now respawn in Lumbridge when you die. Let me know if you change your mind."
+                        },
+                        {
+                          "type": "end"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Okay, respawning here sounds great.",
+                      "steps": [
+                        {
+                          "player": "Okay, respawning here sounds great."
+                        },
+                        {
+                          "type": "end"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "id": "eKDWRT"
             }
-          ]
+          ],
+          "id": "31HhC1",
+          "condition": "If the player is on a Deadman Mode world:",
+          "condition_id": "l_rAR3"
         }
-      ],
-      "id": "l_rAR3"
+      ]
     },
     {
       "type": "choice",

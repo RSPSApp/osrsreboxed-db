@@ -771,5 +771,143 @@
         }
       ]
     }
+  },
+  "Merlin's Crystal": {
+    "structure": {
+      "revision": 15327973,
+      "lines": [
+        {
+          "line": 391,
+          "sha256": "c2e4682a78e794a4ff2371b9d5f1bc5efd29428814a3e347eed6f31687cf07eb",
+          "depth": 2
+        },
+        {
+          "line": 392,
+          "sha256": "4909410e7434a610583e919531df1f45a5db08aad37f03a40145cb10527ccf7a",
+          "depth": 3
+        },
+        {
+          "line": 393,
+          "sha256": "6e651c3b0592a4d988355ea4f4a0dc5eb98a48bb27691ef4f48b7668b722b864",
+          "depth": 3
+        },
+        {
+          "line": 394,
+          "sha256": "03e52df6bea2bacb9088f3c6a072587957146a1ca520b5c12c6bf9e8b4c55821",
+          "depth": 3
+        },
+        {
+          "line": 395,
+          "sha256": "0a0dcede6fcaf3726a81f2c223930a15b5f5717a2ad659c7956e8ce1fc85a180",
+          "depth": 3
+        },
+        {
+          "line": 396,
+          "sha256": "169cb0a891750a3daa22ee0d2d2efc91531820924a389593195b27390a6c3895",
+          "depth": 3
+        },
+        {
+          "line": 397,
+          "sha256": "626bf0ac618b72033bbe54142a58318410ff022e8bca39a4545d593c4332bb45",
+          "depth": 3
+        },
+        {
+          "line": 398,
+          "sha256": "931bf4506b683e52aac35536b3453f0b35e9bc31eb2328fb96c58fa0c09690d1",
+          "depth": 3
+        },
+        {
+          "line": 399,
+          "sha256": "5870a842b88e0e1fffaeb84025b37805ed19244d08522ed89e6cff3bc9ce8243",
+          "depth": 2
+        },
+        {
+          "line": 400,
+          "sha256": "4909410e7434a610583e919531df1f45a5db08aad37f03a40145cb10527ccf7a",
+          "depth": 3
+        },
+        {
+          "line": 401,
+          "sha256": "71216f876bd153eaa0bf4b622e2bc808879cc91c4fe290ad1e0952d7ae723a7e",
+          "depth": 3
+        },
+        {
+          "line": 402,
+          "sha256": "f5688751c35609e206929ac99db6b8bff4be6473f447c34a0b7a317c2228d595",
+          "depth": 3
+        },
+        {
+          "line": 403,
+          "sha256": "931bf4506b683e52aac35536b3453f0b35e9bc31eb2328fb96c58fa0c09690d1",
+          "depth": 3
+        },
+        {
+          "line": 413,
+          "sha256": "c2e4682a78e794a4ff2371b9d5f1bc5efd29428814a3e347eed6f31687cf07eb",
+          "depth": 2
+        },
+        {
+          "line": 414,
+          "sha256": "b5cdf3fb80675c7a0e66898c06f4c9c3d911cd06b287a44bd9f2813ccfe577e8",
+          "depth": 3
+        },
+        {
+          "line": 415,
+          "sha256": "6e651c3b0592a4d988355ea4f4a0dc5eb98a48bb27691ef4f48b7668b722b864",
+          "depth": 3
+        },
+        {
+          "line": 416,
+          "sha256": "03e52df6bea2bacb9088f3c6a072587957146a1ca520b5c12c6bf9e8b4c55821",
+          "depth": 3
+        },
+        {
+          "line": 417,
+          "sha256": "0a0dcede6fcaf3726a81f2c223930a15b5f5717a2ad659c7956e8ce1fc85a180",
+          "depth": 3
+        },
+        {
+          "line": 418,
+          "sha256": "169cb0a891750a3daa22ee0d2d2efc91531820924a389593195b27390a6c3895",
+          "depth": 3
+        },
+        {
+          "line": 419,
+          "sha256": "626bf0ac618b72033bbe54142a58318410ff022e8bca39a4545d593c4332bb45",
+          "depth": 3
+        },
+        {
+          "line": 420,
+          "sha256": "931bf4506b683e52aac35536b3453f0b35e9bc31eb2328fb96c58fa0c09690d1",
+          "depth": 3
+        },
+        {
+          "line": 421,
+          "sha256": "5870a842b88e0e1fffaeb84025b37805ed19244d08522ed89e6cff3bc9ce8243",
+          "depth": 2
+        },
+        {
+          "line": 422,
+          "sha256": "b5cdf3fb80675c7a0e66898c06f4c9c3d911cd06b287a44bd9f2813ccfe577e8",
+          "depth": 3
+        },
+        {
+          "line": 423,
+          "sha256": "723b2dc72788d962de6f63abfeb24980880a07d611cc7b5ae68987ee534d8979",
+          "depth": 3
+        },
+        {
+          "line": 424,
+          "sha256": "931bf4506b683e52aac35536b3453f0b35e9bc31eb2328fb96c58fa0c09690d1",
+          "depth": 3
+        }
+      ]
+    },
+    "shared_options": {
+      "Who are you?": {
+        "page": "The Lady of the Lake",
+        "variant": "standard-dialogue"
+      }
+    }
   }
 }

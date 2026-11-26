@@ -249,6 +249,49 @@ def resolve_navigation(record, anchors=None):
             del nodes[index + 1 : end + 1]
             index += 1
 
+    def append_trailing_guarded_options(nodes):
+        """Append one-option condition menus that follow a menu to that menu.
+
+        A page can guard one option of a menu with a `{{tcond}}` at the options'
+        depth and the option nested under it, after the menu's other options (The
+        Lady of the Lake after Merlin's Crystal: "I seek the sword Excalibur." only
+        while the player has no Excalibur). The option belongs to the menu, shown
+        while its condition holds; parsed as it stands, the condition only ran
+        after the menu had been answered and closed, so the option never showed.
+        """
+        index = 0
+        while index < len(nodes):
+            node = nodes[index]
+            append_trailing_guarded_options(node.get("steps", []))
+            for option in node.get("options", []):
+                append_trailing_guarded_options(option.get("steps", []))
+            if node.get("type") != "choice" or not node.get("options") or node.get("_anchors"):
+                index += 1
+                continue
+            end = index + 1
+            while end < len(nodes):
+                condition = nodes[end]
+                branch = condition.get("steps", [])
+                if (
+                    condition.get("type") != "condition"
+                    or condition.get("_anchors")
+                    or len(branch) != 1
+                    or branch[0].get("type") != "choice"
+                    or branch[0].get("_anchors")
+                    or branch[0].get("prompt")
+                    or len(branch[0].get("options", [])) != 1
+                ):
+                    break
+                option = branch[0]["options"][0]
+                if option.get("condition") or option.get("_anchors"):
+                    break
+                option["condition"] = condition["text"]
+                option["condition_id"] = condition["id"]
+                node["options"].append(option)
+                end += 1
+            del nodes[index + 1 : end]
+            index += 1
+
     def lift_anchored_condition_tails(nodes):
         """Move a condition run's shared tail out of its last condition.
 
@@ -295,6 +338,7 @@ def resolve_navigation(record, anchors=None):
     for steps in record["variants"].values():
         lift_anchored_condition_tails(steps)
         normalize_guarded_options(steps)
+        append_trailing_guarded_options(steps)
 
     option_paths = {}
 

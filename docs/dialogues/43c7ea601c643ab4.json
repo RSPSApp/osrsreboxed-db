@@ -699,9 +699,6 @@
                                       }
                                     ],
                                     "id": "wpVFFv"
-                                  },
-                                  {
-                                    "type": "end"
                                   }
                                 ]
                               },
@@ -710,9 +707,6 @@
                                 "steps": [
                                   {
                                     "player": "Oh, I'll not bother then."
-                                  },
-                                  {
-                                    "type": "end"
                                   }
                                 ]
                               }
@@ -737,42 +731,30 @@
                           14984,
                           14985
                         ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "(Charm) You don't need to look through my things.",
+                    "steps": [
+                      {
+                        "player": "You don't need to look through my things."
                       },
                       {
-                        "type": "end"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "condition",
-                "text": "If the player is wearing the Ring of Charos(a):",
-                "steps": [
-                  {
-                    "type": "choice",
-                    "options": [
-                      {
-                        "text": "(Charm) You don't need to look through my things.",
-                        "steps": [
-                          {
-                            "player": "You don't need to look through my things."
-                          },
-                          {
-                            "type": "line",
-                            "speaker": "Customs officer",
-                            "text": "Oh, I think I do. If you don't want to let me search your possessions, then you're not coming aboard this ship.",
-                            "speaker_ids": [
-                              14984,
-                              14985
-                            ]
-                          }
+                        "type": "line",
+                        "speaker": "Customs officer",
+                        "text": "Oh, I think I do. If you don't want to let me search your possessions, then you're not coming aboard this ship.",
+                        "speaker_ids": [
+                          14984,
+                          14985
                         ]
                       }
-                    ]
+                    ],
+                    "id": "DDoK7v",
+                    "condition": "If the player is wearing the Ring of Charos(a):",
+                    "condition_id": "Ytnuk6"
                   }
-                ],
-                "id": "Ytnuk6"
+                ]
               }
             ]
           },

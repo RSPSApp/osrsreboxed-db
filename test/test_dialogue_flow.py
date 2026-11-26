@@ -935,3 +935,31 @@ def test_myreque_curpile_quiz_is_three_random_questions_and_refusal_is_a_menu_op
     # The refusal branch keeps its own lines and the punch note.
     refusal = menu["options"][1]["steps"]
     assert [step.get("text") for step in refusal if step["type"] == "line"][-1].startswith("You do if")
+
+
+def test_condition_guarding_one_option_after_a_menu_joins_that_menu():
+    value = record(
+        "The Lady of the Lake",
+        """==After completing [[Merlin's Crystal]]==
+* '''The Lady of the Lake:''' Good day to you.
+* {{topt|Who are you?}}
+** '''Player:''' Who are you?
+** {{tact|end}}
+* {{topt|Good day.}}
+** '''Player:''' Good day.
+* {{tcond|If the player does not have [[Excalibur]] in their bank or inventory:}}
+** {{topt|I seek the sword Excalibur.}}
+*** '''Player:''' I seek the sword Excalibur.
+*** '''The Lady of the Lake:''' 500 gold coins ought to do it.
+""",
+    )
+    enrich_records({}, {"The Lady of the Lake": value}, {}, update.clean)
+    steps = value["variants"]["after-completing-merlin-s-crystal"]
+    menu = next(step for step in steps if step.get("type") == "choice")
+    assert [option["text"] for option in menu["options"]] == ["Who are you?", "Good day.", "I seek the sword Excalibur."]
+    guarded = menu["options"][2]
+    assert guarded["condition"] == "If the player does not have Excalibur in their bank or inventory:"
+    assert guarded["condition_id"]
+    assert follow(value, guarded["steps"])[0]["player"] == "I seek the sword Excalibur."
+    # Nothing of the condition is left after the menu.
+    assert not any(step.get("type") == "condition" for step in steps)
