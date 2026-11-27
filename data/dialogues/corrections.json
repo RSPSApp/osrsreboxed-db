@@ -5087,5 +5087,206 @@
         }
       }
     ]
+  },
+  "Eagles' Peak": {
+    "reason": "Nickolaus's answer to \"Well if you gave me a ferret I could take it back for you.\", which the Wiki transcript leaves empty, from a revision 243 capture of the whole quest; it rejoins the trapped branch's menu, as live plays it.",
+    "sources": [
+      "RSProx capture EaglesPeak+AllUnlocks.bin (revision 243.1, whole quest, eaglepeak_quest 0 -> 40): the option and its six lines at ticks 464-479, heads eaglepeak_nickolaus_normal (1485)"
+    ],
+    "base_sha256": "c7eb0798730a3dea6ef07edb6a0e746ee6bfb4e993c8a95590b0fe4e0139c13e",
+    "changes": [
+      {
+        "path": [
+          "records",
+          "Eagles' Peak",
+          "variants",
+          "nickolaus-s-camp-approaching-nickolaus-across-the-chasm",
+          5,
+          "options",
+          0,
+          "steps",
+          2,
+          "options",
+          0,
+          "steps"
+        ],
+        "expected": null,
+        "value": [
+          {
+            "player": "Well if you gave me a ferret I could take it back for you."
+          },
+          {
+            "type": "line",
+            "speaker": "Nickolaus",
+            "text": "Well that's very kind of you, but I'm afraid all my equipment is down at the camp site."
+          },
+          {
+            "type": "line",
+            "speaker": "Nickolaus",
+            "text": "I'd go with you but currently I'm somewhat, er..."
+          },
+          {
+            "player": "Trapped?"
+          },
+          {
+            "type": "line",
+            "speaker": "Nickolaus",
+            "text": "Well I think trapped is quite a negative way of looking at it."
+          },
+          {
+            "type": "line",
+            "speaker": "Nickolaus",
+            "text": "I will admit however that getting out of here may be a little tricky. I did have a plan, but unfortunately it didn't involve being stuck in this nest."
+          },
+          {
+            "type": "choice",
+            "options": [
+              {
+                "text": "Could I help at all?",
+                "steps": [
+                  {
+                    "player": "Could I help at all?"
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Nickolaus",
+                    "text": "Actually I believe you could. I need to somehow trick the eagles into thinking I'm one of them. Could you fashion some sort of disguise for me?"
+                  },
+                  {
+                    "player": "What would that involve?"
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Nickolaus",
+                    "text": "Well, you could go and speak to the fancy dress shop owner in Varrock.  He can make anything if you give him the right materials. In fact you should probably get a couple of disguises, one for each of us."
+                  },
+                  {
+                    "player": "That's a good idea. There are plenty of feathers around here. I'll see what I can do."
+                  }
+                ]
+              },
+              {
+                "text": "Well it'll give you a lot of time to study the eagles",
+                "steps": [
+                  {
+                    "player": "Well it'll give you a lot of time to study the eagles."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Nickolaus",
+                    "text": "Very true, and certainly an opportunity I wouldn't want to miss."
+                  },
+                  {
+                    "player": "Well, I'll let you get on with your work then."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Nickolaus",
+                    "text": "It's always a pleasure to discuss my discoveries."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": [
+          "records",
+          "Eagles' Peak",
+          "branches",
+          "jump-4cc883fc2dd43345",
+          2,
+          "options",
+          0,
+          "steps"
+        ],
+        "expected": null,
+        "value": [
+          {
+            "player": "Well if you gave me a ferret I could take it back for you."
+          },
+          {
+            "type": "line",
+            "speaker": "Nickolaus",
+            "text": "Well that's very kind of you, but I'm afraid all my equipment is down at the camp site."
+          },
+          {
+            "type": "line",
+            "speaker": "Nickolaus",
+            "text": "I'd go with you but currently I'm somewhat, er..."
+          },
+          {
+            "player": "Trapped?"
+          },
+          {
+            "type": "line",
+            "speaker": "Nickolaus",
+            "text": "Well I think trapped is quite a negative way of looking at it."
+          },
+          {
+            "type": "line",
+            "speaker": "Nickolaus",
+            "text": "I will admit however that getting out of here may be a little tricky. I did have a plan, but unfortunately it didn't involve being stuck in this nest."
+          },
+          {
+            "type": "choice",
+            "options": [
+              {
+                "text": "Could I help at all?",
+                "steps": [
+                  {
+                    "player": "Could I help at all?"
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Nickolaus",
+                    "text": "Actually I believe you could. I need to somehow trick the eagles into thinking I'm one of them. Could you fashion some sort of disguise for me?"
+                  },
+                  {
+                    "player": "What would that involve?"
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Nickolaus",
+                    "text": "Well, you could go and speak to the fancy dress shop owner in Varrock.  He can make anything if you give him the right materials. In fact you should probably get a couple of disguises, one for each of us."
+                  },
+                  {
+                    "player": "That's a good idea. There are plenty of feathers around here. I'll see what I can do."
+                  },
+                  {
+                    "type": "end"
+                  }
+                ]
+              },
+              {
+                "text": "Well it'll give you a lot of time to study the eagles",
+                "steps": [
+                  {
+                    "player": "Well it'll give you a lot of time to study the eagles."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Nickolaus",
+                    "text": "Very true, and certainly an opportunity I wouldn't want to miss."
+                  },
+                  {
+                    "player": "Well, I'll let you get on with your work then."
+                  },
+                  {
+                    "type": "line",
+                    "speaker": "Nickolaus",
+                    "text": "It's always a pleasure to discuss my discoveries."
+                  },
+                  {
+                    "type": "end"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
