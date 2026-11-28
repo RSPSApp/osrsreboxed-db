@@ -4523,5 +4523,64 @@
         ]
       }
     ]
+  },
+  "At First Light": {
+    "revision": 15104140,
+    "reason": "At First Light as the user's revision 243 capture of the whole quest plays it: four lines worded with the comma live shows (Verity's 'Well, actually', the player's 'Well, then' to Wolf, Fox's 'Well, it's your lucky day!' and Kiko's 'Well, as much as'), Fox's answer to 'I think I've got them both.' when the player holds both leaves, and the player's single line to Wolf when they first talk to her after giving Fox the poultice. The Wiki's own wording is kept everywhere else, including the uncaptured full-inventory 'Well it's your lucky day! Make some room' line.",
+    "sources": [
+      "RSProx capture AtFirstLight.bin (revision 243, SHA-256 924537d4bc0e77afa81f4f538f344c453c58533a512c7108084b56e46463aa7e, a whole run of the quest, afl 0 -> 12): Verity at tick 259, Wolf at 296, Fox's menu with both leaves held at 692-699 (the jerboa tail was also held; without the leaves at 593-594 he gives the Wiki's answer), Fox at 746, Wolf at 860-861 (afl 7, afl_wolf_dialogue 0 -> 1, never having talked to her since finding Fox), Kiko at 1253",
+      "Transcript:At First Light revision 15104140 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 68,
+        "sha256": "0f09c33f6f70b4a6ba5945ed9230a1ed96e1df20ab4db2cb422ffd52a150c24c",
+        "text": "** '''Player:''' Well, actually, I heard there might be something I could help you with?"
+      },
+      {
+        "line": 113,
+        "sha256": "6009c1be3d79d0aaa9beefb9b1c04dc301d9bb99b99910dac49ee56010363d79",
+        "text": "* '''Player:''' Well, then I guess the first step is to work out what he went to get. Could I take a look at Kiko's bed?"
+      },
+      {
+        "line": 227,
+        "sha256": "e522bc74703ea4eed9b5204e0a3c27b7ecb626bb7503a811acd60af7643914c1",
+        "insert_before": [
+          "** {{tcond|If the player has both leaves:}}",
+          "*** '''Guild Hunter Fox:''' Yay, Fox will be pleased. I'll let him know right now!",
+          "*** '''Player:''' ...",
+          "*** '''Guild Hunter Fox:''' He's very mean... He says you'll have to... tie them up with the cute little jerb tail.",
+          "*** {{tact|end}}",
+          "** {{tcond|If the player does not have both leaves:}}"
+        ],
+        "text": "*** '''Guild Hunter Fox:''' It doesn't look like you do... Who's the one with the head wound again?"
+      },
+      {
+        "line": 228,
+        "sha256": "931bf4506b683e52aac35536b3453f0b35e9bc31eb2328fb96c58fa0c09690d1",
+        "text": "*** {{tact|end}}"
+      },
+      {
+        "line": 307,
+        "sha256": "31992a0002a955e44f5adefa7fe7b293c330fb33db876d5f41ecbfccf2676d4d",
+        "text": "* '''Guild Hunter Fox:''' Well, it's your lucky day! Take this sample to a woman called Atza in Outer Fortis. She'll have exactly what we need."
+      },
+      {
+        "line": 353,
+        "sha256": "0ede3c120aac8aa7a44810dd08a6e1b3f5aacc5660fc90977f0922459fcafcc3",
+        "insert_before": [
+          "===Talking to Guild Hunter Wolf for the first time after giving Fox the poultice===",
+          "* '''Player:''' I've found Fox. He's been injured by something out in the savannah, but he's doing okay. He's got me doing a few things for him whilst he recuperates.",
+          "* '''Guild Hunter Wolf (Master):''' Ha! Now that's the Fox I know. I'll have to give him some odd jobs once he's back to make up for ones you're covering!",
+          "* {{tact|end}}",
+          ""
+        ]
+      },
+      {
+        "line": 502,
+        "sha256": "8d3d1675408d6f46cb8eb452de213ee6bc402a4f672c8a7e1806b3774e753630",
+        "text": "** '''Guild Hunter Kiko:''' Well, as much as I resent the trickery used, this bed is much comfier now."
+      }
+    ]
   }
 }
