@@ -4523,5 +4523,283 @@
         ]
       }
     ]
+  },
+  "Creature of Fenkenstrain": {
+    "revision": 15343498,
+    "reason": "Creature of Fenkenstrain as the revision 243 capture of a whole run plays it. The interview's opening menu has a third option, \"What job?\" (the signpost lines and a second Yes./No. menu, whose Yes. is taken to carry on as the first Yes. does: the run picked No.), and its one-word and skill menus have no full stops. Asking the gardener, the player says the option's own words once, and does not repeat them after the amulet's box; without the amulet each question gets the neck-twitch box. The north-west bookcase's three other books each answer with a box, and the north-east compartment's find ends the search. Every body part carried is handed over in one talk, in the order arms, legs, torso, head, and Fenkenstrain adds \"Oh bother! I haven't got a needle or thread!\"; the needle and the thread are likewise handed over in one talk. A Wiki editor's name stands in for the player's in one line. Talking to Fenkenstrain before the creature is dealt with has its own three lines. The gardener's post-conductor talk reads \"gettin'\" and \"Good for you ... err ... mate.\", and Rologarth saw Fenkenstrain climb up \"to hide.\"",
+    "sources": [
+      "RSProx capture CreatureOfFenkenstrain+Unlock.bin (revision 243, SHA-256 e76b2546c78c1a143b612e2ed428c58b61993b7b69826a29f14d6bbb5a82124a, a whole run of the quest, varp 399 0 -> 8): the interview at ticks 319-394, the gardener at 549-610 and 2240-2245, the books at 452-517, the hand-in at 1384-1400, the needle and thread at 1412-1432, the conductor talk at 1858-1885, the second talk at 1894-1896, Rologarth at 2255-2266",
+      "Transcript:Creature of Fenkenstrain revision 15343498 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 29,
+        "sha256": "165aec2918cc37b6b90aa649a2caff0d71ac0b04c670b3b65ca1a4154144ff62",
+        "text": "** {{topt|Stunning}}"
+      },
+      {
+        "line": 33,
+        "sha256": "d2ca9533e6ec596c34888e0364b2588631214076ec87d767ff1ad8437c93f8b3",
+        "text": "** {{topt|Awe-inspiring}}"
+      },
+      {
+        "line": 35,
+        "sha256": "e9e52347bc3bc337fdedf6dc6ae9f7c7fb84f685c22fbe936d1e3a4a8a08231c",
+        "text": "** {{topt|Breathtaking}}"
+      },
+      {
+        "line": 37,
+        "sha256": "4a15c377659be670c1ae1e691433839f0f9abde164aea8ce7b42f9fa2dba0abe",
+        "text": "** {{topt|Braindead}}"
+      },
+      {
+        "line": 41,
+        "sha256": "84c5c0ac4a3de93669f72af3658e86308994d33c9f751a65e206c151f6fac372",
+        "text": "*** {{topt|Combat}}"
+      },
+      {
+        "line": 46,
+        "sha256": "6c61b70d985fcf0aa9a17ee41e1453b3fafafe8a8d417b91e8adc27c70722978",
+        "text": "*** {{topt|Magic}}"
+      },
+      {
+        "line": 48,
+        "sha256": "a4cd24c3e74d7fccd9ed241e616bd3291427eac3db7fbac7381b021ae66e44f9",
+        "text": "*** {{topt|Cooking}}"
+      },
+      {
+        "line": 50,
+        "sha256": "9d7925cd260e3049b2633ff27be13dda923093654dab30c552545ddd609cfcf4",
+        "text": "*** {{topt|Grave-digging}}"
+      },
+      {
+        "line": 70,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "insert_before": [
+          "* {{topt|What job?}}",
+          "** '''Player:''' What job do you mean, sir?",
+          "** '''Dr Fenkenstrain:''' Oh, doesn't anybody read signposts anymore???",
+          "** '''Player:''' What signpost?",
+          "** '''Dr Fenkenstrain:''' The signpost in the middle of the village nearby! Oh never mind.",
+          "** '''Dr Fenkenstrain:''' I need a new butler. Would you like to apply?",
+          "** {{tselect|Select an option}}",
+          "** {{topt|Yes.}}",
+          "*** {{tact|Continues from \"Yes, if it pays well.\"}}",
+          "** {{topt|No.}}",
+          "*** '''Player:''' No thanks, I wouldn't work here if you paid me.",
+          "*** '''Dr Fenkenstrain:''' Charming.",
+          "*** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 109,
+        "sha256": "d40cb032941a6d73b5f414434017d89ea4acefb8cd9ea51b8cc0d136b017c768",
+        "text": ""
+      },
+      {
+        "line": 123,
+        "sha256": "db7bd8bc812d79e6d2000cd0ff7964a5e8a65516d9fa25459466366676df6fa4",
+        "text": "** '''Player:''' What happened to your head?"
+      },
+      {
+        "line": 125,
+        "sha256": "d3a62d18c5a51f716dfc4f86e1c7651e7127cf4f066e30a7d48609d5a89e97bb",
+        "text": "*** {{tbox|The Headless Gardener's neck twitches at you, but the lack of any head prevents him from speaking.}}"
+      },
+      {
+        "line": 128,
+        "sha256": "f48a43b5d1d481905fcf79ec4856ac0bdebb3002113efe6c2216a38c88560923",
+        "text": ""
+      },
+      {
+        "line": 141,
+        "sha256": "db7bd8bc812d79e6d2000cd0ff7964a5e8a65516d9fa25459466366676df6fa4",
+        "text": "** '''Player:''' What's your name?"
+      },
+      {
+        "line": 143,
+        "sha256": "d3a62d18c5a51f716dfc4f86e1c7651e7127cf4f066e30a7d48609d5a89e97bb",
+        "text": "*** {{tbox|The Headless Gardener's neck twitches at you, but the lack of any head prevents him from speaking.}}"
+      },
+      {
+        "line": 296,
+        "sha256": "3e1970eabb8056da904bfe0ea16ad570223b8ab11f63f7441aa9ee07c667b438",
+        "insert_before": [
+          "**** {{tbox|This book leaves you contemplating vegetarianism.}}"
+        ]
+      },
+      {
+        "line": 297,
+        "sha256": "e7c172a86eb23064310b74cb8e21a5ba47a76f4c17e361545a5a1e47f1416f4e",
+        "insert_before": [
+          "**** {{tbox|This book has some very enlightening points to make, but you are at a loss to know how anyone without a head could possibly read it.}}"
+        ]
+      },
+      {
+        "line": 298,
+        "sha256": "a93896e8acdaf4e9089bdf2171e058605cf1547fbd8480cfe28df52d0bdffb9d",
+        "insert_before": [
+          "**** {{tbox|This book seems to have been read hundreds of times, and has scribbles and formulae on every page. One such scribble says 'None good enough - have had to lock them in the caverns...'}}"
+        ]
+      },
+      {
+        "line": 315,
+        "sha256": "3366195e0d7c8a989b869127aadf67a2c539366eeee6169452507a5b75a0214b",
+        "insert_before": [
+          "***** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 318,
+        "sha256": "72d3d8aa38bb928513732df9a6f242d8a296a418d3df5afe60983dd42b114f80",
+        "insert_before": [
+          "**** {{tbox|The book is appallingly dull.}}"
+        ]
+      },
+      {
+        "line": 382,
+        "sha256": "0b8966b60f0a2af9de2eba1d2e3b5999dc35fbba54e1248a5416ccfbf361f360",
+        "text": "** {{tcond|If the player has the arms:}}"
+      },
+      {
+        "line": 383,
+        "sha256": "8693de077a1eee89648e92f21e013795d93910cedc11ffc2408f52c94e7bb72b",
+        "text": "*** '''Dr Fenkenstrain:''' Great, you've brought me some arms."
+      },
+      {
+        "line": 384,
+        "sha256": "391eafbf8acc133926d98989b14bc186d262be111047edd84e5fc8253ff45ecc",
+        "text": ""
+      },
+      {
+        "line": 385,
+        "sha256": "4b60d6f8131b1bb82f8632b42e366614bf87be5522333383eb9e5ca0822620ab",
+        "text": "** {{tcond|If the player has the legs:}}"
+      },
+      {
+        "line": 386,
+        "sha256": "cf1235c819c50dd373582ff9c255ed24c936ba4740c6863e8118bd045fcfc231",
+        "text": "*** '''Dr Fenkenstrain:''' Excellent, you've brought me some legs."
+      },
+      {
+        "line": 387,
+        "sha256": "391eafbf8acc133926d98989b14bc186d262be111047edd84e5fc8253ff45ecc",
+        "text": ""
+      },
+      {
+        "line": 388,
+        "sha256": "ba66ef3f511abeceae132f932ecbf6f3867ce1e38e9eb38db62628e0a35a0c9c",
+        "text": "** {{tcond|If the player has the torso:}}"
+      },
+      {
+        "line": 389,
+        "sha256": "1bd43934c0c255d5a1d5229bdf5c926873e2cd44f899432f76aeb6e2bd188c02",
+        "text": "*** '''Dr Fenkenstrain:''' Splendid, you've brought me a torso."
+      },
+      {
+        "line": 390,
+        "sha256": "391eafbf8acc133926d98989b14bc186d262be111047edd84e5fc8253ff45ecc",
+        "text": ""
+      },
+      {
+        "line": 391,
+        "sha256": "f7dd7c40dbb8b04766d5036e589434c8e11b6c9391629e8001aefd1e0fa486a0",
+        "text": "** {{tcond|If the player has the decapitated head with the brain:}}"
+      },
+      {
+        "line": 392,
+        "sha256": "118e4b20d98e09222b0a3d7fbe9b2b45f98dc465c5f1ca0e410e6c181e4454bf",
+        "text": "*** '''Dr Fenkenstrain:''' Fantastic, you've brought me a head."
+      },
+      {
+        "line": 393,
+        "sha256": "391eafbf8acc133926d98989b14bc186d262be111047edd84e5fc8253ff45ecc",
+        "text": ""
+      },
+      {
+        "line": 396,
+        "sha256": "a86959ee66f3bd2333e947dcbff0e0c85d01ebcca1b039da232eb935fda340b2",
+        "insert_before": [
+          "*** '''Dr Fenkenstrain:''' Oh bother! I haven't got a needle or thread!"
+        ]
+      },
+      {
+        "line": 415,
+        "sha256": "931bf4506b683e52aac35536b3453f0b35e9bc31eb2328fb96c58fa0c09690d1",
+        "text": ""
+      },
+      {
+        "line": 418,
+        "sha256": "931bf4506b683e52aac35536b3453f0b35e9bc31eb2328fb96c58fa0c09690d1",
+        "text": ""
+      },
+      {
+        "line": 579,
+        "sha256": "6a6a7f613e4c3d41b3b109dd31f31f703479c7e209f3c31a1f7461c4b34c7d5d",
+        "text": "* '''Dr Fenkenstrain:''' Yes, I'm afraid it did, [player name] - all too well."
+      },
+      {
+        "line": 591,
+        "sha256": "6e48e2d0b518be8096e87b6c03c4d15c7edbb3f458cb3e3d6a0381d0fa78d355",
+        "insert_before": [
+          "===Talking to Dr Fenkenstrain again===",
+          "* '''Dr Fenkenstrain:''' So have you destroyed it?!!?",
+          "* '''Player:''' Not yet.",
+          "* '''Dr Fenkenstrain:''' Please, hurry - save me!!!!",
+          "* {{tact|end}}",
+          ""
+        ]
+      },
+      {
+        "line": 593,
+        "sha256": "602e79fb71200bfe9e79bffd7f487f43747fa8fb88e25143f644475e43d6eefe",
+        "text": "* '''Gardener Ghost:''' Same as ever, mate, just gettin' on with it regardless."
+      },
+      {
+        "line": 594,
+        "sha256": "05028c54528d44959891fff06b6a6313db9232c289ef689620afd8a81ec5c26b",
+        "text": "* '''Player:''' Good for you ... err ... mate."
+      },
+      {
+        "line": 648,
+        "sha256": "d09aad6161022394c2c37af3aec2222d645464b0678f1e261763c8041095f1c1",
+        "text": "* '''Rologarth:''' I saw him climb up into the Tower to hide. It doesn't matter - soon the werewolves will come for him, and his experiments will be forever ceased."
+      }
+    ]
+  },
+  "Gardener Ghost": {
+    "revision": 15079119,
+    "reason": "The gardener's talk after Creature of Fenkenstrain, as the revision 243 capture plays it: \"gettin'\" and \"Good for you ... err ... mate.\"",
+    "sources": [
+      "RSProx capture CreatureOfFenkenstrain+Unlock.bin (revision 243, SHA-256 e76b2546c78c1a143b612e2ed428c58b61993b7b69826a29f14d6bbb5a82124a, a whole run of the quest, varp 399 0 -> 8): the gardener at ticks 2240-2245, after the quest",
+      "Transcript:Gardener Ghost revision 15079119 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 18,
+        "sha256": "9e5c01f52787e81ee1d2874d9a2712437a5a9072a15d5fc8dcbddc9ed93bbea1",
+        "text": "** '''Gardener Ghost:''' Same as ever, mate, just gettin' on with it regardless."
+      },
+      {
+        "line": 19,
+        "sha256": "9e20dedb851564fed4627c1a8eb8bb7a84cf5adaa552c563c019cd452f9d7b8a",
+        "text": "** '''Player:''' Good for you ... err ... mate."
+      }
+    ]
+  },
+  "Lord Rologarth": {
+    "revision": 14888004,
+    "reason": "Rologarth after Creature of Fenkenstrain, as the revision 243 capture plays it: he saw Fenkenstrain climb up into the Tower \"to hide.\"",
+    "sources": [
+      "RSProx capture CreatureOfFenkenstrain+Unlock.bin (revision 243, SHA-256 e76b2546c78c1a143b612e2ed428c58b61993b7b69826a29f14d6bbb5a82124a, a whole run of the quest, varp 399 0 -> 8): Rologarth at ticks 2255-2266, after the quest",
+      "Transcript:Lord Rologarth revision 14888004 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 6,
+        "sha256": "d09aad6161022394c2c37af3aec2222d645464b0678f1e261763c8041095f1c1",
+        "text": "* '''Rologarth:''' I saw him climb up into the Tower to hide. It doesn't matter - soon the werewolves will come for him, and his experiments will be forever ceased."
+      }
+    ]
   }
 }

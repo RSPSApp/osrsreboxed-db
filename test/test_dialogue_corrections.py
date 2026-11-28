@@ -2240,3 +2240,78 @@ def test_the_golem_capture_lines_and_the_curators_fossil_island_menu():
     ]
     # The Wiki's own wording stays where the capture words a line differently.
     assert "Damage... severe... Task... incomplete..." in json.dumps(start)
+
+
+def test_creature_of_fenkenstrain_follows_the_revision_243_capture():
+    sources = json.loads(
+        (config.DATA_PATH / "dialogues" / "capture-sources.json").read_text(encoding="utf-8")
+    )
+    corrections = json.loads(
+        (config.DATA_PATH / "dialogues" / "corrections.json").read_text(encoding="utf-8")
+    )
+    for name, cache, title in (
+        ("Creature of Fenkenstrain", "quest-pages", "Transcript:Creature of Fenkenstrain"),
+        ("Gardener Ghost", "wiki-pages", "Transcript:Gardener Ghost"),
+        ("Lord Rologarth", "wiki-pages", "Transcript:Lord Rologarth"),
+    ):
+        # Source inputs over the cached revision, not edits of the generated record.
+        assert name not in corrections
+        source = sources[name]
+        page = json.loads((config.DATA_PATH / f"dialogues/{cache}.json").read_text())[title]
+        assert source["revision"] == page["revision"]
+        lines = page["wikitext"].splitlines()
+        for fix in source["lines"]:
+            assert hashlib.sha256(lines[fix["line"] - 1].encode()).hexdigest() == fix["sha256"]
+        raw = apply_capture_lines(name, page["wikitext"], source, page["revision"])
+        assert raw == apply_capture_lines(name, page["wikitext"], source, page["revision"])
+        with pytest.raises(ValueError, match="Stale dialogue capture source"):
+            apply_capture_lines(name, page["wikitext"], source, page["revision"] + 1)
+
+    records = json.loads(
+        (config.DOCS_PATH / "npc-dialogues.json").read_text(),
+        object_hook=lambda node: {k: v for k, v in node.items() if k not in ("speaker_ids", "id")},
+    )
+    variants = records["Creature of Fenkenstrain"]["variants"]
+    branches = records["Creature of Fenkenstrain"]["branches"]
+    words = lambda steps: [step.get("player") or f"{step.get('speaker', step.get('type'))}: {step.get('text')}" for step in steps]
+
+    def flat(steps):
+        out = []
+        for step in steps:
+            if step.get("type") == "call":
+                out.extend(flat(branches[step["branch"]]))
+            else:
+                out.append(step)
+        return out
+
+    # The interview: "What job?" is the third option and the later menus have no full stops (ticks 321-371).
+    interview = variants["dr-fenkenstrain-talking-to-dr-fenkenstrain"]
+    menu = interview[1]["options"]
+    assert [option["text"] for option in menu] == ["Yes.", "No.", "What job?"]
+    assert words(menu[2]["steps"])[:5] == ["What job do you mean, sir?",
+        "Dr Fenkenstrain: Oh, doesn't anybody read signposts anymore???", "What signpost?",
+        "Dr Fenkenstrain: The signpost in the middle of the village nearby! Oh never mind.",
+        "Dr Fenkenstrain: I need a new butler. Would you like to apply?"]
+    one_word = menu[0]["steps"][4]["options"]
+    assert [option["text"] for option in one_word] == ["Stunning", "Awe-inspiring", "Breathtaking", "Braindead"]
+    assert [option["text"] for option in one_word[3]["steps"][2]["options"]] == ["Combat", "Magic", "Cooking", "Grave-digging"]
+    # The gardener: the option's own words, once (ticks 552-604).
+    gardener = variants["decapitated-head-talking-to-the-gardener-ghost"][0]["options"]
+    assert [option["steps"][0]["player"] for option in gardener] == [
+        "Can you tell me anything about Fenkenstrain?", "What happened to your head?", "What's your name?"]
+    # Every part carried, arms first, then "Oh bother!" (ticks 1390-1400).
+    parts = variants["talking-to-dr-fenkenstrain-with-the-body-parts"][0]["options"][0]["steps"]
+    conditions = [step for step in parts if step.get("type") == "condition"]
+    assert [step["text"] for step in conditions][:4] == ["If the player has the arms:", "If the player has the legs:",
+        "If the player has the torso:", "If the player has the decapitated head with the brain:"]
+    assert all(step["steps"][-1].get("type") != "end" for step in conditions[:4])
+    assert "Dr Fenkenstrain: Oh bother! I haven't got a needle or thread!" in words(conditions[4]["steps"])
+    # No Wiki editor's name; the second talk after the conductor (ticks 1863, 1894-1896).
+    after = words(variants["talking-to-dr-fenkenstrain-after-using-the-conductor"])
+    assert after[1] == "Dr Fenkenstrain: Yes, I'm afraid it did, [player name] - all too well."
+    assert words(variants["talking-to-dr-fenkenstrain-after-using-the-conductor-talking-to-dr-fenkenstrain-again"]) == [
+        "Dr Fenkenstrain: So have you destroyed it?!!?", "Not yet.", "Dr Fenkenstrain: Please, hurry - save me!!!!"]
+    rologarth = records["Lord Rologarth"]["variants"]["after-creature-of-fenkenstrain"]
+    assert words(rologarth)[2].startswith("Rologarth: I saw him climb up into the Tower to hide. It doesn't")
+    ghost = json.dumps(records["Gardener Ghost"]["variants"]["after-creature-of-fenkenstrain"])
+    assert "just gettin' on with it regardless" in ghost and "Good for you ... err ... mate." in ghost

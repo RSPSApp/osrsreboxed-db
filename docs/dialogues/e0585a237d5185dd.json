@@ -55,10 +55,10 @@
         "text": "If the player is wearing the ghostspeak amulet:",
         "steps": [
           {
-            "npc": "Same as ever, mate, just getting' on with it regardless."
+            "npc": "Same as ever, mate, just gettin' on with it regardless."
           },
           {
-            "player": "Good for you...err...mate."
+            "player": "Good for you ... err ... mate."
           }
         ],
         "id": "7HHh44"
