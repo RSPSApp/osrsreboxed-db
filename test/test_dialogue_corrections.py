@@ -2240,3 +2240,144 @@ def test_the_golem_capture_lines_and_the_curators_fossil_island_menu():
     ]
     # The Wiki's own wording stays where the capture words a line differently.
     assert "Damage... severe... Task... incomplete..." in json.dumps(start)
+
+
+@pytest.mark.parametrize(
+    "name, cache",
+    [
+        ("The Fremennik Trials", "quest-pages.json"),
+        ("Council workman", "wiki-pages.json"),
+        ("Brundt the Chieftain", "wiki-pages.json"),
+        ("Mord Gunnars", "wiki-pages.json"),
+        ("Maria Gunnars", "wiki-pages.json"),
+        ("Jarvald", "wiki-pages.json"),
+        ("The Fremennik Isles", "quest-pages.json"),
+        ("Lunar Diplomacy", "quest-pages.json"),
+    ],
+)
+def test_fremennik_trials_revision_243_capture_sources_are_pinned(name, cache):
+    source = json.loads(
+        (config.DATA_PATH / "dialogues" / "capture-sources.json").read_text(encoding="utf-8")
+    )[name]
+    page = json.loads((config.DATA_PATH / "dialogues" / cache).read_text())[f"Transcript:{name}"]
+    assert source["revision"] == page["revision"]
+    assert any("rsprox capture local 1002313 (rev 243)" in line for line in source["sources"])
+    raw = apply_capture_lines(name, page["wikitext"], source, page["revision"])
+    assert raw == apply_capture_lines(name, page["wikitext"], source, page["revision"])
+    with pytest.raises(ValueError, match="Stale dialogue capture source"):
+        apply_capture_lines(name, "\n" + page["wikitext"], source, page["revision"])
+
+
+def test_fremennik_trials_follows_the_revision_243_capture():
+    dialogues = json.loads((config.DOCS_PATH / "npc-dialogues.json").read_text())
+    record = dialogues["The Fremennik Trials"]
+    variants, branches = record["variants"], record["branches"]
+    text = json.dumps(record)
+
+    def lines(steps):
+        return [step.get("player", step.get("text")) for step in steps]
+
+    # The drunk revellers answer at random; live drew "(hic) Washa counshil wha?" (ticks 701, 707).
+    for name in ("bjorn", "eldgrim"):
+        draw = variants[f"the-non-council-members-{name}"][1]
+        assert draw["type"] == "random" and len(draw["options"]) == 2
+        assert lines(draw["options"][1]["steps"]) == ["(hic) Washa counshil wha?", "I guess not."]
+    # The workman's "No" (1071) and the Poison Salesman's Murder Mystery answer (1196),
+    # bound to the Poison Salesman page's own option.
+    workman = variants["the-council-members-talking-to-the-council-workman"][2]["options"][1]
+    assert workman["steps"][0] == {"player": "I wasn't planning on it, no."}
+    salesman = variants["the-council-members-talking-to-the-poison-salesman"][0]["options"][0]
+    assert lines(salesman["steps"]) == ["I hear you're pretty smart to have solved the Sinclair Murder!"]
+    # Olaf's short reminder (642-673); each reminder menu drops the reminder just given.
+    short = variants["the-council-members-olaf-the-bard-talking-to-him-again-talking-to-him-again-afterwards"]
+    assert short[0] == {"player": "What do I have to do to earn your vote at the council of elders again?"}
+    assert short[1]["text"].startswith("Ah, it but a small thing outerlander.")
+    menus = {}
+    for option in short[3]["options"][:3]:
+        body = branches[option["steps"][0]["steps"][0]["branch"]]
+        menus[option["text"]] = [choice["text"] for choice in body[-1]["options"]]
+    assert menus == {
+        "Remind me about crafting a lyre": [
+            "Remind me about Fossegrimen", "Remind me about playing on stage", "I don't need another reminder"],
+        "Remind me about Fossegrimen": [
+            "Remind me about crafting a lyre", "Remind me about playing on stage", "I don't need another reminder"],
+        "Remind me about playing on stage": [
+            "Remind me about crafting a lyre", "Remind me about Fossegrimen", "I don't need a reminder"],
+    }
+    assert "without the blessing of Fossegrimen." in text and "blessing of the Fossegrimen." not in text
+    # The long first explanation stays (local 1002236 t3545).
+    assert variants["the-council-members-olaf-the-bard-talking-to-him-again"][0] == {
+        "player": "So how would I go about writing this epic?"}
+    # Sigli after the hunt (1987-2038), Swensen after the maze (6885).
+    sigli = variants["the-council-members-sigli-the-huntsman-talking-to-sigli-after-defeating-the-draugen-subsequent-dialogue-with-sigli"]
+    assert sigli[0] == {"player": "So can I rely on your vote with the council of elders in my favour?"}
+    assert variants["the-council-members-swensen-s-trial-talking-to-swensen-again-2"][0] == {"player": "Hello!"}
+    # Every captured answer about Askeladden's written promise (3069-3600).
+    trial = "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-"
+    answers = {
+        "manni": "Uh... call it a crazy hunch, but did you even try asking Askeladden about that?",
+        "thorvald": "Not in the slightest.", "peer-the-seer": "I'm afraid not, outerlander.",
+        "swensen": "Er... from Askeladden, maybe?",
+        "the-fisherman": "I never saw anything like that in my store before.",
+        "skulgrimen": "I never saw anything like that in my store before.",
+        "sigli": "Did you even ASK Askeladden?", "brundt": "Not really my affair, outerlander.",
+        "yrsa": "No... sorry, I don't.", "olaf": "I'm sorry, no I don't.",
+    }
+    for name, answer in answers.items():
+        steps = variants[f"{trial}finding-askeladden-s-written-promise-talking-to-{name}"]
+        choice = next(step for step in steps if step.get("type") == "choice")
+        asked = lines(choice["options"][0]["steps"])
+        assert asked[-2:] == [
+            "I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?",
+            answer,
+        ]
+    # Reminders (2457, 2485, 2744).
+    assert lines(variants[f"{trial}talking-to-brundt-talking-to-brundt-again"][1]["options"][0]["steps"])[-1] == (
+        "Sigli the hunter is the only one who knows of such hunting grounds. Go and request his knowledge.")
+    assert lines(variants[f"{trial}finding-sigli-s-bowstring-talking-to-sigli-again"][0]["options"][0]["steps"])[-1] == (
+        "If I knew I would not have asked you to go and get me one, now would I?")
+    token = variants[f"{trial}talking-to-swensen-the-navigator-talking-to-thorvald-again"][0]["options"][0]["steps"]
+    assert token[1]["speaker"] == "Thorvald the Warrior"
+    assert token[1]["text"].endswith("in deference to my own worthiness somehow.")
+    # Council answers the Wiki lacks (Sailor 2178 and 3630, Yrsa 2363, Agnar 2390-2396).
+    assert "Nope. I'm just a sailor." in json.dumps(variants["the-non-council-members-sailor"]) + json.dumps(branches)
+    assert lines(variants["the-non-council-members-yrsa"])[1] == "No, sorry, I'm not. Best look elsewhere outerlander."
+    agnar = variants["the-non-council-members-agnar"]
+    assert lines(agnar)[:4] == ["Hello. Are you a council member?", "Could be. Who wants to know?", "Er... I do.",
+                                "Well, yes I am. Why do you want to find a council member?"]
+    assert agnar[-1]["type"] == "missing"
+    # Thorvald's ladder once the quest is done (7860).
+    ladder = variants["the-council-members-peer-the-seer-after-defeating-koschei-attempting-to-climb-down-the-stairs-again"]
+    assert [step["text"] for step in ladder] == ["Before completing the quest:", "After completing the quest:"]
+    assert ladder[1]["steps"][0]["player"].endswith("now that I have been accepted as a member of the Fremennik clan.")
+    # Brundt with no votes (692-698, 782-785) ends before the "Remember:" line.
+    brundt = variants["the-council-members-talking-to-brundt"]
+    none = next(step for step in brundt if step.get("text") == "If the player has no votes:")
+    assert lines(none["steps"])[0] == "I don't have any votes yet."
+    assert none["steps"][-1] == {"type": "end"}
+    assert brundt.index(none) < next(i for i, step in enumerate(brundt) if str(step.get("text", "")).startswith("Remember:"))
+
+
+def test_rellekka_npcs_follow_the_revision_243_capture():
+    dialogues = json.loads((config.DOCS_PATH / "npc-dialogues.json").read_text())
+    workman = json.dumps(dialogues["Council workman"])
+    assert workman.count('"The workman winks at you."') == 2
+    assert "A bit early in the day fer that ain't it?" in workman  # bottled drinks keep it
+    beer = dialogues["Council workman"]["variants"]["standard-dialogue-when-using-a-beer-or-beer-tankard-on-the-workman"]
+    assert beer[0]["npc"].startswith("Ta very much, like.")
+    brundt = json.dumps(dialogues["Brundt the Chieftain"])
+    for line in ("Hello again, [Fremennik name]! I hope your travels", "Well met, [Fremennik name]. It is always",
+                 "Aye, that it is, [Fremennik name]. Should you desire", "in the icy waters", "in the icy ocean"):
+        assert line in brundt
+    assert "icey" not in brundt
+    assert dialogues["Mord Gunnars"]["variants"]["travelling-to-jatizso-before-the-fremennik-isles"][0]["text"] == (
+        "You'll have to get to know Mord a little better before you can travel with him.")
+    assert dialogues["Maria Gunnars"]["variants"]["travelling-to-neitiznot-before-the-fremennik-isles"][0]["text"] == (
+        "You'll have to talk to Mord before Maria will let you travel with her.")
+    assert "I would head straight for the cave and not tarry too long [Fremennik name], the cold winds" in json.dumps(
+        dialogues["Jarvald"]["variants"]["standard-dialogue-after-the-fremennik-trials-rellekka"])
+    isles = json.dumps(dialogues["The Fremennik Isles"])
+    assert "Hello, are you [Fremennik name] by any chance?" in isles and "Maira" not in isles
+    lokar = dialogues["Lunar Diplomacy"]["variants"]["getting-started-talking-to-lokar-searunner"]
+    assert lokar[0] == {"player": "Hello there."}
+    assert lokar[1]["player"].startswith("Hey! Don't call me outerlander!")

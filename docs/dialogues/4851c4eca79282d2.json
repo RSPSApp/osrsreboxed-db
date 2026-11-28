@@ -9,6 +9,13 @@
         "npc": "Maybe you should speak with Rellekka's Chieftain."
       }
     ],
+    "travelling-to-neitiznot-before-the-fremennik-isles": [
+      {
+        "type": "message",
+        "text": "You'll have to talk to Mord before Maria will let you travel with her.",
+        "id": "XLYr8c"
+      }
+    ],
     "after-the-fremennik-isles": [
       {
         "npc": "Hello, [Fremennik name]?"

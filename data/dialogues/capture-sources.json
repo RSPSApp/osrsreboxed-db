@@ -1442,11 +1442,12 @@
   },
   "The Fremennik Trials": {
     "revision": 15263294,
-    "reason": "The Fremennik Trials as the captures play it: Brundt's opening greeting, and his seven-vote acceptance before the reminder lines with its own end (the Wiki puts it after their end, so it could never play); Manni's 'Ah, I see', 'As you wish outerlander;' and 'I alsho' lines and the longhall's 'What was THAT?'; the tuning's 'Doh Ray Me So.' and 'Your lyre is perfectly tuned.'; the Champions' Guild ballad as sung; the performance's messages and Olaf's two separate lines in live's order; Koschei's overheads ('you made a mistake', 'What kind of person', the missing 'Hey outerlander! Let's see what you have!'); Thorvald's two missing lines after the fight; and the unicorn head's 'It's unusual because you removed it already!'.",
+    "reason": "The Fremennik Trials as the captures play it: Brundt's opening greeting, and his seven-vote acceptance before the reminder lines with its own end (the Wiki puts it after their end, so it could never play); Manni's 'Ah, I see', 'As you wish outerlander;' and 'I alsho' lines and the longhall's 'What was THAT?'; the tuning's 'Doh Ray Me So.' and 'Your lyre is perfectly tuned.'; the Champions' Guild ballad as sung; the performance's messages and Olaf's two separate lines in live's order; Koschei's overheads ('you made a mistake', 'What kind of person', the missing 'Hey outerlander! Let's see what you have!'); Thorvald's two missing lines after the fight; and the unicorn head's 'It's unusual because you removed it already!'. From the revision 243 run 1002313: Bjorn's and Eldgrim's '(hic) Washa counshil wha?' as a random answer beside the Wiki's; the Sailor's, Yrsa's and Agnar's council answers; the workman's 'I wasn't planning on it, no.'; Olaf's short reminder later in his trial and his reminder menus without the reminder just given (they returned to the full menu); Sigli's vote question after the hunt; Brundt's and Sigli's reminders during the Merchant's trial and Thorvald's token reminder as live words it; every captured answer to the question about Askeladden's written promise; Thorvald's ladder after the quest; Swensen's 'Hello!'; and Brundt's answer with no votes, which has no 'Remember:' line.",
     "sources": [
       "RSProx capture local 1002236 (revision 242, SHA-256 3d50bf4cf26f6ae2187a4d18ca421271dc16c8685a056470735ca6fbca9a0bee, ticks 3093, 3266-3300, 5726-5752, 5812, 8412, 10284-10305)",
       "RSProx capture local 1001646 (revision 241, SHA-256 2084c0ff0cc3b29b49d9536592340a3acca38d8cf2a296037f65c5dc283e7409, ticks 2331, 2440, 2703-2709, 3145, 3163)",
       "RSProx capture local 1001364 (revision 241, SHA-256 b11b798e5c81ba86cffc56d6017262f21bde524e7fa44ef68e5f22fda5fed7e2, ticks 2714-2728)",
+      "rsprox capture local 1002313 (rev 243), transcript SHA-256 68706cf790ac8148b7e3c71763f5aeca6290f8bb2309d504198dff06ba18b0f7, a run from the Bard's trial to the quest's end and after: tick 642-673 (Olaf's short reminder and menus), tick 692-698 and 782-785 (Brundt, no votes), tick 701 and 707 (Bjorn, Eldgrim), tick 1071 (workman), tick 1987, 2029 and 2036 (Sigli), tick 2178 and 3630 (Sailor), tick 2363 (Yrsa), tick 2390-2396 (Agnar), tick 2457 (Brundt), tick 2485 (Sigli), tick 2744 (Thorvald), tick 3069, 3143, 3204, 3247, 3314, 3378, 3437, 3482, 3541 and 3600 (the written promise), tick 6885 (Swensen), tick 7860 (Thorvald's ladder)",
       "Transcript:The Fremennik Trials revision 15263294 as cached; all other lines are parsed unchanged"
     ],
     "lines": [
@@ -1455,6 +1456,95 @@
         "sha256": "25058031293ac911baf431e5411ba39a5d6b18d57097c95d3c1855fdf8ad723e",
         "insert_before": [
           "* '''Brundt the Chieftain:''' Greetings outerlander!"
+        ]
+      },
+      {
+        "line": 109,
+        "sha256": "6af8fb3a7f9d73542872c332bf25e28fb9df5e0e437b4441290652329a7069e9",
+        "insert_before": [
+          "* {{trandom}}",
+          "* {{topt|Dialogue 1}}"
+        ],
+        "text": "** '''Bjorn:''' I'm now a member of the counshil of eblars? Thanksh a lot buddy! (hic) Letsh have a drink to celebrate!"
+      },
+      {
+        "line": 110,
+        "sha256": "78f530bc8260dd1855c32bf4e426c10497480eb38e1375448415d8cdf8aaedd3",
+        "text": "** '''Player:''' Uh... I'll take that as a no."
+      },
+      {
+        "line": 111,
+        "sha256": "be2dde9d39be26a80672febb9987788fbaf125212de06923ed889e42d04bad9d",
+        "text": "** {{tact|end}}"
+      },
+      {
+        "line": 112,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "insert_before": [
+          "* {{topt|Dialogue 2}}",
+          "** '''Bjorn:''' (hic) Washa counshil wha?",
+          "** '''Player:''' I guess not.",
+          "** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 121,
+        "sha256": "73ee4987369c96907b830659cc2852e5e9d45a08f0a0169be9c7cadfaffb6dcf",
+        "insert_before": [
+          "* {{trandom}}",
+          "* {{topt|Dialogue 1}}"
+        ],
+        "text": "** '''Eldgrim:''' Counshil alwaysh meshing up my drinksh 'do thish, do that, pass this tesht something something something something'.. man I hate that counshil."
+      },
+      {
+        "line": 122,
+        "sha256": "23a5f629e28129916d6ad6ef438adc9e515f3d086a1921b77385b8a001e37556",
+        "text": "** '''Player:''' I guess you're not then."
+      },
+      {
+        "line": 123,
+        "sha256": "be2dde9d39be26a80672febb9987788fbaf125212de06923ed889e42d04bad9d",
+        "text": "** {{tact|end}}"
+      },
+      {
+        "line": 124,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "insert_before": [
+          "* {{topt|Dialogue 2}}",
+          "** '''Eldgrim:''' (hic) Washa counshil wha?",
+          "** '''Player:''' I guess not.",
+          "** {{tact|end}}"
+        ]
+      },
+      {
+        "line": 219,
+        "sha256": "2d10f391cce6c7bb8483fdc59bb3a0639f7e5c36490606d2a032ac527fcae8b1",
+        "insert_before": [
+          "===Sailor===",
+          "* '''Player:''' Hi. Are you a member of the council?",
+          "* '''Sailor:''' Nope. I'm just a sailor.",
+          "* '''Player:''' Fair enough.",
+          "* {{tact|end}}",
+          "",
+          "====Travelling to Miscellania during the trials====",
+          "* '''Player:''' Hi. Are you a member of the council?",
+          "* '''Sailor:''' Nope. I'm just a sailor.",
+          "* '''Player:''' Fair enough.",
+          "* {{tact|end}}",
+          "",
+          "===Yrsa===",
+          "* '''Player:''' Are you a member of the council of elders?",
+          "* '''Yrsa:''' No, sorry, I'm not. Best look elsewhere outerlander.",
+          "* '''Player:''' Okay, thanks.",
+          "* {{tact|end}}",
+          "",
+          "===Agnar===",
+          "* '''Player:''' Hello. Are you a council member?",
+          "* '''Agnar:''' Could be. Who wants to know?",
+          "* '''Player:''' Er... I do.",
+          "* '''Agnar:''' Well, yes I am. Why do you want to find a council member?",
+          "* {{tmissing}}",
+          ""
         ]
       },
       {
@@ -1473,9 +1563,99 @@
         "text": "*** '''Player:''' Ish no' fair! (hic) I canna drink another drop! I alsho feel veddy, veddy ill..."
       },
       {
+        "line": 295,
+        "sha256": "0a83d155cf6857e140042629fd309faa8c97f2fc69f1dbc5cbf5fe1d4f42777c",
+        "insert_before": [
+          "** '''Player:''' I wasn't planning on it, no."
+        ]
+      },
+      {
         "line": 397,
         "sha256": "187cf26e4a3f6b11207d05e8589de025e89ba8b4a5a2ea8a662d72b18a83c60c",
         "text": "** '''Everyone in the longhall:''' {{overhead|What was THAT?}}"
+      },
+      {
+        "line": 461,
+        "sha256": "ef0abc18aedb567bfbd884f0fa8e5fa33460e84d62e20581931998369a2029b2",
+        "text": "* {{topt|Remind me about crafting a lyre}}{{anchor|Olaf-lyre-reminder}}"
+      },
+      {
+        "line": 467,
+        "sha256": "fe982b5f09d618df8218168ece8294b8221148d7acb6051685f27e23ec412683",
+        "insert_before": [
+          "** {{tselect|Select an option}}",
+          "** {{topt|Remind me about Fossegrimen}}",
+          "*** {{tact|below|Olaf-Fossegrimen-reminder}}",
+          "** {{topt|Remind me about playing on stage}}",
+          "*** {{tact|below|Olaf-stage-reminder}}",
+          "** {{topt|I don't need another reminder}}",
+          "*** '''Player:''' No thanks, I think that's all pretty straight forward. I'll go and make my lyre now."
+        ],
+        "text": "*** {{tact|end}}"
+      },
+      {
+        "line": 468,
+        "sha256": "1cc1d16cdae63f001e89294d17d3855b0497b43b69536754093f986033c91d72",
+        "text": "* {{topt|Remind me about Fossegrimen}}{{anchor|Olaf-Fossegrimen-reminder}}"
+      },
+      {
+        "line": 472,
+        "sha256": "da741c50fddf775c62adb5f74196604bf31bfba7c5ee642e27b1d1bfa1f05e0a",
+        "text": "** '''Olaf the Bard:''' the amount of time you will be blessed for. You will not be able to perform on stage without the blessing of Fossegrimen."
+      },
+      {
+        "line": 474,
+        "sha256": "fe982b5f09d618df8218168ece8294b8221148d7acb6051685f27e23ec412683",
+        "insert_before": [
+          "** {{tselect|Select an option}}",
+          "** {{topt|Remind me about crafting a lyre}}",
+          "*** {{tact|above|Olaf-lyre-reminder}}",
+          "** {{topt|Remind me about playing on stage}}",
+          "*** {{tact|below|Olaf-stage-reminder}}",
+          "** {{topt|I don't need another reminder}}",
+          "*** '''Player:''' No thanks, I think that's all pretty straight forward. I'll go and make my lyre now."
+        ],
+        "text": "*** {{tact|end}}"
+      },
+      {
+        "line": 475,
+        "sha256": "c62b3e173f9f6f20f312c0f222357239a1765f8dc712ca369a28ba0408d50b31",
+        "text": "* {{topt|Remind me about playing on stage}}{{anchor|Olaf-stage-reminder}}"
+      },
+      {
+        "line": 482,
+        "sha256": "fe982b5f09d618df8218168ece8294b8221148d7acb6051685f27e23ec412683",
+        "insert_before": [
+          "** {{tselect|Select an option}}",
+          "** {{topt|Remind me about crafting a lyre}}",
+          "*** {{tact|above|Olaf-lyre-reminder}}",
+          "** {{topt|Remind me about Fossegrimen}}",
+          "*** {{tact|above|Olaf-Fossegrimen-reminder}}",
+          "** {{topt|I don't need a reminder}}",
+          "*** '''Player:''' No thanks, I think that's all pretty straight forward. I'll go and make my lyre now."
+        ],
+        "text": "*** {{tact|end}}"
+      },
+      {
+        "line": 487,
+        "sha256": "d4051c5950d91c2bcafa924713156fbf092c18439061128d3967c7ad4a0ae217",
+        "insert_before": [
+          "=====Talking to him again afterwards=====",
+          "* '''Player:''' What do I have to do to earn your vote at the council of elders again?",
+          "* '''Olaf the Bard:''' Ah, it but a small thing outerlander. Simply make yourself an instrument, get the blessing of Fossegrimen, and then sing your own ballad at the longhall.",
+          "* '''Olaf the Bard:''' Is that clear enough, outerlander? Would you like me to repeat anything?",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Remind me about crafting a lyre}}",
+          "** {{tact|above|Olaf-lyre-reminder}}",
+          "* {{topt|Remind me about Fossegrimen}}",
+          "** {{tact|above|Olaf-Fossegrimen-reminder}}",
+          "* {{topt|Remind me about playing on stage}}",
+          "** {{tact|above|Olaf-stage-reminder}}",
+          "* {{topt|I don't need a reminder}}",
+          "** '''Player:''' No thanks, I think that's all pretty straight forward. I'll go and make my lyre now.",
+          "** {{tact|end}}",
+          ""
+        ]
       },
       {
         "line": 675,
@@ -1530,6 +1710,157 @@
         ]
       },
       {
+        "line": 846,
+        "sha256": "5aa98cb8ff22f1155b33b84e140ee4f60df2d522b35d896d7141df6a45b51606",
+        "insert_before": [
+          "* '''Player:''' So can I rely on your vote with the council of elders in my favour?"
+        ]
+      },
+      {
+        "line": 1061,
+        "sha256": "6eebc5f7cf8aca523130f6708df176c4f7ef236f5490d2b505e45a4e94d09eb3",
+        "insert_before": [
+          "======Talking to Brundt again======",
+          "* '''Brundt the Chieftain:''' Greetings again outerlander! How goes your attempts to gain votes with the council of elders?",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Player:''' I don't suppose you have any idea where I could find a map to unspoiled hunting grounds, do you?",
+          "** '''Brundt the Chieftain:''' Ah, outerlander... if you wish to become a Fremennik you should try and pay more attention to what people tell you...",
+          "** '''Brundt the Chieftain:''' Sigli the hunter is the only one who knows of such hunting grounds. Go and request his knowledge.",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          ""
+        ]
+      },
+      {
+        "line": 1078,
+        "sha256": "baf0e7b63e5d2ff4b9194c05fb3f4517ba4b05e798b212a49579aea761b006aa",
+        "insert_before": [
+          "======Talking to Sigli again======",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Sigli the Huntsman:''' Greetings outerlander.",
+          "** '''Player:''' I don't suppose you have any idea where I could find a finely balanced custom bowstring, do you?",
+          "** '''Sigli the Huntsman:''' If I knew I would not have asked you to go and get me one, now would I?",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          ""
+        ]
+      },
+      {
+        "line": 1279,
+        "sha256": "e5bc05d55891e62e2bff1279092f8838d05ea08d8bf60d7d05b5c380359e2c72",
+        "text": "** '''Player:''' I don't suppose you have any idea where I could find the token to allow your seat at the champions table?"
+      },
+      {
+        "line": 1280,
+        "sha256": "70fc85251dcacdd3a55f5e04b7d8add001d73c9ec0ca945c5bc76b0d832a819d",
+        "text": "** '''Thorvald the Warrior:''' You will need to persuade one of the revellers in the Long Hall to give up their token, and their place, in deference to my own worthiness somehow."
+      },
+      {
+        "line": 1670,
+        "sha256": "7e38beed70521b3eb88ce0059b2179ef404002940583f5bbd1eba8c132005e17",
+        "insert_before": [
+          "=====Finding Askeladden's written promise=====",
+          "======Talking to Manni======",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Player:''' I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?",
+          "** '''Manni the Reveller:''' Uh... call it a crazy hunch, but did you even try asking Askeladden about that?",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          "",
+          "======Talking to Thorvald======",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Player:''' I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?",
+          "** '''Thorvald the Warrior:''' Not in the slightest.",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          "",
+          "======Talking to Peer the Seer======",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Player:''' I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?",
+          "** '''Peer the Seer:''' I'm afraid not, outerlander.",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          "",
+          "======Talking to Swensen======",
+          "* '''Player:''' Hello!",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Swensen the Navigator:''' Greetings outerlander.",
+          "** '''Player:''' I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?",
+          "** '''Swensen the Navigator:''' Er... from Askeladden, maybe?",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          "",
+          "======Talking to the Fisherman======",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Player:''' I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?",
+          "** '''Fisherman:''' I never saw anything like that in my store before.",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          "",
+          "======Talking to Skulgrimen======",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Player:''' I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?",
+          "** '''Skulgrimen:''' I never saw anything like that in my store before.",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          "",
+          "======Talking to Sigli======",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Sigli the Huntsman:''' Greetings outerlander.",
+          "** '''Player:''' I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?",
+          "** '''Sigli the Huntsman:''' Did you even ASK Askeladden?",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          "",
+          "======Talking to Brundt======",
+          "* '''Brundt the Chieftain:''' Greetings again outerlander! How goes your attempts to gain votes with the council of elders?",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Player:''' I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?",
+          "** '''Brundt the Chieftain:''' Not really my affair, outerlander.",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          "",
+          "======Talking to Yrsa======",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Player:''' I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?",
+          "** '''Yrsa:''' No... sorry, I don't.",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          "",
+          "======Talking to Olaf======",
+          "* {{tselect|Select an option}}",
+          "* {{topt|Ask about the Merchant's trial}}",
+          "** '''Player:''' I don't suppose you have any idea where I could find a written promise from Askeladden to stay out of the Longhall?",
+          "** '''Olaf the Bard:''' I'm sorry, no I don't.",
+          "** {{tact|end}}",
+          "* {{topt|Ask about becoming a Fremennik}}",
+          "** {{tact|above}}",
+          ""
+        ]
+      },
+      {
         "line": 1837,
         "sha256": "35306d25c107d5b7cb8981acd26b00ad0a3fd3de4cd771e00590599c2c702042",
         "text": "** '''Koschei the deathless:''' {{overhead|Outerlander... you made a mistake coming down here!}}"
@@ -1557,14 +1888,48 @@
         ]
       },
       {
+        "line": 1863,
+        "sha256": "4a68a081195e028b0eab8906f0d98642732919e349ec9141cddc07a6a07aa9b0",
+        "insert_before": [
+          "* {{tcond|Before completing the quest:}}"
+        ],
+        "text": "** '''Player:''' I'd really rather not go back down there again, now that I have Thorvald's vote at the council of elders."
+      },
+      {
+        "line": 1864,
+        "sha256": "be2dde9d39be26a80672febb9987788fbaf125212de06923ed889e42d04bad9d",
+        "text": "** {{tact|end}}"
+      },
+      {
+        "line": 1865,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "insert_before": [
+          "* {{tcond|After completing the quest:}}",
+          "** '''Player:''' I'd really rather not go back down there again, now that I have been accepted as a member of the Fremennik clan.",
+          "** {{tact|end}}"
+        ]
+      },
+      {
         "line": 2005,
         "sha256": "56a7fa52c8fff89551dfac0a7d22f2d3bd9d3115c7dfb6e86e202f3ad3bf58dc",
         "text": "** {{mes|It's unusual because you removed it already!}}"
       },
       {
+        "line": 2319,
+        "sha256": "c4f5987d5de0e3a07b4ef2b1dfe2bae2f8cc1be55f14ec210f7de12f1022fdc2",
+        "insert_before": [
+          "* '''Player:''' Hello!"
+        ]
+      },
+      {
         "line": 2337,
         "sha256": "bc1ede0a86dce9e0602b3d9efa6f62c93b77416a50a5fd75759c20180923c423",
         "insert_before": [
+          "* {{tcond|If the player has no votes:}}",
+          "** '''Player:''' I don't have any votes yet.",
+          "** '''Brundt the Chieftain:''' Go and speak to the twelve members of the council of elders who live in this village. I am sure at least a few will be prepared to vote for you.",
+          "** '''Brundt the Chieftain:''' If you need any help with your trials, I suggest you speak to Askeladden. He is currently doing his own trials of manhood to become a true Fremennik.",
+          "** {{tact|end}}",
           "* {{tcond|If the player has gotten all 7 votes:}}",
           "** '''Player:''' I have seven members of the council prepared to vote in my favour now!",
           "** '''Brundt the Chieftain:''' I know outerlander, for I have been closely monitoring your progress so far!",
@@ -4521,6 +4886,159 @@
           "*** '''Gertrude:''' Aren't you still raising that other kitten? Only once it's fully grown and it no longer needs your attention will I let you have another kitten.",
           "*** {{tact|end}}"
         ]
+      }
+    ]
+  },
+  "Council workman": {
+    "revision": 15138235,
+    "reason": "The Council workman as the revision 243 capture plays him: 'The workman winks at you.' ends with a period, and using a beer on him goes straight to 'Ta very much, like...' with no 'A bit early in the day fer that ain't it?' first.",
+    "sources": [
+      "rsprox capture local 1002313 (rev 243), tick 1075 and 1124 (the message box), tick 1104-1105 (a beer used on the workman during the quest)",
+      "Transcript:Council workman revision 15138235 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 12,
+        "sha256": "992f7a43da875c6b686d9517591dea79e6efbbe0f9df737f43b2c49d920a3710",
+        "text": "** {{tbox|The workman winks at you.}}"
+      },
+      {
+        "line": 19,
+        "sha256": "992f7a43da875c6b686d9517591dea79e6efbbe0f9df737f43b2c49d920a3710",
+        "text": "** {{tbox|The workman winks at you.}}"
+      },
+      {
+        "line": 24,
+        "sha256": "54e6086873bc209cf64f2dd69275b56f758837cc640639084ef1685abb0ed99b",
+        "text": ""
+      }
+    ]
+  },
+  "Brundt the Chieftain": {
+    "revision": 15275527,
+    "reason": "Brundt after The Fremennik Trials as the revision 243 capture plays him: 'Hello again, [Fremennik name]!', 'Well met, [Fremennik name].' and 'Aye, that it is, [Fremennik name].' with no 'brother', and 'icy' where the Wiki marks 'icey'.",
+    "sources": [
+      "rsprox capture local 1002313 (rev 243), tick 7562, 7566 and 7580 (the greeting, hello and hat answers), tick 7597 and 7604 (the Koschei history)",
+      "Transcript:Brundt the Chieftain revision 15275527 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 186,
+        "sha256": "0659ff379c7fc8e892e844f5b0e57f55b8085b666b2dcfeb0f172e488f394271",
+        "text": "** '''Brundt the Chieftain:''' Hello again, [Fremennik name]! I hope your travels have brought you wealth and joy! What compels you to visit me on this day?"
+      },
+      {
+        "line": 189,
+        "sha256": "b24093e04730e7b0a210acd1ed886070bafe4f2c55235203ea555a573af4da05",
+        "text": "*** '''Brundt the Chieftain:''' Well met, [Fremennik name]. It is always good to see your face in glorious Rellekka once more!"
+      },
+      {
+        "line": 197,
+        "sha256": "cb1005e4cfe22e80bdea107bf4f046fd3fb58b16a59c0ae733d8507bb75ccd50",
+        "text": "*** '''Brundt the Chieftain:''' Aye, that it is, [Fremennik name]. Should you desire one of your own, you should go to Skulgrimen's shop and see what they have available!"
+      },
+      {
+        "line": 208,
+        "sha256": "2c1f7a679737732252f8180eb0709aa32f7dab087eba307e4ab10f3ba18a8748",
+        "text": "**** '''Brundt the Chieftain:''' when we saw a figure in the icy waters. As we were at least a 3 week sail from any port, and saw no other ships nearby, he must have been there some time."
+      },
+      {
+        "line": 215,
+        "sha256": "60d3f1402a0a018a19a64011824e49c02aa4be23acc4e36a925256e8f575680a",
+        "text": "**** '''Brundt the Chieftain:''' He still had no recollection of how he had come to be in the icy ocean, or of who he was, or where he had come from, but this did not matter to us or him."
+      }
+    ]
+  },
+  "Mord Gunnars": {
+    "revision": 15101865,
+    "reason": "Mord Gunnars' Jatizso option after The Fremennik Trials but before The Fremennik Isles, as the revision 243 capture shows it: a message box, no travel.",
+    "sources": [
+      "rsprox capture local 1002313 (rev 243), tick 8001",
+      "Transcript:Mord Gunnars revision 15101865 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 9,
+        "sha256": "a482218ad9ac3a0a5cdf9ac6c4ef723b8b86cd887238c434fbb969977cb8a2bf",
+        "insert_before": [
+          "==Travelling to Jatizso before The Fremennik Isles==",
+          "* {{tbox|You'll have to get to know Mord a little better before you can travel with him.}}",
+          "* {{tact|end}}",
+          ""
+        ]
+      }
+    ]
+  },
+  "Maria Gunnars": {
+    "revision": 15079326,
+    "reason": "Maria Gunnars' Neitiznot option after The Fremennik Trials but before The Fremennik Isles, as the revision 243 capture shows it: a message box, no travel.",
+    "sources": [
+      "rsprox capture local 1002313 (rev 243), tick 7989 and 8014",
+      "Transcript:Maria Gunnars revision 15079326 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 9,
+        "sha256": "3e3543d3a868b8ea4fd6bd3325ce976a6740f6c0ff5e87f42a95e79c43207af8",
+        "insert_before": [
+          "==Travelling to Neitiznot before The Fremennik Isles==",
+          "* {{tbox|You'll have to talk to Mord before Maria will let you travel with her.}}",
+          "* {{tact|end}}",
+          ""
+        ]
+      }
+    ]
+  },
+  "Jarvald": {
+    "revision": 15257757,
+    "reason": "Jarvald's line on arrival at Waterbirth Island after The Fremennik Trials, which the Wiki's 'YES' branch lacks, as the revision 243 capture plays it.",
+    "sources": [
+      "rsprox capture local 1002313 (rev 243), tick 8081-8088",
+      "Transcript:Jarvald revision 15257757 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 98,
+        "sha256": "77939fcee6cc9e13d63eae6260c1c5b55bdf0ac9eeb08260e2ae8b5728d22116",
+        "insert_before": [
+          "**** '''Jarvald:''' I would head straight for the cave and not tarry too long [Fremennik name], the cold winds on this island can cut right through you should you spend too long in them.",
+          "**** {{tact|end}}"
+        ]
+      }
+    ]
+  },
+  "The Fremennik Isles": {
+    "revision": 15314068,
+    "reason": "The Fremennik Isles' openers as the revision 243 capture plays them: Mord's 'Hello, are you [Fremennik name] by any chance?' without the Wiki's stray question mark, and Maria's 'You should speak with my husband...' spoken by Maria Gunnars (the Wiki misspells the speaker).",
+    "sources": [
+      "rsprox capture local 1002313 (rev 243), tick 7998 and 8004",
+      "Transcript:The Fremennik Isles revision 15314068 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 12,
+        "sha256": "aecd07d23224bca3184678fa1293dfb1f9f91470da95d374c0093b366066768a",
+        "text": "** '''Maria Gunnars:''' You should speak with my husband. He has been looking for you."
+      },
+      {
+        "line": 22,
+        "sha256": "6dbef1c1b80440a6c04fb886f319c25f8b04c7c31b194acc17400a5dc02e5d6a",
+        "text": "** '''Mord Gunnars:''' Hello, are you [Fremennik name] by any chance?"
+      }
+    ]
+  },
+  "Lunar Diplomacy": {
+    "revision": 15263347,
+    "reason": "Lokar Searunner's opener as the revision 243 capture plays it after The Fremennik Trials: the player's 'Hello there.' is followed straight by 'Hey! Don't call me outerlander!...', with no 'Don't talk to me outerlander!' from Lokar between them.",
+    "sources": [
+      "rsprox capture local 1002313 (rev 243), tick 8154-8156 (chat_right 'Hello there.', then chat_right 'Hey! Don't call me outerlander!...', then Lokar's 'Can't say I've heard of you...')",
+      "Transcript:Lunar Diplomacy revision 15263347 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 8,
+        "sha256": "79876133245fd5e4ab29751ee7812ac23c6375e2e207f12a34982f854635498b",
+        "text": ""
       }
     ]
   }

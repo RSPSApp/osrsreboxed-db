@@ -60,6 +60,17 @@ def locations(steps, speaker=None, menu=None, option=None):
             yield from locations([alternative], speaker, node, alternative)
 
 
+def menu_speaker(menu):
+    """The one NPC who speaks in a menu's option bodies, or None."""
+    speakers = {
+        speaker
+        for alternative in menu.get("options", [])
+        for _, _, _, speaker, _, _ in locations(alternative.get("steps", []))
+        if speaker
+    }
+    return next(iter(speakers)) if len(speakers) == 1 else None
+
+
 def resolve_shared(npcs, quests, identities, bindings=None):
     sources = {}
     variants = {}
@@ -89,11 +100,15 @@ def resolve_shared(npcs, quests, identities, bindings=None):
         seen = set()
         participants = record.get("participants", [])
         for steps in record["variants"].values():
-            for node, _, _, speaker, _, _ in list(locations(steps)):
+            for node, _, _, speaker, menu, _ in list(locations(steps)):
                 anchor = anchors.get(node.get("text"))
                 shared = node.pop("_shared", False)
                 if not shared and not anchor:
                     continue
+                if anchor and speaker is None and menu is not None:
+                    # A reviewed anchor on a menu that opens its section, before
+                    # any line: the NPC who answers its other options is asked.
+                    speaker = menu_speaker(menu)
                 if node.get("steps") and not (
                     anchor
                     and all(

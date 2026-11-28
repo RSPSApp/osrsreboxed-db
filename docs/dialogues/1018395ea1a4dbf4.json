@@ -293,6 +293,9 @@
                                 "action": "teleport",
                                 "action_source": "text",
                                 "id": "vb-jLW"
+                              },
+                              {
+                                "npc": "I would head straight for the cave and not tarry too long [Fremennik name], the cold winds on this island can cut right through you should you spend too long in them."
                               }
                             ]
                           },

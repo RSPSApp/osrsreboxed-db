@@ -349,6 +349,34 @@ def test_shared_reply_can_bind_an_ambiguous_option_to_its_original_source_varian
         enrich_records({"Alice": npc}, {"A quest": quest}, {}, update.clean, binding)
 
 
+def test_shared_reply_binding_on_a_menu_that_opens_its_section_uses_its_answerer():
+    # The Fremennik Trials' Poison Salesman menu has no line before it: the NPC who
+    # answers its other option is the one asked, so a reviewed binding can resolve it.
+    npc = record(
+        "Alice",
+        "==Standard==\n* {{topt|Talk about the murder.}}\n** '''Alice:''' Well solved!\n** {{tact|end}}",
+    )
+    text = (
+        "{{Transcript list|Alice}}\n==Talking==\n* {{tselect|Select an option}}\n"
+        "* {{topt|quest=No|Talk about the murder.}}\n* {{topt|Talk about the trials.}}\n"
+        "** '''Player:''' Hello.\n** '''Alice:''' Beer?\n** {{tact|end}}"
+    )
+    unbound = record("A quest", text)
+    enrich_records({"Alice": npc}, {"A quest": unbound}, {}, update.clean, {})
+    assert not unbound["variants"]["talking"][0]["options"][0].get("steps")
+    quest = record("A quest", text)
+    binding = {
+        "A quest": {
+            "shared_options": {"Talk about the murder.": {"page": "Alice", "variant": "standard"}}
+        }
+    }
+    enrich_records({"Alice": npc}, {"A quest": quest}, {}, update.clean, binding)
+    option = quest["variants"]["talking"][0]["options"][0]
+    assert [(line.get("speaker"), line.get("text")) for line in option["steps"]][:1] == [
+        ("Alice", "Well solved!")
+    ]
+
+
 def test_npc_option_anchor_resolves_a_differently_named_above_reference_before_sharing():
     npc = record(
         "Alice",

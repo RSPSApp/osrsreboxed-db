@@ -9,6 +9,13 @@
         "npc": "Maybe you should speak with Rellekka's Chieftain."
       }
     ],
+    "travelling-to-jatizso-before-the-fremennik-isles": [
+      {
+        "type": "message",
+        "text": "You'll have to get to know Mord a little better before you can travel with him.",
+        "id": "tp-Z16"
+      }
+    ],
     "after-the-fremennik-isles-at-rellekka": [
       {
         "npc": "Hail the conquering hero!"

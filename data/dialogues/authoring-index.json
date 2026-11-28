@@ -41573,6 +41573,9 @@
       "before-the-fremennik-trials": [
         "Before The Fremennik Trials"
       ],
+      "travelling-to-neitiznot-before-the-fremennik-isles": [
+        "Travelling to Neitiznot before The Fremennik Isles"
+      ],
       "after-the-fremennik-isles": [
         "After The Fremennik Isles"
       ],
@@ -44428,6 +44431,9 @@
     "sections": {
       "before-the-fremennik-trials": [
         "Before The Fremennik Trials"
+      ],
+      "travelling-to-jatizso-before-the-fremennik-isles": [
+        "Travelling to Jatizso before The Fremennik Isles"
       ],
       "after-the-fremennik-isles-at-rellekka": [
         "After The Fremennik Isles at Rellekka"
@@ -112733,6 +112739,23 @@
         "The Non-Council Members",
         "Jarvald"
       ],
+      "the-non-council-members-sailor": [
+        "The Non-Council Members",
+        "Sailor"
+      ],
+      "the-non-council-members-sailor-travelling-to-miscellania-during-the-trials": [
+        "The Non-Council Members",
+        "Sailor",
+        "Travelling to Miscellania during the trials"
+      ],
+      "the-non-council-members-yrsa": [
+        "The Non-Council Members",
+        "Yrsa"
+      ],
+      "the-non-council-members-agnar": [
+        "The Non-Council Members",
+        "Agnar"
+      ],
       "the-council-members-manni-the-reveller": [
         "The Council Members",
         "Manni the Reveller"
@@ -112791,6 +112814,12 @@
         "The Council Members",
         "Olaf the Bard",
         "Talking to him again"
+      ],
+      "the-council-members-olaf-the-bard-talking-to-him-again-talking-to-him-again-afterwards": [
+        "The Council Members",
+        "Olaf the Bard",
+        "Talking to him again",
+        "Talking to him again afterwards"
       ],
       "the-council-members-olaf-the-bard-crafting-the-lyre": [
         "The Council Members",
@@ -113017,11 +113046,25 @@
         "The Sailor's \"Favor\"",
         "Talking to Brundt"
       ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-talking-to-brundt-talking-to-brundt-again": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Talking to Brundt",
+        "Talking to Brundt again"
+      ],
       "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-sigli-s-bowstring": [
         "The Council Members",
         "Sigmund the Merchant's small \"favour\"",
         "The Sailor's \"Favor\"",
         "Finding Sigli's bowstring"
+      ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-sigli-s-bowstring-talking-to-sigli-again": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Finding Sigli's bowstring",
+        "Talking to Sigli again"
       ],
       "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-sigli-s-bowstring-talking-to-askeladden": [
         "The Council Members",
@@ -113356,6 +113399,76 @@
         "The Sailor's \"Favor\"",
         "Talking to Swensen the Navigator",
         "Talking to the Sailor again"
+      ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-askeladden-s-written-promise-talking-to-manni": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Finding Askeladden's written promise",
+        "Talking to Manni"
+      ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-askeladden-s-written-promise-talking-to-thorvald": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Finding Askeladden's written promise",
+        "Talking to Thorvald"
+      ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-askeladden-s-written-promise-talking-to-peer-the-seer": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Finding Askeladden's written promise",
+        "Talking to Peer the Seer"
+      ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-askeladden-s-written-promise-talking-to-swensen": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Finding Askeladden's written promise",
+        "Talking to Swensen"
+      ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-askeladden-s-written-promise-talking-to-the-fisherman": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Finding Askeladden's written promise",
+        "Talking to the Fisherman"
+      ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-askeladden-s-written-promise-talking-to-skulgrimen": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Finding Askeladden's written promise",
+        "Talking to Skulgrimen"
+      ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-askeladden-s-written-promise-talking-to-sigli": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Finding Askeladden's written promise",
+        "Talking to Sigli"
+      ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-askeladden-s-written-promise-talking-to-brundt": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Finding Askeladden's written promise",
+        "Talking to Brundt"
+      ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-askeladden-s-written-promise-talking-to-yrsa": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Finding Askeladden's written promise",
+        "Talking to Yrsa"
+      ],
+      "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-finding-askeladden-s-written-promise-talking-to-olaf": [
+        "The Council Members",
+        "Sigmund the Merchant's small \"favour\"",
+        "The Sailor's \"Favor\"",
+        "Finding Askeladden's written promise",
+        "Talking to Olaf"
       ],
       "the-council-members-sigmund-the-merchant-s-small-favour-the-sailor-s-favor-giving-the-flowers-to-sigmund": [
         "The Council Members",

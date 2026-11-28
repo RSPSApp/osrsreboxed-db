@@ -685,7 +685,7 @@
             "text": "Ask about anything else.",
             "steps": [
               {
-                "npc": "Hello again [brother/sister] [Fremennik name]! I hope your travels have brought you wealth and joy! What compels you to visit me on this day?"
+                "npc": "Hello again, [Fremennik name]! I hope your travels have brought you wealth and joy! What compels you to visit me on this day?"
               },
               {
                 "type": "choice",
@@ -697,7 +697,7 @@
                         "player": "I just came to say hello."
                       },
                       {
-                        "npc": "Well met, [brother/sister] [Fremennik name]. It is always good to see your face in glorious Rellekka once more!"
+                        "npc": "Well met, [Fremennik name]. It is always good to see your face in glorious Rellekka once more!"
                       }
                     ]
                   },
@@ -719,7 +719,7 @@
                         "player": "Nice hat!"
                       },
                       {
-                        "npc": "Aye, that it is [brother/sister] [Fremennik name]. Should you desire one of your own, you should go to Skulgrimen's shop and see what they have available!"
+                        "npc": "Aye, that it is, [Fremennik name]. Should you desire one of your own, you should go to Skulgrimen's shop and see what they have available!"
                       }
                     ]
                   },
@@ -754,7 +754,7 @@
                                 "npc": "Well, it was a raiding party like any other. We had just struck one of the smaller northern islands to harvest supplies by combat, as our laws allow,"
                               },
                               {
-                                "npc": "when we saw a figure in the icey waters. As we were at least a 3 week sail from any port, and saw no other ships nearby, he must have been there some time."
+                                "npc": "when we saw a figure in the icy waters. As we were at least a 3 week sail from any port, and saw no other ships nearby, he must have been there some time."
                               },
                               {
                                 "npc": "We could not leave someone to the cold death of the ocean, even an outerlander, so we fished him aboard. He muttered continually, but his words made no sense."
@@ -775,7 +775,7 @@
                                 "npc": "He suddenly left her house one day, fully healed, and able to speak to us as though nothing had happened to him."
                               },
                               {
-                                "npc": "He still had no recollection of how he had come to be in the icey ocean, or of who he was, or where he had come from, but this did not matter to us or him."
+                                "npc": "He still had no recollection of how he had come to be in the icy ocean, or of who he was, or where he had come from, but this did not matter to us or him."
                               },
                               {
                                 "npc": "He took his trials of adulthood, as you did, and has been a boon to our clan ever since. Someday I fear he may regain his memory, and leave us for his past..."

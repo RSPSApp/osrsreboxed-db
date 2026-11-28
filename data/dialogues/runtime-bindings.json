@@ -771,5 +771,13 @@
         }
       ]
     }
+  },
+  "The Fremennik Trials": {
+    "shared_options": {
+      "Talk about the Murder Mystery Quest": {
+        "page": "Poison Salesman",
+        "variant": "standard-dialogue"
+      }
+    }
   }
 }

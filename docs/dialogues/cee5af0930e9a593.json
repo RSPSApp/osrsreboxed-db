@@ -6,16 +6,6 @@
         "player": "Hello there."
       },
       {
-        "type": "line",
-        "speaker": "Lokar Searunner",
-        "text": "Don't talk to me outerlander! I don't have time for the likes of you!",
-        "speaker_ids": [
-          3855,
-          6648,
-          9306
-        ]
-      },
-      {
         "player": "Hey! Don't call me outerlander! I'm known as the mighty [Fremennik name]!"
       },
       {

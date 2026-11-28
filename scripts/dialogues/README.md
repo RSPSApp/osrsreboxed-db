@@ -171,7 +171,10 @@ section references also become calls. Ambiguous references and history-dependent
 `previous`, `other` and `initial` navigation retain their original jump markers.
 Across sections, repeated speech resolves only to a unique substantive continuation.
 Shared nonquest replies are imported only from the explicitly named participant
-and only when the speaking NPC and response are unambiguous.
+and only when the speaking NPC and response are unambiguous. A reviewed
+`shared_options` binding on a menu that opens its section, before any line, takes
+the speaking NPC from the one NPC who answers that menu's other options (The
+Fremennik Trials' Poison Salesman menu).
 
 Defaults recognise `Pre-quest`, starting sections and conditional openings.
 Post-quest-only records remain `default: null`. Default selection is a heading

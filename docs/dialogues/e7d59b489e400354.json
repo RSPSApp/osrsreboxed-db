@@ -29,8 +29,12 @@
           },
           {
             "type": "line",
-            "speaker": "Maira Gunnars",
-            "text": "You should speak with my husband. He has been looking for you."
+            "speaker": "Maria Gunnars",
+            "text": "You should speak with my husband. He has been looking for you.",
+            "speaker_ids": [
+              1882,
+              1883
+            ]
           },
           {
             "type": "end"
@@ -58,7 +62,7 @@
           {
             "type": "line",
             "speaker": "Mord Gunnars",
-            "text": "Hello, are you [Fremennik name]? by any chance?",
+            "text": "Hello, are you [Fremennik name] by any chance?",
             "speaker_ids": [
               1900,
               1940
