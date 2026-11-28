@@ -5087,5 +5087,75 @@
         }
       }
     ]
+  },
+  "Silver merchant": {
+    "reason": "After Making History, until the Enchanted Key's treasures are found, Talk-to still opens with the merchant's silver line and a three-option menu; 'Ask about the outpost.' (not said back) leads into the after-quest talk, which the Wiki transcript gives without its opening menu. 'Yes please.' and 'No thank you.' keep the before-the-quest answers.",
+    "sources": [
+      "RSProx capture of live OSRS, revision 243, world 337, 2026-11-27 (TheEnchantedKey.bin, sha256 69b50425f675bfaf5c1b69470357919b7f86bbcab4ea89a64bca8053b1492387), ticks 492-510"
+    ],
+    "base_sha256": "fb9c6a044f250cfbf8e892a6dd6194e2fe451e0777b1dbe26e3fc09e3d169edd",
+    "audited_sha256": "a3b18349d558091685903457e348c9baba94618c2a78b5cb322dbbb4636c66a9",
+    "changes": [
+      {
+        "path": [
+          "records",
+          "Silver merchant",
+          "variants",
+          "after-making-history",
+          0
+        ],
+        "expected": "3e28d16d2399e5cd293c752f7f30c3c2c8b1e7bbd245525be2236ba7984d9c54",
+        "insert": {
+          "npc": "Silver! Silver! Best prices for buying and selling in all Kandarin!"
+        }
+      },
+      {
+        "path": [
+          "records",
+          "Silver merchant",
+          "variants",
+          "after-making-history",
+          0
+        ],
+        "expected": "3e28d16d2399e5cd293c752f7f30c3c2c8b1e7bbd245525be2236ba7984d9c54",
+        "insert": {
+          "type": "choice",
+          "options": [
+            {
+              "text": "Yes please.",
+              "steps": [
+                {
+                  "player": "Yes please."
+                },
+                {
+                  "type": "action",
+                  "action": "open_shop",
+                  "target": "Ardougne Silver Stall.",
+                  "id": "XHvPMh"
+                },
+                {
+                  "type": "end"
+                }
+              ]
+            },
+            {
+              "text": "Ask about the outpost.",
+              "steps": []
+            },
+            {
+              "text": "No thank you.",
+              "steps": [
+                {
+                  "player": "No thank you."
+                },
+                {
+                  "type": "end"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
   }
 }
