@@ -2240,3 +2240,128 @@ def test_the_golem_capture_lines_and_the_curators_fossil_island_menu():
     ]
     # The Wiki's own wording stays where the capture words a line differently.
     assert "Damage... severe... Task... incomplete..." in json.dumps(start)
+
+
+def test_icthlarins_little_helper_follows_the_revision_243_capture():
+    name, title = "Icthlarin's Little Helper", "Transcript:Icthlarin's Little Helper"
+    sources = json.loads(
+        (config.DATA_PATH / "dialogues" / "capture-sources.json").read_text(encoding="utf-8")
+    )
+    corrections = json.loads(
+        (config.DATA_PATH / "dialogues" / "corrections.json").read_text(encoding="utf-8")
+    )
+    # Source inputs over the cached revision, not edits of the generated record.
+    assert name not in corrections
+    source = sources[name]
+    page = json.loads((config.DATA_PATH / "dialogues/quest-pages.json").read_text())[title]
+    assert source["revision"] == page["revision"]
+    lines = page["wikitext"].splitlines()
+    for fix in source["lines"]:
+        assert hashlib.sha256(lines[fix["line"] - 1].encode()).hexdigest() == fix["sha256"]
+    # The Wiki itself has "heard"; the capture-source line is what fixes it.
+    assert "I must get to the heard of the pyramid..." in lines[212]
+    raw = apply_capture_lines(name, page["wikitext"], source, page["revision"])
+    assert raw == apply_capture_lines(name, page["wikitext"], source, page["revision"])
+    with pytest.raises(ValueError, match="Stale dialogue capture source"):
+        apply_capture_lines(name, page["wikitext"], source, page["revision"] + 1)
+
+    record = json.loads((config.DOCS_PATH / "npc-dialogues.json").read_text())[name]
+    variants = record["variants"]
+    words = lambda steps: [
+        step.get("player") or f"{step.get('speaker', step.get('type'))}: {step.get('text')}"
+        for step in steps
+    ]
+    conditions = lambda steps: {step["text"]: step for step in steps if step.get("type") == "condition"}
+
+    # The flashback ladder (ticks 1064, 1070).
+    ladder = variants[
+        "figuring-out-what-on-gielinor-is-going-on-flashback-1-touching-the-door-of-klenter-s-pyramid"
+        "-attempting-to-climb-up-the-ladder-during-the-flashback"
+    ]
+    assert ladder[0] == {"player": "I must get to the heart of the pyramid..."}
+
+    # The Sphinx with a cat and the token still held (ticks 1498-1509).
+    sphinx = variants["figuring-out-what-on-gielinor-is-going-on-talking-to-the-sphinx-after-receiving-the-sphinx-s-token"]
+    cat = conditions(sphinx)["If the player has a cat follower or in the inventory:"]["steps"]
+    assert words(cat[:3]) == [
+        "Good day.",
+        "message: The Sphinx ignores you.",
+        "Sphinx: Ah, how interesting... a cat. Come here to me, kitty.",
+    ]
+    held, lost = cat[3], cat[4]
+    assert (held["text"], held["id"]) == ("If the player still has the Sphinx's token:", "Lu_-hc")
+    assert words(held["steps"]) == [
+        "Cat: Meow.",
+        "message: Your cat and the Sphinx converse in a yeowling language for a short time.",
+        "Sphinx: Human, your cat tells me that you are yet to speak to the High Priest. I wonder why I tried to help at all.",
+        "Cat: Meow!",
+        "Could you remind me where he is?",
+        "Sphinx: Try the large building in the south west of Sophanem.",
+    ]
+    assert (lost["text"], lost["id"]) == ("If the player has lost the token:", "1V5w9K")
+    assert words(lost["steps"])[2:] == [
+        "I lost that token you gave me. Could I have another please?",
+        "Sphinx: Ah, you humans.",
+        "message: The Sphinx gives you another token.",
+    ]
+    # Both continue into the one menu, whose answers still resolve to the shared bodies.
+    assert cat[5] == {"player": "Thanks."}
+    menu = cat[6]["options"]
+    assert [option["text"] for option in menu] == [
+        "Tell me about yourself.",
+        "What's going on in this city?",
+        "I'll go speak with the High Priest.",
+    ]
+    robbing = variants[
+        "figuring-out-what-on-gielinor-is-going-on-being-accused-of-robbing-a-grave-after-answering-the-sphinx-s-riddle"
+    ][-1]["options"]
+    assert all(option["steps"][0].get("steps", [{}])[0].get("type") == "call" for option in robbing[:2])
+
+    # The High Priest's own spelling (tick 1772).
+    priest = variants["putting-things-right-talking-to-the-high-priest-after-being-told-to-return-the-jar"]
+    assert "High Priest: Please hurry. The people are begining to... well..." in words(
+        conditions(priest)["If the player has the jar:"]["steps"]
+    )
+
+    # The Embalmer takes the salt, then the sap (ticks 2608, 2610), keeping their ids.
+    first = conditions(variants["ceremony-preparations-aiding-the-embalmer"])
+    assert [(text, step["id"]) for text, step in first.items()][:2] == [
+        ("If the player has salt:", "vtJH1G"),
+        ("If the player has a bucket of sap:", "FipZzG"),
+    ]
+    again = variants["ceremony-preparations-aiding-the-embalmer-talking-to-the-embalmer-again"]
+    done = conditions(again)["If the Embalmer now has all the items:"]
+    assert done["id"] == "OX3qHy"
+    # Before the carpenter is met (tick 2767); the Wiki's line stays for a player who met him.
+    assert [(step["text"], step["id"], words(step["steps"])) for step in done["steps"][1:3]] == [
+        ("If the player has not spoken to the carpenter yet:", "nZ6h66",
+         ["Great. I guess I'll go and see the carpenter then."]),
+        ("If the player has spoken to the carpenter:", "snNGyp",
+         ["Great. I guess I should go and see how the carpenter is getting on."]),
+    ]
+    # The linen answer ends with "Okay, I'll get going."; the last option is "I'll get going." (2622-2634).
+    options = next(step for step in again if step.get("type") == "choice")["options"]
+    linen = next(option for option in options if option["text"] == "Where do I get linen?")
+    assert words(linen["steps"]) == [
+        "Where do I get linen?",
+        "Embalmer: The local cloth salesman should have some for sale.",
+        "Okay, I'll get going.",
+    ]
+    assert options[-1]["text"] == "I'll get going."
+    assert options[-1]["steps"][0] == {"player": "I'll get going."}
+
+    # The Carpenter (tick 2842).
+    carpenter = variants["ceremony-preparations-talking-to-the-carpenter-after-aiding-both-him-and-the-embalmer"]
+    assert "Carpenter: Well you should do so as soon as possible. He'll be down in the pyramid by now." in words(
+        conditions(carpenter)["If the player still has the holy symbol:"]["steps"]
+    )
+
+    # After the holy symbol is handed over, only "Hello again..." (tick 3290).
+    after = variants["the-devourer-revealed-talking-to-the-high-priest-after-saving-the-ceremony"]
+    given, ungiven = after[1], after[0]
+    assert (ungiven["text"], ungiven["id"]) == ("If the player has not given the holy symbol yet:", "02uBqg")
+    assert "You give the holy symbol to the High Priest." in json.dumps(ungiven)
+    assert (given["text"], given["id"]) == ("If the player has already given the holy symbol:", "wZeHWh")
+    assert words(given["steps"])[0] == (
+        "High Priest: Hello again. We have a few things to finish here, but then we'll head back up into the city. Please join us there."
+    )

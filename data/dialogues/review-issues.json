@@ -46004,119 +46004,104 @@
       "raw": "{{tact|below}}"
     },
     {
-      "line": 375,
+      "line": 384,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|below}}"
     },
     {
-      "line": 391,
+      "line": 400,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 437,
+      "line": 446,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|below}}"
     },
     {
-      "line": 439,
+      "line": 448,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|below}}"
     },
     {
-      "line": 441,
+      "line": 450,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|below}}"
     },
     {
-      "line": 443,
+      "line": 452,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|below}}"
     },
     {
-      "line": 456,
+      "line": 465,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 464,
+      "line": 473,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 479,
+      "line": 488,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
     },
     {
-      "line": 490,
+      "line": 499,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
     },
     {
-      "line": 504,
+      "line": 513,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
     },
     {
-      "line": 517,
+      "line": 526,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
     },
     {
-      "line": 562,
+      "line": 571,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 575,
+      "line": 584,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 641,
+      "line": 650,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 643,
+      "line": 652,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 645,
+      "line": 654,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 659,
+      "line": 668,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 661,
+      "line": 670,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
     },
     {
-      "line": 663,
+      "line": 672,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|above}}"
-    },
-    {
-      "line": 683,
-      "reason": "Unresolved dialogue reference",
-      "raw": "{{tact|continue}}"
-    },
-    {
-      "line": 686,
-      "reason": "Unresolved dialogue reference",
-      "raw": "{{tact|continue}}"
-    },
-    {
-      "line": 689,
-      "reason": "Unresolved dialogue reference",
-      "raw": "{{tact|continue}}"
     },
     {
       "line": 692,
@@ -46124,57 +46109,67 @@
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 728,
+      "line": 695,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 732,
+      "line": 698,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 735,
+      "line": 701,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 742,
+      "line": 737,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 746,
+      "line": 741,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|continue}}"
     },
     {
-      "line": 751,
+      "line": 744,
+      "reason": "Unresolved dialogue reference",
+      "raw": "{{tact|continue}}"
+    },
+    {
+      "line": 754,
+      "reason": "Unresolved dialogue reference",
+      "raw": "{{tact|continue}}"
+    },
+    {
+      "line": 758,
+      "reason": "Unresolved dialogue reference",
+      "raw": "{{tact|continue}}"
+    },
+    {
+      "line": 763,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
     },
     {
-      "line": 755,
+      "line": 767,
       "reason": "Unresolved dialogue reference",
       "raw": "{{tact|other}}"
     },
     {
-      "line": 759,
-      "reason": "Unresolved dialogue reference",
-      "raw": "{{tact|other}}"
-    },
-    {
-      "line": 848,
+      "line": 861,
       "reason": "Unrecognised markup retained",
       "raw": "{{main|Transcript:Raetul#Standard dialogue after finishing Icthlarin's Little Helper}}"
     },
     {
-      "line": 907,
+      "line": 920,
       "reason": "Unrecognised markup retained",
       "raw": "{{main|Transcript:Carpenter#Standard dialogue after finishing Icthlarin's Little Helper}}"
     },
     {
-      "line": 943,
+      "line": 960,
       "reason": "Unrecognised markup retained",
       "raw": "{{main|Transcript:Priest (Sophanem)#Standard dialogue after finishing Icthlarin's Little Helper}}"
     }

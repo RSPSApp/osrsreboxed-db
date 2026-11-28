@@ -4523,5 +4523,204 @@
         ]
       }
     ]
+  },
+  "Icthlarin's Little Helper": {
+    "revision": 15285199,
+    "reason": "Icthlarin's Little Helper as the user's revision 243 capture of the quest plays it. The flashback line reads \"heart of the pyramid\" (the Wiki has \"heard\"); the High Priest says \"begining\" in live's own spelling; the Carpenter says \"you should do so as soon as possible\". The Embalmer takes the salt before the sap, the player answers \"Great. I guess I'll go and see the carpenter then.\" when the carpenter has not been met yet (the Wiki's line, which asks how he is getting on, stays for a player who has met him), the menu ends with \"I'll get going.\", and after \"Where do I get linen?\" the player ends the talk with \"Okay, I'll get going.\". With a cat and the token still held, the player greets the Sphinx with \"Good day.\" and the Sphinx sends them back to the High Priest instead of giving another token; the cat's \"Meow.\" and the conversing box open both token branches, so the Sphinx stays the speaker of the shared menu that follows and its references still resolve. Once the holy symbol has been handed over, the High Priest only says \"Hello again...\".",
+    "sources": [
+      "The user's rsprox capture local 1002310 (revision 243, a run of the quest; see https://rsprox.net/database for the archive): the flashback ladder at ticks 1064 and 1070, the Sphinx with the token at 1498-1509, the High Priest at 1772, the Embalmer at 2608-2610, 2622-2634 and 2763-2767, the Carpenter at 2842, the High Priest after the symbol at 3290",
+      "Transcript:Icthlarin's Little Helper revision 15285199 as cached; all other lines are parsed unchanged"
+    ],
+    "lines": [
+      {
+        "line": 213,
+        "sha256": "ee56e7354bdbd096630966404f6bfe05f90e227f3f9c097cc0e5999334281b52",
+        "text": "* '''Player:''' I must get to the heart of the pyramid..."
+      },
+      {
+        "line": 334,
+        "sha256": "c99800b094b3acb1f614c9c9d60482c039c9e9b7719f53e66cf50beb53dda7b6",
+        "insert_before": [
+          "** '''Player:''' Good day."
+        ]
+      },
+      {
+        "line": 336,
+        "sha256": "38e2713960679f769855d076fff2dd9d6d194714dce166a5f01ec85b2f9cc60a",
+        "insert_before": [
+          "** {{tcond|If the player still has the Sphinx's token:}}"
+        ],
+        "text": "*** '''Cat:''' Meow."
+      },
+      {
+        "line": 337,
+        "sha256": "41afd89e09b45da0aea3abeb40558079942307c1a898bc986bf9e589e43b43c3",
+        "text": "*** {{tbox|Your cat and the Sphinx converse in a yeowling language for a short time.}}"
+      },
+      {
+        "line": 338,
+        "sha256": "5880603c9df0f312a23852c13e02ab4bf931a421c8c914a38eec111bbf1313e3",
+        "insert_before": [
+          "*** '''Sphinx:''' Human, your cat tells me that you are yet to speak to the High Priest. I wonder why I tried to help at all.",
+          "*** '''Cat:''' Meow!",
+          "*** '''Player:''' Could you remind me where he is?",
+          "*** '''Sphinx:''' Try the large building in the south west of Sophanem.",
+          "** {{tcond|If the player has lost the token:}}",
+          "*** '''Cat:''' Meow.",
+          "*** {{tbox|Your cat and the Sphinx converse in a yeowling language for a short time.}}"
+        ],
+        "text": "*** '''Player:''' I lost that token you gave me. Could I have another please?"
+      },
+      {
+        "line": 339,
+        "sha256": "4e2bc68e9dc8299a670da8f753da9c93785f79708ddd9213694c166057a8fc2f",
+        "text": "*** '''Sphinx:''' Ah, you humans."
+      },
+      {
+        "line": 340,
+        "sha256": "0a1364d95cc3ee84721fcf90bd6864865074938d69f73ae2d34b44932fc50469",
+        "text": "*** {{tbox|pic=Sphinx's_token_detail.png|The Sphinx gives you another token.}}"
+      },
+      {
+        "line": 461,
+        "sha256": "4fbfa28566da274087d1f420d2f26b108daf8230355e08a40e07f5ef4cc3a8ab",
+        "text": "** '''High Priest:''' Please hurry. The people are begining to... well..."
+      },
+      {
+        "line": 681,
+        "sha256": "090b84d4f7aacdf3b944d3f6f71d483a4fe5d1b5b9df477963f3d0bad7a9dff9",
+        "text": "* {{tcond|If the player has salt:}}"
+      },
+      {
+        "line": 682,
+        "sha256": "3ea3fd337830a65ecf8f7addf7de52e896a57c98166a998e1e1af431185978c0",
+        "text": "** {{tbox|pic=Pile_of_salt_detail.png|You hand some salt to the embalmer.}}"
+      },
+      {
+        "line": 684,
+        "sha256": "49c33a02b1882ec7f397ae8b660033d4dfaad4554412274f1f1a135c3e4e981d",
+        "text": "* {{tcond|If the player has a bucket of sap:}}"
+      },
+      {
+        "line": 685,
+        "sha256": "a6dd30684dafd210d028b31f08eaa5b903c561a3a4eb399a3c977c6d1905a79c",
+        "text": "** {{tbox|pic=Bucket_of_sap_detail.png|You hand a bucket of sap to the embalmer.}}"
+      },
+      {
+        "line": 738,
+        "sha256": "caf56c879ddff5c3026063f4de6410337a3e639d8cb4e152cb35e1f7fa9c7279",
+        "insert_before": [
+          "** {{tcond|If the player has not spoken to the carpenter yet:}}",
+          "*** '''Player:''' Great. I guess I'll go and see the carpenter then.",
+          "** {{tcond|If the player has spoken to the carpenter:}}"
+        ],
+        "text": "*** '''Player:''' Great. I guess I should go and see how the carpenter is getting on."
+      },
+      {
+        "line": 759,
+        "sha256": "55e4341560a33dc4130387a7342f5c8ee81d75ed000d313b7af054c4aa6817d2",
+        "text": "** '''Player:''' Okay, I'll get going."
+      },
+      {
+        "line": 760,
+        "sha256": "7b408f42ca7c2c4c3df08b9f232828ebcc64bed1b2529258dfe4d4a8b8a3944e",
+        "insert_before": [
+          "** {{tact|end}}"
+        ],
+        "text": "* {{topt|I'll get going.}}"
+      },
+      {
+        "line": 761,
+        "sha256": "199dcd9b1b47ff9ed82f03fbad2b51a8df6768d616383f060a5c4048a4cfe7c1",
+        "text": "** '''Player:''' I'll get going."
+      },
+      {
+        "line": 832,
+        "sha256": "9ceaefcae8376bbbb13f9e04043bb30402be35743fc10cea1ea88c782d785a7e",
+        "text": "** '''Carpenter:''' Well you should do so as soon as possible. He'll be down in the pyramid by now."
+      },
+      {
+        "line": 915,
+        "sha256": "e4beebb01c87eeb4545579ec1eef1932bcf8b83ba25565e4f8c14cedd04fa4cd",
+        "insert_before": [
+          "* {{tcond|If the player has not given the holy symbol yet:}}"
+        ],
+        "text": "** '''High Priest:''' Thank you so much, adventurer. Thanks to you, we were able to complete the ceremony."
+      },
+      {
+        "line": 916,
+        "sha256": "beb36505bf8cda45ada8391f55c763a2f44121b8645bbb0ed11b2b81c2ecb73e",
+        "text": "** '''Player:''' Well it was the least I could do. After all, it was sort of my fault all this happened."
+      },
+      {
+        "line": 917,
+        "sha256": "cacd906dfa0fb3809b3206d95cc999cc7216c59db993e05c6a556d8532539b25",
+        "text": "** '''High Priest:''' Well on that note, what exactly did happen there? That was the Devourer!"
+      },
+      {
+        "line": 918,
+        "sha256": "176cbe4863e09842bc28b01a64607f66afb0e02eadc5c05b12d9b40d94475cac",
+        "text": "** '''Player:''' It seems the wanderer that hypnotised me was actually the Devourer all along."
+      },
+      {
+        "line": 919,
+        "sha256": "7a0b403d0422ce366138ed65f49d0d0629b8f784017c288a53414731fd53a1b1",
+        "text": "** '''Player:''' I'm guessing the reason she had me steal that burial jar was because she knew you'd have to gather here to reconsecrate the tomb again."
+      },
+      {
+        "line": 920,
+        "sha256": "f96eaf3399cd269002c7b99a2036647009c08aa0f35486331af6943e749b3186",
+        "text": "** '''High Priest:''' She wanted to kill us all in one go?"
+      },
+      {
+        "line": 921,
+        "sha256": "3638d0b1a6e95830612a53c237c0ae39938ad508f9ace53a01f8c67b6f14eaa0",
+        "text": "** '''Player:''' Yes, and she had me plant an unholy symbol here to allow her to teleport right in."
+      },
+      {
+        "line": 922,
+        "sha256": "88dd08a7c5cf71964d5cf5571dfe0e17890c9f52fdf84ca4c8e498a1e10dcfbc",
+        "text": "** '''High Priest:''' Well once again, thank you. Without you, the Devourer would have struck a devastating blow against Icthlarin."
+      },
+      {
+        "line": 923,
+        "sha256": "4c3c7e228b42c5419e4d7d0ab89f203c43805659df4ecdbd36b7d80e01cd55ad",
+        "text": "** '''Player:''' Here's that holy symbol, by the way."
+      },
+      {
+        "line": 924,
+        "sha256": "1e0f65bc78cf58edf265eb9d19983c88147974061cba0c37a65b63a247023962",
+        "text": "** {{tbox|pic=Holy_symbol_(Icthlarin's_Little_Helper)_detail.png|You give the holy symbol to the High Priest.}}"
+      },
+      {
+        "line": 925,
+        "sha256": "175019de702f4b2580e329ed34b01542ffa2751e5c6cc9ab2e4fdecaec53ed16",
+        "text": "** '''High Priest:''' Thank you. We wouldn't have been able to complete the ceremony without that in our presence."
+      },
+      {
+        "line": 926,
+        "sha256": "dcc2f927c960b3cc9c1340039a6839a293c843c6e0bc92aaaa84aaa9905672ba",
+        "text": "** '''Player:''' So what now?"
+      },
+      {
+        "line": 927,
+        "sha256": "1271f31a39adecdf437e6a10ec65ba734655ec0934b3ddb5118f6de22afa5f31",
+        "text": "** '''High Priest:''' We have a few things to finish here, but then we'll head back up into the city. Please join us there."
+      },
+      {
+        "line": 928,
+        "sha256": "be2dde9d39be26a80672febb9987788fbaf125212de06923ed889e42d04bad9d",
+        "text": "** {{tact|end}}"
+      },
+      {
+        "line": 929,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "insert_before": [
+          "* {{tcond|If the player has already given the holy symbol:}}",
+          "** '''High Priest:''' Hello again. We have a few things to finish here, but then we'll head back up into the city. Please join us there.",
+          "** {{tact|end}}"
+        ]
+      }
+    ]
   }
 }
